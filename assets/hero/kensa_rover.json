@@ -1,0 +1,129 @@
+{
+ "size": [
+  0.35779,
+  0.14923,
+  0.32013
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "inspection_robot_kensa",
+   "category": "chassis",
+   "centre": [
+    0.0,
+    0.0661,
+    1e-05
+   ],
+   "size": [
+    0.35779,
+    0.06899,
+    0.193
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_lf",
+   "part": "standard_kensa_offroad",
+   "category": "wheel",
+   "centre": [
+    0.10408,
+    0.06659,
+    -0.12401
+   ],
+   "size": [
+    0.13473,
+    0.13318,
+    0.07204
+   ],
+   "explode": [
+    0.05143,
+    0.0,
+    -0.06128
+   ]
+  },
+  {
+   "name": "wheel_lb",
+   "part": "standard_kensa_offroad",
+   "category": "wheel",
+   "centre": [
+    -0.04592,
+    0.06659,
+    -0.12403
+   ],
+   "size": [
+    0.13473,
+    0.13318,
+    0.07207
+   ],
+   "explode": [
+    -0.02777,
+    0.0,
+    -0.07502
+   ]
+  },
+  {
+   "name": "wheel_rf",
+   "part": "standard_kensa_offroad",
+   "category": "wheel",
+   "centre": [
+    0.10253,
+    0.06659,
+    0.12404
+   ],
+   "size": [
+    0.13473,
+    0.13318,
+    0.07206
+   ],
+   "explode": [
+    0.05097,
+    0.0,
+    0.06166
+   ]
+  },
+  {
+   "name": "wheel_rb",
+   "part": "standard_kensa_offroad",
+   "category": "wheel",
+   "centre": [
+    -0.04747,
+    0.06659,
+    0.12403
+   ],
+   "size": [
+    0.13473,
+    0.13318,
+    0.07205
+   ],
+   "explode": [
+    -0.02859,
+    0.0,
+    0.07472
+   ]
+  },
+  {
+   "name": "top_lidar",
+   "part": "lidar_ld06",
+   "category": "sensor",
+   "centre": [
+    0.0902,
+    0.12498,
+    0.00329
+   ],
+   "size": [
+    0.063,
+    0.0485,
+    0.054
+   ],
+   "explode": [
+    0.0,
+    0.22,
+    -0.0
+   ]
+  }
+ ]
+}
