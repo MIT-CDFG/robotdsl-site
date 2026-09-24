@@ -1,17 +1,18 @@
 # Release verification
 
-## 2026-09-24 project-page redesign
+## 2026-09-24 content improvements, original layout restored
 
 Validated locally in the `codex/modern-site` worktree:
 
 - `npx --yes html-validate@8.29.0 index.html`: passed.
 - `node --check assets/site.js` and `node --input-type=module --check < assets/robot-viewer.js`: passed.
 - `git diff --check`: passed.
-- Local HTTP checks for page assets, gallery models and Three.js imports: passed.
+- Local checks for page assets, gallery models and Three.js imports: passed.
+- Original navigation and hero match `2f6cfd1` exactly. Language and video retain their layout, text and behavior, with nonvisual accessibility labels and the no-JavaScript style moved to the document head. The original palette, width and section order are preserved.
 - Three.js GLTFLoader with Meshopt decoded all three optimized models; all 26 component nodes and explosion offsets matched, and bounding extents remained within 1 mm of the source exports.
 - Main comparison and ablation values were checked against the fetched manuscript at `8606c8b`.
 
-No browser visual or interaction tests were run for this redesign. The checks and screenshots below document the earlier page, not this worktree. Studio assets are unchanged.
+No browser visual or interaction tests were run for these changes. The checks and screenshots below document the earlier page. Studio assets are unchanged.
 
 ## 2026-09-21 baseline
 

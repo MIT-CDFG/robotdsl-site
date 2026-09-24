@@ -1,20 +1,19 @@
 # Asset sources
 
-The project page uses downloaded, distributed UI libraries and icons. Its CSS sets typography, colors, spacing and page composition; it does not reimplement the card, tab, accordion, alert, list-group or modal components. No stock robot, generated illustration or invented robot mesh is used as research evidence.
+The original page layout, typography, palette, video player and Language section are retained. Content additions use plain text, native HTML disclosures, downloaded Lucide icons, Chart.js and the existing Three.js integration. No stock robot, generated illustration or invented robot mesh is used as research evidence.
 
 ## Downloaded interface assets
 
-Retrieved September 24, 2026. Runtime dependencies are vendored so the interface and 3D viewer do not depend on a CDN being available.
+Retrieved September 24, 2026. Chart.js, Three.js and icons are vendored. The original Vidstack player, GitHub Markdown stylesheet and Google Fonts retain their existing CDN imports.
 
 | Asset                                                 | Source                                                                                                                                                        | Local copy / license                                                       |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Cards, buttons, tabs, lists, alerts, accordion, modal | [Tabler UI 1.4.0](https://www.jsdelivr.com/package/npm/@tabler/core?version=1.4.0), [component documentation](https://docs.tabler.io/ui/components/card)      | `assets/vendor/tabler/`, MIT                                               |
 | SVG icons                                             | [lucide-static 1.47.0](https://www.jsdelivr.com/package/npm/lucide-static?version=1.47.0)                                                                     | `assets/icons/`, original SVGs; ISC and inherited MIT notices in `LICENSE` |
 | Benchmark bars and axes                               | [Chart.js 4.4.9](https://www.jsdelivr.com/package/npm/chart.js?version=4.4.9), [bar chart documentation](https://www.chartjs.org/docs/latest/charts/bar.html) | `assets/vendor/chartjs/`, MIT; the application formats the data labels     |
 | 3D renderer, controls, GLB loader and environment     | [Three.js 0.170.0](https://www.jsdelivr.com/package/npm/three?version=0.170.0)                                                                                | `assets/vendor/three/`, MIT; unchanged distribution files                  |
 | Geist / Geist Mono                                    | [Google Fonts](https://fonts.google.com/specimen/Geist), [Vercel Geist](https://github.com/vercel/geist-font)                                                 | Served by Google Fonts; SIL Open Font License; system-font fallback        |
 
-Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks. Tabler distribution CSS/JS retain their release copyright headers. Its MIT text was retrieved from the [upstream LICENSE](https://github.com/tabler/tabler/blob/master/LICENSE), because the package does not include that file at its root.
+Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks.
 
 ## Research assets reused from the project
 
@@ -36,7 +35,7 @@ Mappings are taken from `mobilecopilot-video/outputs/opening/designs/designs.jso
 
 ### Warehouse walkthrough
 
-The chassis, wheel and LiDAR images and exact `warehouse.patch` were fetched with the latest manuscript source at commit `8606c8b` (September 17, 2026). They are individual original assets, not a screenshot of the paper figure. The prompt, `unresolved_ref` error, added `wp2` goal and “0 errors; 1 advisory” follow `src/content.json`. This is explicitly a paper walkthrough, not a live agent session.
+The exact `warehouse.patch` was fetched with the latest manuscript source at commit `8606c8b` (September 17, 2026). The prompt, `unresolved_ref` error, added `wp2` goal and “0 errors; 1 advisory” follow `src/content.json`. This is explicitly a paper walkthrough, not a live agent session.
 
 ### Video and physical platform
 
@@ -55,4 +54,4 @@ The manuscript submodule was uninitialized in the working experiment checkout. T
 - `tex/06-experiments.tex`: interpretation and EvaluateDSL tradeoff.
 - `tex/07-limitations.tex`: library scope and qualitative hardware evidence.
 
-Hero differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. Code ratios 505.3/43.7, 1301.9/46.8 and 870/41.5 round to 12, 28 and 21. “37 vs 12” is 74% and 24% of 50. No significance test or repeated-trial confidence claim is implied. The provisional citation omits the previous unverified publication year and “to appear” claim.
+Execution differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. Code ratios 505.3/43.7, 1301.9/46.8 and 870/41.5 round to 12, 28 and 21. “37 vs 12” is 74% and 24% of 50. No significance test or repeated-trial confidence claim is implied. The provisional citation omits the previous unverified publication year and “to appear” claim.

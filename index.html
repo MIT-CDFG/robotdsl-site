@@ -1,1391 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta
-      name="description"
-      content="Describe a mobile robot. MobileCopilot selects components and writes MobileDSL; the compiler produces a runnable ROS/Gazebo system. Explore generated robots in 3D and the research behind them.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="RobotDSL">
-    <meta
-      property="og:title"
-      content="RobotDSL — from robot ideas to executable systems">
-    <meta
-      property="og:description"
-      content="Explore generated robots in 3D, see the measured difference, and try the Studio preview.">
-    <meta
-      property="og:url"
-      content="https://mit-cdfg.github.io/robotdsl-site/">
-    <meta
-      property="og:image"
-      content="https://mit-cdfg.github.io/robotdsl-site/assets/og_image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta
-      property="og:image:alt"
-      content="MobileCopilot title card with five generated mobile robots">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="theme-color" content="#101828">
-    <title>RobotDSL — from robot ideas to executable systems</title>
-    <link rel="icon" type="image/svg+xml" href="assets/icons/bot.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;650;700&family=Geist+Mono:wght@400;500&display=swap">
-    <!-- Actual distributed Tabler UI primitives; source and license: docs/asset-sources.md. -->
-    <link rel="stylesheet" href="assets/vendor/tabler/tabler.min.css">
-    <link rel="stylesheet" href="assets/site.css">
-    <script src="assets/vendor/tabler/tabler.min.js" defer></script>
-    <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
-    <script src="assets/site.js" defer></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "./assets/vendor/three/build/three.module.js",
-          "three/addons/": "./assets/vendor/three/examples/jsm/"
-        }
-      }
-    </script>
-    <noscript>
-      <style>
-        .collapse:not(.show),
-        .tab-content > .tab-pane {
-          display: block !important;
-        }
-        .modal {
-          display: none !important;
-        }
-        #robot-canvas,
-        #robot-status,
-        .gallery-tools,
-        .gallery-choices,
-        .chart-container,
-        .workflow-tabs {
-          display: none !important;
-        }
-        .workflow-detail .tab-pane {
-          margin-bottom: 2rem;
-        }
-        .gallery-stage {
-          height: auto;
-        }
-        .robot-poster {
-          position: static;
-        }
-        #metric,
-        #copy-citation {
-          display: none;
-        }
-      </style></noscript
-    >
-  </head>
-  <body>
-    <a class="visually-hidden-focusable skip-link" href="#main"
-      >Skip to content</a
-    >
-    <header class="navbar navbar-expand-md site-nav">
-      <div class="container-xl">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="assets/icons/bot.svg"
-            width="26"
-            height="26"
-            alt="">RobotDSL<span class="brand-divider">/</span
-          ><span class="brand-sub">MobileCopilot</span></a
-        >
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#copilot">How it works</a><a href="#results">Results</a
-          ><a href="#real">Hardware</a
-          ><a class="btn btn-dark btn-sm" href="studio/"
-            >Studio preview
-            <img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></a>
-        </nav>
-      </div>
-    </header>
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container-xl">
-          <div class="hero-layout">
-            <div class="hero-copy">
-              <p class="eyebrow">
-                <span class="status-dot bg-blue" aria-hidden="true"></span>
-                Robot design, with a compiler behind it
-              </p>
-              <h1 id="hero-title">
-                Describe a robot.<br>Compile the<br><span
-                  >whole system.</span
-                >
-              </h1>
-              <p class="hero-lede">
-                MobileCopilot chooses components and writes MobileDSL. The
-                compiler turns that program into a robot, a world, and behavior
-                that run together in ROS and Gazebo.
-              </p>
-              <div class="d-flex flex-wrap gap-2 hero-actions">
-                <a class="btn btn-primary" href="studio/"
-                  >Explore Studio
-                  <img
-                    class="icon"
-                    src="assets/icons/arrow-up-right.svg"
-                    alt=""></a
-                ><button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#video-dialog"
-                >
-                  <img class="icon" src="assets/icons/play.svg" alt=""> Watch
-                  2:57
-                </button>
-              </div>
-              <p class="small text-secondary mt-3">
-                Studio preview: browse parts and edit programs.<br>Generation
-                and compilation await the hosted service.
-              </p>
-            </div>
-            <div class="card gallery" id="designs">
-              <div class="card-header justify-content-between flex-wrap gap-2">
-                <span class="subheader">Reference image → generated robot</span
-                ><span class="badge bg-blue-lt">Interactive 3D</span>
-              </div>
-              <div class="gallery-stage" id="robot-stage" aria-busy="true">
-                <img
-                  id="robot-poster"
-                  class="robot-poster"
-                  src="assets/gallery/arm_mecanum-poster.png"
-                  width="640"
-                  height="400"
-                  alt="Generated white mecanum robot with a fixed red arm"
-                  fetchpriority="high">
-                <canvas
-                  id="robot-canvas"
-                  tabindex="0"
-                  role="img"
-                  aria-label="Generated robot in 3D. Drag or use arrow keys to rotate. Plus and minus zoom."
-                ></canvas>
-                <span
-                  class="badge bg-white text-secondary gallery-status"
-                  id="robot-status"
-                  role="status"
-                  >Loading 3D…</span
-                >
-                <figure class="reference-image">
-                  <a
-                    id="reference-link"
-                    href="assets/gallery/arm_mecanum-input.png"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Open the full reference image"
-                    ><img
-                      id="reference-image"
-                      src="assets/gallery/arm_mecanum-input.png"
-                      width="800"
-                      height="800"
-                      alt="Input reference: white mecanum platform with a red arm"></a>
-                  <figcaption>Input image</figcaption>
-                </figure>
-              </div>
-              <div class="gallery-tools">
-                <span class="small text-secondary" id="orbit-hint"
-                  >Drag to rotate · scroll to zoom</span
-                >
-                <div class="btn-list">
-                  <button
-                    class="btn btn-sm"
-                    id="explode-robot"
-                    type="button"
-                    aria-pressed="false"
-                    disabled
-                  >
-                    <img
-                      class="icon"
-                      src="assets/icons/expand.svg"
-                      alt=""><span>Explode</span></button
-                  ><button
-                    class="btn btn-sm btn-icon"
-                    id="reset-robot"
-                    type="button"
-                    aria-label="Reset the 3D camera"
-                    disabled
-                  >
-                    <img
-                      class="icon"
-                      src="assets/icons/rotate-ccw.svg"
-                      alt="">
-                  </button>
-                </div>
-              </div>
-              <div class="card-body gallery-description">
-                <div
-                  class="d-flex justify-content-between align-items-start gap-2"
-                >
-                  <h2 id="robot-title">Mecanum + fixed arm</h2>
-                  <span class="small text-secondary" id="robot-index"
-                    >01 / 03</span
-                  >
-                </div>
-                <p id="robot-request">
-                  “Drive forward and turn to expand outward in a spiral. The arm
-                  stays fixed.”
-                </p>
-                <p class="small text-secondary mb-0" id="robot-meta">
-                  Image-conditioned benchmark example · Claude Code /
-                  claude-opus-4-8
-                </p>
-              </div>
-              <div
-                class="card-footer gallery-choices"
-                role="group"
-                aria-label="Choose a generated robot"
-              >
-                <button
-                  class="btn btn-sm active"
-                  data-design="arm_mecanum"
-                  aria-pressed="true"
-                  type="button"
-                >
-                  01 &nbsp; Arm</button
-                ><button
-                  class="btn btn-sm"
-                  data-design="tslot_mecanum"
-                  aria-pressed="false"
-                  type="button"
-                >
-                  02 &nbsp; LiDAR</button
-                ><button
-                  class="btn btn-sm"
-                  data-design="open_omni"
-                  aria-pressed="false"
-                  type="button"
-                >
-                  03 &nbsp; Omni
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="hero-evidence">
-            <a href="#results"
-              ><strong>+42–50 <span>pp</span></strong
-              ><span>more systems execute their programs</span></a
-            ><a href="#results"
-              ><strong>12–28<span>×</span></strong
-              ><span>less agent-written code</span></a
-            >
-            <div>
-              <strong>50 <span>tasks</span></strong
-              ><span>same agents, parts and time budget</span>
-            </div>
-            <a class="evidence-link" href="#results"
-              >See what we measured<img
-                class="icon"
-                src="assets/icons/arrow-right.svg"
-                alt=""></a>
-          </div>
-          <p class="evidence-note">
-            Simulation benchmark · paired comparisons within three agent/model
-            configurations · code ratios rounded.
-          </p>
-        </div>
-      </section>
-      <section
-        class="section workflow-section"
-        id="copilot"
-        aria-labelledby="copilot-title"
-      >
-        <div class="container-xl">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">How MobileCopilot works</p>
-              <h2 id="copilot-title">
-                The agent designs.<br>The compiler connects the pieces.
-              </h2>
-            </div>
-            <p>
-              A missing waypoint can break a valid-looking program. Here’s how
-              the paper’s warehouse example gets repaired.
-            </p>
-          </div>
-          <div class="workflow-layout">
-            <div>
-              <div class="request-example">
-                <p class="subheader">The request</p>
-                <p>
-                  “Patrol with this robot. Visit W1, W2, W3, then return.
-                  Minimum clearance: 0.15 m.”
-                </p>
-              </div>
-              <div
-                class="nav nav-pills flex-column workflow-tabs"
-                role="tablist"
-                aria-label="Compiler-guided workflow"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="nav-link active"
-                  id="step-select"
-                  data-bs-toggle="pill"
-                  data-bs-target="#panel-select"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls="panel-select"
-                >
-                  <span class="step-number">01</span
-                  ><span
-                    ><strong>Choose real components</strong
-                    ><small>Search the library by text or image</small></span
-                  ><img
-                    class="icon"
-                    src="assets/icons/arrow-right.svg"
-                    alt="">
-                </button>
-                <button
-                  class="nav-link"
-                  id="step-write"
-                  data-bs-toggle="pill"
-                  data-bs-target="#panel-write"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="panel-write"
-                  tabindex="-1"
-                >
-                  <span class="step-number">02</span
-                  ><span
-                    ><strong>Write one connected program</strong
-                    ><small
-                      >Robot, world, behavior and requirements</small
-                    ></span
-                  ><img
-                    class="icon"
-                    src="assets/icons/arrow-right.svg"
-                    alt="">
-                </button>
-                <button
-                  class="nav-link"
-                  id="step-repair"
-                  data-bs-toggle="pill"
-                  data-bs-target="#panel-repair"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="panel-repair"
-                  tabindex="-1"
-                >
-                  <span class="step-number">03</span
-                  ><span
-                    ><strong>Catch an error. Repair it.</strong
-                    ><small
-                      >Use compiler diagnostics to revise the program</small
-                    ></span
-                  ><img
-                    class="icon"
-                    src="assets/icons/arrow-right.svg"
-                    alt="">
-                </button>
-                <button
-                  class="nav-link"
-                  id="step-run"
-                  data-bs-toggle="pill"
-                  data-bs-target="#panel-run"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="panel-run"
-                  tabindex="-1"
-                >
-                  <span class="step-number">04</span
-                  ><span
-                    ><strong>Run the compiled system</strong
-                    ><small
-                      >Test the assembled robot and its behavior</small
-                    ></span
-                  ><img
-                    class="icon"
-                    src="assets/icons/arrow-right.svg"
-                    alt="">
-                </button>
-              </div>
-            </div>
-            <div class="card workflow-detail">
-              <div class="card-header">
-                <img class="icon" src="assets/icons/terminal.svg" alt=""><span
-                  class="card-title"
-                  >Warehouse patrol</span
-                ><span class="badge bg-secondary-lt ms-auto"
-                  >Paper walkthrough</span
-                >
-              </div>
-              <div class="tab-content card-body">
-                <div
-                  class="tab-pane active show"
-                  id="panel-select"
-                  role="tabpanel"
-                  aria-labelledby="step-select"
-                  tabindex="0"
-                >
-                  <p class="subheader">01 / Component search</p>
-                  <h3>A chassis, compatible wheels, and a LiDAR.</h3>
-                  <p>
-                    The agent inspects component images, dimensions and
-                    connector frames to decide what to use and where to mount
-                    it.
-                  </p>
-                  <div class="component-examples">
-                    <figure>
-                      <img
-                        src="assets/workflow/chassis.png"
-                        width="240"
-                        height="180"
-                        loading="lazy"
-                        alt="Chassis selected in the paper's warehouse example">
-                      <figcaption>Chassis</figcaption>
-                    </figure>
-                    <figure>
-                      <img
-                        src="assets/workflow/wheel.png"
-                        width="240"
-                        height="180"
-                        loading="lazy"
-                        alt="Wheel from the component library">
-                      <figcaption>Wheels</figcaption>
-                    </figure>
-                    <figure>
-                      <img
-                        src="assets/workflow/lidar.png"
-                        width="240"
-                        height="180"
-                        loading="lazy"
-                        alt="LiDAR sensor from the component library">
-                      <figcaption>LiDAR</figcaption>
-                    </figure>
-                  </div>
-                  <p class="small text-secondary mb-0">
-                    Geometry comes from the component library. MobileCopilot
-                    assembles existing parts.
-                  </p>
-                </div>
-                <div
-                  class="tab-pane"
-                  id="panel-write"
-                  role="tabpanel"
-                  aria-labelledby="step-write"
-                  tabindex="0"
-                >
-                  <p class="subheader">02 / MobileDSL program</p>
-                  <h3>Four modules share the same names.</h3>
-                  <p>
-                    A task refers to a goal in the world. Controller settings
-                    depend on the robot. The compiler checks these connections.
-                  </p>
-                  <dl class="module-list" id="mobiledsl">
-                    <div>
-                      <dt>
-                        <img
-                          class="icon"
-                          src="assets/icons/box.svg"
-                          alt="">CoreDSL
-                      </dt>
-                      <dd>Components, mounts and joints</dd>
-                    </div>
-                    <div>
-                      <dt>
-                        <img
-                          class="icon"
-                          src="assets/icons/map.svg"
-                          alt="">WorldDSL
-                      </dt>
-                      <dd>Obstacles, starting pose and named goals</dd>
-                    </div>
-                    <div>
-                      <dt>
-                        <img
-                          class="icon"
-                          src="assets/icons/route.svg"
-                          alt="">TaskDSL
-                      </dt>
-                      <dd>Navigation actions and their order</dd>
-                    </div>
-                    <div>
-                      <dt>
-                        <img
-                          class="icon"
-                          src="assets/icons/scan-line.svg"
-                          alt="">EvaluateDSL
-                      </dt>
-                      <dd>Observations and required bounds</dd>
-                    </div>
-                  </dl>
-                  <a class="link-primary" href="studio/"
-                    >Explore the language in Studio
-                    <img
-                      class="icon"
-                      src="assets/icons/arrow-up-right.svg"
-                      alt=""></a>
-                </div>
-                <div
-                  class="tab-pane"
-                  id="panel-repair"
-                  role="tabpanel"
-                  aria-labelledby="step-repair"
-                  tabindex="0"
-                >
-                  <p class="subheader">03 / Compiler feedback</p>
-                  <h3>The task uses W2. The world doesn’t define it.</h3>
-                  <div class="alert alert-danger" role="note">
-                    <img
-                      class="icon"
-                      src="assets/icons/circle-alert.svg"
-                      alt="">
-                    <div>
-                      <strong>error[unresolved_ref]</strong><br><code
-                        >unresolved '@world/wp2'</code
-                      >
-                    </div>
-                  </div>
-                  <p>
-                    The agent adds the missing goal to
-                    <code>warehouse.world</code> and recompiles.
-                  </p>
-                  <pre
-                    class="repair-code"
-                  ><code>  Goal wp1(pose="3.25 0 0 0 0 0 1")
-<mark>+ Goal wp2(pose="3.25 1.7 0 0 0 0 1")</mark>
-  Goal wp3(pose="0 1.7 0 0 0 0 1")</code></pre>
-                  <p class="text-success d-flex align-items-center gap-2">
-                    <img
-                      class="icon"
-                      src="assets/icons/check.svg"
-                      alt="">Repaired example: 0 errors, 1 advisory.
-                  </p>
-                  <a
-                    class="small"
-                    href="assets/workflow/warehouse.patch"
-                    download
-                    >Download the paper’s repair diff</a
-                  >
-                </div>
-                <div
-                  class="tab-pane"
-                  id="panel-run"
-                  role="tabpanel"
-                  aria-labelledby="step-run"
-                  tabindex="0"
-                >
-                  <p class="subheader">04 / Execution</p>
-                  <h3>Compilation is the starting line.</h3>
-                  <p>
-                    The compiler produces robot and world models, controller and
-                    navigation settings, a behavior tree and an evaluation plan.
-                  </p>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                      <strong>First: can the robot move?</strong><br><span
-                        class="text-secondary"
-                        >Apply velocity commands and check simulator pose.</span
-                      >
-                    </li>
-                    <li class="list-group-item px-0">
-                      <strong>Then: can it complete its behavior?</strong
-                      ><br><span class="text-secondary"
-                        >Check actions, goals, collisions and time limits.</span
-                      >
-                    </li>
-                  </ul>
-                  <p class="small text-secondary mt-3 mb-0">
-                    In the benchmark, simulation happens after authoring. Agents
-                    receive static diagnostics, not simulation feedback; the
-                    common runtime evaluator scores every condition.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="results" aria-labelledby="results-title">
-        <div class="container-xl">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">The measured difference</p>
-              <h2 id="results-title">
-                More working systems.<br>Less code to get there.
-              </h2>
-            </div>
-            <p>
-              The same agent tackles the same 50 requests with MobileDSL and
-              with directly authored ROS/Gazebo files.
-            </p>
-          </div>
-          <div class="results-layout">
-            <div class="card result-chart-card">
-              <div class="card-header flex-wrap gap-3 justify-content-between">
-                <h3 class="card-title" id="chart-title">
-                  Completes its programmed behavior
-                </h3>
-                <label class="visually-hidden" for="metric"
-                  >Choose a benchmark metric</label
-                ><select class="form-select w-auto" id="metric">
-                  <option value="execution">System execution</option>
-                  <option value="motion">Motion response</option>
-                  <option value="loc">Authored code</option>
-                  <option value="time">Generation time</option>
-                  <option value="cost">API cost</option>
-                </select>
-              </div>
-              <div class="card-body">
-                <div class="chart-legend">
-                  <span
-                    ><i class="legend-swatch dsl" aria-hidden="true"></i
-                    >MobileDSL</span
-                  ><span
-                    ><i class="legend-swatch baseline" aria-hidden="true"></i
-                    >ROS/Gazebo files</span
-                  ><span class="text-secondary" id="metric-direction"
-                    >Higher is better · %</span
-                  >
-                </div>
-                <div class="chart-container">
-                  <canvas
-                    id="results-chart"
-                    role="img"
-                    aria-label="System execution: MobileDSL versus ROS/Gazebo files. Codex gpt-5.6-sol: 74 versus 24 percent. Codex gpt-6-astra: 82 versus 40 percent. Claude Code claude-opus-4-8: 64 versus 22 percent."
-                  ></canvas>
-                  <p id="chart-fallback" hidden>
-                    Chart unavailable. All measurements are in the table below.
-                  </p>
-                </div>
-                <p class="small text-secondary mb-0">
-                  50 attempts per condition, including failures. One attempt per
-                  request; revisions allowed within 1,800 seconds.
-                </p>
-              </div>
-            </div>
-            <aside
-              class="result-reading"
-              aria-label="Benchmark interpretation"
-              aria-live="polite"
-              aria-atomic="true"
-            >
-              <p class="eyebrow">What this means</p>
-              <strong class="result-number" id="result-number"
-                >37 <span>vs 12</span></strong
-              >
-              <h3 id="result-heading">working systems out of 50.</h3>
-              <p id="result-explanation">
-                With Codex / gpt-5.6-sol, 25 more designs completed their
-                programmed behavior using MobileDSL. All three agent
-                configurations improved.
-              </p>
-              <p class="small text-secondary" id="result-context">
-                Moving is only the first check: 98% moved, but 74% completed
-                their behavior. The gap exposes integration failures beyond
-                basic mobility.
-              </p>
-            </aside>
-          </div>
-          <p class="measurement-note">
-            <img class="icon" src="assets/icons/scan-line.svg" alt=""><span
-              ><strong>What “success” means:</strong> completing the generated
-              program’s behavior in simulation. This does not independently
-              establish that the design fulfills the original request.</span
-            >
-          </p>
-          <div
-            class="accordion accordion-flush research-details"
-            id="research-details"
-          >
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#result-tables"
-                  aria-expanded="false"
-                  aria-controls="result-tables"
-                >
-                  Reported measurements
-                  <span class="text-secondary ms-2">/ paper Table I</span>
-                </button>
-              </h3>
-              <div id="result-tables" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="table-responsive">
-                    <table class="table table-vcenter">
-                      <caption>
-                        Per-attempt means; tokens are in thousands. Success
-                        rates include all 50 attempts.
-                      </caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">Agent / model</th>
-                          <th scope="col">Representation</th>
-                          <th scope="col">Motion %</th>
-                          <th scope="col">Execution %</th>
-                          <th scope="col">Code lines</th>
-                          <th scope="col">Input tokens k</th>
-                          <th scope="col">Output tokens k</th>
-                          <th scope="col">Time s</th>
-                          <th scope="col">Cost $</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">Codex / gpt-5.6-sol</th>
-                          <td>MobileDSL</td>
-                          <td>98</td>
-                          <td>74</td>
-                          <td>43.7</td>
-                          <td>659.43</td>
-                          <td>5.65</td>
-                          <td>285</td>
-                          <td>0.550</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Codex / gpt-5.6-sol</th>
-                          <td>ROS/Gazebo</td>
-                          <td>56</td>
-                          <td>24</td>
-                          <td>505.3</td>
-                          <td>1,793.43</td>
-                          <td>18.37</td>
-                          <td>731</td>
-                          <td>1.406</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Codex / gpt-6-astra</th>
-                          <td>MobileDSL</td>
-                          <td>100</td>
-                          <td>82</td>
-                          <td>46.8</td>
-                          <td>419.05</td>
-                          <td>2.52</td>
-                          <td>151</td>
-                          <td>0.871</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Codex / gpt-6-astra</th>
-                          <td>ROS/Gazebo</td>
-                          <td>78</td>
-                          <td>40</td>
-                          <td>1,301.9</td>
-                          <td>569.17</td>
-                          <td>5.62</td>
-                          <td>250</td>
-                          <td>1.291</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Claude Code / claude-opus-4-8</th>
-                          <td>MobileDSL</td>
-                          <td>96</td>
-                          <td>64</td>
-                          <td>41.5</td>
-                          <td>1,202.82</td>
-                          <td>15.14</td>
-                          <td>268</td>
-                          <td>1.485</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Claude Code / claude-opus-4-8</th>
-                          <td>ROS/Gazebo</td>
-                          <td>58</td>
-                          <td>22</td>
-                          <td>870.0</td>
-                          <td>2,227.61</td>
-                          <td>39.95</td>
-                          <td>569</td>
-                          <td>2.959</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p class="small text-secondary mb-0">
-                    Input/output tokens accumulate across all authoring calls,
-                    including cached input and revisions. Simulation is excluded
-                    from authoring effort. Costs use the provider rates recorded
-                    on September 11, 2026; they are not current price quotes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#ablation"
-                  aria-expanded="false"
-                  aria-controls="ablation"
-                >
-                  Why does it help?
-                  <span class="text-secondary ms-2">/ module ablation</span>
-                </button>
-              </h3>
-              <div id="ablation" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="ablation-reading">
-                    <div>
-                      <h4>Assembly does the heavy lifting.</h4>
-                      <p>
-                        Replacing CoreDSL with explicit robot files drops
-                        execution from <strong>74% to 36%</strong> and increases
-                        code from 43.7 to 333.4 lines. This is the largest
-                        change among individual module replacements.
-                      </p>
-                    </div>
-                    <div>
-                      <h4>Compact code is not always faster to author.</h4>
-                      <p>
-                        Replacing EvaluateDSL increases code, but reduces tokens
-                        and time. The shared runtime checks remain in place. A
-                        74% versus 70% success difference is only two cases.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table table-vcenter">
-                      <caption>
-                        Paper Table III. Codex / gpt-5.6-sol, 50 attempts per
-                        configuration.
-                      </caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">Configuration</th>
-                          <th scope="col">Motion %</th>
-                          <th scope="col">Execution %</th>
-                          <th scope="col">Code lines</th>
-                          <th scope="col">Tokens k</th>
-                          <th scope="col">Time s</th>
-                          <th scope="col">Cost $</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">Full MobileDSL</th>
-                          <td>98</td>
-                          <td>74</td>
-                          <td>43.7</td>
-                          <td>665</td>
-                          <td>285</td>
-                          <td>0.55</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">No CoreDSL</th>
-                          <td>84</td>
-                          <td>36</td>
-                          <td>333.4</td>
-                          <td>1,126</td>
-                          <td>368</td>
-                          <td>0.96</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">No WorldDSL</th>
-                          <td>98</td>
-                          <td>70</td>
-                          <td>135.1</td>
-                          <td>742</td>
-                          <td>246</td>
-                          <td>0.64</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">No TaskDSL</th>
-                          <td>92</td>
-                          <td>74</td>
-                          <td>170.2</td>
-                          <td>1,129</td>
-                          <td>272</td>
-                          <td>0.89</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">No EvaluateDSL</th>
-                          <td>96</td>
-                          <td>70</td>
-                          <td>89.7</td>
-                          <td>650</td>
-                          <td>206</td>
-                          <td>0.56</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">ROS/Gazebo files</th>
-                          <td>56</td>
-                          <td>24</td>
-                          <td>505.3</td>
-                          <td>1,812</td>
-                          <td>731</td>
-                          <td>1.41</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p class="small text-secondary">
-                    WorldDSL and TaskDSL chiefly reduce authoring work here:
-                    replacing TaskDSL keeps execution at 74% but increases code,
-                    tokens and cost.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#protocol"
-                  aria-expanded="false"
-                  aria-controls="protocol"
-                >
-                  How the benchmark was run
-                  <span class="text-secondary ms-2">/ scope and limits</span>
-                </button>
-              </h3>
-              <div id="protocol" class="accordion-collapse collapse">
-                <div class="accordion-body protocol-grid">
-                  <div>
-                    <h4>50 design requests</h4>
-                    <p>
-                      25 text-only and 25 with images. 32 involve basic motion;
-                      18 involve obstacle avoidance or waypoint navigation.
-                    </p>
-                  </div>
-                  <div>
-                    <h4>Same conditions</h4>
-                    <p>
-                      Same requests, library, 1,800-second budget and simulation
-                      environment. Each format gets its own documentation and
-                      examples. All failed attempts stay in the denominator.
-                    </p>
-                  </div>
-                  <div>
-                    <h4>Static feedback during authoring</h4>
-                    <p>
-                      Agents can inspect geometry and renders, compile and
-                      revise. They receive no simulation feedback. A common
-                      evaluator checks submitted systems after authoring;
-                      authored evaluation plans are not executed.
-                    </p>
-                  </div>
-                  <div>
-                    <h4>Scope of the evidence</h4>
-                    <p>
-                      One attempt per task and condition. Library coverage
-                      limits possible designs. These are simulation comparisons;
-                      hardware clips are qualitative demonstrations, not a
-                      measured real-world success rate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="section hardware-section"
-        id="real"
-        aria-labelledby="real-title"
-      >
-        <div class="container-xl">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">On a physical robot</p>
-              <h2 id="real-title">
-                Out of simulation.<br>Into the corridor.
-              </h2>
-            </div>
-            <p>
-              Watch the physical platform navigate around obstacles. The
-              side-by-side view shows the robot’s motion and what its camera
-              sees.
-            </p>
-          </div>
-          <div class="hardware-layout">
-            <div>
-              <div
-                class="nav nav-pills mb-3"
-                role="tablist"
-                aria-label="Physical robot demonstrations"
-              >
-                <button
-                  class="nav-link active"
-                  id="demo-tab-1"
-                  data-bs-toggle="pill"
-                  data-bs-target="#demo-1"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls="demo-1"
-                >
-                  Course A</button
-                ><button
-                  class="nav-link"
-                  id="demo-tab-2"
-                  data-bs-toggle="pill"
-                  data-bs-target="#demo-2"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="demo-2"
-                  tabindex="-1"
-                >
-                  Course B · run 1</button
-                ><button
-                  class="nav-link"
-                  id="demo-tab-3"
-                  data-bs-toggle="pill"
-                  data-bs-target="#demo-3"
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="demo-3"
-                  tabindex="-1"
-                >
-                  Course B · run 2
-                </button>
-              </div>
-              <div class="tab-content">
-                <div
-                  class="tab-pane active show"
-                  id="demo-1"
-                  role="tabpanel"
-                  aria-labelledby="demo-tab-1"
-                  tabindex="0"
-                >
-                  <video
-                    controls
-                    muted
-                    playsinline
-                    preload="none"
-                    poster="assets/demo_1_poster.jpg"
-                    width="1448"
-                    height="720"
-                    aria-label="Course A: physical robot avoiding corridor obstacles at twice real-time speed"
-                  >
-                    <source src="assets/demo_1.mp4" type="video/mp4">
-                  </video>
-                  <p class="video-caption">
-                    Course A · 10-second clip · recorded at 2× speed.
-                    <a href="assets/demo_1.mp4">Open video</a>
-                  </p>
-                </div>
-                <div
-                  class="tab-pane"
-                  id="demo-2"
-                  role="tabpanel"
-                  aria-labelledby="demo-tab-2"
-                  tabindex="0"
-                >
-                  <video
-                    controls
-                    muted
-                    playsinline
-                    preload="none"
-                    poster="assets/demo_2_poster.jpg"
-                    width="1448"
-                    height="720"
-                    aria-label="Course B, first run: physical robot avoiding corridor obstacles at twice real-time speed"
-                  >
-                    <source src="assets/demo_2.mp4" type="video/mp4">
-                  </video>
-                  <p class="video-caption">
-                    Course B, run 1 · 14-second clip · recorded at 2× speed.
-                    <a href="assets/demo_2.mp4">Open video</a>
-                  </p>
-                </div>
-                <div
-                  class="tab-pane"
-                  id="demo-3"
-                  role="tabpanel"
-                  aria-labelledby="demo-tab-3"
-                  tabindex="0"
-                >
-                  <video
-                    controls
-                    muted
-                    playsinline
-                    preload="none"
-                    poster="assets/demo_3_poster.jpg"
-                    width="1448"
-                    height="720"
-                    aria-label="Course B, second run: physical robot avoiding corridor obstacles at twice real-time speed"
-                  >
-                    <source src="assets/demo_3.mp4" type="video/mp4">
-                  </video>
-                  <p class="video-caption">
-                    Course B, run 2 · 14-second clip · recorded at 2× speed.
-                    <a href="assets/demo_3.mp4">Open video</a>
-                  </p>
-                </div>
-              </div>
-              <figure
-                class="d-flex align-items-center gap-3 mt-4 mb-0 hardware-platform"
-              >
-                <a
-                  href="assets/hardware-closeup.jpg"
-                  aria-label="Open the original physical robot photograph"
-                  ><img
-                    class="rounded"
-                    src="assets/hardware-closeup.jpg"
-                    width="5712"
-                    height="4284"
-                    loading="lazy"
-                    alt="Physical MentorPi M1 platform with four mecanum wheels, onboard electronics and a front depth camera"></a>
-                <figcaption>
-                  <strong>The physical platform</strong><br>MentorPi M1 ·
-                  onboard compute and depth camera.<br><a
-                    href="assets/hardware-closeup.jpg"
-                    >View original photo</a
-                  >
-                </figcaption>
-              </figure>
-            </div>
-            <aside
-              class="hardware-reading"
-              aria-label="Understanding the hardware footage"
-            >
-              <p class="subheader">Read the footage</p>
-              <h3>One run. Three views.</h3>
-              <dl class="footage-key">
-                <div>
-                  <dt>Left</dt>
-                  <dd>
-                    External camera: follow the robot around the cabinets.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Top right</dt>
-                  <dd>Onboard RGB: see the corridor from the robot.</dd>
-                </div>
-                <div>
-                  <dt>Bottom right</dt>
-                  <dd>
-                    Depth: nearby obstacles appear red. Black means no return.
-                  </dd>
-                </div>
-              </dl>
-              <p class="small text-secondary">
-                Qualitative hardware demonstrations. These clips do not
-                establish a real-world success rate.
-              </p>
-              <details class="hardware-specs">
-                <summary>Platform &amp; capture details</summary>
-                <dl class="mt-3">
-                  <dt>Platform</dt>
-                  <dd>Hiwonder MentorPi M1 · four mecanum wheels</dd>
-                  <dt>Compute</dt>
-                  <dd>Raspberry Pi 5 · ROS 2 Humble</dd>
-                  <dt>Camera</dt>
-                  <dd>Angstrong depth camera · 640 × 480</dd>
-                  <dt>Displayed depth</dt>
-                  <dd>0.3–3.5 m · red is near</dd>
-                </dl>
-              </details>
-            </aside>
-          </div>
-        </div>
-      </section>
-      <section
-        class="section community-section"
-        id="community"
-        aria-labelledby="community-title"
-      >
-        <div class="container-xl">
-          <div class="community-layout">
-            <div>
-              <p class="eyebrow">Try it. Talk to us.</p>
-              <h2 id="community-title">Start with the parts.</h2>
-              <p class="text-secondary">
-                Explore the library and editors in Studio.<br>The hosted
-                compiler is in development.
-              </p>
-              <a class="btn btn-primary" href="studio/"
-                >Open Studio preview
-                <img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></a>
-            </div>
-            <div class="list-group list-group-flush community-links">
-              <a
-                class="list-group-item list-group-item-action"
-                href="https://github.com/MIT-CDFG/robotdsl-site/discussions"
-                ><img
-                  class="icon"
-                  src="assets/icons/message-circle.svg"
-                  alt=""><span
-                  ><strong>Ask a question or share a design</strong
-                  ><small>GitHub Discussions</small></span
-                ><img
-                  class="icon ms-auto"
-                  src="assets/icons/arrow-up-right.svg"
-                  alt=""></a
-              ><a
-                class="list-group-item list-group-item-action"
-                href="https://github.com/MIT-CDFG/robotdsl-site/issues"
-                ><img class="icon" src="assets/icons/bug.svg" alt=""><span
-                  ><strong>Report a problem</strong
-                  ><small>Site, Studio or generated designs</small></span
-                ><img
-                  class="icon ms-auto"
-                  src="assets/icons/arrow-up-right.svg"
-                  alt=""></a
-              ><a
-                class="list-group-item list-group-item-action"
-                href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md"
-                ><img class="icon" src="assets/icons/box.svg" alt=""><span
-                  ><strong>Contribute a component</strong
-                  ><small
-                    >Read the guide · uploads await the hosted service</small
-                  ></span
-                ><img
-                  class="icon ms-auto"
-                  src="assets/icons/arrow-up-right.svg"
-                  alt=""></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paper-section" id="paper" aria-labelledby="paper-title">
-        <div class="container-xl">
-          <div class="paper-line">
-            <div>
-              <p class="subheader">The research</p>
-              <h2 id="paper-title">
-                MobileCopilot: A Domain-Specific Language Framework<br
-                  class="d-none d-md-block">
-                for Agentic Mobile Robot Design
-              </h2>
-              <p class="small text-secondary mb-0">
-                RobotDSL Team · manuscript · publication details pending
-              </p>
-            </div>
-            <div class="btn-list">
-              <button
-                class="btn"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#video-dialog"
-              >
-                <img
-                  class="icon"
-                  src="assets/icons/play.svg"
-                  alt="">Video</button
-              ><button
-                class="btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#citation"
-                aria-controls="citation"
-                aria-expanded="false"
-              >
-                <img class="icon" src="assets/icons/code-xml.svg" alt="">Cite
-              </button>
-            </div>
-          </div>
-          <div class="collapse" id="citation">
-            <div class="citation-content">
-              <div
-                class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2"
-              >
-                <p class="small text-secondary mb-0">
-                  Provisional BibTeX; update when publication details are
-                  available.
-                </p>
-                <button class="btn btn-sm" id="copy-citation" type="button">
-                  <img class="icon" src="assets/icons/copy.svg" alt=""><span
-                    >Copy BibTeX</span
-                  >
-                </button>
-              </div>
-              <pre id="bibtex" tabindex="0">
-@misc{robotdsl_mobilecopilot,
-  title = {MobileCopilot: A Domain-Specific Language Framework
-           for Agentic Mobile Robot Design},
-  author = {{RobotDSL Team}},
-  note = {Manuscript; publication details pending}
-}</pre>
-              <p
-                class="small text-secondary mb-0"
-                id="copy-status"
-                role="status"
-              ></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container-xl d-flex justify-content-between flex-wrap gap-2">
-        <span
-          >RobotDSL
-          <span class="text-secondary">/ MobileDSL + MobileCopilot</span></span
-        >
-        <div class="d-flex gap-3">
-          <a href="https://github.com/MIT-CDFG/robotdsl-site">GitHub</a
-          ><a href="LICENSE.md">Licenses</a
-          ><a href="docs/asset-sources.md">Asset credits</a>
-        </div>
-      </div>
-    </footer>
-    <div
-      class="modal modal-blur fade"
-      id="video-dialog"
-      inert
-      tabindex="-1"
-      aria-labelledby="video-title"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="video-title">
-              MobileDSL &amp; MobileCopilot · 2:57
-            </h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close video"
-            ></button>
-          </div>
-          <div class="modal-body p-0">
-            <video
-              id="paper-video"
-              controls
-              playsinline
-              preload="none"
-              poster="assets/video_poster.jpg"
-              width="1280"
-              height="720"
-            >
-              <source src="assets/mobilecopilot_video.mp4" type="video/mp4">
-              <track
-                src="assets/video_chapters.vtt"
-                kind="chapters"
-                label="Chapters"
-                default>
-            </video>
-          </div>
-          <div class="modal-footer justify-content-between">
-            <p class="small text-secondary m-0">
-              Overview, compiler workflow, benchmark and hardware.
-            </p>
-            <a href="assets/mobilecopilot_video.mp4" class="small"
-              >Open video directly</a
-            >
-          </div>
-        </div>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="RobotDSL: domain-specific languages and an LLM copilot for designing robots. MobileDSL is the first language; MobileCopilot Studio lets you design a mobile robot with your own API key.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RobotDSL">
+<meta property="og:title" content="RobotDSL: domain-specific languages that compile into working robots">
+<meta property="og:description" content="MobileDSL and MobileCopilot: one program describes the robot, its world, its behavior and its checks; a compiler turns it into a working system. Try the MobileCopilot Studio preview.">
+<meta property="og:url" content="https://mit-cdfg.github.io/robotdsl-site/">
+<meta property="og:image" content="https://mit-cdfg.github.io/robotdsl-site/assets/og_image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MobileCopilot title card with five generated mobile robots">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/icons/bot.svg">
+<style>img,video{max-width:100%}[hidden]{display:none!important}</style>
+<title>RobotDSL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Published style: GitHub's Markdown CSS for the code listing. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+  /* Light only: the figures are paper figures on white. */
+  :root {
+    color-scheme: light;
+    --ground: #ffffff;
+    --tint: #f6f7f9;
+    --panel: #ffffff;
+    --ink: #111827;
+    --text: #2b3440;
+    --muted: #6b7280;
+    --line: #e3e6ea;
+    --line-strong: #c9ced6;
+    --accent: #1f4e8c;
+    --accent-soft: #e8eef7;
+    --ok: #2f7d4f;
+    --code: #f3f5f8;
+    --code-ink: #1f2937;
+    --code-key: #1f4e8c;
+    --code-str: #8a4b08;
+    --code-c: #7c8694;
+    --serif: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); }
+  h1, h2, h3 { margin: 0; color: var(--ink); text-wrap: balance; font-family: var(--serif); font-weight: 600; letter-spacing: -.005em; }
+  h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); line-height: 1.12; }
+  h2 { font-size: clamp(1.6rem, 2.8vw, 2.05rem); line-height: 1.2; }
+  h3 { font-size: 1.12rem; line-height: 1.35; }
+  p { margin: 0; }
+  code { font-family: var(--mono); font-size: .88em; background: var(--code); color: var(--code-ink); padding: 1px 5px; border-radius: 4px; }
+  .eyebrow { font-family: var(--sans); font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 22px; }
+  /* nav */
+  .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--ground) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .nav .wrap { display: flex; align-items: center; gap: 18px; min-height: 60px; }
+  .brand { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .brand .ico { width: 22px; height: 22px; color: var(--accent); }
+  .nav nav { margin-left: auto; display: flex; gap: 2px; flex-wrap: wrap; justify-content: flex-end; }
+  .nav nav a { font-size: .95rem; font-weight: 500; text-decoration: none; padding: 8px 11px; border-radius: 6px; color: var(--text); }
+  .nav nav a:hover, .nav nav a:focus-visible { color: var(--accent); background: var(--accent-soft); outline: none; }
+  @media (max-width: 720px) {
+    .nav .wrap { flex-wrap: wrap; gap: 0; padding-top: 10px; }
+    .nav nav { width: 100%; margin-left: 0; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; }
+    .nav nav a { flex: 0 0 auto; }
+  }
+  section[id] { scroll-margin-top: 76px; }
+  @media (max-width: 720px) { section[id] { scroll-margin-top: 108px; } }
+  /* hero */
+  .hero .wrap { padding-block: 56px 36px; display: grid; gap: 14px; }
+  @media (max-width: 860px) { .hero .wrap { padding-block: 40px 28px; gap: 12px; } }
+  .hero .text { display: grid; gap: 18px; justify-items: center; text-align: center; }
+  .hero .eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
+  .tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: none; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .hero .lede { max-width: 62ch; font-size: 1.15rem; line-height: 1.6; text-align: left; }   /* centred block, left-aligned lines: wrapped centred lines are hard to read */
+  .hero .cta { justify-content: center; }
+  .hero .lede b { color: var(--ink); font-weight: 600; }
+  .cta { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 6px; border: 1px solid var(--line-strong); color: var(--ink); background: var(--panel); }
+  .btn:hover, .btn:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  /* Icons: Lucide SVGs (ISC) downloaded unmodified from lucide-static 1.47.0 into assets/icons/, drawn in the text colour through a mask. */
+  .ico { display: inline-block; width: 18px; height: 18px; flex: none; background-color: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+  .ico-bot { --icon: url(assets/icons/bot.svg); } .ico-studio { --icon: url(assets/icons/app-window.svg); } .ico-video { --icon: url(assets/icons/video.svg); }
+  .ico-paper { --icon: url(assets/icons/file-text.svg); } .ico-community { --icon: url(assets/icons/users.svg); } .ico-results { --icon: url(assets/icons/chart-column.svg); } .ico-x { --icon: url(assets/icons/x.svg); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.primary:hover, .btn.primary:focus-visible { color: #fff; filter: brightness(1.08); }
+  .btn.soon { opacity: .8; }
+  .btn.soon small { font-weight: 500; font-size: .78rem; opacity: .85; }
+  /* Phones: keep the four hero buttons on one row, icon above the label. */
+  @media (max-width: 560px) { .hero .cta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .hero .cta .btn { flex-direction: column; justify-content: center; gap: 4px; padding: 9px 2px; font-size: .8rem; } }
+  @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  /* stats */
+  /* sections */
+  section.block { padding-block: 64px; border-bottom: 1px solid var(--line); }
+  #video { padding-block: 8px 48px; }   /* the video follows the hero directly, without a heading */
+  .head { display: grid; gap: 8px; margin-bottom: 28px; max-width: 70ch; }
+  .head .eyebrow { color: var(--accent); }
+  .prose { max-width: 70ch; display: grid; gap: 14px; }
+  .prose b { color: var(--ink); font-weight: 600; }
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+  figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+  .stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .stack > *, .two > * { min-width: 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  /* Fig. 1 in 3D (Three.js); the paper figure is the fallback when WebGL or the model is unavailable. */
+  .fig3d .stage { position: relative; aspect-ratio: 4 / 3; background: #fff; overflow: hidden; }
+  .fig3d canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+  .fig3d canvas:active { cursor: grabbing; }
+  .fig3d .loading { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; font-size: .9rem; color: var(--muted); pointer-events: none; }
+  .fig3d .labels { position: absolute; inset: 0; pointer-events: none; }
+  .fig3d .label { position: absolute; transform: translate(-50%, -100%); text-align: center; font-size: .78rem; line-height: 1.25; color: var(--text); white-space: nowrap; opacity: 0; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff; }
+  .fig3d .label.below { transform: translate(-50%, 0); }
+  .fig3d .label b { display: block; font-size: .9rem; font-weight: 600; color: #b3261e; }
+  .fig3d .bar { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 6px; white-space: nowrap; }   /* under the view, not over the robot */
+  .fig3d .toggle { padding: 6px 12px; font-size: .85rem; }
+  .fig3d .toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  .fig3d .hint { font-size: .78rem; color: var(--muted); }
+  .fig3d .fallback { display: none; }
+  .fig3d.failed canvas, .fig3d.failed .bar, .fig3d.failed .loading, .fig3d.failed .labels { display: none; }
+  .fig3d.failed .stage { aspect-ratio: auto; border: 0; }
+  .fig3d.failed .fallback { display: block; }
+  @media (max-width: 820px) { .two { grid-template-columns: 1fr; } }
+  /* modules */
+  /* Language: modules and listing on the left, the 3D Fig. 1 on the right; no frames. */
+  .lang { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: center; }
+  @media (max-width: 900px) { .lang { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+  .modules { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; margin: 0 0 32px; }
+  .modules dt { font-family: var(--mono); font-size: .82rem; color: var(--accent); }
+  .modules dt b { font-family: var(--sans); font-size: .95rem; font-weight: 600; color: var(--ink); margin-left: 6px; }
+  .modules dd { margin: 3px 0 0; font-size: .92rem; line-height: 1.45; }
+  @media (max-width: 480px) { .modules { grid-template-columns: 1fr; } }
+  .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 12px; line-height: 1.7; }
+  .code .ln { display: block; }
+  .listing pre.code { font-family: var(--mono); font-size: 12px; line-height: 1.6; }   /* GitHub's code block; sized so every line of the listing fits */
+  /* Video: Magic UI's Hero Video Dialog (magicui.design, MIT) in plain CSS: a thumbnail card with a frosted play button opens the video
+     over the page. The player in the dialog is Vidstack's default video layout; chapters (assets/video_chapters.vtt) mark its seek bar and menu. */
+  .hvd { position: relative; display: block; width: 100%; cursor: pointer; border: 0; background: transparent; padding: 0; border-radius: 6px; }
+  .hvd img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); transition: all .2s ease-out; }
+  .hvd:hover img, .hvd:focus-visible img { filter: brightness(.8); }
+  .hvd:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .hvd .center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transform: scale(.9); transition: all .2s ease-out; }
+  .hvd:hover .center, .hvd:focus-visible .center { transform: scale(1); }
+  .hvd .ring { display: flex; width: 112px; height: 112px; align-items: center; justify-content: center; border-radius: 50%; background: color-mix(in srgb, var(--accent) 10%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .hvd .disc { display: flex; width: 80px; height: 80px; align-items: center; justify-content: center; border-radius: 50%; background: linear-gradient(to bottom, color-mix(in srgb, var(--accent) 30%, transparent), var(--accent)); box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1); transition: all .2s ease-out; }
+  .hvd:hover .disc, .hvd:focus-visible .disc { transform: scale(1.2); }
+  .hvd .disc svg { width: 32px; height: 32px; fill: #fff; stroke: #fff; stroke-width: 2; stroke-linejoin: round; filter: drop-shadow(0 4px 3px rgb(0 0 0 / .07)) drop-shadow(0 2px 2px rgb(0 0 0 / .06)); }
+  .hvd-modal { border: 0; padding: 0; background: transparent; width: min(896px, calc(100vw - 32px)); max-width: none; overflow: visible; }
+  .hvd-modal::backdrop { background: rgb(0 0 0 / .5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .hvd-modal .inner { position: relative; }
+  .hvd-modal[open] .inner { animation: hvd-in .35s cubic-bezier(.2, .9, .3, 1.15); }   /* the component's "from-center" spring */
+  @keyframes hvd-in { from { transform: scale(.5); opacity: 0; } to { transform: none; opacity: 1; } }
+  .hvd-modal .close { position: absolute; top: -64px; right: 0; display: flex; padding: 8px; border: 0; border-radius: 50%; background: rgb(23 23 23 / .5); color: #fff; box-shadow: 0 0 0 1px rgb(255 255 255 / .2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); cursor: pointer; }
+  .hvd-modal .close .ico { width: 20px; height: 20px; }
+  .hvd-modal .frame { overflow: hidden; border-radius: 16px; border: 2px solid #fff; }
+  .hvd-modal media-player { display: block; aspect-ratio: 16 / 9; --video-bg: #fff; --video-brand: var(--accent); --video-font-family: var(--sans); --video-border: none; --video-border-radius: 0; }
+  @media (prefers-reduced-motion: reduce) { .hvd img, .hvd .center, .hvd .disc { transition: none; } .hvd-modal[open] .inner { animation: none; } }
+  @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
+  .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
+  /* pipeline */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: step; }
+  .step { display: grid; gap: 6px; align-content: start; padding-top: 12px; border-top: 2px solid var(--line-strong); }
+  .step::before { counter-increment: step; content: counter(step, decimal-leading-zero); font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+  .step.tool { border-top-color: var(--accent); }
+  .step h3 { font-family: var(--sans); font-weight: 600; font-size: 1rem; }
+  .step p { font-size: .9rem; color: var(--muted); }
+  @media (max-width: 1000px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .steps { grid-template-columns: 1fr 1fr; } }
+  .legend { font-size: .86rem; color: var(--muted); }
+  .legend i { display: inline-block; width: 22px; height: 2px; background: var(--accent); vertical-align: middle; margin: 0 6px 0 2px; }
+  /* tables */
+  .tablewrap { overflow-x: auto; border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 720px; }
+  th, td { padding: 9px 12px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  td:first-child, th:first-child, td.t, th.t { text-align: left; }
+  tr.best td { color: var(--ink); font-weight: 600; }
+  .tablecap { font-size: .88rem; color: var(--muted); margin-top: 10px; max-width: 80ch; }
+  .tablecap b { color: var(--ink); font-weight: 600; }
+  /* demos */
+  .tabs { display: flex; gap: 0; overflow-x: auto; border-bottom: 1px solid var(--line-strong); }
+  .tab { font-family: var(--sans); font-size: .95rem; font-weight: 500; padding: 10px 16px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--muted); cursor: pointer; }
+  .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .demo { margin-top: 18px; }
+  .demo video { width: 100%; height: auto; aspect-ratio: 1448 / 720; max-width: 100%; border-radius: 8px; border: 1px solid var(--line); background: #fff; display: block; }
+  .demo .cap { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+  .specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 32px; margin: 0; border-top: 1px solid var(--line-strong); }
+  .specs div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+  .specs dt { color: var(--muted); }
+  .specs dd { margin: 0; text-align: right; color: var(--ink); font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) { .specs { grid-template-columns: 1fr; } }
+  .note { font-size: .9rem; color: var(--muted); }
+  footer { padding-block: 30px 44px; color: var(--muted); font-size: .88rem; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+</style>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/vendor/chartjs/chart.umd.js" defer></script>
+<script src="assets/site.js" defer></script>
+<noscript><style>#video .hvd, .generated-designs .gallery-tools, .generated-designs .gallery-choices, #robot-canvas, #robot-status, #copy-citation, .result-chart { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
+    <nav aria-label="Sections">
+      <a href="#video">Video</a>
+      <a href="#mobiledsl">MobileDSL</a>
+      <a href="#copilot">MobileCopilot</a>
+      <a href="#results">Results</a>
+      <a href="#real">Real robots</a>
+      <a href="#community">Community</a>
+      <a href="#paper">Paper</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="text">
+      <p class="eyebrow">RobotDSL Team <span class="tag">MobileDSL 1.0</span></p>
+      <h1>Domain-specific languages that compile into working robots</h1>
+      <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
+      <div class="cta">
+        <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
+        <a class="btn" href="#video"><span class="ico ico-video" aria-hidden="true"></span>Video</a>
+        <a class="btn" href="#paper"><span class="ico ico-paper" aria-hidden="true"></span>Paper</a>
+        <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
       </div>
     </div>
-    <noscript
-      ><div class="container-xl py-3">
-        3D controls, tabs and charts need JavaScript.
-        <a href="assets/mobilecopilot_video.mp4">Watch the overview video</a>,
-        <a href="studio/">open Studio</a>, or read the expanded results.
-      </div></noscript
-    >
-  </body>
+  </div>
+</section>
+
+<section class="block" id="video">
+  <div class="wrap">
+    <button type="button" class="hvd" aria-haspopup="dialog" aria-label="Play the video: MobileDSL and MobileCopilot in three minutes (2:57)">
+      <img src="assets/video_poster.jpg" width="1280" height="720" alt="">
+      <span class="center"><span class="ring"><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span></span></span>   <!-- Lucide play (ISC), filled as in the component -->
+    </button>
+    <dialog class="hvd-modal" id="video-dialog" aria-labelledby="video-title">
+      <span id="video-title" hidden>MobileDSL and MobileCopilot in three minutes</span>
+      <div class="inner">
+        <button type="button" class="close" aria-label="Close the video"><span class="ico ico-x" aria-hidden="true"></span></button>
+        <div class="frame">
+          <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
+            <media-provider>
+              <media-poster class="vds-poster" src="assets/video_poster.jpg" alt=""></media-poster>
+              <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
+            </media-provider>
+            <media-video-layout></media-video-layout>
+          </media-player>
+        </div>
+      </div>
+    </dialog>
+    <noscript><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
+  </div>
+</section>
+
+<section class="block" id="mobiledsl">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Language</span><h2>One program, four modules</h2>
+      <p>MobileDSL folds the robot, its world, its behavior and its checks into one program; shared names keep them consistent.</p></div>
+    <div class="lang">
+      <div class="lang-text">
+        <dl class="modules">
+          <div><dt>CoreDSL <b>The robot</b></dt><dd>Reusable components (chassis, wheels, sensors, attachments) joined through mating connectors.</dd></div>
+          <div><dt>WorldDSL <b>The environment</b></dt><dd>Obstacles, the initial pose and named goals such as <code>@world/door</code>.</dd></div>
+          <div><dt>TaskDSL <b>The behavior</b></dt><dd>A tree of navigation actions that refers to the world's goals by name.</dd></div>
+          <div><dt>EvaluateDSL <b>The checks</b></dt><dd>What is observed during a run and which bounds must hold.</dd></div>
+        </dl>
+        <div class="markdown-body listing"><pre class="code" role="group" aria-label="CoreDSL: the robot of paper Fig. 1 (paper, Listing 1)"><span class="ln"><span class="k">Robot</span> nav_bot {</span><span class="ln">  <span class="k">Mecanum_four_wheel</span> chassis(ref=<span class="s">"silver"</span>),</span><span class="ln">  <span class="k">Mecanum</span> wheel_lf(ref=<span class="s">"red"</span>, glue=<span class="s">"0.0976 0.095 -0.0443 0 1 0"</span>),</span><span class="ln">  <span class="k">Mecanum</span> wheel_lb(ref=<span class="s">"red"</span>, glue=<span class="s">"-0.1124 0.095 -0.0443 0 1 0"</span>),</span><span class="ln">  <span class="k">Mecanum</span> wheel_rf(ref=<span class="s">"red"</span>, glue=<span class="s">"0.0976 -0.095 -0.0443 0 -1 0"</span>),</span><span class="ln">  <span class="k">Mecanum</span> wheel_rb(ref=<span class="s">"red"</span>, glue=<span class="s">"-0.1124 -0.095 -0.0443 0 -1 0"</span>),</span><span class="ln">  <span class="k">Lidar</span> front_scan(ref=<span class="s">"lidar"</span>, glue=<span class="s">"0.11 -0.0001 -0.0043 0 0 -1"</span>),</span><span class="ln">  <span class="k">Arm</span> top_arm(ref=<span class="s">"arm"</span>, glue=<span class="s">"-0.0073 -0.0001 -0.0043 0 0 -1"</span>)</span><span class="ln">}</span></pre></div>
+      </div>
+      <figure class="fig3d" id="fig1">
+        <div class="stage">
+          <canvas role="img" aria-label="3D model of the robot from paper Fig. 1: a white mecanum chassis with four red mecanum wheels, a red arm and a lidar"></canvas>
+          <p class="loading">Loading the 3D model…</p>
+          <div class="labels" aria-hidden="true"></div>
+          <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
+        </div>
+        <div class="bar">
+          <button type="button" class="btn toggle" aria-pressed="false">Explode</button>
+          <span class="hint">Drag to rotate · scroll to zoom</span>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="copilot">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Agent</span><h2>From a request to a runnable robot</h2>
+      <p>MobileCopilot chooses components and writes a MobileDSL program. The compiler assembles the parts, generates their dependent settings and returns errors the agent can fix.</p></div>
+    <div class="steps" role="group" aria-label="MobileCopilot workflow">
+      <div class="step"><h3>Choose the parts</h3><p>The agent searches the component library using your description or reference image, then specifies the robot, world and behavior.</p></div>
+      <div class="step tool"><h3>Compile and repair</h3><p>The compiler checks how the modules fit together. The agent fixes missing goals, incompatible mounts or required sensors and tries again.</p></div>
+      <div class="step"><h3>Run the system</h3><p>The compiled files run in ROS and Gazebo. Execution checks test whether the robot moves and completes its programmed behavior.</p></div>
+    </div>
+    <details class="reading-details">
+      <summary>Example: catching a missing waypoint before the run</summary>
+      <div class="prose">
+        <p>In the paper’s warehouse patrol example, the task visits W1, W2 and W3 before returning home. The compiler reports <code>error[unresolved_ref]</code>: the task uses <code>@world/wp2</code>, but the world never defines it.</p>
+        <p>The agent adds the missing goal in <code>warehouse.world</code> and recompiles:</p>
+        <div class="markdown-body"><pre><code>Goal wp2(pose="3.25 1.7 0 0 0 0 1")</code></pre></div>
+        <p>The repaired example compiles with zero errors and one advisory. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
+        <p class="note">This is the paper’s walkthrough. In the benchmark, agents receive static compiler feedback during authoring; simulation is used to score the submitted program afterward.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="results">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Benchmark</span><h2>Fifty design tasks, three coding agents</h2>
+      <p>Each agent tackles the same 50 requests with MobileDSL and by directly authoring ROS/Gazebo files, using the same library, execution environment and 1,800-second authoring budget.</p></div>
+    <div class="prose">
+      <p><b>More systems finish their programmed behavior.</b> Execution success improves by 42–50 percentage points across all three agent configurations. With Codex / gpt-5.6-sol, that is <b>37 of 50 systems instead of 12</b>, with about 12 times less agent-written code.</p>
+      <p class="note">Success means completing the generated program in simulation; it does not independently establish that the design fulfills the original request. All failures remain in the denominator. Agents receive no simulation feedback during authoring.</p>
+    </div>
+    <figure class="result-chart">
+      <div class="chart-container"><canvas id="results-chart" role="img" aria-label="System execution, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 74 versus 24 percent; Codex gpt-6-astra 82 versus 40 percent; Claude Code claude-opus-4-8 64 versus 22 percent."></canvas></div>
+      <figcaption>System execution success (%) · 50 attempts per condition · higher is better.</figcaption>
+    </figure>
+    <details class="reading-details" id="result-tables">
+      <summary>Full results and authoring effort · Table I</summary>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col" class="t">Agent · model</th><th scope="col" class="t">Representation</th><th scope="col">Motion response %</th><th scope="col">System execution %</th><th scope="col">Authored LOC</th><th scope="col">Input tokens k</th><th scope="col">Output tokens k</th><th scope="col">Time s</th><th scope="col">Cost $</th></tr></thead>
+          <tbody>
+            <tr class="best"><td>Codex · gpt-5.6-sol</td><td class="t">MobileDSL</td><td>98</td><td>74</td><td>43.7</td><td>659.43</td><td>5.65</td><td>285</td><td>0.550</td></tr>
+            <tr><td></td><td class="t">ROS/Gazebo files</td><td>56</td><td>24</td><td>505.3</td><td>1,793.43</td><td>18.37</td><td>731</td><td>1.406</td></tr>
+            <tr class="best"><td>Codex · gpt-6-astra</td><td class="t">MobileDSL</td><td>100</td><td>82</td><td>46.8</td><td>419.05</td><td>2.52</td><td>151</td><td>0.871</td></tr>
+            <tr><td></td><td class="t">ROS/Gazebo files</td><td>78</td><td>40</td><td>1,301.9</td><td>569.17</td><td>5.62</td><td>250</td><td>1.291</td></tr>
+            <tr class="best"><td>Claude Code · claude-opus-4-8</td><td class="t">MobileDSL</td><td>96</td><td>64</td><td>41.5</td><td>1,202.82</td><td>15.14</td><td>268</td><td>1.485</td></tr>
+            <tr><td></td><td class="t">ROS/Gazebo files</td><td>58</td><td>22</td><td>870.0</td><td>2,227.61</td><td>39.95</td><td>569</td><td>2.959</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tablecap"><b>Main results (paper Table I).</b> Simulation success and generation effort with and without MobileDSL. Motion response: the robot moves. System execution: the robot completes the actions its own program defines. Higher is better for the first two columns, lower for the rest.</p>
+      <p class="tablecap">Effort values are per-attempt means. Input and output tokens accumulate across all authoring calls; compiler output and library code are excluded from authored LOC. API costs use rates recorded on September 11, 2026.</p>
+    </details>
+    <details class="reading-details" id="ablation">
+      <summary>What each module contributes · Table III</summary>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col" class="t">Configuration (Codex, gpt-5.6-sol)</th><th scope="col">Motion response %</th><th scope="col">System execution %</th><th scope="col">Authored LOC</th><th scope="col">Total tokens k</th><th scope="col">Time s</th><th scope="col">Cost $</th></tr></thead>
+          <tbody>
+            <tr class="best"><td>Full MobileDSL</td><td>98</td><td>74</td><td>43.7</td><td>665</td><td>285</td><td>0.55</td></tr>
+            <tr><td>No CoreDSL</td><td>84</td><td>36</td><td>333.4</td><td>1,126</td><td>368</td><td>0.96</td></tr>
+            <tr><td>No WorldDSL</td><td>98</td><td>70</td><td>135.1</td><td>742</td><td>246</td><td>0.64</td></tr>
+            <tr><td>No TaskDSL</td><td>92</td><td>74</td><td>170.2</td><td>1,129</td><td>272</td><td>0.89</td></tr>
+            <tr><td>No EvaluateDSL</td><td>96</td><td>70</td><td>89.7</td><td>650</td><td>206</td><td>0.56</td></tr>
+            <tr><td>ROS/Gazebo files</td><td>56</td><td>24</td><td>505.3</td><td>1,812</td><td>731</td><td>1.41</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tablecap"><b>Module ablation (paper Table III).</b> Removing one module at a time. Replacing CoreDSL causes the largest execution drop: 74% to 36%, while code grows from 43.7 to 333.4 lines. WorldDSL and TaskDSL mainly simplify authoring. Replacing EvaluateDSL increases code but reduces tokens and time; the common runtime evaluator is unchanged. Its 74% versus 70% execution difference is only two cases.</p>
+    </details>
+    <div class="generated-designs" id="designs">
+      <h3>From an input image to a generated robot</h3>
+      <div class="gallery-choices" role="group" aria-label="Choose a generated robot">
+        <button class="btn" data-design="arm_mecanum" aria-pressed="true" type="button">Mecanum + arm</button>
+        <button class="btn" data-design="tslot_mecanum" aria-pressed="false" type="button">Mecanum + LiDAR</button>
+        <button class="btn" data-design="open_omni" aria-pressed="false" type="button">Omni platform</button>
+      </div>
+      <div class="design-comparison">
+        <figure class="reference-image">
+          <a id="reference-link" href="assets/gallery/arm_mecanum-input.png" target="_blank" rel="noopener" aria-label="Open the full reference image"><img id="reference-image" src="assets/gallery/arm_mecanum-input.png" width="800" height="800" loading="lazy" alt="Input reference: white mecanum platform with a red arm"></a>
+          <figcaption>Input image</figcaption>
+        </figure>
+        <div>
+          <div class="gallery-stage" id="robot-stage" aria-busy="true">
+            <img id="robot-poster" class="robot-poster" src="assets/gallery/arm_mecanum-poster.png" width="640" height="400" loading="lazy" alt="Generated white mecanum robot with a fixed red arm">
+            <canvas id="robot-canvas" tabindex="0" role="img" aria-label="Generated robot in 3D. Drag or use arrow keys to rotate; plus and minus zoom."></canvas>
+            <span id="robot-status" role="status">Loading 3D…</span>
+          </div>
+          <div class="gallery-tools"><span id="orbit-hint">Drag to rotate · scroll to zoom</span><button class="btn" id="explode-robot" type="button" aria-pressed="false" disabled><span>Explode</span></button><button class="btn" id="reset-robot" type="button" disabled>Reset view</button></div>
+        </div>
+      </div>
+      <div class="gallery-description">
+        <h3 id="robot-title">Mecanum + fixed arm</h3><span id="robot-index" class="note">01 / 03</span>
+        <p id="robot-request">“Drive forward and turn to expand outward in a spiral. The arm stays fixed.”</p>
+        <p class="note" id="robot-meta">Image-conditioned benchmark example · Claude Code / claude-opus-4-8</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="real">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Physical robots</span><h2>From the compiled world to the corridor</h2>
+      <p>Watch the physical robot navigate around corridor obstacles. The external camera shows its path; onboard RGB and depth show what it sees. These are qualitative demonstrations, separate from the simulation success rates above.</p></div>
+    <div>
+      <div class="tabs" role="tablist" aria-label="Demonstrations">
+        <button class="tab" role="tab" aria-selected="true" id="tab-1" aria-controls="demo-1" type="button">Course A</button>
+        <button class="tab" role="tab" aria-selected="false" id="tab-2" aria-controls="demo-2" type="button">Course B · run 1</button>
+        <button class="tab" role="tab" aria-selected="false" id="tab-3" aria-controls="demo-3" type="button">Course B · run 2</button>
+      </div>
+      <div class="demo" id="demo-1" role="tabpanel" aria-labelledby="tab-1">
+        <video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video>
+        <p class="cap">Course A · 10 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+      </div>
+      <div class="demo" id="demo-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+        <video controls muted loop playsinline preload="none" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video>
+        <p class="cap">Course B · 14 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+      </div>
+      <div class="demo" id="demo-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+        <video controls muted loop playsinline preload="none" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video>
+        <p class="cap">Course B · 14 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+      </div>
+    </div>
+    <div class="physical-context">
+      <a href="assets/hardware-closeup.jpg" aria-label="Open the physical robot photograph"><img src="assets/hardware-closeup.jpg" width="5712" height="4284" loading="lazy" alt="MentorPi M1 with mecanum wheels, onboard electronics and a front depth camera"></a>
+      <div class="prose"><p><b>What to watch:</b> on the left, follow the robot around the alternating cabinets. Top right is onboard RGB; bottom right is depth, with nearby objects in red and missing returns in black.</p><p class="note">Hiwonder MentorPi M1 · footage shown at 2× speed · depth colors cover 0.3–3.5 m. <a href="assets/hardware-closeup.jpg">View the platform photo</a>.</p></div>
+    </div>
+    <details class="reading-details"><summary>Platform and training details</summary>
+    <dl class="specs">
+      <div><dt>Platform</dt><dd>Hiwonder MentorPi M1, four mecanum wheels</dd></div>
+      <div><dt>Compute</dt><dd>Raspberry Pi 5, ROS 2 Humble, policy on board</dd></div>
+      <div><dt>Sensor</dt><dd>Angstrong depth camera, 640×480, 57.5° field of view</dd></div>
+      <div><dt>Observation</dt><dd>three stacked 64×64 depth frames</dd></div>
+      <div><dt>Action</dt><dd>(v<sub>x</sub>, v<sub>y</sub>, ω) at 5 Hz, up to 0.3 m/s</dd></div>
+      <div><dt>Training</dt><dd>behavior cloning in the compiled Gazebo world, deployed zero-shot</dd></div>
+      <div><dt>Course</dt><dd>office corridor, three pairs of cabinets on alternating sides</dd></div>
+      <div><dt>Safety</dt><dd>onboard supervisor stops on contact, blind frames or travel limits</dd></div>
+    </dl>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="community">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
+      <p>Browse the parts and editors in Studio, or share a question, design or issue.</p></div>
+    <div class="cta">
+      <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
+    </div>
+    <p class="note">The preview supports browsing and editing. Build, Copilot, exports, uploads and design reports require the hosted service, which is in development.</p>
+    <details class="reading-details"><summary>What’s next</summary><p>Hosted compilation, reviewed component uploads and design reports are in development. Benchmark examples are not yet public; release updates will appear in Discussions. Browser simulation and documentation are planned, with manipulation and legged-robot languages in design.</p></details>
+  </div>
+</section>
+
+<section class="block" id="paper">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Paper</span><h2>MobileCopilot</h2></div>
+    <div class="prose">
+      <p><b>MobileCopilot: A Domain-Specific Language Framework for Agentic Mobile Robot Design</b></p>
+      <p class="note">RobotDSL Team · manuscript · publication details pending.</p>
+      <details class="reading-details"><summary>Citation · BibTeX</summary>
+        <div class="markdown-body"><pre id="bibtex" tabindex="0">@misc{robotdsl_mobilecopilot,
+  title  = {MobileCopilot: A Domain-Specific Language Framework
+            for Agentic Mobile Robot Design},
+  author = {{RobotDSL Team}},
+  note   = {Manuscript; publication details pending}
+}</pre></div>
+        <button class="btn" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
+        <p id="copy-status" class="note" role="status"></p>
+      </details>
+      <div class="cta"><a href="#video">Watch the video</a><a href="#results">See the results</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>RobotDSL Team</span>
+    <span>MobileDSL 1.0 · MobileCopilot</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+    function show(id) {
+      tabs.forEach(function (t) {
+        var on = t.id === id;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        panel.hidden = !on;
+        var v = panel.querySelector('video');
+        if (!on && v) { v.pause(); }
+      });
+    }
+    tabs.forEach(function (t, index) {
+      t.addEventListener('click', function () { show(t.id); });
+      t.addEventListener('keydown', function (event) {
+        var next;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        show(tabs[next].id);
+        tabs[next].focus();
+      });
+    });
+    show('tab-1');
+  })();
+
+  // Video: the thumbnail opens the player in a dialog and starts it; closing the dialog (button, backdrop or Esc) pauses it.
+  (function () {
+    var dialog = document.getElementById('video-dialog'), player = dialog.querySelector('media-player');
+    document.querySelector('#video .hvd').addEventListener('click', function () {
+      dialog.showModal();
+      if (player.play) player.play().catch(function () {});
+    });
+    dialog.querySelector('.close').addEventListener('click', function () { dialog.close(); });
+    dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', function () { if (player.pause) player.pause(); });
+  })();
+</script>
+
+<script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.js", "three/addons/": "./assets/vendor/three/examples/jsm/"}}</script>
+<script type="module">
+  // Paper Fig. 1 in 3D. assets/models/fig1_robot.glb holds one mesh per link of the compiled listing (component-library
+  // meshes at the compiler's poses); fig1_robot.json gives each part's mating connector and the direction it comes off.
+  import * as THREE from 'three';
+  import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+  import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+  const fig = document.getElementById('fig1');
+  const stage = fig.querySelector('.stage');
+  const canvas = fig.querySelector('canvas');
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fail = () => fig.classList.add('failed');
+
+  async function init() {
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.NeutralToneMapping;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xffffff);
+    scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+    const key = new THREE.DirectionalLight(0xffffff, 1.4);
+    key.position.set(0.5, 1.2, 0.35);
+    key.castShadow = true;
+    key.shadow.mapSize.set(1024, 1024);
+    Object.assign(key.shadow.camera, { left: -0.4, right: 0.4, top: 0.4, bottom: -0.4, near: 0.1, far: 3 });
+    scene.add(key);
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), new THREE.ShadowMaterial({ opacity: 0.12 }));
+    ground.rotation.x = -Math.PI / 2;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    const camera = new THREE.PerspectiveCamera(30, 4 / 3, 0.01, 10);
+    const target = new THREE.Vector3(0, 0.125, 0);
+    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(0.9).add(target));
+    const controls = new OrbitControls(camera, canvas);
+    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.45, maxDistance: 1.8, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
+    controls.target.copy(target);
+    controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+    const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+    const [gltf, meta] = await Promise.all([
+      loader.loadAsync('assets/models/fig1_robot.glb'),
+      fetch('assets/models/fig1_robot.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    ]);
+    const robot = gltf.scene;
+    robot.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+    scene.add(robot);
+
+    // Parts that come off, their connector arrows (dot at the connector, as in the figure) and one label per role.
+    const moving = [], arrows = [], labels = [];
+    const layer = fig.querySelector('.labels');
+    const v3 = a => new THREE.Vector3(a[0], a[1], a[2]);
+    for (const p of meta.parts) {
+      const node = robot.getObjectByName(p.name);
+      if (!node) continue;
+      if (p.distance > 0) {
+        const dir = v3(p.direction);
+        moving.push({ node, home: node.position.clone(), offset: dir.clone().multiplyScalar(p.distance) });
+        const arrow = new THREE.ArrowHelper(dir, v3(p.mount), p.distance, 0x111111, 0.014, 0.009);
+        const dot = new THREE.Mesh(new THREE.SphereGeometry(0.003, 12, 8), new THREE.MeshBasicMaterial({ color: 0x111111 }));
+        dot.position.copy(v3(p.mount));
+        for (const o of [arrow, dot]) {
+          o.traverse(m => { if (m.material) { m.material.transparent = true; m.material.opacity = 0; } });
+          o.visible = false;
+          scene.add(o);
+          arrows.push(o);
+        }
+      }
+      const known = labels.find(l => l.role === p.role);
+      const anchor = v3(p.centre).add(new THREE.Vector3(0, p.role === 'Chassis' ? -p.size[1] / 2 - 0.012 : p.size[1] / 2 + 0.012, 0));
+      const moves = p.distance > 0 ? v3(p.direction).multiplyScalar(p.distance) : new THREE.Vector3();
+      if (known) known.anchors.push({ anchor, moves });
+      else {
+        const el = document.createElement('div');
+        el.className = 'label' + (p.role === 'Chassis' ? ' below' : '');
+        el.innerHTML = `<b>${p.role}</b>(${p.kind})`;
+        layer.appendChild(el);
+        labels.push({ role: p.role, el, anchors: [{ anchor, moves }] });
+      }
+    }
+
+    const toggle = fig.querySelector('.toggle'), hint = fig.querySelector('.hint');
+    const touch = window.matchMedia('(hover: none)').matches;
+    const idle = touch ? 'Drag to rotate · pinch to zoom' : 'Drag to rotate · scroll to zoom';
+    hint.textContent = idle;
+    let exploded = 0, goal = 0, shown = 0;
+    toggle.addEventListener('click', () => {
+      goal = goal ? 0 : 1;
+      toggle.setAttribute('aria-pressed', goal ? 'true' : 'false');
+      toggle.textContent = goal ? 'Assemble' : 'Explode';
+      hint.textContent = goal ? 'Arrows mark the mating connectors' : idle;
+    });
+
+    const size = () => {
+      const w = stage.clientWidth, h = stage.clientHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    };
+    new ResizeObserver(size).observe(stage);
+    size();
+
+    let visible = true, last = performance.now();
+    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(fig);
+    const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const p = new THREE.Vector3();
+    renderer.setAnimationLoop(now => {
+      const dt = Math.min(0.05, (now - last) / 1000); last = now;
+      if (!visible) return;
+      if (exploded !== goal) exploded = still ? goal : Math.max(0, Math.min(1, exploded + Math.sign(goal - exploded) * dt / 0.7));
+      const k = ease(exploded);
+      // Pull back while exploding so the lifted parts stay in frame, keeping any zoom the reader chose.
+      camera.position.sub(controls.target).multiplyScalar((1 + 0.25 * k) / (1 + 0.25 * shown)).add(controls.target);
+      shown = k;
+      for (const m of moving) m.node.position.copy(m.home).addScaledVector(m.offset, k);
+      for (const a of arrows) { a.visible = k > 0.01; a.traverse(o => { if (o.material) o.material.opacity = k; }); }
+      controls.update();
+      renderer.render(scene, camera);
+      const w = stage.clientWidth, h = stage.clientHeight;
+      // Each label sits at the rightmost of its role's parts on screen (the wheels), then overlapping labels are pushed apart.
+      const placed = [];
+      for (const l of labels) {
+        let best = null;
+        for (const a of l.anchors) {
+          p.copy(a.anchor).addScaledVector(a.moves, k).project(camera);
+          if (!best || p.x > best.x) best = { x: p.x, y: p.y };
+        }
+        const box = { l, x: (best.x + 1) / 2 * w, y: (1 - best.y) / 2 * h, w: l.el.offsetWidth, h: l.el.offsetHeight, below: l.role === 'Chassis' };
+        for (const q of placed) {
+          const top = box.below ? box.y : box.y - box.h, qtop = q.below ? q.y : q.y - q.h;
+          if (Math.abs(box.x - q.x) < (box.w + q.w) / 2 && top < qtop + q.h && qtop < top + box.h) box.y += (qtop + q.h) - top + 2;
+        }
+        box.x = Math.min(Math.max(box.x, box.w / 2 + 6), w - box.w / 2 - 6);    // keep labels inside the frame
+        box.y = box.below ? Math.min(box.y, h - box.h - 6) : Math.max(box.y, box.h + 6);
+        placed.push(box);
+        l.el.style.left = `${box.x}px`;
+        l.el.style.top = `${box.y}px`;
+        l.el.style.opacity = k;
+      }
+    });
+    fig.querySelector('.loading').remove();
+  }
+
+  const start = () => init().catch(err => { console.warn('Fig. 1 3D view unavailable:', err); fail(); });
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting)) { io.disconnect(); start(); } }, { rootMargin: '400px' });
+    io.observe(fig);
+  } else start();
+</script>
+</body>
 </html>

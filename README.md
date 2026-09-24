@@ -16,8 +16,9 @@ From this worktree, run `python3 -m http.server 8769 --bind 127.0.0.1` and open
 `http://127.0.0.1:8769/`. Use HTTP rather than opening `index.html` as a file,
 because the 3D viewer loads modules and model metadata.
 
-The project page uses locally vendored Tabler components, Lucide icons, Chart.js
-and Three.js. The gallery loads only the selected generated robot. Result tables
+The project page retains its original layout and Vidstack video player, with
+locally vendored Lucide icons, Chart.js and Three.js for content improvements.
+The gallery stays in Results and loads only the selected generated robot. Result tables
 remain accessible without JavaScript; the 3D viewer falls back to saved renders.
 See [asset sources](docs/asset-sources.md) for licenses and manuscript references.
 The Studio bundle remains separate from the project-page redesign.

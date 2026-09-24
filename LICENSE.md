@@ -11,7 +11,7 @@ Credit "RobotDSL Team" and link to https://mit-cdfg.github.io/robotdsl-site/.
 
 **Third-party interface assets** (`assets/vendor/`, `assets/icons/`) retain their
 original licenses and copyright notices. They are not relicensed under the site
-content license. Tabler, Chart.js and Three.js use MIT; Lucide includes ISC and
+content license. Chart.js and Three.js use MIT; Lucide includes ISC and
 inherited MIT notices. See [asset sources](docs/asset-sources.md) for versions,
 source URLs, research-asset provenance and font licensing. Imported component
 geometry retains the applicable source component rights.
