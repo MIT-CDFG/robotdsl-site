@@ -64,16 +64,8 @@
   .nav .wrap { display: flex; align-items: center; gap: 18px; min-height: 60px; }
   .brand { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
   .brand .ico { width: 22px; height: 22px; color: var(--accent); }
-  .nav nav { margin-left: auto; display: flex; gap: 2px; flex-wrap: wrap; justify-content: flex-end; }
-  .nav nav a { font-size: .95rem; font-weight: 500; text-decoration: none; padding: 8px 11px; border-radius: 6px; color: var(--text); }
-  .nav nav a:hover, .nav nav a:focus-visible { color: var(--accent); background: var(--accent-soft); outline: none; }
-  @media (max-width: 720px) {
-    .nav .wrap { flex-wrap: wrap; gap: 0; padding-top: 10px; }
-    .nav nav { width: 100%; margin-left: 0; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; }
-    .nav nav a { flex: 0 0 auto; }
-  }
+  .nav .community-link { margin-left: auto; padding: 8px 12px; font-size: .9rem; color: var(--accent); }
   section[id] { scroll-margin-top: 76px; }
-  @media (max-width: 720px) { section[id] { scroll-margin-top: 108px; } }
   /* hero */
   .hero .wrap { padding-block: 56px 36px; display: grid; gap: 14px; }
   @media (max-width: 860px) { .hero .wrap { padding-block: 40px 28px; gap: 12px; } }
@@ -99,7 +91,10 @@
   @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   /* stats */
   /* sections */
-  section.block { padding-block: 64px; border-bottom: 1px solid var(--line); }
+  section.block { padding-block: 64px; border-bottom: 1px solid var(--line-strong); }
+  #community, #copilot, #real { background: var(--tint); }
+  #community { padding-block: 48px; }
+  #community .head { margin-bottom: 0; }
   #video { padding-block: 8px 48px; }   /* the video follows the hero directly, without a heading */
   .head { display: grid; gap: 8px; margin-bottom: 28px; max-width: 70ch; }
   .head .eyebrow { color: var(--accent); }
@@ -212,15 +207,7 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
-    <nav aria-label="Sections">
-      <a href="#video">Video</a>
-      <a href="#mobiledsl">MobileDSL</a>
-      <a href="#copilot">MobileCopilot</a>
-      <a href="#results">Results</a>
-      <a href="#real">Real robots</a>
-      <a href="#community">Community</a>
-      <a href="#paper">Paper</a>
-    </nav>
+    <a class="btn community-link" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
   </div>
 </header>
 
@@ -232,9 +219,9 @@
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
         <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
+        <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
         <a class="btn" href="#video"><span class="ico ico-video" aria-hidden="true"></span>Video</a>
         <a class="btn" href="#paper"><span class="ico ico-paper" aria-hidden="true"></span>Paper</a>
-        <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
       </div>
     </div>
   </div>
@@ -262,6 +249,25 @@
       </div>
     </dialog>
     <noscript><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
+  </div>
+</section>
+
+<section class="block" id="community">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
+      <p>Share a robot design, ask a question or help grow the component library.</p></div>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
+      <a class="btn" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
+    </div>
+    <details class="reading-details"><summary>Studio preview and roadmap</summary>
+      <div class="prose">
+        <p class="note">The preview supports browsing and editing. Build, Copilot, exports, uploads and design reports require the hosted service, which is in development.</p>
+        <p>Hosted compilation, reviewed component uploads and design reports are in development. Benchmark examples are not yet public; release updates will appear in Discussions. Browser simulation and documentation are planned, with manipulation and legged-robot languages in design.</p>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -433,21 +439,6 @@
       <div><dt>Safety</dt><dd>onboard supervisor stops on contact, blind frames or travel limits</dd></div>
     </dl>
     </details>
-  </div>
-</section>
-
-<section class="block" id="community">
-  <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
-      <p>Browse the parts and editors in Studio, or share a question, design or issue.</p></div>
-    <div class="cta">
-      <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
-    </div>
-    <p class="note">The preview supports browsing and editing. Build, Copilot, exports, uploads and design reports require the hosted service, which is in development.</p>
-    <details class="reading-details"><summary>What’s next</summary><p>Hosted compilation, reviewed component uploads and design reports are in development. Benchmark examples are not yet public; release updates will appear in Discussions. Browser simulation and documentation are planned, with manipulation and legged-robot languages in design.</p></details>
   </div>
 </section>
 

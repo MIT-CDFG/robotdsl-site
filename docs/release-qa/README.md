@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 navigation and section hierarchy
+
+- Replaced the seven-link header navigation with one Community action; the header stays on one row on phones.
+- Moved Community directly after the video, put it second among the hero actions, and made Discussions the section's primary action. Preview details and the roadmap share one disclosure.
+- Alternated the existing white and light-gray backgrounds and strengthened section dividers using the existing palette.
+- `npx --yes html-validate@8.29.0 index.html` and `git diff --check`: passed.
+- Source checks for section order, unique IDs, local assets, anchor targets and ARIA references: passed.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 content improvements, original layout restored
 
 Validated locally in the `codex/modern-site` worktree:
