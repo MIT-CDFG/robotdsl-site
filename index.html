@@ -94,16 +94,16 @@
   @media (max-width: 560px) { .hero .cta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .hero .cta .btn { flex-direction: column; justify-content: center; gap: 4px; padding: 9px 2px; font-size: .8rem; } }
   @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .hero figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
-  /* Hero gallery: benchmark robots in one Three.js view (orthographic, as in the video's opening); a still of that opening stands in until it is ready or without WebGL. */
+  /* Hero gallery: benchmark robots in one Three.js view (orthographic, as in the video's opening); a still of that opening stands in only without WebGL or JavaScript. */
   /* The gallery reaches past the text column so the robots read as a stage under the title. */
   .gallery3d { width: min(1360px, calc(100vw - 32px)); margin-inline: calc((100% - min(1360px, calc(100vw - 32px))) / 2); }
   .gallery3d .stage { position: relative; height: clamp(260px, 46vh, 480px); }
   .gallery3d figcaption { text-align: center; margin-top: 4px; }
-  .gallery3d .still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border: 0; background: none; transition: opacity .5s; }
+  .gallery3d .still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border: 0; background: none; display: none; }
+  .gallery3d.fallback .still { display: block; }
   .gallery3d canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity .5s; cursor: grab; touch-action: pan-y; }
   .gallery3d canvas:active { cursor: grabbing; }
   .gallery3d.ready canvas { opacity: 1; }
-  .gallery3d.ready .still { opacity: 0; }
   @media (max-width: 700px) { .gallery3d .stage { height: auto; aspect-ratio: 3 / 4; } }
   /* stats */
   .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--tint); }
@@ -243,7 +243,8 @@
     </div>
     <figure class="gallery3d" id="gallery3d">
       <div class="stage">
-        <img class="still" src="assets/gallery_still.webp" width="1600" height="660" alt="">
+        <img class="still" src="assets/gallery_still.webp" width="1600" height="660" alt="" loading="lazy">
+        <noscript><style>.gallery3d .still { display: block; }</style></noscript>
         <canvas role="img" aria-label="Robots that coding agents wrote as MobileDSL programs in the benchmark, assembled from the component library"></canvas>
       </div>
       <figcaption>Robots that coding agents wrote as MobileDSL programs in the benchmark, each assembled from the same component library. Drag to turn the view.</figcaption>
@@ -709,7 +710,7 @@
       // In two columns the tallest robots take the back row, so nothing reaches into the row behind.
       (narrow ? [...shown].sort((a, b) => b.height - a.height) : shown).forEach((r, i) => {
         const row = Math.floor(i / 2), alone = i === shown.length - 1 && shown.length % 2;
-        const spread = Math.min(1.7, Math.max(1, aspect / 2.4));        // wide stages: spread the line-up sideways
+        const spread = Math.min(1.25, Math.max(1, aspect / 3.4));       // very wide stages: open the rows a little
         const [x, y] = narrow ? [alone ? 0 : (i % 2 ? 0.42 : -0.42), ((rows - 1) / 2 - row) * 0.78] : [r.ground[0] * spread, r.ground[1]];
         r.group.position.set(x, 0, -y);
       });
@@ -754,7 +755,7 @@
     root.classList.add('ready');
   }
 
-  init().catch(err => console.warn('3D gallery unavailable; showing the still.', err));
+  init().catch(err => { console.warn('3D gallery unavailable; showing the still.', err); root.classList.add('fallback'); });
 </script>
 </body>
 </html>
