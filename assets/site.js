@@ -49,7 +49,6 @@
   }
   try { showChart(); } catch (error) {
     document.querySelector('.result-chart').hidden = true;
-    get('result-tables').open = true;
     console.warn('Chart unavailable; displaying the results table.', error);
   }
   get('copy-citation').addEventListener('click', async () => {

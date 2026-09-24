@@ -262,12 +262,10 @@
       <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
       <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
     </div>
-    <details class="reading-details"><summary>Studio preview and roadmap</summary>
-      <div class="prose">
-        <p class="note">The preview supports browsing and editing. Build, Copilot, exports, uploads and design reports require the hosted service, which is in development.</p>
-        <p>Hosted compilation, reviewed component uploads and design reports are in development. Benchmark examples are not yet public; release updates will appear in Discussions. Browser simulation and documentation are planned, with manipulation and legged-robot languages in design.</p>
-      </div>
-    </details>
+    <div class="prose">
+      <p class="note"><b>Available now:</b> browse parts and edit designs in Studio. Build, Copilot, exports, reviewed uploads and design reports need the hosted service, currently in development.</p>
+      <p class="note"><b>Planned:</b> browser simulation and documentation; manipulation and legged-robot languages are in design. Benchmark examples are not yet public. Follow <a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Discussions</a> for release updates.</p>
+    </div>
   </div>
 </section>
 
@@ -310,16 +308,15 @@
       <div class="step tool"><h3>Compile and repair</h3><p>The compiler checks how the modules fit together. The agent fixes missing goals, incompatible mounts or required sensors and tries again.</p></div>
       <div class="step"><h3>Run the system</h3><p>The compiled files run in ROS and Gazebo. Execution checks test whether the robot moves and completes its programmed behavior.</p></div>
     </div>
-    <details class="reading-details">
-      <summary>Example: catching a missing waypoint before the run</summary>
+    <div class="reading-block">
+      <h3>A missing waypoint, caught before the run</h3>
       <div class="prose">
-        <p>In the paper’s warehouse patrol example, the task visits W1, W2 and W3 before returning home. The compiler reports <code>error[unresolved_ref]</code>: the task uses <code>@world/wp2</code>, but the world never defines it.</p>
-        <p>The agent adds the missing goal in <code>warehouse.world</code> and recompiles:</p>
+        <p>In the paper’s warehouse patrol example, the task visits <code>@world/wp2</code>, but the world never defines it. The compiler reports <code>error[unresolved_ref]</code>; the agent adds the missing goal in <code>warehouse.world</code>:</p>
         <div class="markdown-body"><pre><code>Goal wp2(pose="3.25 1.7 0 0 0 0 1")</code></pre></div>
-        <p>The repaired example compiles with zero errors and one advisory. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
-        <p class="note">This is the paper’s walkthrough. In the benchmark, agents receive static compiler feedback during authoring; simulation is used to score the submitted program afterward.</p>
+        <p>Recompiling returns zero errors and one advisory. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
+        <p class="note">Compiler feedback guides authoring; simulation scores the submitted program afterward.</p>
       </div>
-    </details>
+    </div>
   </div>
 </section>
 
@@ -335,8 +332,8 @@
       <div class="chart-container"><canvas id="results-chart" role="img" aria-label="System execution, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 74 versus 24 percent; Codex gpt-6-astra 82 versus 40 percent; Claude Code claude-opus-4-8 64 versus 22 percent."></canvas></div>
       <figcaption>System execution success (%) · 50 attempts per condition · higher is better.</figcaption>
     </figure>
-    <details class="reading-details" id="result-tables">
-      <summary>Full results and authoring effort · Table I</summary>
+    <div class="reading-block" id="result-tables">
+      <h3>Success and authoring effort · Table I</h3>
       <div class="tablewrap">
         <table>
           <thead><tr><th scope="col" class="t">Agent · model</th><th scope="col" class="t">Representation</th><th scope="col">Motion response %</th><th scope="col">System execution %</th><th scope="col">Authored LOC</th><th scope="col">Input tokens k</th><th scope="col">Output tokens k</th><th scope="col">Time s</th><th scope="col">Cost $</th></tr></thead>
@@ -350,11 +347,14 @@
           </tbody>
         </table>
       </div>
-      <p class="tablecap"><b>Main results (paper Table I).</b> Simulation success and generation effort with and without MobileDSL. Motion response: the robot moves. System execution: the robot completes the actions its own program defines. Higher is better for the first two columns, lower for the rest.</p>
+      <p class="tablecap">Motion response: the robot moves. System execution: it completes its programmed actions. Higher is better for these two columns; lower for effort and cost.</p>
       <p class="tablecap">Effort values are per-attempt means. Input and output tokens accumulate across all authoring calls; compiler output and library code are excluded from authored LOC. API costs use rates recorded on September 11, 2026.</p>
-    </details>
-    <details class="reading-details" id="ablation">
-      <summary>What each module contributes · Table III</summary>
+    </div>
+    <div class="reading-block" id="ablation">
+      <h3>What each module contributes · Table III</h3>
+      <div class="prose">
+        <p><b>Replacing CoreDSL causes the largest drop:</b> execution success falls from 74% to 36%, while authored code grows from 43.7 to 333.4 lines. WorldDSL and TaskDSL mainly simplify authoring.</p>
+      </div>
       <div class="tablewrap">
         <table>
           <thead><tr><th scope="col" class="t">Configuration (Codex, gpt-5.6-sol)</th><th scope="col">Motion response %</th><th scope="col">System execution %</th><th scope="col">Authored LOC</th><th scope="col">Total tokens k</th><th scope="col">Time s</th><th scope="col">Cost $</th></tr></thead>
@@ -368,8 +368,8 @@
           </tbody>
         </table>
       </div>
-      <p class="tablecap"><b>Module ablation (paper Table III).</b> Removing one module at a time. Replacing CoreDSL causes the largest execution drop: 74% to 36%, while code grows from 43.7 to 333.4 lines. WorldDSL and TaskDSL mainly simplify authoring. Replacing EvaluateDSL increases code but reduces tokens and time; the common runtime evaluator is unchanged. Its 74% versus 70% execution difference is only two cases.</p>
-    </details>
+      <p class="tablecap">Each ablation replaces one module. Replacing EvaluateDSL increases code but reduces tokens and time; the common runtime evaluator is unchanged. Its 74% versus 70% execution difference is only two cases.</p>
+    </div>
     <div class="generated-designs" id="designs">
       <h3>From an input image to a generated robot</h3>
       <div class="gallery-choices" role="group" aria-label="Choose a generated robot">
@@ -427,7 +427,8 @@
       <a href="assets/hardware-closeup.jpg" aria-label="Open the physical robot photograph"><img src="assets/hardware-closeup.jpg" width="5712" height="4284" loading="lazy" alt="MentorPi M1 with mecanum wheels, onboard electronics and a front depth camera"></a>
       <div class="prose"><p><b>What to watch:</b> on the left, follow the robot around the alternating cabinets. Top right is onboard RGB; bottom right is depth, with nearby objects in red and missing returns in black.</p><p class="note">Hiwonder MentorPi M1 · footage shown at 2× speed · depth colors cover 0.3–3.5 m. <a href="assets/hardware-closeup.jpg">View the platform photo</a>.</p></div>
     </div>
-    <details class="reading-details"><summary>Platform and training details</summary>
+    <div class="reading-block">
+    <h3>Platform and training</h3>
     <dl class="specs">
       <div><dt>Platform</dt><dd>Hiwonder MentorPi M1, four mecanum wheels</dd></div>
       <div><dt>Compute</dt><dd>Raspberry Pi 5, ROS 2 Humble, policy on board</dd></div>
@@ -438,7 +439,7 @@
       <div><dt>Course</dt><dd>office corridor, three pairs of cabinets on alternating sides</dd></div>
       <div><dt>Safety</dt><dd>onboard supervisor stops on contact, blind frames or travel limits</dd></div>
     </dl>
-    </details>
+    </div>
   </div>
 </section>
 

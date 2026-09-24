@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 readable content without disclosure controls
+
+- Made Studio availability and roadmap, the compiler repair example, both results tables with interpretation, and platform specifications visible in the page. Only the BibTeX utility remains collapsed.
+- Shortened repeated explanations, put the main ablation finding before its table, and used compact spacing for the visible material.
+- Removed the chart fallback's obsolete attempt to open the now-visible results table.
+- HTML validation, JavaScript syntax and `git diff --check`: passed.
+- Source checks confirmed unchanged table values and section order, one remaining disclosure for BibTeX, and valid local assets, anchors and ARIA references.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 navigation and section hierarchy
 
 - Replaced the seven-link header navigation with one Community action; the header stays on one row on phones.
