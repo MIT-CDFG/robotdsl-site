@@ -16,7 +16,9 @@ Retrieved September 24, 2026. Chart.js, Three.js and icons are vendored. The ori
 
 Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks.
 
-Only Tabler's Steps component is loaded. Existing site colors map to its variables; local CSS applies its vertical layout below 850 pixels and spaces the role labels and descriptions. The workflow is a static explanation, not a live progress indicator. The return-loop and terminal symbols are unmodified `undo-2.svg` and `terminal.svg` from the same Lucide release.
+Only Tabler's Steps component is loaded. Existing site colors map to its variables; local CSS applies its vertical layout below 850 pixels and spaces the role labels and descriptions. Its markers contain original Lucide SVGs: `message-square-text` for requests, `blocks` for component retrieval, `file-code-2` for authoring, `file-check-2` for compilation and the existing `bot` for execution. These icons are supplied by `lucide-static@1.47.0`; their paths are unmodified. The workflow is a static explanation, not a live progress indicator.
+
+The repair sequence uses the same release's `map-pin-x`, `map-pin-plus`, `circle-check` and `arrow-right`; `undo-2` identifies the feedback loop. Existing colors, icon sizing and layout are applied with CSS. No repair cards or illustrated assets were created.
 
 ## Research assets reused from the project
 
@@ -38,7 +40,7 @@ Mappings are taken from `mobilecopilot-video/outputs/opening/designs/designs.jso
 
 ### Warehouse walkthrough
 
-The exact `warehouse.patch` was fetched with the latest manuscript source at commit `8606c8b` (September 17, 2026). The prompt, `unresolved_ref` error, added `wp2` goal and “0 errors; 1 advisory” follow `src/content.json`. This is explicitly a paper walkthrough, not a live agent session.
+The exact `warehouse.patch` was fetched with the latest manuscript source at commit `8606c8b` (September 17, 2026). The visible missing-destination / goal-added / ready-to-run sequence follows the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. The exact edit remains available through the repair-diff link. This is explicitly a paper walkthrough, not a live agent session.
 
 ### Video and physical platform
 

@@ -1,21 +1,43 @@
 /* Local additions only. The original page owns fonts, colors, widths and spacing. */
 #copilot .head { margin-bottom: 8px; }
-.workflow-steps { --tblr-primary: var(--accent); --tblr-border-color: var(--line-strong); --tblr-white: #fff; }
-.workflow-steps .step-item { min-width: 0; padding: 38px 12px 0; }
+.workflow-steps { --tblr-primary: var(--accent); --tblr-border-color: var(--line-strong); --tblr-white: #fff; --tblr-steps-dot-size: 3.25rem; }
+.workflow-steps .step-item { min-width: 0; padding: 68px 12px 0; }
+.workflow-symbol { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 28px; height: 28px; color: #fff; z-index: 2; }
 .workflow-steps h3 { font-size: 1rem; margin: 4px 0 8px; }
 .workflow-steps p { font-size: .9rem; line-height: 1.5; }
 .step-role { font-size: .875rem; font-weight: 500; color: var(--accent); }
 .workflow-loop { display: flex; align-items: baseline; gap: 10px; }
 .workflow-loop .ico { align-self: flex-start; margin-top: 5px; color: var(--accent); }
-.workflow-example h3 .ico { vertical-align: -3px; margin-right: 6px; color: var(--accent); }
 .ico-undo { --icon: url(icons/undo-2.svg); }
-.ico-terminal { --icon: url(icons/terminal.svg); }
+.ico-request { --icon: url(icons/message-square-text.svg); }
+.ico-parts { --icon: url(icons/blocks.svg); }
+.ico-program { --icon: url(icons/file-code-2.svg); }
+.ico-compile { --icon: url(icons/file-check-2.svg); }
+.ico-missing { --icon: url(icons/map-pin-x.svg); }
+.ico-add-goal { --icon: url(icons/map-pin-plus.svg); }
+.ico-check { --icon: url(icons/circle-check.svg); }
+.repair-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; list-style: none; padding: 12px 0; margin: 0; }
+.repair-stage { position: relative; display: grid; justify-items: center; align-content: start; gap: 8px; min-width: 0; text-align: center; }
+.repair-stage > .ico { width: 36px; height: 36px; color: var(--accent); }
+.repair-stage h3 { font-size: 1.05rem; }
+.repair-stage p { font-size: .9rem; }
+.repair-missing > .ico { color: #b3261e; }
+.repair-ready > .ico { color: var(--ok); }
+.repair-stage:not(:last-child)::after { content: ""; position: absolute; top: 9px; left: calc(100% + 9px); width: 18px; height: 18px; background-color: var(--muted); -webkit-mask: url(icons/arrow-right.svg) center / contain no-repeat; mask: url(icons/arrow-right.svg) center / contain no-repeat; }
+@media (max-width: 640px) {
+  .repair-flow { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .repair-stage { grid-template-columns: 36px minmax(0, 1fr); gap: 4px 16px; justify-items: start; text-align: left; }
+  .repair-stage > .ico { grid-row: 1 / 3; }
+  .repair-stage p { grid-column: 2; }
+  .repair-stage:not(:last-child)::after { top: calc(100% + 7px); left: 9px; transform: rotate(90deg); }
+}
 /* Tabler's vertical Steps rules, applied at the narrow-layout breakpoint. */
 @media (max-width: 850px) {
-  .workflow-steps { --tblr-steps-dot-offset: -2px; flex-direction: column; }
+  .workflow-steps { --tblr-steps-dot-offset: 0px; flex-direction: column; }
   .workflow-steps .step-item { text-align: left; padding: 0 0 0 calc(var(--tblr-steps-dot-size) + 1rem); min-height: auto; }
   .workflow-steps .step-item:not(:first-child) { margin-top: 1rem; }
   .workflow-steps .step-item:before { top: var(--tblr-steps-dot-offset); left: 0; transform: translate(0, 0); }
+  .workflow-steps .workflow-symbol { left: 12px; transform: none; }
   .workflow-steps .step-item:not(:last-child):after { position: absolute; content: ""; transform: translateX(-50%); top: var(--tblr-steps-dot-offset); left: calc(var(--tblr-steps-dot-size) * .5); width: var(--tblr-steps-border-width); height: calc(100% + 1rem); }
 }
 .reading-details { min-width: 0; }

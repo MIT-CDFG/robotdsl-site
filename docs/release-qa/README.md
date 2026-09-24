@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 workflow icons and concise repair sequence
+
+- Replaced numbered workflow markers with five large Lucide icons inside the existing Tabler Steps component. Short labels and captions identify each stage without requiring paragraph reading.
+- Replaced the long warehouse-example heading and code blocks with three visible states: missing destination, agent adds the goal, ready to run. The exact repair remains downloadable.
+- Original Lucide assets are downloaded unchanged; CSS lays out the workflow vertically below 850 pixels and the repair sequence vertically below 640 pixels.
+- HTML validation and `git diff --check`: passed.
+- Source checks confirmed five workflow icons, three repair states, unchanged results and section order, valid SVGs and local references, and only one disclosure for BibTeX.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 Studio access and workflow visibility
 
 - Header actions expose both Studio and Community. The Community section follows the physical robots, before the paper; alternating section backgrounds follow that order.

@@ -289,35 +289,23 @@
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Agent</span><h2>From a request to a runnable robot</h2>
       <p>MobileCopilot chooses components and writes a MobileDSL program. The compiler assembles the parts, generates their dependent settings and returns errors the agent can fix.</p></div>
-    <ol class="steps steps-counter workflow-steps">
-      <li class="step-item"><span class="step-role">You</span><h3>Request</h3><p>Describe the robot, world and task. Add a reference image if useful.</p></li>
-      <li class="step-item"><span class="step-role">Library search</span><h3>Retrieve parts</h3><p>Match text or images to components, then inspect their geometry and connectors.</p></li>
-      <li class="step-item"><span class="step-role">Coding agent</span><h3>Write the program</h3><p>Define the robot, world, behavior and checks in four linked MobileDSL modules.</p></li>
-      <li class="step-item"><span class="step-role">Compiler</span><h3>Compile &amp; check</h3><p>Check constraints; derive assembly, controller and navigation settings.</p></li>
-      <li class="step-item"><span class="step-role">ROS &amp; Gazebo</span><h3>Run &amp; inspect</h3><p>Execute the robot and its task. Physical deployment uses a supported platform.</p></li>
+    <ol class="steps workflow-steps">
+      <li class="step-item"><span class="ico ico-request workflow-symbol" aria-hidden="true"></span><span class="step-role">You</span><h3>Request</h3><p>Text or a reference image</p></li>
+      <li class="step-item"><span class="ico ico-parts workflow-symbol" aria-hidden="true"></span><span class="step-role">Library search</span><h3>Retrieve parts</h3><p>Parts, geometry and connectors</p></li>
+      <li class="step-item"><span class="ico ico-program workflow-symbol" aria-hidden="true"></span><span class="step-role">Coding agent</span><h3>Write the program</h3><p>Robot, world, task and checks</p></li>
+      <li class="step-item"><span class="ico ico-compile workflow-symbol" aria-hidden="true"></span><span class="step-role">Compiler</span><h3>Compile &amp; check</h3><p>Assembly and validation</p></li>
+      <li class="step-item"><span class="ico ico-bot workflow-symbol" aria-hidden="true"></span><span class="step-role">ROS &amp; Gazebo</span><h3>Run &amp; inspect</h3><p>Simulation and supported hardware</p></li>
     </ol>
-    <p class="workflow-loop"><span class="ico ico-undo" aria-hidden="true"></span><span><b>Compiler errors return to the agent.</b> Revise the program in step 3, then compile again in step 4.</span></p>
-    <p class="note">Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan. In the benchmark, simulation runs after authoring and provides no repair feedback to the agent.</p>
     <div class="reading-block workflow-example">
-      <h3>Example: a missing waypoint in a warehouse patrol</h3>
-      <p>The request is to visit W1, W2 and W3, then return home. The task references W2, but the world never defines it.</p>
-      <div class="two">
-        <div class="prose">
-          <h3><span class="ico ico-terminal" aria-hidden="true"></span>Compiler feedback</h3>
-          <div class="markdown-body"><pre><code>mobiledsl compile warehouse-patrol/ --out build/
-
-error[unresolved_ref]
-unresolved '@world/wp2'</code></pre></div>
-        </div>
-        <div class="prose">
-          <h3><span class="ico ico-bot" aria-hidden="true"></span>Agent’s repair</h3>
-          <p>Add the missing goal to <code>warehouse.world</code>:</p>
-          <div class="markdown-body"><pre><code>Goal wp2(pose="3.25 1.7 0 0 0 0 1")</code></pre></div>
-        </div>
-      </div>
-      <p><b>After recompiling:</b> zero errors and one advisory. The project is ready to run. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
-      <p class="note">This is the paper’s walkthrough, not a live agent session.</p>
+      <p class="workflow-loop"><span class="ico ico-undo" aria-hidden="true"></span><span><b>Compiler errors return to the agent.</b> Edit the program, then compile again.</span></p>
+      <ol class="repair-flow">
+        <li class="repair-stage repair-missing"><span class="ico ico-missing" aria-hidden="true"></span><h3>Missing destination</h3><p>The task refers to W2, which is undefined.</p></li>
+        <li class="repair-stage"><span class="ico ico-add-goal" aria-hidden="true"></span><h3>Agent adds the goal</h3><p>W2 is added to WorldDSL.</p></li>
+        <li class="repair-stage repair-ready"><span class="ico ico-check" aria-hidden="true"></span><h3>Ready to run</h3><p>Recompiled: 0 errors, 1 advisory.</p></li>
+      </ol>
+      <p class="note">Warehouse patrol from the paper · <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
     </div>
+    <p class="note">Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan. In the benchmark, simulation runs after authoring and provides no repair feedback to the agent.</p>
   </div>
 </section>
 
