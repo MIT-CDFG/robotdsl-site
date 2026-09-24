@@ -1,0 +1,149 @@
+{
+ "size": [
+  0.35451,
+  0.39042,
+  0.37315
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "arm_mecanum_equipped",
+   "category": "chassis",
+   "centre": [
+    2e-05,
+    0.09694,
+    0.0005
+   ],
+   "size": [
+    0.304,
+    0.12957,
+    0.252
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_lf",
+   "part": "mecanum_black",
+   "category": "wheel",
+   "centre": [
+    0.12857,
+    0.04899,
+    -0.1624
+   ],
+   "size": [
+    0.09738,
+    0.09733,
+    0.04829
+   ],
+   "explode": [
+    0.04966,
+    0.0,
+    -0.06272
+   ]
+  },
+  {
+   "name": "wheel_lb",
+   "part": "mecanum_black",
+   "category": "wheel",
+   "centre": [
+    -0.12634,
+    0.0487,
+    -0.16241
+   ],
+   "size": [
+    0.0972,
+    0.0974,
+    0.04832
+   ],
+   "explode": [
+    -0.04912,
+    0.0,
+    -0.06314
+   ]
+  },
+  {
+   "name": "wheel_rf",
+   "part": "mecanum_black",
+   "category": "wheel",
+   "centre": [
+    0.12635,
+    0.04915,
+    0.16241
+   ],
+   "size": [
+    0.09767,
+    0.09733,
+    0.04832
+   ],
+   "explode": [
+    0.04912,
+    0.0,
+    0.06314
+   ]
+  },
+  {
+   "name": "wheel_rb",
+   "part": "mecanum_black",
+   "category": "wheel",
+   "centre": [
+    -0.1285,
+    0.04902,
+    0.16241
+   ],
+   "size": [
+    0.09752,
+    0.09706,
+    0.04832
+   ],
+   "explode": [
+    -0.04964,
+    0.0,
+    0.06274
+   ]
+  },
+  {
+   "name": "front_ultrasonic",
+   "part": "arm_mecanum_ultrasonic",
+   "category": "sensor",
+   "centre": [
+    0.15924,
+    0.08871,
+    0.00229
+   ],
+   "size": [
+    0.01844,
+    0.02803,
+    0.06
+   ],
+   "explode": [
+    0.0,
+    0.22,
+    -0.0
+   ]
+  },
+  {
+   "name": "arm",
+   "part": "arm_mecanum_arm",
+   "category": "attachment",
+   "centre": [
+    0.05491,
+    0.25124,
+    0.0422
+   ],
+   "size": [
+    0.12421,
+    0.27835,
+    0.206
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  }
+ ]
+}

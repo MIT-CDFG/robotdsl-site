@@ -1,4 +1,19 @@
-# Release UI verification
+# Release verification
+
+## 2026-09-24 project-page redesign
+
+Validated locally in the `codex/modern-site` worktree:
+
+- `npx --yes html-validate@8.29.0 index.html`: passed.
+- `node --check assets/site.js` and `node --input-type=module --check < assets/robot-viewer.js`: passed.
+- `git diff --check`: passed.
+- Local HTTP checks for page assets, gallery models and Three.js imports: passed.
+- Three.js GLTFLoader with Meshopt decoded all three optimized models; all 26 component nodes and explosion offsets matched, and bounding extents remained within 1 mm of the source exports.
+- Main comparison and ablation values were checked against the fetched manuscript at `8606c8b`.
+
+No browser visual or interaction tests were run for this redesign. The checks and screenshots below document the earlier page, not this worktree. Studio assets are unchanged.
+
+## 2026-09-21 baseline
 
 Verified on 2026-09-21 with Chromium 153, desktop and touch/phone emulation. No physical-phone or Safari testing has been performed.
 
