@@ -1,5 +1,13 @@
 # Release verification
 
+## 2026-09-24 latest overview video
+
+- Replaced the overview with the latest narrated 1080p delivery export from the user-specified `mobilecopilot-video` directory. The copied MP4 matches its source SHA-256 exactly; no video re-encoding was performed.
+- Updated the poster to the new opening at 3 seconds, player duration to 179.52 seconds, and six chapter intervals to the source timeline. Removed the obsolete 2:57 label.
+- Verified 1080p30 H.264 video and AAC audio, fast-start metadata, valid chapter intervals and a complete error-free FFmpeg decode. HTML validation and `git diff --check` passed.
+
+The poster was inspected as a local asset. No browser playback or listening tests were run.
+
 ## 2026-09-24 Guide destination
 
 - Replaced the Studio preview badge with Guide and added `guide/index.html`. The version badge links to its language section; the Learn MobileDSL entry also opens the guide.
