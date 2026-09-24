@@ -70,7 +70,7 @@
 .gallery-choice:hover { color: var(--accent); }
 .gallery-choice:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .gallery-choice:disabled { opacity: .5; cursor: default; }
-.design-comparison { display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr); gap: 24px; align-items: start; }
+.design-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .design-comparison > * { min-width: 0; }
 .comparison-panel { display: grid; gap: 16px; }
 .comparison-panel figcaption { margin: 0; }
@@ -80,8 +80,8 @@
 .reference-image img { position: absolute; inset: 0; }
 .reference-image .comparison-stage:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 #robot-request { font-size: 1rem; }
-.design-arrow { --icon: url(icons/arrow-right.svg); width: 24px; height: 24px; color: var(--muted); align-self: center; }
 .robot-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.gallery-stage .robot-poster { object-fit: cover; }
 .gallery-stage canvas { display: block; position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: grab; touch-action: pan-y; }
 .gallery-stage canvas:active { cursor: grabbing; }
 .gallery-stage.is-ready canvas { opacity: 1; }
@@ -101,7 +101,6 @@
   .gallery-choices { gap: 8px; }
   .gallery-choice { flex: 1; min-width: 0; flex-direction: column; gap: 4px; padding: 0 4px 10px; font-size: .875rem; }
   .design-comparison { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-  .design-arrow { justify-self: center; transform: rotate(90deg); }
   .gallery-tools { justify-content: center; }
   .physical-context { grid-template-columns: 100px 1fr; gap: 16px; align-items: start; }
 }

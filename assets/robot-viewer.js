@@ -39,7 +39,8 @@ let robot,
   moving = [],
   progress = 0,
   goal = 0,
-  previousExpansion = 0;
+  previousExpansion = 0,
+  expansionScale = 1;
 let requestId = 0,
   visible = true,
   frame = 0,
@@ -108,10 +109,10 @@ function render(now = performance.now()) {
   const eased = progress * progress * (3 - 2 * progress);
   for (const part of moving)
     part.node.position.copy(part.home).addScaledVector(part.offset, eased);
-  const expansion = 1 + 0.38 * eased;
+  const expansion = 1 + (expansionScale - 1) * eased;
   camera.position
     .sub(controls.target)
-    .multiplyScalar(expansion / (1 + 0.38 * previousExpansion))
+    .multiplyScalar(expansion / (1 + (expansionScale - 1) * previousExpansion))
     .add(controls.target);
   previousExpansion = eased;
   controls.update();
@@ -132,27 +133,60 @@ function resize() {
   camera.updateProjectionMatrix();
   schedule();
 }
+function forEachRobotVertex(visit) {
+  robot.updateMatrixWorld(true);
+  const point = new THREE.Vector3();
+  robot.traverseVisible((node) => {
+    const positions = node.geometry?.attributes.position;
+    if (!node.isMesh || !positions) return;
+    for (let i = 0; i < positions.count; i++) {
+      point.fromBufferAttribute(positions, i).applyMatrix4(node.matrixWorld);
+      visit(point);
+    }
+  });
+}
 function frameRobot() {
   const box = new THREE.Box3().setFromObject(robot);
   const sphere = box.getBoundingSphere(new THREE.Sphere());
-  const halfFov = Math.min(
-    THREE.MathUtils.degToRad(camera.fov / 2),
-    Math.atan(
-      Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * camera.aspect,
-    ),
-  );
-  const distance = (sphere.radius / Math.sin(halfFov)) * 1.12;
+  const direction = new THREE.Vector3(1, 0.7, 1).normalize();
+  const right = new THREE.Vector3().crossVectors(camera.up, direction).normalize();
+  const up = new THREE.Vector3().crossVectors(direction, right);
+  // Fit the visible mesh to 88% of the view, leaving 6% on each side.
+  // Perspective depth matters: a surrounding sphere leaves flat robots tiny.
+  const fitY = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * 0.88;
+  const fitX = fitY * camera.aspect;
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
   homeTarget.copy(sphere.center);
-  homePosition.copy(
-    new THREE.Vector3(1, 0.7, 1)
-      .normalize()
-      .multiplyScalar(distance)
-      .add(homeTarget),
-  );
+  forEachRobotVertex((point) => {
+    point.sub(sphere.center);
+    const x = point.dot(right), y = point.dot(up), z = point.dot(direction);
+    minX = Math.min(minX, x - z * fitX);
+    maxX = Math.max(maxX, x + z * fitX);
+    minY = Math.min(minY, y - z * fitY);
+    maxY = Math.max(maxY, y + z * fitY);
+  });
+  const distance = Math.max((maxX - minX) / (2 * fitX), (maxY - minY) / (2 * fitY));
+  if (!Number.isFinite(distance) || distance <= 0) throw new Error("Robot has no visible geometry");
+  homeTarget.addScaledVector(right, (minX + maxX) / 2).addScaledVector(up, (minY + maxY) / 2);
+  homePosition.copy(direction).multiplyScalar(distance).add(homeTarget);
+
+  // Measure the separated parts too, so the closer initial view still expands safely.
+  for (const part of moving) part.node.position.copy(part.home).add(part.offset);
+  let expandedDistance = distance;
+  forEachRobotVertex((point) => {
+    point.sub(homeTarget);
+    expandedDistance = Math.max(expandedDistance, point.dot(direction) + Math.max(
+      Math.abs(point.dot(right)) / fitX,
+      Math.abs(point.dot(up)) / fitY,
+    ));
+  });
+  for (const part of moving) part.node.position.copy(part.home);
+  robot.updateMatrixWorld(true);
+  expansionScale = expandedDistance / distance;
   camera.position.copy(homePosition);
   controls.target.copy(homeTarget);
   controls.minDistance = sphere.radius * 1.35;
-  controls.maxDistance = distance * 3;
+  controls.maxDistance = expandedDistance * 3;
   ground.position.y = box.min.y - 0.001;
   controls.update();
   schedule();
@@ -274,7 +308,7 @@ reset.addEventListener("click", () => {
   camera.position
     .copy(homePosition)
     .sub(homeTarget)
-    .multiplyScalar(1 + 0.38 * previousExpansion)
+    .multiplyScalar(1 + (expansionScale - 1) * previousExpansion)
     .add(homeTarget);
   controls.target.copy(homeTarget);
   controls.update();

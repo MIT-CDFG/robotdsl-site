@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 closer generated-model framing
+
+- Removed the arrow between the reference image and generated model, leaving two equal-width columns.
+- Centered and fitted the actual visible mesh to 88% of the view's limiting dimension, reducing the whitespace from bounding-sphere framing. The saved-render fallback also fills the stage without letterboxing.
+- Measured the exploded geometry separately so the camera pulls back enough for separated components.
+- Loaded all three compressed GLBs with Three.js and tested the actual framing functions at 4:3 and square aspect ratios. Every model fills 88% initially; projected vertices stay within the viewport at five assembled-to-exploded positions. Framing restores assembled part positions, and the initial camera distance respects the orbit controls' minimum distance.
+- HTML validation, viewer JavaScript syntax and `git diff --check`: passed.
+
+These were source and geometry checks at the default viewing angle; no browser visual or interaction tests were run.
+
 ## 2026-09-24 matched gallery views
 
 - Removed the rule above Generated robots and the full-width rule beneath its thumbnail choices.
