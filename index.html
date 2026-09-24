@@ -89,7 +89,7 @@
   /* Icons: Lucide SVGs (ISC) downloaded unmodified from lucide-static 1.47.0 into assets/icons/, drawn in the text colour through a mask. */
   .ico { display: inline-block; width: 18px; height: 18px; flex: none; background-color: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
   .ico-bot { --icon: url(assets/icons/bot.svg); } .ico-studio { --icon: url(assets/icons/app-window.svg); } .ico-video { --icon: url(assets/icons/video.svg); }
-  .ico-paper { --icon: url(assets/icons/file-text.svg); } .ico-community { --icon: url(assets/icons/users.svg); } .ico-results { --icon: url(assets/icons/chart-column.svg); }
+  .ico-paper { --icon: url(assets/icons/file-text.svg); } .ico-community { --icon: url(assets/icons/users.svg); } .ico-results { --icon: url(assets/icons/chart-column.svg); } .ico-x { --icon: url(assets/icons/x.svg); }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn.primary:hover, .btn.primary:focus-visible { color: #fff; filter: brightness(1.08); }
   .btn.soon { opacity: .8; }
@@ -141,8 +141,28 @@
   .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 12px; line-height: 1.7; }
   .code .ln { display: block; }
   .listing pre.code { font-family: var(--mono); font-size: 12px; line-height: 1.6; }   /* GitHub's code block; sized so every line of the listing fits */
-  /* Video: Vidstack's player with its default video layout; chapters (assets/video_chapters.vtt) mark the seek bar and its menu. */
-  #video media-player { display: block; aspect-ratio: 16 / 9; --video-brand: var(--accent); --video-font-family: var(--sans); --video-load-button-size: 64px; }
+  /* Video: Magic UI's Hero Video Dialog (magicui.design, MIT) in plain CSS: a thumbnail card with a frosted play button opens the video
+     over the page. The player in the dialog is Vidstack's default video layout; chapters (assets/video_chapters.vtt) mark its seek bar and menu. */
+  .hvd { position: relative; display: block; width: 100%; cursor: pointer; border: 0; background: transparent; padding: 0; border-radius: 6px; }
+  .hvd img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); transition: all .2s ease-out; }
+  .hvd:hover img, .hvd:focus-visible img { filter: brightness(.8); }
+  .hvd:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .hvd .center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transform: scale(.9); transition: all .2s ease-out; }
+  .hvd:hover .center, .hvd:focus-visible .center { transform: scale(1); }
+  .hvd .ring { display: flex; width: 112px; height: 112px; align-items: center; justify-content: center; border-radius: 50%; background: color-mix(in srgb, var(--accent) 10%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .hvd .disc { display: flex; width: 80px; height: 80px; align-items: center; justify-content: center; border-radius: 50%; background: linear-gradient(to bottom, color-mix(in srgb, var(--accent) 30%, transparent), var(--accent)); box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1); transition: all .2s ease-out; }
+  .hvd:hover .disc, .hvd:focus-visible .disc { transform: scale(1.2); }
+  .hvd .disc svg { width: 32px; height: 32px; fill: #fff; stroke: #fff; stroke-width: 2; stroke-linejoin: round; filter: drop-shadow(0 4px 3px rgb(0 0 0 / .07)) drop-shadow(0 2px 2px rgb(0 0 0 / .06)); }
+  .hvd-modal { border: 0; padding: 0; background: transparent; width: min(896px, calc(100vw - 32px)); max-width: none; overflow: visible; }
+  .hvd-modal::backdrop { background: rgb(0 0 0 / .5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .hvd-modal .inner { position: relative; }
+  .hvd-modal[open] .inner { animation: hvd-in .35s cubic-bezier(.2, .9, .3, 1.15); }   /* the component's "from-center" spring */
+  @keyframes hvd-in { from { transform: scale(.5); opacity: 0; } to { transform: none; opacity: 1; } }
+  .hvd-modal .close { position: absolute; top: -64px; right: 0; display: flex; padding: 8px; border: 0; border-radius: 50%; background: rgb(23 23 23 / .5); color: #fff; box-shadow: 0 0 0 1px rgb(255 255 255 / .2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); cursor: pointer; }
+  .hvd-modal .close .ico { width: 20px; height: 20px; }
+  .hvd-modal .frame { overflow: hidden; border-radius: 16px; border: 2px solid #fff; }
+  .hvd-modal media-player { display: block; aspect-ratio: 16 / 9; --video-bg: #fff; --video-brand: var(--accent); --video-font-family: var(--sans); --video-border: none; --video-border-radius: 0; }
+  @media (prefers-reduced-motion: reduce) { .hvd img, .hvd .center, .hvd .disc { transition: none; } .hvd-modal[open] .inner { animation: none; } }
   @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
   .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
   /* pipeline */
@@ -236,14 +256,25 @@
 
 <section class="block" id="video">
   <div class="wrap">
-    <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
-      <media-provider>
-        <media-poster class="vds-poster" src="assets/video_poster.jpg" alt="MobileCopilot title card with benchmark robots"></media-poster>
-        <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
-      </media-provider>
-      <media-video-layout></media-video-layout>
-    </media-player>
-    <noscript><style>#video media-player { display: none; }</style><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
+    <button type="button" class="hvd" aria-haspopup="dialog" aria-label="Play the video: MobileDSL and MobileCopilot in three minutes (2:57)">
+      <img src="assets/video_poster.jpg" width="1280" height="720" alt="">
+      <span class="center"><span class="ring"><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span></span></span>   <!-- Lucide play (ISC), filled as in the component -->
+    </button>
+    <dialog class="hvd-modal" id="video-dialog" aria-label="MobileDSL and MobileCopilot in three minutes">
+      <div class="inner">
+        <button type="button" class="close" aria-label="Close the video"><span class="ico ico-x" aria-hidden="true"></span></button>
+        <div class="frame">
+          <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
+            <media-provider>
+              <media-poster class="vds-poster" src="assets/video_poster.jpg" alt=""></media-poster>
+              <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
+            </media-provider>
+            <media-video-layout></media-video-layout>
+          </media-player>
+        </div>
+      </div>
+    </dialog>
+    <noscript><style>#video .hvd { display: none; }</style><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
   </div>
 </section>
 
@@ -456,6 +487,18 @@
       });
     });
     show('tab-1');
+  })();
+
+  // Video: the thumbnail opens the player in a dialog and starts it; closing the dialog (button, backdrop or Esc) pauses it.
+  (function () {
+    var dialog = document.getElementById('video-dialog'), player = dialog.querySelector('media-player');
+    document.querySelector('#video .hvd').addEventListener('click', function () {
+      dialog.showModal();
+      if (player.play) player.play().catch(function () {});
+    });
+    dialog.querySelector('.close').addEventListener('click', function () { dialog.close(); });
+    dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', function () { if (player.pause) player.pause(); });
   })();
 </script>
 
