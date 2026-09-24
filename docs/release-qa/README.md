@@ -1,15 +1,5 @@
 # Release verification
 
-## 2026-09-24 Lucide website reference
-
-- Replaced the long centered introduction and full-width video with a short split hero: large heading, concise description and actions beside the existing video. Added three linked entry points for Studio, MobileDSL and Community.
-- Downloaded the actual VitePress 1.6.4 feature-card and button styles used by the reference site, with original source and MIT license retained. Adapted Vue style scoping for static HTML.
-- Adopted Inter, neutral grays, pill buttons and plain header links while retaining RobotDSL's blue accent. The hero stacks and feature cards become compact rows on narrow screens; keyboard focus and reduced-motion styles are included.
-- Preserved the visible five-step agent workflow, curated benchmark results, hardware demos, Community position and compact citation. Generated robots remains removed.
-- HTML validation, site JavaScript syntax, local asset/icon references, anchor and ARIA references, and `git diff --check`: passed.
-
-No browser visual or interaction tests were run for this adjustment.
-
 ## 2026-09-24 generated robots removed for now
 
 - Removed the Generated robots gallery from Results, together with its loader and page styles. The results chart now leads directly into Physical robots.

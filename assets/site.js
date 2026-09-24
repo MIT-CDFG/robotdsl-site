@@ -23,7 +23,7 @@
         afterDatasetsDraw(chart) {
           const ctx = chart.ctx;
           ctx.save();
-          ctx.font = '500 12px Inter, system-ui, sans-serif';
+          ctx.font = '500 12px Geist, system-ui, sans-serif';
           ctx.textBaseline = 'middle';
           chart.data.datasets.forEach((dataset, index) => {
             ctx.fillStyle = index === 0 ? accent : text;
@@ -37,12 +37,12 @@
         animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : {duration: 250},
         layout: {padding: {right: 12}},
         plugins: {
-          legend: {position: 'top', align: 'start', labels: {color: text, boxWidth: 12, boxHeight: 12, padding: 16, font: {family: 'Inter, sans-serif', size: 13}}},
+          legend: {position: 'top', align: 'start', labels: {color: text, boxWidth: 12, boxHeight: 12, padding: 16, font: {family: 'Geist, sans-serif', size: 13}}},
           tooltip: {callbacks: {label: context => `${context.dataset.label}: ${context.raw}%`}}
         },
         scales: {
           x: {beginAtZero: true, max: 100, border: {display: false}, grid: {color: line}, ticks: {color: muted, maxTicksLimit: 6}},
-          y: {border: {display: false}, grid: {display: false}, ticks: {color: text, font: {family: 'Inter, sans-serif', size: 12}}}
+          y: {border: {display: false}, grid: {display: false}, ticks: {color: text, font: {family: 'Geist, sans-serif', size: 12}}}
         }
       }
     });
