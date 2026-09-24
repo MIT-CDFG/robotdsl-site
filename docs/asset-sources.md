@@ -24,7 +24,9 @@ The repair sequence uses the same release's `map-pin-x`, `map-pin-plus`, `circle
 
 The research imagery and compiled robot models are existing project artifacts, not newly designed decorative assets. They are kept separate from downloaded interface libraries.
 
-### Interactive generated-design gallery
+### Interactive generated-design gallery (currently removed from the page)
+
+The gallery was removed from the page at the user’s request on 2026-09-24. Its assets and viewer module are retained for possible reuse; the page no longer loads them. The notes below record their provenance and previous presentation.
 
 The three GLBs reuse existing exports in `fig1-3d-build/hero/*_raw.glb`, exported from compiled benchmark programs with the component library's geometry. They retain one named node per visible component. Web copies are compressed with glTF Transform 3.10.1 / Meshopt (simplification, joining, palette, flattening and instancing disabled); decoded bounds were checked against the originals within 1 mm. No meshes or mounting poses were authored for this redesign. `*.json` stores the corresponding component names and display offsets for exploded inspection. Explosion is a visualization, not a validated assembly sequence. These are geometry viewers, not live physics simulations.
 

@@ -68,18 +68,4 @@
       get('copy-status').textContent = 'The BibTeX is selected. Use your browser’s Copy command.';
     }
   });
-  // The generated examples stay in the Results section and load only when nearby.
-  const loadGallery = () => import('./robot-viewer.js').catch(error => {
-    get('robot-stage').setAttribute('aria-busy', 'false');
-    get('robot-status').textContent = '3D unavailable · showing the saved render';
-    get('robot-canvas').tabIndex = -1;
-    document.querySelectorAll('[data-design]').forEach(button => { button.disabled = true; });
-    console.warn('Robot viewer unavailable:', error);
-  });
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) { observer.disconnect(); loadGallery(); }
-    }, {rootMargin: '250px'});
-    observer.observe(get('designs'));
-  } else loadGallery();
 })();

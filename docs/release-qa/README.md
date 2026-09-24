@@ -1,5 +1,13 @@
 # Release verification
 
+## 2026-09-24 generated robots removed for now
+
+- Removed the Generated robots gallery from Results, together with its loader and page styles. The results chart now leads directly into Physical robots.
+- Retained the source assets and viewer module for possible reuse; they are no longer loaded by the page.
+- HTML validation, site JavaScript syntax and `git diff --check`: passed.
+
+No browser visual or interaction tests were run for this removal.
+
 ## 2026-09-24 closer generated-model framing
 
 - Removed the arrow between the reference image and generated model, leaving two equal-width columns.
