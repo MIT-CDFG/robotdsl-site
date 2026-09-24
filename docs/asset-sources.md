@@ -14,7 +14,7 @@ Retrieved September 24, 2026. Runtime dependencies are vendored so the interface
 | 3D renderer, controls, GLB loader and environment     | [Three.js 0.170.0](https://www.jsdelivr.com/package/npm/three?version=0.170.0)                                                                                | `assets/vendor/three/`, MIT; unchanged distribution files                  |
 | Geist / Geist Mono                                    | [Google Fonts](https://fonts.google.com/specimen/Geist), [Vercel Geist](https://github.com/vercel/geist-font)                                                 | Served by Google Fonts; SIL Open Font License; system-font fallback        |
 
-Tabler distribution CSS/JS retain their release copyright headers. Its MIT text was retrieved from the [upstream LICENSE](https://github.com/tabler/tabler/blob/master/LICENSE), because the package does not include that file at its root.
+Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks. Tabler distribution CSS/JS retain their release copyright headers. Its MIT text was retrieved from the [upstream LICENSE](https://github.com/tabler/tabler/blob/master/LICENSE), because the package does not include that file at its root.
 
 ## Research assets reused from the project
 

@@ -1,0 +1,2 @@
+# Preserve upstream distribution files and collapse them in code review.
+assets/vendor/** linguist-vendored -whitespace
