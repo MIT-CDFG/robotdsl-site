@@ -35,9 +35,9 @@
 .nav-actions { display: flex; align-items: center; gap: 28px; }
 .nav-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-size: 14px; font-weight: 500; text-decoration: none; }
 .nav-link:hover { color: var(--accent); }
-.hero { padding-block: 64px; }
-.hero-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: 48px; }
-.hero-copy { display: grid; justify-items: start; gap: 20px; min-width: 0; }
+.hero { padding-block: 48px; }
+.hero-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 36px; }
+.hero-copy { display: grid; justify-items: start; gap: 16px; min-width: 0; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-badges .badge { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; font-size: 14px; }
 .hero-badges .badge-launch { color: var(--accent); font-weight: 500; }
@@ -49,23 +49,24 @@
 .btn.VPButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
 .btn:focus-visible, .VPFeature:focus-visible, .nav-link:focus-visible, .site-brand:focus-visible, .badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .hero-demo { min-width: 0; }
-.hero-demo .hvd img { box-shadow: none; border-radius: 12px; }
+/* Trim the still's outer whitespace; retain the existing Magic UI video shadow. */
+.hero-demo .hvd img { aspect-ratio: 3 / 2; object-fit: cover; border: 0; border-radius: 12px; }
 .hero-demo .hvd .ring { width: 88px; height: 88px; }
 .hero-demo .hvd .disc { width: 60px; height: 60px; background: var(--accent); box-shadow: none; }
 .hero-demo .hvd .disc svg { width: 26px; height: 26px; filter: none; }
-.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 48px; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
 .VPFeature { color: var(--ink); text-decoration: none; }
 .VPFeature .icon .ico { width: 24px; height: 24px; color: var(--accent); }
 .VPFeature .title { letter-spacing: 0; }
 .VPFeature .details { font-weight: 400; }
 .fig3d .toggle { padding: 0 14px; line-height: 32px; }
 @media (max-width: 959px) {
-  .hero { padding-block: 40px 48px; }
+  .hero { padding-block: 32px 40px; }
   .hero-layout { gap: 28px; }
-  .feature-grid { margin-top: 36px; }
+  .feature-grid { margin-top: 28px; }
 }
 @media (max-width: 759px) {
-  .hero-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .hero-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .hero-copy { justify-items: center; text-align: center; }
   .hero .cta { justify-content: center; }
   .hero-badges { justify-content: center; }
