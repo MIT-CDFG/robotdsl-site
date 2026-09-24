@@ -20,7 +20,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <style>
+  /* Light only: the figures are paper figures on white. */
   :root {
+    color-scheme: light;
     --ground: #ffffff;
     --tint: #f6f7f9;
     --panel: #ffffff;
@@ -40,18 +42,6 @@
     --serif: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --ground: #0f1319; --tint: #141a22; --panel: #141a22; --ink: #eef1f5; --text: #cfd6de; --muted: #8d97a5;
-      --line: #263040; --line-strong: #3a475a; --accent: #8fb4ec; --accent-soft: #1b2a41; --ok: #6fc28f;
-      --code: #161d27; --code-ink: #dfe5ec; --code-key: #8fb4ec; --code-str: #e2b071; --code-c: #7c8694;
-    }
-  }
-  :root[data-theme="dark"] {
-    --ground: #0f1319; --tint: #141a22; --panel: #141a22; --ink: #eef1f5; --text: #cfd6de; --muted: #8d97a5;
-    --line: #263040; --line-strong: #3a475a; --accent: #8fb4ec; --accent-soft: #1b2a41; --ok: #6fc28f;
-    --code: #161d27; --code-ink: #dfe5ec; --code-key: #8fb4ec; --code-str: #e2b071; --code-c: #7c8694;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -80,12 +70,12 @@
   section[id] { scroll-margin-top: 76px; }
   @media (max-width: 720px) { section[id] { scroll-margin-top: 108px; } }
   /* hero */
-  .hero .wrap { padding-block: 64px 48px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; }
-  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; padding-block: 44px 36px; gap: 26px; } }
+  .hero .wrap { padding-block: 64px 48px; display: grid; gap: 36px; }
+  @media (max-width: 860px) { .hero .wrap { padding-block: 44px 36px; gap: 26px; } }
   .hero .text { display: grid; gap: 20px; }
   .hero .eyebrow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
   .tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: none; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
-  .hero .lede { max-width: 56ch; font-size: 1.15rem; line-height: 1.6; }
+  .hero .lede { max-width: 68ch; font-size: 1.15rem; line-height: 1.6; }
   .hero .lede b { color: var(--ink); font-weight: 600; }
   .cta { display: flex; gap: 10px; flex-wrap: wrap; }
   .btn { display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 6px; border: 1px solid var(--line-strong); color: var(--ink); background: var(--panel); }
@@ -99,6 +89,9 @@
   .btn.soon { opacity: .8; }
   .btn.soon small { font-weight: 500; font-size: .78rem; opacity: .85; }
   .hero figure img { border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  /* Phones: keep the four hero buttons on one row, icon above the label. */
+  @media (max-width: 560px) { .hero .cta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .hero .cta .btn { flex-direction: column; justify-content: center; gap: 4px; padding: 9px 2px; font-size: .8rem; } }
+  @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .hero figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
   /* stats */
   .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--tint); }
@@ -213,8 +206,8 @@
       <h1>Domain-specific languages that compile into working robots</h1>
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
-        <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Open MobileCopilot Studio</a>
-        <a class="btn" href="#video"><span class="ico ico-video" aria-hidden="true"></span>Watch the video</a>
+        <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
+        <a class="btn" href="#video"><span class="ico ico-video" aria-hidden="true"></span>Video</a>
         <a class="btn" href="#paper"><span class="ico ico-paper" aria-hidden="true"></span>Paper</a>
         <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
       </div>
