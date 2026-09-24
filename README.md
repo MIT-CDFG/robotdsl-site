@@ -3,6 +3,7 @@
 Community site of the RobotDSL project and the static preview of MobileCopilot Studio.
 
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
+- `guide/` — MobileDSL introduction, Studio editing steps, the four modules and the compiler/agent workflow.
 - `studio/` — MobileCopilot Studio front end with the component library and thumbnails. This static copy has no compiler behind it: the library, the editors and the key guide work; Build, Copilot, exports, uploads and design reports need the hosted service.
 
 Questions, designs and announcements: use Discussions. Problems with a generated design or the site: open an Issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for reports, part uploads and discussions, and [LICENSE.md](LICENSE.md) for what may be reused.
@@ -16,9 +17,10 @@ From this worktree, run `python3 -m http.server 8769 --bind 127.0.0.1` and open
 `http://127.0.0.1:8769/`. Use HTTP rather than opening `index.html` as a file,
 because the 3D viewer loads modules and model metadata.
 
-The project page retains its original layout and Vidstack video player, with
-locally vendored Lucide icons, Chart.js and Three.js for content improvements.
-The gallery stays in Results and loads only the selected generated robot. The success-rate
-summary remains accessible without JavaScript; the 3D viewer falls back to saved renders.
+The project page follows the Lucide reference, using locally vendored VitePress
+components and Lucide icons alongside the existing Vidstack player, Chart.js and Three.js.
+The project page and guide share typography and colors through `assets/base.css`.
+The success-rate summary remains accessible without JavaScript; the Language
+section's 3D viewer has a static fallback. The generated-robot gallery is currently removed.
 See [asset sources](docs/asset-sources.md) for licenses and manuscript references.
 The Studio bundle remains separate from the project-page redesign.

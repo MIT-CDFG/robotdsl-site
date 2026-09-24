@@ -1,5 +1,14 @@
 # Release verification
 
+## 2026-09-24 Guide destination
+
+- Replaced the Studio preview badge with Guide and added `guide/index.html`. The version badge links to its language section; the Learn MobileDSL entry also opens the guide.
+- Added a visible table of contents, Studio editing steps, descriptions of all four modules, compilation/repair guidance and links to the existing demonstrations and community. The page works without JavaScript and identifies which Studio features currently need the hosted service.
+- Extracted shared base styles without changing their declarations. The complete homepage title and introductory paragraph remain identical.
+- Both pages pass HTML validation. Local asset, navigation, fragment and ARIA reference checks and `git diff --check` pass.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 Lucide layout with the original introduction
 
 - Restored the Lucide-style layout and downloaded components while retaining the complete original title and introductory paragraph, including its emphasis and RobotDSL Team attribution.
