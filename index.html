@@ -23,19 +23,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
 <script type="module" src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <style>
-  /* Light only: the figures are paper figures on white. */
+  /* Light palette; interactive research figures retain their white canvas. */
   :root {
     color-scheme: light;
     --ground: #ffffff;
-    --tint: #f6f7f9;
+    --tint: #f6f6f7;
     --panel: #ffffff;
-    --ink: #111827;
-    --text: #2b3440;
-    --muted: #6b7280;
-    --line: #e3e6ea;
-    --line-strong: #c9ced6;
+    --ink: #3c3c43;
+    --text: #3c3c43;
+    --muted: #67676c;
+    --line: #e2e2e3;
+    --line-strong: #d8d8dc;
     --accent: #1f4e8c;
     --accent-soft: #e8eef7;
     --ok: #2f7d4f;
@@ -44,65 +44,31 @@
     --code-key: #1f4e8c;
     --code-str: #8a4b08;
     --code-c: #7c8694;
-    --serif: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); }
-  h1, h2, h3 { margin: 0; color: var(--ink); text-wrap: balance; font-family: var(--serif); font-weight: 600; letter-spacing: -.005em; }
+  h1, h2, h3 { margin: 0; color: var(--ink); text-wrap: balance; font-family: var(--serif); font-weight: 600; letter-spacing: -.025em; }
   h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); line-height: 1.12; }
-  h2 { font-size: clamp(1.6rem, 2.8vw, 2.05rem); line-height: 1.2; }
+  h2 { font-size: clamp(1.6rem, 2.8vw, 2rem); line-height: 1.3; }
   h3 { font-size: 1.12rem; line-height: 1.35; }
   p { margin: 0; }
   code { font-family: var(--mono); font-size: .88em; background: var(--code); color: var(--code-ink); padding: 1px 5px; border-radius: 4px; }
-  .eyebrow { font-family: var(--sans); font-size: .8rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 22px; }
-  /* nav */
-  .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--ground) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  .nav .wrap { display: flex; align-items: center; gap: 18px; min-height: 60px; }
-  .brand { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
-  .brand .ico { width: 22px; height: 22px; color: var(--accent); }
-  .nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
-  .nav-actions .btn { padding: 8px 12px; font-size: .9rem; }
-  .nav-actions .btn:not(.primary) { color: var(--accent); }
-  @media (max-width: 560px) {
-    .nav .wrap { gap: 10px; padding-inline: 16px; }
-    .nav .brand { font-size: 1.1rem; gap: 6px; }
-    .nav .brand .ico { width: 18px; height: 18px; }
-    .nav-actions { gap: 6px; }
-    .nav-actions .btn { padding: 8px; font-size: .85rem; }
-    .nav-actions .ico { display: none; }
-  }
-  section[id] { scroll-margin-top: 76px; }
-  /* hero */
-  .hero .wrap { padding-block: 56px 36px; display: grid; gap: 14px; }
-  @media (max-width: 860px) { .hero .wrap { padding-block: 40px 28px; gap: 12px; } }
-  .hero .text { display: grid; gap: 18px; justify-items: center; text-align: center; }
-  .hero .eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
-  .tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: none; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
-  .hero .lede { max-width: 62ch; font-size: 1.15rem; line-height: 1.6; text-align: left; }   /* centred block, left-aligned lines: wrapped centred lines are hard to read */
-  .hero .cta { justify-content: center; }
-  .hero .lede b { color: var(--ink); font-weight: 600; }
-  .cta { display: flex; gap: 10px; flex-wrap: wrap; }
-  .btn { display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 6px; border: 1px solid var(--line-strong); color: var(--ink); background: var(--panel); }
-  .btn:hover, .btn:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .btn.primary:hover, .btn.primary:focus-visible { color: #fff; filter: brightness(1.08); }
-  .btn.soon { opacity: .8; }
-  .btn.soon small { font-weight: 500; font-size: .78rem; opacity: .85; }
-  /* Phones: keep the four hero buttons on one row, icon above the label. */
-  @media (max-width: 560px) { .hero .cta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .hero .cta .btn { flex-direction: column; justify-content: center; gap: 4px; padding: 9px 2px; font-size: .8rem; } }
-  @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .eyebrow { font-family: var(--sans); font-size: .875rem; font-weight: 600; letter-spacing: 0; color: var(--muted); }
+  .wrap { max-width: 1200px; margin: 0 auto; padding-inline: 24px; }
+  /* Navigation, hero and buttons are styled in assets/site.css. */
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { font-family: var(--sans); text-decoration: none; cursor: pointer; }
   /* stats */
   /* sections */
-  section.block { padding-block: 64px; border-bottom: 1px solid var(--line-strong); }
-  #copilot, #real, #paper { background: var(--tint); }
+  section.block { padding-block: 64px; border-top: 1px solid var(--line); }
+  #copilot, #real { background: var(--tint); }
   #community { padding-block: 48px; }
   #community .head { margin-bottom: 0; }
-  #video { padding-block: 8px 48px; }   /* the video follows the hero directly, without a heading */
-  .head { display: grid; gap: 8px; margin-bottom: 28px; max-width: 70ch; }
+  .head { display: grid; gap: 12px; margin-bottom: 12px; max-width: 70ch; }
   .head .eyebrow { color: var(--accent); }
   .prose { max-width: 70ch; display: grid; gap: 14px; }
   .prose b { color: var(--ink); font-weight: 600; }
@@ -179,6 +145,8 @@
   footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 </style>
 <link rel="stylesheet" href="assets/vendor/tabler/steps.css">
+<link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
+<link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js" defer></script>
@@ -187,53 +155,61 @@
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
+    <a class="site-brand" href="#top"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
     <nav class="nav-actions" aria-label="Studio and community">
-      <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
-      <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
+      <a class="nav-link" href="studio/">Studio</a>
+      <a class="nav-link" href="#community">Community</a>
     </nav>
   </div>
 </header>
 
 <section class="hero" id="top">
-  <div class="wrap">
-    <div class="text">
-      <p class="eyebrow">RobotDSL Team <span class="tag">MobileDSL 1.0</span></p>
-      <h1>Domain-specific languages that compile into working robots</h1>
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <p class="hero-version">RobotDSL Team · MobileDSL 1.0</p>
+      <h1><span>Domain-specific languages</span> that compile into working robots</h1>
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
-        <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
-        <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
-        <a class="btn" href="#video"><span class="ico ico-video" aria-hidden="true"></span>Video</a>
-        <a class="btn" href="#paper"><span class="ico ico-paper" aria-hidden="true"></span>Paper</a>
+        <a class="btn VPButton medium brand" href="studio/">Open Studio</a>
+        <a class="btn VPButton medium alt" href="#community">Community</a>
+        <a class="btn VPButton medium alt" href="#paper">Paper</a>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="block" id="video">
-  <div class="wrap">
-    <button type="button" class="hvd" aria-haspopup="dialog" aria-label="Play the video: MobileDSL and MobileCopilot in three minutes (2:57)">
-      <img src="assets/video_poster.jpg" width="1280" height="720" alt="">
-      <span class="center"><span class="ring"><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span></span></span>   <!-- Lucide play (ISC), filled as in the component -->
-    </button>
-    <dialog class="hvd-modal" id="video-dialog" aria-labelledby="video-title">
-      <span id="video-title" hidden>MobileDSL and MobileCopilot in three minutes</span>
-      <div class="inner">
-        <button type="button" class="close" aria-label="Close the video"><span class="ico ico-x" aria-hidden="true"></span></button>
-        <div class="frame">
-          <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
-            <media-provider>
-              <media-poster class="vds-poster" src="assets/video_poster.jpg" alt=""></media-poster>
-              <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
-            </media-provider>
-            <media-video-layout></media-video-layout>
-          </media-player>
+    <div class="hero-demo" id="video">
+      <button type="button" class="hvd" aria-haspopup="dialog" aria-label="Play the video: MobileDSL and MobileCopilot in three minutes (2:57)">
+        <img src="assets/video_poster.jpg" width="1280" height="720" alt="">
+        <span class="center"><span class="ring"><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span></span></span>   <!-- Lucide play (ISC), filled as in the component -->
+      </button>
+      <dialog class="hvd-modal" id="video-dialog" aria-labelledby="video-title">
+        <span id="video-title" hidden>MobileDSL and MobileCopilot in three minutes</span>
+        <div class="inner">
+          <button type="button" class="close" aria-label="Close the video"><span class="ico ico-x" aria-hidden="true"></span></button>
+          <div class="frame">
+            <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
+              <media-provider>
+                <media-poster class="vds-poster" src="assets/video_poster.jpg" alt=""></media-poster>
+                <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
+              </media-provider>
+              <media-video-layout></media-video-layout>
+            </media-player>
+          </div>
         </div>
-      </div>
-    </dialog>
-    <noscript><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
+      </dialog>
+      <noscript><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
+      <p class="hero-demo-caption"><b>MobileDSL + MobileCopilot</b><span>Watch the overview · 2:57</span></p>
+    </div>
   </div>
+  <nav class="wrap feature-grid" aria-label="Explore RobotDSL">
+    <a class="VPFeature link" href="studio/">
+      <article class="box"><div class="icon"><span class="ico ico-studio" aria-hidden="true"></span></div><h2 class="title">Open Studio</h2><p class="details">Browse components and edit a robot design in your browser.</p></article>
+    </a>
+    <a class="VPFeature link" href="#mobiledsl">
+      <article class="box"><div class="icon"><span class="ico ico-program" aria-hidden="true"></span></div><h2 class="title">Learn MobileDSL</h2><p class="details">Describe the robot, world, behavior and checks in one program.</p></article>
+    </a>
+    <a class="VPFeature link" href="#community">
+      <article class="box"><div class="icon"><span class="ico ico-community" aria-hidden="true"></span></div><h2 class="title">Join the community</h2><p class="details">Share designs, ask questions and contribute parts.</p></article>
+    </a>
+  </nav>
 </section>
 
 <section class="block" id="mobiledsl">
@@ -258,7 +234,7 @@
           <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
         </div>
         <div class="bar">
-          <button type="button" class="btn toggle" aria-pressed="false">Explode</button>
+          <button type="button" class="btn VPButton medium alt toggle" aria-pressed="false">Explode</button>
           <span class="hint">Drag to rotate · scroll to zoom</span>
         </div>
       </figure>
@@ -342,10 +318,10 @@
     <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
       <p>Share a robot design, ask a question or help grow the component library.</p></div>
     <div class="cta">
-      <a class="btn primary" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
-      <a class="btn" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
+      <a class="btn VPButton medium brand" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
+      <a class="btn VPButton medium alt" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
+      <a class="btn VPButton medium alt" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
+      <a class="btn VPButton medium alt" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
     </div>
     <div class="prose">
       <p class="note"><b>Available now:</b> browse parts and edit designs in Studio. Build, Copilot, exports, reviewed uploads and design reports need the hosted service, currently in development.</p>
@@ -367,7 +343,7 @@
   author = {{RobotDSL Team}},
   note   = {Manuscript; publication details pending}
 }</pre></div>
-        <button class="btn" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
+        <button class="btn VPButton medium alt" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
         <p id="copy-status" class="note" role="status"></p>
       </details>
       <div class="cta"><a href="#video">Watch the video</a><a href="#results">See the results</a></div>
