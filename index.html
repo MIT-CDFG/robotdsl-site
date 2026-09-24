@@ -114,6 +114,23 @@
   .stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; }
   .stack > *, .two > * { min-width: 0; }
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  /* Fig. 1 in 3D (Three.js); the paper figure is the fallback when WebGL or the model is unavailable. */
+  .fig3d .stage { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+  .fig3d canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+  .fig3d canvas:active { cursor: grabbing; }
+  .fig3d .loading { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; font-size: .9rem; color: var(--muted); pointer-events: none; }
+  .fig3d .labels { position: absolute; inset: 0; pointer-events: none; }
+  .fig3d .label { position: absolute; transform: translate(-50%, -100%); text-align: center; font-size: .78rem; line-height: 1.25; color: var(--text); white-space: nowrap; opacity: 0; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff; }
+  .fig3d .label.below { transform: translate(-50%, 0); }
+  .fig3d .label b { display: block; font-size: .9rem; font-weight: 600; color: #b3261e; }
+  .fig3d .bar { position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 10px; }
+  .fig3d .toggle { padding: 6px 12px; font-size: .85rem; }
+  .fig3d .toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  .fig3d .hint { font-size: .78rem; color: var(--muted); }
+  .fig3d .fallback { display: none; }
+  .fig3d.failed canvas, .fig3d.failed .bar, .fig3d.failed .loading, .fig3d.failed .labels { display: none; }
+  .fig3d.failed .stage { aspect-ratio: auto; border: 0; }
+  .fig3d.failed .fallback { display: block; }
   @media (max-width: 820px) { .two { grid-template-columns: 1fr; } }
   /* modules */
   .modules { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line-strong); }
@@ -259,9 +276,18 @@
   <span class="k">Arm</span> top_arm(ref=<span class="s">"arm"</span>, glue=<span class="s">"-0.0073 -0.0001 -0.0043 0 0 -1"</span>)
 }
 <span class="c">// compiles to URDF, controller, Nav2 footprint, Gazebo world, behavior tree and checks</span></div>
-      <figure>
-        <img src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Component library on the left and several assembled mobile robots on the right">
-        <figcaption>The compiler resolves references, checks compatibility and derives assembly transforms, controller geometry and the navigation footprint.</figcaption>
+      <figure class="fig3d" id="fig1">
+        <div class="stage">
+          <canvas role="img" aria-label="3D model of the robot from paper Fig. 1: a white mecanum chassis with four red mecanum wheels, a red arm and a lidar"></canvas>
+          <p class="loading">Loading the 3D model…</p>
+          <div class="labels" aria-hidden="true"></div>
+          <div class="bar">
+            <button type="button" class="btn toggle" aria-pressed="false">Explode</button>
+            <span class="hint">Drag to rotate · scroll to zoom</span>
+          </div>
+          <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
+        </div>
+        <figcaption>Paper Fig. 1 in 3D: the robot of the listing, assembled from the component library's meshes at the poses the compiler derives. <b>Explode</b> separates the chassis, wheels, sensor and attachment along their mating connectors. The compiler resolves references, checks compatibility and derives assembly transforms, controller geometry and the navigation footprint.</figcaption>
       </figure>
     </div>
   </div>
@@ -449,5 +475,161 @@
   })();
 </script>
 
+<script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+  // Paper Fig. 1 in 3D. assets/models/fig1_robot.glb holds one mesh per link of the compiled listing (component-library
+  // meshes at the compiler's poses); fig1_robot.json gives each part's mating connector and the direction it comes off.
+  import * as THREE from 'three';
+  import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+  import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+  const fig = document.getElementById('fig1');
+  const stage = fig.querySelector('.stage');
+  const canvas = fig.querySelector('canvas');
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fail = () => fig.classList.add('failed');
+
+  async function init() {
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.NeutralToneMapping;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xffffff);
+    scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+    const key = new THREE.DirectionalLight(0xffffff, 1.4);
+    key.position.set(0.5, 1.2, 0.35);
+    key.castShadow = true;
+    key.shadow.mapSize.set(1024, 1024);
+    Object.assign(key.shadow.camera, { left: -0.4, right: 0.4, top: 0.4, bottom: -0.4, near: 0.1, far: 3 });
+    scene.add(key);
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), new THREE.ShadowMaterial({ opacity: 0.12 }));
+    ground.rotation.x = -Math.PI / 2;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    const camera = new THREE.PerspectiveCamera(30, 4 / 3, 0.01, 10);
+    const target = new THREE.Vector3(0, 0.135, 0);
+    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(1.08).add(target));
+    const controls = new OrbitControls(camera, canvas);
+    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.45, maxDistance: 1.8, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
+    controls.target.copy(target);
+    controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+    const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+    const [gltf, meta] = await Promise.all([
+      loader.loadAsync('assets/models/fig1_robot.glb'),
+      fetch('assets/models/fig1_robot.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    ]);
+    const robot = gltf.scene;
+    robot.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+    scene.add(robot);
+
+    // Parts that come off, their connector arrows (dot at the connector, as in the figure) and one label per role.
+    const moving = [], arrows = [], labels = [];
+    const layer = fig.querySelector('.labels');
+    const v3 = a => new THREE.Vector3(a[0], a[1], a[2]);
+    for (const p of meta.parts) {
+      const node = robot.getObjectByName(p.name);
+      if (!node) continue;
+      if (p.distance > 0) {
+        const dir = v3(p.direction);
+        moving.push({ node, home: node.position.clone(), offset: dir.clone().multiplyScalar(p.distance) });
+        const arrow = new THREE.ArrowHelper(dir, v3(p.mount), p.distance, 0x111111, 0.014, 0.009);
+        const dot = new THREE.Mesh(new THREE.SphereGeometry(0.003, 12, 8), new THREE.MeshBasicMaterial({ color: 0x111111 }));
+        dot.position.copy(v3(p.mount));
+        for (const o of [arrow, dot]) {
+          o.traverse(m => { if (m.material) { m.material.transparent = true; m.material.opacity = 0; } });
+          o.visible = false;
+          scene.add(o);
+          arrows.push(o);
+        }
+      }
+      const known = labels.find(l => l.role === p.role);
+      const anchor = v3(p.centre).add(new THREE.Vector3(0, p.role === 'Chassis' ? -p.size[1] / 2 - 0.012 : p.size[1] / 2 + 0.012, 0));
+      const moves = p.distance > 0 ? v3(p.direction).multiplyScalar(p.distance) : new THREE.Vector3();
+      if (known) known.anchors.push({ anchor, moves });
+      else {
+        const el = document.createElement('div');
+        el.className = 'label' + (p.role === 'Chassis' ? ' below' : '');
+        el.innerHTML = `<b>${p.role}</b>(${p.kind})`;
+        layer.appendChild(el);
+        labels.push({ role: p.role, el, anchors: [{ anchor, moves }] });
+      }
+    }
+
+    const toggle = fig.querySelector('.toggle'), hint = fig.querySelector('.hint');
+    const touch = window.matchMedia('(hover: none)').matches;
+    const idle = touch ? 'Drag to rotate · pinch to zoom' : 'Drag to rotate · scroll to zoom';
+    hint.textContent = idle;
+    let exploded = 0, goal = 0, shown = 0;
+    toggle.addEventListener('click', () => {
+      goal = goal ? 0 : 1;
+      toggle.setAttribute('aria-pressed', goal ? 'true' : 'false');
+      toggle.textContent = goal ? 'Assemble' : 'Explode';
+      hint.textContent = goal ? 'Arrows mark the mating connectors' : idle;
+    });
+
+    const size = () => {
+      const w = stage.clientWidth, h = stage.clientHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    };
+    new ResizeObserver(size).observe(stage);
+    size();
+
+    let visible = true, last = performance.now();
+    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(fig);
+    const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const p = new THREE.Vector3();
+    renderer.setAnimationLoop(now => {
+      const dt = Math.min(0.05, (now - last) / 1000); last = now;
+      if (!visible) return;
+      if (exploded !== goal) exploded = still ? goal : Math.max(0, Math.min(1, exploded + Math.sign(goal - exploded) * dt / 0.7));
+      const k = ease(exploded);
+      // Pull back while exploding so the lifted parts stay in frame, keeping any zoom the reader chose.
+      camera.position.sub(controls.target).multiplyScalar((1 + 0.25 * k) / (1 + 0.25 * shown)).add(controls.target);
+      shown = k;
+      for (const m of moving) m.node.position.copy(m.home).addScaledVector(m.offset, k);
+      for (const a of arrows) { a.visible = k > 0.01; a.traverse(o => { if (o.material) o.material.opacity = k; }); }
+      controls.update();
+      renderer.render(scene, camera);
+      const w = stage.clientWidth, h = stage.clientHeight;
+      // Each label sits at the rightmost of its role's parts on screen (the wheels), then overlapping labels are pushed apart.
+      const placed = [];
+      for (const l of labels) {
+        let best = null;
+        for (const a of l.anchors) {
+          p.copy(a.anchor).addScaledVector(a.moves, k).project(camera);
+          if (!best || p.x > best.x) best = { x: p.x, y: p.y };
+        }
+        const box = { l, x: (best.x + 1) / 2 * w, y: (1 - best.y) / 2 * h, w: l.el.offsetWidth, h: l.el.offsetHeight, below: l.role === 'Chassis' };
+        for (const q of placed) {
+          const top = box.below ? box.y : box.y - box.h, qtop = q.below ? q.y : q.y - q.h;
+          if (Math.abs(box.x - q.x) < (box.w + q.w) / 2 && top < qtop + q.h && qtop < top + box.h) box.y += (qtop + q.h) - top + 2;
+        }
+        box.x = Math.min(Math.max(box.x, box.w / 2 + 6), w - box.w / 2 - 6);    // keep labels inside the frame
+        box.y = box.below ? Math.min(box.y, h - box.h - 6) : Math.max(box.y, box.h + 6);
+        placed.push(box);
+        l.el.style.left = `${box.x}px`;
+        l.el.style.top = `${box.y}px`;
+        l.el.style.opacity = k;
+      }
+    });
+    fig.querySelector('.loading').remove();
+  }
+
+  const start = () => init().catch(err => { console.warn('Fig. 1 3D view unavailable:', err); fail(); });
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting)) { io.disconnect(); start(); } }, { rootMargin: '400px' });
+    io.observe(fig);
+  } else start();
+</script>
 </body>
 </html>
