@@ -70,12 +70,13 @@
   section[id] { scroll-margin-top: 76px; }
   @media (max-width: 720px) { section[id] { scroll-margin-top: 108px; } }
   /* hero */
-  .hero .wrap { padding-block: 64px 48px; display: grid; gap: 36px; }
-  @media (max-width: 860px) { .hero .wrap { padding-block: 44px 36px; gap: 26px; } }
-  .hero .text { display: grid; gap: 20px; }
-  .hero .eyebrow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
+  .hero .wrap { padding-block: 56px 36px; display: grid; gap: 14px; }
+  @media (max-width: 860px) { .hero .wrap { padding-block: 40px 28px; gap: 12px; } }
+  .hero .text { display: grid; gap: 18px; justify-items: center; text-align: center; }
+  .hero .eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
   .tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: none; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
-  .hero .lede { max-width: 68ch; font-size: 1.15rem; line-height: 1.6; }
+  .hero .lede { max-width: 62ch; font-size: 1.15rem; line-height: 1.6; }
+  .hero .cta { justify-content: center; }
   .hero .lede b { color: var(--ink); font-weight: 600; }
   .cta { display: flex; gap: 10px; flex-wrap: wrap; }
   .btn { display: inline-flex; align-items: center; gap: 8px; font-size: .95rem; font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 6px; border: 1px solid var(--line-strong); color: var(--ink); background: var(--panel); }
@@ -94,13 +95,16 @@
   @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .hero figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
   /* Hero gallery: benchmark robots in one Three.js view (orthographic, as in the video's opening); a still of that opening stands in until it is ready or without WebGL. */
-  .gallery3d .stage { position: relative; aspect-ratio: 2.4 / 1; }
+  /* The gallery reaches past the text column so the robots read as a stage under the title. */
+  .gallery3d { width: min(1360px, calc(100vw - 32px)); margin-inline: calc((100% - min(1360px, calc(100vw - 32px))) / 2); }
+  .gallery3d .stage { position: relative; height: clamp(260px, 46vh, 480px); }
+  .gallery3d figcaption { text-align: center; margin-top: 4px; }
   .gallery3d .still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border: 0; background: none; transition: opacity .5s; }
   .gallery3d canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity .5s; cursor: grab; touch-action: pan-y; }
   .gallery3d canvas:active { cursor: grabbing; }
   .gallery3d.ready canvas { opacity: 1; }
   .gallery3d.ready .still { opacity: 0; }
-  @media (max-width: 700px) { .gallery3d .stage { aspect-ratio: 3 / 4; } }
+  @media (max-width: 700px) { .gallery3d .stage { height: auto; aspect-ratio: 3 / 4; } }
   /* stats */
   .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--tint); }
   .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -705,7 +709,8 @@
       // In two columns the tallest robots take the back row, so nothing reaches into the row behind.
       (narrow ? [...shown].sort((a, b) => b.height - a.height) : shown).forEach((r, i) => {
         const row = Math.floor(i / 2), alone = i === shown.length - 1 && shown.length % 2;
-        const [x, y] = narrow ? [alone ? 0 : (i % 2 ? 0.42 : -0.42), ((rows - 1) / 2 - row) * 0.78] : r.ground;
+        const spread = Math.min(1.7, Math.max(1, aspect / 2.4));        // wide stages: spread the line-up sideways
+        const [x, y] = narrow ? [alone ? 0 : (i % 2 ? 0.42 : -0.42), ((rows - 1) / 2 - row) * 0.78] : [r.ground[0] * spread, r.ground[1]];
         r.group.position.set(x, 0, -y);
       });
       // Look from the fixed elevation, then fit the frame to the assembled robots with a small margin.
