@@ -1,4 +1,23 @@
 /* Local additions only. The original page owns fonts, colors, widths and spacing. */
+#copilot .head { margin-bottom: 8px; }
+.workflow-steps { --tblr-primary: var(--accent); --tblr-border-color: var(--line-strong); --tblr-white: #fff; }
+.workflow-steps .step-item { min-width: 0; padding: 38px 12px 0; }
+.workflow-steps h3 { font-size: 1rem; margin: 4px 0 8px; }
+.workflow-steps p { font-size: .9rem; line-height: 1.5; }
+.step-role { font-size: .875rem; font-weight: 500; color: var(--accent); }
+.workflow-loop { display: flex; align-items: baseline; gap: 10px; }
+.workflow-loop .ico { align-self: flex-start; margin-top: 5px; color: var(--accent); }
+.workflow-example h3 .ico { vertical-align: -3px; margin-right: 6px; color: var(--accent); }
+.ico-undo { --icon: url(icons/undo-2.svg); }
+.ico-terminal { --icon: url(icons/terminal.svg); }
+/* Tabler's vertical Steps rules, applied at the narrow-layout breakpoint. */
+@media (max-width: 850px) {
+  .workflow-steps { --tblr-steps-dot-offset: -2px; flex-direction: column; }
+  .workflow-steps .step-item { text-align: left; padding: 0 0 0 calc(var(--tblr-steps-dot-size) + 1rem); min-height: auto; }
+  .workflow-steps .step-item:not(:first-child) { margin-top: 1rem; }
+  .workflow-steps .step-item:before { top: var(--tblr-steps-dot-offset); left: 0; transform: translate(0, 0); }
+  .workflow-steps .step-item:not(:last-child):after { position: absolute; content: ""; transform: translateX(-50%); top: var(--tblr-steps-dot-offset); left: calc(var(--tblr-steps-dot-size) * .5); width: var(--tblr-steps-border-width); height: calc(100% + 1rem); }
+}
 .reading-details { min-width: 0; }
 .reading-details summary { cursor: pointer; color: var(--accent); font-weight: 500; }
 .reading-details[open] > summary { margin-bottom: 18px; }

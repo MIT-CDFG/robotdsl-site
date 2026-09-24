@@ -64,7 +64,17 @@
   .nav .wrap { display: flex; align-items: center; gap: 18px; min-height: 60px; }
   .brand { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
   .brand .ico { width: 22px; height: 22px; color: var(--accent); }
-  .nav .community-link { margin-left: auto; padding: 8px 12px; font-size: .9rem; color: var(--accent); }
+  .nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+  .nav-actions .btn { padding: 8px 12px; font-size: .9rem; }
+  .nav-actions .btn:not(.primary) { color: var(--accent); }
+  @media (max-width: 560px) {
+    .nav .wrap { gap: 10px; padding-inline: 16px; }
+    .nav .brand { font-size: 1.1rem; gap: 6px; }
+    .nav .brand .ico { width: 18px; height: 18px; }
+    .nav-actions { gap: 6px; }
+    .nav-actions .btn { padding: 8px; font-size: .85rem; }
+    .nav-actions .ico { display: none; }
+  }
   section[id] { scroll-margin-top: 76px; }
   /* hero */
   .hero .wrap { padding-block: 56px 36px; display: grid; gap: 14px; }
@@ -92,7 +102,7 @@
   /* stats */
   /* sections */
   section.block { padding-block: 64px; border-bottom: 1px solid var(--line-strong); }
-  #community, #copilot, #real { background: var(--tint); }
+  #copilot, #real, #paper { background: var(--tint); }
   #community { padding-block: 48px; }
   #community .head { margin-bottom: 0; }
   #video { padding-block: 8px 48px; }   /* the video follows the hero directly, without a heading */
@@ -160,17 +170,6 @@
   @media (prefers-reduced-motion: reduce) { .hvd img, .hvd .center, .hvd .disc { transition: none; } .hvd-modal[open] .inner { animation: none; } }
   @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
   .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
-  /* pipeline */
-  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: step; }
-  .step { display: grid; gap: 6px; align-content: start; padding-top: 12px; border-top: 2px solid var(--line-strong); }
-  .step::before { counter-increment: step; content: counter(step, decimal-leading-zero); font-family: var(--mono); font-size: .8rem; color: var(--muted); }
-  .step.tool { border-top-color: var(--accent); }
-  .step h3 { font-family: var(--sans); font-weight: 600; font-size: 1rem; }
-  .step p { font-size: .9rem; color: var(--muted); }
-  @media (max-width: 1000px) { .steps { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 560px) { .steps { grid-template-columns: 1fr 1fr; } }
-  .legend { font-size: .86rem; color: var(--muted); }
-  .legend i { display: inline-block; width: 22px; height: 2px; background: var(--accent); vertical-align: middle; margin: 0 6px 0 2px; }
   /* tables */
   .tablewrap { overflow-x: auto; border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
   table { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 720px; }
@@ -198,6 +197,7 @@
   footer { padding-block: 30px 44px; color: var(--muted); font-size: .88rem; }
   footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 </style>
+<link rel="stylesheet" href="assets/vendor/tabler/steps.css">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js" defer></script>
@@ -207,7 +207,10 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
-    <a class="btn community-link" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
+    <nav class="nav-actions" aria-label="Studio and community">
+      <a class="btn primary" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
+      <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
+    </nav>
   </div>
 </header>
 
@@ -252,23 +255,6 @@
   </div>
 </section>
 
-<section class="block" id="community">
-  <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
-      <p>Share a robot design, ask a question or help grow the component library.</p></div>
-    <div class="cta">
-      <a class="btn primary" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
-      <a class="btn" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
-      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
-    </div>
-    <div class="prose">
-      <p class="note"><b>Available now:</b> browse parts and edit designs in Studio. Build, Copilot, exports, reviewed uploads and design reports need the hosted service, currently in development.</p>
-      <p class="note"><b>Planned:</b> browser simulation and documentation; manipulation and legged-robot languages are in design. Benchmark examples are not yet public. Follow <a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Discussions</a> for release updates.</p>
-    </div>
-  </div>
-</section>
-
 <section class="block" id="mobiledsl">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Language</span><h2>One program, four modules</h2>
@@ -303,19 +289,34 @@
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Agent</span><h2>From a request to a runnable robot</h2>
       <p>MobileCopilot chooses components and writes a MobileDSL program. The compiler assembles the parts, generates their dependent settings and returns errors the agent can fix.</p></div>
-    <div class="steps" role="group" aria-label="MobileCopilot workflow">
-      <div class="step"><h3>Choose the parts</h3><p>The agent searches the component library using your description or reference image, then specifies the robot, world and behavior.</p></div>
-      <div class="step tool"><h3>Compile and repair</h3><p>The compiler checks how the modules fit together. The agent fixes missing goals, incompatible mounts or required sensors and tries again.</p></div>
-      <div class="step"><h3>Run the system</h3><p>The compiled files run in ROS and Gazebo. Execution checks test whether the robot moves and completes its programmed behavior.</p></div>
-    </div>
-    <div class="reading-block">
-      <h3>A missing waypoint, caught before the run</h3>
-      <div class="prose">
-        <p>In the paper’s warehouse patrol example, the task visits <code>@world/wp2</code>, but the world never defines it. The compiler reports <code>error[unresolved_ref]</code>; the agent adds the missing goal in <code>warehouse.world</code>:</p>
-        <div class="markdown-body"><pre><code>Goal wp2(pose="3.25 1.7 0 0 0 0 1")</code></pre></div>
-        <p>Recompiling returns zero errors and one advisory. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
-        <p class="note">Compiler feedback guides authoring; simulation scores the submitted program afterward.</p>
+    <ol class="steps steps-counter workflow-steps">
+      <li class="step-item"><span class="step-role">You</span><h3>Request</h3><p>Describe the robot, world and task. Add a reference image if useful.</p></li>
+      <li class="step-item"><span class="step-role">Library search</span><h3>Retrieve parts</h3><p>Match text or images to components, then inspect their geometry and connectors.</p></li>
+      <li class="step-item"><span class="step-role">Coding agent</span><h3>Write the program</h3><p>Define the robot, world, behavior and checks in four linked MobileDSL modules.</p></li>
+      <li class="step-item"><span class="step-role">Compiler</span><h3>Compile &amp; check</h3><p>Check constraints; derive assembly, controller and navigation settings.</p></li>
+      <li class="step-item"><span class="step-role">ROS &amp; Gazebo</span><h3>Run &amp; inspect</h3><p>Execute the robot and its task. Physical deployment uses a supported platform.</p></li>
+    </ol>
+    <p class="workflow-loop"><span class="ico ico-undo" aria-hidden="true"></span><span><b>Compiler errors return to the agent.</b> Revise the program in step 3, then compile again in step 4.</span></p>
+    <p class="note">Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan. In the benchmark, simulation runs after authoring and provides no repair feedback to the agent.</p>
+    <div class="reading-block workflow-example">
+      <h3>Example: a missing waypoint in a warehouse patrol</h3>
+      <p>The request is to visit W1, W2 and W3, then return home. The task references W2, but the world never defines it.</p>
+      <div class="two">
+        <div class="prose">
+          <h3><span class="ico ico-terminal" aria-hidden="true"></span>Compiler feedback</h3>
+          <div class="markdown-body"><pre><code>mobiledsl compile warehouse-patrol/ --out build/
+
+error[unresolved_ref]
+unresolved '@world/wp2'</code></pre></div>
+        </div>
+        <div class="prose">
+          <h3><span class="ico ico-bot" aria-hidden="true"></span>Agent’s repair</h3>
+          <p>Add the missing goal to <code>warehouse.world</code>:</p>
+          <div class="markdown-body"><pre><code>Goal wp2(pose="3.25 1.7 0 0 0 0 1")</code></pre></div>
+        </div>
       </div>
+      <p><b>After recompiling:</b> zero errors and one advisory. The project is ready to run. <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
+      <p class="note">This is the paper’s walkthrough, not a live agent session.</p>
     </div>
   </div>
 </section>
@@ -439,6 +440,23 @@
       <div><dt>Course</dt><dd>office corridor, three pairs of cabinets on alternating sides</dd></div>
       <div><dt>Safety</dt><dd>onboard supervisor stops on contact, blind frames or travel limits</dd></div>
     </dl>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="community">
+  <div class="wrap stack">
+    <div class="head"><span class="eyebrow">Community</span><h2>Explore, ask, contribute</h2>
+      <p>Share a robot design, ask a question or help grow the component library.</p></div>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
+      <a class="btn" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
+      <a class="btn" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
+    </div>
+    <div class="prose">
+      <p class="note"><b>Available now:</b> browse parts and edit designs in Studio. Build, Copilot, exports, reviewed uploads and design reports need the hosted service, currently in development.</p>
+      <p class="note"><b>Planned:</b> browser simulation and documentation; manipulation and legged-robot languages are in design. Benchmark examples are not yet public. Follow <a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Discussions</a> for release updates.</p>
     </div>
   </div>
 </section>

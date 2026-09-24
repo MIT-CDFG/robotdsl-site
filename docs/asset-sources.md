@@ -1,6 +1,6 @@
 # Asset sources
 
-The original page layout, typography, palette, video player and Language section are retained. Content additions use plain text, native HTML disclosures, downloaded Lucide icons, Chart.js and the existing Three.js integration. No stock robot, generated illustration or invented robot mesh is used as research evidence.
+The original page typography, palette, video player and Language section are retained. Content additions use plain text, a BibTeX disclosure, downloaded Lucide icons, Tabler Steps, Chart.js and the existing Three.js integration. No stock robot, generated illustration or invented robot mesh is used as research evidence.
 
 ## Downloaded interface assets
 
@@ -9,11 +9,14 @@ Retrieved September 24, 2026. Chart.js, Three.js and icons are vendored. The ori
 | Asset                                                 | Source                                                                                                                                                        | Local copy / license                                                       |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | SVG icons                                             | [lucide-static 1.47.0](https://www.jsdelivr.com/package/npm/lucide-static?version=1.47.0)                                                                     | `assets/icons/`, original SVGs; ISC and inherited MIT notices in `LICENSE` |
+| Workflow steps and connecting lines                    | [Tabler Steps](https://docs.tabler.io/ui/components/step), [Tabler 1.1.1 CSS](https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler.css) | `assets/vendor/tabler/steps.css`, unmodified Steps excerpt; [upstream MIT license](https://github.com/tabler/tabler/blob/dev/LICENSE) saved alongside |
 | Benchmark bars and axes                               | [Chart.js 4.4.9](https://www.jsdelivr.com/package/npm/chart.js?version=4.4.9), [bar chart documentation](https://www.chartjs.org/docs/latest/charts/bar.html) | `assets/vendor/chartjs/`, MIT; the application formats the data labels     |
 | 3D renderer, controls, GLB loader and environment     | [Three.js 0.170.0](https://www.jsdelivr.com/package/npm/three?version=0.170.0)                                                                                | `assets/vendor/three/`, MIT; unchanged distribution files                  |
 | Geist / Geist Mono                                    | [Google Fonts](https://fonts.google.com/specimen/Geist), [Vercel Geist](https://github.com/vercel/geist-font)                                                 | Served by Google Fonts; SIL Open Font License; system-font fallback        |
 
 Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks.
+
+Only Tabler's Steps component is loaded. Existing site colors map to its variables; local CSS applies its vertical layout below 850 pixels and spaces the role labels and descriptions. The workflow is a static explanation, not a live progress indicator. The return-loop and terminal symbols are unmodified `undo-2.svg` and `terminal.svg` from the same Lucide release.
 
 ## Research assets reused from the project
 

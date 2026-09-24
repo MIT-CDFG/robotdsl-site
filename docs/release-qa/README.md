@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 Studio access and workflow visibility
+
+- Header actions expose both Studio and Community. The Community section follows the physical robots, before the paper; alternating section backgrounds follow that order.
+- Replaced the three condensed Agent descriptions with five connected Tabler Steps: request, retrieval, authoring, compilation and execution. The compiler-to-agent repair loop and the compiler feedback / agent repair example remain visible.
+- The Steps component is an unmodified excerpt of Tabler 1.1.1 CSS. Its vertical layout is applied below 850 pixels; only the existing site palette is used.
+- HTML validation and `git diff --check`: passed.
+- Source checks confirmed both header destinations, section order, five workflow steps, one remaining BibTeX disclosure, unchanged table values, and valid local assets and references. The error and repair code match the fetched manuscript example.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 readable content without disclosure controls
 
 - Made Studio availability and roadmap, the compiler repair example, both results tables with interpretation, and platform specifications visible in the page. Only the BibTeX utility remains collapsed.
