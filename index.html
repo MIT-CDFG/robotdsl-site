@@ -92,22 +92,9 @@
   .btn.primary:hover, .btn.primary:focus-visible { color: #fff; filter: brightness(1.08); }
   .btn.soon { opacity: .8; }
   .btn.soon small { font-weight: 500; font-size: .78rem; opacity: .85; }
-  .hero figure img { border: 1px solid var(--line); border-radius: 8px; background: #fff; }
   /* Phones: keep the four hero buttons on one row, icon above the label. */
   @media (max-width: 560px) { .hero .cta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; } .hero .cta .btn { flex-direction: column; justify-content: center; gap: 4px; padding: 9px 2px; font-size: .8rem; } }
   @media (max-width: 350px) { .hero .cta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  .hero figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
-  /* Hero gallery: benchmark robots in one Three.js view (orthographic, as in the video's opening); a still of that opening stands in only without WebGL or JavaScript. */
-  /* The gallery reaches past the text column so the robots read as a stage under the title. */
-  .gallery3d { width: min(1360px, calc(100vw - 32px)); margin-inline: calc((100% - min(1360px, calc(100vw - 32px))) / 2); }
-  .gallery3d .stage { position: relative; height: clamp(260px, 46vh, 480px); }
-  .gallery3d figcaption { text-align: center; margin-top: 4px; }
-  .gallery3d .still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border: 0; background: none; display: none; }
-  .gallery3d.fallback .still { display: block; }
-  .gallery3d canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity .5s; cursor: grab; touch-action: pan-y; }
-  .gallery3d canvas:active { cursor: grabbing; }
-  .gallery3d.ready canvas { opacity: 1; }
-  @media (max-width: 700px) { .gallery3d .stage { height: auto; aspect-ratio: 3 / 4; } }
   /* stats */
   /* sections */
   section.block { padding-block: 64px; border-bottom: 1px solid var(--line); }
@@ -256,14 +243,6 @@
         <a class="btn" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
       </div>
     </div>
-    <figure class="gallery3d" id="gallery3d">
-      <div class="stage">
-        <img class="still" src="assets/gallery_still.webp" width="1600" height="660" alt="" loading="lazy">
-        <noscript><style>.gallery3d .still { display: block; }</style></noscript>
-        <canvas role="img" aria-label="Robots that coding agents wrote as MobileDSL programs in the benchmark, assembled from the component library"></canvas>
-      </div>
-      <figcaption>Robots that coding agents wrote as MobileDSL programs in the benchmark, each assembled from the same component library. Drag to turn the view.</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -676,116 +655,6 @@
     const io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting)) { io.disconnect(); start(); } }, { rootMargin: '400px' });
     io.observe(fig);
   } else start();
-</script>
-<script type="module">
-  // Hero gallery: benchmark robots (assets/hero/robots.json) built from component-library meshes at the compiler's
-  // poses, placed and scaled as in the video's opening; on narrow screens they stand in two columns.
-  import * as THREE from 'three';
-  import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-  import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
-
-  const root = document.getElementById('gallery3d');
-  const canvas = root.querySelector('canvas');
-  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const TARGET_LENGTH = 0.52, SIZE_EXPONENT = 0.85, ELEVATION = THREE.MathUtils.degToRad(38);
-
-  async function init() {
-    const robots = await fetch('assets/hero/robots.json').then(r => r.json());
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    renderer.toneMapping = THREE.NeutralToneMapping;
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xffffff);
-    scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
-    const key = new THREE.DirectionalLight(0xffffff, 1.4);
-    key.position.set(1.2, 3.2, 1.6); key.castShadow = true; key.shadow.mapSize.set(2048, 2048);
-    Object.assign(key.shadow.camera, { left: -2.6, right: 2.6, top: 2.6, bottom: -2.6, near: 0.1, far: 10 });
-    scene.add(key);
-    const ground = new THREE.Mesh(new THREE.PlaneGeometry(12, 12), new THREE.ShadowMaterial({ opacity: 0.1 }));
-    ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
-
-    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.01, 50);
-    const controls = new OrbitControls(camera, canvas);
-    Object.assign(controls, { enableDamping: true, enablePan: false, enableZoom: false, minPolarAngle: 0.35, maxPolarAngle: 1.35 });
-
-    const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
-    const loaded = await Promise.allSettled(robots.map(async (r, i) => {
-      const [gltf, meta] = await Promise.all([loader.loadAsync(r.glb), fetch(r.parts).then(x => x.json())]);
-      const length = meta.size[0];                                         // along the driving direction
-      const scale = Math.pow(TARGET_LENGTH / length, SIZE_EXPONENT);
-      gltf.scene.scale.setScalar(scale);
-      const parts = meta.parts.map(p => {
-        const node = gltf.scene.getObjectByName(p.name);
-        node.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
-        const delay = { wheel: 0, chassis: 0.2, sensor: 0.4, attachment: 0.4 }[p.category] ?? 0.3;
-        return { node, home: node.position.clone(), from: new THREE.Vector3(...p.explode).multiplyScalar(Math.max(meta.size[0], meta.size[2]) / 0.35), delay };
-      });
-      scene.add(gltf.scene);
-      return { group: gltf.scene, ground: r.ground, parts, t0: 0.12 * i, height: meta.size[1] * scale };
-    }));
-    const shown = loaded.filter(x => x.status === 'fulfilled').map(x => x.value);
-    if (!shown.length) throw new Error('no robot loaded');
-
-    // Desktop: the opening's line-up. Phones: two columns, back to front.
-    function layout() {
-      const w = canvas.clientWidth, h = canvas.clientHeight, aspect = w / h;
-      renderer.setSize(w, h, false);
-      const narrow = aspect < 1.4;
-      const rows = Math.ceil(shown.length / 2);
-      // In two columns the tallest robots take the back row, so nothing reaches into the row behind.
-      (narrow ? [...shown].sort((a, b) => b.height - a.height) : shown).forEach((r, i) => {
-        const row = Math.floor(i / 2), alone = i === shown.length - 1 && shown.length % 2;
-        const spread = Math.min(1.25, Math.max(1, aspect / 3.4));       // very wide stages: open the rows a little
-        const [x, y] = narrow ? [alone ? 0 : (i % 2 ? 0.42 : -0.42), ((rows - 1) / 2 - row) * 0.78] : [r.ground[0] * spread, r.ground[1]];
-        r.group.position.set(x, 0, -y);
-      });
-      // Look from the fixed elevation, then fit the frame to the assembled robots with a small margin.
-      controls.target.set(0, 0.1, 0);
-      camera.position.set(0, Math.sin(ELEVATION) * 20, Math.cos(ELEVATION) * 20).add(controls.target);
-      camera.lookAt(controls.target);
-      camera.updateMatrixWorld();
-      const box = new THREE.Box3(), view = camera.matrixWorldInverse, v = new THREE.Vector3();
-      for (const r of shown) {
-        const now = r.parts.map(p => p.node.position.clone());
-        r.parts.forEach(p => p.node.position.copy(p.home));
-        r.group.updateMatrixWorld(true);
-        const b = new THREE.Box3().setFromObject(r.group);
-        for (let c = 0; c < 8; c++) box.expandByPoint(v.set(c & 1 ? b.max.x : b.min.x, c & 2 ? b.max.y : b.min.y, c & 4 ? b.max.z : b.min.z).applyMatrix4(view));
-        r.parts.forEach((p, j) => p.node.position.copy(now[j]));
-      }
-      const cx = (box.min.x + box.max.x) / 2, cy = (box.min.y + box.max.y) / 2;
-      let fw = (box.max.x - box.min.x) * 1.06, fh = (box.max.y - box.min.y) * 1.08;
-      if (fw / fh > aspect) fh = fw / aspect; else fw = fh * aspect;
-      Object.assign(camera, { left: cx - fw / 2, right: cx + fw / 2, top: cy + fh / 2, bottom: cy - fh / 2 });
-      camera.updateProjectionMatrix();
-      controls.update();
-    }
-    new ResizeObserver(layout).observe(canvas);
-    layout();
-
-    let visible = true;
-    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(root);
-    const ease = t => 1 - Math.pow(1 - t, 3);
-    const start = performance.now();
-    renderer.setAnimationLoop(now => {
-      if (!visible) return;
-      const t = (now - start) / 1000;
-      for (const r of shown) for (const p of r.parts) {
-        const k = still ? 1 : ease(Math.min(1, Math.max(0, (t - r.t0 - p.delay) / 0.8)));
-        p.node.position.copy(p.home).addScaledVector(p.from, 1 - k);
-      }
-      controls.update();
-      renderer.render(scene, camera);
-    });
-    root.classList.add('ready');
-  }
-
-  init().catch(err => { console.warn('3D gallery unavailable; showing the still.', err); root.classList.add('fallback'); });
 </script>
 </body>
 </html>
