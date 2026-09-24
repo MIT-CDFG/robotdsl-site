@@ -107,6 +107,7 @@
   @media (max-width: 700px) { .gallery3d .stage { height: auto; aspect-ratio: 3 / 4; } }
   /* stats */
   .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--tint); }
+  .block + .stats { border-top: 0; }
   .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
   .stat { padding: 22px 20px 22px 0; border-right: 1px solid var(--line); margin-right: 20px; }
   .stat:last-child { border-right: 0; margin-right: 0; }
@@ -252,15 +253,6 @@
   </div>
 </section>
 
-<div class="stats" aria-label="Key results">
-  <div class="wrap">
-    <div class="stat"><div class="n">+42<small>–50 pp</small></div><div class="l">system execution success over direct ROS/Gazebo authoring</div></div>
-    <div class="stat"><div class="n">−33<small>–61 %</small></div><div class="l">API cost per design, with less code and generation time</div></div>
-    <div class="stat"><div class="n">50</div><div class="l">design tasks in the benchmark, three coding agents</div></div>
-    <div class="stat"><div class="n">43</div><div class="l">physical trials on two corridor courses</div></div>
-  </div>
-</div>
-
 <section class="block" id="video">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Video</span><h2>MobileDSL and MobileCopilot in three minutes</h2>
@@ -270,6 +262,15 @@
     </video>
   </div>
 </section>
+
+<div class="stats" aria-label="Key results">
+  <div class="wrap">
+    <div class="stat"><div class="n">+42<small>–50 pp</small></div><div class="l">system execution success over direct ROS/Gazebo authoring</div></div>
+    <div class="stat"><div class="n">−33<small>–61 %</small></div><div class="l">API cost per design, with less code and generation time</div></div>
+    <div class="stat"><div class="n">50</div><div class="l">design tasks in the benchmark, three coding agents</div></div>
+    <div class="stat"><div class="n">43</div><div class="l">physical trials on two corridor courses</div></div>
+  </div>
+</div>
 
 <section class="block" id="mobiledsl">
   <div class="wrap stack">
