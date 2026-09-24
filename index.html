@@ -75,7 +75,7 @@
   .hero .text { display: grid; gap: 18px; justify-items: center; text-align: center; }
   .hero .eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; color: var(--accent); }
   .tag { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: none; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
-  .hero .lede { max-width: 62ch; font-size: 1.15rem; line-height: 1.6; }
+  .hero .lede { max-width: 62ch; font-size: 1.15rem; line-height: 1.6; text-align: left; }   /* centred block, left-aligned lines: wrapped centred lines are hard to read */
   .hero .cta { justify-content: center; }
   .hero .lede b { color: var(--ink); font-weight: 600; }
   .cta { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -117,6 +117,7 @@
   @media (max-width: 720px) { .stats .wrap { grid-template-columns: 1fr 1fr; } .stat:nth-child(2) { border-right: 0; margin-right: 0; } .stat { padding-block: 16px; } }
   /* sections */
   section.block { padding-block: 64px; border-bottom: 1px solid var(--line); }
+  #video { padding-block: 8px 48px; }   /* the video follows the hero directly, without a heading */
   .head { display: grid; gap: 8px; margin-bottom: 28px; max-width: 70ch; }
   .head .eyebrow { color: var(--accent); }
   .prose { max-width: 70ch; display: grid; gap: 14px; }
@@ -255,9 +256,7 @@
 
 <section class="block" id="video">
   <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Video</span><h2>MobileDSL and MobileCopilot in three minutes</h2>
-      <p>The language, the agent, the benchmark and the physical robot demonstrations.</p></div>
-    <video controls preload="metadata" playsinline poster="assets/video_poster.jpg" style="width:100%;height:auto;aspect-ratio:16/9;max-width:100%;border-radius:8px;border:1px solid var(--line);background:#000;display:block">
+    <video controls preload="metadata" playsinline poster="assets/video_poster.jpg" aria-label="MobileDSL and MobileCopilot in three minutes: the language, the agent, the benchmark and the physical robot demonstrations" style="width:100%;height:auto;aspect-ratio:16/9;max-width:100%;border-radius:8px;border:1px solid var(--line);background:#000;display:block">
       <source src="assets/mobilecopilot_video.mp4" type="video/mp4">
     </video>
   </div>
