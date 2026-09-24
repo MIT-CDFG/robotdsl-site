@@ -147,6 +147,7 @@
 <link rel="stylesheet" href="assets/vendor/tabler/steps.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
+<link rel="stylesheet" href="assets/vendor/lucide/badge.css">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js" defer></script>
@@ -166,7 +167,10 @@
 <section class="hero" id="top">
   <div class="wrap hero-layout">
     <div class="hero-copy">
-      <p class="hero-version">RobotDSL Team · MobileDSL 1.0</p>
+      <div class="hero-badges">
+        <a class="badge" href="#mobiledsl">MobileDSL 1.0</a>
+        <a class="badge badge-launch" href="studio/"><span class="ico ico-rocket" aria-hidden="true"></span>Studio preview<span class="ico ico-arrow" aria-hidden="true"></span></a>
+      </div>
       <h1><span>Domain-specific languages</span> that compile into working robots</h1>
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
