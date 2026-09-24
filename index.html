@@ -20,7 +20,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <!-- Published style: GitHub's Markdown CSS for the code listing. -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/css@21.5.1/dist/box.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <style>
   /* Light only: the figures are paper figures on white. */
@@ -87,7 +89,7 @@
   /* Icons: Lucide SVGs (ISC) downloaded unmodified from lucide-static 1.47.0 into assets/icons/, drawn in the text colour through a mask. */
   .ico { display: inline-block; width: 18px; height: 18px; flex: none; background-color: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
   .ico-bot { --icon: url(assets/icons/bot.svg); } .ico-studio { --icon: url(assets/icons/app-window.svg); } .ico-video { --icon: url(assets/icons/video.svg); }
-  .ico-paper { --icon: url(assets/icons/file-text.svg); } .ico-community { --icon: url(assets/icons/users.svg); } .ico-results { --icon: url(assets/icons/chart-column.svg); } .ico-play { --icon: url(assets/icons/play.svg); }
+  .ico-paper { --icon: url(assets/icons/file-text.svg); } .ico-community { --icon: url(assets/icons/users.svg); } .ico-results { --icon: url(assets/icons/chart-column.svg); }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn.primary:hover, .btn.primary:focus-visible { color: #fff; filter: brightness(1.08); }
   .btn.soon { opacity: .8; }
@@ -139,22 +141,8 @@
   .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 12px; line-height: 1.7; }
   .code .ln { display: block; }
   .listing pre.code { font-family: var(--mono); font-size: 12px; line-height: 1.6; }   /* GitHub's code block; sized so every line of the listing fits */
-  /* Video: GitHub Primer's Box frames the video and its chapters; a play button over the poster, chapters jump into the video. */
-  #video .Box { --bgColor-default: #ffffff; --bgColor-muted: #f6f8fa; --borderColor-default: #d1d9e0; --borderRadius-medium: .375rem; --borderWidth-thin: 1px;
-                --stack-padding-condensed: .5rem; --stack-padding-normal: 1rem; overflow: hidden; }   /* Primer primitives (light) used by box.css */
-  #video .Box-footer { background: var(--bgColor-muted); }
-  .player { position: relative; background: #000; }
-  .player video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
-  .player .play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px 14px 18px; border: 0; border-radius: 999px; background: rgb(17 24 39 / .82); color: #fff; font: 600 1rem/1 var(--sans); cursor: pointer; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: background .2s, transform .2s; }
-  .player .play:hover, .player .play:focus-visible { background: var(--accent); transform: translate(-50%, -50%) scale(1.04); outline: none; }
-  .player .play .ico { width: 20px; height: 20px; }
-  .player .play .len { font-weight: 500; opacity: .75; font-variant-numeric: tabular-nums; }
-  .player.started .play { display: none; }
-  .chapters { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; }
-  .chapters button { border: 0; background: none; padding: 4px 0; font: 500 .9rem/1.2 var(--sans); color: var(--text); cursor: pointer; border-bottom: 2px solid transparent; }
-  .chapters button .t { font-family: var(--mono); font-size: .8rem; color: var(--muted); margin-right: 6px; }
-  .chapters button:hover, .chapters button:focus-visible { color: var(--accent); outline: none; }
-  .chapters button[aria-current="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+  /* Video: Vidstack's player with its default video layout; chapters (assets/video_chapters.vtt) mark the seek bar and its menu. */
+  #video media-player { display: block; aspect-ratio: 16 / 9; --video-brand: var(--accent); --video-font-family: var(--sans); --video-load-button-size: 64px; }
   @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
   .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
   /* pipeline */
@@ -248,22 +236,14 @@
 
 <section class="block" id="video">
   <div class="wrap">
-    <div class="Box Box--condensed">
-      <div class="player">
-        <video preload="metadata" playsinline poster="assets/video_poster.jpg" aria-label="MobileDSL and MobileCopilot in three minutes: the language, the agent, the benchmark and the physical robot demonstrations">
-          <source src="assets/mobilecopilot_video.mp4" type="video/mp4">
-        </video>
-        <button type="button" class="play" aria-label="Play the video, 2 minutes 57 seconds"><span class="ico ico-play" aria-hidden="true"></span>Watch <span class="len">2:57</span></button>
-      </div>
-      <div class="Box-footer"><ol class="chapters" aria-label="Chapters">
-        <li><button type="button" data-t="0"><span class="t">0:00</span>The problem</button></li>
-        <li><button type="button" data-t="36.25"><span class="t">0:36</span>MobileDSL</button></li>
-        <li><button type="button" data-t="83.75"><span class="t">1:24</span>MobileCopilot</button></li>
-        <li><button type="button" data-t="105.75"><span class="t">1:46</span>Benchmark</button></li>
-        <li><button type="button" data-t="146.25"><span class="t">2:26</span>Real robot</button></li>
-        <li><button type="button" data-t="157.25"><span class="t">2:37</span>Summary</button></li>
-      </ol></div>
-    </div>
+    <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="177.5">
+      <media-provider>
+        <media-poster class="vds-poster" src="assets/video_poster.jpg" alt="MobileCopilot title card with benchmark robots"></media-poster>
+        <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
+      </media-provider>
+      <media-video-layout></media-video-layout>
+    </media-player>
+    <noscript><style>#video media-player { display: none; }</style><video controls playsinline preload="none" poster="assets/video_poster.jpg" src="assets/mobilecopilot_video.mp4"></video></noscript>
   </div>
 </section>
 
@@ -479,27 +459,6 @@
   })();
 </script>
 
-<script>
-  // Video: the play button starts it with sound; chapters jump and follow playback.
-  (function () {
-    var player = document.querySelector('#video .player'), video = player.querySelector('video');
-    var chapters = Array.prototype.slice.call(document.querySelectorAll('#video .chapters button'));
-    function start(t) {
-      if (typeof t === 'number') video.currentTime = t;
-      player.classList.add('started'); video.controls = true;
-      video.play().catch(function () {});
-    }
-    player.querySelector('.play').addEventListener('click', function () { start(); });
-    chapters.forEach(function (b) { b.addEventListener('click', function () { start(parseFloat(b.dataset.t)); }); });
-    function follow() {
-      var t = video.currentTime, on = null;
-      chapters.forEach(function (b) { if (t + 0.05 >= parseFloat(b.dataset.t)) on = b; });
-      chapters.forEach(function (b) { b.setAttribute('aria-current', b === on && player.classList.contains('started') ? 'true' : 'false'); });
-    }
-    video.addEventListener('timeupdate', follow);
-    video.addEventListener('seeking', follow);   // mark the chapter as soon as a jump starts, before it has buffered
-  })();
-</script>
 <script type="importmap">{"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
 <script type="module">
   // Paper Fig. 1 in 3D. assets/models/fig1_robot.glb holds one mesh per link of the compiled listing (component-library
