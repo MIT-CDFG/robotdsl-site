@@ -14,27 +14,21 @@ const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const designs = {
   arm_mecanum: {
     title: "Mecanum + fixed arm",
-    index: "01",
     request:
       "“Drive forward and turn to expand outward in a spiral. The arm stays fixed.”",
-    agent: "Claude Code / claude-opus-4-8",
     description: "White mecanum robot with a fixed red arm and gripper",
   },
   tslot_mecanum: {
     title: "Mecanum + LiDAR",
-    index: "02",
     request:
       "“Move forward 1 meter and spin 90 degrees at each corner to complete a square loop.”",
-    agent: "Codex / gpt-5.6-sol",
     description:
       "Mecanum robot with a wooden deck, four wheels, electronics and a top LiDAR",
   },
   open_omni: {
     title: "Four-wheel omni platform",
-    index: "03",
     request:
       "“Drive forward 1 meter and alternate left and right spins to trace an S pattern.”",
-    agent: "Codex / gpt-5.6-sol",
     description:
       "OpenOmni platform with four omni wheels and mounted electronics",
   },
@@ -58,10 +52,7 @@ function setDescription(id) {
   const design = designs[id];
   activeDesign = id;
   get("robot-title").textContent = design.title;
-  get("robot-index").textContent = design.index + " / 03";
   get("robot-request").textContent = design.request;
-  get("robot-meta").textContent =
-    "Image-conditioned benchmark example · " + design.agent;
   get("robot-poster").src = `assets/gallery/${id}-poster.png`;
   get("robot-poster").alt = "Generated design: " + design.description;
   get("reference-image").src = `assets/gallery/${id}-input.png`;

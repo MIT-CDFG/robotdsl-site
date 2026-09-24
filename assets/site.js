@@ -47,9 +47,12 @@
       }
     });
   }
-  try { showChart(); } catch (error) {
+  try {
+    showChart();
+    get('results-fallback').hidden = true;
+  } catch (error) {
     document.querySelector('.result-chart').hidden = true;
-    console.warn('Chart unavailable; displaying the results table.', error);
+    console.warn('Chart unavailable; displaying the success-rate summary.', error);
   }
   get('copy-citation').addEventListener('click', async () => {
     try {

@@ -30,6 +30,8 @@ The three GLBs reuse existing exports in `fig1-3d-build/hero/*_raw.glb`, exporte
 
 Source CAD is the project's imported component library; component-specific provenance remains in the source component records. Gallery posters reuse `mobilecopilot-video/outputs/opening/thumbs/`. Input images reuse the matching `robotdsl-experiment/dataset/images/` files. The input image and generated output are different assets; input images open at full resolution. The displayed request is shortened from the benchmark prompt.
 
+The gallery uses the saved renders as thumbnail selectors, with the reference image and request alongside a larger generated model. It reuses the page's underlined video-tab styling and the downloaded Lucide arrow. No additional image or frame assets were authored. Agent/run provenance is recorded below rather than repeated beneath the viewer.
+
 | Gallery design  | Benchmark task   | Recorded generation run                              |
 | --------------- | ---------------- | ---------------------------------------------------- |
 | `arm_mecanum`   | `basic_geom_g02` | `claude-opus-4-8/basic_geom_g02__mobiledsl__4cH4bjS` |
@@ -46,14 +48,13 @@ The exact `warehouse.patch` was fetched with the latest manuscript source at com
 
 `assets/hardware-closeup.jpg` is the original JPEG embedded in `figures/Fig_robot_closeup.pdf` from the fetched manuscript, extracted without re-encoding using `pdfimages -j`. It is displayed as a standalone platform photograph with an original-resolution link, not as a pasted paper figure.
 
-The overview, three hardware clips and their posters are unchanged project assets. Hardware specifications and the meaning of the composite video views are retained from the pre-redesign site. The page presents the hardware clips as qualitative demonstrations; it does not extend simulation success rates to physical robots. The existing social-preview image is unchanged.
+The overview, three hardware clips and their posters are unchanged project assets. The page retains the platform attribution and explanation of the composite video views, without a detailed platform/training specification list. The hardware clips are qualitative demonstrations; simulation success rates are not extended to physical robots. The existing social-preview image is unchanged.
 
 ## Manuscript basis
 
 The manuscript submodule was uninitialized in the working experiment checkout. To leave that checkout untouched, the source URL from `robotdsl-experiment/.gitmodules` was fetched into an isolated temporary clone. Latest remote HEAD at retrieval: `8606c8b`, September 17, 2026.
 
-- `tex/table-agent.tex`: every displayed main-comparison value, including input/output token precision.
-- `tex/table-ablation.tex`: all six ablation rows.
+- `tex/table-agent.tex`: the three paired execution-success rates and the authored-code comparison. Full result and ablation tables are not reproduced on the page.
 - `tex/05-benchmark.tex`: denominators, motion/execution definitions, authoring budget, means and historical cost date.
 - `tex/04-mobileCopilot.tex`: compile/repair workflow; no simulator feedback in benchmark authoring.
 - `tex/06-experiments.tex`: interpretation and EvaluateDSL tradeoff.

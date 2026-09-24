@@ -18,7 +18,7 @@ because the 3D viewer loads modules and model metadata.
 
 The project page retains its original layout and Vidstack video player, with
 locally vendored Lucide icons, Chart.js and Three.js for content improvements.
-The gallery stays in Results and loads only the selected generated robot. Result tables
-remain accessible without JavaScript; the 3D viewer falls back to saved renders.
+The gallery stays in Results and loads only the selected generated robot. The success-rate
+summary remains accessible without JavaScript; the 3D viewer falls back to saved renders.
 See [asset sources](docs/asset-sources.md) for licenses and manuscript references.
 The Studio bundle remains separate from the project-page redesign.

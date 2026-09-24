@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 curated results and larger generated models
+
+- Removed the platform/training specification list and both detailed result tables. Kept the three-agent success-rate chart, the execution/code takeaway and the benchmark's interpretation limits.
+- Added a short text fallback for all three rate pairs when JavaScript or Chart.js is unavailable. An isolated execution check verified both chart success and failure behavior.
+- Reworked the gallery around thumbnail choices, reference image/request, and a larger generated model. Removed the repeated title/description area, counter and on-page agent metadata; provenance remains in `docs/asset-sources.md`.
+- HTML validation, both JavaScript syntax checks and `git diff --check`: passed.
+- Source checks confirmed unchanged section order, three thumbnail choices, all viewer element references, correct rate pairs and valid local asset paths. The mask and icon URL declarations still share one stylesheet.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 fix missing icon URLs
 
 - Reproduced nine missing icon paths: URL variables declared in `assets/site.css` were consumed by the mask in the inline stylesheet, resolving to `/icons/` instead of `/assets/icons/`. Earlier asset-existence checks used the declaration's directory and missed this failure.
