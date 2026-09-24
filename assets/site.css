@@ -48,8 +48,6 @@
 .hero-demo .hvd .ring { width: 88px; height: 88px; }
 .hero-demo .hvd .disc { width: 60px; height: 60px; background: var(--accent); box-shadow: none; }
 .hero-demo .hvd .disc svg { width: 26px; height: 26px; filter: none; }
-.hero-demo-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-top: 14px; font-size: 13px; color: var(--muted); }
-.hero-demo-caption b { color: var(--ink); font-weight: 500; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 48px; }
 .VPFeature { color: var(--ink); text-decoration: none; }
 .VPFeature .icon .ico { width: 24px; height: 24px; color: var(--accent); }
