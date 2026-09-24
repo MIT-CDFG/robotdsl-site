@@ -1,5 +1,14 @@
 # Release verification
 
+## 2026-09-24 fix missing icon URLs
+
+- Reproduced nine missing icon paths: URL variables declared in `assets/site.css` were consumed by the mask in the inline stylesheet, resolving to `/icons/` instead of `/assets/icons/`. Earlier asset-existence checks used the declaration's directory and missed this failure.
+- Moved the mask and all icon URL declarations into `assets/site.css`. Relative URLs now share the same base, following the [CSS variable URL resolution rules](https://www.w3.org/TR/css-variables-1/#syntax).
+- Served the site locally and checked every resolved icon URL under both `/` and `/robotdsl-site/`: all 15 unique URLs returned HTTP 200 with valid SVG content, including all five workflow icons.
+- HTML validation and `git diff --check`: passed.
+
+These were source and HTTP checks; no browser visual or interaction tests were run.
+
 ## 2026-09-24 workflow icons and concise repair sequence
 
 - Replaced numbered workflow markers with five large Lucide icons inside the existing Tabler Steps component. Short labels and captions identify each stage without requiring paragraph reading.
