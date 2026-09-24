@@ -1,0 +1,149 @@
+{
+ "size": [
+  0.43608,
+  0.13773,
+  0.34966
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "open_omni_equipped",
+   "category": "chassis",
+   "centre": [
+    8e-05,
+    0.07973,
+    -0.0
+   ],
+   "size": [
+    0.3042,
+    0.10845,
+    0.2179
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_lf",
+   "part": "open_omni_drive_contact",
+   "category": "wheel",
+   "centre": [
+    0.16591,
+    0.05184,
+    -0.12257
+   ],
+   "size": [
+    0.10426,
+    0.10294,
+    0.10452
+   ],
+   "explode": [
+    0.06434,
+    0.0,
+    -0.04754
+   ]
+  },
+  {
+   "name": "wheel_rf",
+   "part": "open_omni_drive_contact_wheel_fr",
+   "category": "wheel",
+   "centre": [
+    0.16468,
+    0.05167,
+    0.12143
+   ],
+   "size": [
+    0.10643,
+    0.10318,
+    0.10531
+   ],
+   "explode": [
+    0.06439,
+    0.0,
+    0.04748
+   ]
+  },
+  {
+   "name": "wheel_lb",
+   "part": "open_omni_drive_contact_wheel_rl",
+   "category": "wheel",
+   "centre": [
+    -0.1658,
+    0.05159,
+    -0.12273
+   ],
+   "size": [
+    0.10447,
+    0.10317,
+    0.1042
+   ],
+   "explode": [
+    -0.0643,
+    0.0,
+    -0.0476
+   ]
+  },
+  {
+   "name": "wheel_rb",
+   "part": "open_omni_drive_contact_wheel_rr",
+   "category": "wheel",
+   "centre": [
+    -0.16591,
+    0.05184,
+    0.12257
+   ],
+   "size": [
+    0.10426,
+    0.10294,
+    0.10452
+   ],
+   "explode": [
+    -0.06434,
+    0.0,
+    0.04754
+   ]
+  },
+  {
+   "name": "controller_shield",
+   "part": "arduino_cnc_shield_open_omni",
+   "category": "attachment",
+   "centre": [
+    0.07021,
+    0.12794,
+    -8e-05
+   ],
+   "size": [
+    0.069,
+    0.0196,
+    0.0535
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "battery",
+   "part": "open_omni_battery",
+   "category": "attachment",
+   "centre": [
+    -0.07,
+    0.11926,
+    0.017
+   ],
+   "size": [
+    0.103,
+    0.024,
+    0.034
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  }
+ ]
+}

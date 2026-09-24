@@ -1,0 +1,189 @@
+{
+ "size": [
+  0.21863,
+  0.11901,
+  0.21574
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "bo_wedge_violet_cyan",
+   "category": "chassis",
+   "centre": [
+    0.0,
+    0.0656,
+    -0.00687
+   ],
+   "size": [
+    0.21863,
+    0.10681,
+    0.202
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_lf",
+   "part": "bo_four_wheel_drive_contact",
+   "category": "wheel",
+   "centre": [
+    0.06345,
+    0.03245,
+    -0.0588
+   ],
+   "size": [
+    0.0649,
+    0.0649,
+    0.06021
+   ],
+   "explode": [
+    0.05868,
+    0.0,
+    -0.05437
+   ]
+  },
+  {
+   "name": "wheel_lb",
+   "part": "bo_four_wheel_drive_contact",
+   "category": "wheel",
+   "centre": [
+    -0.06345,
+    0.03245,
+    -0.0588
+   ],
+   "size": [
+    0.0649,
+    0.0649,
+    0.06021
+   ],
+   "explode": [
+    -0.05868,
+    0.0,
+    -0.05437
+   ]
+  },
+  {
+   "name": "wheel_rf",
+   "part": "bo_four_wheel_drive_contact",
+   "category": "wheel",
+   "centre": [
+    0.06345,
+    0.03245,
+    0.07776
+   ],
+   "size": [
+    0.0649,
+    0.0649,
+    0.06021
+   ],
+   "explode": [
+    0.05058,
+    0.0,
+    0.06198
+   ]
+  },
+  {
+   "name": "wheel_rb",
+   "part": "bo_four_wheel_drive_contact",
+   "category": "wheel",
+   "centre": [
+    -0.06345,
+    0.03245,
+    0.07776
+   ],
+   "size": [
+    0.0649,
+    0.0649,
+    0.06021
+   ],
+   "explode": [
+    -0.05058,
+    0.0,
+    0.06198
+   ]
+  },
+  {
+   "name": "battery",
+   "part": "tattu_1300_3s_native_bo_four_wheel",
+   "category": "attachment",
+   "centre": [
+    0.0,
+    0.0327,
+    -0.00687
+   ],
+   "size": [
+    0.075,
+    0.022,
+    0.035
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "compute",
+   "part": "raspberry_pi_zero_2w_bo_four_wheel",
+   "category": "attachment",
+   "centre": [
+    0.00491,
+    0.05676,
+    -0.00446
+   ],
+   "size": [
+    0.03076,
+    0.00513,
+    0.07062
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "motor_driver",
+   "part": "pololu_drv8833_bo_four_wheel",
+   "category": "attachment",
+   "centre": [
+    -0.043,
+    0.05339,
+    0.00133
+   ],
+   "size": [
+    0.02032,
+    0.00337,
+    0.0127
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "regulator",
+   "part": "pololu_d24v50f5_bo_four_wheel",
+   "category": "attachment",
+   "centre": [
+    -0.043,
+    0.05609,
+    0.02113
+   ],
+   "size": [
+    0.01778,
+    0.00877,
+    0.02032
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  }
+ ]
+}

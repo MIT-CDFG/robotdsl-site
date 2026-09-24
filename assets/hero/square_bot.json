@@ -1,0 +1,249 @@
+{
+ "size": [
+  0.35199,
+  0.16491,
+  0.36016
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "tslot_mecanum_equipped",
+   "category": "chassis",
+   "centre": [
+    0.0,
+    0.08527,
+    -0.0
+   ],
+   "size": [
+    0.30018,
+    0.10423,
+    0.242
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_lf",
+   "part": "tslot_mecanum_drive_contact_wheel_fl",
+   "category": "wheel",
+   "centre": [
+    0.12749,
+    0.04867,
+    -0.14754
+   ],
+   "size": [
+    0.09702,
+    0.09733,
+    0.06508
+   ],
+   "explode": [
+    0.0523,
+    0.0,
+    -0.06053
+   ]
+  },
+  {
+   "name": "wheel_lb",
+   "part": "tslot_mecanum_drive_contact_wheel_rl",
+   "category": "wheel",
+   "centre": [
+    -0.12749,
+    0.04866,
+    -0.14754
+   ],
+   "size": [
+    0.09702,
+    0.09731,
+    0.06508
+   ],
+   "explode": [
+    -0.0523,
+    0.0,
+    -0.06053
+   ]
+  },
+  {
+   "name": "wheel_rf",
+   "part": "tslot_mecanum_drive_contact_wheel_fr",
+   "category": "wheel",
+   "centre": [
+    0.12749,
+    0.04866,
+    0.14754
+   ],
+   "size": [
+    0.09702,
+    0.09731,
+    0.06508
+   ],
+   "explode": [
+    0.0523,
+    0.0,
+    0.06053
+   ]
+  },
+  {
+   "name": "wheel_rb",
+   "part": "tslot_mecanum_drive_contact",
+   "category": "wheel",
+   "centre": [
+    -0.12749,
+    0.04867,
+    0.14754
+   ],
+   "size": [
+    0.09702,
+    0.09733,
+    0.06508
+   ],
+   "explode": [
+    -0.0523,
+    0.0,
+    0.06053
+   ]
+  },
+  {
+   "name": "top_lidar",
+   "part": "rplidar_a1_tslot_mecanum",
+   "category": "sensor",
+   "centre": [
+    0.09996,
+    0.13481,
+    -0.00837
+   ],
+   "size": [
+    0.07709,
+    0.06018,
+    0.10784
+   ],
+   "explode": [
+    0.0,
+    0.22,
+    -0.0
+   ]
+  },
+  {
+   "name": "compute",
+   "part": "raspberry_pi_3b_tslot_mecanum",
+   "category": "attachment",
+   "centre": [
+    -0.00027,
+    0.14079,
+    0.00049
+   ],
+   "size": [
+    0.09035,
+    0.01874,
+    0.05816
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "regulator",
+   "part": "pololu_d24v150f6_tslot_mecanum",
+   "category": "attachment",
+   "centre": [
+    -0.09,
+    0.11111,
+    0.07
+   ],
+   "size": [
+    0.04318,
+    0.01138,
+    0.03175
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "drive_regulator",
+   "part": "pololu_d24v50f5_tslot_mecanum",
+   "category": "attachment",
+   "centre": [
+    -0.09,
+    0.11241,
+    -0.07
+   ],
+   "size": [
+    0.01778,
+    0.00877,
+    0.02032
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "driver_left",
+   "part": "pololu_drv8833_tslot_mecanum",
+   "category": "attachment",
+   "centre": [
+    -0.02,
+    0.10841,
+    -0.07
+   ],
+   "size": [
+    0.0127,
+    0.00337,
+    0.02032
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "driver_right",
+   "part": "pololu_drv8833_tslot_mecanum_driver_right",
+   "category": "attachment",
+   "centre": [
+    -0.02,
+    0.10841,
+    0.07
+   ],
+   "size": [
+    0.0127,
+    0.00337,
+    0.02032
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "battery",
+   "part": "tattu_1300_3s_native_tslot_mecanum",
+   "category": "attachment",
+   "centre": [
+    -0.102,
+    0.11572,
+    -0.0
+   ],
+   "size": [
+    0.075,
+    0.022,
+    0.035
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  }
+ ]
+}

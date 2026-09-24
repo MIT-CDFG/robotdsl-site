@@ -1,0 +1,89 @@
+{
+ "size": [
+  0.26959,
+  0.13223,
+  0.29717
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "three_omni_segmented_yellow",
+   "category": "chassis",
+   "centre": [
+    -0.01278,
+    0.07772,
+    -0.00017
+   ],
+   "size": [
+    0.24402,
+    0.10901,
+    0.244
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "front_wheel",
+   "part": "gobilda_96_omni_5mm_clamp_drive",
+   "category": "wheel",
+   "centre": [
+    0.1155,
+    0.04796,
+    0.0002
+   ],
+   "size": [
+    0.03859,
+    0.0955,
+    0.09643
+   ],
+   "explode": [
+    0.08,
+    0.0,
+    0.00014
+   ]
+  },
+  {
+   "name": "rear_left_wheel",
+   "part": "gobilda_96_omni_5mm_clamp_drive",
+   "category": "wheel",
+   "centre": [
+    -0.08035,
+    0.04814,
+    -0.11687
+   ],
+   "size": [
+    0.08981,
+    0.09598,
+    0.06344
+   ],
+   "explode": [
+    -0.04532,
+    0.0,
+    -0.06592
+   ]
+  },
+  {
+   "name": "rear_right_wheel",
+   "part": "gobilda_96_omni_5mm_clamp_drive",
+   "category": "wheel",
+   "centre": [
+    -0.0803,
+    0.04858,
+    0.11688
+   ],
+   "size": [
+    0.0902,
+    0.09716,
+    0.06341
+   ],
+   "explode": [
+    -0.0453,
+    0.0,
+    0.06594
+   ]
+  }
+ ]
+}

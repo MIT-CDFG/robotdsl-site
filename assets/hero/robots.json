@@ -1,0 +1,93 @@
+[
+ {
+  "design": "tslot_mecanum",
+  "name": "square_bot",
+  "intent": "Equipped wooden-deck robot with four black mecanum wheels, compute and power boards, battery, and top lidar",
+  "agent": "Codex",
+  "model": "gpt-5.6-sol",
+  "task": "basic_geom_g01",
+  "code": "Robot square_bot {\n    intent \"Equipped wooden-deck robot with four black mecanum wheels, compute and power boards, battery, and top lidar\"\n    Mecanum_four_wheel chassis(ref=\"tslot_mecanum_equipped\"),\n    Mecanum wheel_lf(ref=\"tslot_mecanum_drive_contact_wheel_fl\", glue=\"0.1275 0.15665 -0.021563403346 0 -1 0\"),\n    Mecanum wheel_lb(ref=\"tslot_mecanum_drive_contact_wheel_rl\", glue=\"-0.1275 0.15665 -0.021563403346 0 -1 0\"),\n    Mecanum wheel_rf(ref=\"tslot_mecanum_drive_contact_wheel_fr\", glue=\"0.1275 -0.15665 -0.021563403346 0 -1 0\"),\n    Mecanum wheel_rb(ref=\"tslot_mecanum_drive_contact\", glue=\"-0.1275 -0.15665 -0.021563403346 0 -1 0\"),\n    Circuit compute(ref=\"raspberry_pi_3b_tslot_mecanum\", glue=\"-0.000265777885 -0.000655359152 0.070506596387 0 0 1\"),\n    Lidar top_lidar(ref=\"rplidar_a1_tslot_mecanum\", glue=\"0.1 0 0.085436596654 0 0 1\"),\n    Circuit regulator(ref=\"pololu_d24v150f6_tslot_mecanum\", glue=\"-0.09 -0.07 0.040823996767 0 0 1\"),\n    Circuit drive_regulator(ref=\"pololu_d24v50f5_tslot_mecanum\", glue=\"-0.09 0.07 0.042121596869 0 0 1\"),\n    Circuit driver_left(ref=\"pololu_drv8833_tslot_mecanum\", glue=\"-0.02 0.07 0.038123996697 0 0 1\"),\n    Circuit driver_right(ref=\"pololu_drv8833_tslot_mecanum_driver_right\", glue=\"-0.02 -0.07 0.038123996697 0 0 1\"),\n    Battery battery(ref=\"tattu_1300_3s_native_tslot_mecanum\", glue=\"-0.102 0 0.045436596654 0 0 1\")\n}",
+  "glb": "assets/hero/square_bot.glb",
+  "parts": "assets/hero/square_bot.json",
+  "products": [
+   "pololu_d24v150f6",
+   "pololu_d24v50f5",
+   "pololu_drv8833",
+   "raspberry_pi_3b",
+   "rplidar_a1",
+   "tattu_1300_3s_native",
+   "tslot_mecanum_drive_contact",
+   "tslot_mecanum_equipped"
+  ]
+ },
+ {
+  "design": "omni_yellow",
+  "name": "omni_yellow",
+  "intent": "Compact golden-yellow cylindrical three-omni robot \u2014 segmented panels, ventilated lid, three 96 mm omni wheels at 120 degrees",
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8",
+  "task": "basic_text_g19",
+  "code": "Robot omni_yellow {\n    intent \"Compact golden-yellow cylindrical three-omni robot \u2014 segmented panels, ventilated lid, three 96 mm omni wheels at 120 degrees\"\n\n    Omni_three_wheel chassis(ref=\"three_omni_segmented_yellow\"),\n\n    Omni_wheel front_wheel(ref=\"gobilda_96_omni_5mm_clamp_drive\", glue=\"0.135 0.0 0.0 -1 0 0\"),\n    Omni_wheel rear_left_wheel(ref=\"gobilda_96_omni_5mm_clamp_drive\", glue=\"-0.0675 0.116913429511 0.0 0.4999999999998306 -0.8660254037845364 0\"),\n    Omni_wheel rear_right_wheel(ref=\"gobilda_96_omni_5mm_clamp_drive\", glue=\"-0.0675 -0.116913429511 0.0 0.5000000000003388 0.866025403784243 0\")\n}",
+  "glb": "assets/hero/omni_yellow.glb",
+  "parts": "assets/hero/omni_yellow.json",
+  "products": [
+   "gobilda_96_omni_5mm_clamp_drive",
+   "three_omni_segmented_yellow"
+  ]
+ },
+ {
+  "design": "mobile_bro",
+  "name": "triangle_bot",
+  "intent": "Differential-drive mobile bro base \u2014 grey open frame, two treaded wheels, front+rear support balls, orange OLED display, top compute board, JSUMO battery",
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8",
+  "task": "basic_geom_g06",
+  "code": "Robot triangle_bot {\n    intent \"Differential-drive mobile bro base \u2014 grey open frame, two treaded wheels, front+rear support balls, orange OLED display, top compute board, JSUMO battery\"\n\n    Diff_two_caster chassis(ref=\"mobile_bro_equipped\"),\n\n    Standard wheel_left(ref=\"mobile_bro_drive_contact\", glue=\"-0.003 0.045625 -0.018246624061 0 -1 0\"),\n    Standard wheel_right(ref=\"mobile_bro_drive_contact_wheel_right\", glue=\"-0.003 -0.045625 -0.018246624061 0 -1 0\"),\n\n    Caster caster_front(ref=\"pololu_951_support_ball_mobile_bro\", glue=\"0.029625488343 0.0 -0.035984124061 0 -1 0\"),\n    Caster caster_rear(ref=\"pololu_951_support_ball_mobile_bro\", glue=\"-0.035625488343 0.0 -0.035984124061 0 -1 0\"),\n\n    Circuit display(ref=\"oled_ssd1306_096_mobile_bro\", glue=\"0.03465 0.0 0.013153375939 0 0 1\"),\n    Circuit compute(ref=\"raspberry_pi_zero_2w_mobile_bro\", glue=\"-0.002999999073 -0.0093 0.03127837584 0 0 1\"),\n    Battery battery(ref=\"jsumo_450_3s_mobile_bro\", glue=\"-0.003 0.0 0.009753375939 0 0 1\")\n}",
+  "glb": "assets/hero/triangle_bot.glb",
+  "parts": "assets/hero/triangle_bot.json",
+  "products": [
+   "jsumo_450_3s",
+   "mobile_bro_drive_contact",
+   "mobile_bro_equipped",
+   "oled_ssd1306_096",
+   "pololu_951_support_ball",
+   "raspberry_pi_zero_2w"
+  ]
+ },
+ {
+  "design": "bo_violet",
+  "name": "wedge_bot",
+  "intent": "Violet angular wedge base with sloping front and cyan side guards, four yellow-hub rubber wheels, battery and control electronics",
+  "agent": "Claude Code",
+  "model": "claude-opus-4-8",
+  "task": "basic_text_g20",
+  "code": "Robot wedge_bot {\n    intent \"Violet angular wedge base with sloping front and cyan side guards, four yellow-hub rubber wheels, battery and control electronics\"\n\n    Diff_drive chassis(ref=\"bo_wedge_violet_cyan\"),\n\n    Standard wheel_lf(ref=\"bo_four_wheel_drive_contact\", glue=\"0.060586956102 0.06773 0.00025 0 -1 0\"),\n    Standard wheel_lb(ref=\"bo_four_wheel_drive_contact\", glue=\"-0.066314777162 0.06773 0.00025 0 -1 0\"),\n    Standard wheel_rf(ref=\"bo_four_wheel_drive_contact\", glue=\"0.060586956102 -0.06883 0.00025 0 -1 0\"),\n    Standard wheel_rb(ref=\"bo_four_wheel_drive_contact\", glue=\"-0.066314777162 -0.06883 0.00025 0 -1 0\"),\n\n    Battery battery(ref=\"tattu_1300_3s_native_bo_four_wheel\", glue=\"-0.00286391053 -0.00055 0.0005 0 0 1\"),\n    Circuit compute(ref=\"raspberry_pi_zero_2w_bo_four_wheel\", glue=\"0.00213608947 -0.002899999073 0.024524999902 0 0 1\"),\n    Circuit motor_driver(ref=\"pololu_drv8833_bo_four_wheel\", glue=\"-0.04586391053 -0.00875 0.0211874 0 0 1\"),\n    Circuit regulator(ref=\"pololu_d24v50f5_bo_four_wheel\", glue=\"-0.04586391053 -0.02855 0.023887400113 0 0 1\")\n}",
+  "glb": "assets/hero/wedge_bot.glb",
+  "parts": "assets/hero/wedge_bot.json",
+  "products": [
+   "bo_four_wheel_drive_contact",
+   "bo_wedge_violet_cyan",
+   "pololu_d24v50f5",
+   "pololu_drv8833",
+   "raspberry_pi_zero_2w",
+   "tattu_1300_3s_native"
+  ]
+ },
+ {
+  "design": "open_omni",
+  "name": "s_pattern_robot",
+  "intent": "Open-deck four-wheel omni robot with red roller wheels, controller shield, and blue battery",
+  "agent": "Codex",
+  "model": "gpt-5.6-sol",
+  "task": "basic_geom_g03",
+  "code": "Robot s_pattern_robot {\n    intent \"Open-deck four-wheel omni robot with red roller wheels, controller shield, and blue battery\"\n\n    Omni_drive chassis(ref=\"open_omni_equipped\"),\n\n    Omni_wheel wheel_lf(ref=\"open_omni_drive_contact\", glue=\"0.164032294321 0.121032320662 -0.01750001317 -0.7071067811862305 -0.7071067811868645 0\"),\n    Omni_wheel wheel_rf(ref=\"open_omni_drive_contact_wheel_fr\", glue=\"0.164032294321 -0.121032320662 -0.01750001317 0.7071067811862305 -0.7071067811868645 0\"),\n    Omni_wheel wheel_lb(ref=\"open_omni_drive_contact_wheel_rl\", glue=\"-0.164032294321 0.121032320662 -0.01750001317 0.7071067811862305 -0.7071067811868645 0\"),\n    Omni_wheel wheel_rb(ref=\"open_omni_drive_contact_wheel_rr\", glue=\"-0.164032294321 -0.121032320662 -0.01750001317 -0.7071067811862305 -0.7071067811868645 0\"),\n\n    Circuit controller_shield(ref=\"arduino_cnc_shield_open_omni\", glue=\"0.07021 0.00008 0.05864313956 0 0 1\"),\n    Battery battery(ref=\"open_omni_battery\", glue=\"-0.07 -0.017 0.04999998683 0 0 1\")\n}",
+  "glb": "assets/hero/s_pattern_robot.glb",
+  "parts": "assets/hero/s_pattern_robot.json",
+  "products": [
+   "arduino_cnc_shield",
+   "open_omni_battery",
+   "open_omni_drive_contact",
+   "open_omni_equipped"
+  ]
+ }
+]

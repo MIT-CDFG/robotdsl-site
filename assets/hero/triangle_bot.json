@@ -1,0 +1,169 @@
+{
+ "size": [
+  0.09423,
+  0.07877,
+  0.10902
+ ],
+ "parts": [
+  {
+   "name": "base_link",
+   "part": "mobile_bro_equipped",
+   "category": "chassis",
+   "centre": [
+    0.0,
+    0.04073,
+    0.0
+   ],
+   "size": [
+    0.09423,
+    0.07607,
+    0.07106
+   ],
+   "explode": [
+    0.0,
+    0.1,
+    -0.0
+   ]
+  },
+  {
+   "name": "wheel_left",
+   "part": "mobile_bro_drive_contact",
+   "category": "wheel",
+   "centre": [
+    -0.00299,
+    0.02251,
+    -0.045
+   ],
+   "size": [
+    0.04503,
+    0.04502,
+    0.01901
+   ],
+   "explode": [
+    -0.00531,
+    0.0,
+    -0.07982
+   ]
+  },
+  {
+   "name": "wheel_right",
+   "part": "mobile_bro_drive_contact_wheel_right",
+   "category": "wheel",
+   "centre": [
+    -0.00299,
+    0.02251,
+    0.045
+   ],
+   "size": [
+    0.04502,
+    0.04502,
+    0.01901
+   ],
+   "explode": [
+    -0.0053,
+    0.0,
+    0.07982
+   ]
+  },
+  {
+   "name": "caster_front",
+   "part": "pololu_951_support_ball_mobile_bro",
+   "category": "wheel",
+   "centre": [
+    0.02964,
+    0.00477,
+    0.0
+   ],
+   "size": [
+    0.00951,
+    0.00953,
+    0.00953
+   ],
+   "explode": [
+    0.08,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "caster_rear",
+   "part": "pololu_951_support_ball_mobile_bro",
+   "category": "wheel",
+   "centre": [
+    -0.03561,
+    0.00477,
+    0.0
+   ],
+   "size": [
+    0.00951,
+    0.00953,
+    0.00953
+   ],
+   "explode": [
+    -0.08,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "display",
+   "part": "oled_ssd1306_096_mobile_bro",
+   "category": "attachment",
+   "centre": [
+    0.03466,
+    0.05391,
+    0.0
+   ],
+   "size": [
+    0.0123,
+    0.0278,
+    0.0273
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "compute",
+   "part": "raspberry_pi_zero_2w_mobile_bro",
+   "category": "attachment",
+   "centre": [
+    -0.00307,
+    0.07207,
+    0.00926
+   ],
+   "size": [
+    0.07065,
+    0.00513,
+    0.03066
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  },
+  {
+   "name": "battery",
+   "part": "jsumo_450_3s_mobile_bro",
+   "category": "attachment",
+   "centre": [
+    -0.00299,
+    0.05051,
+    0.0
+   ],
+   "size": [
+    0.0408,
+    0.0238,
+    0.0249
+   ],
+   "explode": [
+    0.0,
+    0.18,
+    -0.0
+   ]
+  }
+ ]
+}
