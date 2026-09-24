@@ -163,7 +163,8 @@ function init() {
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.NeutralToneMapping;
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xffffff);
+  const backdrop = getComputedStyle(stage).backgroundColor;
+  scene.background = new THREE.Color(backdrop);
   const environment = new RoomEnvironment();
   const generator = new THREE.PMREMGenerator(renderer);
   scene.environment = generator.fromScene(environment, 0.04).texture;
@@ -176,7 +177,7 @@ function init() {
   // Standard Three.js ground plane, not invented robot geometry.
   ground = new THREE.Mesh(
     new THREE.PlaneGeometry(200, 200),
-    new THREE.MeshBasicMaterial({ color: 0xffffff }),
+    new THREE.MeshBasicMaterial({ color: backdrop, toneMapped: false }),
   );
   ground.rotation.x = -Math.PI / 2;
   scene.add(ground);

@@ -1,5 +1,15 @@
 # Release verification
 
+## 2026-09-24 matched gallery views
+
+- Removed the rule above Generated robots and the full-width rule beneath its thumbnail choices.
+- Gave the reference image and generated model equal-width, 4:3 stages with matching captions and no borders. Moved the selected model name to the shared gallery heading.
+- Matched the live renderer background and ground to the input images' existing `#babfc7` gray. All three input images have the same corner color; source images and robot geometry were not edited.
+- HTML validation, viewer JavaScript syntax and `git diff --check`: passed.
+- Source checks confirmed shared stage classes and captions, equal column widths, removed separators and intact viewer element references.
+
+No browser visual or interaction tests were run for this adjustment.
+
 ## 2026-09-24 curated results and larger generated models
 
 - Removed the platform/training specification list and both detailed result tables. Kept the three-agent success-rate chart, the execution/code takeaway and the benchmark's interpretation limits.

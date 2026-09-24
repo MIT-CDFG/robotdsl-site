@@ -305,29 +305,28 @@
     <p class="note" id="results-fallback">System execution success, MobileDSL vs. ROS/Gazebo files:<br>
       Codex / gpt-5.6-sol: <b>74% vs. 24%</b> · Codex / gpt-6-astra: <b>82% vs. 40%</b> · Claude Code / claude-opus-4-8: <b>64% vs. 22%</b>.</p>
     <div class="generated-designs" id="designs">
-      <h3>Generated robots</h3>
+      <div class="gallery-heading"><h3>Generated robots</h3><span class="note" id="robot-title">Mecanum + fixed arm</span></div>
       <div class="gallery-choices" role="group" aria-label="Choose a generated robot">
         <button class="gallery-choice" data-design="arm_mecanum" aria-pressed="true" type="button"><img src="assets/gallery/arm_mecanum-poster.png" width="80" height="50" loading="lazy" alt=""><span>With arm</span></button>
         <button class="gallery-choice" data-design="tslot_mecanum" aria-pressed="false" type="button"><img src="assets/gallery/tslot_mecanum-poster.png" width="80" height="50" loading="lazy" alt=""><span>With LiDAR</span></button>
         <button class="gallery-choice" data-design="open_omni" aria-pressed="false" type="button"><img src="assets/gallery/open_omni-poster.png" width="80" height="50" loading="lazy" alt=""><span>Omni drive</span></button>
       </div>
       <div class="design-comparison">
-        <figure class="reference-image">
-          <figcaption class="eyebrow">Reference image + request</figcaption>
-          <a id="reference-link" href="assets/gallery/arm_mecanum-input.png" target="_blank" rel="noopener" aria-label="Open the full reference image"><img id="reference-image" src="assets/gallery/arm_mecanum-input.png" width="800" height="800" loading="lazy" alt="Input reference: white mecanum platform with a red arm"></a>
+        <figure class="comparison-panel reference-image">
+          <figcaption class="eyebrow">Reference image</figcaption>
+          <a class="comparison-stage" id="reference-link" href="assets/gallery/arm_mecanum-input.png" target="_blank" rel="noopener" aria-label="Open the full reference image"><img id="reference-image" src="assets/gallery/arm_mecanum-input.png" width="800" height="800" loading="lazy" alt="Input reference: white mecanum platform with a red arm"></a>
           <p id="robot-request">“Drive forward and turn to expand outward in a spiral. The arm stays fixed.”</p>
         </figure>
         <span class="ico design-arrow" aria-hidden="true"></span>
-        <div class="gallery-output">
-          <span class="eyebrow">Generated model</span>
-          <h3 id="robot-title">Mecanum + fixed arm</h3>
-          <div class="gallery-stage" id="robot-stage" aria-busy="true">
+        <figure class="comparison-panel gallery-output">
+          <figcaption class="eyebrow">Generated model</figcaption>
+          <div class="comparison-stage gallery-stage" id="robot-stage" aria-busy="true">
             <img id="robot-poster" class="robot-poster" src="assets/gallery/arm_mecanum-poster.png" width="640" height="400" loading="lazy" alt="Generated white mecanum robot with a fixed red arm">
             <canvas id="robot-canvas" tabindex="0" role="img" aria-label="Generated robot in 3D. Drag or use arrow keys to rotate; plus and minus zoom."></canvas>
             <span id="robot-status" role="status">Loading 3D…</span>
           </div>
           <div class="gallery-tools"><span id="orbit-hint">Drag to rotate · scroll to zoom</span><div class="gallery-actions"><button class="btn" id="explode-robot" type="button" aria-pressed="false" disabled><span>Explode</span></button><button class="btn" id="reset-robot" type="button" disabled>Reset view</button></div></div>
-        </div>
+        </figure>
       </div>
     </div>
   </div>
