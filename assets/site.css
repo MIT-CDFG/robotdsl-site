@@ -94,6 +94,7 @@
 .ico { display: inline-block; width: 18px; height: 18px; flex: none; background-color: currentColor; -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
 .ico-bot { --icon: url(icons/bot.svg); }
 .ico-studio { --icon: url(icons/app-window.svg); }
+.ico-docs { --icon: url(icons/book-open.svg); }
 .ico-video { --icon: url(icons/video.svg); }
 .ico-paper { --icon: url(icons/file-text.svg); }
 .ico-community { --icon: url(icons/users.svg); }

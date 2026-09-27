@@ -15,6 +15,8 @@ Retrieved September 24, 2026. Chart.js, Three.js and icons are vendored. The ori
 | Benchmark bars and axes                               | [Chart.js 4.4.9](https://www.jsdelivr.com/package/npm/chart.js?version=4.4.9), [bar chart documentation](https://www.chartjs.org/docs/latest/charts/bar.html) | `assets/vendor/chartjs/`, MIT; the application formats the data labels     |
 | 3D renderer, controls, GLB loader and environment     | [Three.js 0.170.0](https://www.jsdelivr.com/package/npm/three?version=0.170.0)                                                                                | `assets/vendor/three/`, MIT; unchanged distribution files                  |
 | Inter / Geist Mono                                    | [Inter](https://fonts.google.com/specimen/Inter), [Geist Mono](https://fonts.google.com/specimen/Geist+Mono)                                                 | Served by Google Fonts; SIL Open Font License; system-font fallback        |
+| RobotDSL documentation                                | [VitePress 1.6.4](https://github.com/vuejs/vitepress/tree/v1.6.4) build of the compiler repository's `docs/` | `docs/` except this file and `release-qa/`; VitePress is MIT; the nav mark is the same unmodified `bot.svg` |
+| Docs button icon                                      | [lucide-static 1.47.0 book-open](https://cdn.jsdelivr.net/npm/lucide-static@1.47.0/icons/book-open.svg) | `assets/icons/book-open.svg`, original SVG; ISC (see `assets/icons/LICENSE`) |
 
 Vendored files retain upstream formatting. `.gitattributes` marks them as vendored and exempts their existing whitespace from Git checks.
 
