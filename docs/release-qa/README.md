@@ -2,7 +2,8 @@
 
 ## 2026-09-28 MobileDSL section, time chart and community cards
 
-- The Language section, now "MobileDSL and its compiler as agentic tools", drops the module list: the Fig. 1 robot's CoreDSL types itself line by line while the robot assembles beside it, each part arriving as its line is finished. The documentation now describes the language.
+- The Language section becomes one heading, "MobileDSL and its compiler as agentic tools", over the Fig. 1 robot's CoreDSL typing itself line by line while the robot assembles beside it, each part arriving as its line is finished. The module list, the eyebrow and the paragraph are gone; the documentation describes the language.
+- Sections run on without divider lines or tinted bands, as on lucide.dev; the community cards take the hero cards' grey.
 - The benchmark's second chart shows time per design instead of lines of code; the setup caption was dropped in favour of the paper.
 - Community links became four feature cards with a line each.
 - The pages load their own styles and script with content-hash queries, so a cached older copy cannot pair with a new page.

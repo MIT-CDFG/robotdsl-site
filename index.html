@@ -33,8 +33,8 @@
 <style>
   /* stats */
   /* sections */
-  section.block { padding-block: 64px; border-top: 1px solid var(--line); }
-  #results, #community { background: var(--tint); }
+  /* The page is short, so its sections run on without divider lines or tinted bands, as on lucide.dev. */
+  section.block { padding-block: 56px; }
   #community { padding-block: 48px; }
   .head { display: grid; gap: 12px; margin-bottom: 12px; max-width: 70ch; }
   .head .eyebrow { color: var(--accent); }
@@ -99,7 +99,7 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=801555e0">
+<link rel="stylesheet" href="assets/site.css?v=430a3f2c">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js?v=0fba74a2" defer></script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
@@ -170,8 +170,7 @@
 
 <section class="block" id="agents">
   <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Language</span><h2>MobileDSL and its compiler as agentic tools</h2>
-      <p>A coding agent writes the robot in CoreDSL, naming parts from a library and where they attach; the compiler assembles it and generates what ROS 2 runs in Gazebo or MuJoCo. The <a href="docs/guide/">guide</a> covers the whole language.</p></div>
+    <div class="head"><h2>MobileDSL and its compiler as agentic tools</h2></div>
     <div class="lang">
       <div class="markdown-body listing"><pre class="code coredsl" id="coredsl" role="group" aria-label="CoreDSL for the robot of the paper's Fig. 1: a mecanum chassis, four mecanum wheels, a lidar and an arm"><span class="ln"><span class="k">Robot</span> nav_bot {</span><span class="ln">    <span class="k">intent</span> <span class="s">"A mecanum robot with a lidar and an arm"</span></span><span class="ln" data-part="base_link">    <span class="k">Mecanum_four_wheel</span> chassis(ref = <span class="s">"silver"</span>)</span><span class="ln" data-part="wheel_lf">    <span class="k">Mecanum</span> wheel_lf(ref = <span class="s">"red"</span>, glue = (0.0976, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_lb">    <span class="k">Mecanum</span> wheel_lb(ref = <span class="s">"red"</span>, glue = (-0.1124, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_rf">    <span class="k">Mecanum</span> wheel_rf(ref = <span class="s">"red"</span>, glue = (0.0976, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="wheel_rb">    <span class="k">Mecanum</span> wheel_rb(ref = <span class="s">"red"</span>, glue = (-0.1124, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="front_scan">    <span class="k">Lidar</span> front_scan(ref = <span class="s">"lidar"</span>, glue = (0.11, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln" data-part="top_arm">    <span class="k">Attachment</span> top_arm(ref = <span class="s">"arm"</span>, glue = (-0.0073, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln">}</span></pre></div>
       <figure class="fig3d" id="fig1">

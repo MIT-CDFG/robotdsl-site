@@ -112,9 +112,7 @@
 .coredsl .caret { display: inline-block; width: 0; height: 1.15em; margin-right: -2px; border-left: 2px solid var(--accent); vertical-align: text-bottom; animation: caret-blink 1s steps(1) infinite; }
 @keyframes caret-blink { 50% { border-left-color: transparent; } }
 @media (prefers-reduced-motion: reduce) { .coredsl .caret { animation: none; } }
-/* Community: the hero's feature cards, four across, white on the tinted band. */
-#community { --vp-c-bg-soft: #fff; }
-#community .VPFeature .icon { background-color: var(--tint); }
+/* Community: the hero's feature cards, four across. */
 .feature-grid.community-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 0; }
 @media (min-width: 760px) and (max-width: 959px) { .feature-grid.community-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 759px) { .feature-grid.community-grid { grid-template-columns: minmax(0, 1fr); } }
