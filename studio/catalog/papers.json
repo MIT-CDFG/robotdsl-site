@@ -476,7 +476,8 @@
         }
       ],
       "parts": [
-        "galaxea_r1_lite_arm_fixed"
+        "galaxea_r1_lite_arm_fixed",
+        "galaxea_r1_lite_torso_fixed"
       ]
     },
     {
@@ -646,7 +647,8 @@
         }
       ],
       "parts": [
-        "galaxea_r1_lite_arm_fixed"
+        "galaxea_r1_lite_arm_fixed",
+        "galaxea_r1_lite_torso_fixed"
       ]
     },
     {
@@ -1516,7 +1518,8 @@
       ],
       "parts": [
         "galaxea_r1_left_arm_fixed",
-        "galaxea_r1_right_arm_fixed"
+        "galaxea_r1_right_arm_fixed",
+        "galaxea_r1_torso_fixed"
       ]
     },
     {
@@ -2598,7 +2601,9 @@
       "parts": [
         "moonbot_arm_v1_fixed",
         "moonbot_arm_v2_fixed",
-        "moonbot_arm_v3_fixed"
+        "moonbot_arm_v3_fixed",
+        "moonbot_wheel_v2_source_left",
+        "moonbot_wheel_v2_source_right"
       ]
     },
     {
@@ -3231,6 +3236,7 @@
         "dingo_o_mecanum_normal",
         "galaxea_r1_left_arm_fixed",
         "galaxea_r1_right_arm_fixed",
+        "galaxea_r1_torso_fixed",
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
@@ -5306,6 +5312,8 @@
         "locobot_rplidar_a2m8",
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure",
+        "rainbow_rby1a_drive_wheel",
+        "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_right_arm_fixed",
         "stretch3_base_lidar",
@@ -5428,6 +5436,7 @@
         }
       ],
       "parts": [
+        "nova_carter_chassis_body",
         "nova_carter_drive_wheel_right"
       ]
     },
@@ -7034,6 +7043,8 @@
         }
       ],
       "parts": [
+        "rainbow_rby1a_drive_wheel",
+        "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_right_arm_fixed"
       ]
@@ -7278,6 +7289,8 @@
         "pmb2_base",
         "pmb2_drive_wheel",
         "pmb2_tim551_source",
+        "rainbow_rby1a_drive_wheel",
+        "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_right_arm_fixed",
         "tiago_dual_head_fixed",
@@ -7550,6 +7563,7 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel",
+        "nova_carter_chassis_body",
         "nova_carter_drive_wheel_right"
       ]
     },
@@ -9604,6 +9618,7 @@
         }
       ],
       "parts": [
+        "pmb2_caster_wheel",
         "pmb2_drive_wheel",
         "pmb2_tim551_source",
         "tiago_head_pan_tilt_fixed"
@@ -9799,7 +9814,8 @@
       ],
       "parts": [
         "galaxea_r1_left_arm_fixed",
-        "galaxea_r1_right_arm_fixed"
+        "galaxea_r1_right_arm_fixed",
+        "galaxea_r1_torso_fixed"
       ]
     },
     {
@@ -11178,7 +11194,9 @@
       "parts": [
         "moonbot_arm_v1_fixed",
         "moonbot_arm_v2_fixed",
-        "moonbot_arm_v3_fixed"
+        "moonbot_arm_v3_fixed",
+        "moonbot_wheel_v2_source_left",
+        "moonbot_wheel_v2_source_right"
       ]
     },
     {

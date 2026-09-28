@@ -1,6 +1,6 @@
 {
   "version": "robotdsl-selectable-preview-v2",
-  "count": 191,
+  "count": 200,
   "components": [
     {
       "ref": "jackal_j100_chassis",
@@ -1320,6 +1320,60 @@
       ]
     },
     {
+      "ref": "rainbow_rby1a_head_fixed",
+      "name": "Rainbow RB-Y1A complete pan-tilt head mechanism (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Rainbow Robotics",
+      "subtype": "Attachment",
+      "description": "Rainbow RB-Y1A complete pan-tilt head mechanism (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "robots": [
+        "Rainbow Robotics RB-Y1"
+      ],
+      "papers": [
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4352",
+        "icra-2026-paper-4590"
+      ]
+    },
+    {
+      "ref": "rainbow_rby1a_drive_wheel",
+      "name": "RBY1-A complete source drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Rainbow Robotics",
+      "subtype": "Standard",
+      "description": "RBY1-A complete source drive wheel; canonical right occurrence, with original CAD appearance and rolling-center frame.",
+      "source_url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "robots": [
+        "Rainbow Robotics RB-Y1"
+      ],
+      "papers": [
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4352",
+        "icra-2026-paper-4590"
+      ]
+    },
+    {
+      "ref": "galaxea_r1_torso_fixed",
+      "name": "Galaxea R1 complete torso module (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Galaxea Dynamics",
+      "subtype": "Attachment",
+      "description": "Galaxea R1 complete torso module (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/OpenGalaxea/GalaxeaManipSim",
+      "robots": [
+        "Galaxea R1"
+      ],
+      "papers": [
+        "icra-2026-paper-1558",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-580"
+      ]
+    },
+    {
       "ref": "vizbot_omnivla_chassis",
       "name": "VizBot in its OmniVLA configuration",
       "category": "chassis",
@@ -1684,6 +1738,74 @@
       "papers": [
         "icra-2026-paper-3621",
         "icra-2026-paper-4704"
+      ]
+    },
+    {
+      "ref": "nova_carter_chassis_body",
+      "name": "Complete NVIDIA Nova Carter rigid chassis body from the official source…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "NVIDIA / Segway Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "Complete NVIDIA Nova Carter rigid chassis body from the official source model; wheels, rear caster mechanism and sensors are separate and not supplied by this part.",
+      "source_url": "https://github.com/NVIDIA-ISAAC-ROS/nova_carter",
+      "robots": [
+        "NVIDIA Carter (family)"
+      ],
+      "papers": [
+        "icra-2026-paper-3621",
+        "icra-2026-paper-4704"
+      ]
+    },
+    {
+      "ref": "moonbot_wheel_v2_source_left",
+      "name": "MoonBot Hero v2 complete left wheel source unit",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tohoku Space Robotics Laboratory",
+      "subtype": "Standard",
+      "description": "MoonBot Hero v2 complete left wheel source unit; source-model geometry and physics, hardware revision and physical fit unverified.",
+      "source_url": "https://github.com/Space-Robotics-Laboratory/hero_assets_py",
+      "robots": [
+        "Moonbot"
+      ],
+      "papers": [
+        "icra-2026-paper-2071",
+        "icra-2026-paper-6155"
+      ]
+    },
+    {
+      "ref": "moonbot_wheel_v2_source_right",
+      "name": "MoonBot Hero v2 complete right wheel source unit",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tohoku Space Robotics Laboratory",
+      "subtype": "Standard",
+      "description": "MoonBot Hero v2 complete right wheel source unit; source-model geometry and physics, hardware revision and physical fit unverified.",
+      "source_url": "https://github.com/Space-Robotics-Laboratory/hero_assets_py",
+      "robots": [
+        "Moonbot"
+      ],
+      "papers": [
+        "icra-2026-paper-2071",
+        "icra-2026-paper-6155"
+      ]
+    },
+    {
+      "ref": "galaxea_r1_lite_torso_fixed",
+      "name": "Galaxea R1 Lite complete torso (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Galaxea Dynamics",
+      "subtype": "Attachment",
+      "description": "Galaxea R1 Lite complete torso (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/OpenGalaxea/GalaxeaManipSim",
+      "robots": [
+        "Galaxea R1 Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-1167",
+        "icra-2026-paper-1203"
       ]
     },
     {
@@ -2797,6 +2919,22 @@
       ]
     },
     {
+      "ref": "pmb2_caster_wheel",
+      "name": "Complete PMB2 50 mm nominal caster wheel, excluding its fork",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Standard",
+      "description": "Complete PMB2 50 mm nominal caster wheel, excluding its fork; passive installation is not yet modeled by Core.",
+      "source_url": "https://github.com/pal-robotics/pmb2_robot",
+      "robots": [
+        "PAL Robotics TIAGo Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-5635"
+      ]
+    },
+    {
       "ref": "tb4_sensor_plate_025394",
       "name": "Clearpath TurtleBot4 part 025394 revision 3",
       "category": "attachment",
@@ -2905,6 +3043,18 @@
       "subtype": "RGBD",
       "description": "Intel RealSense D435 historical 2020 nominal-mass CAD package reference; no D435i or Robotont paper identity claim.",
       "source_url": "https://github.com/robotont/robotont-mechanics/tree/54f313a2d810e1d8c8187d0cac77b54afca727bf",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "papras_7dof_stock_fixed",
+      "name": "PAPRAS seven-axis bare arm (fixed stock source pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "UIUC KIMLAB",
+      "subtype": "Attachment",
+      "description": "PAPRAS seven-axis bare arm (fixed stock source pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/uiuckimlab/PAPRAS-V0-Public/tree/c200c712062d636fca5d088791f75514a599de81/papras_description",
       "robots": [],
       "papers": []
     },
