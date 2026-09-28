@@ -108,15 +108,13 @@
 .ico-copy { --icon: url(icons/copy.svg); }
 .ico-part { --icon: url(icons/package-plus.svg); }
 .ico-bug { --icon: url(icons/bug.svg); }
-/* MobileDSL: the compiler's report, coloured as in a terminal; a wrapped line hangs under its start. */
-.listing pre.diag { font-size: 11.5px; white-space: pre-wrap; }
-.diag .ln { padding-left: 4ch; text-indent: -4ch; }
-.diag .e { color: #b3261e; }
-.diag .m { color: var(--muted); }
-.diag .h { color: var(--accent); font-weight: 500; }
-/* On a phone the source line and its carets scroll instead of wrapping, so the carets still point at the glue. */
-@media (max-width: 600px) { .diag .keep { white-space: pre; } }
-.diagnostic figcaption code { font-family: var(--mono); font-size: .85em; }
+/* MobileDSL: a coding agent's work on one request, as its terminal shows it; a wrapped line hangs under its text. */
+.listing pre.agentlog { font-size: 12px; line-height: 1.7; white-space: pre-wrap; }
+.agentlog .ln { padding-left: 2ch; text-indent: -2ch; }
+.agentlog .out { padding-left: 4ch; text-indent: -2ch; margin-bottom: 6px; }
+.agentlog .req { color: var(--ink); margin-bottom: 12px; }
+.agentlog .b { color: var(--accent); }
+.agentlog .m { color: var(--muted); }
 /* Community: the hero's feature cards, four across, white on the tinted band. */
 #community { --vp-c-bg-soft: #fff; }
 #community .VPFeature .icon { background-color: var(--tint); }

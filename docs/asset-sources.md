@@ -23,7 +23,7 @@ The layout reference is [lucide.dev](https://lucide.dev/), inspected September 2
 
 The Agent section, a Tabler Steps workflow with Lucide markers, was removed at the user's request on 2026-09-28; the hero's agent-assisted design card and the benchmark carry the agent result. The Language section's module list and CoreDSL listing gave way the same day to the MobileDSL section: the documentation now describes the language, and the section shows what a coding agent gets from the compiler.
 
-The compiler report in the MobileDSL section is output of `mobiledsl` 0.1.0 for the documentation's demo program with `wheel_lf`'s glue moved from x = 0.1275 to 0.14, checked with `--check` against the compiler's test library. The page shows the lines from that diagnostic's header to its first help line; the second help line, the evidence note and the companion wheel-mount error are left out, as the caption's “excerpt” says. Its JSON form carries the same help and no machine-applicable edit, so the page does not claim one.
+The MobileDSL section shows `spiral_arm_bot`, the robot Claude Code (claude-opus-4-8) built for benchmark request `basic_geom_g02` in the recorded trial `claude-opus-4-8/basic_geom_g02__mobiledsl__4cH4bjS`, using the gallery's `arm_mecanum` model and part records described below. The request line quotes the task text from `dataset/tasks.csv`; `[image]` stands for its reference image. The log is a simplified depiction, not a transcript: its steps are the benchmark pipeline's component retrieval, authoring and static validation, its parts and robot name come from the agent's `robot.core`, and the part count is the compiled model's. The trial's verdict is not presented. The compiler report shown there earlier the same day, and the paper's Fig. 1 model and figure, were removed at the user's request.
 
 The community cards reuse the vendored VPFeature component as links. `bug` and `package-plus` are original SVGs from `lucide-static@1.47.0`, like the other icons.
 
@@ -35,7 +35,7 @@ The research imagery and compiled robot models are existing project artifacts, n
 
 ### Interactive generated-design gallery (currently removed from the page)
 
-The gallery was removed from the page at the user’s request on 2026-09-24. Its assets and viewer module are retained for possible reuse; the page no longer loads them. The notes below record their provenance and previous presentation.
+The gallery was removed from the page at the user’s request on 2026-09-24. Its assets and viewer module are retained for possible reuse; since 2026-09-28 the MobileDSL section loads `arm_mecanum` again, with the page's own viewer. The notes below record their provenance and previous presentation.
 
 The three GLBs reuse existing exports in `fig1-3d-build/hero/*_raw.glb`, exported from compiled benchmark programs with the component library's geometry. They retain one named node per visible component. Web copies are compressed with glTF Transform 3.10.1 / Meshopt (simplification, joining, palette, flattening and instancing disabled); decoded bounds were checked against the originals within 1 mm. No meshes or mounting poses were authored for this redesign. `*.json` stores the corresponding component names and display offsets for exploded inspection. Explosion is a visualization, not a validated assembly sequence. These are geometry viewers, not live physics simulations.
 

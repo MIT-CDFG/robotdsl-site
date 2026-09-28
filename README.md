@@ -36,7 +36,7 @@ minutes), which leaves, for example, the benchmark charts empty.
 The project page follows the Lucide reference, using locally vendored VitePress
 components and Lucide icons alongside the existing Vidstack player, Chart.js and Three.js.
 The project page and guide share typography and colors through `assets/base.css`.
-The success-rate summary remains accessible without JavaScript; the Language
+The benchmark summary remains accessible without JavaScript; the MobileDSL
 section's 3D viewer has a static fallback. The generated-robot gallery is currently removed.
 See [asset sources](docs/asset-sources.md) for licenses and manuscript references.
 The Studio bundle remains separate from the project-page redesign.

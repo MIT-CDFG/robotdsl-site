@@ -102,7 +102,7 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=60b95ed7">
+<link rel="stylesheet" href="assets/site.css?v=0b75144b">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js?v=0fba74a2" defer></script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
@@ -174,18 +174,18 @@
 <section class="block" id="agents">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">MobileDSL</span><h2>Built for coding agents</h2>
-      <p>Codex, Claude Code or another coding agent writes one short program from a library of real parts. The compiler assembles and checks the whole system, emits the files a ROS 2 stack runs in Gazebo or MuJoCo, and when something is wrong, says where and how to fix it. The <a href="docs/guide/">guide</a> describes the language.</p></div>
+      <p>Coding agents use MobileDSL as their tool: they pick parts from a library, write one short program, and the compiler assembles the robot and emits the files ROS 2 runs in Gazebo or MuJoCo. Claude Code built the robot shown here from one benchmark request. The <a href="docs/guide/">guide</a> describes the language.</p></div>
     <div class="lang">
-      <figure class="diagnostic">
-        <div class="markdown-body listing"><pre class="code diag" role="group" aria-label="Compiler report for a wheel placed 13 millimetres off its mount"><span class="ln"><span class="e">error[validation.assembly.glue_on_connector]</span>: the glue of 'wheel_lf' matches no connector of the chassis; the nearest is 'wheel_mount_front_left', 0.013 m away with direction cosine 1.00</span><span class="ln"><span class="m">  --&gt; demo.core:7:52</span></span><span class="ln"><span class="m">  |</span></span><span class="ln keep"><span class="m">7 |</span>     Mecanum wheel_lf(ref = "mecanum_black", glue = (0.14, 0.1494, -0.0216, 0, 1, 0))</span><span class="ln keep"><span class="m">  |</span>                                                    <span class="e">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ matches no chassis connector</span></span><span class="ln"><span class="m">  |</span></span><span class="ln">  <span class="h">= help:</span> to mount on 'wheel_mount_front_left' write glue = (0.1275, 0.1494, -0.0216, 0, 1, 0)</span></pre></div>
-        <figcaption>The compiler's report on a wheel placed 13 mm off its mount (excerpt). <code>--json</code> returns the same report as data.</figcaption>
+      <figure class="agentlog-figure">
+        <div class="markdown-body listing"><pre class="code agentlog" role="group" aria-label="A coding agent's work on one benchmark request, simplified"><span class="ln req">&gt; In an open circular field, drive forward with gradually increasing distance and spin slightly each time to expand outward in a spiral. The arm and gripper shown in the image remain fixed; only the mobile base moves. <span class="m">[image]</span></span><span class="ln"><span class="b">●</span> Searching the parts library</span><span class="ln out"><span class="m">└</span> a white mecanum base, four black mecanum wheels, a red arm with gripper and a front ultrasonic sensor</span><span class="ln"><span class="b">●</span> Writing the MobileDSL program</span><span class="ln out"><span class="m">└</span> the robot, the open field and the spiral task</span><span class="ln"><span class="b">●</span> Compiling with mobiledsl</span><span class="ln out"><span class="m">└</span> spiral_arm_bot: 7 parts assembled</span></pre></div>
+        <figcaption>Claude Code (claude-opus-4-8) on benchmark request basic_geom_g02, simplified; the 3D model is its result.</figcaption>
       </figure>
-      <figure class="fig3d" id="fig1">
+      <figure class="fig3d" id="agent-robot">
         <div class="stage">
-          <canvas role="img" aria-label="3D model of the robot from paper Fig. 1: a white mecanum chassis with four red mecanum wheels, a red arm and a lidar"></canvas>
+          <canvas role="img" aria-label="3D model of spiral_arm_bot, which Claude Code built for the request: a white mecanum base with four black mecanum wheels, a fixed red arm with gripper and a front ultrasonic sensor"></canvas>
           <p class="loading">Loading the 3D model…</p>
           <div class="labels" aria-hidden="true"></div>
-          <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
+          <img class="fallback" src="assets/gallery/arm_mecanum-poster.png" width="640" height="400" alt="spiral_arm_bot, the robot Claude Code built: a white mecanum base with four black mecanum wheels, a red arm with gripper and a front ultrasonic sensor">
         </div>
         <div class="bar">
           <button type="button" class="btn VPButton medium alt toggle" aria-pressed="false">Explode</button>
@@ -281,15 +281,16 @@
 
 <script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.js", "three/addons/": "./assets/vendor/three/examples/jsm/"}}</script>
 <script type="module">
-  // Paper Fig. 1 in 3D. assets/models/fig1_robot.glb holds one mesh per link of the compiled listing (component-library
-  // meshes at the compiler's poses); fig1_robot.json gives each part's mating connector and the direction it comes off.
+  // The robot Claude Code (claude-opus-4-8) built with MobileDSL for benchmark request basic_geom_g02.
+  // assets/gallery/arm_mecanum.glb holds one node per component of its compiled program; arm_mecanum.json gives each
+  // component's library part, category, centre, size and the offset it takes in the exploded view.
   import * as THREE from 'three';
   import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
   import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
   import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
   import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
-  const fig = document.getElementById('fig1');
+  const fig = document.getElementById('agent-robot');
   const stage = fig.querySelector('.stage');
   const canvas = fig.querySelector('canvas');
   const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -318,52 +319,41 @@
     scene.add(ground);
 
     const camera = new THREE.PerspectiveCamera(30, 4 / 3, 0.01, 10);
-    const target = new THREE.Vector3(0, 0.125, 0);
-    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(0.9).add(target));
+    const target = new THREE.Vector3(0, 0.17, 0);
+    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(1.15).add(target));
     const controls = new OrbitControls(camera, canvas);
-    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.45, maxDistance: 1.8, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
+    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.6, maxDistance: 2.2, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
     controls.target.copy(target);
     controls.addEventListener('start', () => { controls.autoRotate = false; });
 
     const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
     const [gltf, meta] = await Promise.all([
-      loader.loadAsync('assets/models/fig1_robot.glb'),
-      fetch('assets/models/fig1_robot.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      loader.loadAsync('assets/gallery/arm_mecanum.glb'),
+      fetch('assets/gallery/arm_mecanum.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
     ]);
     const robot = gltf.scene;
     robot.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     scene.add(robot);
 
-    // Parts that come off, their connector arrows (dot at the connector, as in the figure) and one label per role.
-    const moving = [], arrows = [], labels = [];
+    // Parts that come off by their recorded offsets, and one label per category, naming the library part.
+    const moving = [], labels = [];
     const layer = fig.querySelector('.labels');
     const v3 = a => new THREE.Vector3(a[0], a[1], a[2]);
     for (const p of meta.parts) {
       const node = robot.getObjectByName(p.name);
       if (!node) continue;
-      if (p.distance > 0) {
-        const dir = v3(p.direction);
-        moving.push({ node, home: node.position.clone(), offset: dir.clone().multiplyScalar(p.distance) });
-        const arrow = new THREE.ArrowHelper(dir, v3(p.mount), p.distance, 0x111111, 0.014, 0.009);
-        const dot = new THREE.Mesh(new THREE.SphereGeometry(0.003, 12, 8), new THREE.MeshBasicMaterial({ color: 0x111111 }));
-        dot.position.copy(v3(p.mount));
-        for (const o of [arrow, dot]) {
-          o.traverse(m => { if (m.material) { m.material.transparent = true; m.material.opacity = 0; } });
-          o.visible = false;
-          scene.add(o);
-          arrows.push(o);
-        }
-      }
-      const known = labels.find(l => l.role === p.role);
-      const anchor = v3(p.centre).add(new THREE.Vector3(0, p.role === 'Chassis' ? -p.size[1] / 2 - 0.012 : p.size[1] / 2 + 0.012, 0));
-      const moves = p.distance > 0 ? v3(p.direction).multiplyScalar(p.distance) : new THREE.Vector3();
+      const moves = p.explode ? v3(p.explode) : new THREE.Vector3();
+      if (p.explode) moving.push({ node, home: node.position.clone(), offset: moves });
+      const role = p.category[0].toUpperCase() + p.category.slice(1), below = p.category === 'chassis';
+      const anchor = v3(p.centre).add(new THREE.Vector3(0, below ? -p.size[1] / 2 - 0.012 : p.size[1] / 2 + 0.012, 0));
+      const known = labels.find(l => l.role === role);
       if (known) known.anchors.push({ anchor, moves });
       else {
         const el = document.createElement('div');
-        el.className = 'label' + (p.role === 'Chassis' ? ' below' : '');
-        el.innerHTML = `<b>${p.role}</b>(${p.kind})`;
+        el.className = 'label' + (below ? ' below' : '');
+        el.innerHTML = `<b>${role}</b>${p.part}`;
         layer.appendChild(el);
-        labels.push({ role: p.role, el, anchors: [{ anchor, moves }] });
+        labels.push({ role, el, anchors: [{ anchor, moves }] });
       }
     }
 
@@ -376,7 +366,7 @@
       goal = goal ? 0 : 1;
       toggle.setAttribute('aria-pressed', goal ? 'true' : 'false');
       toggle.textContent = goal ? 'Assemble' : 'Explode';
-      hint.textContent = goal ? 'Arrows mark the mating connectors' : idle;
+      hint.textContent = goal ? 'Each part is a component from the library' : idle;
     });
 
     const size = () => {
@@ -401,7 +391,6 @@
       camera.position.sub(controls.target).multiplyScalar((1 + 0.25 * k) / (1 + 0.25 * shown)).add(controls.target);
       shown = k;
       for (const m of moving) m.node.position.copy(m.home).addScaledVector(m.offset, k);
-      for (const a of arrows) { a.visible = k > 0.01; a.traverse(o => { if (o.material) o.material.opacity = k; }); }
       controls.update();
       renderer.render(scene, camera);
       const w = stage.clientWidth, h = stage.clientHeight;
@@ -413,7 +402,7 @@
           p.copy(a.anchor).addScaledVector(a.moves, k).project(camera);
           if (!best || p.x > best.x) best = { x: p.x, y: p.y };
         }
-        const box = { l, x: (best.x + 1) / 2 * w, y: (1 - best.y) / 2 * h, w: l.el.offsetWidth, h: l.el.offsetHeight, below: l.role === 'Chassis' };
+        const box = { l, x: (best.x + 1) / 2 * w, y: (1 - best.y) / 2 * h, w: l.el.offsetWidth, h: l.el.offsetHeight, below: l.el.classList.contains('below') };
         for (const q of placed) {
           const top = box.below ? box.y : box.y - box.h, qtop = q.below ? q.y : q.y - q.h;
           if (Math.abs(box.x - q.x) < (box.w + q.w) / 2 && top < qtop + q.h && qtop < top + box.h) box.y += (qtop + q.h) - top + 2;

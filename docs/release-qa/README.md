@@ -2,11 +2,11 @@
 
 ## 2026-09-28 MobileDSL section, time chart and community cards
 
-- The Language section's module list and CoreDSL listing gave way to "Built for coding agents": what an agent writes and gets back, with the compiler's real report on a wheel placed 13 mm off its mount beside the 3D robot. The documentation now describes the language.
+- The Language section's module list and CoreDSL listing gave way to "Built for coding agents": a short, simplified log of Claude Code working on benchmark request basic_geom_g02 beside the robot it built, in 3D, in place of the paper's Fig. 1. The documentation now describes the language.
 - The benchmark's second chart shows time per design instead of lines of code; the setup caption was dropped in favour of the paper.
 - Community links became four feature cards with a line each.
 - The pages load their own styles and script with content-hash queries, so a cached older copy cannot pair with a new page.
-- Checked in headless Chromium at 1440, 820 and 390 pixels wide, without the 3D module, and on the full page for chart initialisation; all 1,094 local links, anchors and assets resolve.
+- Checked in headless Chromium at 1440, 820 and 390 pixels wide, the 3D robot on a copy of the page without the hero, and the full page for chart initialisation; all local links, anchors and assets resolve.
 
 ## 2026-09-28 benchmark, physical robots and agent sections
 
