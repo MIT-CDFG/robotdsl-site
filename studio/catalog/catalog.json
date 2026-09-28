@@ -1,6 +1,6 @@
 {
   "version": "robotdsl-selectable-preview-v2",
-  "count": 153,
+  "count": 152,
   "components": [
     {
       "ref": "jackal_j100_chassis",
@@ -2247,7 +2247,10 @@
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ARM_ASSIEME_ARM",
       "file": "attachments/attach_arm_assieme_arm.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-standard-open-so-101-arms-with-parallel-gripper-1",
+      "source_url": "https://grabcad.com/library/standard-open-so-101-arms-with-parallel-gripper-1",
+      "source_author": "Luca Delbarba"
     },
     {
       "ref": "attach_arm_nova",
@@ -2257,7 +2260,10 @@
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ARM_NOVA",
       "file": "attachments/attach_arm_nova.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-novabot-industrial-robot-design-concept-1",
+      "source_url": "https://grabcad.com/library/novabot-industrial-robot-design-concept-1",
+      "source_author": "Arjen Hoti"
     },
     {
       "ref": "attach_electronics_motor_driver",
@@ -2267,7 +2273,10 @@
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ELECTRONICS_MOTOR_DRIVER",
       "file": "attachments/attach_electronics_motor_driver.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-l298n-stepper-motor-driver-red-1",
+      "source_url": "https://grabcad.com/library/l298n-stepper-motor-driver-red-1",
+      "source_author": "Suchinto Roy Dhrubo"
     },
     {
       "ref": "chassis_ackermann_fener",
@@ -2277,7 +2286,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_ACKERMANN_FENER",
       "file": "chassis/chassis_ackermann_fener.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-fener-v2-autonomous-ackermann-steering-vehicle-prototype-1",
+      "source_url": "https://grabcad.com/library/fener-v2-autonomous-ackermann-steering-vehicle-prototype-1",
+      "source_author": "Muhammed Sezer"
     },
     {
       "ref": "chassis_diff_drive_2w_base",
@@ -2287,7 +2299,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_BASE",
       "file": "chassis/chassis_diff_drive_2w_base.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-minisumo-9",
+      "source_url": "https://grabcad.com/library/minisumo-9",
+      "source_author": "Ricardo Lozano"
     },
     {
       "ref": "chassis_diff_drive_2w_grey2",
@@ -2297,7 +2312,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_GREY2",
       "file": "chassis/chassis_diff_drive_2w_grey2.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-esp32-robot-with-arduino-nano-and-n20-motor-encoder-1",
+      "source_url": "https://grabcad.com/library/esp32-robot-with-arduino-nano-and-n20-motor-encoder-1",
+      "source_author": "shubham bhatt"
     },
     {
       "ref": "chassis_diff_drive_2w_nema",
@@ -2307,7 +2325,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_NEMA",
       "file": "chassis/chassis_diff_drive_2w_nema.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-three-wheel-robot-platform-1",
+      "source_url": "https://grabcad.com/library/three-wheel-robot-platform-1",
+      "source_author": "Tomasz Ursel"
     },
     {
       "ref": "chassis_diff_drive_4w_black",
@@ -2317,7 +2338,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_BLACK",
       "file": "chassis/chassis_diff_drive_4w_black.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-robot-car-chassis-1",
+      "source_url": "https://grabcad.com/library/mecanum-robot-car-chassis-1",
+      "source_author": "Tim Stehrenberg"
     },
     {
       "ref": "chassis_diff_drive_4w_blue",
@@ -2327,7 +2351,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_BLUE",
       "file": "chassis/chassis_diff_drive_4w_blue.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-differential-robot-fp1-1",
+      "source_url": "https://grabcad.com/library/differential-robot-fp1-1",
+      "source_author": "Náger Rafael Naranjo Molina"
     },
     {
       "ref": "chassis_diff_drive_4w_red",
@@ -2337,7 +2364,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_RED",
       "file": "chassis/chassis_diff_drive_4w_red.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-robot-with-mecanum-wheels-1",
+      "source_url": "https://grabcad.com/library/robot-with-mecanum-wheels-1",
+      "source_author": "abdelkader ouhssain"
     },
     {
       "ref": "chassis_mecanum_4w_assieme_drone2",
@@ -2347,7 +2377,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_ASSIEME_DRONE2",
       "file": "chassis/chassis_mecanum_4w_assieme_drone2.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-drone-with-96mm-mecanum-wheels-and-simple-robotic-arm-1",
+      "source_url": "https://grabcad.com/library/drone-with-96mm-mecanum-wheels-and-simple-robotic-arm-1",
+      "source_author": "Luca Delbarba"
     },
     {
       "ref": "chassis_mecanum_4w_grey",
@@ -2357,7 +2390,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_GREY",
       "file": "chassis/chassis_mecanum_4w_grey.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-starting-base-for-mecanum-wheeled-drone-1",
+      "source_url": "https://grabcad.com/library/starting-base-for-mecanum-wheeled-drone-1",
+      "source_author": "Luca Delbarba"
     },
     {
       "ref": "chassis_mecanum_4w_silver2",
@@ -2367,7 +2403,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_SILVER2",
       "file": "chassis/chassis_mecanum_4w_silver2.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-robot-1",
+      "source_url": "https://grabcad.com/library/mecanum-robot-1",
+      "source_author": "ayman bakleh"
     },
     {
       "ref": "chassis_omni_4w_black",
@@ -2377,17 +2416,10 @@
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_OMNI_4W_BLACK",
       "file": "chassis/chassis_omni_4w_black.json",
-      "origin": "legacy"
-    },
-    {
-      "ref": "chassis_steering_tricycle_desert",
-      "name": "Desert Chassis",
-      "category": "chassis",
-      "subtype": "steering_tricycle",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_STEERING_TRICYCLE_DESERT",
-      "file": "chassis/chassis_steering_tricycle_desert.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-mobile-robot-using-ni-myrio-with-lance-tool-1",
+      "source_url": "https://grabcad.com/library/mecanum-mobile-robot-using-ni-myrio-with-lance-tool-1",
+      "source_author": "Diki Hermawan"
     },
     {
       "ref": "sens_camera_dcs950g",
@@ -2397,7 +2429,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_CAMERA_DCS950G",
       "file": "sensors/sens_camera_dcs950g.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-four-wheel-drive-mobile-robot-1",
+      "source_url": "https://grabcad.com/library/four-wheel-drive-mobile-robot-1",
+      "source_author": "Xinchao Song"
     },
     {
       "ref": "sens_camera_imx390",
@@ -2407,7 +2442,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_CAMERA_IMX390",
       "file": "sensors/sens_camera_imx390.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-camera-ac-imx390-h60-h120-h190-1",
+      "source_url": "https://grabcad.com/library/camera-ac-imx390-h60-h120-h190-1",
+      "source_author": "Aqil Ibrahim"
     },
     {
       "ref": "sens_imu_grey",
@@ -2417,7 +2455,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_IMU_GREY",
       "file": "sensors/sens_imu_grey.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-grove-imu-9-dof-v1-1",
+      "source_url": "https://grabcad.com/library/grove-imu-9-dof-v1-1",
+      "source_author": "Stéphane Lavirotte"
     },
     {
       "ref": "sens_imu_gy87",
@@ -2427,7 +2468,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_IMU_GY87",
       "file": "sensors/sens_imu_gy87.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-gy-87-10dof-imu-1",
+      "source_url": "https://grabcad.com/library/gy-87-10dof-imu-1",
+      "source_author": "Pacman Nguyen"
     },
     {
       "ref": "sens_lidar_ld06",
@@ -2437,7 +2481,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_LIDAR_LD06",
       "file": "sensors/sens_lidar_ld06.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-ldrobot-ld06-360-lidar-module-raspberry-pi-mounting-bracket-1",
+      "source_url": "https://grabcad.com/library/ldrobot-ld06-360-lidar-module-raspberry-pi-mounting-bracket-1",
+      "source_author": "Alexandru Pasescu"
     },
     {
       "ref": "sens_lidar_yellow",
@@ -2447,7 +2494,10 @@
       "supplier": "MobileCopilot",
       "sku": "SENS_LIDAR_YELLOW",
       "file": "sensors/sens_lidar_yellow.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-four-wheel-drive-mobile-robot-1",
+      "source_url": "https://grabcad.com/library/four-wheel-drive-mobile-robot-1",
+      "source_author": "Xinchao Song"
     },
     {
       "ref": "wheel_caster_ball_classic",
@@ -2457,7 +2507,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_CASTER_BALL_CLASSIC",
       "file": "wheels/wheel_caster_ball_classic.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-caster-wheel-ball-1",
+      "source_url": "https://grabcad.com/library/caster-wheel-ball-1",
+      "source_author": "Aliaksandra"
     },
     {
       "ref": "wheel_mecanum_classic",
@@ -2467,7 +2520,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_CLASSIC",
       "file": "wheels/wheel_mecanum_classic.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-wheel-diameter-100mm-right-1",
+      "source_url": "https://grabcad.com/library/mecanum-wheel-diameter-100mm-right-1",
+      "source_author": "Liam"
     },
     {
       "ref": "wheel_mecanum_first",
@@ -2477,7 +2533,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_FIRST",
       "file": "wheels/wheel_mecanum_first.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-robot-with-mecanum-wheels-1",
+      "source_url": "https://grabcad.com/library/robot-with-mecanum-wheels-1",
+      "source_author": "abdelkader ouhssain"
     },
     {
       "ref": "wheel_mecanum_green",
@@ -2487,7 +2546,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_GREEN",
       "file": "wheels/wheel_mecanum_green.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-wheel-113",
+      "source_url": "https://grabcad.com/library/mecanum-wheel-113",
+      "source_author": "Habib Mohamed"
     },
     {
       "ref": "wheel_mecanum_red_black",
@@ -2497,7 +2559,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_RED_BLACK",
       "file": "wheels/wheel_mecanum_red_black.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-wheel-in-solidworks-1",
+      "source_url": "https://grabcad.com/library/mecanum-wheel-in-solidworks-1",
+      "source_author": "Amit Mourya"
     },
     {
       "ref": "wheel_mecanum_yellow",
@@ -2507,7 +2572,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_YELLOW",
       "file": "wheels/wheel_mecanum_yellow.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-mecanum-wheel-diameter-100mm-right-1",
+      "source_url": "https://grabcad.com/library/mecanum-wheel-diameter-100mm-right-1",
+      "source_author": "Liam"
     },
     {
       "ref": "wheel_omni_blue",
@@ -2517,7 +2585,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_BLUE",
       "file": "wheels/wheel_omni_blue.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-omni-wheel-cad-model-1",
+      "source_url": "https://grabcad.com/library/omni-wheel-cad-model-1",
+      "source_author": "Arya  Bhushan"
     },
     {
       "ref": "wheel_omni_classic_5",
@@ -2527,7 +2598,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_CLASSIC_5",
       "file": "wheels/wheel_omni_classic_5.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-three-omni-wheel-robot-1",
+      "source_url": "https://grabcad.com/library/three-omni-wheel-robot-1",
+      "source_author": "Prathamesh More"
     },
     {
       "ref": "wheel_omni_vexpro_4in",
@@ -2537,7 +2611,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_VEXPRO_4IN",
       "file": "wheels/wheel_omni_vexpro_4in.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-omni-wheels-4",
+      "source_url": "https://grabcad.com/library/omni-wheels-4",
+      "source_author": "FRC6191 RoboKryptonite"
     },
     {
       "ref": "wheel_standard_black2",
@@ -2547,7 +2624,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_BLACK2",
       "file": "wheels/wheel_standard_black2.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-24mm-rubber-roller-1",
+      "source_url": "https://grabcad.com/library/24mm-rubber-roller-1",
+      "source_author": "Dave Lawton"
     },
     {
       "ref": "wheel_standard_classic",
@@ -2557,7 +2637,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_CLASSIC",
       "file": "wheels/wheel_standard_classic.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-robot-xt-1",
+      "source_url": "https://grabcad.com/library/robot-xt-1",
+      "source_author": "Osama Mansour"
     },
     {
       "ref": "wheel_standard_grey",
@@ -2567,7 +2650,10 @@
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_GREY",
       "file": "wheels/wheel_standard_grey.json",
-      "origin": "legacy"
+      "origin": "legacy",
+      "source_id": "grabcad-esp32-robot-with-arduino-nano-and-n20-motor-encoder-1",
+      "source_url": "https://grabcad.com/library/esp32-robot-with-arduino-nano-and-n20-motor-encoder-1",
+      "source_author": "shubham bhatt"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "cell": 144,
   "columns": 16,
   "rows": 10,
-  "count": 153,
+  "count": 152,
   "frames": 16,
   "parts": {
     "turtlebot3_burger_chassis": {
@@ -642,19 +642,8 @@
         0.089
       ]
     },
-    "chassis_steering_tricycle_desert": {
-      "i": 134,
-      "spin": true,
-      "proxy": false,
-      "mass": 0.6,
-      "dims": [
-        0.23,
-        0.2,
-        0.075
-      ]
-    },
     "sens_camera_dcs950g": {
-      "i": 135,
+      "i": 134,
       "spin": true,
       "proxy": false,
       "mass": 0.0525,
@@ -665,7 +654,7 @@
       ]
     },
     "sens_camera_imx390": {
-      "i": 136,
+      "i": 135,
       "spin": true,
       "proxy": false,
       "mass": 0.0525,
@@ -676,7 +665,7 @@
       ]
     },
     "sens_imu_grey": {
-      "i": 137,
+      "i": 136,
       "spin": true,
       "proxy": false,
       "mass": 0.0525,
@@ -687,7 +676,7 @@
       ]
     },
     "sens_imu_gy87": {
-      "i": 138,
+      "i": 137,
       "spin": true,
       "proxy": false,
       "mass": 0.0525,
@@ -698,7 +687,7 @@
       ]
     },
     "sens_lidar_ld06": {
-      "i": 139,
+      "i": 138,
       "spin": true,
       "proxy": false,
       "mass": 0.1407,
@@ -709,7 +698,7 @@
       ]
     },
     "sens_lidar_yellow": {
-      "i": 140,
+      "i": 139,
       "spin": true,
       "proxy": false,
       "mass": 0.1407,
@@ -720,7 +709,7 @@
       ]
     },
     "wheel_caster_ball_classic": {
-      "i": 141,
+      "i": 140,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
@@ -731,7 +720,7 @@
       ]
     },
     "wheel_mecanum_classic": {
-      "i": 142,
+      "i": 141,
       "spin": true,
       "proxy": false,
       "mass": 0.0982,
@@ -742,7 +731,7 @@
       ]
     },
     "wheel_mecanum_first": {
-      "i": 143,
+      "i": 142,
       "spin": true,
       "proxy": false,
       "mass": 0.0402,
@@ -753,7 +742,7 @@
       ]
     },
     "wheel_mecanum_green": {
-      "i": 144,
+      "i": 143,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
@@ -764,7 +753,7 @@
       ]
     },
     "wheel_mecanum_red_black": {
-      "i": 145,
+      "i": 144,
       "spin": true,
       "proxy": false,
       "mass": 0.0337,
@@ -775,7 +764,7 @@
       ]
     },
     "wheel_mecanum_yellow": {
-      "i": 146,
+      "i": 145,
       "spin": true,
       "proxy": false,
       "mass": 0.0982,
@@ -786,7 +775,7 @@
       ]
     },
     "wheel_omni_blue": {
-      "i": 147,
+      "i": 146,
       "spin": true,
       "proxy": false,
       "mass": 0.0494,
@@ -797,7 +786,7 @@
       ]
     },
     "wheel_omni_classic_5": {
-      "i": 148,
+      "i": 147,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
@@ -808,7 +797,7 @@
       ]
     },
     "wheel_omni_vexpro_4in": {
-      "i": 149,
+      "i": 148,
       "spin": true,
       "proxy": false,
       "mass": 0.0513,
@@ -819,7 +808,7 @@
       ]
     },
     "wheel_standard_black2": {
-      "i": 150,
+      "i": 149,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
@@ -830,7 +819,7 @@
       ]
     },
     "wheel_standard_classic": {
-      "i": 151,
+      "i": 150,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
@@ -841,7 +830,7 @@
       ]
     },
     "wheel_standard_grey": {
-      "i": 152,
+      "i": 151,
       "spin": true,
       "proxy": false,
       "mass": 0.03,
