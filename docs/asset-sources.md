@@ -50,7 +50,7 @@ Mappings are taken from `mobilecopilot-video/outputs/opening/designs/designs.jso
 
 ### Warehouse walkthrough
 
-The Guide's warehouse example follows the manuscript source at commit `8606c8b` (September 17, 2026): the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. It is a paper walkthrough, not a live agent session. The home page's repair sequence and the repair-diff download were removed at the user's request on 2026-09-28.
+The Guide's warehouse example follows the manuscript's Figure 4 source at commit `8606c8b` (September 17, 2026): the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. It is a paper walkthrough, not a live agent session. The home page's repair sequence and the repair-diff download were removed at the user's request on 2026-09-28.
 
 ### Video and physical platform
 
