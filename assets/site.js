@@ -66,6 +66,7 @@
       // Generation time, recorded in seconds per attempt, shown in minutes.
       const minutes = seconds => seconds.map(s => s / 60);
       pairChart('time-chart', minutes([285, 151, 268]), minutes([731, 250, 569]), 731 / 60, v => `${v.toFixed(1)} min`);
+      pairChart('cost-chart', [0.550, 0.871, 1.485], [1.406, 1.291, 2.959], 2.959, v => `$${v.toFixed(2)}`);
     } catch (error) {
       figure.hidden = true;
       fallback.hidden = false;

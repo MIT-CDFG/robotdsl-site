@@ -4,7 +4,8 @@
 
 - Section headings are centred and carry no eyebrow; a phrase in the hero title's accent states each one's point, and the benchmark's now says the result: 2–3× as many working robots.
 - The CoreDSL types itself in Magic UI's Terminal window, and the robot assembles on Magic UI's Dot Pattern; the two share one height.
-- The charts sit in the hero cards' soft boxes and grow when they come into view; the robot clips play muted while in view and pause outside it.
+- The charts sit in the hero cards' soft boxes and grow when they come into view; a third shows API cost per design beside success and time. The robot clips play muted while in view and pause outside it.
+- Headings run on one line at desktop widths: "With MobileDSL, agents build 2–3× as many working robots", "Deploying the compiled system in the real world" and "Contributing".
 - Checked in real time through Puppeteer at 1440 and 390 pixels wide: typing and assembly, the charts drawn only on arrival, the clips playing and pausing, and no console errors.
 
 ## 2026-09-28 MobileDSL section, time chart and community cards

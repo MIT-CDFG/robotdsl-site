@@ -98,9 +98,9 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=4aa1d706">
+<link rel="stylesheet" href="assets/site.css?v=552495d4">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
-<script src="assets/site.js?v=f9c8c201" defer></script>
+<script src="assets/site.js?v=1f5c7350" defer></script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
 </head>
 <body>
@@ -186,7 +186,7 @@
 
 <section class="block" id="results">
   <div class="wrap stack">
-    <div class="head center"><h2>With MobileDSL, coding agents build <span>2–3× as many</span> working robots</h2></div>
+    <div class="head center"><h2>With MobileDSL, agents build <span>2–3× as many</span> working robots</h2></div>
     <figure class="results-figure">
       <ul class="legend" aria-hidden="true"><li>MobileDSL</li><li class="legend-baseline">ROS/Gazebo files</li></ul>
       <div class="chart-pair">
@@ -198,16 +198,21 @@
           <p class="chart-title">Time per design</p>
           <div class="chart-container"><canvas id="time-chart" role="img" aria-label="Time per design, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 4.8 versus 12.2 minutes; Codex gpt-6-astra 2.5 versus 4.2 minutes; Claude Code claude-opus-4-8 4.5 versus 9.5 minutes."></canvas></div>
         </div>
+        <div class="chart-card">
+          <p class="chart-title">API cost per design</p>
+          <div class="chart-container"><canvas id="cost-chart" role="img" aria-label="API cost per design, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 0.55 versus 1.41 dollars; Codex gpt-6-astra 0.87 versus 1.29 dollars; Claude Code claude-opus-4-8 1.49 versus 2.96 dollars."></canvas></div>
+        </div>
       </div>
     </figure>
     <p class="note" id="results-fallback">Execution success in simulation, MobileDSL vs. ROS/Gazebo files: Codex / gpt-5.6-sol <b>74% vs. 24%</b> · Codex / gpt-6-astra <b>82% vs. 40%</b> · Claude Code / claude-opus-4-8 <b>64% vs. 22%</b>.<br>
-      Time per design: <b>4.8 vs. 12.2 min</b> · <b>2.5 vs. 4.2 min</b> · <b>4.5 vs. 9.5 min</b>.</p>
+      Time per design: <b>4.8 vs. 12.2 min</b> · <b>2.5 vs. 4.2 min</b> · <b>4.5 vs. 9.5 min</b>.<br>
+      API cost per design: <b>$0.55 vs. $1.41</b> · <b>$0.87 vs. $1.29</b> · <b>$1.49 vs. $2.96</b>.</p>
   </div>
 </section>
 
 <section class="block" id="real">
   <div class="wrap stack">
-    <div class="head center"><h2>From the compiled world to <span>the corridor</span></h2>
+    <div class="head center"><h2>Deploying the compiled system in <span>the real world</span></h2>
       <p>Navigating around corridor obstacles, with onboard RGB and depth on the right.</p></div>
     <div class="demos">
       <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video><figcaption>Course A · 10 s at 2× speed</figcaption></figure>
@@ -219,7 +224,7 @@
 
 <section class="block" id="community">
   <div class="wrap stack">
-    <div class="head center"><h2>Explore, ask, contribute</h2></div>
+    <div class="head center"><h2>Contributing</h2></div>
     <div class="feature-grid community-grid">
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><article class="box"><div class="icon"><span class="ico ico-community" aria-hidden="true"></span></div><h3 class="title">Discussions</h3><p class="details">Ask questions, share robot designs and follow announcements.</p></article></a>
       <a class="VPFeature link" href="studio/"><article class="box"><div class="icon"><span class="ico ico-studio" aria-hidden="true"></span></div><h3 class="title">Studio</h3><p class="details">Browse the parts library and edit a design in the browser.</p></article></a>
