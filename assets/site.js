@@ -47,13 +47,19 @@
       }
     });
   }
-  try {
-    showChart();
-    get('results-fallback').hidden = true;
-  } catch (error) {
-    document.querySelector('.result-chart').hidden = true;
-    console.warn('Chart unavailable; displaying the success-rate summary.', error);
-  }
+  // Chart.js measures the axis labels when it lays the chart out. Laid out before
+  // Inter arrived, the longest label ("claude-opus-4-8") was measured in the
+  // fallback face and drawn with its first letter cut off.
+  const labelFont = document.fonts ? document.fonts.load('12px Inter').catch(() => {}) : Promise.resolve();
+  labelFont.then(() => {
+    try {
+      showChart();
+      get('results-fallback').hidden = true;
+    } catch (error) {
+      document.querySelector('.result-chart').hidden = true;
+      console.warn('Chart unavailable; displaying the success-rate summary.', error);
+    }
+  });
   get('copy-citation').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(get('bibtex').textContent.trim());

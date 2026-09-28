@@ -22,9 +22,7 @@ Vendored files retain upstream formatting. `.gitattributes` marks them as vendor
 
 The layout reference is [lucide.dev](https://lucide.dev/), inspected September 24, 2026, and its [homepage source](https://github.com/lucide-icons/lucide/blob/66d8f9fc394b8530377e5f6112f0b8908ba01280/docs/index.md). The site identifies VitePress 1.6.4. `VPFeature.css` preserves the upstream declarations, replaces Vue's scoped selectors with the `.VPFeature` ancestor and unwraps `:deep`; `VPButton.css` contains the original component style block. Local CSS maps their variables to RobotDSL's colors and adapts feature layout on narrow screens. The hero reuses the existing research video rather than adding decorative imagery. No Vue runtime or full VitePress theme is added.
 
-Only Tabler's Steps component is loaded. Existing site colors map to its variables; local CSS applies its vertical layout below 850 pixels and spaces the role labels and descriptions. Its markers contain original Lucide SVGs: `message-square-text` for requests, `blocks` for component retrieval, `file-code-2` for authoring, `file-check-2` for compilation and the existing `bot` for execution. These icons are supplied by `lucide-static@1.47.0`; their paths are unmodified. The workflow is a static explanation, not a live progress indicator.
-
-The repair sequence uses the same release's `map-pin-x`, `map-pin-plus`, `circle-check` and `arrow-right`; `undo-2` identifies the feedback loop. Existing colors, icon sizing and layout are applied with CSS. No repair cards or illustrated assets were created.
+Only Tabler's Steps component is loaded. Existing site colors map to its variables; local CSS applies its vertical layout below 850 pixels and spaces the role labels and step titles. Its markers contain original Lucide SVGs: `message-square-text` for requests, `blocks` for component retrieval, `file-code-2` for authoring, `file-check-2` for compilation and the existing `bot` for execution. These icons are supplied by `lucide-static@1.47.0`; their paths are unmodified. The workflow is a static explanation, not a live progress indicator.
 
 The Guide uses the same typography, header, icons and downloaded button component as the home page, with native document sections and a table of contents. Its content draws from the existing Language and Agent sections, the paper's repair example and the repository's documented Studio capabilities. Library and Editor labels were checked against the shipped Studio bundle. It does not add installation commands or imply the static Studio has a working compiler service.
 
@@ -52,15 +50,15 @@ Mappings are taken from `mobilecopilot-video/outputs/opening/designs/designs.jso
 
 ### Warehouse walkthrough
 
-The exact `warehouse.patch` was fetched with the latest manuscript source at commit `8606c8b` (September 17, 2026). The visible missing-destination / goal-added / ready-to-run sequence follows the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. The exact edit remains available through the repair-diff link. This is explicitly a paper walkthrough, not a live agent session.
+The Guide's warehouse example follows the manuscript source at commit `8606c8b` (September 17, 2026): the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. It is a paper walkthrough, not a live agent session. The home page's repair sequence and the repair-diff download were removed at the user's request on 2026-09-28.
 
 ### Video and physical platform
 
-`assets/hardware-closeup.jpg` is the original JPEG embedded in `figures/Fig_robot_closeup.pdf` from the fetched manuscript, extracted without re-encoding using `pdfimages -j`. It is displayed as a standalone platform photograph with an original-resolution link, not as a pasted paper figure.
+`assets/hardware-closeup.jpg` is the original JPEG embedded in `figures/Fig_robot_closeup.pdf` from the fetched manuscript, extracted without re-encoding using `pdfimages -j`. It is displayed beside the demonstration videos at their height, not as a pasted paper figure; the file keeps its original resolution.
 
 The overview is copied unchanged from the narrated 1080p render, the latest delivery export in the user-specified video repository (September 22, 2026). It is 1920 × 1080 at 30 fps, H.264 with English AAC narration, 179.52 seconds and 18,789,160 bytes. Source SHA-256: `f265481576acfc51ebce4bde1c2180e91fd00a7cef54cb05c4cbeccb851c7e2e`. `assets/video_poster.png` is the caption-free opening still from `mobilecopilot-video/previews/slides/frame-00-at-0.5s.png`, copied unchanged at 1920 × 1080. It retains the title and seven assembled robots without the narration subtitle overlay. The six player chapters use section boundaries from `mobilecopilot-video/mp4-review/chapters.json`; the video's final cue extends to the measured media duration. Source repository HEAD at retrieval: `0edf05f45681843d73766584aeb53a5a2de8b252`.
 
-The three standalone hardware clips and their posters are unchanged project assets. The page retains the platform attribution and explanation of the composite video views, without a detailed platform/training specification list. The hardware clips are qualitative demonstrations; simulation success rates are not extended to physical robots. The existing social-preview image is unchanged.
+The three standalone hardware clips and their posters are unchanged project assets. The page names the platform and the composite video views, without a detailed platform/training specification list. The benchmark caption limits the success rates to simulation; the hardware clips make no success claim. The existing social-preview image is unchanged.
 
 ## Manuscript basis
 
@@ -72,4 +70,4 @@ The manuscript submodule was uninitialized in the working experiment checkout. T
 - `tex/06-experiments.tex`: interpretation and EvaluateDSL tradeoff.
 - `tex/07-limitations.tex`: library scope and qualitative hardware evidence.
 
-Execution differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. Code ratios 505.3/43.7, 1301.9/46.8 and 870/41.5 round to 12, 28 and 21. “37 vs 12” is 74% and 24% of 50. No significance test or repeated-trial confidence claim is implied. The provisional citation omits the previous unverified publication year and “to appear” claim.
+Execution differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. Code ratios 505.3/43.7, 1301.9/46.8 and 870/41.5 round to 12, 28 and 21, stated on the page as 12–28 times less agent-written code. No significance test or repeated-trial confidence claim is implied. The BibTeX takes its title from `main.tex`. The manuscript is anonymous and names no venue or year, so the entry credits the RobotDSL Team, points to this site and states neither.

@@ -7,7 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RobotDSL">
 <meta property="og:title" content="RobotDSL: domain-specific languages that compile into working robots">
-<meta property="og:description" content="MobileDSL and MobileCopilot: one program describes the robot, its world, its behavior and its checks; a compiler turns it into a working system. Try the MobileCopilot Studio preview.">
+<meta property="og:description" content="MobileDSL and MobileCopilot: one program describes the robot, its world, its behavior and its checks; a compiler turns it into a working system. Try it in MobileCopilot Studio.">
 <meta property="og:url" content="https://mit-cdfg.github.io/robotdsl-site/">
 <meta property="og:image" content="https://mit-cdfg.github.io/robotdsl-site/assets/og_image.jpg">
 <meta property="og:image:width" content="1200">
@@ -134,7 +134,7 @@
     <div class="hero-copy">
       <div class="hero-badges">
         <a class="badge" href="guide/#language">MobileDSL 1.0</a>
-        <a class="badge badge-launch" href="guide/"><span class="ico ico-rocket" aria-hidden="true"></span>Version 1<span class="ico ico-arrow" aria-hidden="true"></span></a>
+        <a class="badge badge-launch" href="docs/"><span class="ico ico-rocket" aria-hidden="true"></span>Version 1<span class="ico ico-arrow" aria-hidden="true"></span></a>
       </div>
       <h1><span>Domain-specific languages</span> that compile into working robots</h1>
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
@@ -214,38 +214,24 @@
 <section class="block" id="copilot">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Agent</span><h2>From a request to a runnable robot</h2>
-      <p>MobileCopilot chooses components and writes a MobileDSL program. The compiler assembles the parts, generates their dependent settings and returns errors the agent can fix.</p></div>
+      <p>MobileCopilot picks parts and writes the program; compiler errors go back to it until the program compiles.</p></div>
     <ol class="steps workflow-steps">
-      <li class="step-item"><span class="ico ico-request workflow-symbol" aria-hidden="true"></span><span class="step-role">You</span><h3>Request</h3><p>Text or a reference image</p></li>
-      <li class="step-item"><span class="ico ico-parts workflow-symbol" aria-hidden="true"></span><span class="step-role">Library search</span><h3>Retrieve parts</h3><p>Parts, geometry and connectors</p></li>
-      <li class="step-item"><span class="ico ico-program workflow-symbol" aria-hidden="true"></span><span class="step-role">Coding agent</span><h3>Write the program</h3><p>Robot, world, task and checks</p></li>
-      <li class="step-item"><span class="ico ico-compile workflow-symbol" aria-hidden="true"></span><span class="step-role">Compiler</span><h3>Compile &amp; check</h3><p>Assembly and validation</p></li>
-      <li class="step-item"><span class="ico ico-bot workflow-symbol" aria-hidden="true"></span><span class="step-role">ROS &amp; Gazebo</span><h3>Run &amp; inspect</h3><p>Simulation and supported hardware</p></li>
+      <li class="step-item"><span class="ico ico-request workflow-symbol" aria-hidden="true"></span><span class="step-role">You</span><h3>Request</h3></li>
+      <li class="step-item"><span class="ico ico-parts workflow-symbol" aria-hidden="true"></span><span class="step-role">Library search</span><h3>Retrieve parts</h3></li>
+      <li class="step-item"><span class="ico ico-program workflow-symbol" aria-hidden="true"></span><span class="step-role">Coding agent</span><h3>Write the program</h3></li>
+      <li class="step-item"><span class="ico ico-compile workflow-symbol" aria-hidden="true"></span><span class="step-role">Compiler</span><h3>Compile &amp; check</h3></li>
+      <li class="step-item"><span class="ico ico-bot workflow-symbol" aria-hidden="true"></span><span class="step-role">ROS &amp; Gazebo</span><h3>Run</h3></li>
     </ol>
-    <div class="reading-block workflow-example">
-      <p class="workflow-loop"><span class="ico ico-undo" aria-hidden="true"></span><span><b>Compiler errors return to the agent.</b> Edit the program, then compile again.</span></p>
-      <ol class="repair-flow">
-        <li class="repair-stage repair-missing"><span class="ico ico-missing" aria-hidden="true"></span><h3>Missing destination</h3><p>The task refers to W2, which is undefined.</p></li>
-        <li class="repair-stage"><span class="ico ico-add-goal" aria-hidden="true"></span><h3>Agent adds the goal</h3><p>W2 is added to WorldDSL.</p></li>
-        <li class="repair-stage repair-ready"><span class="ico ico-check" aria-hidden="true"></span><h3>Ready to run</h3><p>Recompiled: 0 errors, 1 advisory.</p></li>
-      </ol>
-      <p class="note">Warehouse patrol from the paper · <a href="assets/workflow/warehouse.patch" download>View the repair diff</a>.</p>
-    </div>
-    <p class="note">Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan. In the benchmark, simulation runs after authoring and provides no repair feedback to the agent.</p>
   </div>
 </section>
 
 <section class="block" id="results">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Benchmark</span><h2>Fifty design tasks, three coding agents</h2>
-      <p>Each agent tackles the same 50 requests with MobileDSL and by directly authoring ROS/Gazebo files, using the same library, execution environment and 1,800-second authoring budget.</p></div>
-    <div class="prose">
-      <p><b>More systems finish their programmed behavior.</b> Execution success improves by 42–50 percentage points across all three agent configurations. With Codex / gpt-5.6-sol, that is <b>37 of 50 systems instead of 12</b>, with about 12 times less agent-written code.</p>
-      <p class="note">Success means completing the generated program in simulation; it does not independently establish that the design fulfills the original request. All failures remain in the denominator. Agents receive no simulation feedback during authoring.</p>
-    </div>
+      <p>Each agent gets the same 50 requests, library and 30-minute budget, and writes either MobileDSL or the ROS/Gazebo files directly. MobileDSL raises execution success by 42–&#8288;50 points with 12–&#8288;28 times less agent&#8209;written code.</p></div>
     <figure class="result-chart">
       <div class="chart-container"><canvas id="results-chart" role="img" aria-label="System execution, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 74 versus 24 percent; Codex gpt-6-astra 82 versus 40 percent; Claude Code claude-opus-4-8 64 versus 22 percent."></canvas></div>
-      <figcaption>System execution success (%) · 50 attempts per condition · higher is better.</figcaption>
+      <figcaption>System execution success in simulation (%) · 50 attempts per condition.</figcaption>
     </figure>
     <p class="note" id="results-fallback">System execution success, MobileDSL vs. ROS/Gazebo files:<br>
       Codex / gpt-5.6-sol: <b>74% vs. 24%</b> · Codex / gpt-6-astra: <b>82% vs. 40%</b> · Claude Code / claude-opus-4-8: <b>64% vs. 22%</b>.</p>
@@ -255,8 +241,8 @@
 <section class="block" id="real">
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Physical robots</span><h2>From the compiled world to the corridor</h2>
-      <p>Watch the physical robot navigate around corridor obstacles. The external camera shows its path; onboard RGB and depth show what it sees. These are qualitative demonstrations, separate from the simulation success rates above.</p></div>
-    <div>
+      <p>The robot navigates around corridor obstacles. Each video shows the external view, with onboard RGB and depth (0.3–&#8288;3.5&nbsp;m) on the right.</p></div>
+    <div class="physical">
       <div class="tabs" role="tablist" aria-label="Demonstrations">
         <button class="tab" role="tab" aria-selected="true" id="tab-1" aria-controls="demo-1" type="button">Course A</button>
         <button class="tab" role="tab" aria-selected="false" id="tab-2" aria-controls="demo-2" type="button">Course B · run 1</button>
@@ -264,20 +250,20 @@
       </div>
       <div class="demo" id="demo-1" role="tabpanel" aria-labelledby="tab-1">
         <video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video>
-        <p class="cap">Course A · 10 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+        <p class="cap">Course A · 10 s at 2× speed</p>
       </div>
       <div class="demo" id="demo-2" role="tabpanel" aria-labelledby="tab-2" hidden>
         <video controls muted loop playsinline preload="none" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video>
-        <p class="cap">Course B · 14 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+        <p class="cap">Course B · 14 s at 2× speed</p>
       </div>
       <div class="demo" id="demo-3" role="tabpanel" aria-labelledby="tab-3" hidden>
         <video controls muted loop playsinline preload="none" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video>
-        <p class="cap">Course B · 14 s at 2× speed · onboard RGB top right, depth bottom right.</p>
+        <p class="cap">Course B · 14 s at 2× speed</p>
       </div>
-    </div>
-    <div class="physical-context">
-      <a href="assets/hardware-closeup.jpg" aria-label="Open the physical robot photograph"><img src="assets/hardware-closeup.jpg" width="5712" height="4284" loading="lazy" alt="MentorPi M1 with mecanum wheels, onboard electronics and a front depth camera"></a>
-      <div class="prose"><p><b>What to watch:</b> on the left, follow the robot around the alternating cabinets. Top right is onboard RGB; bottom right is depth, with nearby objects in red and missing returns in black.</p><p class="note">Hiwonder MentorPi M1 · footage shown at 2× speed · depth colors cover 0.3–3.5 m. <a href="assets/hardware-closeup.jpg">View the platform photo</a>.</p></div>
+      <figure class="platform">
+        <img src="assets/hardware-closeup.jpg" width="5712" height="4284" loading="lazy" alt="Hiwonder MentorPi M1 with mecanum wheels, onboard electronics and a front depth camera">
+        <figcaption>Hiwonder MentorPi M1</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -288,34 +274,25 @@
       <p>Share a robot design, ask a question or help grow the component library.</p></div>
     <div class="cta">
       <a class="btn VPButton medium brand" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><span class="ico ico-community" aria-hidden="true"></span>Discussions</a>
-      <a class="btn VPButton medium alt" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio preview</a>
+      <a class="btn VPButton medium alt" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Studio</a>
       <a class="btn VPButton medium alt" href="https://github.com/MIT-CDFG/robotdsl-site/issues">Report an issue</a>
       <a class="btn VPButton medium alt" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Contribute a part</a>
-    </div>
-    <div class="prose">
-      <p class="note"><b>Available now:</b> browse parts and edit designs in Studio. Build, Copilot, exports, reviewed uploads and design reports need the hosted service, currently in development.</p>
-      <p class="note"><b>Planned:</b> browser simulation; manipulation and legged-robot languages are in design. Benchmark examples are not yet public. Follow <a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Discussions</a> for release updates.</p>
     </div>
   </div>
 </section>
 
 <section class="block" id="paper">
   <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Paper</span><h2>MobileCopilot</h2></div>
-    <div class="prose">
-      <p><b>MobileCopilot: A Domain-Specific Language Framework for Agentic Mobile Robot Design</b></p>
-      <p class="note">RobotDSL Team · manuscript · publication details pending.</p>
-      <details class="reading-details"><summary>Citation · BibTeX</summary>
-        <div class="markdown-body"><pre id="bibtex" tabindex="0">@misc{robotdsl_mobilecopilot,
-  title  = {MobileCopilot: A Domain-Specific Language Framework
-            for Agentic Mobile Robot Design},
-  author = {{RobotDSL Team}},
-  note   = {Manuscript; publication details pending}
+    <h2 class="eyebrow">Paper</h2>
+    <div class="citation">
+      <div class="markdown-body"><pre id="bibtex" tabindex="0">@misc{robotdsl_mobilecopilot,
+  title        = {MobileCopilot: A Domain-Specific Language Framework
+                  for Agentic Mobile Robot Design},
+  author       = {{RobotDSL Team}},
+  howpublished = {\url{https://mit-cdfg.github.io/robotdsl-site/}}
 }</pre></div>
-        <button class="btn VPButton medium alt" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
-        <p id="copy-status" class="note" role="status"></p>
-      </details>
-      <div class="cta"><a href="#video">Watch the video</a><a href="#results">See the results</a></div>
+      <button class="btn VPButton medium alt" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
+      <p id="copy-status" class="note" role="status"></p>
     </div>
   </div>
 </section>

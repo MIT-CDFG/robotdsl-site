@@ -107,33 +107,11 @@
 .workflow-steps .step-item { min-width: 0; padding: 68px 12px 0; }
 .workflow-symbol { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 28px; height: 28px; color: #fff; z-index: 2; }
 .workflow-steps h3 { font-size: 1rem; margin: 4px 0 8px; }
-.workflow-steps p { font-size: .9rem; line-height: 1.5; }
 .step-role { font-size: .875rem; font-weight: 500; color: var(--accent); }
-.workflow-loop { display: flex; align-items: baseline; gap: 10px; }
-.workflow-loop .ico { align-self: flex-start; margin-top: 5px; color: var(--accent); }
-.ico-undo { --icon: url(icons/undo-2.svg); }
 .ico-request { --icon: url(icons/message-square-text.svg); }
 .ico-parts { --icon: url(icons/blocks.svg); }
 .ico-program { --icon: url(icons/file-code-2.svg); }
 .ico-compile { --icon: url(icons/file-check-2.svg); }
-.ico-missing { --icon: url(icons/map-pin-x.svg); }
-.ico-add-goal { --icon: url(icons/map-pin-plus.svg); }
-.ico-check { --icon: url(icons/circle-check.svg); }
-.repair-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; list-style: none; padding: 12px 0; margin: 0; }
-.repair-stage { position: relative; display: grid; justify-items: center; align-content: start; gap: 8px; min-width: 0; text-align: center; }
-.repair-stage > .ico { width: 36px; height: 36px; color: var(--accent); }
-.repair-stage h3 { font-size: 1.05rem; }
-.repair-stage p { font-size: .9rem; }
-.repair-missing > .ico { color: #b3261e; }
-.repair-ready > .ico { color: var(--ok); }
-.repair-stage:not(:last-child)::after { content: ""; position: absolute; top: 9px; left: calc(100% + 9px); width: 18px; height: 18px; background-color: var(--muted); -webkit-mask: url(icons/arrow-right.svg) center / contain no-repeat; mask: url(icons/arrow-right.svg) center / contain no-repeat; }
-@media (max-width: 640px) {
-  .repair-flow { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .repair-stage { grid-template-columns: 36px minmax(0, 1fr); gap: 4px 16px; justify-items: start; text-align: left; }
-  .repair-stage > .ico { grid-row: 1 / 3; }
-  .repair-stage p { grid-column: 2; }
-  .repair-stage:not(:last-child)::after { top: calc(100% + 7px); left: 9px; transform: rotate(90deg); }
-}
 /* Tabler's vertical Steps rules, applied at the narrow-layout breakpoint. */
 @media (max-width: 850px) {
   .workflow-steps { --tblr-steps-dot-offset: 0px; flex-direction: column; }
@@ -143,22 +121,31 @@
   .workflow-steps .workflow-symbol { left: 12px; transform: none; }
   .workflow-steps .step-item:not(:last-child):after { position: absolute; content: ""; transform: translateX(-50%); top: var(--tblr-steps-dot-offset); left: calc(var(--tblr-steps-dot-size) * .5); width: var(--tblr-steps-border-width); height: calc(100% + 1rem); }
 }
-.reading-details { min-width: 0; }
-.reading-details summary { cursor: pointer; color: var(--accent); font-weight: 500; }
-.reading-details[open] > summary { margin-bottom: 18px; }
-.reading-details summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.reading-block { display: grid; gap: 14px; min-width: 0; }
-.reading-block > * { min-width: 0; }
-.reading-details .markdown-body, .reading-block .markdown-body { min-width: 0; }
-.reading-details .markdown-body pre, .reading-block .markdown-body pre { font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }
-.reading-block .markdown-body pre { margin: 0; }
 .result-chart { max-width: 760px; width: 100%; }
 .chart-container { position: relative; height: 260px; }
-.physical-context { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center; }
-.physical-context img { display: block; width: 100%; height: auto; }
-.physical-context .prose { min-width: 0; }
 .ico-copy { --icon: url(icons/copy.svg); }
-#paper .head { margin-bottom: 0; }
+/* The demonstration beside the platform photo. The tabs head the video column
+   only. With 3:2 columns, a 1448:1080 photo box is exactly as tall as the
+   1448:720 video; the 4:3 photo loses half a percent to the crop. */
+.physical { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 18px 24px; align-items: start; }
+.physical .tabs { grid-column: 1; grid-row: 1; }
+.physical .demo { grid-column: 1; grid-row: 2; margin-top: 0; min-width: 0; }
+.physical .platform { grid-column: 2; grid-row: 2; min-width: 0; }
+.physical .platform img { display: block; aspect-ratio: 1448 / 1080; object-fit: cover; }
+.physical .tab { white-space: nowrap; }
 @media (max-width: 640px) {
-  .physical-context { grid-template-columns: 100px 1fr; gap: 16px; align-items: start; }
+  .physical { grid-template-columns: minmax(0, 1fr); }
+  .physical .platform { grid-column: 1; grid-row: 3; max-width: 420px; }
 }
+/* Keeps the three course tabs on one line, in the narrow video column and at
+   phone width, instead of breaking "Course A" or cutting off the last tab. */
+@media (max-width: 850px) {
+  .physical .tab { padding-inline: 10px; font-size: .9rem; }
+}
+/* The paper is here for its citation, so the section stays small. */
+#paper { padding-block: 48px; }
+#paper .stack { gap: 14px; }
+#paper .eyebrow { color: var(--accent); }
+.citation { display: grid; gap: 12px; justify-items: start; max-width: 760px; }
+.citation .markdown-body { width: 100%; min-width: 0; }
+.citation .markdown-body pre { margin: 0; font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }

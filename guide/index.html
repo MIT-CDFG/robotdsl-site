@@ -51,7 +51,6 @@
           <li><b>Open the Editor.</b> Read the robot definition and edit its components. On a phone, use the Library and Editor tabs to move between them.</li>
           <li><b>Read the other modules together.</b> Follow the robot name into the world, then the world’s named goals into the task. Check that the evaluation describes what you want to observe.</li>
         </ol>
-        <p class="guide-note"><b>Available today:</b> the library and editors work in the public Studio. Build, Copilot, exports, uploads and design reports require the hosted service, which is still in development.</p>
         <a class="btn VPButton medium brand" href="../studio/">Open Studio</a>
       </section>
 
@@ -73,8 +72,7 @@
         <p>The compiler assembles the selected parts and checks the program’s references and constraints. Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan for ROS and Gazebo.</p>
         <p>Compilation and execution answer different questions. A program can compile and still fail during a run; a completed run also needs to be checked against the original request.</p>
         <h3>Follow an error back to its definition</h3>
-        <p>In the paper’s warehouse example, the task refers to a destination named <code>W2</code> that the world does not define. Adding the missing goal in WorldDSL resolves the error; recompilation reports zero errors and one advisory.</p>
-        <p><a href="../assets/workflow/warehouse.patch">Read the exact repair diff.</a></p>
+        <p>In the paper’s warehouse example, the task refers to a destination named <code>wp2</code> that the world does not define. Adding the missing goal in WorldDSL resolves the error; recompilation reports zero errors and one advisory.</p>
       </section>
 
       <section id="copilot" aria-labelledby="copilot-title">

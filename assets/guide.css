@@ -14,8 +14,6 @@
 .guide-content li + li { margin-top: 10px; }
 .guide-content ol, .guide-content ul { padding-left: 24px; }
 .guide-content a:not(.btn) { text-underline-offset: 3px; }
-.guide-note { color: var(--muted); }
-.guide-note b { color: var(--ink); }
 .guide-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .skip-link { position: absolute; z-index: 30; left: 16px; top: 8px; padding: 8px 16px; background: var(--ground); transform: translateY(-150%); }
 .skip-link:focus { transform: none; }
