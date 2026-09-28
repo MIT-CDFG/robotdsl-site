@@ -10,7 +10,7 @@ Retrieved September 24, 2026. Chart.js, Three.js and icons are vendored. The ori
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | SVG icons                                             | [lucide-static 1.47.0](https://www.jsdelivr.com/package/npm/lucide-static?version=1.47.0)                                                                     | `assets/icons/`, original SVGs; ISC and inherited MIT notices in `LICENSE` |
 | Feature cards and pill buttons                        | [VitePress 1.6.4 VPFeature](https://github.com/vuejs/vitepress/blob/v1.6.4/src/client/theme-default/components/VPFeature.vue), [VPButton](https://github.com/vuejs/vitepress/blob/v1.6.4/src/client/theme-default/components/VPButton.vue) | `assets/vendor/vitepress/`, original Vue sources, extracted CSS and MIT license |
-| Hero version and Guide badges                         | [Lucide website Badge.vue](https://github.com/lucide-icons/lucide/blob/66d8f9fc394b8530377e5f6112f0b8908ba01280/docs/.vitepress/theme/components/base/Badge.vue) | `assets/vendor/lucide/`, original source, unchanged style block and ISC license; original `rocket.svg` from lucide-static 1.47.0 and existing `arrow-right.svg` |
+| Hero version badges                                   | [Lucide website Badge.vue](https://github.com/lucide-icons/lucide/blob/66d8f9fc394b8530377e5f6112f0b8908ba01280/docs/.vitepress/theme/components/base/Badge.vue) | `assets/vendor/lucide/`, original source, unchanged style block and ISC license; original `rocket.svg` from lucide-static 1.47.0 and existing `arrow-right.svg` |
 | Benchmark bars                                        | [Chart.js 4.4.9](https://www.jsdelivr.com/package/npm/chart.js?version=4.4.9), [bar chart documentation](https://www.chartjs.org/docs/latest/charts/bar.html) | `assets/vendor/chartjs/`, MIT; the application draws the value labels and the page the shared legend |
 | Video dialog, terminal window and dot pattern         | [Magic UI](https://magicui.design/) components [Hero Video Dialog](https://magicui.design/docs/components/hero-video-dialog), [Terminal](https://magicui.design/docs/components/terminal) and [Dot Pattern](https://magicui.design/docs/components/dot-pattern) | Re-expressed in plain CSS in `index.html` and `assets/site.css`, without React or Tailwind; MIT |
 | 3D renderer, controls, GLB loader and environment     | [Three.js 0.170.0](https://www.jsdelivr.com/package/npm/three?version=0.170.0)                                                                                | `assets/vendor/three/`, MIT; unchanged distribution files                  |
@@ -28,7 +28,7 @@ The MobileDSL section types the CoreDSL of the paper's Fig. 1 robot and assemble
 
 The community cards reuse the vendored VPFeature component as links. `bug` and `package-plus` are original SVGs from `lucide-static@1.47.0`, like the other icons.
 
-The Guide uses the same typography, header, icons and downloaded button component as the home page, with native document sections and a table of contents. Its content draws from the existing Language and Agent sections, the paper's repair example and the repository's documented Studio capabilities. Library and Editor labels were checked against the shipped Studio bundle. It does not add installation commands or imply the static Studio has a working compiler service.
+The site's own Guide page, a short introduction written before the documentation existed, was removed at the user's request on 2026-09-28: the documentation under `docs/` covers the same ground. `guide/` now only forwards to the documentation, so earlier links keep working.
 
 ## Research assets reused from the project
 
@@ -54,7 +54,7 @@ Mappings are taken from `mobilecopilot-video/outputs/opening/designs/designs.jso
 
 ### Warehouse walkthrough
 
-The Guide's warehouse example follows the manuscript's Figure 4 source at commit `8606c8b` (September 17, 2026): the undefined `wp2` goal, its WorldDSL repair and “0 errors; 1 advisory” in `src/content.json`. It is a paper walkthrough, not a live agent session. The home page's repair sequence and the repair-diff download were removed at the user's request on 2026-09-28.
+The warehouse example, last shown on the Guide page, left the site with it on 2026-09-28.
 
 ### Video and physical platform
 

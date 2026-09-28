@@ -4,7 +4,7 @@ Community site of the RobotDSL project and the static preview of MobileCopilot S
 
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
 - `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/robotdsl-site/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
-- `guide/` — MobileDSL introduction, Studio editing steps, the four modules and the compiler/agent workflow.
+- `guide/` — forwards the retired site guide's address to the documentation.
 - `studio/` — MobileCopilot Studio front end with the component library, thumbnails, the papers that use each part (a paper search lists a paper's robots and parts) and, for the parts kept from the earlier MobileCopilot catalog, the published model each comes from and its author. This static copy has no compiler behind it: the library, the papers, the editors and the key guide work, and Copilot calls the chosen provider directly with your own key; Build, exports, uploads and design reports need the hosted service.
 
 Questions, designs and announcements: use Discussions. Problems with a generated design or the site: open an Issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for reports, part uploads and discussions, and [LICENSE.md](LICENSE.md) for what may be reused.
@@ -27,9 +27,9 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory /tmp/robotdsl-preview
 
 and open `http://127.0.0.1:8769/robotdsl-site/`.
 
-The pages load `assets/base.css`, `site.css`, `guide.css` and `site.js` with `?v=` set to the
-first 8 characters of the file's SHA-256 (`sha256sum assets/site.js | cut -c1-8`). When you
-change one of them, update its `?v=` in `index.html` and `guide/index.html`; otherwise a browser
+The page loads `assets/base.css`, `site.css` and `site.js` with `?v=` set to the first 8
+characters of the file's SHA-256 (`sha256sum assets/site.js | cut -c1-8`). When you change one
+of them, update its `?v=` in `index.html`; otherwise a browser
 can pair the new page with its cached copy of the old file (GitHub Pages lets it keep one for ten
 minutes), which leaves, for example, the benchmark charts empty.
 

@@ -1,98 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Get started with MobileDSL: understand its four modules, explore parts in Studio and learn how compilation connects a robot design to ROS and Gazebo.">
-  <title>MobileDSL Guide · RobotDSL</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/icons/bot.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="../assets/base.css?v=390eff28">
-  <link rel="stylesheet" href="../assets/vendor/vitepress/VPButton.css">
-  <link rel="stylesheet" href="../assets/site.css?v=552495d4">
-  <link rel="stylesheet" href="../assets/guide.css?v=a0d87777">
+<meta charset="utf-8">
+<title>RobotDSL documentation</title>
+<!-- The site's own guide gave way to the documentation; links to the old page land there. -->
+<meta http-equiv="refresh" content="0; url=../docs/guide/">
+<link rel="canonical" href="https://mit-cdfg.github.io/robotdsl-site/docs/guide/">
+<meta name="robots" content="noindex">
 </head>
 <body>
-  <a class="skip-link" href="#introduction">Skip to the guide</a>
-  <header class="nav">
-    <div class="wrap">
-      <a class="site-brand" href="../"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
-      <nav class="nav-actions" aria-label="Studio and community">
-        <a class="nav-link" href="../docs/">Docs</a>
-        <a class="nav-link" href="../studio/">Studio</a>
-        <a class="nav-link" href="../#community">Community</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="wrap guide-layout">
-    <nav class="guide-nav" aria-label="Guide contents">
-      <p>MobileDSL 1.0</p>
-      <a href="#introduction">Introduction</a>
-      <a href="#getting-started">Get started</a>
-      <a href="#language">The four modules</a>
-      <a href="#compilation">Compile and run</a>
-      <a href="#copilot">MobileCopilot</a>
-      <a href="#next">Learn more</a>
-    </nav>
-
-    <main class="guide-content" id="introduction">
-      <p class="eyebrow">Guide</p>
-      <h1>What is MobileDSL?</h1>
-      <p>MobileDSL is the first language in the RobotDSL family, designed for mobile robots. One program describes the robot, its environment, its behavior and the checks performed during a run.</p>
-      <p>Instead of maintaining those descriptions separately, the modules share names. The compiler uses them to assemble the robot, derive its settings and check the system before execution.</p>
-
-      <section id="getting-started" aria-labelledby="getting-started-title">
-        <h2 id="getting-started-title">Get started in Studio</h2>
-        <p>The public Studio lets you browse the component library and edit a design in your browser.</p>
-        <ol>
-          <li><b>Explore the Library.</b> Find a chassis, wheels, sensors or attachments and inspect the available parts.</li>
-          <li><b>Open the Editor.</b> Read the robot definition and edit its components. On a phone, use the Library and Editor tabs to move between them.</li>
-          <li><b>Read the other modules together.</b> Follow the robot name into the world, then the world’s named goals into the task. Check that the evaluation describes what you want to observe.</li>
-        </ol>
-        <a class="btn VPButton medium brand" href="../studio/">Open Studio</a>
-      </section>
-
-      <section id="language" aria-labelledby="language-title">
-        <h2 id="language-title">One program, four modules</h2>
-        <h3>CoreDSL — the robot</h3>
-        <p>Choose reusable components and connect them through mating connectors. The definition describes the chassis, wheels, sensors and attachments as one assembly.</p>
-        <h3>WorldDSL — the environment</h3>
-        <p>Describe obstacles, the robot’s initial pose and named destinations. A goal such as <code>@world/door</code> can be referenced by the task instead of repeating its location.</p>
-        <h3>TaskDSL — the behavior</h3>
-        <p>Describe a tree of actions, such as planning a path and following it to a named goal. The task refers to the robot and world defined in the same program.</p>
-        <h3>EvaluateDSL — the checks</h3>
-        <p>Specify what to observe during execution and which bounds must hold. These checks make the intended observations part of the program.</p>
-        <p><a href="../#agents">Watch a CoreDSL program assemble its robot.</a></p>
-      </section>
-
-      <section id="compilation" aria-labelledby="compilation-title">
-        <h2 id="compilation-title">Compile, check, then run</h2>
-        <p>The compiler assembles the selected parts and checks the program’s references and constraints. Successful compilation emits robot and world models, controller and navigation settings, a behavior tree and an evaluation plan for ROS and Gazebo.</p>
-        <p>Compilation and execution answer different questions. A program can compile and still fail during a run; a completed run also needs to be checked against the original request.</p>
-        <h3>Follow an error back to its definition</h3>
-        <p>In the paper’s warehouse example, the task refers to a destination named <code>wp2</code> that the world does not define. Adding the missing goal in WorldDSL resolves the error; recompilation reports zero errors and one advisory.</p>
-      </section>
-
-      <section id="copilot" aria-labelledby="copilot-title">
-        <h2 id="copilot-title">Where MobileCopilot fits</h2>
-        <p>MobileCopilot takes a text request or reference image, retrieves components and writes the MobileDSL program. Compiler diagnostics return to the agent so it can edit and recompile.</p>
-        <p>In the reported benchmark, simulation runs after authoring. The agent receives compiler feedback, but no simulation feedback during the design process.</p>
-        <p><a href="../#results">Read the benchmark results</a></p>
-      </section>
-
-      <section id="next" aria-labelledby="next-title">
-        <h2 id="next-title">Learn more</h2>
-        <ul>
-          <li><a href="../#video">Watch the project video</a> for the language and agent in action.</li>
-          <li><a href="../#real">Watch the physical robot demonstrations</a> to see navigation, RGB and depth footage.</li>
-          <li><a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Join Discussions</a> to ask questions or share a design.</li>
-          <li><a href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md">Read the contribution guide</a> for issue reports and component submissions.</li>
-        </ul>
-      </section>
-      <footer class="guide-footer"><a href="../">RobotDSL home</a><span>RobotDSL Team</span></footer>
-    </main>
-  </div>
+<p><a href="../docs/guide/">Continue to the RobotDSL documentation</a>.</p>
 </body>
 </html>

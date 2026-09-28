@@ -1,5 +1,11 @@
 # Release verification
 
+## 2026-09-28 site guide retired
+
+- The site's own Guide page duplicated the documentation and was removed; `guide/` now forwards to the documentation's guide, and its stylesheet is gone.
+- The hero's "MobileDSL 1.0" badge opens the documentation's reference instead of the old page.
+- Checked in headless Chromium: the old address lands on "What is RobotDSL?", the badge opens the reference, and every local link on the page resolves.
+
 ## 2026-09-28 centred headings, terminal and moving media
 
 - Section headings are centred and carry no eyebrow; a phrase in the hero title's accent states each one's point, and the benchmark's now says the result: 2–3× as many working robots.
