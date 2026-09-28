@@ -38,7 +38,7 @@
         indexAxis: 'y', responsive: true, maintainAspectRatio: false,
         animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : {duration: 250},
         datasets: {bar: {barThickness: 16, borderRadius: 3}},
-        layout: {padding: {right: 44}},
+        layout: {padding: {right: 60}},
         plugins: {legend: {display: false}, tooltip: {enabled: false}},
         scales: {
           x: {display: false, beginAtZero: true, max},
@@ -54,7 +54,9 @@
   labelFont.then(() => {
     try {
       pairChart('success-chart', [74, 82, 64], [24, 40, 22], 100, v => `${v}%`);
-      pairChart('code-chart', [43.7, 46.8, 41.5], [505.3, 1301.9, 870.0], 1301.9, v => Math.round(v).toLocaleString('en-US'));
+      // Generation time, recorded in seconds per attempt, shown in minutes.
+      const minutes = seconds => seconds.map(s => s / 60);
+      pairChart('time-chart', minutes([285, 151, 268]), minutes([731, 250, 569]), 731 / 60, v => `${v.toFixed(1)} min`);
       get('results-fallback').hidden = true;
     } catch (error) {
       document.querySelector('.results-figure').hidden = true;

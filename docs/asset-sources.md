@@ -1,6 +1,6 @@
 # Asset sources
 
-The page follows the user's Lucide website reference, with Inter typography, neutral surfaces and the existing RobotDSL blue accent. The video player, Language section and research content are retained. Interface components use downloaded VitePress styles, Lucide icons, Chart.js and the existing Three.js integration. No stock robot, generated illustration or invented robot mesh is used as research evidence.
+The page follows the user's Lucide website reference, with Inter typography, neutral surfaces and the existing RobotDSL blue accent. The video player and research content are retained. Interface components use downloaded VitePress styles, Lucide icons, Chart.js and the existing Three.js integration. No stock robot, generated illustration or invented robot mesh is used as research evidence.
 
 ## Downloaded interface assets
 
@@ -21,7 +21,11 @@ Vendored files retain upstream formatting. `.gitattributes` marks them as vendor
 
 The layout reference is [lucide.dev](https://lucide.dev/), inspected September 24, 2026, and its [homepage source](https://github.com/lucide-icons/lucide/blob/66d8f9fc394b8530377e5f6112f0b8908ba01280/docs/index.md). The site identifies VitePress 1.6.4. `VPFeature.css` preserves the upstream declarations, replaces Vue's scoped selectors with the `.VPFeature` ancestor and unwraps `:deep`; `VPButton.css` contains the original component style block. Local CSS maps their variables to RobotDSL's colors and adapts feature layout on narrow screens. The hero reuses the existing research video rather than adding decorative imagery. No Vue runtime or full VitePress theme is added.
 
-The Agent section, a Tabler Steps workflow with Lucide markers, was removed at the user's request on 2026-09-28; the hero's agent-assisted design card and the benchmark carry the agent result.
+The Agent section, a Tabler Steps workflow with Lucide markers, was removed at the user's request on 2026-09-28; the hero's agent-assisted design card and the benchmark carry the agent result. The Language section's module list and CoreDSL listing gave way the same day to the MobileDSL section: the documentation now describes the language, and the section shows what a coding agent gets from the compiler.
+
+The compiler report in the MobileDSL section is output of `mobiledsl` 0.1.0 for the documentation's demo program with `wheel_lf`'s glue moved from x = 0.1275 to 0.14, checked with `--check` against the compiler's test library. The page shows the lines from that diagnostic's header to its first help line; the second help line, the evidence note and the companion wheel-mount error are left out, as the caption's “excerpt” says. Its JSON form carries the same help and no machine-applicable edit, so the page does not claim one.
+
+The community cards reuse the vendored VPFeature component as links. `bug` and `package-plus` are original SVGs from `lucide-static@1.47.0`, like the other icons.
 
 The Guide uses the same typography, header, icons and downloaded button component as the home page, with native document sections and a table of contents. Its content draws from the existing Language and Agent sections, the paper's repair example and the repository's documented Studio capabilities. Library and Editor labels were checked against the shipped Studio bundle. It does not add installation commands or imply the static Studio has a working compiler service.
 
@@ -64,9 +68,9 @@ The three standalone hardware clips and their posters are unchanged project asse
 The manuscript submodule was uninitialized in the working experiment checkout. To leave that checkout untouched, the source URL from `robotdsl-experiment/.gitmodules` was fetched into an isolated temporary clone. Latest remote HEAD at retrieval: `8606c8b`, September 17, 2026.
 
 - `tex/table-agent.tex`: the three paired execution-success rates and the authored-code comparison. Full result and ablation tables are not reproduced on the page.
-- `tex/05-benchmark.tex`: denominators, motion/execution and authored-LOC definitions, authoring budget, per-attempt means and historical cost date.
+- `tex/05-benchmark.tex`: denominators, motion/execution and generation-time definitions, authoring budget, per-attempt means and historical cost date.
 - `tex/04-mobileCopilot.tex`: compile/repair workflow; no simulator feedback in benchmark authoring.
 - `tex/06-experiments.tex`: interpretation and EvaluateDSL tradeoff.
 - `tex/07-limitations.tex`: library scope and qualitative hardware evidence.
 
-Execution differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. The code chart shows authored LOC (nonblank model-written source lines, per-attempt means) rounded to whole lines. Each MobileDSL value is under a tenth of its ROS/Gazebo pair (43.7/505.3 = 0.086, 46.8/1301.9 = 0.036, 41.5/870 = 0.048), the basis of the heading's “less than a tenth of the code”. No significance test or repeated-trial confidence claim is implied. The BibTeX takes its title from `main.tex`. The manuscript is anonymous and names no venue or year, so the entry credits the RobotDSL Team, points to this site and states neither.
+Execution differences are 74−24 = 50, 82−40 = 42 and 64−22 = 42 percentage points. The time chart shows generation time (model calls, component retrieval and static validation; per-attempt means) of 285, 151 and 268 s against 731, 250 and 569 s, in minutes rounded to 0.1. Every MobileDSL value is the lower, the basis of the heading's “in less time”. No significance test or repeated-trial confidence claim is implied. The BibTeX takes its title from `main.tex`. The manuscript is anonymous and names no venue or year, so the entry credits the RobotDSL Team, points to this site and states neither.
