@@ -1,21 +1,23 @@
-/* Content enhancements; the original page retains its video, tabs and Fig. 1 viewer. */
+/* Content enhancements; the original page retains its video and Fig. 1 viewer. */
 (() => {
   'use strict';
   const get = id => document.getElementById(id);
   const colors = getComputedStyle(document.documentElement);
   const accent = colors.getPropertyValue('--accent').trim();
-  const muted = colors.getPropertyValue('--muted').trim();
+  const baseline = colors.getPropertyValue('--baseline').trim();
   const text = colors.getPropertyValue('--text').trim();
-  const line = colors.getPropertyValue('--line').trim();
   // The manuscript's Table I, paired within each agent/model configuration.
-  function showChart() {
-    new Chart(get('results-chart'), {
+  const agents = [['Codex', 'gpt-5.6-sol'], ['Codex', 'gpt-6-astra'], ['Claude Code', 'claude-opus-4-8']];
+  // One MobileDSL and one ROS/Gazebo-files bar per agent, each labelled with its
+  // value, so the charts need no axis; the page's legend names the colours.
+  function pairChart(id, mobiledsl, rosFiles, max, format) {
+    new Chart(get(id), {
       type: 'bar',
       data: {
-        labels: [['Codex', 'gpt-5.6-sol'], ['Codex', 'gpt-6-astra'], ['Claude Code', 'claude-opus-4-8']],
+        labels: agents,
         datasets: [
-          {label: 'MobileDSL', data: [74, 82, 64], backgroundColor: accent, barThickness: 16},
-          {label: 'ROS/Gazebo files', data: [24, 40, 22], backgroundColor: '#a5adb9', barThickness: 16}
+          {label: 'MobileDSL', data: mobiledsl, backgroundColor: accent},
+          {label: 'ROS/Gazebo files', data: rosFiles, backgroundColor: baseline}
         ]
       },
       plugins: [{
@@ -23,11 +25,11 @@
         afterDatasetsDraw(chart) {
           const ctx = chart.ctx;
           ctx.save();
-          ctx.font = '500 12px Inter, system-ui, sans-serif';
           ctx.textBaseline = 'middle';
           chart.data.datasets.forEach((dataset, index) => {
+            ctx.font = `${index === 0 ? 600 : 500} 12px Inter, system-ui, sans-serif`;
             ctx.fillStyle = index === 0 ? accent : text;
-            chart.getDatasetMeta(index).data.forEach((bar, row) => ctx.fillText(dataset.data[row] + '%', bar.x + 6, bar.y));
+            chart.getDatasetMeta(index).data.forEach((bar, row) => ctx.fillText(format(dataset.data[row]), bar.x + 6, bar.y));
           });
           ctx.restore();
         }
@@ -35,13 +37,11 @@
       options: {
         indexAxis: 'y', responsive: true, maintainAspectRatio: false,
         animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : {duration: 250},
-        layout: {padding: {right: 12}},
-        plugins: {
-          legend: {position: 'top', align: 'start', labels: {color: text, boxWidth: 12, boxHeight: 12, padding: 16, font: {family: 'Inter, sans-serif', size: 13}}},
-          tooltip: {callbacks: {label: context => `${context.dataset.label}: ${context.raw}%`}}
-        },
+        datasets: {bar: {barThickness: 16, borderRadius: 3}},
+        layout: {padding: {right: 44}},
+        plugins: {legend: {display: false}, tooltip: {enabled: false}},
         scales: {
-          x: {beginAtZero: true, max: 100, border: {display: false}, grid: {color: line}, ticks: {color: muted, maxTicksLimit: 6}},
+          x: {display: false, beginAtZero: true, max},
           y: {border: {display: false}, grid: {display: false}, ticks: {color: text, font: {family: 'Inter, sans-serif', size: 12}}}
         }
       }
@@ -53,11 +53,12 @@
   const labelFont = document.fonts ? document.fonts.load('12px Inter').catch(() => {}) : Promise.resolve();
   labelFont.then(() => {
     try {
-      showChart();
+      pairChart('success-chart', [74, 82, 64], [24, 40, 22], 100, v => `${v}%`);
+      pairChart('code-chart', [43.7, 46.8, 41.5], [505.3, 1301.9, 870.0], 1301.9, v => Math.round(v).toLocaleString('en-US'));
       get('results-fallback').hidden = true;
     } catch (error) {
-      document.querySelector('.result-chart').hidden = true;
-      console.warn('Chart unavailable; displaying the success-rate summary.', error);
+      document.querySelector('.results-figure').hidden = true;
+      console.warn('Charts unavailable; displaying the benchmark summary.', error);
     }
   });
   get('copy-citation').addEventListener('click', async () => {

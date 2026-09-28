@@ -1,5 +1,12 @@
 # Release verification
 
+## 2026-09-28 benchmark, physical robots and agent sections
+
+- Removed the Agent section and its workflow steps; the hero's agent-assisted design card and the benchmark carry the agent result. The Guide's link to the removed section was dropped.
+- The benchmark heading states the result. Two value-labelled charts from the manuscript's Table I sit side by side under one legend: execution success in simulation and authored lines of code (per-attempt means). The no-JavaScript summary lists both.
+- Physical robots shows the three runs side by side, without tabs or the platform photograph.
+- Checked in headless Chromium at 1440, 820, 740 and 390 pixels wide, without the 3D module; all 1,202 local links, anchors and media references resolve.
+
 ## 2026-09-24 latest overview video
 
 - Replaced the overview with the latest narrated 1080p delivery export from the user-specified `mobilecopilot-video` directory. The copied MP4 matches its source SHA-256 exactly; no video re-encoding was performed.

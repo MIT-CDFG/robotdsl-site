@@ -29,7 +29,7 @@
   /* stats */
   /* sections */
   section.block { padding-block: 64px; border-top: 1px solid var(--line); }
-  #copilot, #real { background: var(--tint); }
+  #results, #community { background: var(--tint); }
   #community { padding-block: 48px; }
   #community .head { margin-bottom: 0; }
   .head { display: grid; gap: 12px; margin-bottom: 12px; max-width: 70ch; }
@@ -97,25 +97,18 @@
   @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
   .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
   /* demos */
-  .tabs { display: flex; gap: 0; overflow-x: auto; border-bottom: 1px solid var(--line-strong); }
-  .tab { font-family: var(--sans); font-size: .95rem; font-weight: 500; padding: 10px 16px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--muted); cursor: pointer; }
-  .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
-  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .demo { margin-top: 18px; }
   .demo video { width: 100%; height: auto; aspect-ratio: 1448 / 720; max-width: 100%; border-radius: 8px; border: 1px solid var(--line); background: #fff; display: block; }
-  .demo .cap { margin-top: 10px; font-size: .9rem; color: var(--muted); }
   .note { font-size: .9rem; color: var(--muted); }
   footer { padding-block: 30px 44px; color: var(--muted); font-size: .88rem; }
   footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 </style>
-<link rel="stylesheet" href="assets/vendor/tabler/steps.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js" defer></script>
-<noscript><style>#video .hvd, #copy-citation, .result-chart { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
+<noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
 </head>
 <body>
 <header class="nav">
@@ -211,30 +204,26 @@
   </div>
 </section>
 
-<section class="block" id="copilot">
-  <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Agent</span><h2>From a request to a runnable robot</h2>
-      <p>MobileCopilot picks parts and writes the program; compiler errors go back to it until the program compiles.</p></div>
-    <ol class="steps workflow-steps">
-      <li class="step-item"><span class="ico ico-request workflow-symbol" aria-hidden="true"></span><span class="step-role">You</span><h3>Request</h3></li>
-      <li class="step-item"><span class="ico ico-parts workflow-symbol" aria-hidden="true"></span><span class="step-role">Library search</span><h3>Retrieve parts</h3></li>
-      <li class="step-item"><span class="ico ico-program workflow-symbol" aria-hidden="true"></span><span class="step-role">Coding agent</span><h3>Write the program</h3></li>
-      <li class="step-item"><span class="ico ico-compile workflow-symbol" aria-hidden="true"></span><span class="step-role">Compiler</span><h3>Compile &amp; check</h3></li>
-      <li class="step-item"><span class="ico ico-bot workflow-symbol" aria-hidden="true"></span><span class="step-role">ROS &amp; Gazebo</span><h3>Run</h3></li>
-    </ol>
-  </div>
-</section>
-
 <section class="block" id="results">
   <div class="wrap stack">
-    <div class="head"><span class="eyebrow">Benchmark</span><h2>Fifty design tasks, three coding agents</h2>
-      <p>Each agent gets the same 50 requests, library and 30-minute budget, and writes either MobileDSL or the ROS/Gazebo files directly. MobileDSL raises execution success by 42–&#8288;50 points with 12–&#8288;28 times less agent&#8209;written code.</p></div>
-    <figure class="result-chart">
-      <div class="chart-container"><canvas id="results-chart" role="img" aria-label="System execution, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 74 versus 24 percent; Codex gpt-6-astra 82 versus 40 percent; Claude Code claude-opus-4-8 64 versus 22 percent."></canvas></div>
-      <figcaption>System execution success in simulation (%) · 50 attempts per condition.</figcaption>
+    <div class="head"><span class="eyebrow">Benchmark</span><h2>More designs run, with less than a tenth of the code</h2>
+      <p>Three coding agents take the same 50 design requests, writing each design once in MobileDSL and once directly as ROS/Gazebo files.</p></div>
+    <figure class="results-figure">
+      <ul class="legend" aria-hidden="true"><li>MobileDSL</li><li class="legend-baseline">ROS/Gazebo files</li></ul>
+      <div class="chart-pair">
+        <div>
+          <p class="chart-title">Execution success in simulation (%)</p>
+          <div class="chart-container"><canvas id="success-chart" role="img" aria-label="Execution success in simulation, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 74 versus 24 percent; Codex gpt-6-astra 82 versus 40 percent; Claude Code claude-opus-4-8 64 versus 22 percent."></canvas></div>
+        </div>
+        <div>
+          <p class="chart-title">Lines of code the agent wrote (mean)</p>
+          <div class="chart-container"><canvas id="code-chart" role="img" aria-label="Lines of code the agent wrote per attempt, MobileDSL versus ROS/Gazebo files: Codex gpt-5.6-sol 44 versus 505; Codex gpt-6-astra 47 versus 1,302; Claude Code claude-opus-4-8 42 versus 870."></canvas></div>
+        </div>
+      </div>
+      <figcaption>50 attempts per agent and condition, with the same parts library and a 30-minute budget.</figcaption>
     </figure>
-    <p class="note" id="results-fallback">System execution success, MobileDSL vs. ROS/Gazebo files:<br>
-      Codex / gpt-5.6-sol: <b>74% vs. 24%</b> · Codex / gpt-6-astra: <b>82% vs. 40%</b> · Claude Code / claude-opus-4-8: <b>64% vs. 22%</b>.</p>
+    <p class="note" id="results-fallback">Execution success in simulation, MobileDSL vs. ROS/Gazebo files: Codex / gpt-5.6-sol <b>74% vs. 24%</b> · Codex / gpt-6-astra <b>82% vs. 40%</b> · Claude Code / claude-opus-4-8 <b>64% vs. 22%</b>.<br>
+      Lines of code the agent wrote, mean per attempt: <b>43.7 vs. 505.3</b> · <b>46.8 vs. 1,301.9</b> · <b>41.5 vs. 870.0</b>.</p>
   </div>
 </section>
 
@@ -242,28 +231,10 @@
   <div class="wrap stack">
     <div class="head"><span class="eyebrow">Physical robots</span><h2>From the compiled world to the corridor</h2>
       <p>The robot navigates around corridor obstacles. Each video shows the external view, with onboard RGB and depth (0.3–&#8288;3.5&nbsp;m) on the right.</p></div>
-    <div class="physical">
-      <div class="tabs" role="tablist" aria-label="Demonstrations">
-        <button class="tab" role="tab" aria-selected="true" id="tab-1" aria-controls="demo-1" type="button">Course A</button>
-        <button class="tab" role="tab" aria-selected="false" id="tab-2" aria-controls="demo-2" type="button">Course B · run 1</button>
-        <button class="tab" role="tab" aria-selected="false" id="tab-3" aria-controls="demo-3" type="button">Course B · run 2</button>
-      </div>
-      <div class="demo" id="demo-1" role="tabpanel" aria-labelledby="tab-1">
-        <video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video>
-        <p class="cap">Course A · 10 s at 2× speed</p>
-      </div>
-      <div class="demo" id="demo-2" role="tabpanel" aria-labelledby="tab-2" hidden>
-        <video controls muted loop playsinline preload="none" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video>
-        <p class="cap">Course B · 14 s at 2× speed</p>
-      </div>
-      <div class="demo" id="demo-3" role="tabpanel" aria-labelledby="tab-3" hidden>
-        <video controls muted loop playsinline preload="none" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video>
-        <p class="cap">Course B · 14 s at 2× speed</p>
-      </div>
-      <figure class="platform">
-        <img src="assets/hardware-closeup.jpg" width="5712" height="4284" loading="lazy" alt="Hiwonder MentorPi M1 with mecanum wheels, onboard electronics and a front depth camera">
-        <figcaption>Hiwonder MentorPi M1</figcaption>
-      </figure>
+    <div class="demos">
+      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video><figcaption>Course A · 10 s at 2× speed</figcaption></figure>
+      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video><figcaption>Course B, run 1 · 14 s at 2× speed</figcaption></figure>
+      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video><figcaption>Course B, run 2 · 14 s at 2× speed</figcaption></figure>
     </div>
   </div>
 </section>
@@ -305,36 +276,6 @@
 </footer>
 
 <script>
-  (function () {
-    var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
-    function show(id) {
-      tabs.forEach(function (t) {
-        var on = t.id === id;
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
-        t.tabIndex = on ? 0 : -1;
-        var panel = document.getElementById(t.getAttribute('aria-controls'));
-        panel.hidden = !on;
-        var v = panel.querySelector('video');
-        if (!on && v) { v.pause(); }
-      });
-    }
-    tabs.forEach(function (t, index) {
-      t.addEventListener('click', function () { show(t.id); });
-      t.addEventListener('keydown', function (event) {
-        var next;
-        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
-        else if (event.key === 'Home') next = 0;
-        else if (event.key === 'End') next = tabs.length - 1;
-        else return;
-        event.preventDefault();
-        show(tabs[next].id);
-        tabs[next].focus();
-      });
-    });
-    show('tab-1');
-  })();
-
   // Video: the thumbnail opens the player in a dialog and starts it; closing the dialog (button, backdrop or Esc) pauses it.
   (function () {
     var dialog = document.getElementById('video-dialog'), player = dialog.querySelector('media-player');
