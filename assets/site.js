@@ -8,6 +8,7 @@
   const text = colors.getPropertyValue('--text').trim();
   // The manuscript's Table I, paired within each agent/model configuration.
   const agents = [['Codex', 'gpt-5.6-sol'], ['Codex', 'gpt-6-astra'], ['Claude Code', 'claude-opus-4-8']];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   // One MobileDSL and one ROS/Gazebo-files bar per agent, each labelled with its
   // value, so the charts need no axis; the page's legend names the colours.
   function pairChart(id, mobiledsl, rosFiles, max, format) {
@@ -36,7 +37,7 @@
       }],
       options: {
         indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-        animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : {duration: 250},
+        animation: reduced ? false : {duration: 900, easing: 'easeOutQuart'},
         datasets: {bar: {barThickness: 16, borderRadius: 3}},
         layout: {padding: {right: 60}},
         plugins: {legend: {display: false}, tooltip: {enabled: false}},
@@ -51,18 +52,31 @@
   // Inter arrived, the longest label ("claude-opus-4-8") was measured in the
   // fallback face and drawn with its first letter cut off.
   const labelFont = document.fonts ? document.fonts.load('12px Inter').catch(() => {}) : Promise.resolve();
-  labelFont.then(() => {
+  // The bars grow as the charts come into view; the text summary stands in only if they cannot be drawn.
+  const figure = document.querySelector('.results-figure'), fallback = get('results-fallback');
+  if (typeof Chart === 'function') fallback.hidden = true;
+  const inView = new Promise(resolve => {
+    if (!('IntersectionObserver' in window)) return resolve();
+    const io = new IntersectionObserver(entries => { if (entries.some(e => e.isIntersecting)) { io.disconnect(); resolve(); } }, {threshold: 0.3});
+    io.observe(figure);
+  });
+  Promise.all([labelFont, inView]).then(() => {
     try {
       pairChart('success-chart', [74, 82, 64], [24, 40, 22], 100, v => `${v}%`);
       // Generation time, recorded in seconds per attempt, shown in minutes.
       const minutes = seconds => seconds.map(s => s / 60);
       pairChart('time-chart', minutes([285, 151, 268]), minutes([731, 250, 569]), 731 / 60, v => `${v.toFixed(1)} min`);
-      get('results-fallback').hidden = true;
     } catch (error) {
-      document.querySelector('.results-figure').hidden = true;
+      figure.hidden = true;
+      fallback.hidden = false;
       console.warn('Charts unavailable; displaying the benchmark summary.', error);
     }
   });
+  // The robot clips play muted while in view, as a looping preview, and pause out of view.
+  if (!reduced && 'IntersectionObserver' in window) {
+    const clips = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()), {threshold: 0.4});
+    document.querySelectorAll('.demos video').forEach(video => clips.observe(video));
+  }
   get('copy-citation').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(get('bibtex').textContent.trim());

@@ -107,6 +107,23 @@
 .ico-copy { --icon: url(icons/copy.svg); }
 .ico-part { --icon: url(icons/package-plus.svg); }
 .ico-bug { --icon: url(icons/bug.svg); }
+/* Section headings sit centred, as on lucide.dev; a phrase in the hero title's accent carries each one's point. */
+.head.center { margin: 0 auto; max-width: 48rem; justify-items: center; text-align: center; }
+.head.center h2 { font-size: clamp(1.75rem, 3.4vw, 2.5rem); line-height: 1.18; font-weight: 700; letter-spacing: -.03em; }
+.head.center h2 span { color: var(--accent); }
+.head.center p { color: var(--muted); }
+/* MobileDSL: Magic UI's Terminal (magicui.design, MIT) in plain CSS, a rounded window whose bar holds three dots,
+   given the hero video card's shadow. */
+.terminal { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); }
+.terminal .bar { display: flex; gap: 8px; padding: 16px; border-bottom: 1px solid var(--line); }
+.terminal .bar i { width: 8px; height: 8px; border-radius: 50%; background: #ef4444; }
+.terminal .bar i:nth-child(2) { background: #eab308; }
+.terminal .bar i:nth-child(3) { background: #22c55e; }
+.terminal pre.code { flex: 1; padding: 18px 20px; font-size: 13px; line-height: 1.85; overflow-x: auto; }
+@media (max-width: 600px) { .terminal pre.code { font-size: 11px; padding: 14px; } }
+/* The robot stands on Magic UI's Dot Pattern (magicui.design, MIT), which fades out from the centre. */
+.fig3d .stage::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle, rgb(163 163 163 / .8) 1px, transparent 1px); background-size: 16px 16px; -webkit-mask-image: radial-gradient(closest-side, #000 35%, transparent); mask-image: radial-gradient(closest-side, #000 35%, transparent); pointer-events: none; }
+.fig3d canvas { position: relative; }
 /* MobileDSL: the listing types itself; untyped text keeps its place, so the block never changes size. */
 .coredsl .todo { visibility: hidden; }
 .coredsl .caret { display: inline-block; width: 0; height: 1.15em; margin-right: -2px; border-left: 2px solid var(--accent); vertical-align: text-bottom; animation: caret-blink 1s steps(1) infinite; }
@@ -118,24 +135,27 @@
 @media (max-width: 759px) { .feature-grid.community-grid { grid-template-columns: minmax(0, 1fr); } }
 /* Benchmark: both results side by side under one legend; the bars carry their values. */
 .results-figure { display: grid; gap: 14px; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding: 0; list-style: none; font-size: .9rem; color: var(--text); }
+.legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0; padding: 0; list-style: none; font-size: .9rem; color: var(--text); }
 .legend li { display: inline-flex; align-items: center; gap: 8px; }
 .legend li::before { content: ""; width: 12px; height: 12px; border-radius: 3px; background: var(--accent); }
 .legend .legend-baseline::before { background: var(--baseline); }
-.chart-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; }
+.chart-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+/* Each chart sits in the hero cards' soft box. */
+.chart-card { padding: 20px 24px 12px; border-radius: 12px; background: var(--tint); }
 .chart-pair > * { min-width: 0; }
 .chart-title { margin: 0 0 4px; font-size: .95rem; font-weight: 600; color: var(--ink); }
 .chart-container { position: relative; height: 220px; }
 .results-figure figcaption { margin-top: 0; }
 @media (max-width: 720px) { .chart-pair { grid-template-columns: minmax(0, 1fr); } }
 /* Physical robots: the three runs side by side at a modest size. */
-.demos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.demos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.demos figcaption { text-align: center; }
 .demos > * { min-width: 0; }
 @media (max-width: 640px) { .demos { grid-template-columns: minmax(0, 1fr); } }
 /* The paper is here for its citation, so the section stays small. */
 #paper { padding-block: 48px; }
-#paper .stack { gap: 14px; }
+#paper .stack { gap: 14px; justify-items: center; }
 #paper .eyebrow { color: var(--accent); }
-.citation { display: grid; gap: 12px; justify-items: start; max-width: 760px; }
+.citation { display: grid; gap: 12px; justify-items: center; width: 100%; max-width: 760px; }
 .citation .markdown-body { width: 100%; min-width: 0; }
 .citation .markdown-body pre { margin: 0; font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }

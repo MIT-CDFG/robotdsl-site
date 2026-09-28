@@ -1,5 +1,12 @@
 # Release verification
 
+## 2026-09-28 centred headings, terminal and moving media
+
+- Section headings are centred and carry no eyebrow; a phrase in the hero title's accent states each one's point, and the benchmark's now says the result: 2–3× as many working robots.
+- The CoreDSL types itself in Magic UI's Terminal window, and the robot assembles on Magic UI's Dot Pattern; the two share one height.
+- The charts sit in the hero cards' soft boxes and grow when they come into view; the robot clips play muted while in view and pause outside it.
+- Checked in real time through Puppeteer at 1440 and 390 pixels wide: typing and assembly, the charts drawn only on arrival, the clips playing and pausing, and no console errors.
+
 ## 2026-09-28 MobileDSL section, time chart and community cards
 
 - The Language section becomes one heading, "MobileDSL and its compiler as agentic tools", over the Fig. 1 robot's CoreDSL typing itself line by line while the robot assembles beside it, each part arriving as its line is finished. The module list, the eyebrow and the paragraph are gone; the documentation describes the language.
