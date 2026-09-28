@@ -1,7 +1,2244 @@
 {
-  "version": "0.8.0",
-  "count": 229,
+  "version": "robotdsl-selectable-preview-v2",
+  "count": 153,
   "components": [
+    {
+      "ref": "jackal_j100_chassis",
+      "name": "Clearpath Jackal J100 chassis with fenders, the top mounting plate and…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Diff_drive",
+      "description": "Clearpath Jackal J100 chassis with fenders, the top mounting plate and the GPS antenna, from Clearpath's jackal_description.",
+      "source_url": "https://github.com/jackal/jackal",
+      "robots": [
+        "Jackal"
+      ],
+      "papers": [
+        "icra-2026-paper-1161",
+        "icra-2026-paper-118",
+        "icra-2026-paper-12",
+        "icra-2026-paper-1295",
+        "icra-2026-paper-1756",
+        "icra-2026-paper-1899",
+        "icra-2026-paper-190",
+        "icra-2026-paper-2067",
+        "icra-2026-paper-2462",
+        "icra-2026-paper-332",
+        "icra-2026-paper-3537",
+        "icra-2026-paper-3808",
+        "icra-2026-paper-4062",
+        "icra-2026-paper-4336",
+        "icra-2026-paper-4704",
+        "icra-2026-paper-4885",
+        "icra-2026-paper-5014",
+        "icra-2026-paper-5445",
+        "icra-2026-paper-5817",
+        "icra-2026-paper-5860",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-5926",
+        "icra-2026-paper-6052",
+        "icra-2026-paper-6244",
+        "icra-2026-paper-6457",
+        "icra-2026-paper-83",
+        "icra-2026-paper-952"
+      ]
+    },
+    {
+      "ref": "jackal_j100_wheel",
+      "name": "Clearpath Jackal J100 wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Standard",
+      "description": "Clearpath Jackal J100 wheel, from Clearpath's jackal_description.",
+      "source_url": "https://github.com/jackal/jackal",
+      "robots": [
+        "Jackal"
+      ],
+      "papers": [
+        "icra-2026-paper-1161",
+        "icra-2026-paper-118",
+        "icra-2026-paper-12",
+        "icra-2026-paper-1295",
+        "icra-2026-paper-1756",
+        "icra-2026-paper-1899",
+        "icra-2026-paper-190",
+        "icra-2026-paper-2067",
+        "icra-2026-paper-2462",
+        "icra-2026-paper-332",
+        "icra-2026-paper-3537",
+        "icra-2026-paper-3808",
+        "icra-2026-paper-4062",
+        "icra-2026-paper-4336",
+        "icra-2026-paper-4704",
+        "icra-2026-paper-4885",
+        "icra-2026-paper-5014",
+        "icra-2026-paper-5445",
+        "icra-2026-paper-5817",
+        "icra-2026-paper-5860",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-5926",
+        "icra-2026-paper-6052",
+        "icra-2026-paper-6244",
+        "icra-2026-paper-6457",
+        "icra-2026-paper-83",
+        "icra-2026-paper-952"
+      ]
+    },
+    {
+      "ref": "create3_drive_wheel",
+      "name": "Create3 drive wheel using the manufacturer description's black cylinder…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "iRobot",
+      "subtype": "Standard",
+      "description": "Create3 drive wheel using the manufacturer description's black cylinder visual and explicit cylinder inertia.",
+      "source_url": "https://github.com/iRobotEducation/create3_sim",
+      "robots": [
+        "LoCoBot",
+        "TurtleBot 4",
+        "iRobot Create3"
+      ],
+      "papers": [
+        "icra-2026-paper-1832",
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-2480",
+        "icra-2026-paper-3372",
+        "icra-2026-paper-3390",
+        "icra-2026-paper-3402",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-3640",
+        "icra-2026-paper-3659",
+        "icra-2026-paper-3834",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-5843",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-794",
+        "icra-2026-paper-895",
+        "icra-2026-paper-976"
+      ]
+    },
+    {
+      "ref": "husky_a200_chassis",
+      "name": "Clearpath Husky A200 body with bumpers, user rail and top plate",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Diff_drive",
+      "description": "Clearpath Husky A200 body with bumpers, user rail and top plate, from Clearpath's husky_description.",
+      "source_url": "https://github.com/husky/husky",
+      "robots": [
+        "Husky UGV"
+      ],
+      "papers": [
+        "icra-2026-paper-1000",
+        "icra-2026-paper-1341",
+        "icra-2026-paper-1602",
+        "icra-2026-paper-2278",
+        "icra-2026-paper-2567",
+        "icra-2026-paper-26",
+        "icra-2026-paper-2814",
+        "icra-2026-paper-387",
+        "icra-2026-paper-4209",
+        "icra-2026-paper-4570",
+        "icra-2026-paper-5455",
+        "icra-2026-paper-5458",
+        "icra-2026-paper-5960",
+        "icra-2026-paper-6026",
+        "icra-2026-paper-6173",
+        "icra-2026-paper-6244"
+      ]
+    },
+    {
+      "ref": "husky_a200_wheel",
+      "name": "Clearpath Husky A200 outdoor wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Standard",
+      "description": "Clearpath Husky A200 outdoor wheel, from Clearpath's husky_description.",
+      "source_url": "https://github.com/husky/husky",
+      "robots": [
+        "Husky UGV"
+      ],
+      "papers": [
+        "icra-2026-paper-1000",
+        "icra-2026-paper-1341",
+        "icra-2026-paper-1602",
+        "icra-2026-paper-2278",
+        "icra-2026-paper-2567",
+        "icra-2026-paper-26",
+        "icra-2026-paper-2814",
+        "icra-2026-paper-387",
+        "icra-2026-paper-4209",
+        "icra-2026-paper-4570",
+        "icra-2026-paper-5455",
+        "icra-2026-paper-5458",
+        "icra-2026-paper-5960",
+        "icra-2026-paper-6026",
+        "icra-2026-paper-6173",
+        "icra-2026-paper-6244"
+      ]
+    },
+    {
+      "ref": "create3_stock_chassis",
+      "name": "Create3 body, bumper and front caster, including all source-declared…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "iRobot",
+      "subtype": "Diff_two_caster",
+      "description": "Create3 body, bumper and front caster, including all source-declared internal inertials at a fixed suspension pose.",
+      "source_url": "https://github.com/iRobotEducation/create3_sim",
+      "robots": [
+        "TurtleBot 4",
+        "iRobot Create3"
+      ],
+      "papers": [
+        "icra-2026-paper-1832",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-2480",
+        "icra-2026-paper-3372",
+        "icra-2026-paper-3390",
+        "icra-2026-paper-3402",
+        "icra-2026-paper-3640",
+        "icra-2026-paper-3659",
+        "icra-2026-paper-3834",
+        "icra-2026-paper-5843",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-794",
+        "icra-2026-paper-976"
+      ]
+    },
+    {
+      "ref": "slamtec_rplidar_a1m8",
+      "name": "SLAMTEC rplidar purchased sensor package",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "SLAMTEC",
+      "subtype": "Lidar",
+      "description": "SLAMTEC rplidar purchased sensor package, using the pinned TurtleBot4 reference mesh and explicitly unverified model inertia.",
+      "source_url": "https://github.com/turtlebot/turtlebot4/tree/a6ee13b63cbd524500cc6a68cd20dbef69f326a9/turtlebot4_description",
+      "robots": [
+        "TurtleBot 4"
+      ],
+      "papers": [
+        "icra-2026-paper-1832",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-2480",
+        "icra-2026-paper-3372",
+        "icra-2026-paper-3390",
+        "icra-2026-paper-3402",
+        "icra-2026-paper-3834",
+        "icra-2026-paper-5843",
+        "icra-2026-paper-794",
+        "icra-2026-paper-976"
+      ]
+    },
+    {
+      "ref": "luxonis_oak_d_pro",
+      "name": "Luxonis oakd pro purchased sensor package",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Luxonis",
+      "subtype": "Camera",
+      "description": "Luxonis oakd pro purchased sensor package, using the pinned TurtleBot4 reference mesh and explicitly unverified model inertia.",
+      "source_url": "https://github.com/turtlebot/turtlebot4/tree/a6ee13b63cbd524500cc6a68cd20dbef69f326a9/turtlebot4_description",
+      "robots": [
+        "TurtleBot 4"
+      ],
+      "papers": [
+        "icra-2026-paper-1832",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-2480",
+        "icra-2026-paper-3372",
+        "icra-2026-paper-3390",
+        "icra-2026-paper-3402",
+        "icra-2026-paper-3834",
+        "icra-2026-paper-5843",
+        "icra-2026-paper-794",
+        "icra-2026-paper-976"
+      ]
+    },
+    {
+      "ref": "turtlebot4_standard_deck",
+      "name": "TurtleBot4 Standard fixed deck",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Attachment",
+      "description": "TurtleBot4 Standard fixed deck; retained stock geometry and explicitly source-estimated physics.",
+      "source_url": "https://github.com/turtlebot/turtlebot4",
+      "robots": [
+        "TurtleBot 4"
+      ],
+      "papers": [
+        "icra-2026-paper-1832",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-2480",
+        "icra-2026-paper-3372",
+        "icra-2026-paper-3390",
+        "icra-2026-paper-3402",
+        "icra-2026-paper-3834",
+        "icra-2026-paper-5843",
+        "icra-2026-paper-794",
+        "icra-2026-paper-976"
+      ]
+    },
+    {
+      "ref": "pmb2_base",
+      "name": "PMB2 base, cover, dock, fixed caster assemblies and retained source…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "PMB2 base, cover, dock, fixed caster assemblies and retained source suspension inertials; antennas and upper body excluded explicitly.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "pmb2_drive_wheel",
+      "name": "PMB2 driven wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Standard",
+      "description": "PMB2 driven wheel; native 98.5 mm collision radius, source visual and uncalibrated inertial.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "pmb2_tim551_source",
+      "name": "Official PMB2 sick_tim551 source model and uncalibrated physics",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Lidar",
+      "description": "Official PMB2 sick_tim551 source model and uncalibrated physics; mounting compatibility and sensor calibration not established.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "tiago_dual_head_fixed",
+      "name": "TIAGo complete head with source camera mass at fixed pan/tilt",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Attachment",
+      "description": "TIAGo complete head with source camera mass at fixed pan/tilt; one rigid source-model payload; articulation disabled.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "tiago_dual_torso_fixed",
+      "name": "TIAGo Dual complete torso at fixed lift position",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Attachment",
+      "description": "TIAGo Dual complete torso at fixed lift position; one rigid source-model payload; articulation disabled.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "fetch_mobile_chassis",
+      "name": "Fetch base, emergency-stop assembly, lidar model and fixed torso…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Fetch Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "Fetch base, emergency-stop assembly, lidar model and fixed torso structure. Complete moving torso/head/arm/gripper subtree excluded explicitly.",
+      "source_url": "https://github.com/fetchrobotics/fetch_ros",
+      "robots": [
+        "Fetch mobile manipulator"
+      ],
+      "papers": [
+        "icra-2026-paper-1610",
+        "icra-2026-paper-3975",
+        "icra-2026-paper-5049",
+        "icra-2026-paper-5124",
+        "icra-2026-paper-5347",
+        "icra-2026-paper-5458",
+        "icra-2026-paper-5809",
+        "icra-2026-paper-6183",
+        "icra-2026-paper-6219",
+        "icra-2026-paper-683"
+      ]
+    },
+    {
+      "ref": "fetch_drive_wheel",
+      "name": "One reusable drive wheel from the official source",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Fetch Robotics",
+      "subtype": "Standard",
+      "description": "One reusable drive wheel from the official source; left/right authored meshes are identical after a pi-radian axle-phase rotation.",
+      "source_url": "https://github.com/fetchrobotics/fetch_ros",
+      "robots": [
+        "Fetch mobile manipulator"
+      ],
+      "papers": [
+        "icra-2026-paper-1610",
+        "icra-2026-paper-3975",
+        "icra-2026-paper-5049",
+        "icra-2026-paper-5124",
+        "icra-2026-paper-5347",
+        "icra-2026-paper-5458",
+        "icra-2026-paper-5809",
+        "icra-2026-paper-6183",
+        "icra-2026-paper-6219",
+        "icra-2026-paper-683"
+      ]
+    },
+    {
+      "ref": "warthog_w200_chassis",
+      "name": "Warthog W200 body, fixed differential rockers, fenders, lights and…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Diff_drive",
+      "description": "Warthog W200 body, fixed differential rockers, fenders, lights and E-stop from Clearpath's description.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Warthog"
+      ],
+      "papers": [
+        "icra-2026-paper-1142",
+        "icra-2026-paper-1357",
+        "icra-2026-paper-26",
+        "icra-2026-paper-34",
+        "icra-2026-paper-4209",
+        "icra-2026-paper-5014",
+        "icra-2026-paper-6378",
+        "icra-2026-paper-6411",
+        "icra-2026-paper-802"
+      ]
+    },
+    {
+      "ref": "warthog_w200_outdoor_wheel",
+      "name": "Warthog W200 0.6 m outdoor wheel from Clearpath's description",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Standard",
+      "description": "Warthog W200 0.6 m outdoor wheel from Clearpath's description; same source mesh and inertial on all four mounts.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Warthog"
+      ],
+      "papers": [
+        "icra-2026-paper-1142",
+        "icra-2026-paper-1357",
+        "icra-2026-paper-26",
+        "icra-2026-paper-34",
+        "icra-2026-paper-4209",
+        "icra-2026-paper-5014",
+        "icra-2026-paper-6378",
+        "icra-2026-paper-6411",
+        "icra-2026-paper-802"
+      ]
+    },
+    {
+      "ref": "stretch3_base_lidar",
+      "name": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware…",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Lidar",
+      "description": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware guide), from the SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3",
+        "Hello Robot Stretch RE-1"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-2929",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "tb3_wheel_isw_01",
+      "name": "ROBOTIS TB3 Wheel ISW-01 with TR-66 tire",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "ROBOTIS",
+      "subtype": "Standard",
+      "description": "ROBOTIS TB3 Wheel ISW-01 with TR-66 tire; one shared part for both driven wheels.",
+      "source_url": "https://github.com/ROBOTIS-GIT/turtlebot3/tree/90a68bd2e3c61c12966779da89d8eeaec82730e9/turtlebot3_description",
+      "robots": [
+        "TurtleBot3 Burger",
+        "TurtleBot3 Waffle"
+      ],
+      "papers": [
+        "gao-2025-safe-mapless-navigation",
+        "icra-2026-paper-1106",
+        "icra-2026-paper-4301",
+        "icra-2026-paper-620",
+        "robotis-turtlebot3",
+        "robotis-turtlebot3-burger-website",
+        "robotis-turtlebot3-hardware-files"
+      ]
+    },
+    {
+      "ref": "lds_01",
+      "name": "LDS-01 laser scanner in the ROBOTIS legacy Burger model",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "ROBOTIS",
+      "subtype": "Lidar",
+      "description": "LDS-01 laser scanner in the ROBOTIS legacy Burger model; not LDS-02 or LDS-03.",
+      "source_url": "https://github.com/ROBOTIS-GIT/turtlebot3/tree/90a68bd2e3c61c12966779da89d8eeaec82730e9/turtlebot3_description",
+      "robots": [
+        "TurtleBot3 Burger",
+        "TurtleBot3 Waffle"
+      ],
+      "papers": [
+        "gao-2025-safe-mapless-navigation",
+        "icra-2026-paper-1106",
+        "icra-2026-paper-4301",
+        "icra-2026-paper-620",
+        "robotis-turtlebot3",
+        "robotis-turtlebot3-burger-website",
+        "robotis-turtlebot3-hardware-files"
+      ]
+    },
+    {
+      "ref": "stretch3_body",
+      "name": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Diff_two_caster",
+      "description": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3 gripper and head frozen at their zero pose, from Hello Robot's SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "stretch3_drive_wheel",
+      "name": "Hello Robot Stretch 3 drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Standard",
+      "description": "Hello Robot Stretch 3 drive wheel, from Hello Robot's SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "stretch3_head_d435i",
+      "name": "Stretch 3 head depth camera (Intel RealSense D435i)",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "RGBD",
+      "description": "Stretch 3 head depth camera (Intel RealSense D435i), from the SE3 description; posed at zero head pan and tilt.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "stretch3_head_nav_camera",
+      "name": "Stretch 3 wide-angle head navigation camera",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Camera",
+      "description": "Stretch 3 wide-angle head navigation camera, from the SE3 description; posed at zero head pan and tilt.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "stretch3_base_imu",
+      "name": "Stretch 3 base IMU",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "IMU",
+      "description": "Stretch 3 base IMU, from the SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116"
+      ]
+    },
+    {
+      "ref": "locobot_create3_chassis",
+      "name": "LoCoBot adapted Create3 base with rear bump caster",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Trossen Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "LoCoBot adapted Create3 base with rear bump caster; source-model rigid unit with qualified physics and display approximations.",
+      "source_url": "https://github.com/Interbotix/interbotix_ros_rovers",
+      "robots": [
+        "LoCoBot"
+      ],
+      "papers": [
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-895"
+      ]
+    },
+    {
+      "ref": "locobot_wx250s_fixed_structure",
+      "name": "LoCoBot WX250S deck, battery and sensor towers",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Trossen Robotics",
+      "subtype": "Attachment",
+      "description": "LoCoBot WX250S deck, battery and sensor towers; source-model rigid unit with qualified physics and display approximations.",
+      "source_url": "https://github.com/Interbotix/interbotix_ros_rovers",
+      "robots": [
+        "LoCoBot"
+      ],
+      "papers": [
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-895"
+      ]
+    },
+    {
+      "ref": "locobot_wx250s_arm_sleep",
+      "name": "Interbotix WX250S arm with gripper at fixed sleep pose",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Trossen Robotics",
+      "subtype": "Attachment",
+      "description": "Interbotix WX250S arm with gripper at fixed sleep pose; source-model rigid unit with qualified physics and display approximations.",
+      "source_url": "https://github.com/Interbotix/interbotix_ros_rovers",
+      "robots": [
+        "LoCoBot"
+      ],
+      "papers": [
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-895"
+      ]
+    },
+    {
+      "ref": "locobot_d435_pan_tilt_fixed",
+      "name": "LoCoBot D435 camera with fixed pan and tilt mechanism",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Trossen Robotics",
+      "subtype": "Camera",
+      "description": "LoCoBot D435 camera with fixed pan and tilt mechanism; source-model rigid unit with qualified physics and display approximations.",
+      "source_url": "https://github.com/Interbotix/interbotix_ros_rovers",
+      "robots": [
+        "LoCoBot"
+      ],
+      "papers": [
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-895"
+      ]
+    },
+    {
+      "ref": "locobot_rplidar_a2m8",
+      "name": "RPLIDAR A2M8 from the LoCoBot model",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "SLAMTEC",
+      "subtype": "Lidar",
+      "description": "RPLIDAR A2M8 from the LoCoBot model; source-model rigid unit with qualified physics and display approximations.",
+      "source_url": "https://github.com/Interbotix/interbotix_ros_rovers",
+      "robots": [
+        "LoCoBot"
+      ],
+      "papers": [
+        "icra-2026-paper-2092",
+        "icra-2026-paper-2377",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4973",
+        "icra-2026-paper-6114",
+        "icra-2026-paper-895"
+      ]
+    },
+    {
+      "ref": "turtlebot3_burger_chassis",
+      "name": "Burger assembled fixed structure with XL430 bodies, electronics, mounts…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "ROBOTIS",
+      "subtype": "Diff_two_caster",
+      "description": "Burger assembled fixed structure with XL430 bodies, electronics, mounts and rear ball caster; wheels and LDS-01 excluded.",
+      "source_url": "https://github.com/ROBOTIS-GIT/turtlebot3/tree/90a68bd2e3c61c12966779da89d8eeaec82730e9/turtlebot3_description",
+      "robots": [
+        "TurtleBot3 Burger"
+      ],
+      "papers": [
+        "gao-2025-safe-mapless-navigation",
+        "icra-2026-paper-4301",
+        "robotis-turtlebot3",
+        "robotis-turtlebot3-burger-website",
+        "robotis-turtlebot3-hardware-files"
+      ]
+    },
+    {
+      "ref": "dingo_d_chassis",
+      "name": "Clearpath Dingo-D chassis with its mounting points",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "Clearpath Dingo-D chassis with its mounting points, from Clearpath's dingo_description.",
+      "source_url": "https://github.com/dingo-cpr/dingo",
+      "robots": [
+        "Clearpath Dingo"
+      ],
+      "papers": [
+        "icra-2026-paper-2328",
+        "icra-2026-paper-43",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6354"
+      ]
+    },
+    {
+      "ref": "dingo_d_wheel",
+      "name": "Clearpath Dingo-D drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Standard",
+      "description": "Clearpath Dingo-D drive wheel, from Clearpath's dingo_description.",
+      "source_url": "https://github.com/dingo-cpr/dingo",
+      "robots": [
+        "Clearpath Dingo"
+      ],
+      "papers": [
+        "icra-2026-paper-2328",
+        "icra-2026-paper-43",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6354"
+      ]
+    },
+    {
+      "ref": "dingo_o_chassis",
+      "name": "Clearpath DO100 chassis from the retained official Dingo-O model",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum_four_wheel",
+      "description": "Clearpath DO100 chassis from the retained official Dingo-O model.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Dingo"
+      ],
+      "papers": [
+        "icra-2026-paper-2328",
+        "icra-2026-paper-43",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6354"
+      ]
+    },
+    {
+      "ref": "dingo_o_mecanum_mirrored",
+      "name": "Dingo-O mecanum wheel, authored mirrored mesh variant",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum",
+      "description": "Dingo-O mecanum wheel, authored mirrored mesh variant.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Dingo"
+      ],
+      "papers": [
+        "icra-2026-paper-2328",
+        "icra-2026-paper-43",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6354"
+      ]
+    },
+    {
+      "ref": "dingo_o_mecanum_normal",
+      "name": "Dingo-O mecanum wheel, authored normal mesh variant",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum",
+      "description": "Dingo-O mecanum wheel, authored normal mesh variant.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Dingo"
+      ],
+      "papers": [
+        "icra-2026-paper-2328",
+        "icra-2026-paper-43",
+        "icra-2026-paper-5917",
+        "icra-2026-paper-6354"
+      ]
+    },
+    {
+      "ref": "earthrover_zero_v52_chassis",
+      "name": "FrodoBots EarthRover Zero V5.2 body",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "FrodoBots",
+      "subtype": "Diff_drive",
+      "description": "FrodoBots EarthRover Zero V5.2 body: aluminium deck and tub with the curved mast and camera head, four wheel mounts, two camera mounts and an IMU mount.",
+      "source_url": "https://github.com/frodobots-org/earth-rovers-sdk",
+      "robots": [
+        "FrodoBots EarthRover Zero (ERZ)"
+      ],
+      "papers": [
+        "icra-2026-paper-5928",
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "earthrover_zero_wheel",
+      "name": "EarthRover Zero wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "FrodoBots",
+      "subtype": "Standard",
+      "description": "EarthRover Zero wheel: 130 mm knobbly rubber tyre on a black rim with a blue six-point star hub, driven by an in-body BLDC motor.",
+      "source_url": "https://github.com/frodobots-org/earth-rovers-sdk",
+      "robots": [
+        "FrodoBots EarthRover Zero (ERZ)"
+      ],
+      "papers": [
+        "icra-2026-paper-5928",
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "earthrover_zero_front_camera",
+      "name": "EarthRover Zero front camera",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "FrodoBots",
+      "subtype": "Camera",
+      "description": "EarthRover Zero front camera: GC2053 1/2.9-inch sensor, 1.9 mm lens, 149 degrees horizontal field of view, streamed at 1024x576.",
+      "source_url": "https://github.com/frodobots-org/earth-rovers-sdk",
+      "robots": [
+        "FrodoBots EarthRover Zero (ERZ)"
+      ],
+      "papers": [
+        "icra-2026-paper-5928",
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "earthrover_zero_rear_camera",
+      "name": "EarthRover Zero rear camera",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "FrodoBots",
+      "subtype": "Camera",
+      "description": "EarthRover Zero rear camera: GC2053 1/2.9-inch sensor, 1.35 mm lens, 200 degrees horizontal field of view, streamed at 540x360.",
+      "source_url": "https://github.com/frodobots-org/earth-rovers-sdk",
+      "robots": [
+        "FrodoBots EarthRover Zero (ERZ)"
+      ],
+      "papers": [
+        "icra-2026-paper-5928",
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "earthrover_zero_imu",
+      "name": "EarthRover Zero IMU",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "FrodoBots",
+      "subtype": "IMU",
+      "description": "EarthRover Zero IMU: MPU-6050 accelerometer and gyroscope; a QMC5883L magnetometer sits 9 mm beside it.",
+      "source_url": "https://github.com/frodobots-org/earth-rovers-sdk",
+      "robots": [
+        "FrodoBots EarthRover Zero (ERZ)"
+      ],
+      "papers": [
+        "icra-2026-paper-5928",
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "rbkairos_mecanum_wheel_1",
+      "name": "RB-Kairos handed wheel 1",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Mecanum",
+      "description": "RB-Kairos handed wheel 1, from the corresponding official DAE; rollers are geometry within a rigid link.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-Kairos",
+        "Robotnik SUMMIT-XL STEEL"
+      ],
+      "papers": [
+        "icra-2026-paper-1680",
+        "icra-2026-paper-2418",
+        "icra-2026-paper-6355"
+      ]
+    },
+    {
+      "ref": "rbkairos_mecanum_wheel_2",
+      "name": "RB-Kairos handed wheel 2",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Mecanum",
+      "description": "RB-Kairos handed wheel 2, from the corresponding official DAE; rollers are geometry within a rigid link.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-Kairos",
+        "Robotnik SUMMIT-XL STEEL"
+      ],
+      "papers": [
+        "icra-2026-paper-1680",
+        "icra-2026-paper-2418",
+        "icra-2026-paper-6355"
+      ]
+    },
+    {
+      "ref": "galaxea_r1_left_arm_fixed",
+      "name": "Galaxea R1 left arm with gripper and wrist camera (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Galaxea Dynamics",
+      "subtype": "Attachment",
+      "description": "Galaxea R1 left arm with gripper and wrist camera (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/OpenGalaxea/GalaxeaManipSim",
+      "robots": [
+        "Galaxea R1"
+      ],
+      "papers": [
+        "icra-2026-paper-1558",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-580"
+      ]
+    },
+    {
+      "ref": "galaxea_r1_right_arm_fixed",
+      "name": "Galaxea R1 right arm with gripper and wrist camera (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Galaxea Dynamics",
+      "subtype": "Attachment",
+      "description": "Galaxea R1 right arm with gripper and wrist camera (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/OpenGalaxea/GalaxeaManipSim",
+      "robots": [
+        "Galaxea R1"
+      ],
+      "papers": [
+        "icra-2026-paper-1558",
+        "icra-2026-paper-2328",
+        "icra-2026-paper-580"
+      ]
+    },
+    {
+      "ref": "rainbow_rby1a_left_arm_fixed",
+      "name": "Rainbow RB-Y1A left arm with force-torque sensor and gripper (fixed…",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Rainbow Robotics",
+      "subtype": "Attachment",
+      "description": "Rainbow RB-Y1A left arm with force-torque sensor and gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "robots": [
+        "Rainbow Robotics RB-Y1"
+      ],
+      "papers": [
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4352",
+        "icra-2026-paper-4590"
+      ]
+    },
+    {
+      "ref": "rainbow_rby1a_right_arm_fixed",
+      "name": "Rainbow RB-Y1A right arm with force-torque sensor and gripper (fixed…",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Rainbow Robotics",
+      "subtype": "Attachment",
+      "description": "Rainbow RB-Y1A right arm with force-torque sensor and gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "robots": [
+        "Rainbow Robotics RB-Y1"
+      ],
+      "papers": [
+        "icra-2026-paper-3597",
+        "icra-2026-paper-4352",
+        "icra-2026-paper-4590"
+      ]
+    },
+    {
+      "ref": "vizbot_omnivla_chassis",
+      "name": "VizBot in its OmniVLA configuration",
+      "category": "chassis",
+      "origin": "library",
+      "subtype": "Diff_two_caster",
+      "description": "VizBot in its OmniVLA configuration: an iRobot Roomba carrying a clear round deck on four standoffs and a printed camera bracket, with mounts for its two drive wheels, cameras and computer.",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "vizbot_drive_wheel",
+      "name": "VizBot drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "subtype": "Standard",
+      "description": "VizBot drive wheel: the Roomba's 72 mm rubber-tyred drive wheel (Create 2 drawing).",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "vizbot_pcb_camera",
+      "name": "VizBot's forward PCB camera, the RGB input of the OmniVLA policy on…",
+      "category": "sensor",
+      "origin": "library",
+      "subtype": "Camera",
+      "description": "VizBot's forward PCB camera, the RGB input of the OmniVLA policy on this robot; the product is not stated.",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "vizbot_tracking_camera",
+      "name": "VizBot's tracking camera (OmniVLA Fig. 3 label)",
+      "category": "attachment",
+      "origin": "library",
+      "subtype": "Attachment",
+      "description": "VizBot's tracking camera (OmniVLA Fig. 3 label). It resembles an Intel RealSense T265; the product is not stated, and RobotDSL-Core has no tracking-camera type, so it is carried as an attachment.",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "vizbot_orin",
+      "name": "VizBot's NVIDIA Orin computer (OmniVLA Fig. 3 label) with its cabling,…",
+      "category": "attachment",
+      "origin": "library",
+      "subtype": "Attachment",
+      "description": "VizBot's NVIDIA Orin computer (OmniVLA Fig. 3 label) with its cabling, as one envelope; the variant is not stated.",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "vizbot_spherical_camera",
+      "name": "The tall spherical camera on VizBot's bracket",
+      "category": "attachment",
+      "origin": "library",
+      "subtype": "Attachment",
+      "description": "The tall spherical camera on VizBot's bracket. OmniVLA's figure does not label it; it is shaped like the RICOH THETA the group used before (Niwa 2022, ExAug). Carried, not used as a sensor.",
+      "source_url": "https://arxiv.org/abs/2509.19480",
+      "robots": [
+        "VizBot"
+      ],
+      "papers": [
+        "icra-2026-paper-6033",
+        "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "turtlebot3_waffle_chassis",
+      "name": "ROBOTIS legacy TurtleBot3 Waffle base and rear supports",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "ROBOTIS",
+      "subtype": "Diff_two_caster",
+      "description": "ROBOTIS legacy TurtleBot3 Waffle base and rear supports; camera excluded, existing wheel and LDS-01 components reused.",
+      "source_url": "https://github.com/ROBOTIS-GIT/turtlebot3",
+      "robots": [
+        "TurtleBot3 Waffle"
+      ],
+      "papers": [
+        "icra-2026-paper-1106",
+        "icra-2026-paper-620"
+      ]
+    },
+    {
+      "ref": "ridgeback_r100_chassis",
+      "name": "Clearpath R100 rigid base, fixed rockers, covers and riser from its…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum_four_wheel",
+      "description": "Clearpath R100 rigid base, fixed rockers, covers and riser from its official description; no manipulator or arm mount.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Ridgeback + Universal Robots UR10"
+      ],
+      "papers": [
+        "icra-2026-paper-29",
+        "icra-2026-paper-5063"
+      ]
+    },
+    {
+      "ref": "ridgeback_r100_mecanum_wheel",
+      "name": "R100 mecanum wheel envelope from Clearpath",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum",
+      "description": "R100 mecanum wheel envelope from Clearpath: a rigid cylindrical source mesh without roller geometry or joints.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Ridgeback + Universal Robots UR10"
+      ],
+      "papers": [
+        "icra-2026-paper-29",
+        "icra-2026-paper-5063"
+      ]
+    },
+    {
+      "ref": "moonbot_arm_v1_fixed",
+      "name": "MoonBot arm v1 (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tohoku Space Robotics Laboratory",
+      "subtype": "Attachment",
+      "description": "MoonBot arm v1 (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/Space-Robotics-Laboratory/hero_assets_py",
+      "robots": [
+        "Moonbot"
+      ],
+      "papers": [
+        "icra-2026-paper-2071",
+        "icra-2026-paper-6155"
+      ]
+    },
+    {
+      "ref": "moonbot_arm_v2_fixed",
+      "name": "MoonBot arm v2 (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tohoku Space Robotics Laboratory",
+      "subtype": "Attachment",
+      "description": "MoonBot arm v2 (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/Space-Robotics-Laboratory/hero_assets_py",
+      "robots": [
+        "Moonbot"
+      ],
+      "papers": [
+        "icra-2026-paper-2071",
+        "icra-2026-paper-6155"
+      ]
+    },
+    {
+      "ref": "moonbot_arm_v3_fixed",
+      "name": "MoonBot arm v3 with cameras (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tohoku Space Robotics Laboratory",
+      "subtype": "Attachment",
+      "description": "MoonBot arm v3 with cameras (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/Space-Robotics-Laboratory/hero_assets_py",
+      "robots": [
+        "Moonbot"
+      ],
+      "papers": [
+        "icra-2026-paper-2071",
+        "icra-2026-paper-6155"
+      ]
+    },
+    {
+      "ref": "galaxea_r1_lite_arm_fixed",
+      "name": "Galaxea R1 Lite arm with gripper and D405 camera (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Galaxea Dynamics",
+      "subtype": "Attachment",
+      "description": "Galaxea R1 Lite arm with gripper and D405 camera (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/OpenGalaxea/GalaxeaManipSim",
+      "robots": [
+        "Galaxea R1 Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-1167",
+        "icra-2026-paper-1203"
+      ]
+    },
+    {
+      "ref": "stretch_re1_mobile_chassis",
+      "name": "RE1V0 base body, rear omni caster and internal IMU",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Hello Robot Inc.",
+      "subtype": "Diff_two_caster",
+      "description": "RE1V0 base body, rear omni caster and internal IMU; mast assembly and two physical ArUco markers excluded explicitly.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch RE-1"
+      ],
+      "papers": [
+        "icra-2026-paper-2929",
+        "icra-2026-paper-3597"
+      ]
+    },
+    {
+      "ref": "stretch_re1_drive_wheel",
+      "name": "One reusable drive wheel from the official source",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Hello Robot Inc.",
+      "subtype": "Standard",
+      "description": "One reusable drive wheel from the official source; left/right authored meshes are identical after a pi-radian axle-phase rotation.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch RE-1"
+      ],
+      "papers": [
+        "icra-2026-paper-2929",
+        "icra-2026-paper-3597"
+      ]
+    },
+    {
+      "ref": "quanser_qcar1_chassis",
+      "name": "Quanser QCar1 chassis and fixed steering supports",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Quanser",
+      "subtype": "Ackermann",
+      "description": "Quanser QCar1 chassis and fixed steering supports. Source-model reference; physical calibration and fabrication fit unqualified.",
+      "source_url": "https://github.com/quanser/Quanser_Academic_Resources",
+      "robots": [
+        "Quanser QCar"
+      ],
+      "papers": [
+        "icra-2026-paper-6039",
+        "icra-2026-paper-6138"
+      ]
+    },
+    {
+      "ref": "quanser_qcar1_wheel",
+      "name": "Quanser QCar1 wheel, official 66 mm mesh",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Quanser",
+      "subtype": "Standard",
+      "description": "Quanser QCar1 wheel, official 66 mm mesh. Source-model reference; physical calibration and fabrication fit unqualified.",
+      "source_url": "https://github.com/quanser/Quanser_Academic_Resources",
+      "robots": [
+        "Quanser QCar"
+      ],
+      "papers": [
+        "icra-2026-paper-6039",
+        "icra-2026-paper-6138"
+      ]
+    },
+    {
+      "ref": "quanser_qcar1_lidar",
+      "name": "Quanser QCar1 stock lidar housing",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Quanser",
+      "subtype": "Lidar",
+      "description": "Quanser QCar1 stock lidar housing. Source-model reference; physical calibration and fabrication fit unqualified.",
+      "source_url": "https://github.com/quanser/Quanser_Academic_Resources",
+      "robots": [
+        "Quanser QCar"
+      ],
+      "papers": [
+        "icra-2026-paper-6039",
+        "icra-2026-paper-6138"
+      ]
+    },
+    {
+      "ref": "summit_xl_steel_source_chassis",
+      "name": "Official rigid chassis source link",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Mecanum_four_wheel",
+      "description": "Official rigid chassis source link; exterior cover, logos, sensors and payload excluded. Uncalibrated source mass attribution.",
+      "source_url": "https://github.com/RobotnikAutomation/summit_xl_common",
+      "robots": [
+        "Robotnik SUMMIT-XL STEEL"
+      ],
+      "papers": [
+        "icra-2026-paper-1680",
+        "icra-2026-paper-6355"
+      ]
+    },
+    {
+      "ref": "unitree_go2w_source_wheel_left",
+      "name": "Official Go2-W complete left wheel source unit, reused front/rear",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Unitree Robotics",
+      "subtype": "Standard",
+      "description": "Official Go2-W complete left wheel source unit, reused front/rear; attachment hardware and physical calibration unverified.",
+      "source_url": "https://github.com/unitreerobotics/unitree_mujoco",
+      "robots": [
+        "Unitree Go2-W"
+      ],
+      "papers": [
+        "icra-2026-paper-1369",
+        "icra-2026-paper-4791"
+      ]
+    },
+    {
+      "ref": "unitree_go2w_source_wheel_right",
+      "name": "Official Go2-W complete right wheel source unit, reused front/rear",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Unitree Robotics",
+      "subtype": "Standard",
+      "description": "Official Go2-W complete right wheel source unit, reused front/rear; attachment hardware and physical calibration unverified.",
+      "source_url": "https://github.com/unitreerobotics/unitree_mujoco",
+      "robots": [
+        "Unitree Go2-W"
+      ],
+      "papers": [
+        "icra-2026-paper-1369",
+        "icra-2026-paper-4791"
+      ]
+    },
+    {
+      "ref": "rbkairos_chassis",
+      "name": "Official RB-Kairos base body, top cover and logos",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Mecanum_four_wheel",
+      "description": "Official RB-Kairos base body, top cover and logos; no arm or sensor equipment.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-Kairos"
+      ],
+      "papers": [
+        "icra-2026-paper-2418"
+      ]
+    },
+    {
+      "ref": "husarion_panther_wh01_fl_wheel",
+      "name": "Panther WH01 fl conventional wheel, retaining its official DAE and…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Panther WH01 fl conventional wheel, retaining its official DAE and native link-frame inertial.",
+      "source_url": "https://github.com/husarion/husarion_ugv_ros",
+      "robots": [
+        "Husarion Panther"
+      ],
+      "papers": [
+        "icra-2026-paper-3609"
+      ]
+    },
+    {
+      "ref": "husarion_panther_chassis",
+      "name": "Panther stock chassis from the official colored DAE and source inertial",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Diff_drive",
+      "description": "Panther stock chassis from the official colored DAE and source inertial.",
+      "source_url": "https://github.com/husarion/husarion_ugv_ros",
+      "robots": [
+        "Husarion Panther"
+      ],
+      "papers": [
+        "icra-2026-paper-3609"
+      ]
+    },
+    {
+      "ref": "husarion_panther_wh01_fr_wheel",
+      "name": "Panther WH01 fr conventional wheel, retaining its official DAE and…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Panther WH01 fr conventional wheel, retaining its official DAE and native link-frame inertial.",
+      "source_url": "https://github.com/husarion/husarion_ugv_ros",
+      "robots": [
+        "Husarion Panther"
+      ],
+      "papers": [
+        "icra-2026-paper-3609"
+      ]
+    },
+    {
+      "ref": "husarion_panther_wh01_rl_wheel",
+      "name": "Panther WH01 rl conventional wheel, retaining its official DAE and…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Panther WH01 rl conventional wheel, retaining its official DAE and native link-frame inertial.",
+      "source_url": "https://github.com/husarion/husarion_ugv_ros",
+      "robots": [
+        "Husarion Panther"
+      ],
+      "papers": [
+        "icra-2026-paper-3609"
+      ]
+    },
+    {
+      "ref": "husarion_panther_wh01_rr_wheel",
+      "name": "Panther WH01 rr conventional wheel, retaining its official DAE and…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Panther WH01 rr conventional wheel, retaining its official DAE and native link-frame inertial.",
+      "source_url": "https://github.com/husarion/husarion_ugv_ros",
+      "robots": [
+        "Husarion Panther"
+      ],
+      "papers": [
+        "icra-2026-paper-3609"
+      ]
+    },
+    {
+      "ref": "ubiquity_magni_left_wheel",
+      "name": "Magni left wheel-frame reference, retaining the official DAE and source…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Ubiquity Robotics",
+      "subtype": "Standard",
+      "description": "Magni left wheel-frame reference, retaining the official DAE and source cylindrical inertia model.",
+      "source_url": "https://github.com/UbiquityRobotics/magni_robot",
+      "robots": [
+        "Ubiquity Robotics Magni"
+      ],
+      "papers": [
+        "icra-2026-paper-4599"
+      ]
+    },
+    {
+      "ref": "ubiquity_magni_chassis",
+      "name": "Magni stock body and fixed caster visuals from the official colored DAE…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Ubiquity Robotics",
+      "subtype": "Diff_two_caster",
+      "description": "Magni stock body and fixed caster visuals from the official colored DAE assets.",
+      "source_url": "https://github.com/UbiquityRobotics/magni_robot",
+      "robots": [
+        "Ubiquity Robotics Magni"
+      ],
+      "papers": [
+        "icra-2026-paper-4599"
+      ]
+    },
+    {
+      "ref": "ubiquity_magni_right_wheel",
+      "name": "Magni right wheel-frame reference, retaining the official DAE and…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Ubiquity Robotics",
+      "subtype": "Standard",
+      "description": "Magni right wheel-frame reference, retaining the official DAE and source cylindrical inertia model.",
+      "source_url": "https://github.com/UbiquityRobotics/magni_robot",
+      "robots": [
+        "Ubiquity Robotics Magni"
+      ],
+      "papers": [
+        "icra-2026-paper-4599"
+      ]
+    },
+    {
+      "ref": "rosbot3_stock_chassis",
+      "name": "Husarion ROSbot 3 stock rigid body, including native camera holder",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Diff_drive",
+      "description": "Husarion ROSbot 3 stock rigid body, including native camera holder; standard wheel mount frames.",
+      "source_url": "https://github.com/husarion/rosbot_ros",
+      "robots": [
+        "Husarion ROSbot 3"
+      ],
+      "papers": [
+        "icra-2026-paper-1769"
+      ]
+    },
+    {
+      "ref": "rosbot3_standard_wheel_left",
+      "name": "Husarion ROSbot 3 standard left wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Husarion ROSbot 3 standard left wheel; native mesh and source model inertia.",
+      "source_url": "https://github.com/husarion/rosbot_ros",
+      "robots": [
+        "Husarion ROSbot 3"
+      ],
+      "papers": [
+        "icra-2026-paper-1769"
+      ]
+    },
+    {
+      "ref": "rosbot3_standard_wheel_right",
+      "name": "Husarion ROSbot 3 standard right wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Husarion",
+      "subtype": "Standard",
+      "description": "Husarion ROSbot 3 standard right wheel; native mesh and source model inertia.",
+      "source_url": "https://github.com/husarion/rosbot_ros",
+      "robots": [
+        "Husarion ROSbot 3"
+      ],
+      "papers": [
+        "icra-2026-paper-1769"
+      ]
+    },
+    {
+      "ref": "slamtec_rplidar_c1_husarion_model",
+      "name": "SLAMTEC RPLIDAR C1 as described by Husarion",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "SLAMTEC",
+      "subtype": "Lidar",
+      "description": "SLAMTEC RPLIDAR C1 as described by Husarion; source-estimated physics and original scan frame.",
+      "source_url": "https://github.com/husarion/husarion_components_description",
+      "robots": [
+        "Husarion ROSbot 3"
+      ],
+      "papers": [
+        "icra-2026-paper-1769"
+      ]
+    },
+    {
+      "ref": "future_nav_mir100_chassis",
+      "name": "MiR100 chassis with four casters frozen at zero",
+      "category": "chassis",
+      "origin": "library",
+      "subtype": "Diff_two_caster",
+      "description": "MiR100 chassis with four casters frozen at zero, from the FutureNav author model.",
+      "source_url": "https://github.com/Woodenonez/DyObAv_MPCnEBM_Warehouse",
+      "robots": [
+        "MiR100"
+      ],
+      "papers": [
+        "icra-2026-paper-354"
+      ]
+    },
+    {
+      "ref": "future_nav_mir100_drive_wheel",
+      "name": "MiR100 drive wheel from the author model, with source cylinder…",
+      "category": "wheel",
+      "origin": "library",
+      "subtype": "Standard",
+      "description": "MiR100 drive wheel from the author model, with source cylinder dimensions and inertia.",
+      "source_url": "https://github.com/Woodenonez/DyObAv_MPCnEBM_Warehouse",
+      "robots": [
+        "MiR100"
+      ],
+      "papers": [
+        "icra-2026-paper-354"
+      ]
+    },
+    {
+      "ref": "future_nav_mir100_lms100",
+      "name": "SICK LMS100 representation from the FutureNav MiR100 author description",
+      "category": "sensor",
+      "origin": "library",
+      "subtype": "Lidar",
+      "description": "SICK LMS100 representation from the FutureNav MiR100 author description.",
+      "source_url": "https://github.com/Woodenonez/DyObAv_MPCnEBM_Warehouse",
+      "robots": [
+        "MiR100"
+      ],
+      "papers": [
+        "icra-2026-paper-354"
+      ]
+    },
+    {
+      "ref": "rover_pro_4wd_chassis",
+      "name": "Rover Robotics Rover Pro 4WD chassis from the retained manufacturer…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Rover Robotics",
+      "subtype": "Diff_drive",
+      "description": "Rover Robotics Rover Pro 4WD chassis from the retained manufacturer model.",
+      "source_url": "https://github.com/RoverRobotics/roverrobotics_ros2",
+      "robots": [
+        "Rover Robotics Rover Pro"
+      ],
+      "papers": [
+        "icra-2026-paper-3752"
+      ]
+    },
+    {
+      "ref": "rover_pro_drive_wheel",
+      "name": "Rover Pro drive wheel from the official pro_tire.dae and source wheel…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Rover Robotics",
+      "subtype": "Standard",
+      "description": "Rover Pro drive wheel from the official pro_tire.dae and source wheel inertial.",
+      "source_url": "https://github.com/RoverRobotics/roverrobotics_ros2",
+      "robots": [
+        "Rover Robotics Rover Pro"
+      ],
+      "papers": [
+        "icra-2026-paper-3752"
+      ]
+    },
+    {
+      "ref": "rover_pro_dev_payload",
+      "name": "Rover Pro development payload module from rover_dev_payload.urdf,…",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Rover Robotics",
+      "subtype": "Attachment",
+      "description": "Rover Pro development payload module from rover_dev_payload.urdf, without optional lidar.",
+      "source_url": "https://github.com/RoverRobotics/roverrobotics_ros2",
+      "robots": [
+        "Rover Robotics Rover Pro"
+      ],
+      "papers": [
+        "icra-2026-paper-3752"
+      ]
+    },
+    {
+      "ref": "robotnik_rb1_base_chassis",
+      "name": "Official 25 kg base body only",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Diff_two_caster",
+      "description": "Official 25 kg base body only; front cover, support casters, sensors and lifting equipment are absent.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-1-BASE"
+      ],
+      "papers": [
+        "icra-2026-paper-5003"
+      ]
+    },
+    {
+      "ref": "robotnik_rb1_drive_wheel_150",
+      "name": "Official two-cylinder visual and single-cylinder physical wheel model,…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Standard",
+      "description": "Official two-cylinder visual and single-cylinder physical wheel model, one reusable part for both sides; not detailed hardware CAD.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-1-BASE"
+      ],
+      "papers": [
+        "icra-2026-paper-5003"
+      ]
+    },
+    {
+      "ref": "autorally_front_wheel",
+      "name": "AutoRally front wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Georgia Tech AutoRally project",
+      "subtype": "Standard",
+      "description": "AutoRally front wheel; official textured geometry and mass, uniform annular-cylinder inertia estimate.",
+      "source_url": "https://github.com/AutoRally/autorally/tree/48bae14fe4b2d56e5ca11fd2fec3d7dfac7a0e75",
+      "robots": [
+        "AutoRally"
+      ],
+      "papers": [
+        "icra-2026-paper-6014"
+      ]
+    },
+    {
+      "ref": "autorally_rear_wheel",
+      "name": "AutoRally rear wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Georgia Tech AutoRally project",
+      "subtype": "Standard",
+      "description": "AutoRally rear wheel; official textured geometry and mass, uniform annular-cylinder inertia estimate.",
+      "source_url": "https://github.com/AutoRally/autorally/tree/48bae14fe4b2d56e5ca11fd2fec3d7dfac7a0e75",
+      "robots": [
+        "AutoRally"
+      ],
+      "papers": [
+        "icra-2026-paper-6014"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_left_arm_f5d6_fixed",
+      "name": "Vega1 complete left arm and F5D6 hand",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Attachment",
+      "description": "Vega1 complete left arm and F5D6 hand; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_right_arm_f5d6_fixed",
+      "name": "Vega1 complete right arm and F5D6 hand",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Attachment",
+      "description": "Vega1 complete right arm and F5D6 hand; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_head_fixed",
+      "name": "Vega1 three-axis head with ZED housing at fixed pose",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Attachment",
+      "description": "Vega1 three-axis head with ZED housing at fixed pose; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_torso_fixed",
+      "name": "Vega1 complete articulated torso at fixed pose",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Attachment",
+      "description": "Vega1 complete articulated torso at fixed pose; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_lidar",
+      "name": "Vega1 source-model lidar",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Lidar",
+      "description": "Vega1 source-model lidar; original source geometry and numerical physics. Exact sensor specification and calibrated hardware mass are unverified.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_imu",
+      "name": "Vega1 source-model IMU",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "IMU",
+      "description": "Vega1 source-model IMU; original source geometry and numerical physics. Exact sensor specification and calibrated hardware mass are unverified.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "dexmate_vega_base_camera",
+      "name": "Vega1 source-model base camera",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Dexmate",
+      "subtype": "Camera",
+      "description": "Vega1 source-model base camera; original source geometry and numerical physics. Exact sensor specification and calibrated hardware mass are unverified.",
+      "source_url": "https://github.com/dexmate-ai/dexmate-urdf",
+      "robots": [
+        "Dexmate Vega"
+      ],
+      "papers": [
+        "icra-2026-paper-3710"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_chassis",
+      "name": "TianRacer compact source chassis",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Ackermann",
+      "description": "TianRacer compact source chassis. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_left_front_wheel",
+      "name": "TianRacer compact source left front wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Standard",
+      "description": "TianRacer compact source left front wheel. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_right_front_wheel",
+      "name": "TianRacer compact source right front wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Standard",
+      "description": "TianRacer compact source right front wheel. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_left_rear_wheel",
+      "name": "TianRacer compact source left rear wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Standard",
+      "description": "TianRacer compact source left rear wheel. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_right_rear_wheel",
+      "name": "TianRacer compact source right rear wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Standard",
+      "description": "TianRacer compact source right rear wheel. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_lidar_housing",
+      "name": "TianRacer compact source lidar housing",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Attachment",
+      "description": "TianRacer compact source lidar housing. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_camera_housing",
+      "name": "TianRacer compact source camera housing",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Attachment",
+      "description": "TianRacer compact source camera housing. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "tianbot_tianracer_source_depth_camera_housing",
+      "name": "TianRacer compact source depth camera housing",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Tianbot",
+      "subtype": "Attachment",
+      "description": "TianRacer compact source depth camera housing. Qualified source-model reference; physical fit/calibration unverified.",
+      "source_url": "https://github.com/tianbot/tianracer",
+      "robots": [
+        "TianRacer (variant unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-949"
+      ]
+    },
+    {
+      "ref": "astribot_s1_source_base",
+      "name": "Astribot S1 source omni chassis",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Astribot",
+      "subtype": "Omni_drive",
+      "description": "Astribot S1 source omni chassis; partial base reference, no full robot or fabrication qualification.",
+      "source_url": "https://github.com/Astribot-Dev/astribot_descriptions",
+      "robots": [
+        "Astribot S1"
+      ],
+      "papers": [
+        "icra-2026-paper-2454"
+      ]
+    },
+    {
+      "ref": "astribot_s1_source_wheel_lf",
+      "name": "Astribot S1 source wheel_LF_Link",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Astribot",
+      "subtype": "Omni_wheel",
+      "description": "Astribot S1 source wheel_LF_Link; partial base reference, no full robot or fabrication qualification.",
+      "source_url": "https://github.com/Astribot-Dev/astribot_descriptions",
+      "robots": [
+        "Astribot S1"
+      ],
+      "papers": [
+        "icra-2026-paper-2454"
+      ]
+    },
+    {
+      "ref": "astribot_s1_source_wheel_rf",
+      "name": "Astribot S1 source wheel_RF_Link",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Astribot",
+      "subtype": "Omni_wheel",
+      "description": "Astribot S1 source wheel_RF_Link; partial base reference, no full robot or fabrication qualification.",
+      "source_url": "https://github.com/Astribot-Dev/astribot_descriptions",
+      "robots": [
+        "Astribot S1"
+      ],
+      "papers": [
+        "icra-2026-paper-2454"
+      ]
+    },
+    {
+      "ref": "astribot_s1_source_wheel_lr",
+      "name": "Astribot S1 source wheel_LR_Link",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Astribot",
+      "subtype": "Omni_wheel",
+      "description": "Astribot S1 source wheel_LR_Link; partial base reference, no full robot or fabrication qualification.",
+      "source_url": "https://github.com/Astribot-Dev/astribot_descriptions",
+      "robots": [
+        "Astribot S1"
+      ],
+      "papers": [
+        "icra-2026-paper-2454"
+      ]
+    },
+    {
+      "ref": "astribot_s1_source_wheel_rr",
+      "name": "Astribot S1 source wheel_RR_Link",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Astribot",
+      "subtype": "Omni_wheel",
+      "description": "Astribot S1 source wheel_RR_Link; partial base reference, no full robot or fabrication qualification.",
+      "source_url": "https://github.com/Astribot-Dev/astribot_descriptions",
+      "robots": [
+        "Astribot S1"
+      ],
+      "papers": [
+        "icra-2026-paper-2454"
+      ]
+    },
+    {
+      "ref": "tb4_sensor_plate_025394",
+      "name": "Clearpath TurtleBot4 part 025394 revision 3",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "description": "Clearpath TurtleBot4 part 025394 revision 3; source-backed rigid attachment with CAD nominal mating datums.",
+      "source_url": "https://github.com/turtlebot/turtlebot4-hardware/tree/6256d8936e8f08a3ce9eaf39e82e314e68a1f826/TurtleBot%204/Components/025394%20-%20PLATE%2C%20SENSOR%20INTEGRATION",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "tb4_camera_bracket_025426",
+      "name": "Clearpath TurtleBot4 part 025426 revision 6",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "description": "Clearpath TurtleBot4 part 025426 revision 6; source-backed rigid attachment with CAD nominal mating datums.",
+      "source_url": "https://github.com/turtlebot/turtlebot4-hardware/tree/6256d8936e8f08a3ce9eaf39e82e314e68a1f826/TurtleBot%204/Components/025426%20-%20BRACKET%2C%20CAMERA%2C%20ALUMINIUM%20ALLOY",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "tb4_standoff_025481",
+      "name": "Clearpath TurtleBot4 part 025481 revision 4",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "description": "Clearpath TurtleBot4 part 025481 revision 4; source-backed rigid attachment with CAD nominal mating datums.",
+      "source_url": "https://github.com/turtlebot/turtlebot4-hardware/tree/6256d8936e8f08a3ce9eaf39e82e314e68a1f826/TurtleBot%204/Components/025481%20-%20STANDOFF%2C%20THREADED%2C%20ROUND%E2%80%94MALE-FEMALE%2C%20M4%20X%20200%2C%20ALUMINUM",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "tidybot2_intermediate_shaft_066095b",
+      "name": "TidyBot++ custom CNC intermediate shaft 066095B",
+      "category": "attachment",
+      "origin": "library",
+      "description": "TidyBot++ custom CNC intermediate shaft 066095B; nominal CAD geometry with documented drawing fits.",
+      "source_url": "https://github.com/jimmyyhwu/tidybot2-resources/tree/c268c53c4bc32d3e28d3ad34f35021f1dda316a6/Machining",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "pololu_wheel_32x7_1088",
+      "name": "Pololu 1088 purchased 32 x 7 mm white wheel with silicone tire",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Pololu",
+      "description": "Pololu 1088 purchased 32 x 7 mm white wheel with silicone tire; one wheel, not the sold pair.",
+      "source_url": "https://www.pololu.com/product/1088",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "tidybot2_wheel_mount_a",
+      "name": "TidyBot++ printed caster Wheel Mount A",
+      "category": "attachment",
+      "origin": "library",
+      "description": "TidyBot++ printed caster Wheel Mount A; supplied manufacturing allowances and saved PLA print profile.",
+      "source_url": "https://github.com/jimmyyhwu/tidybot2-resources/tree/c268c53c4bc32d3e28d3ad34f35021f1dda316a6/3D%20Printing/Caster%20Module",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "tidybot2_wheel_mount_b",
+      "name": "TidyBot++ printed caster Wheel Mount B",
+      "category": "attachment",
+      "origin": "library",
+      "description": "TidyBot++ printed caster Wheel Mount B; supplied manufacturing allowances and saved PLA print profile.",
+      "source_url": "https://github.com/jimmyyhwu/tidybot2-resources/tree/c268c53c4bc32d3e28d3ad34f35021f1dda316a6/3D%20Printing/Caster%20Module",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "kinova_gen3_lite_fixed",
+      "name": "Kinova Gen3 Lite arm with factory gripper (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Kinova Robotics",
+      "subtype": "Attachment",
+      "description": "Kinova Gen3 Lite arm with factory gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/Kinovarobotics/ros2_kortex",
+      "robots": [
+        "Kinova Gen3 Lite"
+      ],
+      "papers": []
+    },
     {
       "ref": "attach_arm_assieme_arm",
       "name": "Assieme Arm Attachment",
@@ -9,7 +2246,8 @@
       "subtype": "arm",
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ARM_ASSIEME_ARM",
-      "file": "attachments/attach_arm_assieme_arm.json"
+      "file": "attachments/attach_arm_assieme_arm.json",
+      "origin": "legacy"
     },
     {
       "ref": "attach_arm_nova",
@@ -18,43 +2256,8 @@
       "subtype": "arm",
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ARM_NOVA",
-      "file": "attachments/attach_arm_nova.json"
-    },
-    {
-      "ref": "attach_dhrobotics_ag95",
-      "name": "DH Robotics AG-95",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "DH Robotics",
-      "sku": "AG-95",
-      "file": "attachments/attach_dhrobotics_ag95.json"
-    },
-    {
-      "ref": "attach_dobot_cr5",
-      "name": "Dobot CR5",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Dobot",
-      "sku": "CR5",
-      "file": "attachments/attach_dobot_cr5.json"
-    },
-    {
-      "ref": "attach_electronics_arduino_uno",
-      "name": "Arduino Uno Attachment",
-      "category": "attachment",
-      "subtype": "electronics",
-      "supplier": "MobileCopilot",
-      "sku": "ATTACH_ELECTRONICS_ARDUINO_UNO",
-      "file": "attachments/attach_electronics_arduino_uno.json"
-    },
-    {
-      "ref": "attach_electronics_hc05",
-      "name": "Hc05 Attachment",
-      "category": "attachment",
-      "subtype": "electronics",
-      "supplier": "MobileCopilot",
-      "sku": "ATTACH_ELECTRONICS_HC05",
-      "file": "attachments/attach_electronics_hc05.json"
+      "file": "attachments/attach_arm_nova.json",
+      "origin": "legacy"
     },
     {
       "ref": "attach_electronics_motor_driver",
@@ -63,205 +2266,8 @@
       "subtype": "electronics",
       "supplier": "MobileCopilot",
       "sku": "ATTACH_ELECTRONICS_MOTOR_DRIVER",
-      "file": "attachments/attach_electronics_motor_driver.json"
-    },
-    {
-      "ref": "attach_franka_panda",
-      "name": "Franka Emika Panda",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Franka Emika (now Franka Robotics)",
-      "sku": "PANDA",
-      "file": "attachments/attach_franka_panda.json"
-    },
-    {
-      "ref": "attach_interbotix_px100",
-      "name": "Interbotix PX100",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Trossen Robotics",
-      "sku": "PX100-KIT",
-      "file": "attachments/attach_interbotix_px100.json"
-    },
-    {
-      "ref": "attach_interbotix_wx200",
-      "name": "Interbotix WX200",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Trossen Robotics",
-      "sku": "WX200-KIT",
-      "file": "attachments/attach_interbotix_wx200.json"
-    },
-    {
-      "ref": "attach_interbotix_wx250s",
-      "name": "Interbotix WX250s",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Trossen Robotics",
-      "sku": "WX250S-KIT",
-      "file": "attachments/attach_interbotix_wx250s.json"
-    },
-    {
-      "ref": "attach_kinova_gen3lite",
-      "name": "Kinova Gen3 Lite",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Kinova",
-      "sku": "Gen3-lite-6DOF",
-      "file": "attachments/attach_kinova_gen3lite.json"
-    },
-    {
-      "ref": "attach_onrobot_rg2",
-      "name": "OnRobot RG2",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "OnRobot",
-      "sku": "100830",
-      "file": "attachments/attach_onrobot_rg2.json"
-    },
-    {
-      "ref": "attach_payload_plate",
-      "name": "Payload Mounting Plate",
-      "category": "attachment",
-      "subtype": "tray",
-      "supplier": "Custom",
-      "sku": "PLT-01",
-      "file": "attachments/attach_payload_plate.json"
-    },
-    {
-      "ref": "attach_robotiq_2f140",
-      "name": "Robotiq 2F-140",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "Robotiq",
-      "sku": "AGC-140-GRPD",
-      "file": "attachments/attach_robotiq_2f140.json"
-    },
-    {
-      "ref": "attach_robotiq_2f85",
-      "name": "Robotiq 2F-85",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "Robotiq",
-      "sku": "AGC-085-GRPD",
-      "file": "attachments/attach_robotiq_2f85.json"
-    },
-    {
-      "ref": "attach_schunk_egk40",
-      "name": "SCHUNK EGK 40-MB-IO",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "SCHUNK",
-      "sku": "315620",
-      "file": "attachments/attach_schunk_egk40.json"
-    },
-    {
-      "ref": "attach_schunk_egp40",
-      "name": "SCHUNK EGP 40-N-N-B",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "SCHUNK",
-      "sku": "312032",
-      "file": "attachments/attach_schunk_egp40.json"
-    },
-    {
-      "ref": "attach_soft_robotics_mgrip",
-      "name": "Soft Robotics mGrip",
-      "category": "attachment",
-      "subtype": "gripper",
-      "supplier": "Soft Robotics (now Solventum)",
-      "sku": "MGRIP-P3",
-      "file": "attachments/attach_soft_robotics_mgrip.json"
-    },
-    {
-      "ref": "attach_tray_delivery_lg",
-      "name": "Standard Delivery Shelf (Large)",
-      "category": "attachment",
-      "subtype": "tray",
-      "supplier": "Generic/Custom",
-      "sku": "TRAY-600x400",
-      "file": "attachments/attach_tray_delivery_lg.json"
-    },
-    {
-      "ref": "attach_tray_large",
-      "name": "Large Delivery Tray",
-      "category": "attachment",
-      "subtype": "tray",
-      "supplier": "Custom",
-      "sku": "TRAY-L",
-      "file": "attachments/attach_tray_large.json"
-    },
-    {
-      "ref": "attach_tray_small",
-      "name": "Small Delivery Tray",
-      "category": "attachment",
-      "subtype": "tray",
-      "supplier": "Custom",
-      "sku": "TRAY-S",
-      "file": "attachments/attach_tray_small.json"
-    },
-    {
-      "ref": "attach_ur5e",
-      "name": "Universal Robots UR5e",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "Universal Robots",
-      "sku": "UR5E",
-      "file": "attachments/attach_ur5e.json"
-    },
-    {
-      "ref": "attach_xarm6",
-      "name": "UFACTORY xArm 6",
-      "category": "attachment",
-      "subtype": "arm",
-      "supplier": "UFACTORY",
-      "sku": "XARM6",
-      "file": "attachments/attach_xarm6.json"
-    },
-    {
-      "ref": "power_meanwell_lrs350_24",
-      "name": "Mean Well LRS-350-24",
-      "category": "attachment",
-      "subtype": "power_supply",
-      "supplier": "Mean Well",
-      "sku": "LRS-350-24",
-      "file": "attachments/power_meanwell_lrs350_24.json"
-    },
-    {
-      "ref": "power_rev_slim",
-      "name": "REV Robotics SLIM Battery",
-      "category": "attachment",
-      "subtype": "battery",
-      "supplier": "REV Robotics",
-      "sku": "REV-31-1302",
-      "file": "attachments/power_rev_slim.json"
-    },
-    {
-      "ref": "power_tattu_24v_16ah",
-      "name": "Tattu 24V 16Ah LiPo",
-      "category": "attachment",
-      "subtype": "battery",
-      "supplier": "Tattu/Gens Ace",
-      "sku": "TA-25C-16000-6S1P",
-      "file": "attachments/power_tattu_24v_16ah.json"
-    },
-    {
-      "ref": "power_tb3_lipo",
-      "name": "ROBOTIS LB-041 LiPo Battery",
-      "category": "attachment",
-      "subtype": "battery",
-      "supplier": "ROBOTIS",
-      "sku": "903-0277-000",
-      "file": "attachments/power_tb3_lipo.json"
-    },
-    {
-      "ref": "chassis_ack_f1tenth",
-      "name": "F1TENTH Platform",
-      "category": "chassis",
-      "subtype": "ackermann",
-      "supplier": "F1TENTH",
-      "sku": "F1TENTH-KIT-V2",
-      "file": "chassis/chassis_ack_f1tenth.json"
+      "file": "attachments/attach_electronics_motor_driver.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_ackermann_fener",
@@ -270,61 +2276,8 @@
       "subtype": "ackermann",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_ACKERMANN_FENER",
-      "file": "chassis/chassis_ackermann_fener.json"
-    },
-    {
-      "ref": "chassis_agilex_ranger_mini2",
-      "name": "AgileX Ranger Mini 2.0",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "AgileX Robotics",
-      "sku": "RANGER-MINI-2.0",
-      "file": "chassis/chassis_agilex_ranger_mini2.json"
-    },
-    {
-      "ref": "chassis_clearpath_husky",
-      "name": "Clearpath Husky A200",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Clearpath Robotics",
-      "sku": "HUSKY-A200",
-      "file": "chassis/chassis_clearpath_husky.json"
-    },
-    {
-      "ref": "chassis_clearpath_jackal",
-      "name": "Clearpath Jackal UGV",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Clearpath Robotics",
-      "sku": "JACKAL-UGV",
-      "file": "chassis/chassis_clearpath_jackal.json"
-    },
-    {
-      "ref": "chassis_dd_create3",
-      "name": "iRobot Create 3",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "iRobot",
-      "sku": "4775",
-      "file": "chassis/chassis_dd_create3.json"
-    },
-    {
-      "ref": "chassis_dd_pololu_romi",
-      "name": "Pololu Romi",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Pololu",
-      "sku": "3544",
-      "file": "chassis/chassis_dd_pololu_romi.json"
-    },
-    {
-      "ref": "chassis_dd_turtlebot4",
-      "name": "TurtleBot4 Standard",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Clearpath Robotics / iRobot",
-      "sku": "TB4-STD",
-      "file": "chassis/chassis_dd_turtlebot4.json"
+      "file": "chassis/chassis_ackermann_fener.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_2w_base",
@@ -333,7 +2286,8 @@
       "subtype": "diff_drive_2w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_BASE",
-      "file": "chassis/chassis_diff_drive_2w_base.json"
+      "file": "chassis/chassis_diff_drive_2w_base.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_2w_grey2",
@@ -342,7 +2296,8 @@
       "subtype": "diff_drive_2w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_GREY2",
-      "file": "chassis/chassis_diff_drive_2w_grey2.json"
+      "file": "chassis/chassis_diff_drive_2w_grey2.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_2w_nema",
@@ -351,7 +2306,8 @@
       "subtype": "diff_drive_2w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_2W_NEMA",
-      "file": "chassis/chassis_diff_drive_2w_nema.json"
+      "file": "chassis/chassis_diff_drive_2w_nema.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_4w_black",
@@ -360,7 +2316,8 @@
       "subtype": "diff_drive_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_BLACK",
-      "file": "chassis/chassis_diff_drive_4w_black.json"
+      "file": "chassis/chassis_diff_drive_4w_black.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_4w_blue",
@@ -369,16 +2326,8 @@
       "subtype": "diff_drive_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_BLUE",
-      "file": "chassis/chassis_diff_drive_4w_blue.json"
-    },
-    {
-      "ref": "chassis_diff_drive_4w_box",
-      "name": "Box Chassis",
-      "category": "chassis",
-      "subtype": "diff_drive_4w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_DIFF_DRIVE_4W_BOX",
-      "file": "chassis/chassis_diff_drive_4w_box.json"
+      "file": "chassis/chassis_diff_drive_4w_blue.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_diff_drive_4w_red",
@@ -387,16 +2336,8 @@
       "subtype": "diff_drive_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_DIFF_DRIVE_4W_RED",
-      "file": "chassis/chassis_diff_drive_4w_red.json"
-    },
-    {
-      "ref": "chassis_hunter_se",
-      "name": "AgileX Hunter SE",
-      "category": "chassis",
-      "subtype": "ackermann",
-      "supplier": "AgileX Robotics",
-      "sku": "A-022022-01",
-      "file": "chassis/chassis_hunter_se.json"
+      "file": "chassis/chassis_diff_drive_4w_red.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_mecanum_4w_assieme_drone2",
@@ -405,16 +2346,8 @@
       "subtype": "mecanum_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_ASSIEME_DRONE2",
-      "file": "chassis/chassis_mecanum_4w_assieme_drone2.json"
-    },
-    {
-      "ref": "chassis_mecanum_4w_box",
-      "name": "Box Chassis",
-      "category": "chassis",
-      "subtype": "mecanum_4w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_MECANUM_4W_BOX",
-      "file": "chassis/chassis_mecanum_4w_box.json"
+      "file": "chassis/chassis_mecanum_4w_assieme_drone2.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_mecanum_4w_grey",
@@ -423,25 +2356,8 @@
       "subtype": "mecanum_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_GREY",
-      "file": "chassis/chassis_mecanum_4w_grey.json"
-    },
-    {
-      "ref": "chassis_mecanum_4w_red",
-      "name": "Red Chassis",
-      "category": "chassis",
-      "subtype": "mecanum_4w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_MECANUM_4W_RED",
-      "file": "chassis/chassis_mecanum_4w_red.json"
-    },
-    {
-      "ref": "chassis_mecanum_4w_red2",
-      "name": "Red2 Chassis",
-      "category": "chassis",
-      "subtype": "mecanum_4w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_MECANUM_4W_RED2",
-      "file": "chassis/chassis_mecanum_4w_red2.json"
+      "file": "chassis/chassis_mecanum_4w_grey.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_mecanum_4w_silver2",
@@ -450,61 +2366,8 @@
       "subtype": "mecanum_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_MECANUM_4W_SILVER2",
-      "file": "chassis/chassis_mecanum_4w_silver2.json"
-    },
-    {
-      "ref": "chassis_mir250",
-      "name": "MiR250",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Mobile Industrial Robots",
-      "sku": "MIR250",
-      "file": "chassis/chassis_mir250.json"
-    },
-    {
-      "ref": "chassis_nexus_mec_lg",
-      "name": "Nexus 10021 Mecanum HD",
-      "category": "chassis",
-      "subtype": "mecanum_4w",
-      "supplier": "Nexus Robot",
-      "sku": "meclg",
-      "file": "chassis/chassis_nexus_mec_lg.json"
-    },
-    {
-      "ref": "chassis_nexus_mec_sm",
-      "name": "Nexus 10011 Mecanum",
-      "category": "chassis",
-      "subtype": "mecanum_4w",
-      "supplier": "Nexus Robot",
-      "sku": "mecsm",
-      "file": "chassis/chassis_nexus_mec_sm.json"
-    },
-    {
-      "ref": "chassis_omni_3w_blue",
-      "name": "Blue Chassis",
-      "category": "chassis",
-      "subtype": "omni_3w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_OMNI_3W_BLUE",
-      "file": "chassis/chassis_omni_3w_blue.json"
-    },
-    {
-      "ref": "chassis_omni_3w_classic",
-      "name": "Classic Chassis",
-      "category": "chassis",
-      "subtype": "omni_3w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_OMNI_3W_CLASSIC",
-      "file": "chassis/chassis_omni_3w_classic.json"
-    },
-    {
-      "ref": "chassis_omni_3w_yellow",
-      "name": "Yellow Chassis",
-      "category": "chassis",
-      "subtype": "omni_3w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_OMNI_3W_YELLOW",
-      "file": "chassis/chassis_omni_3w_yellow.json"
+      "file": "chassis/chassis_mecanum_4w_silver2.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_omni_4w_black",
@@ -513,43 +2376,8 @@
       "subtype": "omni_4w",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_OMNI_4W_BLACK",
-      "file": "chassis/chassis_omni_4w_black.json"
-    },
-    {
-      "ref": "chassis_omni_4w_grey",
-      "name": "Grey Chassis",
-      "category": "chassis",
-      "subtype": "omni_4w",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_OMNI_4W_GREY",
-      "file": "chassis/chassis_omni_4w_grey.json"
-    },
-    {
-      "ref": "chassis_omni_kaya",
-      "name": "NVIDIA Kaya",
-      "category": "chassis",
-      "subtype": "omni",
-      "supplier": "NVIDIA",
-      "sku": "KAYA-DEV-KIT",
-      "file": "chassis/chassis_omni_kaya.json"
-    },
-    {
-      "ref": "chassis_robotnik_rb1",
-      "name": "Robotnik RB-1 Base",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "Robotnik",
-      "sku": "RB-1-BASE",
-      "file": "chassis/chassis_robotnik_rb1.json"
-    },
-    {
-      "ref": "chassis_scout_mini",
-      "name": "AgileX Scout Mini",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "AgileX Robotics",
-      "sku": "A-012022-01",
-      "file": "chassis/chassis_scout_mini.json"
+      "file": "chassis/chassis_omni_4w_black.json",
+      "origin": "legacy"
     },
     {
       "ref": "chassis_steering_tricycle_desert",
@@ -558,151 +2386,8 @@
       "subtype": "steering_tricycle",
       "supplier": "MobileCopilot",
       "sku": "CHASSIS_STEERING_TRICYCLE_DESERT",
-      "file": "chassis/chassis_steering_tricycle_desert.json"
-    },
-    {
-      "ref": "chassis_tb3_burger",
-      "name": "TurtleBot3 Burger",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "ROBOTIS",
-      "sku": "901-0119-200",
-      "file": "chassis/chassis_tb3_burger.json"
-    },
-    {
-      "ref": "chassis_tb3_waffle",
-      "name": "TurtleBot3 Waffle Pi",
-      "category": "chassis",
-      "subtype": "diff_drive",
-      "supplier": "ROBOTIS",
-      "sku": "901-0119-302",
-      "file": "chassis/chassis_tb3_waffle.json"
-    },
-    {
-      "ref": "chassis_tricycle_red",
-      "name": "Red Chassis",
-      "category": "chassis",
-      "subtype": "tricycle",
-      "supplier": "MobileCopilot",
-      "sku": "CHASSIS_TRICYCLE_RED",
-      "file": "chassis/chassis_tricycle_red.json"
-    },
-    {
-      "ref": "motor_dynamixel_xm430",
-      "name": "ROBOTIS Dynamixel XM430-W350",
-      "category": "motor",
-      "subtype": "servo",
-      "supplier": "ROBOTIS",
-      "sku": "902-0107-000",
-      "file": "motors/motor_dynamixel_xm430.json"
-    },
-    {
-      "ref": "motor_dynamixel_xm540",
-      "name": "ROBOTIS Dynamixel XM540-W270",
-      "category": "motor",
-      "subtype": "servo",
-      "supplier": "ROBOTIS",
-      "sku": "902-0136-000",
-      "file": "motors/motor_dynamixel_xm540.json"
-    },
-    {
-      "ref": "motor_faulhaber_2057",
-      "name": "Faulhaber 2057S 012B",
-      "category": "motor",
-      "subtype": "bldc",
-      "supplier": "Faulhaber",
-      "sku": "2057S012B",
-      "file": "motors/motor_faulhaber_2057.json"
-    },
-    {
-      "ref": "motor_maxon_ec45_flat",
-      "name": "Maxon EC 45 flat 70W",
-      "category": "motor",
-      "subtype": "bldc",
-      "supplier": "maxon motor",
-      "sku": "397172",
-      "file": "motors/motor_maxon_ec45_flat.json"
-    },
-    {
-      "ref": "motor_maxon_ec90_flat",
-      "name": "Maxon EC 90 flat 260W",
-      "category": "motor",
-      "subtype": "bldc",
-      "supplier": "maxon motor",
-      "sku": "607931",
-      "file": "motors/motor_maxon_ec90_flat.json"
-    },
-    {
-      "ref": "motor_maxon_ec_i40",
-      "name": "Maxon EC-i 40 100W",
-      "category": "motor",
-      "subtype": "bldc",
-      "supplier": "maxon motor",
-      "sku": "496661",
-      "file": "motors/motor_maxon_ec_i40.json"
-    },
-    {
-      "ref": "motor_maxon_gp42c",
-      "name": "Maxon GP 42C Planetary Gearhead",
-      "category": "motor",
-      "subtype": "gearhead",
-      "supplier": "maxon motor",
-      "sku": "301151",
-      "file": "motors/motor_maxon_gp42c.json"
-    },
-    {
-      "ref": "motor_nema17_42byghw804",
-      "name": "NEMA 17 Stepper (42BYGHW804)",
-      "category": "motor",
-      "subtype": "stepper",
-      "supplier": "StepperOnline",
-      "sku": "42BYGHW804",
-      "file": "motors/motor_nema17_42byghw804.json"
-    },
-    {
-      "ref": "sens_arducam_imx477",
-      "name": "Arducam IMX477",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "Arducam",
-      "sku": "B0262",
-      "file": "sensors/sens_arducam_imx477.json"
-    },
-    {
-      "ref": "sens_arducam_ov9281",
-      "name": "Arducam OV9281 Global Shutter",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "Arducam",
-      "sku": "B0332",
-      "file": "sensors/sens_arducam_ov9281.json"
-    },
-    {
-      "ref": "sens_bno055",
-      "name": "Bosch BNO055",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "Bosch Sensortec",
-      "sku": "BNO055",
-      "file": "sensors/sens_bno055.json"
-    },
-    {
-      "ref": "sens_bno085",
-      "name": "Bosch BNO085",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "Bosch Sensortec / CEVA",
-      "sku": "BNO085",
-      "file": "sensors/sens_bno085.json"
-    },
-    {
-      "ref": "sens_camera_box",
-      "name": "Box Sensor",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_CAMERA_BOX",
-      "file": "sensors/sens_camera_box.json"
+      "file": "chassis/chassis_steering_tricycle_desert.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_camera_dcs950g",
@@ -711,7 +2396,8 @@
       "subtype": "camera",
       "supplier": "MobileCopilot",
       "sku": "SENS_CAMERA_DCS950G",
-      "file": "sensors/sens_camera_dcs950g.json"
+      "file": "sensors/sens_camera_dcs950g.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_camera_imx390",
@@ -720,79 +2406,8 @@
       "subtype": "camera",
       "supplier": "MobileCopilot",
       "sku": "SENS_CAMERA_IMX390",
-      "file": "sensors/sens_camera_imx390.json"
-    },
-    {
-      "ref": "sens_flir_bfs",
-      "name": "FLIR Blackfly S USB3",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "Teledyne FLIR",
-      "sku": "BFS-U3-16S2C-CS",
-      "file": "sensors/sens_flir_bfs.json"
-    },
-    {
-      "ref": "sens_garmin_lidar_lite_v4",
-      "name": "Garmin LIDAR-Lite v4 LED",
-      "category": "sensor",
-      "subtype": "ultrasonic",
-      "supplier": "Garmin",
-      "sku": "010-02595-00",
-      "file": "sensors/sens_garmin_lidar_lite_v4.json"
-    },
-    {
-      "ref": "sens_hcsr04",
-      "name": "HC-SR04",
-      "category": "sensor",
-      "subtype": "ultrasonic",
-      "supplier": "Generic",
-      "sku": "HC-SR04",
-      "file": "sensors/sens_hcsr04.json"
-    },
-    {
-      "ref": "sens_hokuyo_ust10lx",
-      "name": "Hokuyo UST-10LX",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Hokuyo",
-      "sku": "UST-10LX",
-      "file": "sensors/sens_hokuyo_ust10lx.json"
-    },
-    {
-      "ref": "sens_hokuyo_utm30lx",
-      "name": "Hokuyo UTM-30LX",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Hokuyo",
-      "sku": "UTM-30LX",
-      "file": "sensors/sens_hokuyo_utm30lx.json"
-    },
-    {
-      "ref": "sens_icm20948",
-      "name": "TDK ICM-20948",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "TDK InvenSense",
-      "sku": "ICM-20948",
-      "file": "sensors/sens_icm20948.json"
-    },
-    {
-      "ref": "sens_imu_basic",
-      "name": "Basic Sensor",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_IMU_BASIC",
-      "file": "sensors/sens_imu_basic.json"
-    },
-    {
-      "ref": "sens_imu_box",
-      "name": "Box Sensor",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_IMU_BOX",
-      "file": "sensors/sens_imu_box.json"
+      "file": "sensors/sens_camera_imx390.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_imu_grey",
@@ -801,7 +2416,8 @@
       "subtype": "imu",
       "supplier": "MobileCopilot",
       "sku": "SENS_IMU_GREY",
-      "file": "sensors/sens_imu_grey.json"
+      "file": "sensors/sens_imu_grey.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_imu_gy87",
@@ -810,43 +2426,8 @@
       "subtype": "imu",
       "supplier": "MobileCopilot",
       "sku": "SENS_IMU_GY87",
-      "file": "sensors/sens_imu_gy87.json"
-    },
-    {
-      "ref": "sens_imu_sphere",
-      "name": "Sphere Sensor",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_IMU_SPHERE",
-      "file": "sensors/sens_imu_sphere.json"
-    },
-    {
-      "ref": "sens_lidar_basic",
-      "name": "Basic Sensor",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_LIDAR_BASIC",
-      "file": "sensors/sens_lidar_basic.json"
-    },
-    {
-      "ref": "sens_lidar_box",
-      "name": "Box Sensor",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_LIDAR_BOX",
-      "file": "sensors/sens_lidar_box.json"
-    },
-    {
-      "ref": "sens_lidar_cylinder",
-      "name": "Cylinder Sensor",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "MobileCopilot",
-      "sku": "SENS_LIDAR_CYLINDER",
-      "file": "sensors/sens_lidar_cylinder.json"
+      "file": "sensors/sens_imu_gy87.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_lidar_ld06",
@@ -855,7 +2436,8 @@
       "subtype": "lidar",
       "supplier": "MobileCopilot",
       "sku": "SENS_LIDAR_LD06",
-      "file": "sensors/sens_lidar_ld06.json"
+      "file": "sensors/sens_lidar_ld06.json",
+      "origin": "legacy"
     },
     {
       "ref": "sens_lidar_yellow",
@@ -864,232 +2446,8 @@
       "subtype": "lidar",
       "supplier": "MobileCopilot",
       "sku": "SENS_LIDAR_YELLOW",
-      "file": "sensors/sens_lidar_yellow.json"
-    },
-    {
-      "ref": "sens_livox_hap",
-      "name": "Livox HAP",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Livox (DJI)",
-      "sku": "HAP",
-      "file": "sensors/sens_livox_hap.json"
-    },
-    {
-      "ref": "sens_livox_mid360",
-      "name": "Livox Mid-360",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Livox / DJI",
-      "sku": "Mid-360",
-      "file": "sensors/sens_livox_mid360.json"
-    },
-    {
-      "ref": "sens_logitech_c920",
-      "name": "Logitech C920",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "Logitech",
-      "sku": "960-000764",
-      "file": "sensors/sens_logitech_c920.json"
-    },
-    {
-      "ref": "sens_logitech_c930e",
-      "name": "Logitech C930e",
-      "category": "sensor",
-      "subtype": "camera",
-      "supplier": "Logitech",
-      "sku": "960-000971",
-      "file": "sensors/sens_logitech_c930e.json"
-    },
-    {
-      "ref": "sens_maxbotix_mb1240",
-      "name": "MaxBotix MB1240",
-      "category": "sensor",
-      "subtype": "ultrasonic",
-      "supplier": "MaxBotix",
-      "sku": "MB1240",
-      "file": "sensors/sens_maxbotix_mb1240.json"
-    },
-    {
-      "ref": "sens_microstrain_3dm_gx5",
-      "name": "MicroStrain 3DM-GX5-25",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "Parker LORD (MicroStrain)",
-      "sku": "3DM-GX5-25",
-      "file": "sensors/sens_microstrain_3dm_gx5.json"
-    },
-    {
-      "ref": "sens_oakd_pro",
-      "name": "Luxonis OAK-D Pro",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Luxonis",
-      "sku": "OAK-D-PRO",
-      "file": "sensors/sens_oakd_pro.json"
-    },
-    {
-      "ref": "sens_orbbec_femto_bolt",
-      "name": "Orbbec Femto Bolt",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Orbbec",
-      "sku": "FEMTO-BOLT",
-      "file": "sensors/sens_orbbec_femto_bolt.json"
-    },
-    {
-      "ref": "sens_ouster_os1_32",
-      "name": "Ouster OS1-32",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Ouster",
-      "sku": "OS1-32",
-      "file": "sensors/sens_ouster_os1_32.json"
-    },
-    {
-      "ref": "sens_realsense_d435",
-      "name": "Intel RealSense D435",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Intel",
-      "sku": "82635ASRCDVKHV",
-      "file": "sensors/sens_realsense_d435.json"
-    },
-    {
-      "ref": "sens_realsense_d435i",
-      "name": "Intel RealSense D435i",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Intel",
-      "sku": "82635D435IDK5P",
-      "file": "sensors/sens_realsense_d435i.json"
-    },
-    {
-      "ref": "sens_realsense_d455",
-      "name": "Intel RealSense D455",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Intel",
-      "sku": "82635DSD455MP",
-      "file": "sensors/sens_realsense_d455.json"
-    },
-    {
-      "ref": "sens_rev_thru_bore",
-      "name": "REV Through Bore Encoder",
-      "category": "sensor",
-      "subtype": "imu",
-      "supplier": "REV Robotics",
-      "sku": "REV-11-1271",
-      "file": "sensors/sens_rev_thru_bore.json"
-    },
-    {
-      "ref": "sens_rplidar_a1",
-      "name": "SLAMTEC RPLidar A1M8",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "SLAMTEC",
-      "sku": "A1M8-R6",
-      "file": "sensors/sens_rplidar_a1.json"
-    },
-    {
-      "ref": "sens_rplidar_a2m12",
-      "name": "SLAMTEC RPLidar A2M12",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "SLAMTEC",
-      "sku": "A2M12-R4",
-      "file": "sensors/sens_rplidar_a2m12.json"
-    },
-    {
-      "ref": "sens_rplidar_c1",
-      "name": "SLAMTEC RPLidar C1",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "SLAMTEC",
-      "sku": "RPLIDAR-C1",
-      "file": "sensors/sens_rplidar_c1.json"
-    },
-    {
-      "ref": "sens_rplidar_s2",
-      "name": "SLAMTEC RPLidar S2",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "SLAMTEC",
-      "sku": "S2-R1",
-      "file": "sensors/sens_rplidar_s2.json"
-    },
-    {
-      "ref": "sens_sick_tim781",
-      "name": "SICK TiM781",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "SICK AG",
-      "sku": "TIM781-2174101",
-      "file": "sensors/sens_sick_tim781.json"
-    },
-    {
-      "ref": "sens_unitree_lidar_l1",
-      "name": "Unitree LiDAR L1",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Unitree Robotics",
-      "sku": "LIDAR-L1",
-      "file": "sensors/sens_unitree_lidar_l1.json"
-    },
-    {
-      "ref": "sens_velodyne_vlp16",
-      "name": "Velodyne VLP-16 Puck",
-      "category": "sensor",
-      "subtype": "lidar",
-      "supplier": "Velodyne Lidar (Ouster)",
-      "sku": "VLP-16",
-      "file": "sensors/sens_velodyne_vlp16.json"
-    },
-    {
-      "ref": "sens_zed2i",
-      "name": "Stereolabs ZED 2i",
-      "category": "sensor",
-      "subtype": "depth_camera",
-      "supplier": "Stereolabs",
-      "sku": "ZED-2I",
-      "file": "sensors/sens_zed2i.json"
-    },
-    {
-      "ref": "wheel_andymark_6in",
-      "name": "AndyMark 6in Perf",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "AndyMark",
-      "sku": "am-0940a",
-      "file": "wheels/wheel_andymark_6in.json"
-    },
-    {
-      "ref": "wheel_andymark_mec_4in",
-      "name": "AndyMark 4in Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "AndyMark",
-      "sku": "am-3104",
-      "file": "wheels/wheel_andymark_mec_4in.json"
-    },
-    {
-      "ref": "wheel_andymark_mec_6in",
-      "name": "AndyMark 6in HD Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "AndyMark",
-      "sku": "AM-3655",
-      "file": "wheels/wheel_andymark_mec_6in.json"
-    },
-    {
-      "ref": "wheel_banebots_t81",
-      "name": "BaneBots T81 4in Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "BaneBots",
-      "sku": "T81-4040-2HS",
-      "file": "wheels/wheel_banebots_t81.json"
+      "file": "sensors/sens_lidar_yellow.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_caster_ball_classic",
@@ -1098,70 +2456,8 @@
       "subtype": "caster",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_CASTER_BALL_CLASSIC",
-      "file": "wheels/wheel_caster_ball_classic.json"
-    },
-    {
-      "ref": "wheel_caster_sphere",
-      "name": "Sphere Wheel",
-      "category": "wheel",
-      "subtype": "caster",
-      "supplier": "MobileCopilot",
-      "sku": "WHEEL_CASTER_SPHERE",
-      "file": "wheels/wheel_caster_sphere.json"
-    },
-    {
-      "ref": "wheel_clearpath_husky",
-      "name": "Clearpath Husky Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Clearpath Robotics",
-      "sku": "HUSKY-WHEEL",
-      "file": "wheels/wheel_clearpath_husky.json"
-    },
-    {
-      "ref": "wheel_dagu_65mm",
-      "name": "Dagu 65mm Rubber",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Dagu Electronics",
-      "sku": "RS003",
-      "file": "wheels/wheel_dagu_65mm.json"
-    },
-    {
-      "ref": "wheel_f1tenth_wheel",
-      "name": "F1TENTH Rally Tire",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Traxxas",
-      "sku": "5375X",
-      "file": "wheels/wheel_f1tenth_wheel.json"
-    },
-    {
-      "ref": "wheel_gobilda_96mm",
-      "name": "goBILDA 96mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "goBILDA",
-      "sku": "3213-3606-0001",
-      "file": "wheels/wheel_gobilda_96mm.json"
-    },
-    {
-      "ref": "wheel_hangfa_mec_100",
-      "name": "Hangfa 100mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "Hangfa",
-      "sku": "QL-100",
-      "file": "wheels/wheel_hangfa_mec_100.json"
-    },
-    {
-      "ref": "wheel_hangfa_mec_203",
-      "name": "Hangfa 203mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "Hangfa",
-      "sku": "QL-203",
-      "file": "wheels/wheel_hangfa_mec_203.json"
+      "file": "wheels/wheel_caster_ball_classic.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_mecanum_classic",
@@ -1170,16 +2466,8 @@
       "subtype": "mecanum",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_CLASSIC",
-      "file": "wheels/wheel_mecanum_classic.json"
-    },
-    {
-      "ref": "wheel_mecanum_cylinder",
-      "name": "Cylinder Wheel",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "MobileCopilot",
-      "sku": "WHEEL_MECANUM_CYLINDER",
-      "file": "wheels/wheel_mecanum_cylinder.json"
+      "file": "wheels/wheel_mecanum_classic.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_mecanum_first",
@@ -1188,7 +2476,8 @@
       "subtype": "mecanum",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_FIRST",
-      "file": "wheels/wheel_mecanum_first.json"
+      "file": "wheels/wheel_mecanum_first.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_mecanum_green",
@@ -1197,7 +2486,8 @@
       "subtype": "mecanum",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_GREEN",
-      "file": "wheels/wheel_mecanum_green.json"
+      "file": "wheels/wheel_mecanum_green.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_mecanum_red_black",
@@ -1206,7 +2496,8 @@
       "subtype": "mecanum",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_RED_BLACK",
-      "file": "wheels/wheel_mecanum_red_black.json"
+      "file": "wheels/wheel_mecanum_red_black.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_mecanum_yellow",
@@ -1215,34 +2506,8 @@
       "subtype": "mecanum",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_MECANUM_YELLOW",
-      "file": "wheels/wheel_mecanum_yellow.json"
-    },
-    {
-      "ref": "wheel_nexus_mec_100",
-      "name": "Nexus 100mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "Nexus Robot",
-      "sku": "15169",
-      "file": "wheels/wheel_nexus_mec_100.json"
-    },
-    {
-      "ref": "wheel_nexus_mec_152",
-      "name": "Nexus 152mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "Nexus Robot",
-      "sku": "15170",
-      "file": "wheels/wheel_nexus_mec_152.json"
-    },
-    {
-      "ref": "wheel_nexus_mec_48",
-      "name": "Nexus 48mm Mecanum",
-      "category": "wheel",
-      "subtype": "mecanum",
-      "supplier": "Nexus Robot",
-      "sku": "15167",
-      "file": "wheels/wheel_nexus_mec_48.json"
+      "file": "wheels/wheel_mecanum_yellow.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_omni_blue",
@@ -1251,7 +2516,8 @@
       "subtype": "omni",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_BLUE",
-      "file": "wheels/wheel_omni_blue.json"
+      "file": "wheels/wheel_omni_blue.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_omni_classic_5",
@@ -1260,16 +2526,8 @@
       "subtype": "omni",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_CLASSIC_5",
-      "file": "wheels/wheel_omni_classic_5.json"
-    },
-    {
-      "ref": "wheel_omni_cylinder",
-      "name": "Cylinder Wheel",
-      "category": "wheel",
-      "subtype": "omni",
-      "supplier": "MobileCopilot",
-      "sku": "WHEEL_OMNI_CYLINDER",
-      "file": "wheels/wheel_omni_cylinder.json"
+      "file": "wheels/wheel_omni_classic_5.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_omni_vexpro_4in",
@@ -1278,97 +2536,8 @@
       "subtype": "omni",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_OMNI_VEXPRO_4IN",
-      "file": "wheels/wheel_omni_vexpro_4in.json"
-    },
-    {
-      "ref": "wheel_pololu_70x8",
-      "name": "Pololu 70x8mm",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Pololu",
-      "sku": "1425",
-      "file": "wheels/wheel_pololu_70x8.json"
-    },
-    {
-      "ref": "wheel_pololu_80x10",
-      "name": "Pololu 80x10mm",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Pololu",
-      "sku": "1435",
-      "file": "wheels/wheel_pololu_80x10.json"
-    },
-    {
-      "ref": "wheel_pololu_90x10",
-      "name": "Pololu 90x10mm",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Pololu",
-      "sku": "1436",
-      "file": "wheels/wheel_pololu_90x10.json"
-    },
-    {
-      "ref": "wheel_pololu_caster_1in",
-      "name": "Pololu 1in Caster",
-      "category": "wheel",
-      "subtype": "caster",
-      "supplier": "Pololu",
-      "sku": "955",
-      "file": "wheels/wheel_pololu_caster_1in.json"
-    },
-    {
-      "ref": "wheel_pololu_caster_3_4",
-      "name": "Pololu 3/4in Caster",
-      "category": "wheel",
-      "subtype": "caster",
-      "supplier": "Pololu",
-      "sku": "953",
-      "file": "wheels/wheel_pololu_caster_3_4.json"
-    },
-    {
-      "ref": "wheel_rev_hdt_3in",
-      "name": "REV 3in HD Traction Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "REV Robotics",
-      "sku": "REV-41-1354",
-      "file": "wheels/wheel_rev_hdt_3in.json"
-    },
-    {
-      "ref": "wheel_rotacaster_125mm",
-      "name": "Rotacaster 125mm Omni",
-      "category": "wheel",
-      "subtype": "omni",
-      "supplier": "Rotacaster",
-      "sku": "R125-2",
-      "file": "wheels/wheel_rotacaster_125mm.json"
-    },
-    {
-      "ref": "wheel_rotacaster_50mm",
-      "name": "Rotacaster 50mm Omni",
-      "category": "wheel",
-      "subtype": "omni",
-      "supplier": "Rotacaster",
-      "sku": "R2-0504-89",
-      "file": "wheels/wheel_rotacaster_50mm.json"
-    },
-    {
-      "ref": "wheel_scout_mini_wheel",
-      "name": "AgileX Scout Mini Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "AgileX Robotics",
-      "sku": "A-012022-W1",
-      "file": "wheels/wheel_scout_mini_wheel.json"
-    },
-    {
-      "ref": "wheel_standard_black",
-      "name": "Black Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "MobileCopilot",
-      "sku": "WHEEL_STANDARD_BLACK",
-      "file": "wheels/wheel_standard_black.json"
+      "file": "wheels/wheel_omni_vexpro_4in.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_standard_black2",
@@ -1377,7 +2546,8 @@
       "subtype": "standard",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_BLACK2",
-      "file": "wheels/wheel_standard_black2.json"
+      "file": "wheels/wheel_standard_black2.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_standard_classic",
@@ -1386,16 +2556,8 @@
       "subtype": "standard",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_CLASSIC",
-      "file": "wheels/wheel_standard_classic.json"
-    },
-    {
-      "ref": "wheel_standard_cylinder",
-      "name": "Cylinder Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "MobileCopilot",
-      "sku": "WHEEL_STANDARD_CYLINDER",
-      "file": "wheels/wheel_standard_cylinder.json"
+      "file": "wheels/wheel_standard_classic.json",
+      "origin": "legacy"
     },
     {
       "ref": "wheel_standard_grey",
@@ -1404,664 +2566,8 @@
       "subtype": "standard",
       "supplier": "MobileCopilot",
       "sku": "WHEEL_STANDARD_GREY",
-      "file": "wheels/wheel_standard_grey.json"
-    },
-    {
-      "ref": "wheel_swerve_mk4i",
-      "name": "Swerve Drive Specialties MK4i",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "Swerve Drive Specialties",
-      "sku": "MK4I-L2",
-      "file": "wheels/wheel_swerve_mk4i.json"
-    },
-    {
-      "ref": "wheel_tb3_wheel",
-      "name": "ROBOTIS TB3 Wheel",
-      "category": "wheel",
-      "subtype": "standard",
-      "supplier": "ROBOTIS",
-      "sku": "903-0256-000",
-      "file": "wheels/wheel_tb3_wheel.json"
-    },
-    {
-      "ref": "wheel_vex_omni_4in",
-      "name": "VEX 4in Omni",
-      "category": "wheel",
-      "subtype": "omni",
-      "supplier": "VEX Robotics",
-      "sku": "276-3526",
-      "file": "wheels/wheel_vex_omni_4in.json"
-    },
-    {
-      "ref": "world_agv_charging_dock",
-      "name": "AGV Charging Dock",
-      "category": "world",
-      "subtype": "infrastructure",
-      "supplier": "Generic",
-      "sku": "DOCK-STD",
-      "file": "infrastructure/world_agv_charging_dock.json"
-    },
-    {
-      "ref": "world_armchair",
-      "name": "Armchair",
-      "category": "world",
-      "subtype": "chair",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_ARMCHAIR",
-      "file": "world/home/world_armchair.json"
-    },
-    {
-      "ref": "world_bar_counter",
-      "name": "Bar Counter",
-      "category": "world",
-      "subtype": "counter",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_BAR_COUNTER",
-      "file": "world/restaurant/world_bar_counter.json"
-    },
-    {
-      "ref": "world_bed_double",
-      "name": "Double Bed",
-      "category": "world",
-      "subtype": "bed",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_BED_DOUBLE",
-      "file": "world/home/world_bed_double.json"
-    },
-    {
-      "ref": "world_bed_queen",
-      "name": "Queen Bed",
-      "category": "world",
-      "subtype": "bed",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_BED_QUEEN",
-      "file": "world/home/world_bed_queen.json"
-    },
-    {
-      "ref": "world_bed_single",
-      "name": "Single Bed",
-      "category": "world",
-      "subtype": "bed",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_BED_SINGLE",
-      "file": "world/home/world_bed_single.json"
-    },
-    {
-      "ref": "world_bedside_table_med",
-      "name": "Hospital Bedside Table",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Generic Medical",
-      "sku": "HBST-45",
-      "file": "world/eldercare/world_bedside_table_med.json"
-    },
-    {
-      "ref": "world_bookshelf",
-      "name": "Bookshelf (5-tier)",
-      "category": "world",
-      "subtype": "storage",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_BOOKSHELF",
-      "file": "world/home/world_bookshelf.json"
-    },
-    {
-      "ref": "world_cave_scenario",
-      "name": "Cave Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_CAVE_SCENARIO",
-      "file": "world/scenario/world_cave_scenario.json"
-    },
-    {
-      "ref": "world_chest_drawers",
-      "name": "Chest of Drawers",
-      "category": "world",
-      "subtype": "storage",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_CHEST_DRAWERS",
-      "file": "world/home/world_chest_drawers.json"
-    },
-    {
-      "ref": "world_coffee_table",
-      "name": "Coffee Table",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_COFFEE_TABLE",
-      "file": "world/home/world_coffee_table.json"
-    },
-    {
-      "ref": "world_column",
-      "name": "Support Column",
-      "category": "world",
-      "subtype": "column",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_COLUMN",
-      "file": "world/infrastructure/world_column.json"
-    },
-    {
-      "ref": "world_conveyor_section",
-      "name": "Conveyor Belt Section",
-      "category": "world",
-      "subtype": "conveyor",
-      "supplier": "Generic Conveyor",
-      "sku": "CONV-200",
-      "file": "world/factory/world_conveyor_section.json"
-    },
-    {
-      "ref": "world_custom_room_scenario",
-      "name": "Custom Room Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_CUSTOM_ROOM_SCENARIO",
-      "file": "world/scenario/world_custom_room_scenario.json"
-    },
-    {
-      "ref": "world_desk_home",
-      "name": "Home Office Desk",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DESK_HOME",
-      "file": "world/home/world_desk_home.json"
-    },
-    {
-      "ref": "world_dining_chair",
-      "name": "Dining Chair",
-      "category": "world",
-      "subtype": "chair",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DINING_CHAIR",
-      "file": "world/home/world_dining_chair.json"
-    },
-    {
-      "ref": "world_dining_table_4",
-      "name": "Dining Table (4-seat)",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DINING_TABLE_4",
-      "file": "world/home/world_dining_table_4.json"
-    },
-    {
-      "ref": "world_dining_table_6",
-      "name": "Dining Table (6-seat)",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DINING_TABLE_6",
-      "file": "world/home/world_dining_table_6.json"
-    },
-    {
-      "ref": "world_display_case",
-      "name": "Display Case",
-      "category": "world",
-      "subtype": "display",
-      "supplier": "Generic Commercial",
-      "sku": "DISP-120",
-      "file": "world/restaurant/world_display_case.json"
-    },
-    {
-      "ref": "world_door_interior",
-      "name": "Interior Door",
-      "category": "world",
-      "subtype": "door",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DOOR_INTERIOR",
-      "file": "world/home/world_door_interior.json"
-    },
-    {
-      "ref": "world_door_wide",
-      "name": "Wide Doorway",
-      "category": "world",
-      "subtype": "door",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_DOOR_WIDE",
-      "file": "world/home/world_door_wide.json"
-    },
-    {
-      "ref": "world_empty_arena",
-      "name": "Empty Arena Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_EMPTY_ARENA",
-      "file": "world/scenario/world_empty_arena.json"
-    },
-    {
-      "ref": "world_finals_qual_scenario",
-      "name": "Finals Qualification Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_FINALS_QUAL_SCENARIO",
-      "file": "world/scenario/world_finals_qual_scenario.json"
-    },
-    {
-      "ref": "world_fire_extinguisher",
-      "name": "Fire Extinguisher",
-      "category": "world",
-      "subtype": "safety",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_FIRE_EXTINGUISHER",
-      "file": "world/infrastructure/world_fire_extinguisher.json"
-    },
-    {
-      "ref": "world_forest_scenario",
-      "name": "Forest Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_FOREST_SCENARIO",
-      "file": "world/scenario/world_forest_scenario.json"
-    },
-    {
-      "ref": "world_fortress_scenario",
-      "name": "Fortress Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_FORTRESS_SCENARIO",
-      "file": "world/scenario/world_fortress_scenario.json"
-    },
-    {
-      "ref": "world_fridge",
-      "name": "Refrigerator",
-      "category": "world",
-      "subtype": "appliance",
-      "supplier": "Generic Appliance",
-      "sku": "FRIDGE-STD",
-      "file": "world/home/world_fridge.json"
-    },
-    {
-      "ref": "world_garden_scenario",
-      "name": "Garden Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_GARDEN_SCENARIO",
-      "file": "world/scenario/world_garden_scenario.json"
-    },
-    {
-      "ref": "world_harmonic_scenario",
-      "name": "Harmonic Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_HARMONIC_SCENARIO",
-      "file": "world/scenario/world_harmonic_scenario.json"
-    },
-    {
-      "ref": "world_hospital_bed",
-      "name": "Hospital Bed",
-      "category": "world",
-      "subtype": "bed",
-      "supplier": "Generic Medical",
-      "sku": "HBED-200",
-      "file": "world/eldercare/world_hospital_bed.json"
-    },
-    {
-      "ref": "world_industrial_shelf",
-      "name": "Industrial Shelving",
-      "category": "world",
-      "subtype": "storage",
-      "supplier": "Generic Industrial",
-      "sku": "IS-120",
-      "file": "world/factory/world_industrial_shelf.json"
-    },
-    {
-      "ref": "world_ionic_scenario",
-      "name": "Ionic Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_IONIC_SCENARIO",
-      "file": "world/scenario/world_ionic_scenario.json"
-    },
-    {
-      "ref": "world_island_scenario",
-      "name": "Island Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_ISLAND_SCENARIO",
-      "file": "world/scenario/world_island_scenario.json"
-    },
-    {
-      "ref": "world_iv_pole",
-      "name": "IV Pole",
-      "category": "world",
-      "subtype": "equipment",
-      "supplier": "Generic Medical",
-      "sku": "IVPOLE",
-      "file": "world/eldercare/world_iv_pole.json"
-    },
-    {
-      "ref": "world_kitchen_counter",
-      "name": "Kitchen Counter",
-      "category": "world",
-      "subtype": "counter",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_KITCHEN_COUNTER",
-      "file": "world/home/world_kitchen_counter.json"
-    },
-    {
-      "ref": "world_living_room_sample",
-      "name": "Living Room Sample Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_LIVING_ROOM_SAMPLE",
-      "file": "world/scenario/world_living_room_sample.json"
-    },
-    {
-      "ref": "world_machine_large",
-      "name": "Large Machine Tool",
-      "category": "world",
-      "subtype": "machine",
-      "supplier": "Generic Machine",
-      "sku": "CNC-LG",
-      "file": "world/factory/world_machine_large.json"
-    },
-    {
-      "ref": "world_machine_small",
-      "name": "Small CNC Machine",
-      "category": "world",
-      "subtype": "machine",
-      "supplier": "Generic Machine",
-      "sku": "CNC-SM",
-      "file": "world/factory/world_machine_small.json"
-    },
-    {
-      "ref": "world_medical_cart",
-      "name": "Medical/Supply Cart",
-      "category": "world",
-      "subtype": "cart",
-      "supplier": "Generic Medical",
-      "sku": "MCART-80",
-      "file": "world/eldercare/world_medical_cart.json"
-    },
-    {
-      "ref": "world_moon_scenario",
-      "name": "Moon Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_MOON_SCENARIO",
-      "file": "world/scenario/world_moon_scenario.json"
-    },
-    {
-      "ref": "world_nightstand",
-      "name": "Nightstand",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_NIGHTSTAND",
-      "file": "world/home/world_nightstand.json"
-    },
-    {
-      "ref": "world_nurse_station",
-      "name": "Nurse Station Counter",
-      "category": "world",
-      "subtype": "counter",
-      "supplier": "Generic Medical",
-      "sku": "NSTATION-300",
-      "file": "world/eldercare/world_nurse_station.json"
-    },
-    {
-      "ref": "world_pallet_eur",
-      "name": "EUR Pallet",
-      "category": "world",
-      "subtype": "pallet",
-      "supplier": "EPAL",
-      "sku": "EUR-PALLET",
-      "file": "world/warehouse/world_pallet_eur.json"
-    },
-    {
-      "ref": "world_pallet_loaded",
-      "name": "Loaded Pallet",
-      "category": "world",
-      "subtype": "pallet",
-      "supplier": "EPAL",
-      "sku": "EUR-PALLET-LOADED",
-      "file": "world/warehouse/world_pallet_loaded.json"
-    },
-    {
-      "ref": "world_pallet_rack_2m",
-      "name": "Pallet Rack (2m)",
-      "category": "world",
-      "subtype": "rack",
-      "supplier": "Generic Racking",
-      "sku": "RACK-270-200",
-      "file": "world/warehouse/world_pallet_rack_2m.json"
-    },
-    {
-      "ref": "world_pallet_rack_4m",
-      "name": "Pallet Rack (4m)",
-      "category": "world",
-      "subtype": "rack",
-      "supplier": "Generic Racking",
-      "sku": "RACK-270-400",
-      "file": "world/warehouse/world_pallet_rack_4m.json"
-    },
-    {
-      "ref": "world_planter",
-      "name": "Indoor Planter",
-      "category": "world",
-      "subtype": "obstacle",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_PLANTER",
-      "file": "world/infrastructure/world_planter.json"
-    },
-    {
-      "ref": "world_ramp_section",
-      "name": "Ramp Section",
-      "category": "world",
-      "subtype": "ramp",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_RAMP_SECTION",
-      "file": "world/infrastructure/world_ramp_section.json"
-    },
-    {
-      "ref": "world_restaurant_table_2",
-      "name": "Bistro Table (2-seat)",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_RESTAURANT_TABLE_2",
-      "file": "world/restaurant/world_restaurant_table_2.json"
-    },
-    {
-      "ref": "world_restaurant_table_4",
-      "name": "Restaurant Table (4-seat)",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_RESTAURANT_TABLE_4",
-      "file": "world/restaurant/world_restaurant_table_4.json"
-    },
-    {
-      "ref": "world_rubicon_scenario",
-      "name": "Rubicon Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_RUBICON_SCENARIO",
-      "file": "world/scenario/world_rubicon_scenario.json"
-    },
-    {
-      "ref": "world_safety_barrier",
-      "name": "Safety Barrier",
-      "category": "world",
-      "subtype": "barrier",
-      "supplier": "Generic Safety",
-      "sku": "BARRIER-150",
-      "file": "world/factory/world_safety_barrier.json"
-    },
-    {
-      "ref": "world_serving_station",
-      "name": "Serving Station",
-      "category": "world",
-      "subtype": "counter",
-      "supplier": "Generic Commercial",
-      "sku": "SERV-150",
-      "file": "world/restaurant/world_serving_station.json"
-    },
-    {
-      "ref": "world_shipping_container",
-      "name": "Shipping Container (20ft)",
-      "category": "world",
-      "subtype": "container",
-      "supplier": "ISO Standard",
-      "sku": "20FT-CONTAINER",
-      "file": "world/warehouse/world_shipping_container.json"
-    },
-    {
-      "ref": "world_side_table",
-      "name": "Side Table",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_SIDE_TABLE",
-      "file": "world/home/world_side_table.json"
-    },
-    {
-      "ref": "world_sofa_2seat",
-      "name": "2-Seat Sofa",
-      "category": "world",
-      "subtype": "sofa",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_SOFA_2SEAT",
-      "file": "world/home/world_sofa_2seat.json"
-    },
-    {
-      "ref": "world_sofa_3seat",
-      "name": "3-Seat Sofa",
-      "category": "world",
-      "subtype": "sofa",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_SOFA_3SEAT",
-      "file": "world/home/world_sofa_3seat.json"
-    },
-    {
-      "ref": "world_storage_bin_large",
-      "name": "Storage Bin (Large)",
-      "category": "world",
-      "subtype": "bin",
-      "supplier": "Generic",
-      "sku": "BIN-LG",
-      "file": "world/warehouse/world_storage_bin_large.json"
-    },
-    {
-      "ref": "world_storage_bin_small",
-      "name": "Storage Bin (Small)",
-      "category": "world",
-      "subtype": "bin",
-      "supplier": "Generic",
-      "sku": "BIN-SM",
-      "file": "world/warehouse/world_storage_bin_small.json"
-    },
-    {
-      "ref": "world_tool_cabinet",
-      "name": "Tool Cabinet",
-      "category": "world",
-      "subtype": "storage",
-      "supplier": "Generic Industrial",
-      "sku": "TC-70",
-      "file": "world/factory/world_tool_cabinet.json"
-    },
-    {
-      "ref": "world_traffic_cone",
-      "name": "Traffic Cone (Standard)",
-      "category": "world",
-      "subtype": "obstacle",
-      "supplier": "Generic",
-      "sku": "CONE-28IN",
-      "file": "infrastructure/world_traffic_cone.json"
-    },
-    {
-      "ref": "world_trash_bin",
-      "name": "Trash Bin",
-      "category": "world",
-      "subtype": "obstacle",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_TRASH_BIN",
-      "file": "world/infrastructure/world_trash_bin.json"
-    },
-    {
-      "ref": "world_walker",
-      "name": "Walker/Rollator",
-      "category": "world",
-      "subtype": "mobility",
-      "supplier": "Generic Medical",
-      "sku": "WALK-STD",
-      "file": "world/eldercare/world_walker.json"
-    },
-    {
-      "ref": "world_wall_3m",
-      "name": "Wall Segment (3m)",
-      "category": "world",
-      "subtype": "wall",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_WALL_3M",
-      "file": "world/infrastructure/world_wall_3m.json"
-    },
-    {
-      "ref": "world_wall_5m",
-      "name": "Wall Segment (5m)",
-      "category": "world",
-      "subtype": "wall",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_WALL_5M",
-      "file": "world/infrastructure/world_wall_5m.json"
-    },
-    {
-      "ref": "world_wardrobe",
-      "name": "Wardrobe",
-      "category": "world",
-      "subtype": "storage",
-      "supplier": "Standard/Generic",
-      "sku": "WORLD_WARDROBE",
-      "file": "world/home/world_wardrobe.json"
-    },
-    {
-      "ref": "world_warehouse_nav_map",
-      "name": "Warehouse Navigation Map",
-      "category": "world",
-      "subtype": "map",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD-WAREHOUSE-NAV-MAP",
-      "file": "world/maps/world_warehouse_nav_map.json"
-    },
-    {
-      "ref": "world_warehouse_sample",
-      "name": "Warehouse Sample Scenario",
-      "category": "world",
-      "subtype": "scenario",
-      "supplier": "MobileCopilot",
-      "sku": "WORLD_WAREHOUSE_SAMPLE",
-      "file": "world/scenario/world_warehouse_sample.json"
-    },
-    {
-      "ref": "world_wheelchair",
-      "name": "Wheelchair (parked)",
-      "category": "world",
-      "subtype": "mobility",
-      "supplier": "Generic Medical",
-      "sku": "WC-STD",
-      "file": "world/eldercare/world_wheelchair.json"
-    },
-    {
-      "ref": "world_workbench",
-      "name": "Industrial Workbench",
-      "category": "world",
-      "subtype": "table",
-      "supplier": "Generic Industrial",
-      "sku": "WB-150",
-      "file": "world/factory/world_workbench.json"
+      "file": "wheels/wheel_standard_grey.json",
+      "origin": "legacy"
     }
   ]
 }

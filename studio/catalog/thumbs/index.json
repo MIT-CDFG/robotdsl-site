@@ -1,2497 +1,855 @@
 {
- "generated": "2026-09-19",
- "generator": "tools/render_component_thumbnails.py",
- "atlas": "atlas.webp",
- "spins": "spins",
- "cell": 144,
- "columns": 16,
- "rows": 15,
- "count": 229,
- "frames": 16,
- "parts": {
-  "attach_arm_assieme_arm": {
-   "i": 0,
-   "spin": true,
-   "proxy": false,
-   "mass": 1.75,
-   "dims": [
-    0.1,
-    0.1,
-    0.35
-   ]
-  },
-  "attach_arm_nova": {
-   "i": 1,
-   "spin": true,
-   "proxy": false,
-   "mass": 1.75,
-   "dims": [
-    0.1,
-    0.1,
-    0.35
-   ]
-  },
-  "attach_dhrobotics_ag95": {
-   "i": 2,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.73,
-   "dims": [
-    0.099,
-    0.062,
-    0.12
-   ]
-  },
-  "attach_dobot_cr5": {
-   "i": 3,
-   "spin": false,
-   "proxy": true,
-   "mass": 23.5,
-   "dims": [
-    0.16,
-    0.16,
-    0.9
-   ]
-  },
-  "attach_electronics_arduino_uno": {
-   "i": 4,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.07,
-    0.05,
-    0.02
-   ]
-  },
-  "attach_electronics_hc05": {
-   "i": 5,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.04,
-    0.025,
-    0.012
-   ]
-  },
-  "attach_electronics_motor_driver": {
-   "i": 6,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.02,
-   "dims": [
-    0.04,
-    0.025,
-    0.012
-   ]
-  },
-  "attach_franka_panda": {
-   "i": 7,
-   "spin": false,
-   "proxy": true,
-   "mass": 18.0,
-   "dims": [
-    0.14,
-    0.14,
-    0.855
-   ]
-  },
-  "attach_interbotix_px100": {
-   "i": 8,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.536
-  },
-  "attach_interbotix_wx200": {
-   "i": 9,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.164
-  },
-  "attach_interbotix_wx250s": {
-   "i": 10,
-   "spin": false,
-   "proxy": true,
-   "mass": 2.0
-  },
-  "attach_kinova_gen3lite": {
-   "i": 11,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.2
-  },
-  "attach_onrobot_rg2": {
-   "i": 12,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.65
-  },
-  "attach_payload_plate": {
-   "i": 13,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.4,
-   "dims": [
-    0.3,
-    0.25,
-    0.005
-   ]
-  },
-  "attach_robotiq_2f140": {
-   "i": 14,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0
-  },
-  "attach_robotiq_2f85": {
-   "i": 15,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.9
-  },
-  "attach_schunk_egk40": {
-   "i": 16,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.55,
-   "dims": [
-    0.08,
-    0.05,
-    0.035
-   ]
-  },
-  "attach_schunk_egp40": {
-   "i": 17,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.41,
-   "dims": [
-    0.07,
-    0.042,
-    0.03
-   ]
-  },
-  "attach_soft_robotics_mgrip": {
-   "i": 18,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.28,
-   "dims": [
-    0.1,
-    0.1,
-    0.075
-   ]
-  },
-  "attach_tray_delivery_lg": {
-   "i": 19,
-   "spin": false,
-   "proxy": true,
-   "mass": 4.5,
-   "dims": [
-    0.6,
-    0.4,
-    0.6
-   ]
-  },
-  "attach_tray_large": {
-   "i": 20,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.7,
-   "dims": [
-    0.4,
-    0.3,
-    0.03
-   ]
-  },
-  "attach_tray_small": {
-   "i": 21,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.35,
-   "dims": [
-    0.25,
-    0.2,
-    0.025
-   ]
-  },
-  "attach_ur5e": {
-   "i": 22,
-   "spin": false,
-   "proxy": true,
-   "mass": 20.6,
-   "dims": [
-    0.16,
-    0.16,
-    0.85
-   ]
-  },
-  "attach_xarm6": {
-   "i": 23,
-   "spin": false,
-   "proxy": true,
-   "mass": 12.2,
-   "dims": [
-    0.126,
-    0.126,
-    0.7
-   ]
-  },
-  "chassis_ack_f1tenth": {
-   "i": 24,
-   "spin": false,
-   "proxy": true,
-   "mass": 3.5,
-   "dims": [
-    0.5,
-    0.28,
-    0.18
-   ]
-  },
-  "chassis_ackermann_fener": {
-   "i": 25,
-   "spin": true,
-   "proxy": false,
-   "mass": 1.1848,
-   "dims": [
-    0.258,
-    0.508,
-    0.113
-   ]
-  },
-  "chassis_agilex_ranger_mini2": {
-   "i": 26,
-   "spin": false,
-   "proxy": true,
-   "mass": 62.0,
-   "dims": [
-    0.74,
-    0.56,
-    0.38
-   ]
-  },
-  "chassis_clearpath_husky": {
-   "i": 27,
-   "spin": false,
-   "proxy": true,
-   "mass": 50.0,
-   "dims": [
-    0.99,
-    0.67,
-    0.39
-   ]
-  },
-  "chassis_clearpath_jackal": {
-   "i": 28,
-   "spin": false,
-   "proxy": true,
-   "mass": 17.0,
-   "dims": [
-    0.508,
-    0.43,
-    0.25
-   ]
-  },
-  "chassis_dd_create3": {
-   "i": 29,
-   "spin": false,
-   "proxy": true,
-   "mass": 3.2,
-   "dims": [
-    0.34,
-    0.34,
-    0.072
-   ]
-  },
-  "chassis_dd_pololu_romi": {
-   "i": 30,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.35,
-   "dims": [
-    0.165,
-    0.145,
-    0.07
-   ]
-  },
-  "chassis_dd_turtlebot4": {
-   "i": 31,
-   "spin": false,
-   "proxy": true,
-   "mass": 3.17,
-   "dims": [
-    0.342,
-    0.339,
-    0.192
-   ]
-  },
-  "chassis_diff_drive_2w_base": {
-   "i": 32,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.2,
-    0.2,
-    0.114
-   ]
-  },
-  "chassis_diff_drive_2w_grey2": {
-   "i": 33,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.2,
-    0.2,
-    0.096
-   ]
-  },
-  "chassis_diff_drive_2w_nema": {
-   "i": 34,
-   "spin": true,
-   "proxy": false,
-   "mass": 2.4558,
-   "dims": [
-    0.408,
-    0.418,
-    0.18
-   ]
-  },
-  "chassis_diff_drive_4w_black": {
-   "i": 35,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.262,
-    0.312,
-    0.086
-   ]
-  },
-  "chassis_diff_drive_4w_blue": {
-   "i": 36,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.202,
-    0.28,
-    0.102
-   ]
-  },
-  "chassis_diff_drive_4w_box": {
-   "i": 37,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.236,
-    0.308,
-    0.06
-   ]
-  },
-  "chassis_diff_drive_4w_red": {
-   "i": 38,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.2,
-    0.272,
-    0.06
-   ]
-  },
-  "chassis_hunter_se": {
-   "i": 39,
-   "spin": false,
-   "proxy": true,
-   "mass": 35.0,
-   "dims": [
-    0.93,
-    0.7,
-    0.31
-   ]
-  },
-  "chassis_mecanum_4w_assieme_drone2": {
-   "i": 40,
-   "spin": true,
-   "proxy": false,
-   "mass": 1.6575,
-   "dims": [
-    0.376,
-    0.336,
-    0.164
-   ]
-  },
-  "chassis_mecanum_4w_box": {
-   "i": 41,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.0,
-   "dims": [
-    0.236,
-    0.308,
-    0.06
-   ]
-  },
-  "chassis_mecanum_4w_grey": {
-   "i": 42,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.284,
-    0.33,
-    0.062
-   ]
-  },
-  "chassis_mecanum_4w_red": {
-   "i": 43,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.2,
-    0.272,
-    0.086
-   ]
-  },
-  "chassis_mecanum_4w_red2": {
-   "i": 44,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.2,
-   "dims": [
-    0.15,
-    0.25,
-    0.05
-   ]
-  },
-  "chassis_mecanum_4w_silver2": {
-   "i": 45,
-   "spin": true,
-   "proxy": false,
-   "mass": 5.0,
-   "dims": [
-    0.236,
-    0.308,
-    0.09
-   ]
-  },
-  "chassis_mir250": {
-   "i": 46,
-   "spin": false,
-   "proxy": true,
-   "mass": 70.0,
-   "dims": [
-    0.8,
-    0.58,
-    0.3
-   ]
-  },
-  "chassis_nexus_mec_lg": {
-   "i": 47,
-   "spin": false,
-   "proxy": true,
-   "mass": 6.5,
-   "dims": [
-    0.5,
-    0.45,
-    0.15
-   ]
-  },
-  "chassis_nexus_mec_sm": {
-   "i": 48,
-   "spin": false,
-   "proxy": true,
-   "mass": 4.2,
-   "dims": [
-    0.4,
-    0.38,
-    0.12
-   ]
-  },
-  "chassis_omni_3w_blue": {
-   "i": 49,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.238,
-    0.262,
-    0.094
-   ]
-  },
-  "chassis_omni_3w_classic": {
-   "i": 50,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.292,
-    0.326,
-    0.06
-   ]
-  },
-  "chassis_omni_3w_yellow": {
-   "i": 51,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.368,
-    0.344,
-    0.073
-   ]
-  },
-  "chassis_omni_4w_black": {
-   "i": 52,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.8289,
-   "dims": [
-    0.308,
-    0.378,
-    0.089
-   ]
-  },
-  "chassis_omni_4w_grey": {
-   "i": 53,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.284,
-    0.33,
-    0.062
-   ]
-  },
-  "chassis_omni_kaya": {
-   "i": 54,
-   "spin": false,
-   "proxy": true,
-   "mass": 2.5,
-   "dims": [
-    0.25,
-    0.25,
-    0.15
-   ]
-  },
-  "chassis_robotnik_rb1": {
-   "i": 55,
-   "spin": false,
-   "proxy": true,
-   "mass": 25.0,
-   "dims": [
-    0.5,
-    0.5,
-    0.383
-   ]
-  },
-  "chassis_scout_mini": {
-   "i": 56,
-   "spin": false,
-   "proxy": true,
-   "mass": 22.5,
-   "dims": [
-    0.612,
-    0.58,
-    0.245
-   ]
-  },
-  "chassis_steering_tricycle_desert": {
-   "i": 57,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.6,
-   "dims": [
-    0.23,
-    0.2,
-    0.075
-   ]
-  },
-  "chassis_tb3_burger": {
-   "i": 58,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.138,
-    0.178,
-    0.192
-   ]
-  },
-  "chassis_tb3_waffle": {
-   "i": 59,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.8,
-   "dims": [
-    0.281,
-    0.306,
-    0.141
-   ]
-  },
-  "chassis_tricycle_red": {
-   "i": 60,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    0.222,
-    0.304,
-    0.06
-   ]
-  },
-  "motor_dynamixel_xm430": {
-   "i": 61,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.082,
-   "dims": [
-    0.0286,
-    0.0346,
-    0.0286
-   ]
-  },
-  "motor_dynamixel_xm540": {
-   "i": 62,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.165,
-   "dims": [
-    0.0336,
-    0.044,
-    0.0336
-   ]
-  },
-  "motor_faulhaber_2057": {
-   "i": 63,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.06,
-   "dims": [
-    0.02,
-    0.02,
-    0.057
-   ]
-  },
-  "motor_maxon_ec45_flat": {
-   "i": 64,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.11,
-   "dims": [
-    0.045,
-    0.045,
-    0.022
-   ]
-  },
-  "motor_maxon_ec90_flat": {
-   "i": 65,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.6,
-   "dims": [
-    0.09,
-    0.09,
-    0.026
-   ]
-  },
-  "motor_maxon_ec_i40": {
-   "i": 66,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.26,
-   "dims": [
-    0.04,
-    0.04,
-    0.084
-   ]
-  },
-  "motor_maxon_gp42c": {
-   "i": 67,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.34,
-   "dims": [
-    0.042,
-    0.042,
-    0.071
-   ]
-  },
-  "motor_nema17_42byghw804": {
-   "i": 68,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.28,
-   "dims": [
-    0.042,
-    0.042,
-    0.048
-   ]
-  },
-  "power_meanwell_lrs350_24": {
-   "i": 69,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.75,
-   "dims": [
-    0.215,
-    0.115,
-    0.03
-   ]
-  },
-  "power_rev_slim": {
-   "i": 70,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.53,
-   "dims": [
-    0.135,
-    0.082,
-    0.048
-   ]
-  },
-  "power_tattu_24v_16ah": {
-   "i": 71,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.83,
-   "dims": [
-    0.189,
-    0.075,
-    0.067
-   ]
-  },
-  "power_tb3_lipo": {
-   "i": 72,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.14,
-   "dims": [
-    0.098,
-    0.035,
-    0.025
-   ]
-  },
-  "sens_arducam_imx477": {
-   "i": 73,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.015,
-   "dims": [
-    0.025,
-    0.024,
-    0.012
-   ]
-  },
-  "sens_arducam_ov9281": {
-   "i": 74,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.01,
-   "dims": [
-    0.022,
-    0.022,
-    0.01
-   ]
-  },
-  "sens_bno055": {
-   "i": 75,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.003,
-   "dims": [
-    0.02,
-    0.027,
-    0.004
-   ]
-  },
-  "sens_bno085": {
-   "i": 76,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.002,
-   "dims": [
-    0.005,
-    0.005,
-    0.002
-   ]
-  },
-  "sens_camera_box": {
-   "i": 77,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.05,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_camera_dcs950g": {
-   "i": 78,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0525,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_camera_imx390": {
-   "i": 79,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0525,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_flir_bfs": {
-   "i": 80,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.036,
-   "dims": [
-    0.029,
-    0.029,
-    0.03
-   ]
-  },
-  "sens_garmin_lidar_lite_v4": {
-   "i": 81,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.038,
-   "dims": [
-    0.044,
-    0.024,
-    0.021
-   ]
-  },
-  "sens_hcsr04": {
-   "i": 82,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.009,
-   "dims": [
-    0.045,
-    0.02,
-    0.015
-   ]
-  },
-  "sens_hokuyo_ust10lx": {
-   "i": 83,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.13,
-   "dims": [
-    0.05,
-    0.05,
-    0.07
-   ]
-  },
-  "sens_hokuyo_utm30lx": {
-   "i": 84,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.21,
-   "dims": [
-    0.06,
-    0.06,
-    0.087
-   ]
-  },
-  "sens_icm20948": {
-   "i": 85,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.001,
-   "dims": [
-    0.003,
-    0.003,
-    0.001
-   ]
-  },
-  "sens_imu_basic": {
-   "i": 86,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.05,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_imu_box": {
-   "i": 87,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.05,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_imu_grey": {
-   "i": 88,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0525,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_imu_gy87": {
-   "i": 89,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0525,
-   "dims": [
-    0.05,
-    0.05,
-    0.03
-   ]
-  },
-  "sens_imu_sphere": {
-   "i": 90,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.05,
-   "dims": [
-    0.06,
-    0.06,
-    0.06
-   ]
-  },
-  "sens_lidar_basic": {
-   "i": 91,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.15,
-   "dims": [
-    0.08,
-    0.08,
-    0.06
-   ]
-  },
-  "sens_lidar_box": {
-   "i": 92,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.15,
-   "dims": [
-    0.08,
-    0.08,
-    0.06
-   ]
-  },
-  "sens_lidar_cylinder": {
-   "i": 93,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.15,
-   "dims": [
-    0.16,
-    0.16,
-    0.06
-   ]
-  },
-  "sens_lidar_ld06": {
-   "i": 94,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.1407,
-   "dims": [
-    0.08,
-    0.08,
-    0.04
-   ]
-  },
-  "sens_lidar_yellow": {
-   "i": 95,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.1407,
-   "dims": [
-    0.08,
-    0.08,
-    0.04
-   ]
-  },
-  "sens_livox_hap": {
-   "i": 96,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.52,
-   "dims": [
-    0.096,
-    0.078,
-    0.06
-   ]
-  },
-  "sens_livox_mid360": {
-   "i": 97,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.265,
-   "dims": [
-    0.098,
-    0.098,
-    0.077
-   ]
-  },
-  "sens_logitech_c920": {
-   "i": 98,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.162,
-   "dims": [
-    0.094,
-    0.029,
-    0.029
-   ]
-  },
-  "sens_logitech_c930e": {
-   "i": 99,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.162,
-   "dims": [
-    0.094,
-    0.043,
-    0.029
-   ]
-  },
-  "sens_maxbotix_mb1240": {
-   "i": 100,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.016,
-   "dims": [
-    0.022,
-    0.022,
-    0.02
-   ]
-  },
-  "sens_microstrain_3dm_gx5": {
-   "i": 101,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.018,
-   "dims": [
-    0.0364,
-    0.0364,
-    0.0241
-   ]
-  },
-  "sens_oakd_pro": {
-   "i": 102,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.061,
-   "dims": [
-    0.108,
-    0.028,
-    0.025
-   ]
-  },
-  "sens_orbbec_femto_bolt": {
-   "i": 103,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.31,
-   "dims": [
-    0.126,
-    0.036,
-    0.041
-   ]
-  },
-  "sens_ouster_os1_32": {
-   "i": 104,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.447,
-   "dims": [
-    0.0855,
-    0.0855,
-    0.0735
-   ]
-  },
-  "sens_realsense_d435": {
-   "i": 105,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.072,
-   "dims": [
-    0.09,
-    0.025,
-    0.025
-   ]
-  },
-  "sens_realsense_d435i": {
-   "i": 106,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.072,
-   "dims": [
-    0.09,
-    0.025,
-    0.025
-   ]
-  },
-  "sens_realsense_d455": {
-   "i": 107,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.12,
-   "dims": [
-    0.124,
-    0.029,
-    0.026
-   ]
-  },
-  "sens_rev_thru_bore": {
-   "i": 108,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.045,
-   "dims": [
-    0.04,
-    0.04,
-    0.02
-   ]
-  },
-  "sens_rplidar_a1": {
-   "i": 109,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.105,
-   "dims": [
-    0.07,
-    0.07,
-    0.041
-   ]
-  },
-  "sens_rplidar_a2m12": {
-   "i": 110,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.105,
-   "dims": [
-    0.076,
-    0.076,
-    0.041
-   ]
-  },
-  "sens_rplidar_c1": {
-   "i": 111,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.105,
-   "dims": [
-    0.05,
-    0.05,
-    0.038
-   ]
-  },
-  "sens_rplidar_s2": {
-   "i": 112,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.185,
-   "dims": [
-    0.078,
-    0.078,
-    0.06
-   ]
-  },
-  "sens_sick_tim781": {
-   "i": 113,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.25,
-   "dims": [
-    0.06,
-    0.06,
-    0.086
-   ]
-  },
-  "sens_unitree_lidar_l1": {
-   "i": 114,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.055,
-   "dims": [
-    0.046,
-    0.046,
-    0.05
-   ]
-  },
-  "sens_velodyne_vlp16": {
-   "i": 115,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.83,
-   "dims": [
-    0.1033,
-    0.1033,
-    0.0717
-   ]
-  },
-  "sens_zed2i": {
-   "i": 116,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.165,
-   "dims": [
-    0.175,
-    0.03,
-    0.033
-   ]
-  },
-  "wheel_andymark_6in": {
-   "i": 117,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.2,
-   "dims": [
-    0.152,
-    0.152,
-    0.038
-   ]
-  },
-  "wheel_andymark_mec_4in": {
-   "i": 118,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.28,
-   "dims": [
-    0.102,
-    0.102,
-    0.044
-   ]
-  },
-  "wheel_andymark_mec_6in": {
-   "i": 119,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.485,
-   "dims": [
-    0.1524,
-    0.1524,
-    0.055
-   ]
-  },
-  "wheel_banebots_t81": {
-   "i": 120,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.17,
-   "dims": [
-    0.1016,
-    0.1016,
-    0.04
-   ]
-  },
-  "wheel_caster_ball_classic": {
-   "i": 121,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.014,
-    0.014,
-    0.014
-   ]
-  },
-  "wheel_caster_sphere": {
-   "i": 122,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.03,
-   "dims": [
-    0.048,
-    0.048,
-    0.048
-   ]
-  },
-  "wheel_clearpath_husky": {
-   "i": 123,
-   "spin": false,
-   "proxy": true,
-   "mass": 2.5,
-   "dims": [
-    0.3302,
-    0.3302,
-    0.065
-   ]
-  },
-  "wheel_dagu_65mm": {
-   "i": 124,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.025,
-   "dims": [
-    0.065,
-    0.065,
-    0.026
-   ]
-  },
-  "wheel_f1tenth_wheel": {
-   "i": 125,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.06,
-   "dims": [
-    0.11,
-    0.11,
-    0.026
-   ]
-  },
-  "wheel_gobilda_96mm": {
-   "i": 126,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.215,
-   "dims": [
-    0.096,
-    0.096,
-    0.042
-   ]
-  },
-  "wheel_hangfa_mec_100": {
-   "i": 127,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.7,
-   "dims": [
-    0.1,
-    0.1,
-    0.045
-   ]
-  },
-  "wheel_hangfa_mec_203": {
-   "i": 128,
-   "spin": false,
-   "proxy": true,
-   "mass": 3.2,
-   "dims": [
-    0.203,
-    0.203,
-    0.058
-   ]
-  },
-  "wheel_mecanum_classic": {
-   "i": 129,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0982,
-   "dims": [
-    0.1,
-    0.1,
-    0.05
-   ]
-  },
-  "wheel_mecanum_cylinder": {
-   "i": 130,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.0982,
-   "dims": [
-    0.1,
-    0.1,
-    0.05
-   ]
-  },
-  "wheel_mecanum_first": {
-   "i": 131,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0402,
-   "dims": [
-    0.08,
-    0.08,
-    0.032
-   ]
-  },
-  "wheel_mecanum_green": {
-   "i": 132,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.06,
-    0.06,
-    0.032
-   ]
-  },
-  "wheel_mecanum_red_black": {
-   "i": 133,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0337,
-   "dims": [
-    0.07,
-    0.07,
-    0.035
-   ]
-  },
-  "wheel_mecanum_yellow": {
-   "i": 134,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0982,
-   "dims": [
-    0.1,
-    0.1,
-    0.05
-   ]
-  },
-  "wheel_nexus_mec_100": {
-   "i": 135,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.2,
-   "dims": [
-    0.1,
-    0.1,
-    0.048
-   ]
-  },
-  "wheel_nexus_mec_152": {
-   "i": 136,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.45,
-   "dims": [
-    0.152,
-    0.152,
-    0.06
-   ]
-  },
-  "wheel_nexus_mec_48": {
-   "i": 137,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.08,
-   "dims": [
-    0.048,
-    0.048,
-    0.035
-   ]
-  },
-  "wheel_omni_blue": {
-   "i": 138,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0494,
-   "dims": [
-    0.134,
-    0.134,
-    0.014
-   ]
-  },
-  "wheel_omni_classic_5": {
-   "i": 139,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.06,
-    0.06,
-    0.03
-   ]
-  },
-  "wheel_omni_cylinder": {
-   "i": 140,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.1257,
-   "dims": [
-    0.08,
-    0.08,
-    0.1
-   ]
-  },
-  "wheel_omni_vexpro_4in": {
-   "i": 141,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.0513,
-   "dims": [
-    0.1002,
-    0.1002,
-    0.026
-   ]
-  },
-  "wheel_pololu_70x8": {
-   "i": 142,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.03,
-   "dims": [
-    0.07,
-    0.07,
-    0.008
-   ]
-  },
-  "wheel_pololu_80x10": {
-   "i": 143,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.04,
-   "dims": [
-    0.08,
-    0.08,
-    0.01
-   ]
-  },
-  "wheel_pololu_90x10": {
-   "i": 144,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.045,
-   "dims": [
-    0.09,
-    0.09,
-    0.01
-   ]
-  },
-  "wheel_pololu_caster_1in": {
-   "i": 145,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.02,
-   "dims": [
-    0.0254,
-    0.0254,
-    0.015
-   ]
-  },
-  "wheel_pololu_caster_3_4": {
-   "i": 146,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.01,
-   "dims": [
-    0.019,
-    0.019,
-    0.01
-   ]
-  },
-  "wheel_rev_hdt_3in": {
-   "i": 147,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.07,
-   "dims": [
-    0.0762,
-    0.0762,
-    0.032
-   ]
-  },
-  "wheel_rotacaster_125mm": {
-   "i": 148,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.46,
-   "dims": [
-    0.125,
-    0.125,
-    0.058
-   ]
-  },
-  "wheel_rotacaster_50mm": {
-   "i": 149,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.06,
-   "dims": [
-    0.05,
-    0.05,
-    0.025
-   ]
-  },
-  "wheel_scout_mini_wheel": {
-   "i": 150,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.8,
-   "dims": [
-    0.17,
-    0.17,
-    0.06
-   ]
-  },
-  "wheel_standard_black": {
-   "i": 151,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.07,
-    0.07,
-    0.024
-   ]
-  },
-  "wheel_standard_black2": {
-   "i": 152,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.024,
-    0.024,
-    0.012
-   ]
-  },
-  "wheel_standard_classic": {
-   "i": 153,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.07,
-    0.07,
-    0.03
-   ]
-  },
-  "wheel_standard_cylinder": {
-   "i": 154,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.0982,
-   "dims": [
-    0.1,
-    0.1,
-    0.05
-   ]
-  },
-  "wheel_standard_grey": {
-   "i": 155,
-   "spin": true,
-   "proxy": false,
-   "mass": 0.03,
-   "dims": [
-    0.048,
-    0.048,
-    0.048
-   ]
-  },
-  "wheel_swerve_mk4i": {
-   "i": 156,
-   "spin": false,
-   "proxy": true,
-   "mass": 2.9,
-   "dims": [
-    0.1016,
-    0.1016,
-    0.038
-   ]
-  },
-  "wheel_tb3_wheel": {
-   "i": 157,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.028,
-   "dims": [
-    0.066,
-    0.066,
-    0.015
-   ]
-  },
-  "wheel_vex_omni_4in": {
-   "i": 158,
-   "spin": false,
-   "proxy": true,
-   "mass": 0.15,
-   "dims": [
-    0.102,
-    0.102,
-    0.03
-   ]
-  },
-  "world_agv_charging_dock": {
-   "i": 159,
-   "spin": false,
-   "proxy": true,
-   "mass": 15.0,
-   "dims": [
-    0.6,
-    0.4,
-    0.15
-   ]
-  },
-  "world_armchair": {
-   "i": 160,
-   "spin": false,
-   "proxy": true,
-   "mass": 15.0,
-   "dims": [
-    0.89,
-    0.84,
-    0.86
-   ]
-  },
-  "world_bar_counter": {
-   "i": 161,
-   "spin": false,
-   "proxy": true,
-   "mass": 60.0,
-   "dims": [
-    2.5,
-    0.6,
-    1.1
-   ]
-  },
-  "world_bed_double": {
-   "i": 162,
-   "spin": false,
-   "proxy": true,
-   "mass": 35.0,
-   "dims": [
-    1.9,
-    1.4,
-    0.5
-   ]
-  },
-  "world_bed_queen": {
-   "i": 163,
-   "spin": false,
-   "proxy": true,
-   "mass": 40.0,
-   "dims": [
-    2.0,
-    1.5,
-    0.5
-   ]
-  },
-  "world_bed_single": {
-   "i": 164,
-   "spin": false,
-   "proxy": true,
-   "mass": 25.0,
-   "dims": [
-    1.9,
-    0.9,
-    0.5
-   ]
-  },
-  "world_bedside_table_med": {
-   "i": 165,
-   "spin": false,
-   "proxy": true,
-   "mass": 10.0,
-   "dims": [
-    0.45,
-    0.4,
-    0.75
-   ]
-  },
-  "world_bookshelf": {
-   "i": 166,
-   "spin": false,
-   "proxy": true,
-   "mass": 20.0,
-   "dims": [
-    0.8,
-    0.3,
-    1.8
-   ]
-  },
-  "world_cave_scenario": {
-   "i": 167,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    120.0,
-    120.0,
-    0.02
-   ]
-  },
-  "world_chest_drawers": {
-   "i": 168,
-   "spin": false,
-   "proxy": true,
-   "mass": 25.0,
-   "dims": [
-    0.8,
-    0.5,
-    1.0
-   ]
-  },
-  "world_coffee_table": {
-   "i": 169,
-   "spin": false,
-   "proxy": true,
-   "mass": 12.0,
-   "dims": [
-    1.0,
-    0.5,
-    0.45
-   ]
-  },
-  "world_column": {
-   "i": 170,
-   "spin": false,
-   "proxy": true,
-   "mass": 200.0,
-   "dims": [
-    0.3,
-    0.3,
-    3.0
-   ]
-  },
-  "world_conveyor_section": {
-   "i": 171,
-   "spin": false,
-   "proxy": true,
-   "mass": 50.0,
-   "dims": [
-    2.0,
-    0.6,
-    0.8
-   ]
-  },
-  "world_custom_room_scenario": {
-   "i": 172,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    10.0,
-    10.0,
-    0.02
-   ]
-  },
-  "world_desk_home": {
-   "i": 173,
-   "spin": false,
-   "proxy": true,
-   "mass": 18.0,
-   "dims": [
-    1.2,
-    0.6,
-    0.76
-   ]
-  },
-  "world_dining_chair": {
-   "i": 174,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.0,
-   "dims": [
-    0.42,
-    0.42,
-    0.86
-   ]
-  },
-  "world_dining_table_4": {
-   "i": 175,
-   "spin": false,
-   "proxy": true,
-   "mass": 25.0,
-   "dims": [
-    1.2,
-    0.8,
-    0.76
-   ]
-  },
-  "world_dining_table_6": {
-   "i": 176,
-   "spin": false,
-   "proxy": true,
-   "mass": 35.0,
-   "dims": [
-    1.8,
-    0.9,
-    0.76
-   ]
-  },
-  "world_display_case": {
-   "i": 177,
-   "spin": false,
-   "proxy": true,
-   "mass": 40.0,
-   "dims": [
-    1.2,
-    0.6,
-    1.2
-   ]
-  },
-  "world_door_interior": {
-   "i": 178,
-   "spin": false,
-   "proxy": true,
-   "mass": 15.0,
-   "dims": [
-    0.8,
-    0.04,
-    2.0
-   ]
-  },
-  "world_door_wide": {
-   "i": 179,
-   "spin": false,
-   "proxy": true,
-   "mass": 16.0,
-   "dims": [
-    0.9,
-    0.04,
-    2.0
-   ]
-  },
-  "world_empty_arena": {
-   "i": 180,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    8.0,
-    8.0,
-    0.02
-   ]
-  },
-  "world_finals_qual_scenario": {
-   "i": 181,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    30.0,
-    18.0,
-    0.02
-   ]
-  },
-  "world_fire_extinguisher": {
-   "i": 182,
-   "spin": false,
-   "proxy": true,
-   "mass": 7.0,
-   "dims": [
-    0.2,
-    0.2,
-    0.5
-   ]
-  },
-  "world_forest_scenario": {
-   "i": 183,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    60.0,
-    60.0,
-    0.02
-   ]
-  },
-  "world_fortress_scenario": {
-   "i": 184,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    120.0,
-    120.0,
-    0.02
-   ]
-  },
-  "world_fridge": {
-   "i": 185,
-   "spin": false,
-   "proxy": true,
-   "mass": 70.0,
-   "dims": [
-    0.83,
-    0.86,
-    1.7
-   ]
-  },
-  "world_garden_scenario": {
-   "i": 186,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    40.0,
-    40.0,
-    0.02
-   ]
-  },
-  "world_harmonic_scenario": {
-   "i": 187,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    80.0,
-    80.0,
-    0.02
-   ]
-  },
-  "world_hospital_bed": {
-   "i": 188,
-   "spin": false,
-   "proxy": true,
-   "mass": 80.0,
-   "dims": [
-    2.0,
-    0.9,
-    0.6
-   ]
-  },
-  "world_industrial_shelf": {
-   "i": 189,
-   "spin": false,
-   "proxy": true,
-   "mass": 30.0,
-   "dims": [
-    1.2,
-    0.45,
-    2.0
-   ]
-  },
-  "world_ionic_scenario": {
-   "i": 190,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    80.0,
-    80.0,
-    0.02
-   ]
-  },
-  "world_island_scenario": {
-   "i": 191,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    100.0,
-    100.0,
-    0.02
-   ]
-  },
-  "world_iv_pole": {
-   "i": 192,
-   "spin": false,
-   "proxy": true,
-   "mass": 3.0,
-   "dims": [
-    0.4,
-    0.4,
-    1.8
-   ]
-  },
-  "world_kitchen_counter": {
-   "i": 193,
-   "spin": false,
-   "proxy": true,
-   "mass": 40.0,
-   "dims": [
-    2.0,
-    0.6,
-    0.9
-   ]
-  },
-  "world_living_room_sample": {
-   "i": 194,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    6.0,
-    5.0,
-    0.02
-   ]
-  },
-  "world_machine_large": {
-   "i": 195,
-   "spin": false,
-   "proxy": true,
-   "mass": 500.0,
-   "dims": [
-    2.0,
-    1.5,
-    1.8
-   ]
-  },
-  "world_machine_small": {
-   "i": 196,
-   "spin": false,
-   "proxy": true,
-   "mass": 200.0,
-   "dims": [
-    1.0,
-    0.8,
-    1.2
-   ]
-  },
-  "world_medical_cart": {
-   "i": 197,
-   "spin": false,
-   "proxy": true,
-   "mass": 20.0,
-   "dims": [
-    0.8,
-    0.5,
-    1.0
-   ]
-  },
-  "world_moon_scenario": {
-   "i": 198,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    200.0,
-    200.0,
-    0.02
-   ]
-  },
-  "world_nightstand": {
-   "i": 199,
-   "spin": false,
-   "proxy": true,
-   "mass": 8.0,
-   "dims": [
-    0.45,
-    0.4,
-    0.55
-   ]
-  },
-  "world_nurse_station": {
-   "i": 200,
-   "spin": false,
-   "proxy": true,
-   "mass": 80.0,
-   "dims": [
-    3.0,
-    0.7,
-    1.1
-   ]
-  },
-  "world_pallet_eur": {
-   "i": 201,
-   "spin": false,
-   "proxy": true,
-   "mass": 25.0,
-   "dims": [
-    1.2,
-    0.8,
-    0.144
-   ]
-  },
-  "world_pallet_loaded": {
-   "i": 202,
-   "spin": false,
-   "proxy": true,
-   "mass": 150.0,
-   "dims": [
-    1.2,
-    0.8,
-    1.2
-   ]
-  },
-  "world_pallet_rack_2m": {
-   "i": 203,
-   "spin": false,
-   "proxy": true,
-   "mass": 80.0,
-   "dims": [
-    2.7,
-    0.9,
-    2.0
-   ]
-  },
-  "world_pallet_rack_4m": {
-   "i": 204,
-   "spin": false,
-   "proxy": true,
-   "mass": 120.0,
-   "dims": [
-    2.7,
-    0.9,
-    4.0
-   ]
-  },
-  "world_planter": {
-   "i": 205,
-   "spin": false,
-   "proxy": true,
-   "mass": 20.0,
-   "dims": [
-    0.5,
-    0.5,
-    0.6
-   ]
-  },
-  "world_ramp_section": {
-   "i": 206,
-   "spin": false,
-   "proxy": true,
-   "mass": 100.0,
-   "dims": [
-    2.0,
-    1.2,
-    0.15
-   ]
-  },
-  "world_restaurant_table_2": {
-   "i": 207,
-   "spin": false,
-   "proxy": true,
-   "mass": 10.0,
-   "dims": [
-    0.6,
-    0.6,
-    0.76
-   ]
-  },
-  "world_restaurant_table_4": {
-   "i": 208,
-   "spin": false,
-   "proxy": true,
-   "mass": 18.0,
-   "dims": [
-    1.0,
-    0.8,
-    0.76
-   ]
-  },
-  "world_rubicon_scenario": {
-   "i": 209,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    120.0,
-    120.0,
-    0.02
-   ]
-  },
-  "world_safety_barrier": {
-   "i": 210,
-   "spin": false,
-   "proxy": true,
-   "mass": 8.0,
-   "dims": [
-    1.5,
-    0.05,
-    1.0
-   ]
-  },
-  "world_serving_station": {
-   "i": 211,
-   "spin": false,
-   "proxy": true,
-   "mass": 30.0,
-   "dims": [
-    1.5,
-    0.7,
-    0.9
-   ]
-  },
-  "world_shipping_container": {
-   "i": 212,
-   "spin": false,
-   "proxy": true,
-   "mass": 2200.0,
-   "dims": [
-    6.06,
-    2.44,
-    2.59
-   ]
-  },
-  "world_side_table": {
-   "i": 213,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.0,
-   "dims": [
-    0.5,
-    0.5,
-    0.55
-   ]
-  },
-  "world_sofa_2seat": {
-   "i": 214,
-   "spin": false,
-   "proxy": true,
-   "mass": 30.0,
-   "dims": [
-    1.68,
-    0.85,
-    0.84
-   ]
-  },
-  "world_sofa_3seat": {
-   "i": 215,
-   "spin": false,
-   "proxy": true,
-   "mass": 45.0,
-   "dims": [
-    2.74,
-    0.98,
-    0.68
-   ]
-  },
-  "world_storage_bin_large": {
-   "i": 216,
-   "spin": false,
-   "proxy": true,
-   "mass": 4.0,
-   "dims": [
-    0.6,
-    0.4,
-    0.3
-   ]
-  },
-  "world_storage_bin_small": {
-   "i": 217,
-   "spin": false,
-   "proxy": true,
-   "mass": 2.0,
-   "dims": [
-    0.4,
-    0.3,
-    0.2
-   ]
-  },
-  "world_tool_cabinet": {
-   "i": 218,
-   "spin": false,
-   "proxy": true,
-   "mass": 35.0,
-   "dims": [
-    0.7,
-    0.5,
-    1.0
-   ]
-  },
-  "world_traffic_cone": {
-   "i": 219,
-   "spin": false,
-   "proxy": true,
-   "mass": 4.5,
-   "dims": [
-    0.36,
-    0.36,
-    0.711
-   ]
-  },
-  "world_trash_bin": {
-   "i": 220,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.0,
-   "dims": [
-    0.4,
-    0.4,
-    0.7
-   ]
-  },
-  "world_walker": {
-   "i": 221,
-   "spin": false,
-   "proxy": true,
-   "mass": 5.0,
-   "dims": [
-    0.65,
-    0.55,
-    0.85
-   ]
-  },
-  "world_wall_3m": {
-   "i": 222,
-   "spin": false,
-   "proxy": true,
-   "mass": 350.0,
-   "dims": [
-    3.0,
-    0.15,
-    2.4
-   ]
-  },
-  "world_wall_5m": {
-   "i": 223,
-   "spin": false,
-   "proxy": true,
-   "mass": 580.0,
-   "dims": [
-    5.0,
-    0.15,
-    2.4
-   ]
-  },
-  "world_wardrobe": {
-   "i": 224,
-   "spin": false,
-   "proxy": true,
-   "mass": 45.0,
-   "dims": [
-    1.2,
-    0.6,
-    2.0
-   ]
-  },
-  "world_warehouse_nav_map": {
-   "i": 225,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    9.61,
-    9.01,
-    0.02
-   ]
-  },
-  "world_warehouse_sample": {
-   "i": 226,
-   "spin": false,
-   "proxy": true,
-   "mass": 1.0,
-   "dims": [
-    12.0,
-    8.0,
-    0.02
-   ]
-  },
-  "world_wheelchair": {
-   "i": 227,
-   "spin": false,
-   "proxy": true,
-   "mass": 15.0,
-   "dims": [
-    1.0,
-    0.65,
-    0.9
-   ]
-  },
-  "world_workbench": {
-   "i": 228,
-   "spin": false,
-   "proxy": true,
-   "mass": 40.0,
-   "dims": [
-    1.5,
-    0.75,
-    0.85
-   ]
+  "generator": "tools/export_studio_preview.py",
+  "atlas": "atlas.webp",
+  "spins": "spins",
+  "cell": 144,
+  "columns": 16,
+  "rows": 10,
+  "count": 153,
+  "frames": 16,
+  "parts": {
+    "turtlebot3_burger_chassis": {
+      "i": 0,
+      "spin": false
+    },
+    "tb3_wheel_isw_01": {
+      "i": 1,
+      "spin": false
+    },
+    "lds_01": {
+      "i": 2,
+      "spin": false
+    },
+    "tb4_sensor_plate_025394": {
+      "i": 3,
+      "spin": false
+    },
+    "tb4_camera_bracket_025426": {
+      "i": 4,
+      "spin": false
+    },
+    "tb4_standoff_025481": {
+      "i": 5,
+      "spin": false
+    },
+    "tidybot2_intermediate_shaft_066095b": {
+      "i": 6,
+      "spin": false
+    },
+    "pololu_wheel_32x7_1088": {
+      "i": 7,
+      "spin": false
+    },
+    "tidybot2_wheel_mount_a": {
+      "i": 8,
+      "spin": false
+    },
+    "tidybot2_wheel_mount_b": {
+      "i": 9,
+      "spin": false
+    },
+    "slamtec_rplidar_a1m8": {
+      "i": 10,
+      "spin": false
+    },
+    "luxonis_oak_d_pro": {
+      "i": 11,
+      "spin": false
+    },
+    "earthrover_zero_v52_chassis": {
+      "i": 12,
+      "spin": false
+    },
+    "earthrover_zero_wheel": {
+      "i": 13,
+      "spin": false
+    },
+    "earthrover_zero_front_camera": {
+      "i": 14,
+      "spin": false
+    },
+    "earthrover_zero_rear_camera": {
+      "i": 15,
+      "spin": false
+    },
+    "earthrover_zero_imu": {
+      "i": 16,
+      "spin": false
+    },
+    "vizbot_omnivla_chassis": {
+      "i": 17,
+      "spin": false
+    },
+    "vizbot_drive_wheel": {
+      "i": 18,
+      "spin": false
+    },
+    "vizbot_pcb_camera": {
+      "i": 19,
+      "spin": false
+    },
+    "vizbot_tracking_camera": {
+      "i": 20,
+      "spin": false
+    },
+    "vizbot_orin": {
+      "i": 21,
+      "spin": false
+    },
+    "vizbot_spherical_camera": {
+      "i": 22,
+      "spin": false
+    },
+    "jackal_j100_chassis": {
+      "i": 23,
+      "spin": false
+    },
+    "jackal_j100_wheel": {
+      "i": 24,
+      "spin": false
+    },
+    "husky_a200_chassis": {
+      "i": 25,
+      "spin": false
+    },
+    "husky_a200_wheel": {
+      "i": 26,
+      "spin": false
+    },
+    "dingo_d_chassis": {
+      "i": 27,
+      "spin": false
+    },
+    "dingo_d_wheel": {
+      "i": 28,
+      "spin": false
+    },
+    "stretch3_body": {
+      "i": 29,
+      "spin": false
+    },
+    "stretch3_drive_wheel": {
+      "i": 30,
+      "spin": false
+    },
+    "stretch3_base_lidar": {
+      "i": 31,
+      "spin": false
+    },
+    "stretch3_head_d435i": {
+      "i": 32,
+      "spin": false
+    },
+    "stretch3_head_nav_camera": {
+      "i": 33,
+      "spin": false
+    },
+    "stretch3_base_imu": {
+      "i": 34,
+      "spin": false
+    },
+    "warthog_w200_chassis": {
+      "i": 35,
+      "spin": false
+    },
+    "warthog_w200_outdoor_wheel": {
+      "i": 36,
+      "spin": false
+    },
+    "turtlebot3_waffle_chassis": {
+      "i": 37,
+      "spin": false
+    },
+    "ridgeback_r100_chassis": {
+      "i": 38,
+      "spin": false
+    },
+    "ridgeback_r100_mecanum_wheel": {
+      "i": 39,
+      "spin": false
+    },
+    "rbkairos_chassis": {
+      "i": 40,
+      "spin": false
+    },
+    "rbkairos_mecanum_wheel_1": {
+      "i": 41,
+      "spin": false
+    },
+    "rbkairos_mecanum_wheel_2": {
+      "i": 42,
+      "spin": false
+    },
+    "husarion_panther_wh01_fl_wheel": {
+      "i": 43,
+      "spin": false
+    },
+    "husarion_panther_chassis": {
+      "i": 44,
+      "spin": false
+    },
+    "husarion_panther_wh01_fr_wheel": {
+      "i": 45,
+      "spin": false
+    },
+    "husarion_panther_wh01_rl_wheel": {
+      "i": 46,
+      "spin": false
+    },
+    "husarion_panther_wh01_rr_wheel": {
+      "i": 47,
+      "spin": false
+    },
+    "ubiquity_magni_left_wheel": {
+      "i": 48,
+      "spin": false
+    },
+    "ubiquity_magni_chassis": {
+      "i": 49,
+      "spin": false
+    },
+    "ubiquity_magni_right_wheel": {
+      "i": 50,
+      "spin": false
+    },
+    "kinova_gen3_lite_fixed": {
+      "i": 51,
+      "spin": false
+    },
+    "moonbot_arm_v1_fixed": {
+      "i": 52,
+      "spin": false
+    },
+    "moonbot_arm_v2_fixed": {
+      "i": 53,
+      "spin": false
+    },
+    "moonbot_arm_v3_fixed": {
+      "i": 54,
+      "spin": false
+    },
+    "rosbot3_stock_chassis": {
+      "i": 55,
+      "spin": false
+    },
+    "rosbot3_standard_wheel_left": {
+      "i": 56,
+      "spin": false
+    },
+    "rosbot3_standard_wheel_right": {
+      "i": 57,
+      "spin": false
+    },
+    "slamtec_rplidar_c1_husarion_model": {
+      "i": 58,
+      "spin": false
+    },
+    "galaxea_r1_left_arm_fixed": {
+      "i": 59,
+      "spin": false
+    },
+    "galaxea_r1_right_arm_fixed": {
+      "i": 60,
+      "spin": false
+    },
+    "galaxea_r1_lite_arm_fixed": {
+      "i": 61,
+      "spin": false
+    },
+    "rainbow_rby1a_left_arm_fixed": {
+      "i": 62,
+      "spin": false
+    },
+    "rainbow_rby1a_right_arm_fixed": {
+      "i": 63,
+      "spin": false
+    },
+    "dingo_o_chassis": {
+      "i": 64,
+      "spin": false
+    },
+    "dingo_o_mecanum_mirrored": {
+      "i": 65,
+      "spin": false
+    },
+    "dingo_o_mecanum_normal": {
+      "i": 66,
+      "spin": false
+    },
+    "future_nav_mir100_chassis": {
+      "i": 67,
+      "spin": false
+    },
+    "future_nav_mir100_drive_wheel": {
+      "i": 68,
+      "spin": false
+    },
+    "future_nav_mir100_lms100": {
+      "i": 69,
+      "spin": false
+    },
+    "rover_pro_4wd_chassis": {
+      "i": 70,
+      "spin": false
+    },
+    "rover_pro_drive_wheel": {
+      "i": 71,
+      "spin": false
+    },
+    "rover_pro_dev_payload": {
+      "i": 72,
+      "spin": false
+    },
+    "create3_stock_chassis": {
+      "i": 73,
+      "spin": false
+    },
+    "create3_drive_wheel": {
+      "i": 74,
+      "spin": false
+    },
+    "turtlebot4_standard_deck": {
+      "i": 75,
+      "spin": false
+    },
+    "locobot_create3_chassis": {
+      "i": 76,
+      "spin": false
+    },
+    "locobot_wx250s_fixed_structure": {
+      "i": 77,
+      "spin": false
+    },
+    "locobot_wx250s_arm_sleep": {
+      "i": 78,
+      "spin": false
+    },
+    "locobot_d435_pan_tilt_fixed": {
+      "i": 79,
+      "spin": false
+    },
+    "locobot_rplidar_a2m8": {
+      "i": 80,
+      "spin": false
+    },
+    "stretch_re1_mobile_chassis": {
+      "i": 81,
+      "spin": false
+    },
+    "stretch_re1_drive_wheel": {
+      "i": 82,
+      "spin": false
+    },
+    "fetch_mobile_chassis": {
+      "i": 83,
+      "spin": false
+    },
+    "fetch_drive_wheel": {
+      "i": 84,
+      "spin": false
+    },
+    "quanser_qcar1_chassis": {
+      "i": 85,
+      "spin": false
+    },
+    "quanser_qcar1_wheel": {
+      "i": 86,
+      "spin": false
+    },
+    "quanser_qcar1_lidar": {
+      "i": 87,
+      "spin": false
+    },
+    "robotnik_rb1_base_chassis": {
+      "i": 88,
+      "spin": false
+    },
+    "robotnik_rb1_drive_wheel_150": {
+      "i": 89,
+      "spin": false
+    },
+    "autorally_front_wheel": {
+      "i": 90,
+      "spin": false
+    },
+    "autorally_rear_wheel": {
+      "i": 91,
+      "spin": false
+    },
+    "dexmate_vega_left_arm_f5d6_fixed": {
+      "i": 92,
+      "spin": false
+    },
+    "dexmate_vega_right_arm_f5d6_fixed": {
+      "i": 93,
+      "spin": false
+    },
+    "dexmate_vega_head_fixed": {
+      "i": 94,
+      "spin": false
+    },
+    "dexmate_vega_torso_fixed": {
+      "i": 95,
+      "spin": false
+    },
+    "dexmate_vega_lidar": {
+      "i": 96,
+      "spin": false
+    },
+    "dexmate_vega_imu": {
+      "i": 97,
+      "spin": false
+    },
+    "dexmate_vega_base_camera": {
+      "i": 98,
+      "spin": false
+    },
+    "pmb2_base": {
+      "i": 99,
+      "spin": false
+    },
+    "pmb2_drive_wheel": {
+      "i": 100,
+      "spin": false
+    },
+    "pmb2_tim551_source": {
+      "i": 101,
+      "spin": false
+    },
+    "tiago_dual_head_fixed": {
+      "i": 102,
+      "spin": false
+    },
+    "tiago_dual_torso_fixed": {
+      "i": 103,
+      "spin": false
+    },
+    "summit_xl_steel_source_chassis": {
+      "i": 104,
+      "spin": false
+    },
+    "tianbot_tianracer_source_chassis": {
+      "i": 105,
+      "spin": false
+    },
+    "tianbot_tianracer_source_left_front_wheel": {
+      "i": 106,
+      "spin": false
+    },
+    "tianbot_tianracer_source_right_front_wheel": {
+      "i": 107,
+      "spin": false
+    },
+    "tianbot_tianracer_source_left_rear_wheel": {
+      "i": 108,
+      "spin": false
+    },
+    "tianbot_tianracer_source_right_rear_wheel": {
+      "i": 109,
+      "spin": false
+    },
+    "tianbot_tianracer_source_lidar_housing": {
+      "i": 110,
+      "spin": false
+    },
+    "tianbot_tianracer_source_camera_housing": {
+      "i": 111,
+      "spin": false
+    },
+    "tianbot_tianracer_source_depth_camera_housing": {
+      "i": 112,
+      "spin": false
+    },
+    "astribot_s1_source_base": {
+      "i": 113,
+      "spin": false
+    },
+    "astribot_s1_source_wheel_lf": {
+      "i": 114,
+      "spin": false
+    },
+    "astribot_s1_source_wheel_rf": {
+      "i": 115,
+      "spin": false
+    },
+    "astribot_s1_source_wheel_lr": {
+      "i": 116,
+      "spin": false
+    },
+    "astribot_s1_source_wheel_rr": {
+      "i": 117,
+      "spin": false
+    },
+    "unitree_go2w_source_wheel_left": {
+      "i": 118,
+      "spin": false
+    },
+    "unitree_go2w_source_wheel_right": {
+      "i": 119,
+      "spin": false
+    },
+    "attach_arm_assieme_arm": {
+      "i": 120,
+      "spin": true,
+      "proxy": false,
+      "mass": 1.75,
+      "dims": [
+        0.1,
+        0.1,
+        0.35
+      ]
+    },
+    "attach_arm_nova": {
+      "i": 121,
+      "spin": true,
+      "proxy": false,
+      "mass": 1.75,
+      "dims": [
+        0.1,
+        0.1,
+        0.35
+      ]
+    },
+    "attach_electronics_motor_driver": {
+      "i": 122,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.02,
+      "dims": [
+        0.04,
+        0.025,
+        0.012
+      ]
+    },
+    "chassis_ackermann_fener": {
+      "i": 123,
+      "spin": true,
+      "proxy": false,
+      "mass": 1.1848,
+      "dims": [
+        0.258,
+        0.508,
+        0.113
+      ]
+    },
+    "chassis_diff_drive_2w_base": {
+      "i": 124,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.2,
+        0.2,
+        0.114
+      ]
+    },
+    "chassis_diff_drive_2w_grey2": {
+      "i": 125,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.2,
+        0.2,
+        0.096
+      ]
+    },
+    "chassis_diff_drive_2w_nema": {
+      "i": 126,
+      "spin": true,
+      "proxy": false,
+      "mass": 2.4558,
+      "dims": [
+        0.408,
+        0.418,
+        0.18
+      ]
+    },
+    "chassis_diff_drive_4w_black": {
+      "i": 127,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.262,
+        0.312,
+        0.086
+      ]
+    },
+    "chassis_diff_drive_4w_blue": {
+      "i": 128,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.202,
+        0.28,
+        0.102
+      ]
+    },
+    "chassis_diff_drive_4w_red": {
+      "i": 129,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.2,
+        0.272,
+        0.06
+      ]
+    },
+    "chassis_mecanum_4w_assieme_drone2": {
+      "i": 130,
+      "spin": true,
+      "proxy": false,
+      "mass": 1.6575,
+      "dims": [
+        0.376,
+        0.336,
+        0.164
+      ]
+    },
+    "chassis_mecanum_4w_grey": {
+      "i": 131,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.284,
+        0.33,
+        0.062
+      ]
+    },
+    "chassis_mecanum_4w_silver2": {
+      "i": 132,
+      "spin": true,
+      "proxy": false,
+      "mass": 5.0,
+      "dims": [
+        0.236,
+        0.308,
+        0.09
+      ]
+    },
+    "chassis_omni_4w_black": {
+      "i": 133,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.8289,
+      "dims": [
+        0.308,
+        0.378,
+        0.089
+      ]
+    },
+    "chassis_steering_tricycle_desert": {
+      "i": 134,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.6,
+      "dims": [
+        0.23,
+        0.2,
+        0.075
+      ]
+    },
+    "sens_camera_dcs950g": {
+      "i": 135,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0525,
+      "dims": [
+        0.05,
+        0.05,
+        0.03
+      ]
+    },
+    "sens_camera_imx390": {
+      "i": 136,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0525,
+      "dims": [
+        0.05,
+        0.05,
+        0.03
+      ]
+    },
+    "sens_imu_grey": {
+      "i": 137,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0525,
+      "dims": [
+        0.05,
+        0.05,
+        0.03
+      ]
+    },
+    "sens_imu_gy87": {
+      "i": 138,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0525,
+      "dims": [
+        0.05,
+        0.05,
+        0.03
+      ]
+    },
+    "sens_lidar_ld06": {
+      "i": 139,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.1407,
+      "dims": [
+        0.08,
+        0.08,
+        0.04
+      ]
+    },
+    "sens_lidar_yellow": {
+      "i": 140,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.1407,
+      "dims": [
+        0.08,
+        0.08,
+        0.04
+      ]
+    },
+    "wheel_caster_ball_classic": {
+      "i": 141,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.014,
+        0.014,
+        0.014
+      ]
+    },
+    "wheel_mecanum_classic": {
+      "i": 142,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0982,
+      "dims": [
+        0.1,
+        0.1,
+        0.05
+      ]
+    },
+    "wheel_mecanum_first": {
+      "i": 143,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0402,
+      "dims": [
+        0.08,
+        0.08,
+        0.032
+      ]
+    },
+    "wheel_mecanum_green": {
+      "i": 144,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.06,
+        0.06,
+        0.032
+      ]
+    },
+    "wheel_mecanum_red_black": {
+      "i": 145,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0337,
+      "dims": [
+        0.07,
+        0.07,
+        0.035
+      ]
+    },
+    "wheel_mecanum_yellow": {
+      "i": 146,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0982,
+      "dims": [
+        0.1,
+        0.1,
+        0.05
+      ]
+    },
+    "wheel_omni_blue": {
+      "i": 147,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0494,
+      "dims": [
+        0.134,
+        0.134,
+        0.014
+      ]
+    },
+    "wheel_omni_classic_5": {
+      "i": 148,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.06,
+        0.06,
+        0.03
+      ]
+    },
+    "wheel_omni_vexpro_4in": {
+      "i": 149,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.0513,
+      "dims": [
+        0.1002,
+        0.1002,
+        0.026
+      ]
+    },
+    "wheel_standard_black2": {
+      "i": 150,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.024,
+        0.024,
+        0.012
+      ]
+    },
+    "wheel_standard_classic": {
+      "i": 151,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.07,
+        0.07,
+        0.03
+      ]
+    },
+    "wheel_standard_grey": {
+      "i": 152,
+      "spin": true,
+      "proxy": false,
+      "mass": 0.03,
+      "dims": [
+        0.048,
+        0.048,
+        0.048
+      ]
+    }
   }
- }
 }

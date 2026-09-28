@@ -5,7 +5,7 @@ Community site of the RobotDSL project and the static preview of MobileCopilot S
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
 - `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/robotdsl-site/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
 - `guide/` — MobileDSL introduction, Studio editing steps, the four modules and the compiler/agent workflow.
-- `studio/` — MobileCopilot Studio front end with the component library and thumbnails. This static copy has no compiler behind it: the library, the editors and the key guide work; Build, Copilot, exports, uploads and design reports need the hosted service.
+- `studio/` — MobileCopilot Studio front end with the component library, thumbnails and the papers that use each part (a paper search lists a paper's robots and parts). This static copy has no compiler behind it: the library, the papers, the editors and the key guide work, and Copilot calls the chosen provider directly with your own key; Build, exports, uploads and design reports need the hosted service.
 
 Questions, designs and announcements: use Discussions. Problems with a generated design or the site: open an Issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for reports, part uploads and discussions, and [LICENSE.md](LICENSE.md) for what may be reused.
 
