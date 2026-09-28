@@ -27,8 +27,10 @@ import{_ as a,o as n,c as s,a2 as t}from"./chunks/framework.dWYrTn1b.js";const h
 <span class="line"><span>│   ├── semantic/</span></span>
 <span class="line"><span>│   ├── validation/</span></span>
 <span class="line"><span>│   ├── library/</span></span>
-<span class="line"><span>│   ├── targets/               native-tool and simulation tests</span></span>
-<span class="line"><span>│   └── library/fixtures/      the demo library the tests assemble robots from</span></span>
+<span class="line"><span>│   └── targets/               native-tool and simulation tests</span></span>
+<span class="line"><span>├── examples/</span></span>
+<span class="line"><span>│   ├── demo/                  the guide&#39;s demo program, which the tests also build on</span></span>
+<span class="line"><span>│   └── library/               the parts of the guide&#39;s examples and of the tests</span></span>
 <span class="line"><span>├── docker/                    the test images&#39; build files</span></span>
 <span class="line"><span>├── tools/                     development utilities</span></span>
 <span class="line"><span>└── docs/                      this site (VitePress)</span></span></code></pre></div><p>Target packages own their binding, native-input adapters, typed output models, and emitters. <code>ros_gz_nav2</code> owns Gazebo–ROS integration and composes the launch plan; Gazebo and Nav2 do not import each other. Changing simulators reuses robot and task semantics and autonomy adapters; composition checks interface compatibility. Runtime helpers live with their owning adapter and execute in the target environment. Compiler code never imports those helpers or ROS/simulator SDKs.</p><h2 id="compilation-flow" tabindex="-1">Compilation flow <a class="header-anchor" href="#compilation-flow" aria-label="Permalink to &quot;Compilation flow&quot;">​</a></h2><div class="language-text vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>program source                  library directories</span></span>
