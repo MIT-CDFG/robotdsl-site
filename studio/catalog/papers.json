@@ -53,7 +53,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "toyota_hsr_arm_fixed",
+        "toyota_hsr_drive_wheel_source",
+        "toyota_hsr_head_fixed",
+        "toyota_hsr_torso_lift_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-1000",
@@ -108,7 +113,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1013",
@@ -135,7 +142,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-102",
@@ -189,7 +198,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1072",
@@ -213,7 +224,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1075",
@@ -263,7 +276,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "oxts_rt3000_v4"
+      ]
     },
     {
       "id": "icra-2026-paper-11",
@@ -289,7 +304,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "skywalker_2022_drive_wheel",
+        "skywalker_2022_fixed_chassis"
+      ]
     },
     {
       "id": "icra-2026-paper-1106",
@@ -317,7 +335,8 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_waffle_chassis"
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
       ]
     },
     {
@@ -345,7 +364,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1123",
@@ -402,6 +423,7 @@
         }
       ],
       "parts": [
+        "velodyne_hdl32e",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -444,7 +466,9 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
+        "ford_avdata_source_wheel",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -559,7 +583,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_alpha_prime_revb_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-12",
@@ -612,6 +638,8 @@
         }
       ],
       "parts": [
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
       ]
@@ -706,7 +734,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "google_everyday_arm_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-1223",
@@ -798,7 +828,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hokuyo_urg_04lx",
+        "raspberry_pi_4b"
+      ]
     },
     {
       "id": "icra-2026-paper-1281",
@@ -826,7 +859,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "aaeon_up_xtreme_i12_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-129",
@@ -850,7 +885,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "raspberry_pi_4b"
+      ]
     },
     {
       "id": "icra-2026-paper-1295",
@@ -949,6 +986,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -1033,7 +1071,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-134",
@@ -1062,7 +1102,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "autolabor_pm1_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1341",
@@ -1190,7 +1232,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-139",
@@ -1216,7 +1260,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "armar_6_head_fixed",
+        "armar_6_left_arm_fixed",
+        "armar_6_right_arm_fixed",
+        "armar_6_torso_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-1398",
@@ -1247,6 +1296,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
       ]
     },
@@ -1275,7 +1325,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-142",
@@ -1304,6 +1356,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -1328,7 +1384,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer_v1_chassis",
+        "agilex_tracer_v1_drive_wheel",
+        "interbotix_viperx300s_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-144",
@@ -1350,7 +1410,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-145",
@@ -1376,7 +1442,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pioneer2_dx_stock_body",
+        "pioneer2_dx_stock_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1493",
@@ -1409,7 +1478,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1497",
@@ -1434,6 +1505,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -1486,7 +1558,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1558",
@@ -1519,7 +1593,8 @@
       "parts": [
         "galaxea_r1_left_arm_fixed",
         "galaxea_r1_right_arm_fixed",
-        "galaxea_r1_torso_fixed"
+        "galaxea_r1_torso_fixed",
+        "galaxea_r1_zed_head_fixed"
       ]
     },
     {
@@ -1550,6 +1625,7 @@
         }
       ],
       "parts": [
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -1585,7 +1661,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "basler_aca2500_60uc_camera",
+        "robotiq_2f85_fixed",
+        "sunrise_m3553e_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-16",
@@ -1664,8 +1744,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -1758,6 +1842,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -1787,7 +1872,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer_v1_chassis",
+        "agilex_tracer_v1_drive_wheel",
+        "interbotix_viperx300s_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-1665",
@@ -1811,7 +1900,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "osrf_prius_family_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1680",
@@ -1867,7 +1958,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1694",
@@ -1890,7 +1983,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "deepskate_30f0r_wheel_left",
+        "deepskate_30f0r_wheel_right"
+      ]
     },
     {
       "id": "icra-2026-paper-17",
@@ -1968,8 +2064,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -1997,7 +2097,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1751",
@@ -2045,7 +2147,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-1756",
@@ -2188,6 +2296,8 @@
         }
       ],
       "parts": [
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
       ]
@@ -2228,6 +2338,7 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel",
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
       ]
     },
@@ -2255,7 +2366,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-190",
@@ -2312,7 +2425,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-1926",
@@ -2369,8 +2484,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -2431,7 +2550,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "superdroid_ig52_db_2014_frame"
+      ]
     },
     {
       "id": "icra-2026-paper-1994",
@@ -2456,6 +2577,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -2483,7 +2605,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "toyota_hsr_arm_fixed",
+        "toyota_hsr_drive_wheel_source",
+        "toyota_hsr_head_fixed",
+        "toyota_hsr_torso_lift_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-2001",
@@ -2514,7 +2641,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "tencent_reccraft_chassis",
+        "tencent_reccraft_mecanum_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2048",
@@ -2539,7 +2669,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "toyota_hsr_arm_fixed",
+        "toyota_hsr_drive_wheel_source",
+        "toyota_hsr_head_fixed",
+        "toyota_hsr_torso_lift_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-2067",
@@ -2602,6 +2737,8 @@
         "moonbot_arm_v1_fixed",
         "moonbot_arm_v2_fixed",
         "moonbot_arm_v3_fixed",
+        "moonbot_wheel_v1_source_left",
+        "moonbot_wheel_v1_source_right",
         "moonbot_wheel_v2_source_left",
         "moonbot_wheel_v2_source_right"
       ]
@@ -2631,7 +2768,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2082",
@@ -2680,7 +2819,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2092",
@@ -2750,7 +2891,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2106",
@@ -2814,7 +2957,10 @@
         }
       ],
       "parts": [
-        "agibot_g1_omnipicker_head_fixed"
+        "agibot_g1_omnipicker_head_fixed",
+        "agibot_g1_omnipicker_left_arm_fixed",
+        "agibot_g1_omnipicker_right_arm_fixed",
+        "agibot_g1_omnipicker_torso_fixed"
       ]
     },
     {
@@ -2838,7 +2984,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2122",
@@ -2869,7 +3017,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2137",
@@ -2893,7 +3043,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2146",
@@ -2927,7 +3079,14 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "neobotix_mpo700_drive_wheel",
+        "sick_s300_mpo700_source_lidar",
+        "toyota_hsr_arm_fixed",
+        "toyota_hsr_drive_wheel_source",
+        "toyota_hsr_head_fixed",
+        "toyota_hsr_torso_lift_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-2154",
@@ -2960,7 +3119,10 @@
         }
       ],
       "parts": [
-        "agilex_cobot_s_front_lidar"
+        "agilex_cobot_s_arm_gripper_fixed",
+        "agilex_cobot_s_front_lidar",
+        "agilex_cobot_s_head_fixed",
+        "agilex_cobot_s_neck_lidar"
       ]
     },
     {
@@ -2986,6 +3148,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -3013,7 +3176,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_vlp32c_source_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-2253",
@@ -3040,7 +3205,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_2_chassis",
+        "agilex_scout_2_wheel_type1",
+        "agilex_scout_2_wheel_type2"
+      ]
     },
     {
       "id": "icra-2026-paper-2255",
@@ -3065,7 +3234,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2270",
@@ -3103,6 +3274,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -3180,6 +3355,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -3237,6 +3413,7 @@
         "galaxea_r1_left_arm_fixed",
         "galaxea_r1_right_arm_fixed",
         "galaxea_r1_torso_fixed",
+        "galaxea_r1_zed_head_fixed",
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
@@ -3288,7 +3465,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pr2_drive_wheel",
+        "pr2_head_fixed",
+        "pr2_left_arm_fixed",
+        "pr2_right_arm_fixed",
+        "pr2_torso_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-2377",
@@ -3342,6 +3525,17 @@
         "locobot_wx250s_fixed_structure",
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
+        "stretch3_base_imu",
+        "stretch3_base_lidar",
+        "stretch3_body",
+        "stretch3_drive_wheel",
+        "stretch3_head_d435i",
+        "stretch3_head_nav_camera",
+        "stretch_re1_drive_wheel",
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed",
         "turtlebot4_standard_deck"
       ]
     },
@@ -3435,8 +3629,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -3466,6 +3664,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -3497,11 +3699,16 @@
         }
       ],
       "parts": [
+        "astribot_s1_head_fixed",
+        "astribot_s1_left_arm_gripper_fixed",
+        "astribot_s1_right_arm_gripper_fixed",
         "astribot_s1_source_base",
         "astribot_s1_source_wheel_lf",
         "astribot_s1_source_wheel_lr",
         "astribot_s1_source_wheel_rf",
-        "astribot_s1_source_wheel_rr"
+        "astribot_s1_source_wheel_rr",
+        "astribot_s1_torso_fixed",
+        "astribot_s1_upper_fixed"
       ]
     },
     {
@@ -3572,6 +3779,7 @@
         "create3_drive_wheel",
         "create3_stock_chassis",
         "luxonis_oak_d_pro",
+        "raspberry_pi_4b",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
       ]
@@ -3600,7 +3808,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "directdrive_diablo_wheel_right"
+      ]
     },
     {
       "id": "icra-2026-paper-2494",
@@ -3633,8 +3843,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -3662,7 +3876,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ouster_os0_128_rev7"
+      ]
     },
     {
       "id": "icra-2026-paper-255",
@@ -3686,7 +3902,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "sick_lms111_official"
+      ]
     },
     {
       "id": "icra-2026-paper-2567",
@@ -3739,7 +3957,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_alpha_prime_revb_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-2599",
@@ -3766,7 +3986,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_vlp16"
+      ]
     },
     {
       "id": "icra-2026-paper-26",
@@ -3810,6 +4032,7 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel",
+        "velodyne_alpha_prime_revb_reference",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -3887,7 +4110,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "google_everyday_arm_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-2655",
@@ -3913,7 +4138,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "allied_vision_mako_g319_cmount_body"
+      ]
     },
     {
       "id": "icra-2026-paper-2656",
@@ -3939,7 +4166,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "northwestern_cirp2025_mass_tag_carrier_06302024",
+        "northwestern_cirp2025_printed_wheel_06302024"
+      ]
     },
     {
       "id": "icra-2026-paper-2736",
@@ -3993,7 +4223,22 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "create3_drive_wheel",
+        "create3_stock_chassis",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
+        "lds_01",
+        "luxonis_oak_d_pro",
+        "microsoft_kinect_turtlebot",
+        "slamtec_rplidar_a1m8",
+        "tb3_wheel_isw_01",
+        "turtlebot2_hexagon_tower",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed",
+        "turtlebot4_standard_deck"
+      ]
     },
     {
       "id": "icra-2026-paper-2757",
@@ -4022,7 +4267,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "asus_xtion_pro_live_turtlebot_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-276",
@@ -4129,7 +4376,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "livox_mid360_peral_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-2785",
@@ -4261,7 +4510,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "kinova_mico_m1n6s200_fixed",
+        "velodyne_puck_lite"
+      ]
     },
     {
       "id": "icra-2026-paper-2851",
@@ -4287,7 +4539,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-2899",
@@ -4313,6 +4567,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -4340,7 +4595,10 @@
       ],
       "parts": [
         "ridgeback_r100_chassis",
-        "ridgeback_r100_mecanum_wheel"
+        "ridgeback_r100_mecanum_wheel",
+        "universal_robots_ur10_fixed",
+        "upright_thing_mount_arch",
+        "upright_thing_tor11_ur10_upper_fixed"
       ]
     },
     {
@@ -4368,6 +4626,10 @@
         }
       ],
       "parts": [
+        "autodrive_f1tenth_source_chassis",
+        "autodrive_f1tenth_source_front_left_wheel",
+        "autodrive_f1tenth_source_front_right_wheel",
+        "autodrive_f1tenth_source_rear_left_wheel",
         "autodrive_f1tenth_source_wheel"
       ]
     },
@@ -4418,9 +4680,16 @@
         }
       ],
       "parts": [
+        "google_everyday_arm_gripper_fixed",
+        "pr2_drive_wheel",
+        "pr2_head_fixed",
+        "pr2_left_arm_fixed",
+        "pr2_right_arm_fixed",
+        "pr2_torso_fixed",
         "stretch3_base_lidar",
         "stretch_re1_drive_wheel",
-        "stretch_re1_mobile_chassis"
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed"
       ]
     },
     {
@@ -4446,7 +4715,14 @@
         }
       ],
       "parts": [
-        "robotnik_rb1_drive_wheel_150"
+        "robotnik_rb1_drive_wheel_150",
+        "uc3m_adam_camera_support_fixed",
+        "uc3m_adam_left_ur3_duck_arm_fixed",
+        "uc3m_adam_rb1_chassis",
+        "uc3m_adam_rb1_drive_wheel",
+        "uc3m_adam_right_ur3_duck_arm_fixed",
+        "uc3m_adam_torso_fixed",
+        "uc3m_adam_upper_fixed"
       ]
     },
     {
@@ -4476,7 +4752,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "beagleboard_beaglebone_black_revc",
+        "kinova_jaco2_j2n6s300_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3005",
@@ -4500,7 +4779,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "robotis_xm430_w350_idler_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-307",
@@ -4555,7 +4836,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "universal_robots_ur5_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3153",
@@ -4581,7 +4864,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "magiclab_magicdog_w_wheel_left",
+        "magiclab_magicdog_w_wheel_right"
+      ]
     },
     {
       "id": "icra-2026-paper-3164",
@@ -4610,7 +4896,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "raspberry_pi_4b"
+      ]
     },
     {
       "id": "icra-2026-paper-3174",
@@ -4635,7 +4923,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "jetbot_ros_65mm_wheel",
+        "jetbot_ros_camera_bracket_module",
+        "jetbot_ros_compute_lidar_stack",
+        "jetbot_ros_lower_base"
+      ]
     },
     {
       "id": "icra-2026-paper-322",
@@ -4660,6 +4953,7 @@
         }
       ],
       "parts": [
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -4691,7 +4985,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "google_everyday_arm_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3252",
@@ -4718,7 +5014,8 @@
         }
       ],
       "parts": [
-        "forzaeth_legacy_f110_wheel"
+        "forzaeth_legacy_f110_wheel",
+        "forzaeth_legacy_hokuyo_module"
       ]
     },
     {
@@ -4772,7 +5069,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-3273",
@@ -4798,6 +5097,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
       ]
     },
@@ -4884,6 +5184,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -4948,6 +5252,8 @@
         }
       ],
       "parts": [
+        "create1_community_chassis",
+        "create1_community_drive_wheel",
         "create3_drive_wheel",
         "create3_stock_chassis",
         "luxonis_oak_d_pro",
@@ -5043,6 +5349,7 @@
         }
       ],
       "parts": [
+        "yahboom_x3_chassis",
         "yahboom_x3_mecanum_type_a",
         "yahboom_x3_mecanum_type_b"
       ]
@@ -5073,6 +5380,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -5110,7 +5418,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-3484",
@@ -5142,7 +5452,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-35",
@@ -5171,7 +5483,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-3537",
@@ -5315,10 +5629,14 @@
         "rainbow_rby1a_drive_wheel",
         "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
+        "rainbow_rby1a_mobile_chassis",
         "rainbow_rby1a_right_arm_fixed",
+        "rainbow_rby1a_torso_fixed",
+        "rainbow_rby1a_upper_body_fixed",
         "stretch3_base_lidar",
         "stretch_re1_drive_wheel",
-        "stretch_re1_mobile_chassis"
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed"
       ]
     },
     {
@@ -5402,8 +5720,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -5437,7 +5759,8 @@
       ],
       "parts": [
         "nova_carter_chassis_body",
-        "nova_carter_drive_wheel_right"
+        "nova_carter_drive_wheel_right",
+        "nova_carter_rear_support_fixed"
       ]
     },
     {
@@ -5465,7 +5788,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "livox_mid70_official_cad_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-3640",
@@ -5546,7 +5871,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "asus_xtion_pro_live_turtlebot_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-3664",
@@ -5613,7 +5940,19 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "stretch3_base_imu",
+        "stretch3_base_lidar",
+        "stretch3_body",
+        "stretch3_drive_wheel",
+        "stretch3_head_d435i",
+        "stretch3_head_nav_camera",
+        "stretch_re1_drive_wheel",
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3674",
@@ -5645,7 +5984,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-3683",
@@ -5696,7 +6037,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "raspberry_pi_5",
+        "vertiq_23_06_220kv_g1_fixed",
+        "vertiq_40_06_370kv_g2_base_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3694",
@@ -5755,7 +6100,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ranger_mini2_source_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3710",
@@ -5784,6 +6131,8 @@
       ],
       "parts": [
         "dexmate_vega_base_camera",
+        "dexmate_vega_caster_wheel",
+        "dexmate_vega_drive_wheel",
         "dexmate_vega_head_fixed",
         "dexmate_vega_imu",
         "dexmate_vega_left_arm_f5d6_fixed",
@@ -5816,7 +6165,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "allied_vision_mako_g319_cmount_body"
+      ]
     },
     {
       "id": "icra-2026-paper-3721",
@@ -5843,7 +6194,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pioneer_3at_chassis",
+        "pioneer_3at_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3752",
@@ -5874,7 +6228,8 @@
       "parts": [
         "rover_pro_4wd_chassis",
         "rover_pro_dev_payload",
-        "rover_pro_drive_wheel"
+        "rover_pro_drive_wheel",
+        "rover_pro_rplidar_s2_fixed"
       ]
     },
     {
@@ -5904,7 +6259,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "vectornav_vn100_rugged_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-377",
@@ -5988,7 +6345,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "robstride_02_fixed_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-3778",
@@ -6021,7 +6380,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "kinova_gen3_7dof_fixed",
+        "kinova_gen3_robotiq_2f85_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-3799",
@@ -6077,7 +6439,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3808",
@@ -6194,7 +6558,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-385",
@@ -6221,7 +6587,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "epuck_legacy_cad_body",
+        "epuck_legacy_cad_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-387",
@@ -6276,7 +6645,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "sbg_ellipse_a_cad_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-396",
@@ -6303,7 +6674,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "osrf_prius_family_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3975",
@@ -6329,8 +6702,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -6363,7 +6740,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-400",
@@ -6388,7 +6767,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "directdrive_diablo_wheel_right"
+      ]
     },
     {
       "id": "icra-2026-paper-4025",
@@ -6424,7 +6805,24 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pr2_drive_wheel",
+        "pr2_head_fixed",
+        "pr2_left_arm_fixed",
+        "pr2_right_arm_fixed",
+        "pr2_torso_fixed",
+        "stretch3_base_imu",
+        "stretch3_base_lidar",
+        "stretch3_body",
+        "stretch3_drive_wheel",
+        "stretch3_head_d435i",
+        "stretch3_head_nav_camera",
+        "stretch_re1_drive_wheel",
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-4031",
@@ -6502,7 +6900,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4062",
@@ -6557,7 +6957,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4106",
@@ -6580,7 +6982,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4142",
@@ -6619,8 +7023,10 @@
         }
       ],
       "parts": [
+        "google_everyday_arm_gripper_fixed",
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "stretch3_base_imu",
         "stretch3_base_lidar",
@@ -6628,7 +7034,10 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -6691,7 +7100,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "robotis_xm430_w210t_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-4193",
@@ -6722,7 +7133,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "intel_realsense_d455_native",
+        "intel_realsense_l515_fixed",
+        "intel_realsense_t265_fixed",
+        "stretch3_head_d435i",
+        "universal_robots_ur5e_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-4209",
@@ -6806,7 +7223,10 @@
         }
       ],
       "parts": [
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_chassis",
+        "agilex_scout_mini_ugv_wheel",
+        "kinova_mico_m1n6s200_fixed",
+        "velodyne_puck_lite"
       ]
     },
     {
@@ -6927,6 +7347,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -6959,8 +7383,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -7015,7 +7443,22 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "create3_drive_wheel",
+        "create3_stock_chassis",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
+        "lds_01",
+        "luxonis_oak_d_pro",
+        "microsoft_kinect_turtlebot",
+        "slamtec_rplidar_a1m8",
+        "tb3_wheel_isw_01",
+        "turtlebot2_hexagon_tower",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed",
+        "turtlebot4_standard_deck"
+      ]
     },
     {
       "id": "icra-2026-paper-4352",
@@ -7046,7 +7489,10 @@
         "rainbow_rby1a_drive_wheel",
         "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
-        "rainbow_rby1a_right_arm_fixed"
+        "rainbow_rby1a_mobile_chassis",
+        "rainbow_rby1a_right_arm_fixed",
+        "rainbow_rby1a_torso_fixed",
+        "rainbow_rby1a_upper_body_fixed"
       ]
     },
     {
@@ -7073,7 +7519,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "vstone_mecanumrover3_chassis",
+        "vstone_mecanumrover3_wheel",
+        "vstone_mecanumrover3_wheel_rev"
+      ]
     },
     {
       "id": "icra-2026-paper-4386",
@@ -7106,7 +7556,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel",
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4484",
@@ -7166,8 +7619,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -7198,6 +7655,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -7286,14 +7747,30 @@
         }
       ],
       "parts": [
+        "armar_6_head_fixed",
+        "armar_6_left_arm_fixed",
+        "armar_6_right_arm_fixed",
+        "armar_6_torso_fixed",
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "pr2_drive_wheel",
+        "pr2_head_fixed",
+        "pr2_left_arm_fixed",
+        "pr2_right_arm_fixed",
+        "pr2_torso_fixed",
         "rainbow_rby1a_drive_wheel",
         "rainbow_rby1a_head_fixed",
         "rainbow_rby1a_left_arm_fixed",
+        "rainbow_rby1a_mobile_chassis",
         "rainbow_rby1a_right_arm_fixed",
+        "rainbow_rby1a_torso_fixed",
+        "rainbow_rby1a_upper_body_fixed",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -7319,7 +7796,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-4599",
@@ -7415,7 +7898,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-464",
@@ -7449,7 +7934,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel",
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4670",
@@ -7498,7 +7986,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pololu_3pi_plus_2040_chassis",
+        "pololu_wheel_32x7_1088"
+      ]
     },
     {
       "id": "icra-2026-paper-470",
@@ -7564,7 +8055,8 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "nova_carter_chassis_body",
-        "nova_carter_drive_wheel_right"
+        "nova_carter_drive_wheel_right",
+        "nova_carter_rear_support_fixed"
       ]
     },
     {
@@ -7600,7 +8092,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4714",
@@ -7631,7 +8125,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4717",
@@ -7657,7 +8153,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4722",
@@ -7690,7 +8188,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4781",
@@ -7804,7 +8304,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4848",
@@ -7856,7 +8358,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-4879",
@@ -7964,7 +8468,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-491",
@@ -8079,7 +8585,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "spark_astra_pro_camera",
+        "spark_chassis_stack",
+        "spark_left_drive_wheel",
+        "spark_right_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-4960",
@@ -8106,7 +8617,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "arduino_nano_a000005_v33"
+      ]
     },
     {
       "id": "icra-2026-paper-4973",
@@ -8164,7 +8677,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5003",
@@ -8191,7 +8706,8 @@
       ],
       "parts": [
         "robotnik_rb1_base_chassis",
-        "robotnik_rb1_drive_wheel_150"
+        "robotnik_rb1_drive_wheel_150",
+        "robotnik_rb1_front_cover"
       ]
     },
     {
@@ -8221,7 +8737,22 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "create3_drive_wheel",
+        "create3_stock_chassis",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
+        "lds_01",
+        "luxonis_oak_d_pro",
+        "microsoft_kinect_turtlebot",
+        "slamtec_rplidar_a1m8",
+        "tb3_wheel_isw_01",
+        "turtlebot2_hexagon_tower",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed",
+        "turtlebot4_standard_deck"
+      ]
     },
     {
       "id": "icra-2026-paper-5014",
@@ -8269,7 +8800,9 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "warthog_w200_chassis",
-        "warthog_w200_outdoor_wheel"
+        "warthog_w200_outdoor_wheel",
+        "yamaha_viking_2025_front_wheel_reconstruction",
+        "yamaha_viking_2025_rear_wheel_reconstruction"
       ]
     },
     {
@@ -8297,8 +8830,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -8342,7 +8879,10 @@
         "stretch3_body",
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
-        "stretch3_head_nav_camera"
+        "stretch3_head_nav_camera",
+        "universal_robots_ur10_fixed",
+        "upright_thing_mount_arch",
+        "upright_thing_tor11_ur10_upper_fixed"
       ]
     },
     {
@@ -8372,7 +8912,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-507",
@@ -8400,7 +8942,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "nvidia_jetson_orin_nano_devkit_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5077",
@@ -8550,7 +9094,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer_v1_chassis",
+        "agilex_tracer_v1_drive_wheel",
+        "interbotix_viperx300s_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5124",
@@ -8573,8 +9121,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -8614,7 +9166,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5186",
@@ -8760,7 +9314,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "google_everyday_arm_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5265",
@@ -8807,7 +9363,12 @@
         }
       ],
       "parts": [
-        "xlerobot_arm_fixed"
+        "lekiwi_arm_fixed",
+        "lekiwi_chassis",
+        "lekiwi_omni_wheel",
+        "xlerobot_arm_fixed",
+        "xlerobot_head_fixed",
+        "xlerobot_wrist_camera_fixed"
       ]
     },
     {
@@ -8839,7 +9400,19 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "stretch3_base_imu",
+        "stretch3_base_lidar",
+        "stretch3_body",
+        "stretch3_drive_wheel",
+        "stretch3_head_d435i",
+        "stretch3_head_nav_camera",
+        "stretch_re1_drive_wheel",
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5284",
@@ -8864,7 +9437,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "intel_realsense_d435_2020_cad_reference",
+        "velodyne_vlp16"
+      ]
     },
     {
       "id": "icra-2026-paper-5290",
@@ -8891,6 +9467,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -8925,7 +9502,8 @@
       "parts": [
         "arx_x7s_head_fixed",
         "arx_x7s_left_arm_fixed",
-        "arx_x7s_right_arm_fixed"
+        "arx_x7s_right_arm_fixed",
+        "arx_x7s_torso_fixed"
       ]
     },
     {
@@ -8959,7 +9537,9 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -8989,7 +9569,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5347",
@@ -9018,8 +9600,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -9076,6 +9662,7 @@
         }
       ],
       "parts": [
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -9106,7 +9693,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pioneer_3dx_chassis",
+        "pioneer_3dx_left_wheel",
+        "pioneer_3dx_right_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5427",
@@ -9132,7 +9723,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5445",
@@ -9225,8 +9818,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
+        "fetch_head_fixed",
         "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed",
         "husky_a200_chassis",
         "husky_a200_wheel"
       ]
@@ -9256,7 +9853,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "toyota_hsr_arm_fixed",
+        "toyota_hsr_drive_wheel_source",
+        "toyota_hsr_head_fixed",
+        "toyota_hsr_torso_lift_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-548",
@@ -9281,7 +9883,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5480",
@@ -9312,7 +9916,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pioneer_3dx_chassis",
+        "pioneer_3dx_left_wheel",
+        "pioneer_3dx_right_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5483",
@@ -9340,6 +9948,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -9367,7 +9976,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_v1_cad_chassis",
+        "agilex_scout_v1_cad_wheel_front_left",
+        "agilex_scout_v1_cad_wheel_front_right",
+        "agilex_scout_v1_cad_wheel_rear_left",
+        "agilex_scout_v1_cad_wheel_rear_right"
+      ]
     },
     {
       "id": "icra-2026-paper-5505",
@@ -9396,7 +10011,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5506",
@@ -9427,7 +10044,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5530",
@@ -9455,7 +10074,10 @@
         }
       ],
       "parts": [
-        "livox_mid360_peral_reference"
+        "livox_mid360_peral_reference",
+        "peral16_base_tray",
+        "peral25_compute_stack_fixed",
+        "peral25_mounting_plate"
       ]
     },
     {
@@ -9488,7 +10110,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5578",
@@ -9517,7 +10141,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "intel_realsense_d435_2020_cad_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-5609",
@@ -9593,7 +10219,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5635",
@@ -9618,10 +10250,13 @@
         }
       ],
       "parts": [
+        "pmb2_base",
         "pmb2_caster_wheel",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_head_pan_tilt_fixed"
+        "tiago_head_pan_tilt_fixed",
+        "tiago_lite_mechanical_upper_fixed"
       ]
     },
     {
@@ -9651,6 +10286,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
       ]
     },
@@ -9729,7 +10365,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-566",
@@ -9756,7 +10394,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-58",
@@ -9782,7 +10422,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "dotbot_source_chassis",
+        "dotbot_source_left_printed_wheel",
+        "dotbot_source_right_printed_wheel",
+        "pololu_wheel_40x7_1454"
+      ]
     },
     {
       "id": "icra-2026-paper-580",
@@ -9815,7 +10460,8 @@
       "parts": [
         "galaxea_r1_left_arm_fixed",
         "galaxea_r1_right_arm_fixed",
-        "galaxea_r1_torso_fixed"
+        "galaxea_r1_torso_fixed",
+        "galaxea_r1_zed_head_fixed"
       ]
     },
     {
@@ -9843,6 +10489,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -9870,8 +10517,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -9897,6 +10548,8 @@
         }
       ],
       "parts": [
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
       ]
@@ -9986,7 +10639,11 @@
       "parts": [
         "dexforce_w1_brainco_revo1_left_fixed",
         "dexforce_w1_brainco_revo1_right_fixed",
-        "dexforce_w1_dh_pgc_gripper_fixed"
+        "dexforce_w1_dh_pgc_gripper_fixed",
+        "dexforce_w1_industrial_head_fixed",
+        "dexforce_w1_industrial_left_arm_fixed",
+        "dexforce_w1_industrial_right_arm_fixed",
+        "dexforce_w1_industrial_torso_fixed"
       ]
     },
     {
@@ -10091,7 +10748,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5849",
@@ -10118,7 +10781,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5860",
@@ -10176,7 +10845,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-5893",
@@ -10202,7 +10873,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "leeahn2_pin_array_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5904",
@@ -10234,6 +10907,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -10322,6 +10996,8 @@
         "dingo_o_mecanum_normal",
         "jackal_j100_chassis",
         "jackal_j100_wheel",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
       ]
@@ -10420,6 +11096,8 @@
         }
       ],
       "parts": [
+        "earthrover_mini_plus_v6_fixed_body",
+        "earthrover_mini_plus_v6_wheel",
         "earthrover_zero_front_camera",
         "earthrover_zero_imu",
         "earthrover_zero_rear_camera",
@@ -10526,7 +11204,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "jsk_lock_spin_wheel_150_reconstruction"
+      ]
     },
     {
       "id": "icra-2026-paper-5964",
@@ -10579,6 +11259,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -10609,7 +11290,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6007",
@@ -10728,7 +11411,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6025",
@@ -10889,7 +11574,12 @@
         }
       ],
       "parts": [
+        "autodrive_f1tenth_source_chassis",
+        "autodrive_f1tenth_source_front_left_wheel",
+        "autodrive_f1tenth_source_front_right_wheel",
+        "autodrive_f1tenth_source_rear_left_wheel",
         "autodrive_f1tenth_source_wheel",
+        "autodrive_nigel_platform4_deck",
         "autodrive_nigel_simscape_left_wheel",
         "autodrive_nigel_simscape_right_wheel"
       ]
@@ -10960,7 +11650,14 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "nasa_perseverance_arm_turret_fixed",
+        "nasa_perseverance_hga_fixed",
+        "nasa_perseverance_mast_head_fixed",
+        "nasa_perseverance_source_wheel",
+        "nasa_scarecrow_front_left_source_wheel",
+        "nasa_scarecrow_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6064",
@@ -10987,7 +11684,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "sbg_ellipse_a_cad_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-6086",
@@ -11039,6 +11738,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
       ]
     },
@@ -11159,7 +11859,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6155",
@@ -11195,6 +11897,8 @@
         "moonbot_arm_v1_fixed",
         "moonbot_arm_v2_fixed",
         "moonbot_arm_v3_fixed",
+        "moonbot_wheel_v1_source_left",
+        "moonbot_wheel_v1_source_right",
         "moonbot_wheel_v2_source_left",
         "moonbot_wheel_v2_source_right"
       ]
@@ -11232,7 +11936,9 @@
         }
       ],
       "parts": [
-        "agilex_tracer2_drive_wheel"
+        "agilex_tracer2_chassis",
+        "agilex_tracer2_drive_wheel",
+        "interbotix_viperx300s_fixed"
       ]
     },
     {
@@ -11291,8 +11997,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -11322,7 +12032,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "nasa_perseverance_arm_turret_fixed",
+        "nasa_perseverance_hga_fixed",
+        "nasa_perseverance_mast_head_fixed",
+        "nasa_perseverance_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6195",
@@ -11386,7 +12101,8 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_waffle_chassis"
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
       ]
     },
     {
@@ -11453,7 +12169,10 @@
         }
       ],
       "parts": [
-        "chrono_viper_wheel_reference"
+        "chrono_viper_wheel_reference",
+        "cmu_rft_grousered_wheel_125",
+        "cmu_rft_smooth_wheel_125",
+        "intel_realsense_t265_fixed"
       ]
     },
     {
@@ -11492,8 +12211,10 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
-        "tracer_mini_source_camera"
+        "tracer_mini_source_camera",
+        "tracer_mini_source_lidar"
       ]
     },
     {
@@ -11522,7 +12243,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "google_everyday_arm_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6219",
@@ -11548,8 +12271,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -11583,7 +12310,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel",
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6226",
@@ -11619,7 +12349,11 @@
         "momo_drive_wheel_left",
         "momo_drive_wheel_right",
         "momo_lift_module_fixed",
-        "momo_mobile_chassis"
+        "momo_mobile_chassis",
+        "uiuc_momo_complete_upper_fixed",
+        "uiuc_momo_head_mount",
+        "uiuc_momo_long_arm_fixed",
+        "uiuc_momo_short_arm_fixed"
       ]
     },
     {
@@ -11722,7 +12456,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6260",
@@ -11750,7 +12486,9 @@
       "parts": [
         "stretch3_base_lidar",
         "stretch3_drive_wheel",
-        "stretch_re2_head_pan_tilt_fixed"
+        "stretch_re2_head_pan_tilt_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed"
       ]
     },
     {
@@ -11778,8 +12516,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -11806,7 +12548,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "intel_realsense_d435_2020_cad_reference",
+        "robotont_gen3_cad_chassis",
+        "robotont_gen3_cad_wheel_with_coupler"
+      ]
     },
     {
       "id": "icra-2026-paper-6290",
@@ -11834,7 +12580,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-63",
@@ -11860,7 +12608,19 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "stretch3_base_imu",
+        "stretch3_base_lidar",
+        "stretch3_body",
+        "stretch3_drive_wheel",
+        "stretch3_head_d435i",
+        "stretch3_head_nav_camera",
+        "stretch_re1_drive_wheel",
+        "stretch_re1_mobile_chassis",
+        "stretch_re1_upper_fixed",
+        "stretch_re2_mobile_chassis",
+        "stretch_re2_upper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6305",
@@ -11962,7 +12722,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6343",
@@ -11992,7 +12754,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer_v1_chassis",
+        "agilex_tracer_v1_drive_wheel",
+        "interbotix_viperx300s_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6345",
@@ -12148,7 +12914,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "lds_01",
+        "tb3_wheel_isw_01",
+        "turtlebot3_burger_chassis",
+        "turtlebot3_waffle_chassis",
+        "turtlebot3_waffle_r200_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6378",
@@ -12210,7 +12982,8 @@
         }
       ],
       "parts": [
-        "kinova_gen3_7dof_fixed"
+        "kinova_gen3_7dof_fixed",
+        "kinova_gen3_robotiq_2f85_fixed"
       ]
     },
     {
@@ -12245,7 +13018,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hesai_pandar40p_2024_reference",
+        "velodyne_vlp32c_source_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-64",
@@ -12299,7 +13075,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6411",
@@ -12385,8 +13163,12 @@
       "parts": [
         "pmb2_base",
         "pmb2_drive_wheel",
+        "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
+        "tiago_dual_complete_upper_fixed",
         "tiago_dual_head_fixed",
+        "tiago_dual_left_arm_fixed",
+        "tiago_dual_right_arm_fixed",
         "tiago_dual_torso_fixed"
       ]
     },
@@ -12418,7 +13200,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6451",
@@ -12445,7 +13229,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ouster_os0_128_rev7",
+        "ouster_os1_128_rev7"
+      ]
     },
     {
       "id": "icra-2026-paper-6457",
@@ -12503,7 +13290,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-6472",
@@ -12553,7 +13342,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pioneer_3dx_chassis",
+        "pioneer_3dx_left_wheel",
+        "pioneer_3dx_right_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6510",
@@ -12579,7 +13372,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "epuck_legacy_cad_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6535",
@@ -12603,7 +13398,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "epuck_legacy_cad_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-658",
@@ -12734,7 +13531,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-675",
@@ -12761,7 +13560,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-679",
@@ -12853,8 +13654,12 @@
         }
       ],
       "parts": [
+        "fetch_arm_gripper_fixed",
+        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_mobile_chassis"
+        "fetch_head_fixed",
+        "fetch_mobile_chassis",
+        "fetch_torso_lift_fixed"
       ]
     },
     {
@@ -12880,7 +13685,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_alpha_prime_revb_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-720",
@@ -12909,7 +13716,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_2_chassis",
+        "agilex_scout_2_wheel_type1",
+        "agilex_scout_2_wheel_type2"
+      ]
     },
     {
       "id": "icra-2026-paper-731",
@@ -12940,7 +13751,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-735",
@@ -12976,6 +13789,7 @@
         }
       ],
       "parts": [
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -13004,7 +13818,15 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "fmm_ewellix_lift_camera_fixed",
+        "fmm_franka_controller_fixed",
+        "fmm_ridgeback_top_plate",
+        "fmm_wrist_camera_mount_fixed",
+        "franka_panda_fixed",
+        "ridgeback_r100_chassis",
+        "ridgeback_r100_mecanum_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-756",
@@ -13032,7 +13854,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "realsense_d405_official"
+      ]
     },
     {
       "id": "icra-2026-paper-769",
@@ -13061,7 +13885,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer_v1_chassis",
+        "agilex_tracer_v1_drive_wheel",
+        "realman_rm75_6f_fixed",
+        "realman_rm75_b_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-77",
@@ -13089,7 +13918,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ford_avdata_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-79",
@@ -13114,6 +13945,7 @@
         }
       ],
       "parts": [
+        "clearpath_grizzly_chassis",
         "clearpath_grizzly_wheel"
       ]
     },
@@ -13149,6 +13981,8 @@
       "parts": [
         "create3_drive_wheel",
         "create3_stock_chassis",
+        "future_nav_mir100_drive_wheel",
+        "hrctf_mir200_source_chassis",
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
@@ -13205,7 +14039,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "gritsbot_legacy_cad_chassis",
+        "gritsbot_legacy_cad_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-802",
@@ -13241,6 +14078,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
@@ -13277,6 +14115,12 @@
         }
       ],
       "parts": [
+        "agilex_scout_v1_cad_chassis",
+        "agilex_scout_v1_cad_wheel_front_left",
+        "agilex_scout_v1_cad_wheel_front_right",
+        "agilex_scout_v1_cad_wheel_rear_left",
+        "agilex_scout_v1_cad_wheel_rear_right",
+        "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
       ]
@@ -13435,7 +14279,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_v1_cad_chassis",
+        "agilex_scout_v1_cad_wheel_front_left",
+        "agilex_scout_v1_cad_wheel_front_right",
+        "agilex_scout_v1_cad_wheel_rear_left",
+        "agilex_scout_v1_cad_wheel_rear_right"
+      ]
     },
     {
       "id": "icra-2026-paper-868",
@@ -13465,7 +14315,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "intel_realsense_l515_fixed",
+        "intel_realsense_t265_fixed",
+        "stretch3_head_d435i",
+        "universal_robots_ur5e_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-87",
@@ -13495,7 +14350,13 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_v1_cad_chassis",
+        "agilex_scout_v1_cad_wheel_front_left",
+        "agilex_scout_v1_cad_wheel_front_right",
+        "agilex_scout_v1_cad_wheel_rear_left",
+        "agilex_scout_v1_cad_wheel_rear_right"
+      ]
     },
     {
       "id": "icra-2026-paper-886",
@@ -13535,7 +14396,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hesai_pandora_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-895",
@@ -13598,7 +14461,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "velodyne_hdl32e"
+      ]
     },
     {
       "id": "icra-2026-paper-929",
@@ -13627,6 +14492,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
       ]
     },
@@ -13665,6 +14531,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_leader_fixed",
+        "agilex_piper_current_fixed",
+        "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -13693,7 +14563,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hero_legacy_chassis",
+        "hero_legacy_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-949",
