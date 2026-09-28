@@ -24,7 +24,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
 <script type="module" src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/base.css">
+<!-- The page's own files carry ?v= (the first 8 characters of their SHA-256), so a browser that
+     cached an older copy fetches the new one together with the new page. -->
+<link rel="stylesheet" href="assets/base.css?v=390eff28">
 <style>
   /* stats */
   /* sections */
@@ -105,9 +107,9 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=c47f77cb">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
-<script src="assets/site.js" defer></script>
+<script src="assets/site.js?v=c0fcb760" defer></script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
 </head>
 <body>

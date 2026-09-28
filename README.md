@@ -27,6 +27,12 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory /tmp/robotdsl-preview
 
 and open `http://127.0.0.1:8769/robotdsl-site/`.
 
+The pages load `assets/base.css`, `site.css`, `guide.css` and `site.js` with `?v=` set to the
+first 8 characters of the file's SHA-256 (`sha256sum assets/site.js | cut -c1-8`). When you
+change one of them, update its `?v=` in `index.html` and `guide/index.html`; otherwise a browser
+can pair the new page with its cached copy of the old file (GitHub Pages lets it keep one for ten
+minutes), which leaves, for example, the benchmark charts empty.
+
 The project page follows the Lucide reference, using locally vendored VitePress
 components and Lucide icons alongside the existing Vidstack player, Chart.js and Three.js.
 The project page and guide share typography and colors through `assets/base.css`.
