@@ -444,6 +444,7 @@
         }
       ],
       "parts": [
+        "agilex_scout_mini_ugv_wheel",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -609,7 +610,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "microsoft_kinect_turtlebot",
+        "turtlebot2_hexagon_tower"
+      ]
     },
     {
       "id": "icra-2026-paper-1203",
@@ -942,7 +946,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1320",
@@ -1238,7 +1244,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "limo_ros2_source_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1411",
@@ -1293,7 +1301,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-143",
@@ -1421,7 +1431,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-153",
@@ -1534,7 +1546,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1593",
@@ -1739,7 +1754,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-1660",
@@ -2167,7 +2184,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "microsoft_kinect_turtlebot",
+        "turtlebot2_hexagon_tower"
+      ]
     },
     {
       "id": "icra-2026-paper-1899",
@@ -2204,7 +2224,8 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "limo_ros2_source_rear_wheel"
       ]
     },
     {
@@ -2431,7 +2452,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2",
@@ -2785,7 +2808,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agibot_g1_omnipicker_head_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-212",
@@ -2929,7 +2954,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_cobot_s_front_lidar"
+      ]
     },
     {
       "id": "icra-2026-paper-2206",
@@ -2953,7 +2980,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2227",
@@ -3068,7 +3097,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2278",
@@ -3143,7 +3174,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2328",
@@ -3426,7 +3459,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2454",
@@ -4271,7 +4306,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-29",
@@ -4324,7 +4361,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "autodrive_f1tenth_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-2929",
@@ -4400,7 +4439,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "robotnik_rb1_drive_wheel_150"
+      ]
     },
     {
       "id": "icra-2026-paper-2999",
@@ -4612,7 +4653,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3237",
@@ -4667,7 +4711,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "forzaeth_legacy_f110_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-326",
@@ -4745,7 +4791,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "limo_ros2_source_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3280",
@@ -4829,7 +4877,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3372",
@@ -4986,7 +5036,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "yahboom_x3_mecanum_type_a",
+        "yahboom_x3_mecanum_type_b"
+      ]
     },
     {
       "id": "icra-2026-paper-3433",
@@ -5013,7 +5066,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-3473",
@@ -5372,7 +5427,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "nova_carter_drive_wheel_right"
+      ]
     },
     {
       "id": "icra-2026-paper-3630",
@@ -6739,7 +6796,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-4274",
@@ -6858,7 +6917,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-4335",
@@ -7125,7 +7186,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-4570",
@@ -7486,7 +7549,8 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "nova_carter_drive_wheel_right"
       ]
     },
     {
@@ -7938,7 +8002,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "ridgeback_r100_chassis",
+        "ridgeback_r100_mecanum_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-4932",
@@ -8403,7 +8470,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "realman_rx75_6fb_left_fixed",
+        "realman_rx75_6fb_right_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5116",
@@ -8722,7 +8792,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "xlerobot_arm_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5276",
@@ -8804,7 +8876,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5292",
@@ -8834,7 +8908,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "arx_x7s_head_fixed",
+        "arx_x7s_left_arm_fixed",
+        "arx_x7s_right_arm_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-530",
@@ -8866,7 +8944,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel",
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5306",
@@ -8979,7 +9061,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5421",
@@ -9240,7 +9325,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5486",
@@ -9353,7 +9440,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "livox_mid360_peral_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-5575",
@@ -9514,7 +9603,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "pmb2_drive_wheel",
+        "pmb2_tim551_source",
+        "tiago_head_pan_tilt_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5638",
@@ -9542,7 +9635,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "limo_ros2_source_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-564",
@@ -9731,7 +9826,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5809",
@@ -9783,7 +9880,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "microsoft_kinect_turtlebot",
+        "turtlebot2_hexagon_tower"
+      ]
     },
     {
       "id": "icra-2026-paper-5817",
@@ -9867,7 +9967,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "dexforce_w1_brainco_revo1_left_fixed",
+        "dexforce_w1_brainco_revo1_right_fixed",
+        "dexforce_w1_dh_pgc_gripper_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-5833",
@@ -10113,7 +10217,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5907",
@@ -10141,7 +10247,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "thorvald_graspberry_source_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5917",
@@ -10197,7 +10305,9 @@
         "dingo_o_mecanum_mirrored",
         "dingo_o_mecanum_normal",
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "microsoft_kinect_turtlebot",
+        "turtlebot2_hexagon_tower"
       ]
     },
     {
@@ -10452,7 +10562,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-5993",
@@ -10760,7 +10872,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "autodrive_f1tenth_source_wheel",
+        "autodrive_nigel_simscape_left_wheel",
+        "autodrive_nigel_simscape_right_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6052",
@@ -10906,7 +11022,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "limo_ros2_source_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6114",
@@ -11095,7 +11213,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-6173",
@@ -11314,7 +11434,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "chrono_viper_wheel_reference"
+      ]
     },
     {
       "id": "icra-2026-paper-6202",
@@ -11351,7 +11473,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel",
+        "tracer_mini_source_camera"
+      ]
     },
     {
       "id": "icra-2026-paper-6218",
@@ -11472,7 +11597,12 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "momo_drive_wheel_left",
+        "momo_drive_wheel_right",
+        "momo_lift_module_fixed",
+        "momo_mobile_chassis"
+      ]
     },
     {
       "id": "icra-2026-paper-6244",
@@ -11599,7 +11729,11 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "stretch3_base_lidar",
+        "stretch3_drive_wheel",
+        "stretch_re2_head_pan_tilt_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6272",
@@ -12057,7 +12191,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "kinova_gen3_7dof_fixed"
+      ]
     },
     {
       "id": "icra-2026-paper-6396",
@@ -12821,7 +12957,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-74",
@@ -12956,7 +13095,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "clearpath_grizzly_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-794",
@@ -13082,6 +13223,7 @@
         }
       ],
       "parts": [
+        "limo_ros2_source_rear_wheel",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -13116,7 +13258,10 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "hunter_se_front_wheel",
+        "hunter_se_rear_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-817",
@@ -13463,7 +13608,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_scout_mini_ugv_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-940",
@@ -13499,7 +13646,9 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [
+        "agilex_tracer2_drive_wheel"
+      ]
     },
     {
       "id": "icra-2026-paper-944",

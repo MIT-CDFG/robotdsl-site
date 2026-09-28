@@ -1,6 +1,6 @@
 {
   "version": "robotdsl-selectable-preview-v2",
-  "count": 152,
+  "count": 191,
   "components": [
     {
       "ref": "jackal_j100_chassis",
@@ -123,6 +123,39 @@
       ]
     },
     {
+      "ref": "agilex_scout_mini_ugv_wheel",
+      "name": "Complete 160 mm nominal Scout Mini wheel from the official UGV…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AgileX Robotics",
+      "subtype": "Standard",
+      "description": "Complete 160 mm nominal Scout Mini wheel from the official UGV simulation model; hardware revision unverified.",
+      "source_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
+      "robots": [
+        "SCOUT MINI"
+      ],
+      "papers": [
+        "icra-2026-paper-1161",
+        "icra-2026-paper-1314",
+        "icra-2026-paper-1497",
+        "icra-2026-paper-1641",
+        "icra-2026-paper-1994",
+        "icra-2026-paper-2206",
+        "icra-2026-paper-2287",
+        "icra-2026-paper-2899",
+        "icra-2026-paper-3433",
+        "icra-2026-paper-4249",
+        "icra-2026-paper-5290",
+        "icra-2026-paper-530",
+        "icra-2026-paper-5483",
+        "icra-2026-paper-5805",
+        "icra-2026-paper-5904",
+        "icra-2026-paper-5985",
+        "icra-2026-paper-6202",
+        "icra-2026-paper-929"
+      ]
+    },
+    {
       "ref": "husky_a200_chassis",
       "name": "Clearpath Husky A200 body with bumpers, user rail and top plate",
       "category": "chassis",
@@ -215,6 +248,62 @@
       ]
     },
     {
+      "ref": "pmb2_drive_wheel",
+      "name": "PMB2 driven wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Standard",
+      "description": "PMB2 driven wheel; native 98.5 mm collision radius, source visual and uncalibrated inertial.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)",
+        "PAL Robotics TIAGo Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-5635",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
+      "ref": "pmb2_tim551_source",
+      "name": "Official PMB2 sick_tim551 source model and uncalibrated physics",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Lidar",
+      "description": "Official PMB2 sick_tim551 source model and uncalibrated physics; mounting compatibility and sensor calibration not established.",
+      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
+      "robots": [
+        "PAL Robotics TIAGo (configuration unspecified)",
+        "PAL Robotics TIAGo Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-1739",
+        "icra-2026-paper-1958",
+        "icra-2026-paper-243",
+        "icra-2026-paper-2494",
+        "icra-2026-paper-3620",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-4335",
+        "icra-2026-paper-4492",
+        "icra-2026-paper-4590",
+        "icra-2026-paper-5635",
+        "icra-2026-paper-6272",
+        "icra-2026-paper-6413"
+      ]
+    },
+    {
       "ref": "slamtec_rplidar_a1m8",
       "name": "SLAMTEC rplidar purchased sensor package",
       "category": "sensor",
@@ -300,58 +389,6 @@
       "supplier": "PAL Robotics",
       "subtype": "Diff_two_caster",
       "description": "PMB2 base, cover, dock, fixed caster assemblies and retained source suspension inertials; antennas and upper body excluded explicitly.",
-      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
-      "robots": [
-        "PAL Robotics TIAGo (configuration unspecified)"
-      ],
-      "papers": [
-        "icra-2026-paper-1739",
-        "icra-2026-paper-1958",
-        "icra-2026-paper-243",
-        "icra-2026-paper-2494",
-        "icra-2026-paper-3620",
-        "icra-2026-paper-4142",
-        "icra-2026-paper-4335",
-        "icra-2026-paper-4492",
-        "icra-2026-paper-4590",
-        "icra-2026-paper-6272",
-        "icra-2026-paper-6413"
-      ]
-    },
-    {
-      "ref": "pmb2_drive_wheel",
-      "name": "PMB2 driven wheel",
-      "category": "wheel",
-      "origin": "library",
-      "supplier": "PAL Robotics",
-      "subtype": "Standard",
-      "description": "PMB2 driven wheel; native 98.5 mm collision radius, source visual and uncalibrated inertial.",
-      "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
-      "robots": [
-        "PAL Robotics TIAGo (configuration unspecified)"
-      ],
-      "papers": [
-        "icra-2026-paper-1739",
-        "icra-2026-paper-1958",
-        "icra-2026-paper-243",
-        "icra-2026-paper-2494",
-        "icra-2026-paper-3620",
-        "icra-2026-paper-4142",
-        "icra-2026-paper-4335",
-        "icra-2026-paper-4492",
-        "icra-2026-paper-4590",
-        "icra-2026-paper-6272",
-        "icra-2026-paper-6413"
-      ]
-    },
-    {
-      "ref": "pmb2_tim551_source",
-      "name": "Official PMB2 sick_tim551 source model and uncalibrated physics",
-      "category": "sensor",
-      "origin": "library",
-      "supplier": "PAL Robotics",
-      "subtype": "Lidar",
-      "description": "Official PMB2 sick_tim551 source model and uncalibrated physics; mounting compatibility and sensor calibration not established.",
       "source_url": "https://github.com/pal-robotics/tiago_dual_robot",
       "robots": [
         "PAL Robotics TIAGo (configuration unspecified)"
@@ -473,6 +510,32 @@
       ]
     },
     {
+      "ref": "stretch3_base_lidar",
+      "name": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware…",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Lidar",
+      "description": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware guide), from the SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3",
+        "Hello Robot Stretch RE-1",
+        "Hello Robot Stretch2"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-2929",
+        "icra-2026-paper-3597",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116",
+        "icra-2026-paper-6260"
+      ]
+    },
+    {
       "ref": "warthog_w200_chassis",
       "name": "Warthog W200 body, fixed differential rockers, fenders, lights and…",
       "category": "chassis",
@@ -521,27 +584,27 @@
       ]
     },
     {
-      "ref": "stretch3_base_lidar",
-      "name": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware…",
-      "category": "sensor",
+      "ref": "agilex_tracer2_drive_wheel",
+      "name": "AgileX Tracer2 complete native drive wheel",
+      "category": "wheel",
       "origin": "library",
-      "supplier": "Hello Robot",
-      "subtype": "Lidar",
-      "description": "Stretch 3 base laser scanner (an RPLIDAR A1 per Hello Robot's hardware guide), from the SE3 description.",
-      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "supplier": "AgileX Robotics",
+      "subtype": "Standard",
+      "description": "AgileX Tracer2 complete native drive wheel; source right_link geometry and physical declarations.",
+      "source_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
       "robots": [
-        "Hello Robot Stretch 3 / SE3",
-        "Hello Robot Stretch RE-1"
+        "AgileX Cobot Magic",
+        "RoboMatch: AgileX Tracer 2.0 + two ViperX-300 arms"
       ],
       "papers": [
-        "icra-2026-paper-1626",
-        "icra-2026-paper-2106",
-        "icra-2026-paper-2929",
-        "icra-2026-paper-3597",
-        "icra-2026-paper-3694",
-        "icra-2026-paper-4142",
-        "icra-2026-paper-5063",
-        "icra-2026-paper-5116"
+        "icra-2026-paper-142",
+        "icra-2026-paper-2270",
+        "icra-2026-paper-2436",
+        "icra-2026-paper-3345",
+        "icra-2026-paper-4332",
+        "icra-2026-paper-4528",
+        "icra-2026-paper-617",
+        "icra-2026-paper-940"
       ]
     },
     {
@@ -591,27 +654,6 @@
       ]
     },
     {
-      "ref": "stretch3_body",
-      "name": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3…",
-      "category": "chassis",
-      "origin": "library",
-      "supplier": "Hello Robot",
-      "subtype": "Diff_two_caster",
-      "description": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3 gripper and head frozen at their zero pose, from Hello Robot's SE3 description.",
-      "source_url": "https://github.com/hello-robot/stretch_urdf",
-      "robots": [
-        "Hello Robot Stretch 3 / SE3"
-      ],
-      "papers": [
-        "icra-2026-paper-1626",
-        "icra-2026-paper-2106",
-        "icra-2026-paper-3694",
-        "icra-2026-paper-4142",
-        "icra-2026-paper-5063",
-        "icra-2026-paper-5116"
-      ]
-    },
-    {
       "ref": "stretch3_drive_wheel",
       "name": "Hello Robot Stretch 3 drive wheel",
       "category": "wheel",
@@ -619,6 +661,29 @@
       "supplier": "Hello Robot",
       "subtype": "Standard",
       "description": "Hello Robot Stretch 3 drive wheel, from Hello Robot's SE3 description.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch 3 / SE3",
+        "Hello Robot Stretch2"
+      ],
+      "papers": [
+        "icra-2026-paper-1626",
+        "icra-2026-paper-2106",
+        "icra-2026-paper-3694",
+        "icra-2026-paper-4142",
+        "icra-2026-paper-5063",
+        "icra-2026-paper-5116",
+        "icra-2026-paper-6260"
+      ]
+    },
+    {
+      "ref": "stretch3_body",
+      "name": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Hello Robot",
+      "subtype": "Diff_two_caster",
+      "description": "Hello Robot Stretch 3 base with the mast, lift, arm, DexWrist 3, SG3 gripper and head frozen at their zero pose, from Hello Robot's SE3 description.",
       "source_url": "https://github.com/hello-robot/stretch_urdf",
       "robots": [
         "Hello Robot Stretch 3 / SE3"
@@ -801,6 +866,69 @@
       ]
     },
     {
+      "ref": "limo_ros2_source_rear_wheel",
+      "name": "AgileX LIMO complete rear wheel from official ROS2 limo_car model",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AgileX Robotics",
+      "subtype": "Standard",
+      "description": "AgileX LIMO complete rear wheel from official ROS2 limo_car model; shared by both rear occurrences.",
+      "source_url": "https://github.com/agilexrobotics/limo_ros2",
+      "robots": [
+        "AgileX Limo (edition and wheel mode unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-1398",
+        "icra-2026-paper-1899",
+        "icra-2026-paper-3273",
+        "icra-2026-paper-5638",
+        "icra-2026-paper-6089",
+        "icra-2026-paper-802"
+      ]
+    },
+    {
+      "ref": "hunter_se_front_wheel",
+      "name": "AgileX Hunter SE whole wheel, authored front CAD variant",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AgileX Robotics",
+      "subtype": "Standard",
+      "description": "AgileX Hunter SE whole wheel, authored front CAD variant.",
+      "source_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
+      "robots": [
+        "AgileX Hunter SE"
+      ],
+      "papers": [
+        "icra-2026-paper-158",
+        "icra-2026-paper-322",
+        "icra-2026-paper-530",
+        "icra-2026-paper-5420",
+        "icra-2026-paper-735",
+        "icra-2026-paper-804"
+      ]
+    },
+    {
+      "ref": "hunter_se_rear_wheel",
+      "name": "AgileX Hunter SE whole wheel, authored rear CAD variant",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AgileX Robotics",
+      "subtype": "Standard",
+      "description": "AgileX Hunter SE whole wheel, authored rear CAD variant.",
+      "source_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
+      "robots": [
+        "AgileX Hunter SE"
+      ],
+      "papers": [
+        "icra-2026-paper-158",
+        "icra-2026-paper-322",
+        "icra-2026-paper-530",
+        "icra-2026-paper-5420",
+        "icra-2026-paper-735",
+        "icra-2026-paper-804"
+      ]
+    },
+    {
       "ref": "turtlebot3_burger_chassis",
       "name": "Burger assembled fixed structure with XL430 bodies, electronics, mounts…",
       "category": "chassis",
@@ -916,6 +1044,44 @@
       ]
     },
     {
+      "ref": "turtlebot2_hexagon_tower",
+      "name": "TurtleBot2 complete hexagonal tower",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "TurtleBot",
+      "subtype": "Attachment",
+      "description": "TurtleBot2 complete hexagonal tower; whole rigid source payload, no internal actuation.",
+      "source_url": "https://github.com/turtlebot/turtlebot",
+      "robots": [
+        "TurtleBot2"
+      ],
+      "papers": [
+        "icra-2026-paper-120",
+        "icra-2026-paper-1859",
+        "icra-2026-paper-581",
+        "icra-2026-paper-5917"
+      ]
+    },
+    {
+      "ref": "microsoft_kinect_turtlebot",
+      "name": "Microsoft Kinect module in the TurtleBot source model",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Microsoft",
+      "subtype": "Attachment",
+      "description": "Microsoft Kinect module in the TurtleBot source model; whole rigid source payload, no internal actuation.",
+      "source_url": "https://github.com/turtlebot/turtlebot",
+      "robots": [
+        "TurtleBot2"
+      ],
+      "papers": [
+        "icra-2026-paper-120",
+        "icra-2026-paper-1859",
+        "icra-2026-paper-581",
+        "icra-2026-paper-5917"
+      ]
+    },
+    {
       "ref": "earthrover_zero_v52_chassis",
       "name": "FrodoBots EarthRover Zero V5.2 body",
       "category": "chassis",
@@ -1003,6 +1169,44 @@
         "icra-2026-paper-5928",
         "icra-2026-paper-6033",
         "icra-2026-paper-817"
+      ]
+    },
+    {
+      "ref": "ridgeback_r100_chassis",
+      "name": "Clearpath R100 rigid base, fixed rockers, covers and riser from its…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum_four_wheel",
+      "description": "Clearpath R100 rigid base, fixed rockers, covers and riser from its official description; no manipulator or arm mount.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Ridgeback (base)",
+        "Clearpath Ridgeback + Universal Robots UR10"
+      ],
+      "papers": [
+        "icra-2026-paper-29",
+        "icra-2026-paper-4918",
+        "icra-2026-paper-5063"
+      ]
+    },
+    {
+      "ref": "ridgeback_r100_mecanum_wheel",
+      "name": "R100 mecanum wheel envelope from Clearpath",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Mecanum",
+      "description": "R100 mecanum wheel envelope from Clearpath: a rigid cylindrical source mesh without roller geometry or joints.",
+      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
+      "robots": [
+        "Clearpath Ridgeback (base)",
+        "Clearpath Ridgeback + Universal Robots UR10"
+      ],
+      "papers": [
+        "icra-2026-paper-29",
+        "icra-2026-paper-4918",
+        "icra-2026-paper-5063"
       ]
     },
     {
@@ -1229,40 +1433,6 @@
       ]
     },
     {
-      "ref": "ridgeback_r100_chassis",
-      "name": "Clearpath R100 rigid base, fixed rockers, covers and riser from its…",
-      "category": "chassis",
-      "origin": "library",
-      "supplier": "Clearpath Robotics",
-      "subtype": "Mecanum_four_wheel",
-      "description": "Clearpath R100 rigid base, fixed rockers, covers and riser from its official description; no manipulator or arm mount.",
-      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
-      "robots": [
-        "Clearpath Ridgeback + Universal Robots UR10"
-      ],
-      "papers": [
-        "icra-2026-paper-29",
-        "icra-2026-paper-5063"
-      ]
-    },
-    {
-      "ref": "ridgeback_r100_mecanum_wheel",
-      "name": "R100 mecanum wheel envelope from Clearpath",
-      "category": "wheel",
-      "origin": "library",
-      "supplier": "Clearpath Robotics",
-      "subtype": "Mecanum",
-      "description": "R100 mecanum wheel envelope from Clearpath: a rigid cylindrical source mesh without roller geometry or joints.",
-      "source_url": "https://github.com/clearpathrobotics/clearpath_common",
-      "robots": [
-        "Clearpath Ridgeback + Universal Robots UR10"
-      ],
-      "papers": [
-        "icra-2026-paper-29",
-        "icra-2026-paper-5063"
-      ]
-    },
-    {
       "ref": "moonbot_arm_v1_fixed",
       "name": "MoonBot arm v1 (fixed pose)",
       "category": "attachment",
@@ -1416,6 +1586,24 @@
       ]
     },
     {
+      "ref": "robotnik_rb1_drive_wheel_150",
+      "name": "Official two-cylinder visual and single-cylinder physical wheel model,…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Robotnik Automation",
+      "subtype": "Standard",
+      "description": "Official two-cylinder visual and single-cylinder physical wheel model, one reusable part for both sides; not detailed hardware CAD.",
+      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
+      "robots": [
+        "Robotnik RB-1-BASE",
+        "UC3M ADAM"
+      ],
+      "papers": [
+        "icra-2026-paper-2943",
+        "icra-2026-paper-5003"
+      ]
+    },
+    {
       "ref": "summit_xl_steel_source_chassis",
       "name": "Official rigid chassis source link",
       "category": "chassis",
@@ -1464,6 +1652,38 @@
       "papers": [
         "icra-2026-paper-1369",
         "icra-2026-paper-4791"
+      ]
+    },
+    {
+      "ref": "autodrive_f1tenth_source_wheel",
+      "name": "Complete AutoDRIVE F1TENTH source-model wheel",
+      "category": "wheel",
+      "origin": "library",
+      "description": "Complete AutoDRIVE F1TENTH source-model wheel, using the rear-right visual group and an explicitly estimated homogeneous mass distribution.",
+      "source_url": "https://github.com/Tinker-Twins/AutoDRIVE/tree/75b7df5216524a3c6b3150d698139190c6c44f8f",
+      "robots": [
+        "F1TENTH / RoboRacer platform (chassis unspecified)"
+      ],
+      "papers": [
+        "icra-2026-paper-2904",
+        "icra-2026-paper-6045"
+      ]
+    },
+    {
+      "ref": "nova_carter_drive_wheel_right",
+      "name": "Official Nova Carter right drive-wheel unit with the source-authored…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "NVIDIA",
+      "subtype": "Standard",
+      "description": "Official Nova Carter right drive-wheel unit with the source-authored left-wheel OBJ and negative axial visual offset.",
+      "source_url": "https://github.com/NVIDIA-ISAAC-ROS/nova_carter",
+      "robots": [
+        "NVIDIA Carter (family)"
+      ],
+      "papers": [
+        "icra-2026-paper-3621",
+        "icra-2026-paper-4704"
       ]
     },
     {
@@ -1775,22 +1995,6 @@
       "supplier": "Robotnik Automation",
       "subtype": "Diff_two_caster",
       "description": "Official 25 kg base body only; front cover, support casters, sensors and lifting equipment are absent.",
-      "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
-      "robots": [
-        "Robotnik RB-1-BASE"
-      ],
-      "papers": [
-        "icra-2026-paper-5003"
-      ]
-    },
-    {
-      "ref": "robotnik_rb1_drive_wheel_150",
-      "name": "Official two-cylinder visual and single-cylinder physical wheel model,…",
-      "category": "wheel",
-      "origin": "library",
-      "supplier": "Robotnik Automation",
-      "subtype": "Standard",
-      "description": "Official two-cylinder visual and single-cylinder physical wheel model, one reusable part for both sides; not detailed hardware CAD.",
       "source_url": "https://github.com/RobotnikAutomation/robotnik_description",
       "robots": [
         "Robotnik RB-1-BASE"
@@ -2152,6 +2356,447 @@
       ]
     },
     {
+      "ref": "tracer_mini_source_camera",
+      "name": "AgileX Tracer Mini complete source camera module",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "AgileX Robotics model; camera supplier unidentified",
+      "subtype": "Camera",
+      "description": "AgileX Tracer Mini complete source camera module; exact camera supplier and revision unidentified.",
+      "source_url": "https://github.com/agilexrobotics/ugv_gazebo_sim",
+      "robots": [
+        "AgileX Tracer Mini"
+      ],
+      "papers": [
+        "icra-2026-paper-6202"
+      ]
+    },
+    {
+      "ref": "agilex_cobot_s_front_lidar",
+      "name": "Cobot S source front lidar module",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "AgileX Robotics",
+      "subtype": "Lidar",
+      "description": "Cobot S source front lidar module; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/agilexrobotics/cobot_s_sim",
+      "robots": [
+        "AgileX Cobot S Kit"
+      ],
+      "papers": [
+        "icra-2026-paper-2154"
+      ]
+    },
+    {
+      "ref": "autodrive_nigel_simscape_left_wheel",
+      "name": "Complete left wheel from the historical AutoDRIVE Nigel 2WD-MV Simscape…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AutoDRIVE Ecosystem / Tinker Twins",
+      "description": "Complete left wheel from the historical AutoDRIVE Nigel 2WD-MV Simscape source model.",
+      "source_url": "https://github.com/Tinker-Twins/AutoDRIVE/tree/1e16221c0683cd2fd5d18a4712e3b2c016990108",
+      "robots": [
+        "AutoDRIVE Nigel"
+      ],
+      "papers": [
+        "icra-2026-paper-6045"
+      ]
+    },
+    {
+      "ref": "autodrive_nigel_simscape_right_wheel",
+      "name": "Complete right wheel from the historical AutoDRIVE Nigel 2WD-MV…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "AutoDRIVE Ecosystem / Tinker Twins",
+      "description": "Complete right wheel from the historical AutoDRIVE Nigel 2WD-MV Simscape source model.",
+      "source_url": "https://github.com/Tinker-Twins/AutoDRIVE/tree/1e16221c0683cd2fd5d18a4712e3b2c016990108",
+      "robots": [
+        "AutoDRIVE Nigel"
+      ],
+      "papers": [
+        "icra-2026-paper-6045"
+      ]
+    },
+    {
+      "ref": "clearpath_grizzly_wheel",
+      "name": "Clearpath Grizzly complete left-side wheel visual variant from the…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Clearpath Robotics",
+      "subtype": "Standard",
+      "description": "Clearpath Grizzly complete left-side wheel visual variant from the UTIAS dataset model.",
+      "source_url": "https://github.com/utiasASRL/grizzly",
+      "robots": [
+        "Clearpath Grizzly"
+      ],
+      "papers": [
+        "icra-2026-paper-79"
+      ]
+    },
+    {
+      "ref": "dexforce_w1_dh_pgc_gripper_fixed",
+      "name": "W1 DH PGC gripper (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "DexForce",
+      "subtype": "Attachment",
+      "description": "W1 DH PGC gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://huggingface.co/datasets/DexForceAI/embodichain_data",
+      "robots": [
+        "DexForce W1"
+      ],
+      "papers": [
+        "icra-2026-paper-583"
+      ]
+    },
+    {
+      "ref": "dexforce_w1_brainco_revo1_left_fixed",
+      "name": "W1 BrainCo Revo1 left hand (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "DexForce",
+      "subtype": "Attachment",
+      "description": "W1 BrainCo Revo1 left hand (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://huggingface.co/datasets/DexForceAI/embodichain_data",
+      "robots": [
+        "DexForce W1"
+      ],
+      "papers": [
+        "icra-2026-paper-583"
+      ]
+    },
+    {
+      "ref": "dexforce_w1_brainco_revo1_right_fixed",
+      "name": "W1 BrainCo Revo1 right hand (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "DexForce",
+      "subtype": "Attachment",
+      "description": "W1 BrainCo Revo1 right hand (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://huggingface.co/datasets/DexForceAI/embodichain_data",
+      "robots": [
+        "DexForce W1"
+      ],
+      "papers": [
+        "icra-2026-paper-583"
+      ]
+    },
+    {
+      "ref": "forzaeth_legacy_f110_wheel",
+      "name": "Complete wheel of the ForzaETH author-vendored legacy F110 model",
+      "category": "wheel",
+      "origin": "library",
+      "description": "Complete wheel of the ForzaETH author-vendored legacy F110 model; exact fabricated racing-car wheel unverified.",
+      "source_url": "https://github.com/ForzaETH/race_stack",
+      "robots": [
+        "ForzaETH RoboRacer (formerly F1TENTH)"
+      ],
+      "papers": [
+        "icra-2026-paper-3252"
+      ]
+    },
+    {
+      "ref": "kinova_gen3_7dof_fixed",
+      "name": "Kinova Gen3 seven-axis arm with vision wrist (fixed pose",
+      "category": "attachment",
+      "origin": "library",
+      "subtype": "Attachment",
+      "description": "Kinova Gen3 seven-axis arm with vision wrist (fixed pose; M3Bench retained source); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://huggingface.co/datasets/M3Bench/M3Bench",
+      "robots": [
+        "M3Bench Mec-Kinova"
+      ],
+      "papers": [
+        "icra-2026-paper-6393"
+      ]
+    },
+    {
+      "ref": "momo_mobile_chassis",
+      "name": "MOMO mobile module with four source caster forks/wheels, at source zero…",
+      "category": "chassis",
+      "origin": "library",
+      "supplier": "UIUC KIMLAB",
+      "subtype": "Diff_two_caster",
+      "description": "MOMO mobile module with four source caster forks/wheels, at source zero caster pose.",
+      "source_url": "https://uiuckimlab.github.io/papras-pages/urdf/momo_three_arm.urdf",
+      "robots": [
+        "MOMO"
+      ],
+      "papers": [
+        "icra-2026-paper-6226"
+      ]
+    },
+    {
+      "ref": "momo_drive_wheel_left",
+      "name": "MOMO left drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "UIUC KIMLAB",
+      "subtype": "Standard",
+      "description": "MOMO left drive wheel; source mesh and lower precision physical declarations.",
+      "source_url": "https://uiuckimlab.github.io/papras-pages/urdf/momo_three_arm.urdf",
+      "robots": [
+        "MOMO"
+      ],
+      "papers": [
+        "icra-2026-paper-6226"
+      ]
+    },
+    {
+      "ref": "momo_drive_wheel_right",
+      "name": "MOMO right drive wheel",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "UIUC KIMLAB",
+      "subtype": "Standard",
+      "description": "MOMO right drive wheel; mirrored source mesh and higher precision physical declarations.",
+      "source_url": "https://uiuckimlab.github.io/papras-pages/urdf/momo_three_arm.urdf",
+      "robots": [
+        "MOMO"
+      ],
+      "papers": [
+        "icra-2026-paper-6226"
+      ]
+    },
+    {
+      "ref": "momo_lift_module_fixed",
+      "name": "MOMO complete lift column and paired shoulder carriages (fixed lowered…",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "UIUC KIMLAB",
+      "subtype": "Attachment",
+      "description": "MOMO complete lift column and paired shoulder carriages (fixed lowered pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://uiuckimlab.github.io/papras-pages/urdf/momo_three_arm.urdf",
+      "robots": [
+        "MOMO"
+      ],
+      "papers": [
+        "icra-2026-paper-6226"
+      ]
+    },
+    {
+      "ref": "xlerobot_arm_fixed",
+      "name": "XLeRobot arm and gripper (fixed pose, without wrist camera)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "XLeRobot project",
+      "subtype": "Attachment",
+      "description": "XLeRobot arm and gripper (fixed pose, without wrist camera); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/Vector-Wangel/XLeRobot",
+      "robots": [
+        "XLeRobot"
+      ],
+      "papers": [
+        "icra-2026-paper-5265"
+      ]
+    },
+    {
+      "ref": "yahboom_x3_mecanum_type_a",
+      "name": "ROSMASTER X3 whole mecanum wheel type A, canonical front_right_wheel…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Yahboom",
+      "subtype": "Mecanum",
+      "description": "ROSMASTER X3 whole mecanum wheel type A, canonical front_right_wheel source; rollers fixed in source geometry.",
+      "source_url": "https://drive.google.com/file/d/1lnm_-PUDmSNg7V77CTj5CIlEl3Ow91Gr/view",
+      "robots": [
+        "Yahboom ROSMASTER X3"
+      ],
+      "papers": [
+        "icra-2026-paper-3425"
+      ]
+    },
+    {
+      "ref": "yahboom_x3_mecanum_type_b",
+      "name": "ROSMASTER X3 whole mecanum wheel type B, canonical front_left_wheel…",
+      "category": "wheel",
+      "origin": "library",
+      "supplier": "Yahboom",
+      "subtype": "Mecanum",
+      "description": "ROSMASTER X3 whole mecanum wheel type B, canonical front_left_wheel source; rollers fixed in source geometry.",
+      "source_url": "https://drive.google.com/file/d/1lnm_-PUDmSNg7V77CTj5CIlEl3Ow91Gr/view",
+      "robots": [
+        "Yahboom ROSMASTER X3"
+      ],
+      "papers": [
+        "icra-2026-paper-3425"
+      ]
+    },
+    {
+      "ref": "arx_x7s_left_arm_fixed",
+      "name": "ARX X7S left arm with factory gripper (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "ARX Robotics",
+      "subtype": "Attachment",
+      "description": "ARX X7S left arm with factory gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/ARXroboticsX/ARX_Model",
+      "robots": [
+        "ARX X7s"
+      ],
+      "papers": [
+        "icra-2026-paper-5292"
+      ]
+    },
+    {
+      "ref": "arx_x7s_right_arm_fixed",
+      "name": "ARX X7S right arm with factory gripper (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "ARX Robotics",
+      "subtype": "Attachment",
+      "description": "ARX X7S right arm with factory gripper (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/ARXroboticsX/ARX_Model",
+      "robots": [
+        "ARX X7s"
+      ],
+      "papers": [
+        "icra-2026-paper-5292"
+      ]
+    },
+    {
+      "ref": "arx_x7s_head_fixed",
+      "name": "ARX X7S complete head (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "ARX Robotics",
+      "subtype": "Attachment",
+      "description": "ARX X7S complete head (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/ARXroboticsX/ARX_Model",
+      "robots": [
+        "ARX X7s"
+      ],
+      "papers": [
+        "icra-2026-paper-5292"
+      ]
+    },
+    {
+      "ref": "agibot_g1_omnipicker_head_fixed",
+      "name": "AgiBot G1 omnipicker complete head (fixed pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "AgiBot",
+      "subtype": "Attachment",
+      "description": "AgiBot G1 omnipicker complete head (fixed pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://huggingface.co/datasets/agibot-world/GenieSimAssets",
+      "robots": [
+        "AgiBot G1 wheeled mobile manipulator"
+      ],
+      "papers": [
+        "icra-2026-paper-2107"
+      ]
+    },
+    {
+      "ref": "stretch_re2_head_pan_tilt_fixed",
+      "name": "Stretch RE2 complete mechanical pan-tilt head without RGBD camera",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Hello Robot Inc.",
+      "subtype": "Attachment",
+      "description": "Stretch RE2 complete mechanical pan-tilt head without RGBD camera; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/hello-robot/stretch_urdf",
+      "robots": [
+        "Hello Robot Stretch2"
+      ],
+      "papers": [
+        "icra-2026-paper-6260"
+      ]
+    },
+    {
+      "ref": "tiago_head_pan_tilt_fixed",
+      "name": "TIAGo complete mechanical pan-tilt head without optional camera modules",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "PAL Robotics",
+      "subtype": "Attachment",
+      "description": "TIAGo complete mechanical pan-tilt head without optional camera modules; one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/pal-robotics/tiago_robot",
+      "robots": [
+        "PAL Robotics TIAGo Lite"
+      ],
+      "papers": [
+        "icra-2026-paper-5635"
+      ]
+    },
+    {
+      "ref": "realman_rx75_6fb_left_fixed",
+      "name": "RealMan RX75-6FB complete left arm (fixed source pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "RealMan Robotics",
+      "subtype": "Attachment",
+      "description": "RealMan RX75-6FB complete left arm (fixed source pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RealManRobot/ros2_rm_robot",
+      "robots": [
+        "RealMan Dual Arm Compound Robot"
+      ],
+      "papers": [
+        "icra-2026-paper-5107"
+      ]
+    },
+    {
+      "ref": "realman_rx75_6fb_right_fixed",
+      "name": "RealMan RX75-6FB complete right arm (fixed source pose)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "RealMan Robotics",
+      "subtype": "Attachment",
+      "description": "RealMan RX75-6FB complete right arm (fixed source pose); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RealManRobot/ros2_rm_robot",
+      "robots": [
+        "RealMan Dual Arm Compound Robot"
+      ],
+      "papers": [
+        "icra-2026-paper-5107"
+      ]
+    },
+    {
+      "ref": "thorvald_graspberry_source_wheel",
+      "name": "Community Graspeberry/Thorvald II complete idealized source wheel",
+      "category": "wheel",
+      "origin": "library",
+      "subtype": "Standard",
+      "description": "Community Graspeberry/Thorvald II complete idealized source wheel; cylinder model, not a measured or manufacturer-qualified wheel product.",
+      "source_url": "https://github.com/okb6/Thorvald_Grape_Urdf",
+      "robots": [
+        "Saga Robotics Thorvald"
+      ],
+      "papers": [
+        "icra-2026-paper-5907"
+      ]
+    },
+    {
+      "ref": "chrono_viper_wheel_reference",
+      "name": "Chrono VIPER source simulation wheel related to MGRU3 single-wheel…",
+      "category": "wheel",
+      "origin": "library",
+      "subtype": "Standard",
+      "description": "Chrono VIPER source simulation wheel related to MGRU3 single-wheel research; source-density estimate, not measured NASA hardware.",
+      "source_url": "https://github.com/projectchrono/chrono",
+      "robots": [
+        "NASA Moon Gravity Representation Unit3 (MGRU3)"
+      ],
+      "papers": [
+        "icra-2026-paper-6201"
+      ]
+    },
+    {
+      "ref": "livox_mid360_peral_reference",
+      "name": "Livox MID-360 complete sensor as a passive rigid payload",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "Livox",
+      "subtype": "Attachment",
+      "description": "Livox MID-360 complete sensor as a passive rigid payload; author CAD visual and an explicitly estimated bounding-envelope inertia. No active sensing capability or fabrication-fit claim.",
+      "source_url": "https://github.com/snakehaihai/PERAL_robot_design/tree/85b1ce224f13a12f89924d62c1f868e8a29d6b0d",
+      "robots": [
+        "PERAL Haloball"
+      ],
+      "papers": [
+        "icra-2026-paper-5530"
+      ]
+    },
+    {
       "ref": "tb4_sensor_plate_025394",
       "name": "Clearpath TurtleBot4 part 025394 revision 3",
       "category": "attachment",
@@ -2237,6 +2882,30 @@
       "robots": [
         "Kinova Gen3 Lite"
       ],
+      "papers": []
+    },
+    {
+      "ref": "realman_rm75_b_fixed",
+      "name": "RealMan RM75-B standard arm (fixed pose, family reference)",
+      "category": "attachment",
+      "origin": "library",
+      "supplier": "RealMan Robotics",
+      "subtype": "Attachment",
+      "description": "RealMan RM75-B standard arm (fixed pose, family reference); one rigid payload at the explicitly selected fixed pose. Internal articulation is disabled.",
+      "source_url": "https://github.com/RealManRobot/rm_models",
+      "robots": [],
+      "papers": []
+    },
+    {
+      "ref": "intel_realsense_d435_2020_cad_reference",
+      "name": "Intel RealSense D435 historical 2020 nominal-mass CAD package reference",
+      "category": "sensor",
+      "origin": "library",
+      "supplier": "Intel RealSense",
+      "subtype": "RGBD",
+      "description": "Intel RealSense D435 historical 2020 nominal-mass CAD package reference; no D435i or Robotont paper identity claim.",
+      "source_url": "https://github.com/robotont/robotont-mechanics/tree/54f313a2d810e1d8c8187d0cac77b54afca727bf",
+      "robots": [],
       "papers": []
     },
     {
