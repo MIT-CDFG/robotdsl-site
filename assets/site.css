@@ -60,7 +60,6 @@
 .VPFeature .icon .ico { width: 24px; height: 24px; color: var(--accent); }
 .VPFeature .title { letter-spacing: 0; }
 .VPFeature .details { font-weight: 400; }
-.fig3d .toggle { padding: 0 14px; line-height: 32px; }
 @media (max-width: 959px) {
   .hero { padding-block: 32px 40px; }
   .hero-layout { gap: 28px; }
@@ -108,13 +107,11 @@
 .ico-copy { --icon: url(icons/copy.svg); }
 .ico-part { --icon: url(icons/package-plus.svg); }
 .ico-bug { --icon: url(icons/bug.svg); }
-/* MobileDSL: a coding agent's work on one request, as its terminal shows it; a wrapped line hangs under its text. */
-.listing pre.agentlog { font-size: 12px; line-height: 1.7; white-space: pre-wrap; }
-.agentlog .ln { padding-left: 2ch; text-indent: -2ch; }
-.agentlog .out { padding-left: 4ch; text-indent: -2ch; margin-bottom: 6px; }
-.agentlog .req { color: var(--ink); margin-bottom: 12px; }
-.agentlog .b { color: var(--accent); }
-.agentlog .m { color: var(--muted); }
+/* MobileDSL: the listing types itself; untyped text keeps its place, so the block never changes size. */
+.coredsl .todo { visibility: hidden; }
+.coredsl .caret { display: inline-block; width: 0; height: 1.15em; margin-right: -2px; border-left: 2px solid var(--accent); vertical-align: text-bottom; animation: caret-blink 1s steps(1) infinite; }
+@keyframes caret-blink { 50% { border-left-color: transparent; } }
+@media (prefers-reduced-motion: reduce) { .coredsl .caret { animation: none; } }
 /* Community: the hero's feature cards, four across, white on the tinted band. */
 #community { --vp-c-bg-soft: #fff; }
 #community .VPFeature .icon { background-color: var(--tint); }

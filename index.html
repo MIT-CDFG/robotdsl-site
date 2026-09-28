@@ -22,7 +22,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
-<script type="module" src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
+<!-- The import map precedes every module script, as browsers without dynamic import maps require. The video player
+     loads async so a slow CDN does not hold back the modules after it, which run in document order otherwise. -->
+<script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.js", "three/addons/": "./assets/vendor/three/examples/jsm/"}}</script>
+<script type="module" async src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <!-- The page's own files carry ?v= (the first 8 characters of their SHA-256), so a browser that
      cached an older copy fetches the new one together with the new page. -->
@@ -48,23 +51,17 @@
   .fig3d canvas { display: block; width: 100%; height: 100%; cursor: grab; }
   .fig3d canvas:active { cursor: grabbing; }
   .fig3d .loading { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; font-size: .9rem; color: var(--muted); pointer-events: none; }
-  .fig3d .labels { position: absolute; inset: 0; pointer-events: none; }
-  .fig3d .label { position: absolute; transform: translate(-50%, -100%); text-align: center; font-size: .78rem; line-height: 1.25; color: var(--text); white-space: nowrap; opacity: 0; text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff; }
-  .fig3d .label.below { transform: translate(-50%, 0); }
-  .fig3d .label b { display: block; font-size: .9rem; font-weight: 600; color: #b3261e; }
   .fig3d .bar { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 6px; white-space: nowrap; }   /* under the view, not over the robot */
-  .fig3d .toggle { padding: 6px 12px; font-size: .85rem; }
-  .fig3d .toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
   .fig3d .hint { font-size: .78rem; color: var(--muted); }
   .fig3d .fallback { display: none; }
-  .fig3d.failed canvas, .fig3d.failed .bar, .fig3d.failed .loading, .fig3d.failed .labels { display: none; }
+  .fig3d.failed canvas, .fig3d.failed .bar, .fig3d.failed .loading { display: none; }
   .fig3d.failed .stage { aspect-ratio: auto; border: 0; }
   .fig3d.failed .fallback { display: block; }
   @media (max-width: 820px) { .two { grid-template-columns: 1fr; } }
   /* modules */
-  /* MobileDSL: the compiler's report on the left, the 3D Fig. 1 on the right; no frames. The report's
-     source and caret lines need about 90 columns, which the wider left column gives them. */
-  .lang { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 40px; align-items: start; }
+  /* MobileDSL: the CoreDSL listing on the left, the robot it assembles on the right; no frames. The longest
+     line needs about 80 columns, which the wider left column gives it. */
+  .lang { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 40px; align-items: center; }
   @media (max-width: 900px) { .lang { grid-template-columns: minmax(0, 1fr); gap: 24px; } .lang .fig3d { width: 100%; max-width: 560px; } }
   .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 12px; line-height: 1.7; }
   .code .ln { display: block; }
@@ -102,7 +99,7 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=0b75144b">
+<link rel="stylesheet" href="assets/site.css?v=801555e0">
 <script src="assets/vendor/chartjs/chart.umd.js" defer></script>
 <script src="assets/site.js?v=0fba74a2" defer></script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
@@ -173,24 +170,17 @@
 
 <section class="block" id="agents">
   <div class="wrap stack">
-    <div class="head"><span class="eyebrow">MobileDSL</span><h2>Built for coding agents</h2>
-      <p>Coding agents use MobileDSL as their tool: they pick parts from a library, write one short program, and the compiler assembles the robot and emits the files ROS 2 runs in Gazebo or MuJoCo. Claude Code built the robot shown here from one benchmark request. The <a href="docs/guide/">guide</a> describes the language.</p></div>
+    <div class="head"><span class="eyebrow">Language</span><h2>MobileDSL and its compiler as agentic tools</h2>
+      <p>A coding agent writes the robot in CoreDSL, naming parts from a library and where they attach; the compiler assembles it and generates what ROS 2 runs in Gazebo or MuJoCo. The <a href="docs/guide/">guide</a> covers the whole language.</p></div>
     <div class="lang">
-      <figure class="agentlog-figure">
-        <div class="markdown-body listing"><pre class="code agentlog" role="group" aria-label="A coding agent's work on one benchmark request, simplified"><span class="ln req">&gt; In an open circular field, drive forward with gradually increasing distance and spin slightly each time to expand outward in a spiral. The arm and gripper shown in the image remain fixed; only the mobile base moves. <span class="m">[image]</span></span><span class="ln"><span class="b">●</span> Searching the parts library</span><span class="ln out"><span class="m">└</span> a white mecanum base, four black mecanum wheels, a red arm with gripper and a front ultrasonic sensor</span><span class="ln"><span class="b">●</span> Writing the MobileDSL program</span><span class="ln out"><span class="m">└</span> the robot, the open field and the spiral task</span><span class="ln"><span class="b">●</span> Compiling with mobiledsl</span><span class="ln out"><span class="m">└</span> spiral_arm_bot: 7 parts assembled</span></pre></div>
-        <figcaption>Claude Code (claude-opus-4-8) on benchmark request basic_geom_g02, simplified; the 3D model is its result.</figcaption>
-      </figure>
-      <figure class="fig3d" id="agent-robot">
+      <div class="markdown-body listing"><pre class="code coredsl" id="coredsl" role="group" aria-label="CoreDSL for the robot of the paper's Fig. 1: a mecanum chassis, four mecanum wheels, a lidar and an arm"><span class="ln"><span class="k">Robot</span> nav_bot {</span><span class="ln">    <span class="k">intent</span> <span class="s">"A mecanum robot with a lidar and an arm"</span></span><span class="ln" data-part="base_link">    <span class="k">Mecanum_four_wheel</span> chassis(ref = <span class="s">"silver"</span>)</span><span class="ln" data-part="wheel_lf">    <span class="k">Mecanum</span> wheel_lf(ref = <span class="s">"red"</span>, glue = (0.0976, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_lb">    <span class="k">Mecanum</span> wheel_lb(ref = <span class="s">"red"</span>, glue = (-0.1124, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_rf">    <span class="k">Mecanum</span> wheel_rf(ref = <span class="s">"red"</span>, glue = (0.0976, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="wheel_rb">    <span class="k">Mecanum</span> wheel_rb(ref = <span class="s">"red"</span>, glue = (-0.1124, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="front_scan">    <span class="k">Lidar</span> front_scan(ref = <span class="s">"lidar"</span>, glue = (0.11, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln" data-part="top_arm">    <span class="k">Attachment</span> top_arm(ref = <span class="s">"arm"</span>, glue = (-0.0073, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln">}</span></pre></div>
+      <figure class="fig3d" id="fig1">
         <div class="stage">
-          <canvas role="img" aria-label="3D model of spiral_arm_bot, which Claude Code built for the request: a white mecanum base with four black mecanum wheels, a fixed red arm with gripper and a front ultrasonic sensor"></canvas>
+          <canvas role="img" aria-label="3D model of the robot the program describes, assembled part by part as the program is written: a white mecanum chassis with four red mecanum wheels, a red arm and a lidar"></canvas>
           <p class="loading">Loading the 3D model…</p>
-          <div class="labels" aria-hidden="true"></div>
-          <img class="fallback" src="assets/gallery/arm_mecanum-poster.png" width="640" height="400" alt="spiral_arm_bot, the robot Claude Code built: a white mecanum base with four black mecanum wheels, a red arm with gripper and a front ultrasonic sensor">
+          <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
         </div>
-        <div class="bar">
-          <button type="button" class="btn VPButton medium alt toggle" aria-pressed="false">Explode</button>
-          <span class="hint">Drag to rotate · scroll to zoom</span>
-        </div>
+        <div class="bar"><span class="hint">Drag to rotate · scroll to zoom</span></div>
       </figure>
     </div>
   </div>
@@ -279,22 +269,47 @@
   })();
 </script>
 
-<script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.js", "three/addons/": "./assets/vendor/three/examples/jsm/"}}</script>
 <script type="module">
-  // The robot Claude Code (claude-opus-4-8) built with MobileDSL for benchmark request basic_geom_g02.
-  // assets/gallery/arm_mecanum.glb holds one node per component of its compiled program; arm_mecanum.json gives each
-  // component's library part, category, centre, size and the offset it takes in the exploded view.
+  // CoreDSL written line by line while the robot it describes assembles beside it: the robot of the paper's Fig. 1.
+  // assets/models/fig1_robot.glb holds one mesh per component of the compiled program (component-library meshes at
+  // the compiler's poses); fig1_robot.json gives the direction each component comes off its connector, which the
+  // assembly plays in reverse. An illustration of the workflow: the compiler itself reads the whole program at once.
   import * as THREE from 'three';
   import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
   import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
   import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
   import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
-  const fig = document.getElementById('agent-robot');
+  const fig = document.getElementById('fig1');
   const stage = fig.querySelector('.stage');
   const canvas = fig.querySelector('canvas');
   const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fail = () => fig.classList.add('failed');
+  const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+  let visible = false;
+  const whenVisible = () => new Promise(resolve => { const check = () => visible ? resolve() : setTimeout(check, 200); check(); });
+
+  // The listing is the program: each line's highlighted runs, and the mesh it adds (data-part).
+  const rows = [...document.querySelectorAll('#coredsl .ln')];
+  const lines = rows.map(row => {
+    const runs = [...row.childNodes].map(n => [n.nodeType === 1 ? n.className : '', n.textContent]);
+    const text = runs.map(r => r[1]).join('');
+    return { runs, text, indent: text.length - text.trimStart().length, part: row.dataset.part };
+  });
+  const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  // A line typed up to n characters; the rest stays hidden in place so the block keeps its size.
+  function draw(i, n, caret) {
+    const { runs, text } = lines[i];
+    let html = '', left = n;
+    for (const [cls, t] of runs) {
+      const shown = t.slice(0, Math.max(0, left));
+      left -= t.length;
+      if (shown) html += cls ? `<span class="${cls}">${esc(shown)}</span>` : esc(shown);
+    }
+    if (caret) html += '<span class="caret"></span>';
+    if (n < text.length) html += `<span class="todo">${esc(text.slice(n))}</span>`;
+    rows[i].innerHTML = html;
+  }
 
   async function init() {
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
@@ -319,55 +334,37 @@
     scene.add(ground);
 
     const camera = new THREE.PerspectiveCamera(30, 4 / 3, 0.01, 10);
-    const target = new THREE.Vector3(0, 0.17, 0);
-    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(1.15).add(target));
+    const target = new THREE.Vector3(0, 0.125, 0);
+    camera.position.copy(new THREE.Vector3(1, 0.72, -0.95).normalize().multiplyScalar(0.9).add(target));
     const controls = new OrbitControls(camera, canvas);
-    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.6, maxDistance: 2.2, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
+    Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.45, maxDistance: 1.8, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
     controls.target.copy(target);
     controls.addEventListener('start', () => { controls.autoRotate = false; });
 
     const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
     const [gltf, meta] = await Promise.all([
-      loader.loadAsync('assets/gallery/arm_mecanum.glb'),
-      fetch('assets/gallery/arm_mecanum.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      loader.loadAsync('assets/models/fig1_robot.glb'),
+      fetch('assets/models/fig1_robot.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
     ]);
     const robot = gltf.scene;
     robot.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     scene.add(robot);
 
-    // Parts that come off by their recorded offsets, and one label per category, naming the library part.
-    const moving = [], labels = [];
-    const layer = fig.querySelector('.labels');
-    const v3 = a => new THREE.Vector3(a[0], a[1], a[2]);
+    // Each part flies in from twice its recorded distance along the direction it comes off its connector
+    // (the chassis drops from above) and fades in; t runs 0 (away, unseen) to 1 (mated).
+    const parts = new Map();
     for (const p of meta.parts) {
       const node = robot.getObjectByName(p.name);
       if (!node) continue;
-      const moves = p.explode ? v3(p.explode) : new THREE.Vector3();
-      if (p.explode) moving.push({ node, home: node.position.clone(), offset: moves });
-      const role = p.category[0].toUpperCase() + p.category.slice(1), below = p.category === 'chassis';
-      const anchor = v3(p.centre).add(new THREE.Vector3(0, below ? -p.size[1] / 2 - 0.012 : p.size[1] / 2 + 0.012, 0));
-      const known = labels.find(l => l.role === role);
-      if (known) known.anchors.push({ anchor, moves });
-      else {
-        const el = document.createElement('div');
-        el.className = 'label' + (below ? ' below' : '');
-        el.innerHTML = `<b>${role}</b>${p.part}`;
-        layer.appendChild(el);
-        labels.push({ role, el, anchors: [{ anchor, moves }] });
-      }
+      const away = p.distance > 0
+        ? new THREE.Vector3(...p.direction).multiplyScalar(2 * p.distance)
+        : new THREE.Vector3(0, 0.08, 0);
+      const materials = [];
+      node.traverse(o => { if (o.isMesh) { o.material = o.material.clone(); materials.push(o.material); } });
+      parts.set(p.name, { node, home: node.position.clone(), away, materials, t: still ? 1 : 0, rate: 0 });
     }
-
-    const toggle = fig.querySelector('.toggle'), hint = fig.querySelector('.hint');
-    const touch = window.matchMedia('(hover: none)').matches;
-    const idle = touch ? 'Drag to rotate · pinch to zoom' : 'Drag to rotate · scroll to zoom';
-    hint.textContent = idle;
-    let exploded = 0, goal = 0, shown = 0;
-    toggle.addEventListener('click', () => {
-      goal = goal ? 0 : 1;
-      toggle.setAttribute('aria-pressed', goal ? 'true' : 'false');
-      toggle.textContent = goal ? 'Assemble' : 'Explode';
-      hint.textContent = goal ? 'Each part is a component from the library' : idle;
-    });
+    const assemble = name => { const part = parts.get(name); if (part) part.rate = 1 / 0.6; };
+    const scatter = async () => { for (const part of parts.values()) part.rate = -1 / 0.4; await sleep(450); };
 
     const size = () => {
       const w = stage.clientWidth, h = stage.clientHeight;
@@ -378,47 +375,58 @@
     new ResizeObserver(size).observe(stage);
     size();
 
-    let visible = true, last = performance.now();
-    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(fig);
-    const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    const p = new THREE.Vector3();
+    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(fig.closest('.lang'));
+    const ease = t => 1 - Math.pow(1 - t, 3);
+    let last = performance.now();
     renderer.setAnimationLoop(now => {
       const dt = Math.min(0.05, (now - last) / 1000); last = now;
       if (!visible) return;
-      if (exploded !== goal) exploded = still ? goal : Math.max(0, Math.min(1, exploded + Math.sign(goal - exploded) * dt / 0.7));
-      const k = ease(exploded);
-      // Pull back while exploding so the lifted parts stay in frame, keeping any zoom the reader chose.
-      camera.position.sub(controls.target).multiplyScalar((1 + 0.25 * k) / (1 + 0.25 * shown)).add(controls.target);
-      shown = k;
-      for (const m of moving) m.node.position.copy(m.home).addScaledVector(m.offset, k);
+      for (const part of parts.values()) {
+        part.t = Math.max(0, Math.min(1, part.t + part.rate * dt));
+        part.node.visible = part.t > 0;
+        part.node.position.copy(part.home).addScaledVector(part.away, 1 - ease(part.t));
+        const see = part.t < 1;
+        for (const m of part.materials) {
+          if (m.transparent !== see) { m.transparent = see; m.needsUpdate = true; }
+          m.opacity = Math.min(1, part.t * 1.6);
+        }
+      }
       controls.update();
       renderer.render(scene, camera);
-      const w = stage.clientWidth, h = stage.clientHeight;
-      // Each label sits at the rightmost of its role's parts on screen (the wheels), then overlapping labels are pushed apart.
-      const placed = [];
-      for (const l of labels) {
-        let best = null;
-        for (const a of l.anchors) {
-          p.copy(a.anchor).addScaledVector(a.moves, k).project(camera);
-          if (!best || p.x > best.x) best = { x: p.x, y: p.y };
-        }
-        const box = { l, x: (best.x + 1) / 2 * w, y: (1 - best.y) / 2 * h, w: l.el.offsetWidth, h: l.el.offsetHeight, below: l.el.classList.contains('below') };
-        for (const q of placed) {
-          const top = box.below ? box.y : box.y - box.h, qtop = q.below ? q.y : q.y - q.h;
-          if (Math.abs(box.x - q.x) < (box.w + q.w) / 2 && top < qtop + q.h && qtop < top + box.h) box.y += (qtop + q.h) - top + 2;
-        }
-        box.x = Math.min(Math.max(box.x, box.w / 2 + 6), w - box.w / 2 - 6);    // keep labels inside the frame
-        box.y = box.below ? Math.min(box.y, h - box.h - 6) : Math.max(box.y, box.h + 6);
-        placed.push(box);
-        l.el.style.left = `${box.x}px`;
-        l.el.style.top = `${box.y}px`;
-        l.el.style.opacity = k;
-      }
     });
     fig.querySelector('.loading').remove();
+    if (!still) type(assemble, scatter);
   }
 
-  const start = () => init().catch(err => { console.warn('Fig. 1 3D view unavailable:', err); fail(); });
+  // Types the program at a steady rate, whatever the frame rate, adding each part as its line is finished;
+  // then holds the robot and starts over.
+  const perSecond = 70;
+  async function typeLine(i) {
+    const line = lines[i], begun = performance.now();
+    for (;;) {
+      await whenVisible();
+      const n = Math.min(line.text.length, line.indent + Math.floor((performance.now() - begun) / 1000 * perSecond));
+      draw(i, n, true);
+      if (n === line.text.length) return;
+      await sleep(30);
+    }
+  }
+  async function type(assemble, scatter) {
+    for (;;) {
+      await whenVisible();
+      await scatter();
+      lines.forEach((_, i) => draw(i, 0, false));
+      for (const [i, line] of lines.entries()) {
+        await typeLine(i);
+        draw(i, line.text.length, false);
+        if (line.part) assemble(line.part);
+        await sleep(line.part ? 420 : 160);
+      }
+      await sleep(5000);
+    }
+  }
+
+  const start = () => init().catch(err => { console.warn('3D view unavailable:', err); fail(); });
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting)) { io.disconnect(); start(); } }, { rootMargin: '400px' });
     io.observe(fig);
