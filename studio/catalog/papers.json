@@ -1,6 +1,6 @@
 {
   "version": "robotdsl-studio-papers-v1",
-  "count": 470,
+  "count": 467,
   "papers": [
     {
       "id": "gao-2025-safe-mapless-navigation",
@@ -333,10 +333,10 @@
         }
       ],
       "parts": [
+        "intel_realsense_d435_2020_cad_reference",
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_waffle_chassis"
       ]
     },
     {
@@ -423,6 +423,7 @@
         }
       ],
       "parts": [
+        "ouster_os1_64_rev7",
         "velodyne_hdl32e",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
@@ -559,7 +560,8 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "ouster_os1_128_rev7"
       ]
     },
     {
@@ -640,8 +642,7 @@
       "parts": [
         "kobuki_drive_wheel",
         "kobuki_stock_chassis",
-        "microsoft_kinect_turtlebot",
-        "turtlebot2_hexagon_tower"
+        "slamtec_rplidar_a1m8"
       ]
     },
     {
@@ -987,7 +988,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "basler_aca2500_60uc_camera"
       ]
     },
     {
@@ -1137,7 +1139,8 @@
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -1164,6 +1167,7 @@
         }
       ],
       "parts": [
+        "basler_aca2500_60uc_camera",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -1356,10 +1360,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
-        "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
+        "agilex_cobot_magic_top_d435",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -1386,8 +1390,7 @@
       ],
       "parts": [
         "agilex_tracer_v1_chassis",
-        "agilex_tracer_v1_drive_wheel",
-        "interbotix_viperx300s_fixed"
+        "agilex_tracer_v1_drive_wheel"
       ]
     },
     {
@@ -1413,9 +1416,7 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_burger_chassis"
       ]
     },
     {
@@ -1500,13 +1501,16 @@
           "id": "agilex-scout-mini",
           "name": "SCOUT MINI",
           "usage": [
-            "dataset"
+            "dataset",
+            "physical"
           ]
         }
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "stereolabs_zed2i",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -1586,7 +1590,7 @@
           "id": "galaxea-r1",
           "name": "Galaxea R1",
           "usage": [
-            "real_world"
+            "physical"
           ]
         }
       ],
@@ -1719,7 +1723,9 @@
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "ouster_os1_128_rev7",
+        "sbg_ellipse_d"
       ]
     },
     {
@@ -1744,12 +1750,8 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
-        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -1843,7 +1845,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "ouster_os1_128_rev7"
       ]
     },
     {
@@ -2009,7 +2012,8 @@
           "id": "uw-in-wing-crane-robot",
           "name": "University of Washington in-wing crane robot",
           "usage": [
-            "real_and_simulated"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -2057,7 +2061,7 @@
           "id": "tiago-unspecified",
           "name": "PAL Robotics TIAGo (configuration unspecified)",
           "usage": [
-            "real_world"
+            "physical"
           ]
         }
       ],
@@ -2066,11 +2070,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -2143,16 +2143,14 @@
           "id": "turtlebot3-unspecified",
           "name": "TurtleBot3",
           "usage": [
-            "real_world"
+            "physical"
           ]
         }
       ],
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_waffle_chassis"
       ]
     },
     {
@@ -2176,12 +2174,12 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
+        "hokuyo_urg_04lx",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -2259,17 +2257,14 @@
           "id": "turtlebot4",
           "name": "TurtleBot 4",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
         "create3_drive_wheel",
         "create3_stock_chassis",
-        "luxonis_oak_d_pro",
-        "slamtec_rplidar_a1m8",
-        "turtlebot4_standard_deck"
+        "slamtec_rplidar_a1m8"
       ]
     },
     {
@@ -2290,15 +2285,14 @@
           "id": "turtlebot2",
           "name": "TurtleBot2",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
       ],
       "parts": [
+        "intel_realsense_d435i",
         "kobuki_drive_wheel",
         "kobuki_stock_chassis",
-        "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
       ]
     },
@@ -2331,7 +2325,7 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "real_world"
+            "physical"
           ]
         }
       ],
@@ -2396,7 +2390,8 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "stereolabs_zed_mini"
       ]
     },
     {
@@ -2486,11 +2481,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -2665,6 +2656,7 @@
           "id": "toyota-hsr",
           "name": "Toyota Human Support Robot",
           "usage": [
+            "dataset",
             "physical"
           ]
         }
@@ -2695,7 +2687,6 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "physical",
             "simulation"
           ]
         }
@@ -2844,7 +2835,8 @@
           "id": "locobot",
           "name": "LoCoBot",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -3149,7 +3141,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "nvidia_jetson_orin_nano_devkit_fixed"
       ]
     },
     {
@@ -3208,7 +3201,8 @@
       "parts": [
         "agilex_scout_2_chassis",
         "agilex_scout_2_wheel_type1",
-        "agilex_scout_2_wheel_type2"
+        "agilex_scout_2_wheel_type2",
+        "livox_mid360_peral_reference"
       ]
     },
     {
@@ -3268,16 +3262,15 @@
           "id": "agilex-cobot-magic",
           "name": "AgileX Cobot Magic",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
-        "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
+        "agilex_cobot_magic_top_d435",
         "agilex_tracer2_drive_wheel"
       ]
     },
@@ -3356,7 +3349,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -3407,9 +3401,6 @@
         "create3_stock_chassis",
         "dingo_d_chassis",
         "dingo_d_wheel",
-        "dingo_o_chassis",
-        "dingo_o_mecanum_mirrored",
-        "dingo_o_mecanum_normal",
         "galaxea_r1_left_arm_fixed",
         "galaxea_r1_right_arm_fixed",
         "galaxea_r1_torso_fixed",
@@ -3622,7 +3613,8 @@
           "id": "tiago-unspecified",
           "name": "PAL Robotics TIAGo (configuration unspecified)",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -3631,11 +3623,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -3664,11 +3652,11 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
-        "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
-        "agilex_tracer2_drive_wheel"
+        "agilex_tracer2_drive_wheel",
+        "stretch3_head_d435i"
       ]
     },
     {
@@ -3699,15 +3687,11 @@
         }
       ],
       "parts": [
-        "astribot_s1_head_fixed",
-        "astribot_s1_left_arm_gripper_fixed",
-        "astribot_s1_right_arm_gripper_fixed",
         "astribot_s1_source_base",
         "astribot_s1_source_wheel_lf",
         "astribot_s1_source_wheel_lr",
         "astribot_s1_source_wheel_rf",
         "astribot_s1_source_wheel_rr",
-        "astribot_s1_torso_fixed",
         "astribot_s1_upper_fixed"
       ]
     },
@@ -3733,14 +3717,14 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "nvidia_jetson_orin_nano_devkit_fixed"
       ]
     },
     {
@@ -3845,11 +3829,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -3930,7 +3910,8 @@
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "nvidia_jetson_orin_nano_devkit_fixed"
       ]
     },
     {
@@ -4010,7 +3991,6 @@
           "id": "clearpath-husky",
           "name": "Husky UGV",
           "usage": [
-            "dataset",
             "physical"
           ]
         },
@@ -4218,6 +4198,13 @@
         {
           "id": "turtlebot-unspecified",
           "name": "TurtleBot",
+          "usage": [
+            "physical"
+          ]
+        },
+        {
+          "id": "turtlebot3-unspecified",
+          "name": "TurtleBot3",
           "usage": [
             "physical"
           ]
@@ -4485,7 +4472,10 @@
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "intel_realsense_d435_2020_cad_reference",
+        "livox_mid360_peral_reference",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -4568,7 +4558,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "basler_aca2500_60uc_camera"
       ]
     },
     {
@@ -4596,8 +4587,6 @@
       "parts": [
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel",
-        "universal_robots_ur10_fixed",
-        "upright_thing_mount_arch",
         "upright_thing_tor11_ur10_upper_fixed"
       ]
     },
@@ -4688,8 +4677,7 @@
         "pr2_torso_fixed",
         "stretch3_base_lidar",
         "stretch_re1_drive_wheel",
-        "stretch_re1_mobile_chassis",
-        "stretch_re1_upper_fixed"
+        "stretch_re1_mobile_chassis"
       ]
     },
     {
@@ -4710,18 +4698,14 @@
           "id": "uc3m-adam",
           "name": "UC3M ADAM",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
       "parts": [
-        "robotnik_rb1_drive_wheel_150",
-        "uc3m_adam_camera_support_fixed",
-        "uc3m_adam_left_ur3_duck_arm_fixed",
         "uc3m_adam_rb1_chassis",
         "uc3m_adam_rb1_drive_wheel",
-        "uc3m_adam_right_ur3_duck_arm_fixed",
-        "uc3m_adam_torso_fixed",
         "uc3m_adam_upper_fixed"
       ]
     },
@@ -4950,12 +4934,31 @@
           "usage": [
             "dataset"
           ]
+        },
+        {
+          "id": "agilex-scout-2",
+          "name": "AgileX Scout 2.0",
+          "usage": [
+            "dataset"
+          ]
+        },
+        {
+          "id": "clearpath-husky",
+          "name": "Husky UGV",
+          "usage": [
+            "dataset"
+          ]
         }
       ],
       "parts": [
+        "agilex_scout_2_chassis",
+        "agilex_scout_2_wheel_type1",
+        "agilex_scout_2_wheel_type2",
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
-        "hunter_se_rear_wheel"
+        "hunter_se_rear_wheel",
+        "husky_a200_chassis",
+        "husky_a200_wheel"
       ]
     },
     {
@@ -5091,8 +5094,7 @@
           "id": "agilex-limo",
           "name": "AgileX Limo (edition and wheel mode unspecified)",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -5184,11 +5186,11 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
-        "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
-        "agilex_tracer2_drive_wheel"
+        "agilex_tracer2_drive_wheel",
+        "intel_realsense_d435_2020_cad_reference"
       ]
     },
     {
@@ -5256,9 +5258,7 @@
         "create1_community_drive_wheel",
         "create3_drive_wheel",
         "create3_stock_chassis",
-        "luxonis_oak_d_pro",
-        "slamtec_rplidar_a1m8",
-        "turtlebot4_standard_deck"
+        "nvidia_jetson_orin_nano_devkit_fixed"
       ]
     },
     {
@@ -5283,12 +5283,12 @@
           "id": "clearpath-warthog",
           "name": "Warthog",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
+        "ouster_os1_64_rev7",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -5310,8 +5310,7 @@
           "id": "turtlebot4",
           "name": "TurtleBot 4",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -5343,8 +5342,7 @@
           "id": "yahboom-rosmaster-x3",
           "name": "Yahboom ROSMASTER X3",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -5377,11 +5375,21 @@
             "dataset",
             "physical"
           ]
+        },
+        {
+          "id": "clearpath-jackal",
+          "name": "Jackal",
+          "usage": [
+            "dataset"
+          ]
         }
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "jackal_j100_chassis",
+        "jackal_j100_wheel",
+        "stereolabs_zed2"
       ]
     },
     {
@@ -5514,7 +5522,8 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -5601,7 +5610,8 @@
           "id": "locobot",
           "name": "LoCoBot",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         },
         {
@@ -5615,7 +5625,8 @@
           "id": "stretch-re1",
           "name": "Hello Robot Stretch RE-1",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -5627,11 +5638,7 @@
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure",
         "rainbow_rby1a_drive_wheel",
-        "rainbow_rby1a_head_fixed",
-        "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_mobile_chassis",
-        "rainbow_rby1a_right_arm_fixed",
-        "rainbow_rby1a_torso_fixed",
         "rainbow_rby1a_upper_body_fixed",
         "stretch3_base_lidar",
         "stretch_re1_drive_wheel",
@@ -5665,7 +5672,8 @@
         "husarion_panther_wh01_fl_wheel",
         "husarion_panther_wh01_fr_wheel",
         "husarion_panther_wh01_rl_wheel",
-        "husarion_panther_wh01_rr_wheel"
+        "husarion_panther_wh01_rr_wheel",
+        "interbotix_viperx300s_fixed"
       ]
     },
     {
@@ -5711,9 +5719,7 @@
           "id": "tiago-unspecified",
           "name": "PAL Robotics TIAGo (configuration unspecified)",
           "usage": [
-            "dataset",
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -5722,11 +5728,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -5751,7 +5753,6 @@
           "id": "nvidia-carter",
           "name": "NVIDIA Carter (family)",
           "usage": [
-            "dataset",
             "physical",
             "simulation"
           ]
@@ -5846,7 +5847,8 @@
       ],
       "parts": [
         "create3_drive_wheel",
-        "create3_stock_chassis"
+        "create3_stock_chassis",
+        "slamtec_rplidar_a1m8"
       ]
     },
     {
@@ -5935,8 +5937,7 @@
           "id": "stretch-unspecified",
           "name": "Hello Robot Stretch (revision unspecified)",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -6189,14 +6190,14 @@
           "id": "pioneer-3at",
           "name": "Pioneer 3-AT",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
       ],
       "parts": [
         "pioneer_3at_chassis",
-        "pioneer_3at_drive_wheel"
+        "pioneer_3at_drive_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -6220,7 +6221,6 @@
           "id": "rover-robotics-rover-pro",
           "name": "Rover Robotics Rover Pro",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
@@ -6618,7 +6618,8 @@
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "vectornav_vn100_rugged_fixed"
       ]
     },
     {
@@ -6702,12 +6703,8 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
-        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -6789,6 +6786,13 @@
       },
       "robots": [
         {
+          "id": "stretch-2",
+          "name": "Hello Robot Stretch2",
+          "usage": [
+            "physical"
+          ]
+        },
+        {
           "id": "stretch-unspecified",
           "name": "Hello Robot Stretch (revision unspecified)",
           "usage": [
@@ -6800,7 +6804,6 @@
           "id": "willow-garage-pr2",
           "name": "Willow Garage PR2",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
@@ -6927,9 +6930,20 @@
           "usage": [
             "simulation"
           ]
+        },
+        {
+          "id": "fetch",
+          "name": "Fetch mobile manipulator",
+          "usage": [
+            "physical",
+            "simulation"
+          ]
         }
       ],
       "parts": [
+        "fetch_complete_upper_fixed",
+        "fetch_drive_wheel",
+        "fetch_mobile_chassis",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -7034,11 +7048,7 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -7186,6 +7196,7 @@
         }
       ],
       "parts": [
+        "basler_aca2500_60uc_camera",
         "husky_a200_chassis",
         "husky_a200_wheel",
         "warthog_w200_chassis",
@@ -7210,7 +7221,6 @@
           "id": "agilex-scout-mini",
           "name": "SCOUT MINI",
           "usage": [
-            "dataset",
             "physical"
           ]
         },
@@ -7226,7 +7236,9 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "kinova_mico_m1n6s200_fixed",
-        "velodyne_puck_lite"
+        "vectornav_vn100_rugged_fixed",
+        "velodyne_puck_lite",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -7279,11 +7291,10 @@
         }
       ],
       "parts": [
-        "dingo_d_chassis",
-        "dingo_d_wheel",
         "dingo_o_chassis",
         "dingo_o_mecanum_mirrored",
-        "dingo_o_mecanum_normal"
+        "dingo_o_mecanum_normal",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -7306,8 +7317,7 @@
           "id": "turtlebot3-burger",
           "name": "TurtleBot3 Burger",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -7342,16 +7352,17 @@
           "id": "agilex-cobot-magic",
           "name": "AgileX Cobot Magic",
           "usage": [
-            "real_and_simulated"
+            "physical",
+            "simulation"
           ]
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
-        "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
-        "agilex_tracer2_drive_wheel"
+        "agilex_tracer2_drive_wheel",
+        "intel_realsense_l515_fixed"
       ]
     },
     {
@@ -7375,8 +7386,7 @@
           "id": "tiago-unspecified",
           "name": "PAL Robotics TIAGo (configuration unspecified)",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -7385,11 +7395,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -7412,11 +7418,22 @@
           "usage": [
             "dataset"
           ]
+        },
+        {
+          "id": "turtlebot2",
+          "name": "TurtleBot2",
+          "usage": [
+            "dataset"
+          ]
         }
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
+        "microsoft_kinect_turtlebot",
+        "turtlebot2_hexagon_tower"
       ]
     },
     {
@@ -7438,25 +7455,15 @@
           "id": "turtlebot-unspecified",
           "name": "TurtleBot",
           "usage": [
-            "dataset",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
         "create3_drive_wheel",
         "create3_stock_chassis",
-        "kobuki_drive_wheel",
-        "kobuki_stock_chassis",
-        "lds_01",
         "luxonis_oak_d_pro",
-        "microsoft_kinect_turtlebot",
         "slamtec_rplidar_a1m8",
-        "tb3_wheel_isw_01",
-        "turtlebot2_hexagon_tower",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed",
         "turtlebot4_standard_deck"
       ]
     },
@@ -7487,11 +7494,7 @@
       ],
       "parts": [
         "rainbow_rby1a_drive_wheel",
-        "rainbow_rby1a_head_fixed",
-        "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_mobile_chassis",
-        "rainbow_rby1a_right_arm_fixed",
-        "rainbow_rby1a_torso_fixed",
         "rainbow_rby1a_upper_body_fixed"
       ]
     },
@@ -7514,12 +7517,13 @@
           "id": "kyushu-colson-mecanum-rover",
           "name": "Kyushu COLSON Mecanum rover (product revision unresolved)",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
+        "hokuyo_urg_04lx",
+        "nvidia_jetson_orin_nano_devkit_fixed",
         "vstone_mecanumrover3_chassis",
         "vstone_mecanumrover3_wheel",
         "vstone_mecanumrover3_wheel_rev"
@@ -7621,11 +7625,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -7655,8 +7655,10 @@
         }
       ],
       "parts": [
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_follower_fixed",
         "agilex_cobot_magic_leader_fixed",
+        "agilex_cobot_magic_top_d435",
         "agilex_piper_current_fixed",
         "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
@@ -7761,17 +7763,9 @@
         "pr2_right_arm_fixed",
         "pr2_torso_fixed",
         "rainbow_rby1a_drive_wheel",
-        "rainbow_rby1a_head_fixed",
-        "rainbow_rby1a_left_arm_fixed",
         "rainbow_rby1a_mobile_chassis",
-        "rainbow_rby1a_right_arm_fixed",
-        "rainbow_rby1a_torso_fixed",
         "rainbow_rby1a_upper_body_fixed",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -7799,9 +7793,7 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_burger_chassis"
       ]
     },
     {
@@ -7822,9 +7814,7 @@
           "id": "ubiquity-magni",
           "name": "Ubiquity Robotics Magni",
           "usage": [
-            "dataset",
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -8037,6 +8027,13 @@
       },
       "robots": [
         {
+          "id": "agilex-limo",
+          "name": "AgileX Limo (edition and wheel mode unspecified)",
+          "usage": [
+            "physical"
+          ]
+        },
+        {
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
@@ -8052,8 +8049,11 @@
         }
       ],
       "parts": [
+        "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel",
+        "limo_ros2_source_chassis",
+        "limo_ros2_source_rear_wheel",
         "nova_carter_chassis_body",
         "nova_carter_drive_wheel_right",
         "nova_carter_rear_support_fixed"
@@ -8408,14 +8408,15 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
+        "intel_nuc11_enthusiast",
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -8523,6 +8524,7 @@
         }
       ],
       "parts": [
+        "franka_panda_fixed",
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel"
       ]
@@ -8572,16 +8574,14 @@
           "id": "nxrobo-spark",
           "name": "NXROBO Spark",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         },
         {
           "id": "softbank-pepper",
           "name": "Pepper",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -8638,7 +8638,7 @@
           "id": "locobot",
           "name": "LoCoBot",
           "usage": [
-            "real_only"
+            "physical"
           ]
         }
       ],
@@ -8706,8 +8706,7 @@
       ],
       "parts": [
         "robotnik_rb1_base_chassis",
-        "robotnik_rb1_drive_wheel_150",
-        "robotnik_rb1_front_cover"
+        "robotnik_rb1_drive_wheel_150"
       ]
     },
     {
@@ -8732,26 +8731,13 @@
           "id": "turtlebot-unspecified",
           "name": "TurtleBot",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
       "parts": [
-        "create3_drive_wheel",
-        "create3_stock_chassis",
         "kobuki_drive_wheel",
-        "kobuki_stock_chassis",
-        "lds_01",
-        "luxonis_oak_d_pro",
-        "microsoft_kinect_turtlebot",
-        "slamtec_rplidar_a1m8",
-        "tb3_wheel_isw_01",
-        "turtlebot2_hexagon_tower",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed",
-        "turtlebot4_standard_deck"
+        "kobuki_stock_chassis"
       ]
     },
     {
@@ -8784,7 +8770,6 @@
           "id": "clearpath-warthog",
           "name": "Warthog",
           "usage": [
-            "dataset",
             "physical"
           ]
         },
@@ -8830,12 +8815,9 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -8880,8 +8862,6 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera",
-        "universal_robots_ur10_fixed",
-        "upright_thing_mount_arch",
         "upright_thing_tor11_ur10_upper_fixed"
       ]
     },
@@ -9121,12 +9101,8 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
-        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -9468,7 +9444,9 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "intel_nuc11_enthusiast",
+        "livox_mid360_peral_reference"
       ]
     },
     {
@@ -9539,9 +9517,11 @@
       "parts": [
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
+        "basler_aca2500_60uc_camera",
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
-        "hunter_se_rear_wheel"
+        "hunter_se_rear_wheel",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -9600,12 +9580,9 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -9657,7 +9634,7 @@
           "id": "agilex-hunter-se",
           "name": "AgileX Hunter SE",
           "usage": [
-            "dataset"
+            "physical"
           ]
         }
       ],
@@ -9686,17 +9663,40 @@
       },
       "robots": [
         {
+          "id": "clearpath-jackal",
+          "name": "Jackal",
+          "usage": [
+            "dataset",
+            "simulation"
+          ]
+        },
+        {
           "id": "pioneer-3dx",
           "name": "Pioneer 3-DX",
           "usage": [
             "physical"
           ]
+        },
+        {
+          "id": "turtlebot2",
+          "name": "TurtleBot2",
+          "usage": [
+            "dataset",
+            "simulation"
+          ]
         }
       ],
       "parts": [
+        "jackal_j100_chassis",
+        "jackal_j100_wheel",
+        "kobuki_drive_wheel",
+        "kobuki_stock_chassis",
+        "microsoft_kinect_turtlebot",
         "pioneer_3dx_chassis",
         "pioneer_3dx_left_wheel",
-        "pioneer_3dx_right_wheel"
+        "pioneer_3dx_right_wheel",
+        "slamtec_rplidar_a1m8",
+        "turtlebot2_hexagon_tower"
       ]
     },
     {
@@ -9752,7 +9752,9 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "stereolabs_zed2i",
+        "velodyne_vlp16"
       ]
     },
     {
@@ -9776,8 +9778,7 @@
           "id": "clearpath-husky",
           "name": "Husky UGV",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -9818,14 +9819,11 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
-        "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
         "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed",
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "universal_robots_ur5_fixed"
       ]
     },
     {
@@ -9911,8 +9909,7 @@
           "id": "pioneer-3dx",
           "name": "Pioneer 3-DX",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -9945,11 +9942,21 @@
           "usage": [
             "physical"
           ]
+        },
+        {
+          "id": "clearpath-husky",
+          "name": "Husky UGV",
+          "usage": [
+            "simulation"
+          ]
         }
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "husky_a200_chassis",
+        "husky_a200_wheel",
+        "ouster_os1_128_rev7"
       ]
     },
     {
@@ -10251,11 +10258,9 @@
       ],
       "parts": [
         "pmb2_base",
-        "pmb2_caster_wheel",
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_head_pan_tilt_fixed",
         "tiago_lite_mechanical_upper_fixed"
       ]
     },
@@ -10425,8 +10430,7 @@
       "parts": [
         "dotbot_source_chassis",
         "dotbot_source_left_printed_wheel",
-        "dotbot_source_right_printed_wheel",
-        "pololu_wheel_40x7_1454"
+        "dotbot_source_right_printed_wheel"
       ]
     },
     {
@@ -10490,7 +10494,8 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "livox_mid360_peral_reference"
       ]
     },
     {
@@ -10517,12 +10522,9 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -10539,6 +10541,13 @@
         "program": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_69"
       },
       "robots": [
+        {
+          "id": "turtlebot-unspecified",
+          "name": "TurtleBot",
+          "usage": [
+            "physical"
+          ]
+        },
         {
           "id": "turtlebot2",
           "name": "TurtleBot2",
@@ -10579,7 +10588,9 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "nvidia_jetson_orin_nano_devkit_fixed",
+        "ouster_os1_128_rev7"
       ]
     },
     {
@@ -10751,9 +10762,7 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_burger_chassis"
       ]
     },
     {
@@ -10784,9 +10793,7 @@
       "parts": [
         "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_burger_chassis"
       ]
     },
     {
@@ -10908,7 +10915,9 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "intel_nuc11_enthusiast",
+        "ouster_os1_128_rev7"
       ]
     },
     {
@@ -10968,7 +10977,8 @@
           "id": "clearpath-jackal",
           "name": "Jackal",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         },
         {
@@ -10991,14 +11001,13 @@
         "create3_stock_chassis",
         "dingo_d_chassis",
         "dingo_d_wheel",
-        "dingo_o_chassis",
-        "dingo_o_mecanum_mirrored",
-        "dingo_o_mecanum_normal",
+        "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "kobuki_drive_wheel",
         "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
+        "stereolabs_zed2",
         "turtlebot2_hexagon_tower"
       ]
     },
@@ -11058,7 +11067,9 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "ouster_os1_128_rev7",
+        "stereolabs_zed2i"
       ]
     },
     {
@@ -11091,7 +11102,7 @@
           "id": "frodobots-earthrover-zero",
           "name": "FrodoBots EarthRover Zero (ERZ)",
           "usage": [
-            "physical"
+            "dataset"
           ]
         }
       ],
@@ -11176,8 +11187,11 @@
         }
       ],
       "parts": [
+        "basler_aca2500_60uc_camera",
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "ouster_os1_128_rev7",
+        "vectornav_vn100_rugged_fixed"
       ]
     },
     {
@@ -11456,13 +11470,15 @@
           "id": "clearpath-husky",
           "name": "Husky UGV",
           "usage": [
-            "dataset"
+            "dataset",
+            "physical"
           ]
         }
       ],
       "parts": [
         "husky_a200_chassis",
-        "husky_a200_wheel"
+        "husky_a200_wheel",
+        "stereolabs_zed2i"
       ]
     },
     {
@@ -11508,7 +11524,6 @@
         "vizbot_omnivla_chassis",
         "vizbot_orin",
         "vizbot_pcb_camera",
-        "vizbot_spherical_camera",
         "vizbot_tracking_camera"
       ]
     },
@@ -11609,6 +11624,7 @@
         }
       ],
       "parts": [
+        "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -11680,6 +11696,7 @@
           "id": "menzi-muck-m545",
           "name": "Menzi Muck M545 / ETH HEAP",
           "usage": [
+            "dataset",
             "physical"
           ]
         }
@@ -11751,6 +11768,7 @@
       ],
       "venue": "ICRA 2026",
       "links": {
+        "paper": "https://web.archive.org/web/20251115005118id_/https://iris.polito.it/retrieve/handle/11583/3001941/922348",
         "program": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_5.html#thi1i_396"
       },
       "robots": [
@@ -11997,12 +12015,10 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
         "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "pmb2_tim551_source"
       ]
     },
     {
@@ -12271,12 +12287,10 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
         "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "pmb2_tim551_source"
       ]
     },
     {
@@ -12334,6 +12348,7 @@
       ],
       "venue": "ICRA 2026",
       "links": {
+        "paper": "https://ieeexplore.ieee.org/ielx8/100/11685867/11224394.pdf?tp=&arnumber=11224394&isnumber=11685867&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjI0Mzk0",
         "program": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_407"
       },
       "robots": [
@@ -12348,12 +12363,8 @@
       "parts": [
         "momo_drive_wheel_left",
         "momo_drive_wheel_right",
-        "momo_lift_module_fixed",
         "momo_mobile_chassis",
-        "uiuc_momo_complete_upper_fixed",
-        "uiuc_momo_head_mount",
-        "uiuc_momo_long_arm_fixed",
-        "uiuc_momo_short_arm_fixed"
+        "uiuc_momo_complete_upper_fixed"
       ]
     },
     {
@@ -12486,7 +12497,6 @@
       "parts": [
         "stretch3_base_lidar",
         "stretch3_drive_wheel",
-        "stretch_re2_head_pan_tilt_fixed",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
       ]
@@ -12508,8 +12518,7 @@
           "id": "tiago-unspecified",
           "name": "PAL Robotics TIAGo (configuration unspecified)",
           "usage": [
-            "physical",
-            "simulation"
+            "physical"
           ]
         }
       ],
@@ -12518,11 +12527,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -12603,7 +12608,6 @@
           "id": "stretch-unspecified",
           "name": "Hello Robot Stretch (revision unspecified)",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
@@ -12641,7 +12645,8 @@
           "id": "giraff-x",
           "name": "MoveCare Giraff-X",
           "usage": [
-            "real_robot_recorded_perception_data"
+            "dataset",
+            "physical"
           ]
         }
       ],
@@ -12825,16 +12830,16 @@
           "id": "clearpath-dingo",
           "name": "Clearpath Dingo",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
       "parts": [
-        "dingo_d_chassis",
-        "dingo_d_wheel",
         "dingo_o_chassis",
         "dingo_o_mecanum_mirrored",
-        "dingo_o_mecanum_normal"
+        "dingo_o_mecanum_normal",
+        "kinova_gen3_lite_fixed"
       ]
     },
     {
@@ -12915,11 +12920,8 @@
         }
       ],
       "parts": [
-        "lds_01",
         "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis",
-        "turtlebot3_waffle_chassis",
-        "turtlebot3_waffle_r200_fixed"
+        "turtlebot3_burger_chassis"
       ]
     },
     {
@@ -12945,12 +12947,12 @@
           "id": "clearpath-warthog",
           "name": "Warthog",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
       ],
       "parts": [
+        "intel_nuc11_enthusiast",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -13104,6 +13106,7 @@
         }
       ],
       "parts": [
+        "ouster_os1_64_rev7",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
       ]
@@ -13165,11 +13168,7 @@
         "pmb2_drive_wheel",
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
-        "tiago_dual_complete_upper_fixed",
-        "tiago_dual_head_fixed",
-        "tiago_dual_left_arm_fixed",
-        "tiago_dual_right_arm_fixed",
-        "tiago_dual_torso_fixed"
+        "tiago_dual_complete_upper_fixed"
       ]
     },
     {
@@ -13264,7 +13263,9 @@
       ],
       "parts": [
         "jackal_j100_chassis",
-        "jackal_j100_wheel"
+        "jackal_j100_wheel",
+        "ouster_os1_64_rev7",
+        "vectornav_vn100_rugged_fixed"
       ]
     },
     {
@@ -13654,12 +13655,9 @@
         }
       ],
       "parts": [
-        "fetch_arm_gripper_fixed",
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
-        "fetch_head_fixed",
-        "fetch_mobile_chassis",
-        "fetch_torso_lift_fixed"
+        "fetch_mobile_chassis"
       ]
     },
     {
@@ -13711,7 +13709,6 @@
           "id": "agilex-scout-2",
           "name": "AgileX Scout 2.0",
           "usage": [
-            "dataset",
             "physical"
           ]
         }
@@ -13719,7 +13716,9 @@
       "parts": [
         "agilex_scout_2_chassis",
         "agilex_scout_2_wheel_type1",
-        "agilex_scout_2_wheel_type2"
+        "agilex_scout_2_wheel_type2",
+        "ouster_os0_128_rev7",
+        "vectornav_vn100_rugged_fixed"
       ]
     },
     {
@@ -13784,7 +13783,8 @@
           "id": "agilex-hunter-se",
           "name": "AgileX Hunter SE",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -13820,10 +13820,6 @@
       ],
       "parts": [
         "fmm_ewellix_lift_camera_fixed",
-        "fmm_franka_controller_fixed",
-        "fmm_ridgeback_top_plate",
-        "fmm_wrist_camera_mount_fixed",
-        "franka_panda_fixed",
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel"
       ]
@@ -13887,9 +13883,7 @@
       ],
       "parts": [
         "agilex_tracer_v1_chassis",
-        "agilex_tracer_v1_drive_wheel",
-        "realman_rm75_6f_fixed",
-        "realman_rm75_b_fixed"
+        "agilex_tracer_v1_drive_wheel"
       ]
     },
     {
@@ -13983,7 +13977,6 @@
         "create3_stock_chassis",
         "future_nav_mir100_drive_wheel",
         "hrctf_mir200_source_chassis",
-        "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
       ]
@@ -14145,6 +14138,7 @@
           "id": "frodobots-earthrover-zero",
           "name": "FrodoBots EarthRover Zero (ERZ)",
           "usage": [
+            "dataset",
             "physical"
           ]
         },
@@ -14218,12 +14212,12 @@
           "name": "Jackal",
           "usage": [
             "dataset",
-            "physical",
             "simulation"
           ]
         }
       ],
       "parts": [
+        "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
       ]
@@ -14493,7 +14487,9 @@
       ],
       "parts": [
         "agilex_scout_mini_ugv_chassis",
-        "agilex_scout_mini_ugv_wheel"
+        "agilex_scout_mini_ugv_wheel",
+        "intel_nuc11_enthusiast",
+        "livox_mid360_peral_reference"
       ]
     },
     {
@@ -14531,11 +14527,11 @@
         }
       ],
       "parts": [
-        "agilex_cobot_magic_follower_fixed",
+        "agilex_cobot_magic_chassis",
         "agilex_cobot_magic_leader_fixed",
         "agilex_piper_current_fixed",
-        "agilex_tracer2_chassis",
-        "agilex_tracer2_drive_wheel"
+        "agilex_tracer2_drive_wheel",
+        "intel_realsense_d435_2020_cad_reference"
       ]
     },
     {
@@ -14559,7 +14555,8 @@
           "id": "hero-plus",
           "name": "HeRo+",
           "usage": [
-            "physical"
+            "physical",
+            "simulation"
           ]
         }
       ],
@@ -14687,80 +14684,6 @@
         }
       ],
       "parts": []
-    },
-    {
-      "id": "robotis-turtlebot3",
-      "title": "TurtleBot3 Burger — registered chassis, wheel, LDS-01 and reference assembly",
-      "authors": [],
-      "links": {
-        "paper": "https://github.com/ROBOTIS-GIT/turtlebot3"
-      },
-      "robots": [
-        {
-          "id": "turtlebot3-burger",
-          "name": "TurtleBot3 Burger",
-          "usage": [
-            "physical",
-            "simulation"
-          ]
-        },
-        {
-          "id": "turtlebot3-burger",
-          "name": "TurtleBot3 Burger",
-          "usage": [
-            "physical"
-          ]
-        }
-      ],
-      "parts": [
-        "lds_01",
-        "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis"
-      ]
-    },
-    {
-      "id": "robotis-turtlebot3-burger-website",
-      "title": "ROBOTIS TurtleBot3 — official website, specifications and assembly resources",
-      "authors": [],
-      "links": {
-        "paper": "https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/"
-      },
-      "robots": [
-        {
-          "id": "turtlebot3-burger",
-          "name": "TurtleBot3 Burger",
-          "usage": [
-            "physical"
-          ]
-        }
-      ],
-      "parts": [
-        "lds_01",
-        "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis"
-      ]
-    },
-    {
-      "id": "robotis-turtlebot3-hardware-files",
-      "title": "ROBOTIS TurtleBot3 — original component STEP files and dimensioned drawings",
-      "authors": [],
-      "links": {
-        "paper": "https://www.robotis.com/service/downloadpage.php?ca_id=7070"
-      },
-      "robots": [
-        {
-          "id": "turtlebot3-burger",
-          "name": "TurtleBot3 Burger",
-          "usage": [
-            "physical"
-          ]
-        }
-      ],
-      "parts": [
-        "lds_01",
-        "tb3_wheel_isw_01",
-        "turtlebot3_burger_chassis"
-      ]
     }
   ]
 }
