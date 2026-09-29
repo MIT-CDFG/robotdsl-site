@@ -28,6 +28,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-burger",
+          "setup": "gao-2025-safe-mapless-navigation-turtlebot3-burger",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -58,7 +65,8 @@
         "toyota_hsr_drive_wheel_source",
         "toyota_hsr_head_fixed",
         "toyota_hsr_torso_lift_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1000",
@@ -85,6 +93,13 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-1000-clearpath-husky",
+          "assembly": "husky_a200"
+        }
       ]
     },
     {
@@ -115,7 +130,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1013",
@@ -144,7 +160,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-102",
@@ -171,7 +188,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1038",
@@ -200,7 +218,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1072",
@@ -226,7 +245,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1075",
@@ -250,7 +270,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1084",
@@ -278,7 +299,8 @@
       ],
       "parts": [
         "oxts_rt3000_v4"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-11",
@@ -307,6 +329,13 @@
       "parts": [
         "skywalker_2022_drive_wheel",
         "skywalker_2022_fixed_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "waterloo-skywalker",
+          "setup": "icra-2026-paper-11-waterloo-skywalker",
+          "assembly": "skywalker_2022_fixed_reference"
+        }
       ]
     },
     {
@@ -337,6 +366,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_waffle_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-waffle",
+          "setup": "icra-2026-paper-1106-turtlebot3-waffle",
+          "assembly": "icra-2026-paper-1106-turtlebot3-waffle"
+        }
       ]
     },
     {
@@ -366,7 +402,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1123",
@@ -390,7 +427,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1142",
@@ -427,6 +465,13 @@
         "velodyne_hdl32e",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-1142-clearpath-warthog",
+          "assembly": "icra-2026-paper-1142-clearpath-warthog"
+        }
       ]
     },
     {
@@ -472,6 +517,18 @@
         "ford_avdata_source_wheel",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-1161-agilex-scout-mini",
+          "assembly": "agilex_scout_mini_ugv_reference"
+        },
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-1161-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -503,7 +560,8 @@
       "parts": [
         "galaxea_r1_lite_arm_fixed",
         "galaxea_r1_lite_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1172",
@@ -528,7 +586,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-118",
@@ -562,6 +621,13 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "ouster_os1_128_rev7"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-118-clearpath-jackal",
+          "assembly": "icra-2026-paper-118-clearpath-jackal"
+        }
       ]
     },
     {
@@ -587,7 +653,8 @@
       ],
       "parts": [
         "velodyne_alpha_prime_revb_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-12",
@@ -613,6 +680,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-12-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -643,6 +717,13 @@
         "kobuki_drive_wheel",
         "kobuki_stock_chassis",
         "slamtec_rplidar_a1m8"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-120-turtlebot2",
+          "assembly": "icra-2026-paper-120-turtlebot2"
+        }
       ]
     },
     {
@@ -678,7 +759,8 @@
       "parts": [
         "galaxea_r1_lite_arm_fixed",
         "galaxea_r1_lite_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-121",
@@ -703,7 +785,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1221",
@@ -737,7 +820,8 @@
       ],
       "parts": [
         "google_everyday_arm_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1223",
@@ -762,7 +846,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-125",
@@ -784,7 +869,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1250",
@@ -806,7 +892,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1261",
@@ -832,7 +919,8 @@
       "parts": [
         "hokuyo_urg_04lx",
         "raspberry_pi_4b"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1281",
@@ -862,7 +950,8 @@
       ],
       "parts": [
         "aaeon_up_xtreme_i12_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-129",
@@ -888,7 +977,8 @@
       ],
       "parts": [
         "raspberry_pi_4b"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1295",
@@ -919,6 +1009,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-1295-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -961,7 +1058,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1314",
@@ -990,6 +1088,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "basler_aca2500_60uc_camera"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-1314-agilex-scout-mini",
+          "assembly": "icra-2026-paper-1314-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -1018,7 +1123,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1321",
@@ -1042,7 +1148,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1323",
@@ -1075,7 +1182,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-134",
@@ -1106,7 +1214,8 @@
       ],
       "parts": [
         "autolabor_pm1_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1341",
@@ -1141,6 +1250,13 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-1341-clearpath-husky",
+          "assembly": "icra-2026-paper-1341-clearpath-husky"
+        }
       ]
     },
     {
@@ -1170,6 +1286,13 @@
         "basler_aca2500_60uc_camera",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-1357-clearpath-warthog",
+          "assembly": "icra-2026-paper-1357-clearpath-warthog"
+        }
       ]
     },
     {
@@ -1202,7 +1325,8 @@
       "parts": [
         "unitree_go2w_source_wheel_left",
         "unitree_go2w_source_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1378",
@@ -1238,7 +1362,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-139",
@@ -1269,7 +1394,8 @@
         "armar_6_left_arm_fixed",
         "armar_6_right_arm_fixed",
         "armar_6_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1398",
@@ -1302,6 +1428,13 @@
       "parts": [
         "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-1398-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        }
       ]
     },
     {
@@ -1331,7 +1464,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-142",
@@ -1365,6 +1499,13 @@
         "agilex_cobot_magic_leader_fixed",
         "agilex_cobot_magic_top_d435",
         "agilex_tracer2_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-142-agilex-cobot-magic",
+          "assembly": "agilex_cobot_magic_stock"
+        }
       ]
     },
     {
@@ -1391,6 +1532,13 @@
       "parts": [
         "agilex_tracer_v1_chassis",
         "agilex_tracer_v1_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "mobile-aloha",
+          "setup": "icra-2026-paper-143-mobile-aloha",
+          "assembly": "agilex_tracer_v1_stock_base"
+        }
       ]
     },
     {
@@ -1417,6 +1565,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-144-turtlebot3-unspecified",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -1446,6 +1601,13 @@
       "parts": [
         "pioneer2_dx_stock_body",
         "pioneer2_dx_stock_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "pioneer-2-family",
+          "setup": "icra-2026-paper-145-pioneer-2-family",
+          "assembly": "pioneer2_dx_stock_reference"
+        }
       ]
     },
     {
@@ -1481,7 +1643,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1497",
@@ -1511,6 +1674,13 @@
         "agilex_scout_mini_ugv_wheel",
         "stereolabs_zed2i",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-1497-agilex-scout-mini",
+          "assembly": "icra-2026-paper-1497-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -1538,7 +1708,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1548",
@@ -1564,7 +1735,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1558",
@@ -1599,7 +1771,8 @@
         "galaxea_r1_right_arm_fixed",
         "galaxea_r1_torso_fixed",
         "galaxea_r1_zed_head_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-158",
@@ -1632,7 +1805,8 @@
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1593",
@@ -1669,7 +1843,8 @@
         "basler_aca2500_60uc_camera",
         "robotiq_2f85_fixed",
         "sunrise_m3553e_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-16",
@@ -1697,7 +1872,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1602",
@@ -1726,6 +1902,13 @@
         "husky_a200_wheel",
         "ouster_os1_128_rev7",
         "sbg_ellipse_d"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-1602-clearpath-husky",
+          "assembly": "icra-2026-paper-1602-clearpath-husky"
+        }
       ]
     },
     {
@@ -1752,6 +1935,13 @@
       "parts": [
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-1610-fetch",
+          "assembly": "fetch_mobile_base_partial"
+        }
       ]
     },
     {
@@ -1781,7 +1971,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1626",
@@ -1817,6 +2008,13 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-1626-stretch-3",
+          "assembly": "stretch_3"
+        }
       ]
     },
     {
@@ -1847,6 +2045,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "ouster_os1_128_rev7"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-1641-agilex-scout-mini",
+          "assembly": "icra-2026-paper-1641-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -1879,7 +2084,8 @@
         "agilex_tracer_v1_chassis",
         "agilex_tracer_v1_drive_wheel",
         "interbotix_viperx300s_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1665",
@@ -1905,7 +2111,8 @@
       ],
       "parts": [
         "osrf_prius_family_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1680",
@@ -1934,7 +2141,8 @@
         "rbkairos_mecanum_wheel_1",
         "rbkairos_mecanum_wheel_2",
         "summit_xl_steel_source_chassis"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1693",
@@ -1963,7 +2171,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1694",
@@ -1989,7 +2198,8 @@
       "parts": [
         "deepskate_30f0r_wheel_left",
         "deepskate_30f0r_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-17",
@@ -2017,7 +2227,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-172",
@@ -2040,7 +2251,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1739",
@@ -2071,6 +2283,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-1739-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -2099,7 +2318,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1751",
@@ -2122,7 +2342,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1753",
@@ -2151,6 +2372,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_waffle_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-1753-turtlebot3-unspecified",
+          "assembly": "turtlebot3_waffle_lidar_reference"
+        }
       ]
     },
     {
@@ -2182,6 +2410,13 @@
         "hokuyo_urg_04lx",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-1756-clearpath-jackal",
+          "assembly": "icra-2026-paper-1756-clearpath-jackal"
+        }
       ]
     },
     {
@@ -2213,6 +2448,13 @@
         "rosbot3_standard_wheel_right",
         "rosbot3_stock_chassis",
         "slamtec_rplidar_c1_husarion_model"
+      ],
+      "programs": [
+        {
+          "robot": "husarion-rosbot-3",
+          "setup": "icra-2026-paper-1769-husarion-rosbot-3",
+          "assembly": "rosbot3_standard_stock_base"
+        }
       ]
     },
     {
@@ -2235,7 +2477,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1832",
@@ -2265,6 +2508,13 @@
         "create3_drive_wheel",
         "create3_stock_chassis",
         "slamtec_rplidar_a1m8"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-1832-turtlebot4",
+          "assembly": "icra-2026-paper-1832-turtlebot4"
+        }
       ]
     },
     {
@@ -2294,6 +2544,13 @@
         "kobuki_drive_wheel",
         "kobuki_stock_chassis",
         "turtlebot2_hexagon_tower"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-1859-turtlebot2",
+          "assembly": "icra-2026-paper-1859-turtlebot2"
+        }
       ]
     },
     {
@@ -2334,6 +2591,18 @@
         "jackal_j100_wheel",
         "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-1899-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        },
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-1899-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -2362,7 +2631,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-190",
@@ -2392,6 +2662,13 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "stereolabs_zed_mini"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-190-clearpath-jackal",
+          "assembly": "icra-2026-paper-190-clearpath-jackal"
+        }
       ]
     },
     {
@@ -2422,7 +2699,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1926",
@@ -2447,7 +2725,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1958",
@@ -2482,6 +2761,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-1958-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -2515,7 +2801,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-197",
@@ -2543,7 +2830,8 @@
       ],
       "parts": [
         "superdroid_ig52_db_2014_frame"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-1994",
@@ -2570,6 +2858,13 @@
       "parts": [
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-1994-agilex-scout-mini",
+          "assembly": "agilex_scout_mini_ugv_reference"
+        }
       ]
     },
     {
@@ -2601,7 +2896,8 @@
         "toyota_hsr_drive_wheel_source",
         "toyota_hsr_head_fixed",
         "toyota_hsr_torso_lift_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2001",
@@ -2635,6 +2931,13 @@
       "parts": [
         "tencent_reccraft_chassis",
         "tencent_reccraft_mecanum_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "tencent-reccraft-builder",
+          "setup": "icra-2026-paper-2001-tencent-reccraft-builder",
+          "assembly": "tencent_reccraft_stock_reference"
+        }
       ]
     },
     {
@@ -2666,7 +2969,8 @@
         "toyota_hsr_drive_wheel_source",
         "toyota_hsr_head_fixed",
         "toyota_hsr_torso_lift_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2067",
@@ -2694,6 +2998,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-2067-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -2732,7 +3043,8 @@
         "moonbot_wheel_v1_source_right",
         "moonbot_wheel_v2_source_left",
         "moonbot_wheel_v2_source_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2081",
@@ -2761,7 +3073,8 @@
       ],
       "parts": [
         "ford_avdata_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2082",
@@ -2784,7 +3097,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2084",
@@ -2812,7 +3126,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2092",
@@ -2847,7 +3162,8 @@
         "locobot_rplidar_a2m8",
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-210",
@@ -2885,7 +3201,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2106",
@@ -2916,6 +3233,13 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-2106-stretch-3",
+          "assembly": "stretch_3"
+        }
       ]
     },
     {
@@ -2953,7 +3277,8 @@
         "agibot_g1_omnipicker_left_arm_fixed",
         "agibot_g1_omnipicker_right_arm_fixed",
         "agibot_g1_omnipicker_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-212",
@@ -2978,7 +3303,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2122",
@@ -3011,7 +3337,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2137",
@@ -3037,7 +3364,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2146",
@@ -3078,7 +3406,8 @@
         "toyota_hsr_drive_wheel_source",
         "toyota_hsr_head_fixed",
         "toyota_hsr_torso_lift_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2154",
@@ -3115,7 +3444,8 @@
         "agilex_cobot_s_front_lidar",
         "agilex_cobot_s_head_fixed",
         "agilex_cobot_s_neck_lidar"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2206",
@@ -3143,6 +3473,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "nvidia_jetson_orin_nano_devkit_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-2206-agilex-scout-mini",
+          "assembly": "icra-2026-paper-2206-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -3171,7 +3508,8 @@
       ],
       "parts": [
         "velodyne_vlp32c_source_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2253",
@@ -3203,6 +3541,13 @@
         "agilex_scout_2_wheel_type1",
         "agilex_scout_2_wheel_type2",
         "livox_mid360_peral_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-2",
+          "setup": "icra-2026-paper-2253-agilex-scout-2",
+          "assembly": "icra-2026-paper-2253-agilex-scout-2"
+        }
       ]
     },
     {
@@ -3230,7 +3575,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2270",
@@ -3272,6 +3618,13 @@
         "agilex_cobot_magic_leader_fixed",
         "agilex_cobot_magic_top_d435",
         "agilex_tracer2_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-2270-agilex-cobot-magic",
+          "assembly": "agilex_cobot_magic_stock"
+        }
       ]
     },
     {
@@ -3298,7 +3651,8 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2285",
@@ -3320,7 +3674,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2287",
@@ -3351,6 +3706,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-2287-agilex-scout-mini",
+          "assembly": "icra-2026-paper-2287-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -3408,6 +3770,18 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-dingo",
+          "setup": "icra-2026-paper-2328-clearpath-dingo",
+          "assembly": "dingo_d"
+        },
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-2328-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -3433,7 +3807,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2347",
@@ -3462,7 +3837,8 @@
         "pr2_left_arm_fixed",
         "pr2_right_arm_fixed",
         "pr2_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2377",
@@ -3528,6 +3904,13 @@
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-2377-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -3555,7 +3938,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2418",
@@ -3593,7 +3977,8 @@
         "rbkairos_chassis",
         "rbkairos_mecanum_wheel_1",
         "rbkairos_mecanum_wheel_2"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-243",
@@ -3624,6 +4009,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-243-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -3657,6 +4049,13 @@
         "agilex_cobot_magic_leader_fixed",
         "agilex_tracer2_drive_wheel",
         "stretch3_head_d435i"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-2436-agilex-cobot-magic",
+          "assembly": "icra-2026-paper-2436-agilex-cobot-magic"
+        }
       ]
     },
     {
@@ -3693,6 +4092,13 @@
         "astribot_s1_source_wheel_rf",
         "astribot_s1_source_wheel_rr",
         "astribot_s1_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "astribot-s1",
+          "setup": "icra-2026-paper-2454-astribot-s1",
+          "assembly": "astribot_s1_fixed_reference"
+        }
       ]
     },
     {
@@ -3725,6 +4131,13 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "nvidia_jetson_orin_nano_devkit_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-2462-clearpath-jackal",
+          "assembly": "icra-2026-paper-2462-clearpath-jackal"
+        }
       ]
     },
     {
@@ -3766,6 +4179,13 @@
         "raspberry_pi_4b",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-2480-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -3794,7 +4214,8 @@
       ],
       "parts": [
         "directdrive_diablo_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2494",
@@ -3830,6 +4251,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-2494-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -3858,7 +4286,8 @@
       ],
       "parts": [
         "ouster_os0_128_rev7"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-255",
@@ -3884,7 +4313,8 @@
       ],
       "parts": [
         "sick_lms111_official"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2567",
@@ -3912,6 +4342,13 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "nvidia_jetson_orin_nano_devkit_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-2567-clearpath-husky",
+          "assembly": "icra-2026-paper-2567-clearpath-husky"
+        }
       ]
     },
     {
@@ -3940,7 +4377,8 @@
       ],
       "parts": [
         "velodyne_alpha_prime_revb_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2599",
@@ -3969,7 +4407,8 @@
       ],
       "parts": [
         "velodyne_vlp16"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-26",
@@ -4015,6 +4454,18 @@
         "velodyne_alpha_prime_revb_reference",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-26-clearpath-husky",
+          "assembly": "husky_a200"
+        },
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-26-clearpath-warthog",
+          "assembly": "warthog_w200_outdoor"
+        }
       ]
     },
     {
@@ -4038,7 +4489,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2625",
@@ -4065,7 +4517,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2634",
@@ -4092,7 +4545,8 @@
       ],
       "parts": [
         "google_everyday_arm_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2655",
@@ -4120,7 +4574,8 @@
       ],
       "parts": [
         "allied_vision_mako_g319_cmount_body"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2656",
@@ -4149,7 +4604,8 @@
       "parts": [
         "northwestern_cirp2025_mass_tag_carrier_06302024",
         "northwestern_cirp2025_printed_wheel_06302024"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2736",
@@ -4175,7 +4631,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2750",
@@ -4225,6 +4682,13 @@
         "turtlebot3_waffle_chassis",
         "turtlebot3_waffle_r200_fixed",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-2750-turtlebot3-unspecified",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -4256,7 +4720,8 @@
       ],
       "parts": [
         "asus_xtion_pro_live_turtlebot_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-276",
@@ -4284,7 +4749,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2769",
@@ -4308,7 +4774,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2778",
@@ -4334,7 +4801,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2782",
@@ -4365,7 +4833,8 @@
       ],
       "parts": [
         "livox_mid360_peral_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2785",
@@ -4390,7 +4859,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2792",
@@ -4416,7 +4886,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2805",
@@ -4443,7 +4914,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2814",
@@ -4476,6 +4948,13 @@
         "intel_realsense_d435_2020_cad_reference",
         "livox_mid360_peral_reference",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-2814-clearpath-husky",
+          "assembly": "icra-2026-paper-2814-clearpath-husky"
+        }
       ]
     },
     {
@@ -4503,7 +4982,8 @@
       "parts": [
         "kinova_mico_m1n6s200_fixed",
         "velodyne_puck_lite"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2851",
@@ -4531,7 +5011,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-2899",
@@ -4560,6 +5041,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "basler_aca2500_60uc_camera"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-2899-agilex-scout-mini",
+          "assembly": "icra-2026-paper-2899-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -4588,6 +5076,13 @@
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel",
         "upright_thing_tor11_ur10_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "ridgeback-ur10",
+          "setup": "icra-2026-paper-29-ridgeback-ur10",
+          "assembly": "ridgeback_tor11_ur10_full_reference"
+        }
       ]
     },
     {
@@ -4620,6 +5115,13 @@
         "autodrive_f1tenth_source_front_right_wheel",
         "autodrive_f1tenth_source_rear_left_wheel",
         "autodrive_f1tenth_source_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "f1tenth-unspecified",
+          "setup": "icra-2026-paper-2904-f1tenth-unspecified",
+          "assembly": "autodrive_f1tenth_source_reference"
+        }
       ]
     },
     {
@@ -4678,6 +5180,13 @@
         "stretch3_base_lidar",
         "stretch_re1_drive_wheel",
         "stretch_re1_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-re1",
+          "setup": "icra-2026-paper-2929-stretch-re1",
+          "assembly": "stretch_re1_mobile_base_partial"
+        }
       ]
     },
     {
@@ -4707,6 +5216,13 @@
         "uc3m_adam_rb1_chassis",
         "uc3m_adam_rb1_drive_wheel",
         "uc3m_adam_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "uc3m-adam",
+          "setup": "icra-2026-paper-2943-uc3m-adam",
+          "assembly": "uc3m_adam_fixed_stock_reference"
+        }
       ]
     },
     {
@@ -4739,7 +5255,8 @@
       "parts": [
         "beagleboard_beaglebone_black_revc",
         "kinova_jaco2_j2n6s300_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3005",
@@ -4765,7 +5282,8 @@
       ],
       "parts": [
         "robotis_xm430_w350_idler_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-307",
@@ -4791,7 +5309,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3124",
@@ -4822,7 +5341,8 @@
       ],
       "parts": [
         "universal_robots_ur5_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3153",
@@ -4851,7 +5371,8 @@
       "parts": [
         "magiclab_magicdog_w_wheel_left",
         "magiclab_magicdog_w_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3164",
@@ -4882,7 +5403,8 @@
       ],
       "parts": [
         "raspberry_pi_4b"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3174",
@@ -4912,6 +5434,13 @@
         "jetbot_ros_camera_bracket_module",
         "jetbot_ros_compute_lidar_stack",
         "jetbot_ros_lower_base"
+      ],
+      "programs": [
+        {
+          "robot": "jetbot-ros-ai",
+          "setup": "icra-2026-paper-3174-jetbot-ros-ai",
+          "assembly": "jetbot_ros_stock_reference"
+        }
       ]
     },
     {
@@ -4959,6 +5488,18 @@
         "hunter_se_rear_wheel",
         "husky_a200_chassis",
         "husky_a200_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-2",
+          "setup": "icra-2026-paper-322-agilex-scout-2",
+          "assembly": "agilex_scout_2_stock"
+        },
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-322-clearpath-husky",
+          "assembly": "husky_a200"
+        }
       ]
     },
     {
@@ -4990,7 +5531,8 @@
       ],
       "parts": [
         "google_everyday_arm_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3252",
@@ -5019,7 +5561,8 @@
       "parts": [
         "forzaeth_legacy_f110_wheel",
         "forzaeth_legacy_hokuyo_module"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-326",
@@ -5046,7 +5589,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3271",
@@ -5074,7 +5618,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3273",
@@ -5101,6 +5646,13 @@
       "parts": [
         "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-3273-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        }
       ]
     },
     {
@@ -5127,7 +5679,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-332",
@@ -5155,6 +5708,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-332-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -5191,6 +5751,13 @@
         "agilex_cobot_magic_leader_fixed",
         "agilex_tracer2_drive_wheel",
         "intel_realsense_d435_2020_cad_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-3345-agilex-cobot-magic",
+          "assembly": "icra-2026-paper-3345-agilex-cobot-magic"
+        }
       ]
     },
     {
@@ -5221,6 +5788,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-3372-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -5259,6 +5833,18 @@
         "create3_drive_wheel",
         "create3_stock_chassis",
         "nvidia_jetson_orin_nano_devkit_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "irobot-create1",
+          "setup": "icra-2026-paper-3390-irobot-create1",
+          "assembly": "irobot_create1_community_reference"
+        },
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-3390-turtlebot4",
+          "assembly": "icra-2026-paper-3390-turtlebot4"
+        }
       ]
     },
     {
@@ -5291,6 +5877,13 @@
         "ouster_os1_64_rev7",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-34-clearpath-warthog",
+          "assembly": "icra-2026-paper-34-clearpath-warthog"
+        }
       ]
     },
     {
@@ -5320,6 +5913,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-3402-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -5350,6 +5950,13 @@
         "yahboom_x3_chassis",
         "yahboom_x3_mecanum_type_a",
         "yahboom_x3_mecanum_type_b"
+      ],
+      "programs": [
+        {
+          "robot": "yahboom-rosmaster-x3",
+          "setup": "icra-2026-paper-3425-yahboom-rosmaster-x3",
+          "assembly": "yahboom_x3_stock_reference"
+        }
       ]
     },
     {
@@ -5390,6 +5997,18 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "stereolabs_zed2"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-3433-agilex-scout-mini",
+          "assembly": "icra-2026-paper-3433-agilex-scout-mini"
+        },
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-3433-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -5428,7 +6047,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3484",
@@ -5462,7 +6082,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-35",
@@ -5493,7 +6114,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3537",
@@ -5524,6 +6146,13 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-3537-clearpath-jackal",
+          "assembly": "icra-2026-paper-3537-clearpath-jackal"
+        }
       ]
     },
     {
@@ -5555,6 +6184,13 @@
         "future_nav_mir100_chassis",
         "future_nav_mir100_drive_wheel",
         "future_nav_mir100_lms100"
+      ],
+      "programs": [
+        {
+          "robot": "mir-100",
+          "setup": "icra-2026-paper-354-mir-100",
+          "assembly": "future_nav_mir100_stock"
+        }
       ]
     },
     {
@@ -5578,7 +6214,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3597",
@@ -5644,6 +6281,18 @@
         "stretch_re1_drive_wheel",
         "stretch_re1_mobile_chassis",
         "stretch_re1_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "rainbow-rby1",
+          "setup": "icra-2026-paper-3597-rainbow-rby1",
+          "assembly": "rainbow_rby1a_full_fixed_reference"
+        },
+        {
+          "robot": "stretch-re1",
+          "setup": "icra-2026-paper-3597-stretch-re1",
+          "assembly": "stretch_re1_fixed_stock_reference"
+        }
       ]
     },
     {
@@ -5674,6 +6323,13 @@
         "husarion_panther_wh01_rl_wheel",
         "husarion_panther_wh01_rr_wheel",
         "interbotix_viperx300s_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "husarion-panther",
+          "setup": "icra-2026-paper-3609-husarion-panther",
+          "assembly": "icra-2026-paper-3609-husarion-panther"
+        }
       ]
     },
     {
@@ -5698,7 +6354,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3620",
@@ -5729,6 +6386,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-3620-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -5762,6 +6426,13 @@
         "nova_carter_chassis_body",
         "nova_carter_drive_wheel_right",
         "nova_carter_rear_support_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "nvidia-carter",
+          "setup": "icra-2026-paper-3621-nvidia-carter",
+          "assembly": "nova_carter_estimated_support_reference"
+        }
       ]
     },
     {
@@ -5791,7 +6462,8 @@
       ],
       "parts": [
         "livox_mid70_official_cad_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3640",
@@ -5821,6 +6493,13 @@
       "parts": [
         "create3_drive_wheel",
         "create3_stock_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "irobot-create3",
+          "setup": "icra-2026-paper-3640-irobot-create3",
+          "assembly": "irobot_create3_stock"
+        }
       ]
     },
     {
@@ -5849,6 +6528,13 @@
         "create3_drive_wheel",
         "create3_stock_chassis",
         "slamtec_rplidar_a1m8"
+      ],
+      "programs": [
+        {
+          "robot": "irobot-create3",
+          "setup": "icra-2026-paper-3659-irobot-create3",
+          "assembly": "icra-2026-paper-3659-irobot-create3"
+        }
       ]
     },
     {
@@ -5875,7 +6561,8 @@
       ],
       "parts": [
         "asus_xtion_pro_live_turtlebot_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3664",
@@ -5915,7 +6602,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3666",
@@ -5953,7 +6641,8 @@
         "stretch_re1_upper_fixed",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3674",
@@ -5987,7 +6676,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3683",
@@ -6015,7 +6705,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3688",
@@ -6042,7 +6733,8 @@
         "raspberry_pi_5",
         "vertiq_23_06_220kv_g1_fixed",
         "vertiq_40_06_370kv_g2_base_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3694",
@@ -6075,6 +6767,13 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-3694-stretch-3",
+          "assembly": "stretch_3"
+        }
       ]
     },
     {
@@ -6103,7 +6802,8 @@
       ],
       "parts": [
         "ranger_mini2_source_drive_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3710",
@@ -6140,7 +6840,8 @@
         "dexmate_vega_lidar",
         "dexmate_vega_right_arm_f5d6_fixed",
         "dexmate_vega_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3711",
@@ -6168,7 +6869,8 @@
       ],
       "parts": [
         "allied_vision_mako_g319_cmount_body"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3721",
@@ -6198,6 +6900,13 @@
         "pioneer_3at_chassis",
         "pioneer_3at_drive_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "pioneer-3at",
+          "setup": "icra-2026-paper-3721-pioneer-3at",
+          "assembly": "icra-2026-paper-3721-pioneer-3at"
+        }
       ]
     },
     {
@@ -6230,7 +6939,8 @@
         "rover_pro_dev_payload",
         "rover_pro_drive_wheel",
         "rover_pro_rplidar_s2_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3760",
@@ -6261,7 +6971,8 @@
       ],
       "parts": [
         "vectornav_vn100_rugged_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-377",
@@ -6289,7 +7000,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3776",
@@ -6318,7 +7030,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3777",
@@ -6347,7 +7060,8 @@
       ],
       "parts": [
         "robstride_02_fixed_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3778",
@@ -6383,7 +7097,8 @@
       "parts": [
         "kinova_gen3_7dof_fixed",
         "kinova_gen3_robotiq_2f85_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3799",
@@ -6407,7 +7122,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3802",
@@ -6441,7 +7157,8 @@
       ],
       "parts": [
         "ford_avdata_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3808",
@@ -6474,6 +7191,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-3808-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -6498,7 +7222,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3834",
@@ -6532,6 +7257,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-3834-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -6560,7 +7292,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-385",
@@ -6590,6 +7323,13 @@
       "parts": [
         "epuck_legacy_cad_body",
         "epuck_legacy_cad_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "epuck",
+          "setup": "icra-2026-paper-385-epuck",
+          "assembly": "epuck_legacy_cad_reference"
+        }
       ]
     },
     {
@@ -6620,6 +7360,13 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "vectornav_vn100_rugged_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-387-clearpath-husky",
+          "assembly": "icra-2026-paper-387-clearpath-husky"
+        }
       ]
     },
     {
@@ -6648,7 +7395,8 @@
       ],
       "parts": [
         "sbg_ellipse_a_cad_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-396",
@@ -6677,7 +7425,8 @@
       ],
       "parts": [
         "osrf_prius_family_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-3975",
@@ -6705,6 +7454,13 @@
       "parts": [
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-3975-fetch",
+          "assembly": "fetch_mobile_base_partial"
+        }
       ]
     },
     {
@@ -6739,7 +7495,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-400",
@@ -6766,7 +7523,8 @@
       ],
       "parts": [
         "directdrive_diablo_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4025",
@@ -6825,6 +7583,13 @@
         "stretch_re1_upper_fixed",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-2",
+          "setup": "icra-2026-paper-4025-stretch-2",
+          "assembly": "stretch_re2_fixed_stock_reference"
+        }
       ]
     },
     {
@@ -6852,7 +7617,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4054",
@@ -6877,7 +7643,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4060",
@@ -6905,7 +7672,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4062",
@@ -6946,6 +7714,18 @@
         "fetch_mobile_chassis",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-4062-clearpath-jackal",
+          "assembly": "jackal_j100"
+        },
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-4062-fetch",
+          "assembly": "fetch_stock_fixed_reference"
+        }
       ]
     },
     {
@@ -6973,7 +7753,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4106",
@@ -6998,7 +7779,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4142",
@@ -7049,6 +7831,18 @@
         "stretch3_head_d435i",
         "stretch3_head_nav_camera",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-4142-stretch-3",
+          "assembly": "stretch_3"
+        },
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-4142-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -7078,7 +7872,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4154",
@@ -7112,7 +7907,8 @@
       ],
       "parts": [
         "robotis_xm430_w210t_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4193",
@@ -7149,7 +7945,8 @@
         "intel_realsense_t265_fixed",
         "stretch3_head_d435i",
         "universal_robots_ur5e_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4209",
@@ -7201,6 +7998,18 @@
         "husky_a200_wheel",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-4209-clearpath-husky",
+          "assembly": "icra-2026-paper-4209-clearpath-husky"
+        },
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-4209-clearpath-warthog",
+          "assembly": "icra-2026-paper-4209-clearpath-warthog"
+        }
       ]
     },
     {
@@ -7239,6 +8048,13 @@
         "vectornav_vn100_rugged_fixed",
         "velodyne_puck_lite",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-4249-agilex-scout-mini",
+          "assembly": "icra-2026-paper-4249-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -7266,7 +8082,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-43",
@@ -7295,6 +8112,13 @@
         "dingo_o_mecanum_mirrored",
         "dingo_o_mecanum_normal",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-dingo",
+          "setup": "icra-2026-paper-43-clearpath-dingo",
+          "assembly": "icra-2026-paper-43-clearpath-dingo"
+        }
       ]
     },
     {
@@ -7325,6 +8149,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-burger",
+          "setup": "icra-2026-paper-4301-turtlebot3-burger",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -7363,6 +8194,13 @@
         "agilex_cobot_magic_leader_fixed",
         "agilex_tracer2_drive_wheel",
         "intel_realsense_l515_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-4332-agilex-cobot-magic",
+          "assembly": "icra-2026-paper-4332-agilex-cobot-magic"
+        }
       ]
     },
     {
@@ -7396,6 +8234,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-4335-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -7434,6 +8279,18 @@
         "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-4336-clearpath-jackal",
+          "assembly": "jackal_j100"
+        },
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-4336-turtlebot2",
+          "assembly": "turtlebot2_kobuki_hexagons_kinect_stock"
+        }
       ]
     },
     {
@@ -7465,6 +8322,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot-unspecified",
+          "setup": "icra-2026-paper-4344-turtlebot-unspecified",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -7496,6 +8360,13 @@
         "rainbow_rby1a_drive_wheel",
         "rainbow_rby1a_mobile_chassis",
         "rainbow_rby1a_upper_body_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "rainbow-rby1",
+          "setup": "icra-2026-paper-4352-rainbow-rby1",
+          "assembly": "rainbow_rby1a_full_fixed_reference"
+        }
       ]
     },
     {
@@ -7527,6 +8398,13 @@
         "vstone_mecanumrover3_chassis",
         "vstone_mecanumrover3_wheel",
         "vstone_mecanumrover3_wheel_rev"
+      ],
+      "programs": [
+        {
+          "robot": "kyushu-colson-mecanum-rover",
+          "setup": "icra-2026-paper-4381-kyushu-colson-mecanum-rover",
+          "assembly": "icra-2026-paper-4381-kyushu-colson-mecanum-rover"
+        }
       ]
     },
     {
@@ -7563,7 +8441,8 @@
       "parts": [
         "ford_avdata_source_wheel",
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4484",
@@ -7591,7 +8470,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4492",
@@ -7626,6 +8506,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-4492-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -7662,7 +8549,8 @@
         "agilex_piper_current_fixed",
         "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4570",
@@ -7691,7 +8579,8 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4590",
@@ -7766,6 +8655,18 @@
         "rainbow_rby1a_mobile_chassis",
         "rainbow_rby1a_upper_body_fixed",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "rainbow-rby1",
+          "setup": "icra-2026-paper-4590-rainbow-rby1",
+          "assembly": "rainbow_rby1a_full_fixed_reference"
+        },
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-4590-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -7794,6 +8695,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-4595-turtlebot3-unspecified",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -7822,6 +8730,13 @@
         "ubiquity_magni_chassis",
         "ubiquity_magni_left_wheel",
         "ubiquity_magni_right_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "ubiquity-magni",
+          "setup": "icra-2026-paper-4599-ubiquity-magni",
+          "assembly": "ubiquity_magni_stock_base_reference"
+        }
       ]
     },
     {
@@ -7854,7 +8769,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4634",
@@ -7890,7 +8806,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-464",
@@ -7927,7 +8844,8 @@
       "parts": [
         "ford_avdata_source_wheel",
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4670",
@@ -7952,7 +8870,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-468",
@@ -7979,6 +8898,13 @@
       "parts": [
         "pololu_3pi_plus_2040_chassis",
         "pololu_wheel_32x7_1088"
+      ],
+      "programs": [
+        {
+          "robot": "pololu-3pi-plus-2040",
+          "setup": "icra-2026-paper-468-pololu-3pi-plus-2040",
+          "assembly": "pololu_3pi_plus_2040_stock_reference"
+        }
       ]
     },
     {
@@ -8006,7 +8932,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4704",
@@ -8057,6 +8984,18 @@
         "nova_carter_chassis_body",
         "nova_carter_drive_wheel_right",
         "nova_carter_rear_support_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-4704-agilex-limo",
+          "assembly": "icra-2026-paper-4704-agilex-limo"
+        },
+        {
+          "robot": "nvidia-carter",
+          "setup": "icra-2026-paper-4704-nvidia-carter",
+          "assembly": "nova_carter_estimated_support_reference"
+        }
       ]
     },
     {
@@ -8094,7 +9033,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4714",
@@ -8127,7 +9067,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4717",
@@ -8155,7 +9096,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4722",
@@ -8190,7 +9132,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4781",
@@ -8216,7 +9159,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4791",
@@ -8250,7 +9194,8 @@
       "parts": [
         "unitree_go2w_source_wheel_left",
         "unitree_go2w_source_wheel_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4838",
@@ -8277,7 +9222,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4844",
@@ -8306,7 +9252,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4848",
@@ -8331,7 +9278,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4858",
@@ -8360,7 +9308,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4879",
@@ -8387,7 +9336,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4885",
@@ -8417,6 +9367,13 @@
         "jackal_j100_chassis",
         "jackal_j100_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-4885-clearpath-jackal",
+          "assembly": "icra-2026-paper-4885-clearpath-jackal"
+        }
       ]
     },
     {
@@ -8441,7 +9398,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4903",
@@ -8471,7 +9429,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-491",
@@ -8497,7 +9456,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4918",
@@ -8527,6 +9487,13 @@
         "franka_panda_fixed",
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-ridgeback",
+          "setup": "icra-2026-paper-4918-clearpath-ridgeback",
+          "assembly": "icra-2026-paper-4918-clearpath-ridgeback"
+        }
       ]
     },
     {
@@ -8551,7 +9518,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4959",
@@ -8590,6 +9558,13 @@
         "spark_chassis_stack",
         "spark_left_drive_wheel",
         "spark_right_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "nxrobo-spark",
+          "setup": "icra-2026-paper-4959-nxrobo-spark",
+          "assembly": "nxrobo_spark_stock_reference"
+        }
       ]
     },
     {
@@ -8619,7 +9594,8 @@
       ],
       "parts": [
         "arduino_nano_a000005_v33"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4973",
@@ -8649,7 +9625,8 @@
         "locobot_rplidar_a2m8",
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-4976",
@@ -8679,7 +9656,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5003",
@@ -8707,6 +9685,13 @@
       "parts": [
         "robotnik_rb1_base_chassis",
         "robotnik_rb1_drive_wheel_150"
+      ],
+      "programs": [
+        {
+          "robot": "robotnik-rb1-base",
+          "setup": "icra-2026-paper-5003-robotnik-rb1-base",
+          "assembly": "robotnik_rb1_base_partial"
+        }
       ]
     },
     {
@@ -8738,6 +9723,13 @@
       "parts": [
         "kobuki_drive_wheel",
         "kobuki_stock_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot-unspecified",
+          "setup": "icra-2026-paper-5013-turtlebot-unspecified",
+          "assembly": "icra-2026-paper-5013-turtlebot-unspecified"
+        }
       ]
     },
     {
@@ -8788,6 +9780,18 @@
         "warthog_w200_outdoor_wheel",
         "yamaha_viking_2025_front_wheel_reconstruction",
         "yamaha_viking_2025_rear_wheel_reconstruction"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5014-clearpath-jackal",
+          "assembly": "jackal_j100"
+        },
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-5014-clearpath-warthog",
+          "assembly": "warthog_w200_outdoor"
+        }
       ]
     },
     {
@@ -8818,6 +9822,13 @@
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-5049-fetch",
+          "assembly": "fetch_stock_fixed_reference"
+        }
       ]
     },
     {
@@ -8863,6 +9874,18 @@
         "stretch3_head_d435i",
         "stretch3_head_nav_camera",
         "upright_thing_tor11_ur10_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "ridgeback-ur10",
+          "setup": "icra-2026-paper-5063-ridgeback-ur10",
+          "assembly": "ridgeback_tor11_ur10_full_reference"
+        },
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-5063-stretch-3",
+          "assembly": "stretch_3"
+        }
       ]
     },
     {
@@ -8894,7 +9917,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-507",
@@ -8924,7 +9948,8 @@
       ],
       "parts": [
         "nvidia_jetson_orin_nano_devkit_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5077",
@@ -8947,7 +9972,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5089",
@@ -8984,7 +10010,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5107",
@@ -9011,7 +10038,8 @@
       "parts": [
         "realman_rx75_6fb_left_fixed",
         "realman_rx75_6fb_right_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5116",
@@ -9046,6 +10074,13 @@
         "stretch3_drive_wheel",
         "stretch3_head_d435i",
         "stretch3_head_nav_camera"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-3",
+          "setup": "icra-2026-paper-5116-stretch-3",
+          "assembly": "stretch_3"
+        }
       ]
     },
     {
@@ -9078,7 +10113,8 @@
         "agilex_tracer_v1_chassis",
         "agilex_tracer_v1_drive_wheel",
         "interbotix_viperx300s_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5124",
@@ -9103,6 +10139,13 @@
       "parts": [
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-5124-fetch",
+          "assembly": "fetch_mobile_base_partial"
+        }
       ]
     },
     {
@@ -9144,7 +10187,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5186",
@@ -9171,7 +10215,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5188",
@@ -9198,7 +10243,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5209",
@@ -9225,7 +10271,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5229",
@@ -9250,7 +10297,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5250",
@@ -9292,7 +10340,8 @@
       ],
       "parts": [
         "google_everyday_arm_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5265",
@@ -9345,6 +10394,13 @@
         "xlerobot_arm_fixed",
         "xlerobot_head_fixed",
         "xlerobot_wrist_camera_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "lekiwi",
+          "setup": "icra-2026-paper-5265-lekiwi",
+          "assembly": "lekiwi_fixed_arm_stock_reference"
+        }
       ]
     },
     {
@@ -9388,7 +10444,8 @@
         "stretch_re1_upper_fixed",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5284",
@@ -9416,7 +10473,8 @@
       "parts": [
         "intel_realsense_d435_2020_cad_reference",
         "velodyne_vlp16"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5290",
@@ -9447,6 +10505,13 @@
         "agilex_scout_mini_ugv_wheel",
         "intel_nuc11_enthusiast",
         "livox_mid360_peral_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-5290-agilex-scout-mini",
+          "assembly": "icra-2026-paper-5290-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -9482,7 +10547,8 @@
         "arx_x7s_left_arm_fixed",
         "arx_x7s_right_arm_fixed",
         "arx_x7s_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-530",
@@ -9522,6 +10588,13 @@
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-530-agilex-scout-mini",
+          "assembly": "icra-2026-paper-530-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -9551,7 +10624,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5347",
@@ -9583,6 +10657,13 @@
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-5347-fetch",
+          "assembly": "fetch_stock_fixed_reference"
+        }
       ]
     },
     {
@@ -9608,7 +10689,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5420",
@@ -9642,7 +10724,8 @@
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5421",
@@ -9697,6 +10780,23 @@
         "pioneer_3dx_right_wheel",
         "slamtec_rplidar_a1m8",
         "turtlebot2_hexagon_tower"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5421-clearpath-jackal",
+          "assembly": "jackal_j100"
+        },
+        {
+          "robot": "pioneer-3dx",
+          "setup": "icra-2026-paper-5421-pioneer-3dx",
+          "assembly": "icra-2026-paper-5421-pioneer-3dx"
+        },
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-5421-turtlebot2",
+          "assembly": "turtlebot2_kobuki_hexagons_kinect_stock"
+        }
       ]
     },
     {
@@ -9725,7 +10825,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5445",
@@ -9755,6 +10856,13 @@
         "jackal_j100_wheel",
         "stereolabs_zed2i",
         "velodyne_vlp16"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5445-clearpath-jackal",
+          "assembly": "icra-2026-paper-5445-clearpath-jackal"
+        }
       ]
     },
     {
@@ -9785,6 +10893,13 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-5455-clearpath-husky",
+          "assembly": "husky_a200"
+        }
       ]
     },
     {
@@ -9824,6 +10939,18 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "universal_robots_ur5_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-5458-clearpath-husky",
+          "assembly": "icra-2026-paper-5458-clearpath-husky"
+        },
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-5458-fetch",
+          "assembly": "fetch_mobile_base_partial"
+        }
       ]
     },
     {
@@ -9856,7 +10983,8 @@
         "toyota_hsr_drive_wheel_source",
         "toyota_hsr_head_fixed",
         "toyota_hsr_torso_lift_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-548",
@@ -9883,7 +11011,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5480",
@@ -9917,6 +11046,13 @@
         "pioneer_3dx_chassis",
         "pioneer_3dx_left_wheel",
         "pioneer_3dx_right_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "pioneer-3dx",
+          "setup": "icra-2026-paper-5480-pioneer-3dx",
+          "assembly": "pioneer_3dx_stock_reference"
+        }
       ]
     },
     {
@@ -9957,6 +11093,18 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "ouster_os1_128_rev7"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-5483-agilex-scout-mini",
+          "assembly": "icra-2026-paper-5483-agilex-scout-mini"
+        },
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-5483-clearpath-husky",
+          "assembly": "icra-2026-paper-5483-clearpath-husky"
+        }
       ]
     },
     {
@@ -9989,6 +11137,13 @@
         "agilex_scout_v1_cad_wheel_front_right",
         "agilex_scout_v1_cad_wheel_rear_left",
         "agilex_scout_v1_cad_wheel_rear_right"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-v1",
+          "setup": "icra-2026-paper-5486-agilex-scout-v1",
+          "assembly": "agilex_scout_v1_cad_reference"
+        }
       ]
     },
     {
@@ -10020,7 +11175,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5506",
@@ -10053,7 +11209,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5530",
@@ -10085,7 +11242,8 @@
         "peral16_base_tray",
         "peral25_compute_stack_fixed",
         "peral25_mounting_plate"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5575",
@@ -10119,7 +11277,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5578",
@@ -10150,7 +11309,8 @@
       ],
       "parts": [
         "intel_realsense_d435_2020_cad_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5609",
@@ -10173,7 +11333,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5621",
@@ -10201,7 +11362,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5623",
@@ -10232,7 +11394,8 @@
         "turtlebot3_burger_chassis",
         "turtlebot3_waffle_chassis",
         "turtlebot3_waffle_r200_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5635",
@@ -10262,6 +11425,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_lite_mechanical_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "pal-tiago-lite",
+          "setup": "icra-2026-paper-5635-pal-tiago-lite",
+          "assembly": "tiago_lite_mechanical_reference"
+        }
       ]
     },
     {
@@ -10293,6 +11463,13 @@
       "parts": [
         "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-5638-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        }
       ]
     },
     {
@@ -10318,7 +11495,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5647",
@@ -10343,7 +11521,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5649",
@@ -10372,7 +11551,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-566",
@@ -10401,7 +11581,8 @@
       ],
       "parts": [
         "ford_avdata_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-58",
@@ -10431,6 +11612,13 @@
         "dotbot_source_chassis",
         "dotbot_source_left_printed_wheel",
         "dotbot_source_right_printed_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "dotbot",
+          "setup": "icra-2026-paper-58-dotbot",
+          "assembly": "dotbot_fcstd_stock_reference"
+        }
       ]
     },
     {
@@ -10466,7 +11654,8 @@
         "galaxea_r1_right_arm_fixed",
         "galaxea_r1_torso_fixed",
         "galaxea_r1_zed_head_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5805",
@@ -10496,6 +11685,13 @@
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel",
         "livox_mid360_peral_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-5805-agilex-scout-mini",
+          "assembly": "icra-2026-paper-5805-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -10525,6 +11721,13 @@
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-5809-fetch",
+          "assembly": "fetch_stock_fixed_reference"
+        }
       ]
     },
     {
@@ -10561,6 +11764,18 @@
         "kobuki_stock_chassis",
         "microsoft_kinect_turtlebot",
         "turtlebot2_hexagon_tower"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot-unspecified",
+          "setup": "icra-2026-paper-581-turtlebot-unspecified",
+          "assembly": "turtlebot2_kobuki_hexagons_kinect_stock"
+        },
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-581-turtlebot2",
+          "assembly": "kobuki_stock_base"
+        }
       ]
     },
     {
@@ -10591,6 +11806,13 @@
         "jackal_j100_wheel",
         "nvidia_jetson_orin_nano_devkit_fixed",
         "ouster_os1_128_rev7"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5817-clearpath-jackal",
+          "assembly": "icra-2026-paper-5817-clearpath-jackal"
+        }
       ]
     },
     {
@@ -10619,7 +11841,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-583",
@@ -10655,7 +11878,8 @@
         "dexforce_w1_industrial_left_arm_fixed",
         "dexforce_w1_industrial_right_arm_fixed",
         "dexforce_w1_industrial_torso_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5833",
@@ -10680,7 +11904,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5838",
@@ -10705,7 +11930,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5843",
@@ -10736,6 +11962,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-5843-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -10763,6 +11996,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-5844-turtlebot3-unspecified",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -10794,6 +12034,13 @@
         "lds_01",
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-5849-turtlebot3-unspecified",
+          "assembly": "turtlebot3_burger"
+        }
       ]
     },
     {
@@ -10822,6 +12069,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5860-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -10854,7 +12108,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5893",
@@ -10882,7 +12137,8 @@
       ],
       "parts": [
         "leeahn2_pin_array_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5904",
@@ -10918,6 +12174,13 @@
         "agilex_scout_mini_ugv_wheel",
         "intel_nuc11_enthusiast",
         "ouster_os1_128_rev7"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-5904-agilex-scout-mini",
+          "assembly": "icra-2026-paper-5904-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -10948,7 +12211,8 @@
       ],
       "parts": [
         "thorvald_graspberry_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5917",
@@ -11009,6 +12273,28 @@
         "microsoft_kinect_turtlebot",
         "stereolabs_zed2",
         "turtlebot2_hexagon_tower"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-dingo",
+          "setup": "icra-2026-paper-5917-clearpath-dingo",
+          "assembly": "dingo_d"
+        },
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5917-clearpath-jackal",
+          "assembly": "icra-2026-paper-5917-clearpath-jackal"
+        },
+        {
+          "robot": "irobot-create3",
+          "setup": "icra-2026-paper-5917-irobot-create3",
+          "assembly": "icra-2026-paper-5917-irobot-create3"
+        },
+        {
+          "robot": "turtlebot2",
+          "setup": "icra-2026-paper-5917-turtlebot2",
+          "assembly": "turtlebot2_kobuki_hexagons_kinect_stock"
+        }
       ]
     },
     {
@@ -11037,7 +12323,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5926",
@@ -11070,6 +12357,13 @@
         "jackal_j100_wheel",
         "ouster_os1_128_rev7",
         "stereolabs_zed2i"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-5926-clearpath-jackal",
+          "assembly": "icra-2026-paper-5926-clearpath-jackal"
+        }
       ]
     },
     {
@@ -11114,6 +12408,13 @@
         "earthrover_zero_rear_camera",
         "earthrover_zero_v52_chassis",
         "earthrover_zero_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "frodobots-earthrover-zero",
+          "setup": "icra-2026-paper-5928-frodobots-earthrover-zero",
+          "assembly": "earthrover_zero_v52"
+        }
       ]
     },
     {
@@ -11137,7 +12438,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5958",
@@ -11162,7 +12464,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5960",
@@ -11192,6 +12495,13 @@
         "husky_a200_wheel",
         "ouster_os1_128_rev7",
         "vectornav_vn100_rugged_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-5960-clearpath-husky",
+          "assembly": "icra-2026-paper-5960-clearpath-husky"
+        }
       ]
     },
     {
@@ -11220,7 +12530,8 @@
       ],
       "parts": [
         "jsk_lock_spin_wheel_150_reconstruction"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5964",
@@ -11245,7 +12556,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-5985",
@@ -11275,6 +12587,13 @@
       "parts": [
         "agilex_scout_mini_ugv_chassis",
         "agilex_scout_mini_ugv_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-5985-agilex-scout-mini",
+          "assembly": "agilex_scout_mini_ugv_reference"
+        }
       ]
     },
     {
@@ -11306,7 +12625,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6007",
@@ -11336,7 +12656,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6014",
@@ -11368,7 +12689,8 @@
       "parts": [
         "autorally_front_wheel",
         "autorally_rear_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6017",
@@ -11401,7 +12723,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6023",
@@ -11427,7 +12750,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6025",
@@ -11451,7 +12775,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6026",
@@ -11479,6 +12804,13 @@
         "husky_a200_chassis",
         "husky_a200_wheel",
         "stereolabs_zed2i"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-6026-clearpath-husky",
+          "assembly": "icra-2026-paper-6026-clearpath-husky"
+        }
       ]
     },
     {
@@ -11525,6 +12857,18 @@
         "vizbot_orin",
         "vizbot_pcb_camera",
         "vizbot_tracking_camera"
+      ],
+      "programs": [
+        {
+          "robot": "frodobots-earthrover-zero",
+          "setup": "icra-2026-paper-6033-frodobots-earthrover-zero",
+          "assembly": "earthrover_zero_v52"
+        },
+        {
+          "robot": "vizbot",
+          "setup": "icra-2026-paper-6033-vizbot",
+          "assembly": "icra-2026-paper-6033-vizbot"
+        }
       ]
     },
     {
@@ -11555,6 +12899,13 @@
         "quanser_qcar1_chassis",
         "quanser_qcar1_lidar",
         "quanser_qcar1_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "quanser-qcar",
+          "setup": "icra-2026-paper-6039-quanser-qcar",
+          "assembly": "quanser_qcar1_stock"
+        }
       ]
     },
     {
@@ -11597,6 +12948,13 @@
         "autodrive_nigel_platform4_deck",
         "autodrive_nigel_simscape_left_wheel",
         "autodrive_nigel_simscape_right_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "f1tenth-unspecified",
+          "setup": "icra-2026-paper-6045-f1tenth-unspecified",
+          "assembly": "autodrive_f1tenth_source_reference"
+        }
       ]
     },
     {
@@ -11627,6 +12985,13 @@
         "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-6052-clearpath-jackal",
+          "assembly": "icra-2026-paper-6052-clearpath-jackal"
+        }
       ]
     },
     {
@@ -11673,7 +13038,8 @@
         "nasa_perseverance_source_wheel",
         "nasa_scarecrow_front_left_source_wheel",
         "nasa_scarecrow_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6064",
@@ -11703,7 +13069,8 @@
       ],
       "parts": [
         "sbg_ellipse_a_cad_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6086",
@@ -11727,7 +13094,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6089",
@@ -11757,6 +13125,13 @@
       "parts": [
         "limo_ros2_source_chassis",
         "limo_ros2_source_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-6089-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        }
       ]
     },
     {
@@ -11787,7 +13162,8 @@
         "locobot_rplidar_a2m8",
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6117",
@@ -11811,7 +13187,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6138",
@@ -11842,6 +13219,13 @@
         "quanser_qcar1_chassis",
         "quanser_qcar1_lidar",
         "quanser_qcar1_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "quanser-qcar",
+          "setup": "icra-2026-paper-6138-quanser-qcar",
+          "assembly": "quanser_qcar1_stock"
+        }
       ]
     },
     {
@@ -11879,7 +13263,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6155",
@@ -11919,7 +13304,8 @@
         "moonbot_wheel_v1_source_right",
         "moonbot_wheel_v2_source_left",
         "moonbot_wheel_v2_source_right"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-617",
@@ -11957,7 +13343,8 @@
         "agilex_tracer2_chassis",
         "agilex_tracer2_drive_wheel",
         "interbotix_viperx300s_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6173",
@@ -11987,6 +13374,13 @@
       "parts": [
         "husky_a200_chassis",
         "husky_a200_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-6173-clearpath-husky",
+          "assembly": "husky_a200"
+        }
       ]
     },
     {
@@ -12019,6 +13413,13 @@
         "fetch_drive_wheel",
         "fetch_mobile_chassis",
         "pmb2_tim551_source"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-6183-fetch",
+          "assembly": "icra-2026-paper-6183-fetch"
+        }
       ]
     },
     {
@@ -12053,7 +13454,8 @@
         "nasa_perseverance_hga_fixed",
         "nasa_perseverance_mast_head_fixed",
         "nasa_perseverance_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6195",
@@ -12088,7 +13490,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-620",
@@ -12119,6 +13522,13 @@
         "tb3_wheel_isw_01",
         "turtlebot3_waffle_chassis",
         "turtlebot3_waffle_r200_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-waffle",
+          "setup": "icra-2026-paper-620-turtlebot3-waffle",
+          "assembly": "turtlebot3_waffle_fixed_stock_reference"
+        }
       ]
     },
     {
@@ -12146,7 +13556,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6201",
@@ -12189,7 +13600,8 @@
         "cmu_rft_grousered_wheel_125",
         "cmu_rft_smooth_wheel_125",
         "intel_realsense_t265_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6202",
@@ -12231,6 +13643,13 @@
         "agilex_scout_mini_ugv_wheel",
         "tracer_mini_source_camera",
         "tracer_mini_source_lidar"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-6202-agilex-scout-mini",
+          "assembly": "agilex_scout_mini_ugv_reference"
+        }
       ]
     },
     {
@@ -12261,7 +13680,8 @@
       ],
       "parts": [
         "google_everyday_arm_gripper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6219",
@@ -12291,6 +13711,13 @@
         "fetch_drive_wheel",
         "fetch_mobile_chassis",
         "pmb2_tim551_source"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-6219-fetch",
+          "assembly": "icra-2026-paper-6219-fetch"
+        }
       ]
     },
     {
@@ -12327,7 +13754,8 @@
       "parts": [
         "ford_avdata_source_wheel",
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6226",
@@ -12365,6 +13793,13 @@
         "momo_drive_wheel_right",
         "momo_mobile_chassis",
         "uiuc_momo_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "uiuc-momo",
+          "setup": "icra-2026-paper-6226-uiuc-momo",
+          "assembly": "uiuc_momo_fixed_full_reference"
+        }
       ]
     },
     {
@@ -12401,6 +13836,18 @@
         "husky_a200_wheel",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-husky",
+          "setup": "icra-2026-paper-6244-clearpath-husky",
+          "assembly": "husky_a200"
+        },
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-6244-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -12431,7 +13878,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6246",
@@ -12469,7 +13917,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6260",
@@ -12499,6 +13948,13 @@
         "stretch3_drive_wheel",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "stretch-2",
+          "setup": "icra-2026-paper-6260-stretch-2",
+          "assembly": "stretch_re2_fixed_stock_reference"
+        }
       ]
     },
     {
@@ -12528,6 +13984,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-6272-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -12557,7 +14020,8 @@
         "intel_realsense_d435_2020_cad_reference",
         "robotont_gen3_cad_chassis",
         "robotont_gen3_cad_wheel_with_coupler"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6290",
@@ -12587,7 +14051,8 @@
       ],
       "parts": [
         "ford_avdata_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-63",
@@ -12624,7 +14089,8 @@
         "stretch_re1_upper_fixed",
         "stretch_re2_mobile_chassis",
         "stretch_re2_upper_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6305",
@@ -12650,7 +14116,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6316",
@@ -12676,7 +14143,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6324",
@@ -12699,7 +14167,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6340",
@@ -12729,7 +14198,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6343",
@@ -12763,7 +14233,8 @@
         "agilex_tracer_v1_chassis",
         "agilex_tracer_v1_drive_wheel",
         "interbotix_viperx300s_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6345",
@@ -12787,7 +14258,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6348",
@@ -12810,7 +14282,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6354",
@@ -12840,6 +14313,13 @@
         "dingo_o_mecanum_mirrored",
         "dingo_o_mecanum_normal",
         "kinova_gen3_lite_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-dingo",
+          "setup": "icra-2026-paper-6354-clearpath-dingo",
+          "assembly": "icra-2026-paper-6354-clearpath-dingo"
+        }
       ]
     },
     {
@@ -12869,7 +14349,8 @@
         "rbkairos_mecanum_wheel_1",
         "rbkairos_mecanum_wheel_2",
         "summit_xl_steel_source_chassis"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6370",
@@ -12892,7 +14373,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6374",
@@ -12922,6 +14404,13 @@
       "parts": [
         "tb3_wheel_isw_01",
         "turtlebot3_burger_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot3-unspecified",
+          "setup": "icra-2026-paper-6374-turtlebot3-unspecified",
+          "assembly": "icra-2026-paper-6374-turtlebot3-unspecified"
+        }
       ]
     },
     {
@@ -12955,6 +14444,13 @@
         "intel_nuc11_enthusiast",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-6378-clearpath-warthog",
+          "assembly": "icra-2026-paper-6378-clearpath-warthog"
+        }
       ]
     },
     {
@@ -12986,7 +14482,8 @@
       "parts": [
         "kinova_gen3_7dof_fixed",
         "kinova_gen3_robotiq_2f85_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6396",
@@ -13023,7 +14520,8 @@
       "parts": [
         "hesai_pandar40p_2024_reference",
         "velodyne_vlp32c_source_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-64",
@@ -13048,7 +14546,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6405",
@@ -13079,7 +14578,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6411",
@@ -13109,6 +14609,13 @@
         "ouster_os1_64_rev7",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-6411-clearpath-warthog",
+          "assembly": "icra-2026-paper-6411-clearpath-warthog"
+        }
       ]
     },
     {
@@ -13139,7 +14646,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6413",
@@ -13169,6 +14677,13 @@
         "pmb2_source_antenna_fixed",
         "pmb2_tim551_source",
         "tiago_dual_complete_upper_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "tiago-unspecified",
+          "setup": "icra-2026-paper-6413-tiago-unspecified",
+          "assembly": "tiago_dual_fixed_reference"
+        }
       ]
     },
     {
@@ -13201,7 +14716,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6451",
@@ -13231,7 +14747,8 @@
       "parts": [
         "ouster_os0_128_rev7",
         "ouster_os1_128_rev7"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6457",
@@ -13266,6 +14783,13 @@
         "jackal_j100_wheel",
         "ouster_os1_64_rev7",
         "vectornav_vn100_rugged_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-6457-clearpath-jackal",
+          "assembly": "icra-2026-paper-6457-clearpath-jackal"
+        }
       ]
     },
     {
@@ -13293,7 +14817,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6472",
@@ -13318,7 +14843,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-648",
@@ -13347,6 +14873,13 @@
         "pioneer_3dx_chassis",
         "pioneer_3dx_left_wheel",
         "pioneer_3dx_right_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "pioneer-3dx",
+          "setup": "icra-2026-paper-648-pioneer-3dx",
+          "assembly": "pioneer_3dx_stock_reference"
+        }
       ]
     },
     {
@@ -13375,7 +14908,8 @@
       ],
       "parts": [
         "epuck_legacy_cad_drive_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6535",
@@ -13401,7 +14935,8 @@
       ],
       "parts": [
         "epuck_legacy_cad_drive_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-658",
@@ -13428,7 +14963,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6590",
@@ -13457,7 +14993,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-66",
@@ -13483,7 +15020,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-6631",
@@ -13507,7 +15045,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-668",
@@ -13534,7 +15073,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-675",
@@ -13563,7 +15103,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-679",
@@ -13590,7 +15131,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-681",
@@ -13628,7 +15170,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-683",
@@ -13658,6 +15201,13 @@
         "fetch_complete_upper_fixed",
         "fetch_drive_wheel",
         "fetch_mobile_chassis"
+      ],
+      "programs": [
+        {
+          "robot": "fetch",
+          "setup": "icra-2026-paper-683-fetch",
+          "assembly": "fetch_stock_fixed_reference"
+        }
       ]
     },
     {
@@ -13685,7 +15235,8 @@
       ],
       "parts": [
         "velodyne_alpha_prime_revb_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-720",
@@ -13719,6 +15270,13 @@
         "agilex_scout_2_wheel_type2",
         "ouster_os0_128_rev7",
         "vectornav_vn100_rugged_fixed"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-2",
+          "setup": "icra-2026-paper-720-agilex-scout-2",
+          "assembly": "icra-2026-paper-720-agilex-scout-2"
+        }
       ]
     },
     {
@@ -13752,7 +15310,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-735",
@@ -13792,7 +15351,8 @@
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-74",
@@ -13822,6 +15382,13 @@
         "fmm_ewellix_lift_camera_fixed",
         "ridgeback_r100_chassis",
         "ridgeback_r100_mecanum_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "fmm-modular",
+          "setup": "icra-2026-paper-74-fmm-modular",
+          "assembly": "icra-2026-paper-74-fmm-modular"
+        }
       ]
     },
     {
@@ -13852,7 +15419,8 @@
       ],
       "parts": [
         "realsense_d405_official"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-769",
@@ -13884,6 +15452,13 @@
       "parts": [
         "agilex_tracer_v1_chassis",
         "agilex_tracer_v1_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "topay-tracer-rm75",
+          "setup": "icra-2026-paper-769-topay-tracer-rm75",
+          "assembly": "agilex_tracer_v1_stock_base"
+        }
       ]
     },
     {
@@ -13914,7 +15489,8 @@
       ],
       "parts": [
         "ford_avdata_source_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-79",
@@ -13941,6 +15517,13 @@
       "parts": [
         "clearpath_grizzly_chassis",
         "clearpath_grizzly_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-grizzly",
+          "setup": "icra-2026-paper-79-clearpath-grizzly",
+          "assembly": "clearpath_grizzly_fixed_axle_reference"
+        }
       ]
     },
     {
@@ -13979,6 +15562,13 @@
         "hrctf_mir200_source_chassis",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-794-turtlebot4",
+          "assembly": "icra-2026-paper-794-turtlebot4"
+        }
       ]
     },
     {
@@ -14009,7 +15599,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-801",
@@ -14035,7 +15626,8 @@
       "parts": [
         "gritsbot_legacy_cad_chassis",
         "gritsbot_legacy_cad_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-802",
@@ -14075,6 +15667,18 @@
         "limo_ros2_source_rear_wheel",
         "warthog_w200_chassis",
         "warthog_w200_outdoor_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-limo",
+          "setup": "icra-2026-paper-802-agilex-limo",
+          "assembly": "limo_ros2_differential_reference"
+        },
+        {
+          "robot": "clearpath-warthog",
+          "setup": "icra-2026-paper-802-clearpath-warthog",
+          "assembly": "warthog_w200_outdoor"
+        }
       ]
     },
     {
@@ -14116,6 +15720,13 @@
         "hunter_se_chassis_body",
         "hunter_se_front_wheel",
         "hunter_se_rear_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-v1",
+          "setup": "icra-2026-paper-804-agilex-scout-v1",
+          "assembly": "agilex_scout_v1_cad_reference"
+        }
       ]
     },
     {
@@ -14162,6 +15773,18 @@
         "vizbot_pcb_camera",
         "vizbot_spherical_camera",
         "vizbot_tracking_camera"
+      ],
+      "programs": [
+        {
+          "robot": "frodobots-earthrover-zero",
+          "setup": "icra-2026-paper-817-frodobots-earthrover-zero",
+          "assembly": "earthrover_zero_v52"
+        },
+        {
+          "robot": "vizbot",
+          "setup": "icra-2026-paper-817-vizbot",
+          "assembly": "vizbot_omnivla"
+        }
       ]
     },
     {
@@ -14192,7 +15815,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-83",
@@ -14220,6 +15844,13 @@
         "intel_realsense_d435_2020_cad_reference",
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-83-clearpath-jackal",
+          "assembly": "icra-2026-paper-83-clearpath-jackal"
+        }
       ]
     },
     {
@@ -14246,7 +15877,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-846",
@@ -14279,6 +15911,13 @@
         "agilex_scout_v1_cad_wheel_front_right",
         "agilex_scout_v1_cad_wheel_rear_left",
         "agilex_scout_v1_cad_wheel_rear_right"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-v1",
+          "setup": "icra-2026-paper-846-agilex-scout-v1",
+          "assembly": "agilex_scout_v1_cad_reference"
+        }
       ]
     },
     {
@@ -14314,7 +15953,8 @@
         "intel_realsense_t265_fixed",
         "stretch3_head_d435i",
         "universal_robots_ur5e_fixed"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-87",
@@ -14350,6 +15990,13 @@
         "agilex_scout_v1_cad_wheel_front_right",
         "agilex_scout_v1_cad_wheel_rear_left",
         "agilex_scout_v1_cad_wheel_rear_right"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-v1",
+          "setup": "icra-2026-paper-87-agilex-scout-v1",
+          "assembly": "agilex_scout_v1_cad_reference"
+        }
       ]
     },
     {
@@ -14392,7 +16039,8 @@
       ],
       "parts": [
         "hesai_pandora_reference"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-895",
@@ -14425,7 +16073,8 @@
         "locobot_rplidar_a2m8",
         "locobot_wx250s_arm_sleep",
         "locobot_wx250s_fixed_structure"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-923",
@@ -14457,7 +16106,8 @@
       ],
       "parts": [
         "velodyne_hdl32e"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-929",
@@ -14490,6 +16140,13 @@
         "agilex_scout_mini_ugv_wheel",
         "intel_nuc11_enthusiast",
         "livox_mid360_peral_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-scout-mini",
+          "setup": "icra-2026-paper-929-agilex-scout-mini",
+          "assembly": "icra-2026-paper-929-agilex-scout-mini"
+        }
       ]
     },
     {
@@ -14532,6 +16189,13 @@
         "agilex_piper_current_fixed",
         "agilex_tracer2_drive_wheel",
         "intel_realsense_d435_2020_cad_reference"
+      ],
+      "programs": [
+        {
+          "robot": "agilex-cobot-magic",
+          "setup": "icra-2026-paper-940-agilex-cobot-magic",
+          "assembly": "icra-2026-paper-940-agilex-cobot-magic"
+        }
       ]
     },
     {
@@ -14563,6 +16227,13 @@
       "parts": [
         "hero_legacy_chassis",
         "hero_legacy_drive_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "hero-plus",
+          "setup": "icra-2026-paper-944-hero-plus",
+          "assembly": "hero_legacy_stock_reference"
+        }
       ]
     },
     {
@@ -14597,7 +16268,8 @@
         "tianbot_tianracer_source_lidar_housing",
         "tianbot_tianracer_source_right_front_wheel",
         "tianbot_tianracer_source_right_rear_wheel"
-      ]
+      ],
+      "programs": []
     },
     {
       "id": "icra-2026-paper-952",
@@ -14624,6 +16296,13 @@
       "parts": [
         "jackal_j100_chassis",
         "jackal_j100_wheel"
+      ],
+      "programs": [
+        {
+          "robot": "clearpath-jackal",
+          "setup": "icra-2026-paper-952-clearpath-jackal",
+          "assembly": "jackal_j100"
+        }
       ]
     },
     {
@@ -14656,6 +16335,13 @@
         "luxonis_oak_d_pro",
         "slamtec_rplidar_a1m8",
         "turtlebot4_standard_deck"
+      ],
+      "programs": [
+        {
+          "robot": "turtlebot4",
+          "setup": "icra-2026-paper-976-turtlebot4",
+          "assembly": "turtlebot4_standard_classic_stock"
+        }
       ]
     },
     {
@@ -14683,7 +16369,8 @@
           ]
         }
       ],
-      "parts": []
+      "parts": [],
+      "programs": []
     }
   ]
 }
