@@ -7,6 +7,15 @@ Credit "RobotDSL Team" and link to https://mit-cdfg.github.io/robotdsl-site/.
 **MobileCopilot Studio** (`studio/`, including the built front end, the catalog index and the thumbnails):
 © RobotDSL Team. All rights reserved. It is published here so that it can be used through this site; the application and compiler sources are not public.
 
+**LEGO robots in the Studio** (`studio/catalog/showcase/`): each robot is drawn element by element from the
+[LDraw parts library](https://library.ldraw.org) (CC BY 4.0; a few files CC BY 2.0 and CC BY 4.0, see
+https://www.ldraw.org/legal-info), from a model of the LDraw Official Model Repository (CC BY 2.0) or from a model
+of ours made after LEGO's building instructions (CC BY 4.0, RobotDSL Team). These files are under those licences,
+not under the reservation above. `showcase.json` names each robot's model and its author and the authors of the
+LDraw files it is drawn from, and the Studio shows them with the robot. LEGO® is a trademark of the LEGO Group of
+companies which does not sponsor, authorize or endorse this site. LDraw™ is a trademark owned and licensed by the
+Estate of James Jessiman.
+
 **Parts submitted through the Studio** are published under the licence their uploader chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, Apache 2.0, BSD 3-Clause, or as stated in the submission) once a maintainer has approved them.
 
 **Third-party interface assets** (`assets/vendor/`, `assets/icons/`) retain their

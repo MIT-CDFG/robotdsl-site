@@ -1,0 +1,1392 @@
+{
+ "schema": "robotdsl.showcase",
+ "title": "LEGO robots",
+ "about": "Robots LEGO designed and sold, each built as its instructions build it, element by element from genuine LEGO elements in LDraw, with the world and task it drove in. Build one step by step, spread it apart, or click an element to see what it is.",
+ "meshes": {
+  "frame": "declared visual",
+  "parts": {},
+  "encoding": "meshopt (gltfpack -cc)"
+ },
+ "examples": [
+  {
+   "id": "lego_42109",
+   "robots": [
+    "LEGO® Technic 42109 App-Controlled Top Gear Rally Car"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// LEGO Technic 42109, the App-Controlled Top Gear Rally Car, as its instructions build it: the body with its\n// Control+ hub and two motors, the front wheels steered through a rack by the L motor and the rear wheels driven\n// through a differential by the XL motor.\nRobot lego_42109 {\n    intent \"LEGO Technic 42109 App-Controlled Top Gear Rally Car, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42109_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42109_front_wheel\", glue = (0.076, 0.056, -0.0032, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42109_front_wheel\", glue = (0.076, -0.056, -0.0032, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42109_rear_wheel\", glue = (-0.076, 0.0588, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42109_rear_wheel\", glue = (-0.076, -0.062, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42109, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_42109.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_42109_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "lego_42109_front_wheel",
+     "xyz": [
+      0.076,
+      0.056,
+      -0.0032
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "lego_42109_front_wheel",
+     "xyz": [
+      0.076,
+      -0.056,
+      -0.0032
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "lego_42109_rear_wheel",
+     "xyz": [
+      -0.076,
+      0.0588,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "lego_42109_rear_wheel",
+     "xyz": [
+      -0.076,
+      -0.062,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.024800000000000003,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.26 m from the point), touching nothing",
+   "lego": {
+    "file": "lego/lego_42109.glb",
+    "name": "lego_42109",
+    "chassis": "lego_42109_chassis",
+    "replaces": [
+     "lego_42109_chassis",
+     "lego_42109_front_wheel",
+     "lego_42109_rear_wheel"
+    ],
+    "elements": 973,
+    "shapes": 94,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "bytes": 1864420
+   },
+   "summary": "Model: 42109-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 42109 App-Controlled Top Gear Rally Car (2020)",
+     "url": "https://brickset.com/sets/42109-1"
+    },
+    {
+     "text": "Model: 42109-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/1167"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 35 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Jeroen Ottens, Jonathan P. Brown, Lutz Uhlmann, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Rene Rechthaler, Ross Crawford, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Ulrich Röder, William Howard, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
+   "id": "lego_42124",
+   "robots": [
+    "LEGO® Technic 42124 Off-Road Buggy"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// LEGO Technic 42124, the Off-Road Buggy, as its instructions build it: the body with its Control+ hub and two\n// L motors, one that steers the front wheels and one that drives the rear wheels through a differential.\nRobot lego_42124 {\n    intent \"LEGO Technic 42124 Off-Road Buggy, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42124_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42124_wheel\", glue = (0.0974, 0.06605, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42124_wheel\", glue = (0.0974, -0.06605, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42124_wheel\", glue = (-0.0974, 0.068, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42124_wheel\", glue = (-0.0974, -0.0668, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42124, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_42124.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_42124_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "lego_42124_wheel",
+     "xyz": [
+      0.0974,
+      0.06605,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "lego_42124_wheel",
+     "xyz": [
+      0.0974,
+      -0.06605,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "lego_42124_wheel",
+     "xyz": [
+      -0.0974,
+      0.068,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "lego_42124_wheel",
+     "xyz": [
+      -0.0974,
+      -0.0668,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0376,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.26 m from the point), touching nothing",
+   "lego": {
+    "file": "lego/lego_42124.glb",
+    "name": "lego_42124",
+    "chassis": "lego_42124_chassis",
+    "replaces": [
+     "lego_42124_chassis",
+     "lego_42124_wheel"
+    ],
+    "elements": 983,
+    "shapes": 83,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "bytes": 1763668
+   },
+   "summary": "Model: 42124-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 42124 Off-Road Buggy (2021)",
+     "url": "https://brickset.com/sets/42124-1"
+    },
+    {
+     "text": "Model: 42124-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/1364"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 37 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Jeroen Ottens, Jonathan P. Brown, Lutz Uhlmann, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Ralf Kochanowski, Rene Rechthaler, Roland Melkert, Ross Crawford, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, William Howard, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
+   "id": "lego_42099",
+   "robots": [
+    "LEGO® Technic 42099 4x4 X-treme Off-Roader"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// LEGO Technic 42099, the 4x4 X-treme Off-Roader, as its instructions build it: the body with its Control+ hub,\n// the L motor that steers the front wheels through a rack, and the two XL motors that drive the front and the rear\n// axle. As an Ackermann chassis, the compiler drives the rear wheels only.\nRobot lego_42099 {\n    intent \"LEGO Technic 42099 4x4 X-treme Off-Roader, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42099_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42099_wheel\", glue = (0.112, 0.09112, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42099_wheel\", glue = (0.112, -0.09112, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42099_wheel\", glue = (-0.112, 0.08925, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42099_wheel\", glue = (-0.112, -0.08925, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42099, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_42099.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_42099_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "lego_42099_wheel",
+     "xyz": [
+      0.112,
+      0.09112,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "lego_42099_wheel",
+     "xyz": [
+      0.112,
+      -0.09112,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "lego_42099_wheel",
+     "xyz": [
+      -0.112,
+      0.08925,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "lego_42099_wheel",
+     "xyz": [
+      -0.112,
+      -0.08925,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0536,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.25 m from the point), touching nothing",
+   "lego": {
+    "file": "lego/lego_42099.glb",
+    "name": "lego_42099",
+    "chassis": "lego_42099_chassis",
+    "replaces": [
+     "lego_42099_chassis",
+     "lego_42099_wheel"
+    ],
+    "elements": 1861,
+    "shapes": 134,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "bytes": 2473960
+   },
+   "summary": "Model: 42099-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 42099 4x4 X-treme Off-Roader (2019)",
+     "url": "https://brickset.com/sets/42099-1"
+    },
+    {
+     "text": "Model: 42099-1.mpd by Philippe Hurbain (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/1003"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 38 authors (Alex Taylor, Chris Dee, Damien Roux, Donald Sutter, Evert-Jan Boer, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Jeroen Ottens, Jonathan P. Brown, Lutz Uhlmann, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Merlijn Wissink, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Rene Rechthaler, Ross Crawford, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, William Howard, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
+   "id": "lego_8527_tribot",
+   "robots": [
+    "LEGO® Mindstorms® NXT 8527 Tri-bot"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Tri-bot of LEGO Mindstorms NXT 8527 as its instructions build it: the NXT brick on two NXT motors, each driving\n// one wheel, with a rear support of two belt wheels.\nRobot lego_8527_tribot {\n    intent \"LEGO Mindstorms NXT Tri-bot, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_8527_tribot_chassis\")\n\n    Standard wheel_left(ref = \"lego_8527_tribot_wheel\", glue = (0, 0.056, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_8527_tribot_wheel\", glue = (0, -0.056, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_8527_tribot, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_8527_tribot.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_8527_tribot_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "lego_8527_tribot_wheel",
+     "xyz": [
+      0.0,
+      0.056,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "lego_8527_tribot_wheel",
+     "xyz": [
+      0.0,
+      -0.056,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0284,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.25 m from the point), then turned in place, touching nothing",
+   "lego": {
+    "file": "lego/lego_8527_tribot.glb",
+    "name": "lego_8527_tribot",
+    "chassis": "lego_8527_tribot_chassis",
+    "replaces": [
+     "lego_8527_tribot_chassis",
+     "lego_8527_tribot_wheel"
+    ],
+    "elements": 1270,
+    "shapes": 28,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "bytes": 1152188
+   },
+   "summary": "Model: 8527-1_Tri-bot-Base.mpd by Cameron Brick (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 8527 Mindstorms NXT (2006)",
+     "url": "https://brickset.com/sets/8527-1"
+    },
+    {
+     "text": "Model: 8527-1_Tri-bot-Base.mpd by Cameron Brick (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/1389"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 30 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Kevin Clague, LDCad, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Ross Crawford, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
+   "id": "lego_45678_driving_base",
+   "robots": [
+    "LEGO® Education SPIKE™ Prime Driving Base"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Driving Base of LEGO Education's SPIKE Prime set 45678 as its building instructions build it: the hub on\n// two medium motors, each driving one wheel, a ball caster at the back and the large motor at the front for tools.\nRobot lego_45678_driving_base {\n    intent \"LEGO Education SPIKE Prime Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45678_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45678_driving_base_wheel\", glue = (0, 0.059, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45678_driving_base_wheel\", glue = (0, -0.059, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45678_driving_base, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_45678_driving_base.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_45678_driving_base_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "lego_45678_driving_base_wheel",
+     "xyz": [
+      0.0,
+      0.059,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "lego_45678_driving_base_wheel",
+     "xyz": [
+      0.0,
+      -0.059,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0282,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point), then turned in place, touching nothing",
+   "lego": {
+    "file": "lego/lego_45678_driving_base.glb",
+    "name": "lego_45678_driving_base",
+    "chassis": "lego_45678_driving_base_chassis",
+    "replaces": [
+     "lego_45678_driving_base_chassis",
+     "lego_45678_driving_base_wheel"
+    ],
+    "elements": 57,
+    "shapes": 19,
+    "steps": [
+     "Step 1: the magenta frame 11 x 7.",
+     "Step 2: six black pins in the frame's top, an L of three under each wheel motor's output end.",
+     "Step 3: the two medium motors on their sides, outputs out along the frame's length, with two pins in each output.",
+     "Step 4: a yellow axle 3 in each output.",
+     "Step 5: four pins in each motor's top: the inner pair for the hub, the outer pair for the black beams.",
+     "Steps 7-8: two brackets (a yellow beam 3 under a grey cross block of four pins) across the hub's front end; one up-pin in the hub's corner hole, the other for the black beam.",
+     "Step 9: two pins in the hub's bottom at its back end.",
+     "Step 10: the magenta 3 x 3 connector on them, and two pins below it.",
+     "Step 11: the ball caster on those pins.",
+     "Step 12: a tan axle pin in the caster's back leg.",
+     "Step 13: the yellow slotted pin joiner on it, which guides a cable.",
+     "Step 14: the hub on the motors, across the frame, its USB end at the front.",
+     "Steps 15-16, 20-21: a black beam 15 on each side, on the motors' outer pins and the brackets' free pins, with a tan axle pin up in its fourth hole from the back.",
+     "Steps 17-18: a medium azure cable clip on one side's axle pin.",
+     "Steps 22-23: a green cable clip on the other side's.",
+     "Step 25: the wheels on the outputs' pins and axles.",
+     "Step 26: a white tooth on each wheel's axle end.",
+     "Step 27: the large motor, output down, its back on the frame's front rail between the wheel motors, with a red axle 2 through its output.",
+     "Step 28: a black 12-tooth gear on the red axle.",
+     "Steps 29-30: two pins in each of the large motor's brackets, pointing back.",
+     "Steps 29, 31-32: the large motor's brackets, a grey cross block pinned into each of its sides with a yellow beam 3 outside it; their pins go into the hub brackets' cross blocks."
+    ],
+    "bytes": 704864
+   },
+   "summary": "Model: our LDraw model, after LEGO Education's building instructions (CC BY 4.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 45678 SPIKE Prime Set (2020)",
+     "url": "https://brickset.com/sets/45678-1"
+    },
+    {
+     "text": "Model: our LDraw model, after LEGO Education's building instructions (CC BY 4.0)",
+     "url": "https://assets.education.lego.com/v3/assets/blt293eea581807678a/blte58422fa7d508a60/5f8802b882eaa522ca601c9f/driving-base-bi-pdf-book1of1.pdf"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 30 authors (Alex Taylor, Chris Dee, Damien Roux, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Ralf Kochanowski, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Travis Cobbs, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
+   "id": "lego_45544_driving_base",
+   "robots": [
+    "LEGO® Education EV3 Driving Base"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 as its building instructions build it: the EV3 brick on\n// two large motors, each driving one wheel, a steel ball caster behind the motors and two arms at the front for tools.\nRobot lego_45544_driving_base {\n    intent \"LEGO Education EV3 Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45544_driving_base, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_45544_driving_base.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_45544_driving_base_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "lego_45544_driving_base_wheel",
+     "xyz": [
+      0.0,
+      0.06,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "lego_45544_driving_base_wheel",
+     "xyz": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.028,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.24 m from the point), then turned in place, touching nothing",
+   "lego": {
+    "file": "lego/lego_45544_driving_base.glb",
+    "name": "lego_45544_driving_base",
+    "chassis": "lego_45544_driving_base_chassis",
+    "replaces": [
+     "lego_45544_driving_base_chassis",
+     "lego_45544_driving_base_wheel"
+    ],
+    "elements": 85,
+    "shapes": 28,
+    "steps": [
+     "Step 1: the first large motor; a blue 3L pin in the front hole of the row of three above its output.",
+     "Step 2: the grey bent beam 1 x 9 on the motor's outer side, its axle hole over the row's back hole, its bend down past the output.",
+     "Step 3: an axle 4 through the beam's axle hole and the motor, a red axle joiner on its inner end; a blue axle pin in the beam's end, its pin out.",
+     "Step 4: a black pin over the output and two blue 3L pins through the beam's last two straight holes.",
+     "Step 5: the grey L-beam 3 x 5 outside the beam, its corner on the black pin, its long arm down in front of the output, with two black pins.",
+     "Step 6: an axle 8 through the output and the L-beam: the wheel's axle.",
+     "Step 7: a black beam 3 on the L-beam's pins, the axle through its middle hole.",
+     "Step 8: the white bent beam 1 x 7 hanging from the grey beam's bend, on a blue axle pin and the beam's end pin, an axle 4 through its foot.",
+     "Step 9: the grey frame 5 x 7, which stands upright across the robot in front of the motors, with two black pins up out of its top.",
+     "Step 10: a blue axle pin back out of each of its lower corners.",
+     "Step 11: a grey cross block on each, its pin hole above, across. Step 12: the frame on the first motor's side, on the beam's two inner pins.",
+     "Step 13: a grey axle 3 into the red joiner, half of it out towards the other motor.",
+     "Steps 14-20: the second motor's side, the mirror image of steps 1-8; step 21 joins it to the frame and the axle 3.",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Step 22: the model upside down; the grey frame 5 x 11 across the motors' undersides at their back, each cross-bar in a motor's slot between its two lugs.",
+     "Step 23: four red long pins with stop bush, from the outer sides through each motor's outer lug and the cross-bar.",
+     "Steps 24-30 build the ball caster: a red L-beam 2 x 4 with a grey axle 3 and a blue axle pin.",
+     "Step 25: a grey 3 x 3 connector with four pins behind it, two of its pins in the L-beam.",
+     "Step 26: the ball socket on the axle 3 and the axle pin.",
+     "Step 27: a second red L-beam in front of the socket.",
+     "Step 28: a second connector in front of it.",
+     "Step 29: on each connector a black cross block, two blue axle pins down into the connector and a black pin forward.",
+     "Step 30: the steel ball. Step 31: the caster behind the motors, the connectors' upper pins in the frame's back beam and the black pins in the motors' back faces.",
+     "Step 32: four black pins back out of the motors' back faces, in the top row.",
+     "Step 33: the grey beam 5 across the inner two, and a red 2 x 2 bent cross block on each outer one.",
+     "Step 34: a black pin up in each cross block, for the brick.",
+     "Steps 35-36: the brick with its rechargeable battery, on the frame's two pins at the front and the cross blocks' two at the back.",
+     "Step 37: a white double-bent beam up the first side, its foot on the grey beam's axle and pin, its top in the brick's side holes on a black pin and a blue axle pin.",
+     "Step 38: the wheel, a rim and a tyre, on the axle outside the black beam.",
+     "Step 39: a white tooth on the axle's end.",
+     "Steps 40-42: the same on the other side.",
+     "",
+     ""
+    ],
+    "bytes": 850588
+   },
+   "summary": "Model: our LDraw model, after LEGO Education's building instructions (CC BY 4.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 45544 EV3 Core Set (2013)",
+     "url": "https://brickset.com/sets/45544-1"
+    },
+    {
+     "text": "Model: our LDraw model, after LEGO Education's building instructions (CC BY 4.0)",
+     "url": "https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltc8481dd2666822ff/5f8801e3f4f4cf0fa39d2fef/ev3-rem-driving-base.pdf"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 32 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Jonathan P. Brown, Kevin Clague, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Travis Cobbs, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  }
+ ],
+ "notices": [
+  {
+   "text": "LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.",
+   "shown": true
+  },
+  {
+   "text": "LDraw™ is a trademark owned and licensed by the Estate of James Jessiman."
+  },
+  {
+   "text": "After the LEGO cases of MIT CDFG's living survey of AI for 3D modeling and robotics: Maksym Bondarenko's LEGO car, its joints checked in his Danish Bricks Builder (case I40), and Linzhan Mou's LEGO World (case M188)",
+   "url": "https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/"
+  },
+  {
+   "text": "The 3D view's lighting, and how it assembles, spreads and names a LEGO model's elements, follow the viewer of Linzhan Mou's LEGO World",
+   "url": "https://linzhanmou.com/resources/lego-world/"
+  },
+  {
+   "text": "CC BY 2.0",
+   "url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "text": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ]
+}
