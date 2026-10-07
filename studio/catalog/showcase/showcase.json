@@ -1362,6 +1362,203 @@
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
    ]
+  },
+  {
+   "id": "lego_45544_driving_base_sonar",
+   "robots": [
+    "LEGO® Education EV3 Driving Base with its Ultrasonic Sensor"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 with its Ultrasonic Sensor, as their building instructions\n// build them: the EV3 brick on two large motors, each driving one wheel, a steel ball caster behind the motors, and\n// the sensor low at the front, looking ahead.\nRobot lego_45544_driving_base_sonar {\n    intent \"LEGO Education EV3 Driving Base with its ultrasonic sensor, a two-wheel differential base that sees ahead\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"lego_45544_ultrasonic_sensor\", glue = (0.02, 0, 0.016, 1, 0, 0))\n}\n",
+    "world": "World blocked_path {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45544_driving_base_sonar, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle wall(\n            type = \"box\", pos = (1.0, 0, 0.1, 0, 0, 0, 1), size = (0.2, 0.4, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task reach_goal(timeout_s = 150) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_45544_driving_base_sonar.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_45544_driving_base_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "lego_45544_driving_base_wheel",
+     "xyz": [
+      0.0,
+      0.06,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "lego_45544_driving_base_wheel",
+     "xyz": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "sonar",
+     "category": "sensor",
+     "part": "lego_45544_ultrasonic_sensor",
+     "xyz": [
+      0.059840000000000004,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.028,
+   "drove": "in Gazebo it reached its goal 2 m ahead, behind a wall in its way (0.01 m from the point), touching nothing",
+   "lego": {
+    "file": "lego/lego_45544_driving_base_sonar.glb",
+    "name": "lego_45544_driving_base_sonar",
+    "chassis": "lego_45544_driving_base_chassis",
+    "replaces": [
+     "lego_45544_driving_base_chassis",
+     "lego_45544_driving_base_wheel",
+     "lego_45544_ultrasonic_sensor"
+    ],
+    "elements": 95,
+    "shapes": 31,
+    "steps": [
+     "Step 1: the first large motor; a blue 3L pin in the front hole of the row of three above its output.",
+     "Step 2: the grey bent beam 1 x 9 on the motor's outer side, its axle hole over the row's back hole, its bend down past the output.",
+     "Step 3: an axle 4 through the beam's axle hole and the motor, a red axle joiner on its inner end; a blue axle pin in the beam's end, its pin out.",
+     "Step 4: a black pin over the output and two blue 3L pins through the beam's last two straight holes.",
+     "Step 5: the grey L-beam 3 x 5 outside the beam, its corner on the black pin, its long arm down in front of the output, with two black pins.",
+     "Step 6: an axle 8 through the output and the L-beam: the wheel's axle.",
+     "Step 7: a black beam 3 on the L-beam's pins, the axle through its middle hole.",
+     "Step 8: the white bent beam 1 x 7 hanging from the grey beam's bend, on a blue axle pin and the beam's end pin, an axle 4 through its foot.",
+     "Step 9: the grey frame 5 x 7, which stands upright across the robot in front of the motors, with two black pins up out of its top.",
+     "Step 10: a blue axle pin back out of each of its lower corners.",
+     "Step 11: a grey cross block on each, its pin hole above, across. Step 12: the frame on the first motor's side, on the beam's two inner pins.",
+     "Step 13: a grey axle 3 into the red joiner, half of it out towards the other motor.",
+     "Steps 14-20: the second motor's side, the mirror image of steps 1-8; step 21 joins it to the frame and the axle 3.",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Step 22: the model upside down; the grey frame 5 x 11 across the motors' undersides at their back, each cross-bar in a motor's slot between its two lugs.",
+     "Step 23: four red long pins with stop bush, from the outer sides through each motor's outer lug and the cross-bar.",
+     "Steps 24-30 build the ball caster: a red L-beam 2 x 4 with a grey axle 3 and a blue axle pin.",
+     "Step 25: a grey 3 x 3 connector with four pins behind it, two of its pins in the L-beam.",
+     "Step 26: the ball socket on the axle 3 and the axle pin.",
+     "Step 27: a second red L-beam in front of the socket.",
+     "Step 28: a second connector in front of it.",
+     "Step 29: on each connector a black cross block, two blue axle pins down into the connector and a black pin forward.",
+     "Step 30: the steel ball. Step 31: the caster behind the motors, the connectors' upper pins in the frame's back beam and the black pins in the motors' back faces.",
+     "Step 32: four black pins back out of the motors' back faces, in the top row.",
+     "Step 33: the grey beam 5 across the inner two, and a red 2 x 2 bent cross block on each outer one.",
+     "Step 34: a black pin up in each cross block, for the brick.",
+     "Steps 35-36: the brick with its rechargeable battery, on the frame's two pins at the front and the cross blocks' two at the back.",
+     "Step 37: a white double-bent beam up the first side, its foot on the grey beam's axle and pin, its top in the brick's side holes on a black pin and a blue axle pin.",
+     "Step 38: the wheel, a rim and a tyre, on the axle outside the black beam.",
+     "Step 39: a white tooth on the axle's end.",
+     "Steps 40-42: the same on the other side.",
+     "",
+     "",
+     "Step 1 of the sensor's instructions: the grey beam 7, a black pin in each end and a blue 3L pin in its third and fifth holes, all out of its back.",
+     "Step 2 of the sensor's instructions: a black T-beam 3 x 3 on each end's black and blue pins, its stem down.",
+     "Step 3 of the sensor's instructions: a black pin in each stem's foot, out of its front.",
+     "Step 4 of the sensor's instructions: the ultrasonic sensor on those two pins, by the holes behind its eyes. Step 5: the bracket's blue pins into the 5 x 7 frame's two free lower holes, the sensor looking forward. Steps 6-7: its cable to port 4 (left out)."
+    ],
+    "bytes": 964384
+   },
+   "summary": "Model: our LDraw model, after LEGO Education's building instructions for the Driving Base and its Ultrasonic Sensor (CC BY 4.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 45544 EV3 Core Set (2013)",
+     "url": "https://brickset.com/sets/45544-1"
+    },
+    {
+     "text": "Model: our LDraw model, after LEGO Education's building instructions for the Driving Base and its Ultrasonic Sensor (CC BY 4.0)",
+     "url": "https://assets.education.lego.com/v3/assets/blt293eea581807678a/blte04fb7bf4f716f3d/5f8801e3bf5ab07ee90076c9/ev3-ultrasonic-sensor-driving-base.pdf"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 32 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Jonathan P. Brown, Kevin Clague, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Travis Cobbs, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
   }
  ],
  "notices": [
