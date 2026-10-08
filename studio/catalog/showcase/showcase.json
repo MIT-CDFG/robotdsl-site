@@ -16,7 +16,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// LEGO Technic 42109, the App-Controlled Top Gear Rally Car, as its instructions build it: the body with its\n// Control+ hub and two motors, the front wheels steered through a rack by the L motor and the rear wheels driven\n// through a differential by the XL motor.\nRobot lego_42109 {\n    intent \"LEGO Technic 42109 App-Controlled Top Gear Rally Car, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42109_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42109_front_wheel\", glue = (0.076, 0.056, -0.0032, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42109_front_wheel\", glue = (0.076, -0.056, -0.0032, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42109_rear_wheel\", glue = (-0.076, 0.0588, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42109_rear_wheel\", glue = (-0.076, -0.062, 0, 0, -1, 0))\n}\n",
+    "core": "// LEGO Technic 42109, the App-Controlled Top Gear Rally Car, as its instructions build it: the body with its\n// Control+ hub and two motors, the front wheels steered through a rack by the L motor and the rear wheels driven\n// through a differential by the XL motor.\nRobot lego_42109 {\n    intent \"LEGO Technic 42109 App-Controlled Top Gear Rally Car, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42109_chassis\")\n\n    Motor motor_rear(ref = \"lego_controlplus_xl_motor\", glue = (-0.0753, 0.024, 0.032, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"lego_42109_front_wheel\", glue = (0.076, 0.056, -0.0032, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42109_front_wheel\", glue = (0.076, -0.056, -0.0032, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42109_rear_wheel\", glue = (-0.076, 0.0588, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42109_rear_wheel\", glue = (-0.076, -0.062, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42109, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -39,6 +39,31 @@
       0.0,
       0.0,
       0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear",
+     "category": "motor",
+     "part": "lego_controlplus_xl_motor",
+     "xyz": [
+      -0.0753,
+      0.024,
+      0.032
+     ],
+     "rpy": [
+      0.0,
+      -0.020001333173310484,
+      3.141592653589793
      ],
      "visual_xyz": [
       0.0,
@@ -153,7 +178,7 @@
     }
    ],
    "ground": -0.024800000000000003,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.26 m from the point), touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.24 m from the point), touching nothing",
    "lego": {
     "file": "lego/lego_42109.glb",
     "name": "lego_42109",
@@ -161,7 +186,8 @@
     "replaces": [
      "lego_42109_chassis",
      "lego_42109_front_wheel",
-     "lego_42109_rear_wheel"
+     "lego_42109_rear_wheel",
+     "lego_controlplus_xl_motor"
     ],
     "elements": 973,
     "shapes": 94,
@@ -275,7 +301,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// LEGO Technic 42124, the Off-Road Buggy, as its instructions build it: the body with its Control+ hub and two\n// L motors, one that steers the front wheels and one that drives the rear wheels through a differential.\nRobot lego_42124 {\n    intent \"LEGO Technic 42124 Off-Road Buggy, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42124_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42124_wheel\", glue = (0.0974, 0.06605, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42124_wheel\", glue = (0.0974, -0.06605, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42124_wheel\", glue = (-0.0974, 0.068, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42124_wheel\", glue = (-0.0974, -0.0668, 0, 0, -1, 0))\n}\n",
+    "core": "// LEGO Technic 42124, the Off-Road Buggy, as its instructions build it: the body with its Control+ hub and two\n// L motors, one that steers the front wheels and one that drives the rear wheels through a differential.\nRobot lego_42124 {\n    intent \"LEGO Technic 42124 Off-Road Buggy, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42124_chassis\")\n\n    Motor motor_rear(ref = \"lego_controlplus_l_motor\", glue = (-0.108, -0.024, 0.0302, 0, 1, 0))\n\n    Standard wheel_front_left(ref = \"lego_42124_wheel\", glue = (0.0974, 0.06605, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42124_wheel\", glue = (0.0974, -0.06605, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42124_wheel\", glue = (-0.0974, 0.068, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42124_wheel\", glue = (-0.0974, -0.0668, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42124, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -297,6 +323,31 @@
      "rpy": [
       0.0,
       0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear",
+     "category": "motor",
+     "part": "lego_controlplus_l_motor",
+     "xyz": [
+      -0.108,
+      -0.024,
+      0.0302
+     ],
+     "rpy": [
+      0.0,
+      -0.33629728283080884,
       0.0
      ],
      "visual_xyz": [
@@ -412,14 +463,15 @@
     }
    ],
    "ground": -0.0376,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.26 m from the point), touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.24 m from the point), touching nothing",
    "lego": {
     "file": "lego/lego_42124.glb",
     "name": "lego_42124",
     "chassis": "lego_42124_chassis",
     "replaces": [
      "lego_42124_chassis",
-     "lego_42124_wheel"
+     "lego_42124_wheel",
+     "lego_controlplus_l_motor"
     ],
     "elements": 983,
     "shapes": 83,
@@ -521,7 +573,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// LEGO Technic 42099, the 4x4 X-treme Off-Roader, as its instructions build it: the body with its Control+ hub,\n// the L motor that steers the front wheels through a rack, and the two XL motors that drive the front and the rear\n// axle. As an Ackermann chassis, the compiler drives the rear wheels only.\nRobot lego_42099 {\n    intent \"LEGO Technic 42099 4x4 X-treme Off-Roader, an Ackermann base\"\n\n    Ackermann chassis(ref = \"lego_42099_chassis\")\n\n    Standard wheel_front_left(ref = \"lego_42099_wheel\", glue = (0.112, 0.09112, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42099_wheel\", glue = (0.112, -0.09112, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42099_wheel\", glue = (-0.112, 0.08925, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42099_wheel\", glue = (-0.112, -0.08925, 0, 0, -1, 0))\n}\n",
+    "core": "// LEGO Technic 42099, the 4x4 X-treme Off-Roader, as its instructions build it: the body with its Control+ hub,\n// the L motor that steers the front wheels through a rack, and the two XL motors that drive the front and the rear\n// axle, each through a differential and the planetary hubs; the car drives all four wheels.\nRobot lego_42099 {\n    intent \"LEGO Technic 42099 4x4 X-treme Off-Roader, an Ackermann base driving all four wheels\"\n\n    Ackermann chassis(ref = \"lego_42099_chassis\")\n\n    Motor motor_front(ref = \"lego_controlplus_xl_motor\", glue = (0.0409, 0, 0.0418, -0.9998, 0, 0.02))\n    Motor motor_rear(ref = \"lego_controlplus_xl_motor\", glue = (-0.0871, 0, 0.0445, 0.9998, 0, -0.02))\n\n    Standard wheel_front_left(ref = \"lego_42099_wheel\", glue = (0.112, 0.09112, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"lego_42099_wheel\", glue = (0.112, -0.09112, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"lego_42099_wheel\", glue = (-0.112, 0.08925, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"lego_42099_wheel\", glue = (-0.112, -0.08925, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42099, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -544,6 +596,56 @@
       0.0,
       0.0,
       0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front",
+     "category": "motor",
+     "part": "lego_controlplus_xl_motor",
+     "xyz": [
+      0.0409,
+      0.0,
+      0.0418
+     ],
+     "rpy": [
+      3.1215913204164827,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear",
+     "category": "motor",
+     "part": "lego_controlplus_xl_motor",
+     "xyz": [
+      -0.0871,
+      0.0,
+      0.0445
+     ],
+     "rpy": [
+      -0.020001333173310484,
+      -0.0,
+      -1.5707963267948966
      ],
      "visual_xyz": [
       0.0,
@@ -658,14 +760,15 @@
     }
    ],
    "ground": -0.0536,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.25 m from the point), touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point) and, in a second run, one 1.8 m away, turned 45 degrees to the left (0.24 m from the point), touching nothing",
    "lego": {
     "file": "lego/lego_42099.glb",
     "name": "lego_42099",
     "chassis": "lego_42099_chassis",
     "replaces": [
      "lego_42099_chassis",
-     "lego_42099_wheel"
+     "lego_42099_wheel",
+     "lego_controlplus_xl_motor"
     ],
     "elements": 1861,
     "shapes": 134,
@@ -887,7 +990,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Tri-bot of LEGO Mindstorms NXT 8527 as its instructions build it: the NXT brick on two NXT motors, each driving\n// one wheel, with a rear support of two belt wheels.\nRobot lego_8527_tribot {\n    intent \"LEGO Mindstorms NXT Tri-bot, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_8527_tribot_chassis\")\n\n    Standard wheel_left(ref = \"lego_8527_tribot_wheel\", glue = (0, 0.056, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_8527_tribot_wheel\", glue = (0, -0.056, 0, 0, -1, 0))\n}\n",
+    "core": "// The Tri-bot of LEGO Mindstorms NXT 8527 as its instructions build it: the NXT brick on two NXT motors, each driving\n// one wheel, with a rear support of two belt wheels.\nRobot lego_8527_tribot {\n    intent \"LEGO Mindstorms NXT Tri-bot, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_8527_tribot_chassis\")\n\n    Motor motor_left(ref = \"lego_nxt_motor\", glue = (0, 0.0315, 0, -0.04, 0, -0.9992))\n    Motor motor_right(ref = \"lego_nxt_motor\", glue = (0, -0.0325, 0, -0.04, 0, -0.9992))\n\n    Standard wheel_left(ref = \"lego_8527_tribot_wheel\", glue = (0, 0.056, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_8527_tribot_wheel\", glue = (0, -0.056, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_8527_tribot, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
    },
@@ -910,6 +1013,56 @@
       0.0,
       0.0,
       0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_nxt_motor",
+     "xyz": [
+      0.0,
+      0.0315,
+      0.0
+     ],
+     "rpy": [
+      -3.1015819920460506,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_nxt_motor",
+     "xyz": [
+      0.0,
+      -0.0325,
+      0.0
+     ],
+     "rpy": [
+      -3.1015819920460506,
+      -0.0,
+      1.5707963267948966
      ],
      "visual_xyz": [
       0.0,
@@ -974,14 +1127,15 @@
     }
    ],
    "ground": -0.0284,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.25 m from the point), then turned in place, touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.24 m from the point), then turned in place, touching nothing",
    "lego": {
     "file": "lego/lego_8527_tribot.glb",
     "name": "lego_8527_tribot",
     "chassis": "lego_8527_tribot_chassis",
     "replaces": [
      "lego_8527_tribot_chassis",
-     "lego_8527_tribot_wheel"
+     "lego_8527_tribot_wheel",
+     "lego_nxt_motor"
     ],
     "elements": 1270,
     "shapes": 28,
@@ -1054,7 +1208,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Driving Base of LEGO Education's SPIKE Prime set 45678 as its building instructions build it: the hub on\n// two medium motors, each driving one wheel, a ball caster at the back and the large motor at the front for tools.\nRobot lego_45678_driving_base {\n    intent \"LEGO Education SPIKE Prime Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45678_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45678_driving_base_wheel\", glue = (0, 0.059, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45678_driving_base_wheel\", glue = (0, -0.059, 0, 0, -1, 0))\n}\n",
+    "core": "// The Driving Base of LEGO Education's SPIKE Prime set 45678 as its building instructions build it: the hub on\n// two medium motors, each driving one wheel, a ball caster at the back and the large motor at the front for tools.\nRobot lego_45678_driving_base {\n    intent \"LEGO Education SPIKE Prime Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45678_driving_base_chassis\")\n\n    Motor motor_left(ref = \"lego_spike_medium_motor\", glue = (0, 0.032, 0, -1, 0, 0))\n    Motor motor_right(ref = \"lego_spike_medium_motor\", glue = (0, -0.032, 0, -1, 0, 0))\n\n    Standard wheel_left(ref = \"lego_45678_driving_base_wheel\", glue = (0, 0.059, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45678_driving_base_wheel\", glue = (0, -0.059, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45678_driving_base, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
    },
@@ -1076,6 +1230,56 @@
      "rpy": [
       0.0,
       0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_spike_medium_motor",
+     "xyz": [
+      0.0,
+      0.032,
+      0.0
+     ],
+     "rpy": [
+      -1.5707963267948966,
+      1.5707963267948966,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_spike_medium_motor",
+     "xyz": [
+      0.0,
+      -0.032,
+      0.0
+     ],
+     "rpy": [
+      1.5707963267948966,
+      -1.5707963267948966,
       0.0
      ],
      "visual_xyz": [
@@ -1141,14 +1345,15 @@
     }
    ],
    "ground": -0.0282,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point), then turned in place, touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.24 m from the point), then turned in place, touching nothing",
    "lego": {
     "file": "lego/lego_45678_driving_base.glb",
     "name": "lego_45678_driving_base",
     "chassis": "lego_45678_driving_base_chassis",
     "replaces": [
      "lego_45678_driving_base_chassis",
-     "lego_45678_driving_base_wheel"
+     "lego_45678_driving_base_wheel",
+     "lego_spike_medium_motor"
     ],
     "elements": 57,
     "shapes": 19,
@@ -1204,7 +1409,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Driving Base of LEGO Education's SPIKE Prime set 45678 with its Distance Sensor, as their building instructions\n// build them: the SPIKE Prime hub on two medium motors, each driving one wheel, a ball caster at the back, the large\n// motor at the front, and the distance sensor upright on the hub's front end, looking ahead.\nRobot lego_45678_driving_base_sonar {\n    intent \"LEGO Education SPIKE Prime Driving Base with its distance sensor, a two-wheel differential base that sees ahead\"\n\n    Diff_two_caster chassis(ref = \"lego_45678_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45678_driving_base_wheel\", glue = (0, 0.059, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45678_driving_base_wheel\", glue = (0, -0.059, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"lego_45678_distance_sensor\", glue = (0.024, 0, 0.044, 0, 0, 1))\n}\n",
+    "core": "// The Driving Base of LEGO Education's SPIKE Prime set 45678 with its Distance Sensor, as their building instructions\n// build them: the SPIKE Prime hub on two medium motors, each driving one wheel, a ball caster at the back, the large\n// motor at the front, and the distance sensor upright on the hub's front end, looking ahead.\nRobot lego_45678_driving_base_sonar {\n    intent \"LEGO Education SPIKE Prime Driving Base with its distance sensor, a two-wheel differential base that sees ahead\"\n\n    Diff_two_caster chassis(ref = \"lego_45678_driving_base_chassis\")\n\n    Motor motor_left(ref = \"lego_spike_medium_motor\", glue = (0, 0.032, 0, -1, 0, 0))\n    Motor motor_right(ref = \"lego_spike_medium_motor\", glue = (0, -0.032, 0, -1, 0, 0))\n\n    Standard wheel_left(ref = \"lego_45678_driving_base_wheel\", glue = (0, 0.059, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45678_driving_base_wheel\", glue = (0, -0.059, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"lego_45678_distance_sensor\", glue = (0.024, 0, 0.044, 0, 0, 1))\n}\n",
     "world": "World blocked_path {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45678_driving_base_sonar, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle wall(\n            type = \"box\", pos = (1.0, 0, 0.1, 0, 0, 0, 1), size = (0.2, 0.4, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task reach_goal(timeout_s = 150) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -1226,6 +1431,56 @@
      "rpy": [
       0.0,
       0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_spike_medium_motor",
+     "xyz": [
+      0.0,
+      0.032,
+      0.0
+     ],
+     "rpy": [
+      -1.5707963267948966,
+      1.5707963267948966,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_spike_medium_motor",
+     "xyz": [
+      0.0,
+      -0.032,
+      0.0
+     ],
+     "rpy": [
+      1.5707963267948966,
+      -1.5707963267948966,
       0.0
      ],
      "visual_xyz": [
@@ -1324,7 +1579,8 @@
     "replaces": [
      "lego_45678_distance_sensor",
      "lego_45678_driving_base_chassis",
-     "lego_45678_driving_base_wheel"
+     "lego_45678_driving_base_wheel",
+     "lego_spike_medium_motor"
     ],
     "elements": 65,
     "shapes": 22,
@@ -1384,7 +1640,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 as its building instructions build it: the EV3 brick on\n// two large motors, each driving one wheel, a steel ball caster behind the motors and two arms at the front for tools.\nRobot lego_45544_driving_base {\n    intent \"LEGO Education EV3 Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n}\n",
+    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 as its building instructions build it: the EV3 brick on\n// two large motors, each driving one wheel, a steel ball caster behind the motors and two arms at the front for tools.\nRobot lego_45544_driving_base {\n    intent \"LEGO Education EV3 Driving Base, a two-wheel differential base\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Motor motor_left(ref = \"lego_ev3_large_motor\", glue = (0, 0.024, 0, 0, 0, 1))\n    Motor motor_right(ref = \"lego_ev3_large_motor\", glue = (0, -0.024, 0, 0, 0, 1))\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n}\n",
     "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45544_driving_base, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
    },
@@ -1407,6 +1663,56 @@
       0.0,
       0.0,
       0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_ev3_large_motor",
+     "xyz": [
+      0.0,
+      0.024,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_ev3_large_motor",
+     "xyz": [
+      0.0,
+      -0.024,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
      ],
      "visual_xyz": [
       0.0,
@@ -1471,14 +1777,15 @@
     }
    ],
    "ground": -0.028,
-   "drove": "in Gazebo it reached its goal 2 m ahead (0.24 m from the point), then turned in place, touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.23 m from the point), then turned in place, touching nothing",
    "lego": {
     "file": "lego/lego_45544_driving_base.glb",
     "name": "lego_45544_driving_base",
     "chassis": "lego_45544_driving_base_chassis",
     "replaces": [
      "lego_45544_driving_base_chassis",
-     "lego_45544_driving_base_wheel"
+     "lego_45544_driving_base_wheel",
+     "lego_ev3_large_motor"
     ],
     "elements": 85,
     "shapes": 28,
@@ -1551,7 +1858,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 with its Ultrasonic Sensor, as their building instructions\n// build them: the EV3 brick on two large motors, each driving one wheel, a steel ball caster behind the motors, and\n// the sensor low at the front, looking ahead.\nRobot lego_45544_driving_base_sonar {\n    intent \"LEGO Education EV3 Driving Base with its ultrasonic sensor, a two-wheel differential base that sees ahead\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"lego_45544_ultrasonic_sensor\", glue = (0.02, 0, 0.016, 1, 0, 0))\n}\n",
+    "core": "// The Driving Base of LEGO Education's EV3 Core Set 45544 with its Ultrasonic Sensor, as their building instructions\n// build them: the EV3 brick on two large motors, each driving one wheel, a steel ball caster behind the motors, and\n// the sensor low at the front, looking ahead.\nRobot lego_45544_driving_base_sonar {\n    intent \"LEGO Education EV3 Driving Base with its ultrasonic sensor, a two-wheel differential base that sees ahead\"\n\n    Diff_two_caster chassis(ref = \"lego_45544_driving_base_chassis\")\n\n    Motor motor_left(ref = \"lego_ev3_large_motor\", glue = (0, 0.024, 0, 0, 0, 1))\n    Motor motor_right(ref = \"lego_ev3_large_motor\", glue = (0, -0.024, 0, 0, 0, 1))\n\n    Standard wheel_left(ref = \"lego_45544_driving_base_wheel\", glue = (0, 0.060, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_45544_driving_base_wheel\", glue = (0, -0.060, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"lego_45544_ultrasonic_sensor\", glue = (0.02, 0, 0.016, 1, 0, 0))\n}\n",
     "world": "World blocked_path {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_45544_driving_base_sonar, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle wall(\n            type = \"box\", pos = (1.0, 0, 0.1, 0, 0, 0, 1), size = (0.2, 0.4, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task reach_goal(timeout_s = 150) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -1574,6 +1881,56 @@
       0.0,
       0.0,
       0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_ev3_large_motor",
+     "xyz": [
+      0.0,
+      0.024,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_ev3_large_motor",
+     "xyz": [
+      0.0,
+      -0.024,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
      ],
      "visual_xyz": [
       0.0,
@@ -1663,7 +2020,7 @@
     }
    ],
    "ground": -0.028,
-   "drove": "in Gazebo it reached its goal 2 m ahead, behind a wall in its way (0.01 m from the point), touching nothing",
+   "drove": "in Gazebo it reached its goal 2 m ahead, behind a wall in its way (0.02 m from the point), touching nothing",
    "lego": {
     "file": "lego/lego_45544_driving_base_sonar.glb",
     "name": "lego_45544_driving_base_sonar",
@@ -1671,7 +2028,8 @@
     "replaces": [
      "lego_45544_driving_base_chassis",
      "lego_45544_driving_base_wheel",
-     "lego_45544_ultrasonic_sensor"
+     "lego_45544_ultrasonic_sensor",
+     "lego_ev3_large_motor"
     ],
     "elements": 95,
     "shapes": 31,
