@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 365,
+ "count": 369,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -8,7 +8,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3510",
    "price": 10.95,
    "currency": "USD",
@@ -294,14 +294,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of 70 mm wheels and one ball caster.",
+   "description": "Pololu Romi chassis kit, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of 70 mm wheels and one ball caster.",
    "source_url": "https://www.pololu.com/product/3500",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster": 1
+    "pololu_romi_ball_caster": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1474,14 +1475,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit in pink, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of white 70 mm wheels and one pink ball caster.",
+   "description": "Pololu Romi chassis kit in pink, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of white 70 mm wheels and one pink ball caster.",
    "source_url": "https://www.pololu.com/product/3501",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster_pink": 1
+    "pololu_romi_ball_caster_pink": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1502,14 +1504,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit in red, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of white 70 mm wheels and one red ball caster.",
+   "description": "Pololu Romi chassis kit in red, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of white 70 mm wheels and one red ball caster.",
    "source_url": "https://www.pololu.com/product/3502",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster_red": 1
+    "pololu_romi_ball_caster_red": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1530,14 +1533,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit in yellow, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of white 70 mm wheels and one yellow ball caster.",
+   "description": "Pololu Romi chassis kit in yellow, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of white 70 mm wheels and one yellow ball caster.",
    "source_url": "https://www.pololu.com/product/3504",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster_yellow": 1
+    "pololu_romi_ball_caster_yellow": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1558,14 +1562,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit in blue, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of white 70 mm wheels and one blue ball caster.",
+   "description": "Pololu Romi chassis kit in blue, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of white 70 mm wheels and one blue ball caster.",
    "source_url": "https://www.pololu.com/product/3506",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster_blue": 1
+    "pololu_romi_ball_caster_blue": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1586,14 +1591,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis kit in white, the base plate with its battery cover, two 120:1 gearmotors, their clips and the battery contacts. The kit also brings a pair of white 70 mm wheels and one white ball caster.",
+   "description": "Pololu Romi chassis kit in white, the base plate with its battery cover, its motor clips and the battery contacts, with a seat for each of the kit's two motors, one on the deck for a Romi board and one in the battery compartment for six AA cells. The kit also brings its two 120:1 gearmotors, a pair of white 70 mm wheels and one white ball caster.",
    "source_url": "https://www.pololu.com/product/3509",
    "price": 39.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
     "pololu_wheel_70x8mm": 2,
-    "pololu_romi_ball_caster_white": 1
+    "pololu_romi_ball_caster_white": 1,
+    "pololu_mini_plastic_gearmotor_120_hp_offset_extended": 2
    }
   },
   {
@@ -1977,7 +1983,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate in pink, with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate in pink, with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3511",
    "price": 10.95,
    "currency": "USD",
@@ -1989,7 +1995,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate in red, with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate in red, with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3512",
    "price": 10.95,
    "currency": "USD",
@@ -2001,7 +2007,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate in yellow, with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate in yellow, with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3514",
    "price": 10.95,
    "currency": "USD",
@@ -2013,7 +2019,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate in blue, with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate in blue, with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3516",
    "price": 10.95,
    "currency": "USD",
@@ -2025,7 +2031,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu Romi chassis base plate in white, with its battery cover; two wheel mounts, ball-caster sockets at the rear and the front, and perforated decks front and rear.",
+   "description": "Pololu Romi chassis base plate in white, with its battery cover; two wheel mounts with a seat for a motor at each, ball-caster sockets at the rear and the front, perforated decks front and rear, and the deck over the battery compartment, where the Romi's boards sit; the compartment holds six AA cells.",
    "source_url": "https://www.pololu.com/product/3519",
    "price": 10.95,
    "currency": "USD",
@@ -4716,6 +4722,54 @@
    "currency": "USD",
    "pack": 1,
    "product": "LEGO Education Mindstorms EV3 Core Set 45544"
+  },
+  {
+   "ref": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+   "name": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, Extended Motor Shaft",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "PCX",
+   "description": "Pololu 120:1 Mini Plastic Gearmotor HP with an offset 3 mm D-shaft output and an extended motor shaft, the motor of the Romi chassis kit. At 4.5 V it turns 150 rpm unloaded and stalls at 25 oz in (0.18 N m) and 1.25 A; a clutch in its gearbox slips near that load.",
+   "source_url": "https://www.pololu.com/product/1520",
+   "price": 9.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_romi_motor_driver_power_board",
+   "name": "Motor Driver and Power Distribution Board for Romi Chassis",
+   "category": "motor_driver",
+   "subtype": "MotorDriver",
+   "supplier": "Pololu",
+   "description": "Pololu Motor Driver and Power Distribution Board for the Romi chassis: two DRV8838 motor drivers, 1.8 A a channel on a 2.5 V to 10.8 V supply, with the Romi's power switch, reverse protection and a 5 V or 3.3 V regulator. It lies on the Romi's deck and solders to its battery contacts.",
+   "source_url": "https://www.pololu.com/product/3543",
+   "price": 34.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_romi_32u4_control_board",
+   "name": "Romi 32U4 Control Board",
+   "category": "motor_driver",
+   "subtype": "MotorDriver",
+   "supplier": "Pololu",
+   "description": "Pololu Romi 32U4 Control Board: an ATmega32U4 controller with two DRV8838 motor drivers, 1.8 A a channel on a 2.5 V to 10.8 V supply, the Romi's power switch, a 5 V regulator, an accelerometer and gyro, and connections for encoders and a Raspberry Pi. It lies on the Romi's deck and solders to its battery contacts.",
+   "source_url": "https://www.pololu.com/product/3544",
+   "price": 74.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_romi_six_nimh_aa_cells",
+   "name": "Rechargeable NiMH AA Battery: 1.2 V, 2200 mAh, six cells for the Romi chassis",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Pololu",
+   "description": "Six of Pololu's rechargeable NiMH AA cells, 1.2 V and 2200 mAh each, as the Romi chassis holds them in its battery compartment: two between the motors and four behind them, 7.2 V in series. The cells are sold one at a time; this part is the six a Romi takes.",
+   "source_url": "https://www.pololu.com/product/1003",
+   "price": 29.7,
+   "currency": "USD",
+   "pack": 1
   }
  ]
 }

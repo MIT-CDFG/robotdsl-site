@@ -98,8 +98,8 @@
    "bytes": 1739444
   },
   "pololu_romi_chassis_kit": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_romi_chassis_kit/assets/model.glb",
-   "bytes": 1869700
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit/assets/model.glb",
+   "bytes": 1840336
   },
   "gobilda_gripforce_mecanum_104mm_fl_rr": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
@@ -470,40 +470,40 @@
    "bytes": 758156
   },
   "pololu_romi_chassis_kit_pink": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_pink/assets/model.glb",
-   "bytes": 1869676
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit_pink/assets/model.glb",
+   "bytes": 1840336
   },
   "pololu_romi_ball_caster_pink": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_pink/assets/model.glb",
    "bytes": 109916
   },
   "pololu_romi_chassis_kit_red": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_red/assets/model.glb",
-   "bytes": 1869672
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit_red/assets/model.glb",
+   "bytes": 1840336
   },
   "pololu_romi_ball_caster_red": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_red/assets/model.glb",
    "bytes": 109916
   },
   "pololu_romi_chassis_kit_yellow": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_yellow/assets/model.glb",
-   "bytes": 1869676
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit_yellow/assets/model.glb",
+   "bytes": 1840336
   },
   "pololu_romi_ball_caster_yellow": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_yellow/assets/model.glb",
    "bytes": 109916
   },
   "pololu_romi_chassis_kit_blue": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_blue/assets/model.glb",
-   "bytes": 1869700
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit_blue/assets/model.glb",
+   "bytes": 1840336
   },
   "pololu_romi_ball_caster_blue": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_blue/assets/model.glb",
    "bytes": 109916
   },
   "pololu_romi_chassis_kit_white": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_white/assets/model.glb",
-   "bytes": 1869676
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_chassis_kit_white/assets/model.glb",
+   "bytes": 1840340
   },
   "pololu_romi_ball_caster_white": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_white/assets/model.glb",
@@ -1460,6 +1460,22 @@
   "lego_45544_touch_sensor": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_45544_touch_sensor/assets/model.glb",
    "bytes": 202000
+  },
+  "pololu_mini_plastic_gearmotor_120_hp_offset_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_mini_plastic_gearmotor_120_hp_offset_extended/assets/model.glb",
+   "bytes": 237080
+  },
+  "pololu_romi_motor_driver_power_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_motor_driver_power_board/assets/model.glb",
+   "bytes": 1253336
+  },
+  "pololu_romi_32u4_control_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_32u4_control_board/assets/model.glb",
+   "bytes": 2477876
+  },
+  "pololu_romi_six_nimh_aa_cells": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d89a1679459093b4e77a40311f8c46f1daff6f30/parts/pololu_romi_six_nimh_aa_cells/assets/model.glb",
+   "bytes": 802868
   }
  }
 }
