@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 364,
+ "count": 365,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -4443,7 +4443,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "LEGO",
-   "description": "The Driving Base of LEGO Education's EV3 Core Set 45544 as its building instructions build it: the EV3 brick with its rechargeable battery on two large motors that each drive one wheel, a steel ball caster behind the motors, and two white arms at the front for attachments; two wheel mounts, a seat on the brick, and the front_sensor seat where the set's ultrasonic sensor goes (lego_45544_ultrasonic_sensor).",
+   "description": "The Driving Base of LEGO Education's EV3 Core Set 45544 as its building instructions build it: the EV3 brick with its rechargeable battery on two large motors that each drive one wheel, a steel ball caster behind the motors, and two white arms at the front for attachments; two wheel mounts, a seat on the brick, the front_sensor seat where the set's ultrasonic sensor goes (lego_45544_ultrasonic_sensor), and the left_arm seat where its touch sensor goes (lego_45544_touch_sensor).",
    "source_url": "https://brickset.com/sets/45544-1",
    "price": 339.95,
    "currency": "USD",
@@ -4452,6 +4452,7 @@
    "includes": {
     "lego_45544_driving_base_wheel": 2,
     "lego_45544_ultrasonic_sensor": 1,
+    "lego_45544_touch_sensor": 1,
     "lego_ev3_large_motor": 2
    }
   },
@@ -4702,6 +4703,19 @@
    "currency": "USD",
    "pack": 1,
    "product": "LEGO Technic 42065 RC Tracked Racer"
+  },
+  {
+   "ref": "lego_45544_touch_sensor",
+   "name": "LEGO Education EV3 Touch Sensor on the Driving Base's left arm",
+   "category": "sensor",
+   "subtype": "Bumper",
+   "supplier": "LEGO",
+   "description": "The EV3 Touch Sensor on the bracket LEGO Education's instructions build for it, which goes on the EV3 Driving Base (lego_45544_driving_base_chassis) at its left_arm seat: low in front of the left wheel, its red button forward. It tells whether its button is pressed. The bracket is a black liftarm 3 x 0.5 and a black beam 2 on an axle 3 through the rail under the sensor's back; the left white arm's axle 4 goes through the liftarm, the rail and the beam.",
+   "source_url": "https://brickset.com/sets/45544-1",
+   "price": 339.95,
+   "currency": "USD",
+   "pack": 1,
+   "product": "LEGO Education Mindstorms EV3 Core Set 45544"
   }
  ]
 }

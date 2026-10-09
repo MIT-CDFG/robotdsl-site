@@ -1390,32 +1390,32 @@
    "bytes": 463348
   },
   "lego_45544_ultrasonic_sensor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45544_ultrasonic_sensor/assets/model.glb",
-   "bytes": 892840
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_45544_ultrasonic_sensor/assets/model.glb",
+   "bytes": 894008
   },
   "lego_45678_distance_sensor": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45678_distance_sensor/assets/model.glb",
    "bytes": 614100
   },
   "lego_controlplus_xl_motor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_controlplus_xl_motor/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_controlplus_xl_motor/assets/model.glb",
    "bytes": 450192
   },
   "lego_controlplus_l_motor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_controlplus_l_motor/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_controlplus_l_motor/assets/model.glb",
    "bytes": 273860
   },
   "lego_nxt_motor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_nxt_motor/assets/model.glb",
-   "bytes": 349128
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_nxt_motor/assets/model.glb",
+   "bytes": 349904
   },
   "lego_spike_medium_motor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_spike_medium_motor/assets/model.glb",
-   "bytes": 288920
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_spike_medium_motor/assets/model.glb",
+   "bytes": 288140
   },
   "lego_ev3_large_motor": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_ev3_large_motor/assets/model.glb",
-   "bytes": 406872
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_ev3_large_motor/assets/model.glb",
+   "bytes": 406880
   },
   "lego_42129_chassis": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42129_chassis/assets/model.glb",
@@ -1456,6 +1456,10 @@
   "lego_pf_m_motor": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_pf_m_motor/assets/model.glb",
    "bytes": 73460
+  },
+  "lego_45544_touch_sensor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/855554debf278df7416062a8f73ffe920c20ac11/parts/lego_45544_touch_sensor/assets/model.glb",
+   "bytes": 202000
   }
  }
 }
