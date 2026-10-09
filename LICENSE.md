@@ -17,7 +17,7 @@ LDraw files it is drawn from, and the Studio shows them with the robot. LEGO® i
 companies which does not sponsor, authorize or endorse this site. LDraw™ is a trademark owned and licensed by the
 Estate of James Jessiman.
 
-**Parts submitted** through the Studio's form (an issue of this repository) go into the component library once a maintainer has built and approved them: a product under its maker's rights, a published design under the licence its submitter chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, or as stated in the submission).
+**Parts submitted** through the Studio's form (an issue of this repository) go into the component library once a maintainer has built and approved them: a product under its maker's rights, a part of the submitter's own under the licence they chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, or as stated in the submission).
 
 **Third-party interface assets** (`assets/vendor/`, `assets/icons/`) retain their
 original licenses and copyright notices. They are not relicensed under the site
