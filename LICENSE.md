@@ -4,8 +4,9 @@
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 Credit "RobotDSL Team" and link to https://mit-cdfg.github.io/robotdsl-site/.
 
-**MobileCopilot Studio** (`studio/`, including the built front end, the catalog index and the thumbnails):
+**MobileCopilot Studio** (`studio/`, including the built front end and the catalog index):
 © RobotDSL Team. All rights reserved. It is published here so that it can be used through this site; the application and compiler sources are not public.
+The parts' 3D models are not in this repository: the Studio reads them from the component library's dataset on Hugging Face (https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets), each built from the maker's published model and keeping that model's rights.
 
 **LEGO robots in the Studio** (`studio/catalog/showcase/`): each robot is drawn element by element from the
 [LDraw parts library](https://library.ldraw.org) (CC BY 4.0; a few files CC BY 2.0 and CC BY 4.0, see

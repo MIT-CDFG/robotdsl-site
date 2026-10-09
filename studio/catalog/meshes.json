@@ -1,0 +1,1421 @@
+{
+ "frame": "declared visual",
+ "parts": {
+  "pololu_romi_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_romi_chassis/assets/model.glb",
+   "bytes": 1834072
+  },
+  "pololu_wheel_70x8mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_70x8mm/assets/model.glb",
+   "bytes": 442536
+  },
+  "pololu_romi_ball_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_romi_ball_caster/assets/model.glb",
+   "bytes": 109916
+  },
+  "pololu_wheel_32x7mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_32x7mm/assets/model.glb",
+   "bytes": 308424
+  },
+  "pololu_wheel_40x7mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_40x7mm/assets/model.glb",
+   "bytes": 283000
+  },
+  "pololu_wheel_60x8mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_60x8mm/assets/model.glb",
+   "bytes": 443324
+  },
+  "pololu_wheel_80x10mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_80x10mm/assets/model.glb",
+   "bytes": 458484
+  },
+  "pololu_wheel_90x10mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_wheel_90x10mm/assets/model.glb",
+   "bytes": 464076
+  },
+  "pololu_ball_caster_3_8in_plastic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_8in_plastic/assets/model.glb",
+   "bytes": 134268
+  },
+  "pololu_ball_caster_3_8in_metal": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_8in_metal/assets/model.glb",
+   "bytes": 134268
+  },
+  "pololu_ball_caster_1_2in_plastic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1_2in_plastic/assets/model.glb",
+   "bytes": 136700
+  },
+  "pololu_ball_caster_1_2in_metal": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1_2in_metal/assets/model.glb",
+   "bytes": 136700
+  },
+  "pololu_ball_caster_3_4in_plastic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_4in_plastic/assets/model.glb",
+   "bytes": 180804
+  },
+  "pololu_ball_caster_3_4in_metal": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_4in_metal/assets/model.glb",
+   "bytes": 162644
+  },
+  "pololu_ball_caster_1in_plastic_rollers": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1in_plastic_rollers/assets/model.glb",
+   "bytes": 291360
+  },
+  "pololu_ball_caster_1in_ball_bearings": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1in_ball_bearings/assets/model.glb",
+   "bytes": 291360
+  },
+  "unitree_4d_lidar_l2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/unitree_4d_lidar_l2/assets/model.glb",
+   "bytes": 653892
+  },
+  "luxonis_oak_d_lite": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ddffb65e9dcbc3eed68d461f707f11412d17de8d/parts/luxonis_oak_d_lite/assets/model.glb",
+   "bytes": 4247056
+  },
+  "luxonis_oak_d_pro": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ddffb65e9dcbc3eed68d461f707f11412d17de8d/parts/luxonis_oak_d_pro/assets/model.glb",
+   "bytes": 3186512
+  },
+  "maxbotix_mb1010_lv_maxsonar_ez1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/maxbotix_mb1010_lv_maxsonar_ez1/assets/model.glb",
+   "bytes": 237160
+  },
+  "pololu_minimu_9_v6": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_minimu_9_v6/assets/model.glb",
+   "bytes": 265016
+  },
+  "raspberry_pi_camera_module_3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/raspberry_pi_camera_module_3/assets/model.glb",
+   "bytes": 1341476
+  },
+  "raspberry_pi_5_4gb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/raspberry_pi_5_4gb/assets/model.glb",
+   "bytes": 1739444
+  },
+  "raspberry_pi_5_8gb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/raspberry_pi_5_8gb/assets/model.glb",
+   "bytes": 1739444
+  },
+  "pololu_romi_chassis_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_romi_chassis_kit/assets/model.glb",
+   "bytes": 1869700
+  },
+  "gobilda_gripforce_mecanum_104mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
+   "bytes": 3159948
+  },
+  "gobilda_gripforce_mecanum_104mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_gripforce_mecanum_104mm_fr_rl/assets/model.glb",
+   "bytes": 3113296
+  },
+  "gobilda_strafer_chassis_kit_104mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_strafer_chassis_kit_104mm/assets/model.glb",
+   "bytes": 10773252
+  },
+  "hiwonder_mentorpi_m1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4e20a458e56f102ed51d4062d7371a978fd43c49/parts/hiwonder_mentorpi_m1_chassis/assets/model.glb",
+   "bytes": 380988
+  },
+  "hiwonder_mentorpi_m1_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4e20a458e56f102ed51d4062d7371a978fd43c49/parts/hiwonder_mentorpi_m1_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 1065976
+  },
+  "hiwonder_mentorpi_m1_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4e20a458e56f102ed51d4062d7371a978fd43c49/parts/hiwonder_mentorpi_m1_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 1066512
+  },
+  "hiwonder_mentorpi_m1_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/hiwonder_mentorpi_m1_lidar/assets/model.glb",
+   "bytes": 408400
+  },
+  "hiwonder_mentorpi_m1_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4e20a458e56f102ed51d4062d7371a978fd43c49/parts/hiwonder_mentorpi_m1_depth_camera/assets/model.glb",
+   "bytes": 745276
+  },
+  "pololu_wheel_32x7mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_32x7mm_white/assets/model.glb",
+   "bytes": 308412
+  },
+  "pololu_wheel_42x19mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_42x19mm/assets/model.glb",
+   "bytes": 444668
+  },
+  "pololu_wheel_60x8mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_60x8mm_red/assets/model.glb",
+   "bytes": 443316
+  },
+  "pololu_wheel_60x8mm_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_60x8mm_yellow/assets/model.glb",
+   "bytes": 443304
+  },
+  "pololu_wheel_60x8mm_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_60x8mm_blue/assets/model.glb",
+   "bytes": 443316
+  },
+  "pololu_wheel_60x8mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_60x8mm_white/assets/model.glb",
+   "bytes": 443128
+  },
+  "pololu_wheel_70x8mm_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_70x8mm_black/assets/model.glb",
+   "bytes": 442552
+  },
+  "pololu_wheel_70x8mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_70x8mm_red/assets/model.glb",
+   "bytes": 442544
+  },
+  "pololu_wheel_70x8mm_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_70x8mm_yellow/assets/model.glb",
+   "bytes": 442536
+  },
+  "pololu_wheel_70x8mm_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_70x8mm_blue/assets/model.glb",
+   "bytes": 442548
+  },
+  "pololu_wheel_80x10mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_80x10mm_red/assets/model.glb",
+   "bytes": 458476
+  },
+  "pololu_wheel_80x10mm_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_80x10mm_yellow/assets/model.glb",
+   "bytes": 458464
+  },
+  "pololu_wheel_80x10mm_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_80x10mm_blue/assets/model.glb",
+   "bytes": 458476
+  },
+  "pololu_wheel_80x10mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_80x10mm_white/assets/model.glb",
+   "bytes": 458108
+  },
+  "pololu_wheel_90x10mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_90x10mm_red/assets/model.glb",
+   "bytes": 464068
+  },
+  "pololu_wheel_90x10mm_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_90x10mm_yellow/assets/model.glb",
+   "bytes": 464060
+  },
+  "pololu_wheel_90x10mm_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_90x10mm_blue/assets/model.glb",
+   "bytes": 464072
+  },
+  "pololu_wheel_90x10mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_90x10mm_white/assets/model.glb",
+   "bytes": 463892
+  },
+  "pololu_wheel_40x7mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_40x7mm_red/assets/model.glb",
+   "bytes": 282992
+  },
+  "pololu_wheel_40x7mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_40x7mm_white/assets/model.glb",
+   "bytes": 282996
+  },
+  "pololu_wheel_micro_servo_40x7mm_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_40x7mm_black/assets/model.glb",
+   "bytes": 290540
+  },
+  "pololu_wheel_micro_servo_40x7mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_40x7mm_red/assets/model.glb",
+   "bytes": 290532
+  },
+  "pololu_wheel_micro_servo_40x7mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_40x7mm_white/assets/model.glb",
+   "bytes": 290524
+  },
+  "pololu_wheel_micro_servo_60x8mm_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_60x8mm_black/assets/model.glb",
+   "bytes": 552716
+  },
+  "pololu_wheel_micro_servo_60x8mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_60x8mm_red/assets/model.glb",
+   "bytes": 552712
+  },
+  "pololu_wheel_micro_servo_60x8mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_micro_servo_60x8mm_white/assets/model.glb",
+   "bytes": 552704
+  },
+  "pololu_wheel_standard_servo_70x8mm_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_70x8mm_black/assets/model.glb",
+   "bytes": 543780
+  },
+  "pololu_wheel_standard_servo_70x8mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_70x8mm_red/assets/model.glb",
+   "bytes": 543768
+  },
+  "pololu_wheel_standard_servo_70x8mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_70x8mm_white/assets/model.glb",
+   "bytes": 543760
+  },
+  "pololu_wheel_standard_servo_90x10mm_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_90x10mm_black/assets/model.glb",
+   "bytes": 551244
+  },
+  "pololu_wheel_standard_servo_90x10mm_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_90x10mm_red/assets/model.glb",
+   "bytes": 551232
+  },
+  "pololu_wheel_standard_servo_90x10mm_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_standard_servo_90x10mm_white/assets/model.glb",
+   "bytes": 551224
+  },
+  "hiwonder_mentorpi_a1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_chassis/assets/model.glb",
+   "bytes": 447812
+  },
+  "hiwonder_mentorpi_a1_front_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_front_wheel/assets/model.glb",
+   "bytes": 997224
+  },
+  "hiwonder_mentorpi_a1_rear_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_rear_wheel/assets/model.glb",
+   "bytes": 1005212
+  },
+  "hiwonder_mentorpi_a1_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_lidar/assets/model.glb",
+   "bytes": 422800
+  },
+  "hiwonder_mentorpi_a1_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_depth_camera/assets/model.glb",
+   "bytes": 744864
+  },
+  "hiwonder_jetauto_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_jetauto_chassis/assets/model.glb",
+   "bytes": 461024
+  },
+  "hiwonder_jetauto_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_jetauto_lidar/assets/model.glb",
+   "bytes": 798376
+  },
+  "hiwonder_jetauto_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_jetauto_depth_camera/assets/model.glb",
+   "bytes": 91208
+  },
+  "hiwonder_mecanum_wheel_97mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_mecanum_wheel_97mm_fl_rr/assets/model.glb",
+   "bytes": 384112
+  },
+  "hiwonder_mecanum_wheel_97mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_mecanum_wheel_97mm_fr_rl/assets/model.glb",
+   "bytes": 387072
+  },
+  "hiwonder_touch_screen_7inch": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_touch_screen_7inch/assets/model.glb",
+   "bytes": 47592
+  },
+  "hiwonder_rubber_wheel_100mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_rubber_wheel_100mm/assets/model.glb",
+   "bytes": 786476
+  },
+  "hiwonder_jetacker_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_jetacker_chassis/assets/model.glb",
+   "bytes": 708800
+  },
+  "hiwonder_jetacker_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_jetacker_lidar/assets/model.glb",
+   "bytes": 812788
+  },
+  "hiwonder_jetacker_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_jetacker_depth_camera/assets/model.glb",
+   "bytes": 144944
+  },
+  "hiwonder_mecanum_wheel_80mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_mecanum_wheel_80mm_fl_rr/assets/model.glb",
+   "bytes": 705360
+  },
+  "hiwonder_mecanum_wheel_80mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_mecanum_wheel_80mm_fr_rl/assets/model.glb",
+   "bytes": 711648
+  },
+  "hiwonder_rosorin_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_chassis/assets/model.glb",
+   "bytes": 1850288
+  },
+  "hiwonder_rosorin_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_rosorin_lidar/assets/model.glb",
+   "bytes": 126580
+  },
+  "hiwonder_rosorin_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_depth_camera/assets/model.glb",
+   "bytes": 350164
+  },
+  "hiwonder_jetrover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_chassis/assets/model.glb",
+   "bytes": 574040
+  },
+  "hiwonder_jetrover_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_lidar/assets/model.glb",
+   "bytes": 84176
+  },
+  "hiwonder_jetrover_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_arm/assets/model.glb",
+   "bytes": 803088
+  },
+  "hiwonder_jetrover_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_depth_camera/assets/model.glb",
+   "bytes": 413188
+  },
+  "hiwonder_landerpi_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_chassis/assets/model.glb",
+   "bytes": 553932
+  },
+  "hiwonder_landerpi_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 858852
+  },
+  "hiwonder_landerpi_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 852360
+  },
+  "hiwonder_landerpi_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_lidar/assets/model.glb",
+   "bytes": 93640
+  },
+  "hiwonder_landerpi_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_arm/assets/model.glb",
+   "bytes": 1163628
+  },
+  "hiwonder_landerpi_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_depth_camera/assets/model.glb",
+   "bytes": 400112
+  },
+  "hiwonder_clawpi_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/hiwonder_clawpi_chassis/assets/model.glb",
+   "bytes": 879824
+  },
+  "hiwonder_clawpi_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/hiwonder_clawpi_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 846880
+  },
+  "hiwonder_clawpi_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/hiwonder_clawpi_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 847660
+  },
+  "hiwonder_clawpi_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/df40f2bf4f62a14b29f1899b864e04b4262e5a5c/parts/hiwonder_clawpi_camera/assets/model.glb",
+   "bytes": 525276
+  },
+  "hiwonder_clawpi_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/df40f2bf4f62a14b29f1899b864e04b4262e5a5c/parts/hiwonder_clawpi_lidar/assets/model.glb",
+   "bytes": 66728
+  },
+  "hiwonder_clawpi_claw": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/df40f2bf4f62a14b29f1899b864e04b4262e5a5c/parts/hiwonder_clawpi_claw/assets/model.glb",
+   "bytes": 219708
+  },
+  "yahboom_rosmaster_x3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/yahboom_rosmaster_x3_chassis/assets/model.glb",
+   "bytes": 721948
+  },
+  "yahboom_rosmaster_x3_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/yahboom_rosmaster_x3_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 865828
+  },
+  "yahboom_rosmaster_x3_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/yahboom_rosmaster_x3_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 846476
+  },
+  "yahboom_rosmaster_x3_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/yahboom_rosmaster_x3_lidar/assets/model.glb",
+   "bytes": 862652
+  },
+  "yahboom_rosmaster_x3_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/60184e7d27741e0c70a5b0ecdcca4cb4afea7d25/parts/yahboom_rosmaster_x3_depth_camera/assets/model.glb",
+   "bytes": 139812
+  },
+  "hiwonder_large_metal_4wd_chassis_green": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/88457334dc7fc1db24ea864fd98e844676a16628/parts/hiwonder_large_metal_4wd_chassis_green/assets/model.glb",
+   "bytes": 275936
+  },
+  "hiwonder_ackermann_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5e52d9b4a72ca51120d0e9092f72dff3a47962d7/parts/hiwonder_ackermann_chassis/assets/model.glb",
+   "bytes": 2573060
+  },
+  "hiwonder_ackermann_chassis_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5e52d9b4a72ca51120d0e9092f72dff3a47962d7/parts/hiwonder_ackermann_chassis_wheel/assets/model.glb",
+   "bytes": 1044064
+  },
+  "luxonis_oak_d_s2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ddffb65e9dcbc3eed68d461f707f11412d17de8d/parts/luxonis_oak_d_s2/assets/model.glb",
+   "bytes": 4691388
+  },
+  "luxonis_oak_d_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ddffb65e9dcbc3eed68d461f707f11412d17de8d/parts/luxonis_oak_d_w/assets/model.glb",
+   "bytes": 7024324
+  },
+  "luxonis_oak_d_pro_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ddffb65e9dcbc3eed68d461f707f11412d17de8d/parts/luxonis_oak_d_pro_w/assets/model.glb",
+   "bytes": 7008716
+  },
+  "robotis_tb3_wheel_isw01": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/65bbd930baf5e8773e2096fd03a3f40e27e5b166/parts/robotis_tb3_wheel_isw01/assets/model.glb",
+   "bytes": 741252
+  },
+  "realsense_d435": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d435/assets/model.glb",
+   "bytes": 3674940
+  },
+  "realsense_d435i": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d435i/assets/model.glb",
+   "bytes": 3674940
+  },
+  "realsense_d436": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d436/assets/model.glb",
+   "bytes": 3674940
+  },
+  "realsense_d455": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d455/assets/model.glb",
+   "bytes": 758156
+  },
+  "pololu_romi_chassis_kit_pink": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_pink/assets/model.glb",
+   "bytes": 1869676
+  },
+  "pololu_romi_ball_caster_pink": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_pink/assets/model.glb",
+   "bytes": 109916
+  },
+  "pololu_romi_chassis_kit_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_red/assets/model.glb",
+   "bytes": 1869672
+  },
+  "pololu_romi_ball_caster_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_red/assets/model.glb",
+   "bytes": 109916
+  },
+  "pololu_romi_chassis_kit_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_yellow/assets/model.glb",
+   "bytes": 1869676
+  },
+  "pololu_romi_ball_caster_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_yellow/assets/model.glb",
+   "bytes": 109916
+  },
+  "pololu_romi_chassis_kit_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_blue/assets/model.glb",
+   "bytes": 1869700
+  },
+  "pololu_romi_ball_caster_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_blue/assets/model.glb",
+   "bytes": 109916
+  },
+  "pololu_romi_chassis_kit_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_chassis_kit_white/assets/model.glb",
+   "bytes": 1869676
+  },
+  "pololu_romi_ball_caster_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_romi_ball_caster_white/assets/model.glb",
+   "bytes": 109920
+  },
+  "pololu_3pi_plus_2040_robot": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c59e057995b27144576d44a0ec360281825903aa/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_digital_distance_sensor_5cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_5cm/assets/model.glb",
+   "bytes": 290540
+  },
+  "pololu_digital_distance_sensor_10cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_10cm/assets/model.glb",
+   "bytes": 290540
+  },
+  "pololu_digital_distance_sensor_15cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_15cm/assets/model.glb",
+   "bytes": 290540
+  },
+  "pololu_distance_sensor_pw_50cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_50cm/assets/model.glb",
+   "bytes": 290540
+  },
+  "pololu_digital_distance_sensor_25cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_digital_distance_sensor_50cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_50cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_digital_distance_sensor_100cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_100cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_digital_distance_sensor_200cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_200cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_distance_sensor_pw_130cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_130cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_distance_sensor_pw_300cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_300cm/assets/model.glb",
+   "bytes": 286740
+  },
+  "pololu_digital_distance_sensor_25cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_digital_distance_sensor_50cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_50cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_digital_distance_sensor_100cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_100cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_digital_distance_sensor_200cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_200cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_distance_sensor_pw_130cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_130cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_distance_sensor_pw_300cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_300cm_side_entry/assets/model.glb",
+   "bytes": 272100
+  },
+  "pololu_digital_distance_sensor_v2_5cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm/assets/model.glb",
+   "bytes": 265984
+  },
+  "pololu_digital_distance_sensor_v2_10cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_10cm/assets/model.glb",
+   "bytes": 265984
+  },
+  "pololu_digital_distance_sensor_v2_15cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_15cm/assets/model.glb",
+   "bytes": 265984
+  },
+  "pololu_distance_sensor_v2_pw_50cm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_v2_pw_50cm/assets/model.glb",
+   "bytes": 265984
+  },
+  "pololu_digital_distance_sensor_v2_5cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm_side_entry/assets/model.glb",
+   "bytes": 263440
+  },
+  "pololu_digital_distance_sensor_v2_10cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_10cm_side_entry/assets/model.glb",
+   "bytes": 263440
+  },
+  "pololu_digital_distance_sensor_v2_15cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_15cm_side_entry/assets/model.glb",
+   "bytes": 263440
+  },
+  "pololu_distance_sensor_v2_pw_50cm_side_entry": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_v2_pw_50cm_side_entry/assets/model.glb",
+   "bytes": 263440
+  },
+  "pololu_vl53l0x_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l0x_carrier/assets/model.glb",
+   "bytes": 269352
+  },
+  "pololu_vl53l1x_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l1x_carrier/assets/model.glb",
+   "bytes": 269352
+  },
+  "pololu_vl53l3cx_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l3cx_carrier/assets/model.glb",
+   "bytes": 269352
+  },
+  "pololu_vl53l4cd_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l4cd_carrier/assets/model.glb",
+   "bytes": 269352
+  },
+  "pololu_vl6180x_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl6180x_carrier/assets/model.glb",
+   "bytes": 302332
+  },
+  "pololu_romi_chassis_pink": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_chassis_pink/assets/model.glb",
+   "bytes": 1834076
+  },
+  "pololu_romi_chassis_red": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_chassis_red/assets/model.glb",
+   "bytes": 1834072
+  },
+  "pololu_romi_chassis_yellow": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_chassis_yellow/assets/model.glb",
+   "bytes": 1834076
+  },
+  "pololu_romi_chassis_blue": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_chassis_blue/assets/model.glb",
+   "bytes": 1834072
+  },
+  "pololu_romi_chassis_white": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_chassis_white/assets/model.glb",
+   "bytes": 1834076
+  },
+  "pololu_minimu_9_v5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_minimu_9_v5/assets/model.glb",
+   "bytes": 262288
+  },
+  "pololu_altimu_10_v6": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_altimu_10_v6/assets/model.glb",
+   "bytes": 314532
+  },
+  "pololu_lsm6ds33_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_lsm6ds33_carrier/assets/model.glb",
+   "bytes": 270120
+  },
+  "pololu_lsm6dso_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_lsm6dso_carrier/assets/model.glb",
+   "bytes": 309360
+  },
+  "pololu_3pi_ball_caster_1_2in_plastic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_ball_caster_1_2in_plastic/assets/model.glb",
+   "bytes": 124644
+  },
+  "pololu_3pi_plus_2040_robot_hyper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_2040_robot_hyper/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_3pi_plus_2040_robot_turtle": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_2040_robot_turtle/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_3pi_plus_2040_robot_kit_hyper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_2040_robot_kit_hyper/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_3pi_plus_2040_robot_kit_standard": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_2040_robot_kit_standard/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_3pi_plus_2040_robot_kit_turtle": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_2040_robot_kit_turtle/assets/model.glb",
+   "bytes": 2924292
+  },
+  "pololu_3pi_plus_32u4_oled_robot_hyper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_oled_robot_standard": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_standard/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_oled_robot_turtle": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_turtle/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_oled_robot_kit_hyper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_kit_hyper/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_oled_robot_kit_standard": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_kit_standard/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_oled_robot_kit_turtle": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/pololu_3pi_plus_32u4_oled_robot_kit_turtle/assets/model.glb",
+   "bytes": 2927284
+  },
+  "pololu_3pi_plus_32u4_robot_kit_hyper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_32u4_robot_kit_hyper/assets/model.glb",
+   "bytes": 2732152
+  },
+  "pololu_3pi_plus_32u4_robot_kit_standard": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_32u4_robot_kit_standard/assets/model.glb",
+   "bytes": 2732152
+  },
+  "pololu_3pi_plus_32u4_robot_kit_turtle": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_32u4_robot_kit_turtle/assets/model.glb",
+   "bytes": 2732152
+  },
+  "pololu_3pi_plus_chassis_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_chassis_kit/assets/model.glb",
+   "bytes": 1707608
+  },
+  "pololu_micro_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_micro_gripper/assets/model.glb",
+   "bytes": 561608
+  },
+  "pololu_romi_bumper_switches_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_bumper_switches_right/assets/model.glb",
+   "bytes": 627616
+  },
+  "pololu_romi_bumper_switches_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_romi_bumper_switches_left/assets/model.glb",
+   "bytes": 627624
+  },
+  "realsense_d405": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/67e234752d4130113ac0da2b1ebe4e789713c29f/parts/realsense_d405/assets/model.glb",
+   "bytes": 101964
+  },
+  "robotis_openmanipulator_x_rm_x52_tnm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/67e234752d4130113ac0da2b1ebe4e789713c29f/parts/robotis_openmanipulator_x_rm_x52_tnm/assets/model.glb",
+   "bytes": 2698004
+  },
+  "luxonis_oak_d_pro_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fbc2b885a5988c7d4bd669016b0fee675fc32112/parts/luxonis_oak_d_pro_poe/assets/model.glb",
+   "bytes": 5756864
+  },
+  "luxonis_oak_d_pro_w_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fbc2b885a5988c7d4bd669016b0fee675fc32112/parts/luxonis_oak_d_pro_w_poe/assets/model.glb",
+   "bytes": 5756844
+  },
+  "luxonis_oak_d_s2_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fbc2b885a5988c7d4bd669016b0fee675fc32112/parts/luxonis_oak_d_s2_poe/assets/model.glb",
+   "bytes": 5738140
+  },
+  "luxonis_oak_d_w_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fbc2b885a5988c7d4bd669016b0fee675fc32112/parts/luxonis_oak_d_w_poe/assets/model.glb",
+   "bytes": 6017280
+  },
+  "yahboom_rosmaster_r2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56adfdfcfa74537ed8c0ac43d3c7141511726256/parts/yahboom_rosmaster_r2_chassis/assets/model.glb",
+   "bytes": 2460060
+  },
+  "yahboom_rosmaster_r2_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56adfdfcfa74537ed8c0ac43d3c7141511726256/parts/yahboom_rosmaster_r2_wheel/assets/model.glb",
+   "bytes": 514240
+  },
+  "yahboom_rosmaster_r2_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56adfdfcfa74537ed8c0ac43d3c7141511726256/parts/yahboom_rosmaster_r2_lidar/assets/model.glb",
+   "bytes": 224596
+  },
+  "yahboom_rosmaster_r2_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56adfdfcfa74537ed8c0ac43d3c7141511726256/parts/yahboom_rosmaster_r2_depth_camera/assets/model.glb",
+   "bytes": 98288
+  },
+  "husarion_rosbot3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_rosbot3_chassis/assets/model.glb",
+   "bytes": 1364856
+  },
+  "husarion_rosbot3_standard_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_rosbot3_standard_wheel_left/assets/model.glb",
+   "bytes": 459052
+  },
+  "husarion_rosbot3_standard_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_rosbot3_standard_wheel_right/assets/model.glb",
+   "bytes": 447436
+  },
+  "husarion_lynx_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_lynx_chassis/assets/model.glb",
+   "bytes": 1168948
+  },
+  "husarion_lynx_wh05_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_lynx_wh05_wheel_left/assets/model.glb",
+   "bytes": 716736
+  },
+  "husarion_lynx_wh05_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7cad6dfb0488e3ad9ebe0fc84dc09c441fcaa67c/parts/husarion_lynx_wh05_wheel_right/assets/model.glb",
+   "bytes": 716720
+  },
+  "luxonis_oak_d": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/76d2a5036e6c73b7a7f0bcef738977919dba9621/parts/luxonis_oak_d/assets/model.glb",
+   "bytes": 3086604
+  },
+  "luxonis_oak_d_sr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/76d2a5036e6c73b7a7f0bcef738977919dba9621/parts/luxonis_oak_d_sr/assets/model.glb",
+   "bytes": 8362948
+  },
+  "yahboom_rdk_x3_robot_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/31ad65a7d243bbe9fcba6fbd72996a5aa48980d6/parts/yahboom_rdk_x3_robot_chassis/assets/model.glb",
+   "bytes": 2869812
+  },
+  "yahboom_rdk_x3_robot_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/31ad65a7d243bbe9fcba6fbd72996a5aa48980d6/parts/yahboom_rdk_x3_robot_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 845716
+  },
+  "yahboom_rdk_x3_robot_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/31ad65a7d243bbe9fcba6fbd72996a5aa48980d6/parts/yahboom_rdk_x3_robot_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 843296
+  },
+  "yahboom_rdk_x3_robot_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/31ad65a7d243bbe9fcba6fbd72996a5aa48980d6/parts/yahboom_rdk_x3_robot_lidar/assets/model.glb",
+   "bytes": 288468
+  },
+  "yahboom_rdk_x3_robot_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/31ad65a7d243bbe9fcba6fbd72996a5aa48980d6/parts/yahboom_rdk_x3_robot_camera/assets/model.glb",
+   "bytes": 586364
+  },
+  "luxonis_oak_4_d": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6799e4ffcef6f7c7e8ed3a4e6763399f985f0af1/parts/luxonis_oak_4_d/assets/model.glb",
+   "bytes": 8083324
+  },
+  "luxonis_oak_4_d_pro": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6799e4ffcef6f7c7e8ed3a4e6763399f985f0af1/parts/luxonis_oak_4_d_pro/assets/model.glb",
+   "bytes": 8052920
+  },
+  "luxonis_oak_d_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1401cbebf9e935d8689077a8364caa952868ada7/parts/luxonis_oak_d_poe/assets/model.glb",
+   "bytes": 5165924
+  },
+  "luxonis_oak_d_cm4_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6799e4ffcef6f7c7e8ed3a4e6763399f985f0af1/parts/luxonis_oak_d_cm4_poe/assets/model.glb",
+   "bytes": 6942008
+  },
+  "luxonis_oak_d_lr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1401cbebf9e935d8689077a8364caa952868ada7/parts/luxonis_oak_d_lr/assets/model.glb",
+   "bytes": 6472580
+  },
+  "luxonis_oak_d_tof": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6799e4ffcef6f7c7e8ed3a4e6763399f985f0af1/parts/luxonis_oak_d_tof/assets/model.glb",
+   "bytes": 9092072
+  },
+  "luxonis_oak_d_iot_75": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ead281acabc5736798a23fb626de8628c7f506bd/parts/luxonis_oak_d_iot_75/assets/model.glb",
+   "bytes": 3451084
+  },
+  "luxonis_oak_4_cs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_4_cs/assets/model.glb",
+   "bytes": 7538380
+  },
+  "luxonis_oak_4_s": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_4_s/assets/model.glb",
+   "bytes": 7440440
+  },
+  "luxonis_oak_1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1/assets/model.glb",
+   "bytes": 5249052
+  },
+  "luxonis_oak_1_lite": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_lite/assets/model.glb",
+   "bytes": 5249052
+  },
+  "luxonis_oak_1_lite_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_lite_w/assets/model.glb",
+   "bytes": 8367480
+  },
+  "luxonis_oak_1_max": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_max/assets/model.glb",
+   "bytes": 8367480
+  },
+  "luxonis_oak_1_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_poe/assets/model.glb",
+   "bytes": 10311532
+  },
+  "luxonis_oak_1_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_w/assets/model.glb",
+   "bytes": 8367480
+  },
+  "hello_robot_pg4_parallel_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f7cd9981cbbdfaf6656a12a584581d258ef23783/parts/hello_robot_pg4_parallel_gripper/assets/model.glb",
+   "bytes": 528896
+  },
+  "yahboom_microros_pi5_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_chassis/assets/model.glb",
+   "bytes": 6195476
+  },
+  "yahboom_microros_pi5_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_wheel/assets/model.glb",
+   "bytes": 214188
+  },
+  "yahboom_microros_pi5_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_lidar/assets/model.glb",
+   "bytes": 528012
+  },
+  "yahboom_microros_pi5_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_camera/assets/model.glb",
+   "bytes": 609356
+  },
+  "yahboom_microros_esp32_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6a6440eab3f76643d8975eb6849dbac05a3d8fbd/parts/yahboom_microros_esp32_chassis/assets/model.glb",
+   "bytes": 1836200
+  },
+  "yahboom_microros_esp32_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6a6440eab3f76643d8975eb6849dbac05a3d8fbd/parts/yahboom_microros_esp32_wheel/assets/model.glb",
+   "bytes": 214188
+  },
+  "yahboom_microros_esp32_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6a6440eab3f76643d8975eb6849dbac05a3d8fbd/parts/yahboom_microros_esp32_lidar/assets/model.glb",
+   "bytes": 528012
+  },
+  "luxonis_oak_som": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5653a7165166f058a104b5546a89f0e92cf13ffb/parts/luxonis_oak_som/assets/model.glb",
+   "bytes": 1390708
+  },
+  "luxonis_oak_som_pro": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5653a7165166f058a104b5546a89f0e92cf13ffb/parts/luxonis_oak_som_pro/assets/model.glb",
+   "bytes": 1680556
+  },
+  "luxonis_oak_som_iot": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5653a7165166f058a104b5546a89f0e92cf13ffb/parts/luxonis_oak_som_iot/assets/model.glb",
+   "bytes": 1261612
+  },
+  "yahboom_roboduino_v2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/836857f02f889b9ef1abbf72425eb91da537b27d/parts/yahboom_roboduino_v2_chassis/assets/model.glb",
+   "bytes": 7041712
+  },
+  "yahboom_roboduino_v2_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/836857f02f889b9ef1abbf72425eb91da537b27d/parts/yahboom_roboduino_v2_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 697432
+  },
+  "yahboom_roboduino_v2_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/836857f02f889b9ef1abbf72425eb91da537b27d/parts/yahboom_roboduino_v2_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 679332
+  },
+  "yahboom_roboduino_v2_ultrasonic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/836857f02f889b9ef1abbf72425eb91da537b27d/parts/yahboom_roboduino_v2_ultrasonic/assets/model.glb",
+   "bytes": 303444
+  },
+  "yahboom_roboduino_v2_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/836857f02f889b9ef1abbf72425eb91da537b27d/parts/yahboom_roboduino_v2_camera/assets/model.glb",
+   "bytes": 2384132
+  },
+  "yahboom_nuwa_hp60c_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9e9a01980a2fbe1f79b4d2e31fd53a092fdcdcfb/parts/yahboom_nuwa_hp60c_depth_camera/assets/model.glb",
+   "bytes": 1375128
+  },
+  "yahboom_ai_view_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9e9a01980a2fbe1f79b4d2e31fd53a092fdcdcfb/parts/yahboom_ai_view_depth_camera/assets/model.glb",
+   "bytes": 1954788
+  },
+  "yahboom_imx415_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9e9a01980a2fbe1f79b4d2e31fd53a092fdcdcfb/parts/yahboom_imx415_camera/assets/model.glb",
+   "bytes": 118276
+  },
+  "yahboom_cmp10a_imu": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/78512e7aab07c8f9ad9f90324368d408f4d7cd41/parts/yahboom_cmp10a_imu/assets/model.glb",
+   "bytes": 412728
+  },
+  "yahboom_imu_module_6_axis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/78512e7aab07c8f9ad9f90324368d408f4d7cd41/parts/yahboom_imu_module_6_axis/assets/model.glb",
+   "bytes": 893748
+  },
+  "yahboom_imu_module_9_axis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/78512e7aab07c8f9ad9f90324368d408f4d7cd41/parts/yahboom_imu_module_9_axis/assets/model.glb",
+   "bytes": 913812
+  },
+  "yahboom_imu_module_10_axis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/78512e7aab07c8f9ad9f90324368d408f4d7cd41/parts/yahboom_imu_module_10_axis/assets/model.glb",
+   "bytes": 939380
+  },
+  "yahboom_dofbot_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9bfa3361997d6efc79b2a76be663619994c1d4bf/parts/yahboom_dofbot_arm/assets/model.glb",
+   "bytes": 4191084
+  },
+  "yahboom_dofbot_se_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9bfa3361997d6efc79b2a76be663619994c1d4bf/parts/yahboom_dofbot_se_arm/assets/model.glb",
+   "bytes": 6961056
+  },
+  "yahboom_dofbot_ultra_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/57decee05d5c2bcc449ddb80828979d2225aed84/parts/yahboom_dofbot_ultra_arm/assets/model.glb",
+   "bytes": 4692452
+  },
+  "yahboom_dofbot_pro_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/57decee05d5c2bcc449ddb80828979d2225aed84/parts/yahboom_dofbot_pro_arm/assets/model.glb",
+   "bytes": 6253276
+  },
+  "yahboom_ydlidar_tw3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7b80515f917e585b22a5360ff09e99c936881080/parts/yahboom_ydlidar_tw3/assets/model.glb",
+   "bytes": 400820
+  },
+  "yahboom_tinyf_laser_ranging_module": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7b80515f917e585b22a5360ff09e99c936881080/parts/yahboom_tinyf_laser_ranging_module/assets/model.glb",
+   "bytes": 818776
+  },
+  "yahboom_rosmaster_m1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a2b5e3be5f304e1b3fdff2f1638c182f05d99616/parts/yahboom_rosmaster_m1_chassis/assets/model.glb",
+   "bytes": 2724132
+  },
+  "yahboom_rosmaster_m1_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a2b5e3be5f304e1b3fdff2f1638c182f05d99616/parts/yahboom_rosmaster_m1_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 841628
+  },
+  "yahboom_rosmaster_m1_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a2b5e3be5f304e1b3fdff2f1638c182f05d99616/parts/yahboom_rosmaster_m1_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 865092
+  },
+  "yahboom_rosmaster_m1_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a2b5e3be5f304e1b3fdff2f1638c182f05d99616/parts/yahboom_rosmaster_m1_lidar/assets/model.glb",
+   "bytes": 213684
+  },
+  "yahboom_rosmaster_m1_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ae2d65e76b875e19a669a9e197864cea9d29a8d9/parts/yahboom_rosmaster_m1_depth_camera/assets/model.glb",
+   "bytes": 774796
+  },
+  "yahboom_rosmaster_a1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ae2d65e76b875e19a669a9e197864cea9d29a8d9/parts/yahboom_rosmaster_a1_chassis/assets/model.glb",
+   "bytes": 2677424
+  },
+  "yahboom_rosmaster_a1_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ae2d65e76b875e19a669a9e197864cea9d29a8d9/parts/yahboom_rosmaster_a1_wheel/assets/model.glb",
+   "bytes": 261724
+  },
+  "yahboom_rosmaster_a1_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ae2d65e76b875e19a669a9e197864cea9d29a8d9/parts/yahboom_rosmaster_a1_lidar/assets/model.glb",
+   "bytes": 704656
+  },
+  "yahboom_rosmaster_a1_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ae2d65e76b875e19a669a9e197864cea9d29a8d9/parts/yahboom_rosmaster_a1_depth_camera/assets/model.glb",
+   "bytes": 1308164
+  },
+  "yahboom_microros_v2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/acb60c5265b5e11afee777a9d182bdd0072acf2a/parts/yahboom_microros_v2_chassis/assets/model.glb",
+   "bytes": 2183564
+  },
+  "yahboom_microros_v2_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/acb60c5265b5e11afee777a9d182bdd0072acf2a/parts/yahboom_microros_v2_wheel/assets/model.glb",
+   "bytes": 109972
+  },
+  "yahboom_microros_v2_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/acb60c5265b5e11afee777a9d182bdd0072acf2a/parts/yahboom_microros_v2_lidar/assets/model.glb",
+   "bytes": 311324
+  },
+  "yahboom_microros_v2_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/acb60c5265b5e11afee777a9d182bdd0072acf2a/parts/yahboom_microros_v2_camera/assets/model.glb",
+   "bytes": 750312
+  },
+  "yahboom_rosmaster_m3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c91a646cecbc73124e76fced8802b4a638a1c9fb/parts/yahboom_rosmaster_m3_chassis/assets/model.glb",
+   "bytes": 3247664
+  },
+  "yahboom_rosmaster_m3_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c91a646cecbc73124e76fced8802b4a638a1c9fb/parts/yahboom_rosmaster_m3_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 838624
+  },
+  "yahboom_rosmaster_m3_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c91a646cecbc73124e76fced8802b4a638a1c9fb/parts/yahboom_rosmaster_m3_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 812236
+  },
+  "yahboom_rosmaster_m3_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c91a646cecbc73124e76fced8802b4a638a1c9fb/parts/yahboom_rosmaster_m3_lidar/assets/model.glb",
+   "bytes": 241096
+  },
+  "yahboom_rosmaster_m3_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c91a646cecbc73124e76fced8802b4a638a1c9fb/parts/yahboom_rosmaster_m3_depth_camera/assets/model.glb",
+   "bytes": 643464
+  },
+  "yahboom_mspm0_car_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bc865d67bcc0f9ccb302f9790cc2092e39be7a1f/parts/yahboom_mspm0_car_chassis/assets/model.glb",
+   "bytes": 2598712
+  },
+  "yahboom_mspm0_car_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bc865d67bcc0f9ccb302f9790cc2092e39be7a1f/parts/yahboom_mspm0_car_wheel/assets/model.glb",
+   "bytes": 859264
+  },
+  "yahboom_mspm0_car_ultrasonic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bc865d67bcc0f9ccb302f9790cc2092e39be7a1f/parts/yahboom_mspm0_car_ultrasonic/assets/model.glb",
+   "bytes": 574364
+  },
+  "yahboom_alloy_chassis_2wd": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_2wd/assets/model.glb",
+   "bytes": 2951584
+  },
+  "yahboom_alloy_chassis_2wd_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_2wd_wheel/assets/model.glb",
+   "bytes": 1181860
+  },
+  "yahboom_alloy_chassis_4wd": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_4wd/assets/model.glb",
+   "bytes": 2904036
+  },
+  "yahboom_alloy_chassis_4wd_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_4wd_wheel/assets/model.glb",
+   "bytes": 1181860
+  },
+  "yahboom_jetcobot_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/462a2fc131f15d233ba276cb36220a256eeebc7d/parts/yahboom_jetcobot_arm/assets/model.glb",
+   "bytes": 4376996
+  },
+  "yahboom_raspbot_v2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f67c995540b551ce053269eb4a1227d3ee9af752/parts/yahboom_raspbot_v2_chassis/assets/model.glb",
+   "bytes": 1296200
+  },
+  "yahboom_raspbot_v2_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f67c995540b551ce053269eb4a1227d3ee9af752/parts/yahboom_raspbot_v2_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 813752
+  },
+  "yahboom_raspbot_v2_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f67c995540b551ce053269eb4a1227d3ee9af752/parts/yahboom_raspbot_v2_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 795928
+  },
+  "yahboom_raspbot_v2_ultrasonic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f67c995540b551ce053269eb4a1227d3ee9af752/parts/yahboom_raspbot_v2_ultrasonic/assets/model.glb",
+   "bytes": 62824
+  },
+  "yahboom_raspbot_v2_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f67c995540b551ce053269eb4a1227d3ee9af752/parts/yahboom_raspbot_v2_camera/assets/model.glb",
+   "bytes": 388652
+  },
+  "hiwonder_clawpi_grey_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_chassis/assets/model.glb",
+   "bytes": 896916
+  },
+  "hiwonder_clawpi_grey_mecanum_wheel_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_mecanum_wheel_fl_rr/assets/model.glb",
+   "bytes": 846884
+  },
+  "hiwonder_clawpi_grey_mecanum_wheel_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_mecanum_wheel_fr_rl/assets/model.glb",
+   "bytes": 847664
+  },
+  "hiwonder_clawpi_grey_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_camera/assets/model.glb",
+   "bytes": 529276
+  },
+  "hiwonder_clawpi_grey_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_lidar/assets/model.glb",
+   "bytes": 66728
+  },
+  "hiwonder_clawpi_grey_claw": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_claw/assets/model.glb",
+   "bytes": 220492
+  },
+  "hiwonder_armpi_fpv_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c6e2a3c76d8c0ddadbe606326baad609081c6cb7/parts/hiwonder_armpi_fpv_arm/assets/model.glb",
+   "bytes": 2525456
+  },
+  "hiwonder_armpi_ultra_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c6e2a3c76d8c0ddadbe606326baad609081c6cb7/parts/hiwonder_armpi_ultra_arm/assets/model.glb",
+   "bytes": 3340236
+  },
+  "hiwonder_nexarm_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c6e2a3c76d8c0ddadbe606326baad609081c6cb7/parts/hiwonder_nexarm_arm/assets/model.glb",
+   "bytes": 3689600
+  },
+  "hiwonder_ackermann_chassis_double": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/847c357663584cbf75c7dba3cfd6140b90cfd882/parts/hiwonder_ackermann_chassis_double/assets/model.glb",
+   "bytes": 2844208
+  },
+  "hiwonder_ackermann_chassis_double_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/847c357663584cbf75c7dba3cfd6140b90cfd882/parts/hiwonder_ackermann_chassis_double_wheel/assets/model.glb",
+   "bytes": 1044064
+  },
+  "hiwonder_jetrover_acker_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_chassis/assets/model.glb",
+   "bytes": 723172
+  },
+  "hiwonder_jetrover_acker_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_lidar/assets/model.glb",
+   "bytes": 84176
+  },
+  "hiwonder_jetrover_acker_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_arm/assets/model.glb",
+   "bytes": 803088
+  },
+  "hiwonder_jetrover_acker_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_depth_camera/assets/model.glb",
+   "bytes": 413188
+  },
+  "hiwonder_landerpi_acker_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_chassis/assets/model.glb",
+   "bytes": 551292
+  },
+  "hiwonder_landerpi_acker_front_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_front_wheel/assets/model.glb",
+   "bytes": 997224
+  },
+  "hiwonder_landerpi_acker_rear_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_rear_wheel/assets/model.glb",
+   "bytes": 1005212
+  },
+  "hiwonder_landerpi_acker_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_lidar/assets/model.glb",
+   "bytes": 93640
+  },
+  "hiwonder_landerpi_acker_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_arm/assets/model.glb",
+   "bytes": 1163628
+  },
+  "hiwonder_landerpi_acker_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_depth_camera/assets/model.glb",
+   "bytes": 400112
+  },
+  "hiwonder_rosorin_diff_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_diff_chassis/assets/model.glb",
+   "bytes": 1854832
+  },
+  "hiwonder_rosorin_acker_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_acker_chassis/assets/model.glb",
+   "bytes": 1544832
+  },
+  "hiwonder_rosorin_rubber_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_rubber_wheel/assets/model.glb",
+   "bytes": 844048
+  },
+  "hiwonder_rosorin_advanced_lidar": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_advanced_lidar/assets/model.glb",
+   "bytes": 126580
+  },
+  "hiwonder_rosorin_advanced_depth_camera": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_advanced_depth_camera/assets/model.glb",
+   "bytes": 350164
+  },
+  "luxonis_oak_ffc_4p_poe": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/8c97588c32ff70743e853a400cebfc399508dbb4/parts/luxonis_oak_ffc_4p_poe/assets/model.glb",
+   "bytes": 12042444
+  },
+  "husarion_rplidar_a2m12": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rplidar_a2m12/assets/model.glb",
+   "bytes": 147984
+  },
+  "husarion_rplidar_a3m1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rplidar_a3m1/assets/model.glb",
+   "bytes": 148008
+  },
+  "husarion_rplidar_s2m1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rplidar_s2m1/assets/model.glb",
+   "bytes": 34252
+  },
+  "husarion_rplidar_s3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rplidar_s3/assets/model.glb",
+   "bytes": 21444
+  },
+  "realsense_d415": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/realsense_d415/assets/model.glb",
+   "bytes": 1210664
+  },
+  "realsense_d421": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/realsense_d421/assets/model.glb",
+   "bytes": 14884
+  },
+  "robotis_omy_3m": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omy_3m/assets/model.glb",
+   "bytes": 13277540
+  },
+  "robotis_omy_f3m": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omy_f3m/assets/model.glb",
+   "bytes": 16979556
+  },
+  "robotis_omy_ai3m_follower": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omy_ai3m_follower/assets/model.glb",
+   "bytes": 16979556
+  },
+  "robotis_omx_ai_follower": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omx_ai_follower/assets/model.glb",
+   "bytes": 4732800
+  },
+  "robotis_hand_rh_p12_rn": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_hand_rh_p12_rn/assets/model.glb",
+   "bytes": 38372
+  },
+  "hello_robot_stretch4_omni_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/hello_robot_stretch4_omni_wheel/assets/model.glb",
+   "bytes": 421332
+  },
+  "husarion_rplidar_lpx_t1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rplidar_lpx_t1/assets/model.glb",
+   "bytes": 29100
+  },
+  "waveshare_jetbot_ros_65mm_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/waveshare_jetbot_ros_65mm_wheel/assets/model.glb",
+   "bytes": 807120
+  },
+  "husarion_panther_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_panther_chassis/assets/model.glb",
+   "bytes": 14807132
+  },
+  "husarion_panther_wh01_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_panther_wh01_wheel_front_left/assets/model.glb",
+   "bytes": 8784412
+  },
+  "husarion_panther_wh01_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_panther_wh01_wheel_front_right/assets/model.glb",
+   "bytes": 8762716
+  },
+  "husarion_panther_wh01_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_panther_wh01_wheel_rear_left/assets/model.glb",
+   "bytes": 8784148
+  },
+  "husarion_panther_wh01_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_panther_wh01_wheel_rear_right/assets/model.glb",
+   "bytes": 8762596
+  },
+  "husarion_rosbot_xl_mecanum_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rosbot_xl_mecanum_chassis/assets/model.glb",
+   "bytes": 877724
+  },
+  "husarion_rosbot_xl_mecanum_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rosbot_xl_mecanum_wheel_front_left/assets/model.glb",
+   "bytes": 717848
+  },
+  "husarion_rosbot_xl_mecanum_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rosbot_xl_mecanum_wheel_front_right/assets/model.glb",
+   "bytes": 717848
+  },
+  "husarion_rosbot_xl_mecanum_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rosbot_xl_mecanum_wheel_rear_left/assets/model.glb",
+   "bytes": 717852
+  },
+  "husarion_rosbot_xl_mecanum_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/husarion_rosbot_xl_mecanum_wheel_rear_right/assets/model.glb",
+   "bytes": 717844
+  },
+  "lego_42109_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_42109_chassis/assets/model.glb",
+   "bytes": 10160852
+  },
+  "lego_42109_front_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_42109_front_wheel/assets/model.glb",
+   "bytes": 271008
+  },
+  "lego_42109_rear_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_42109_rear_wheel/assets/model.glb",
+   "bytes": 379788
+  },
+  "lego_42124_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_42124_chassis/assets/model.glb",
+   "bytes": 9322296
+  },
+  "lego_42124_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_42124_wheel/assets/model.glb",
+   "bytes": 414492
+  },
+  "lego_42099_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_42099_chassis/assets/model.glb",
+   "bytes": 20750064
+  },
+  "lego_42099_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_42099_wheel/assets/model.glb",
+   "bytes": 370676
+  },
+  "lego_45678_driving_base_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_45678_driving_base_chassis/assets/model.glb",
+   "bytes": 2934280
+  },
+  "lego_45678_driving_base_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45678_driving_base_wheel/assets/model.glb",
+   "bytes": 207816
+  },
+  "lego_8527_tribot_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_8527_tribot_chassis/assets/model.glb",
+   "bytes": 4849980
+  },
+  "lego_8527_tribot_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_8527_tribot_wheel/assets/model.glb",
+   "bytes": 219436
+  },
+  "lego_45544_driving_base_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_45544_driving_base_chassis/assets/model.glb",
+   "bytes": 2949208
+  },
+  "lego_45544_driving_base_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45544_driving_base_wheel/assets/model.glb",
+   "bytes": 463348
+  },
+  "lego_45544_ultrasonic_sensor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45544_ultrasonic_sensor/assets/model.glb",
+   "bytes": 892840
+  },
+  "lego_45678_distance_sensor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/3d30693a0f86a492fc5eb02293f099a7ba82e5b5/parts/lego_45678_distance_sensor/assets/model.glb",
+   "bytes": 614100
+  },
+  "lego_controlplus_xl_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_controlplus_xl_motor/assets/model.glb",
+   "bytes": 450192
+  },
+  "lego_controlplus_l_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_controlplus_l_motor/assets/model.glb",
+   "bytes": 273860
+  },
+  "lego_nxt_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_nxt_motor/assets/model.glb",
+   "bytes": 349128
+  },
+  "lego_spike_medium_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_spike_medium_motor/assets/model.glb",
+   "bytes": 288920
+  },
+  "lego_ev3_large_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_ev3_large_motor/assets/model.glb",
+   "bytes": 406872
+  }
+ }
+}
