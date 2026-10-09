@@ -5,8 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        The library lists parts anyone can get: a product on its maker's page, or a design published with a licence. A maintainer builds the part from what you give here, checks that it compiles and mounts as described, and it appears in the Studio with your credit.
-        **Never paste an API key.**
+        A maintainer builds the part from this, and it appears in the Studio with your credit.
   - type: input
     id: name
     attributes:
