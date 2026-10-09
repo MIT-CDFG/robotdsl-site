@@ -64,6 +64,10 @@ The overview is copied unchanged from the narrated 1080p render, the latest deli
 
 The three standalone hardware clips and their posters are unchanged project assets. The page shows the three clips side by side and describes their composite views, without naming or specifying the platform. The benchmark's chart title limits the success rates to simulation; the hardware clips make no success claim. The existing social-preview image is unchanged.
 
+## Practices the copilot follows
+
+Where MobileCopilot Studio is served with its compiler, its copilot measures the robot it built before it trusts a picture of it, and ends its answer with a report of what it checked, what it did not check and what it assumed. Both follow the practice of [text-to-cad](https://github.com/earthtojake/text-to-cad) (© 2026 Thompson Labs LLC, MIT License), whose CAD skill validates a model with geometry checks, uses snapshots for review and reports only the checks that ran. The Studio takes these ideas and none of text-to-cad's code. With thanks to its authors.
+
 ## Manuscript basis
 
 The manuscript submodule was uninitialized in the working experiment checkout. To leave that checkout untouched, the source URL from `robotdsl-experiment/.gitmodules` was fetched into an isolated temporary clone. Latest remote HEAD at retrieval: `8606c8b`, September 17, 2026.
