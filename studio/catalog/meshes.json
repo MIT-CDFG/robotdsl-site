@@ -1416,6 +1416,46 @@
   "lego_ev3_large_motor": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e8b7b3670febadb925d40ccf9e05c112bb273ec1/parts/lego_ev3_large_motor/assets/model.glb",
    "bytes": 406872
+  },
+  "lego_42129_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42129_chassis/assets/model.glb",
+   "bytes": 30127840
+  },
+  "lego_42129_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42129_wheel/assets/model.glb",
+   "bytes": 367068
+  },
+  "lego_42095_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42095_chassis/assets/model.glb",
+   "bytes": 6290704
+  },
+  "lego_42095_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42095_track_left/assets/model.glb",
+   "bytes": 1306064
+  },
+  "lego_42095_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42095_track_right/assets/model.glb",
+   "bytes": 1306136
+  },
+  "lego_pf_l_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_pf_l_motor/assets/model.glb",
+   "bytes": 205216
+  },
+  "lego_42065_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42065_chassis/assets/model.glb",
+   "bytes": 6376120
+  },
+  "lego_42065_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42065_track_left/assets/model.glb",
+   "bytes": 1735596
+  },
+  "lego_42065_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_42065_track_right/assets/model.glb",
+   "bytes": 1735592
+  },
+  "lego_pf_m_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d71648fb11ddd43172d9dd6918dd4508711f33f8/parts/lego_pf_m_motor/assets/model.glb",
+   "bytes": 73460
   }
  }
 }
