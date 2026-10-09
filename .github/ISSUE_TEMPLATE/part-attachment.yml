@@ -1,0 +1,140 @@
+name: Submit an attachment
+description: A product, or a part of your own, to add to the component library as an attachment.
+title: 'Part: '
+labels:
+- part submission
+body:
+- type: markdown
+  attributes:
+    value: A maintainer builds the part from this, and it appears in the Studio with your credit.
+- type: input
+  id: name
+  attributes:
+    label: Part name
+    placeholder: e.g. Raspberry Pi 5, 8 GB
+  validations:
+    required: true
+- type: input
+  id: page
+  attributes:
+    label: Link
+    placeholder: https://
+    description: 'Where it is sold, or where its files are: a product page, Printables, GitHub, Google Drive.'
+  validations:
+    required: true
+- type: input
+  id: price
+  attributes:
+    label: Price
+    placeholder: '7.45'
+    description: 0 for a part that is not sold.
+  validations:
+    required: true
+- type: dropdown
+  id: currency
+  attributes:
+    label: Currency
+    options:
+    - USD
+    - EUR
+    - JPY
+    - GBP
+    - CNY
+    - KRW
+    - another (say which in the notes)
+  validations:
+    required: true
+- type: input
+  id: pack
+  attributes:
+    label: How many the price buys
+    value: '1'
+  validations:
+    required: true
+- type: input
+  id: mass_g
+  attributes:
+    label: Mass (g)
+    placeholder: '20'
+  validations:
+    required: true
+- type: input
+  id: what
+  attributes:
+    label: What it is
+    placeholder: an arm, a gripper, a computer, a screen, a bracket, …
+  validations:
+    required: true
+- type: input
+  id: size_mm
+  attributes:
+    label: Size (mm)
+    placeholder: length × width × height, e.g. 70 × 24 × 20
+  validations:
+    required: true
+- type: textarea
+  id: mounting
+  attributes:
+    label: How it mounts
+    placeholder: e.g. four M2.5 holes, 58 × 49 mm apart
+  validations:
+    required: true
+- type: textarea
+  id: model
+  attributes:
+    label: 3D model
+    description: Drop a zip here (up to 25 MB) or paste a link. STEP, STL, OBJ or GLB.
+  validations:
+    required: true
+- type: dropdown
+  id: unit
+  attributes:
+    label: The model's unit
+    options:
+    - millimetres
+    - metres
+    - inches
+  validations:
+    required: true
+- type: input
+  id: source
+  attributes:
+    label: Where the numbers are from
+    placeholder: 'a data sheet or page; or: measured'
+  validations:
+    required: false
+- type: dropdown
+  id: licence
+  attributes:
+    label: Licence
+    description: The library publishes the 3D model, so a part of your own needs one.
+    options:
+    - A product, under its maker's rights
+    - CC BY 4.0
+    - CC BY-SA 4.0
+    - CC0 1.0
+    - MIT
+    - Other (say which in the notes)
+  validations:
+    required: true
+- type: checkboxes
+  id: rights
+  attributes:
+    label: Rights
+    options:
+    - label: It is a product sold at the link above, or I made this part and may publish it under the licence I chose.
+      required: true
+- type: textarea
+  id: declaration
+  attributes:
+    label: component.yaml
+    description: Only if you have written one.
+    render: yaml
+  validations:
+    required: false
+- type: textarea
+  id: notes
+  attributes:
+    label: Notes
+  validations:
+    required: false

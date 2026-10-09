@@ -10,7 +10,7 @@ Without the Studio, open an issue with the **Generated design looks wrong** form
 
 ## Add a part
 
-**Submit a part** in the Studio opens the **Submit a part** issue form. It takes a product, or a part of your own: its name, a link to where it is bought or to its files (a Google Drive link is fine), its kind, price, mass and size, its specifications, how it mounts, its 3D model and the licence it is published under. A maintainer builds the part from that, checks that it compiles and mounts as described, and it appears in the Studio with your credit.
+**Submit a part** in the Studio asks what kind of part it is and opens that kind's issue form (here: **Submit a wheel**, **Submit a motor**, and so on). It takes a product, or a part of your own: its name, a link to where it is sold or to its files (a Google Drive link is fine), its price and mass, the numbers its kind needs, how it mounts, its 3D model and the licence it is published under. A maintainer builds the part from that, checks that it compiles and mounts as described, and it appears in the Studio with your credit.
 
 ## Ask and share
 
