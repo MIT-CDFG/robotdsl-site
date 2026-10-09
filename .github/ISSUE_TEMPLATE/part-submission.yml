@@ -1,0 +1,77 @@
+name: Submit a part
+description: A product, or a design you published, to add to the component library.
+labels: ["part submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The library lists parts anyone can get: a product on its maker's page, or a design published with a licence. A maintainer builds the part from what you give here, checks that it compiles and mounts as described, and it appears in the Studio with your credit.
+        **Never paste an API key.**
+  - type: input
+    id: name
+    attributes:
+      label: Part name
+      placeholder: e.g. Pololu 90×10mm wheel pair, black
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Where it can be bought or downloaded
+      description: The maker's product page, or the page of your published design (Printables, GitHub, …).
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: What kind of part
+      options:
+        - chassis
+        - wheel
+        - track
+        - motor
+        - battery
+        - motor driver
+        - sensor
+        - attachment (an arm, a gripper, a computer, a bracket, …)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What it is
+      description: What the part does, its size and mass if you know them, and how it mounts (holes, shafts, a flat face).
+    validations:
+      required: true
+  - type: textarea
+    id: model
+    attributes:
+      label: 3D model
+      description: Attach the maker's CAD or your design as a zip (STEP, STL, OBJ or GLB; say whether it is in millimetres or metres), or give a link to it. GitHub takes zip files up to 25 MB.
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Licence
+      description: A product keeps its maker's rights. A design of yours is published under the licence you choose.
+      options:
+        - A product, under its maker's rights
+        - CC BY 4.0
+        - CC BY-SA 4.0
+        - CC0 1.0
+        - MIT
+        - Other (say which in the notes)
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights
+      options:
+        - label: It is a product sold on the page above, or I made this part and may publish it under the licence I chose.
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else, such as the robot you use it on, or a variant to add too.

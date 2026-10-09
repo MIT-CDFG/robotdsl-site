@@ -10,7 +10,7 @@ Without the Studio, open an issue with the **Generated design looks wrong** form
 
 ## Add a part
 
-**Upload a part** in the Studio takes a mesh (STL, DAE, OBJ or GLB, in metres, up to 20 MB) and a JSON definition with the part's name, kind, connectors, mass and dimensions. You choose the licence the part is published under and confirm that you made it or may share it. Nothing enters the shared library automatically: automatic checks confirm that the part loads and compiles, and a maintainer reviews it before it is approved and credited to you.
+The library lists parts anyone can get: a product on its maker's page, or a design published with a licence. **Submit a part** in the Studio opens the **Submit a part** issue form: the part's name, where it is bought or downloaded, what kind of part it is, what it is and how it mounts, its 3D model (a zip, or a link) and its licence. A maintainer builds the part from that, checks that it compiles and mounts as described, and it appears in the Studio with your credit. A part of your own that is not published anywhere stays yours: use it in your own robot, but it cannot go into the shared library.
 
 ## Ask and share
 
@@ -20,4 +20,4 @@ Questions, designs you want to show and ideas go in [Discussions](https://github
 
 Never post an API key in an issue or discussion. If you posted one by mistake, revoke it with the provider first, then edit the post.
 
-Uploads and reports are stored on the team's server for review. An email address is optional; the team uses it to reply about your submission.
+Submissions and reports are GitHub issues of this repository, so they are public: leave out what you do not want to publish, and attach files you may share.
