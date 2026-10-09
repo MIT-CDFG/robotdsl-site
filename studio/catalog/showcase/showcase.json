@@ -1846,6 +1846,232 @@
    ]
   },
   {
+   "id": "lego_42065",
+   "robots": [
+    "LEGO® Technic 42065 RC Tracked Racer"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// LEGO Technic 42065, the RC Tracked Racer, as its instructions build it: the body with its Power Functions battery\n// box and infrared receiver on two tracks, each turned by a Power Functions M motor on the axle of one of its\n// sprockets, the left track's rear one and the right track's front one; it steers by the difference of their speeds.\nRobot lego_42065 {\n    intent \"LEGO Technic 42065 RC Tracked Racer, a base on two tracks\"\n\n    Tracked chassis(ref = \"lego_42065_chassis\")\n\n    Motor motor_left(ref = \"lego_pf_m_motor\", glue = (-0.08, 0.044, -0.004, 0, -1, 0))\n    Motor motor_right(ref = \"lego_pf_m_motor\", glue = (0.08, -0.044, 0.004, 0, 1, 0))\n\n    Track track_left(ref = \"lego_42065_track_left\", glue = (-0.08, 0.064, -0.004, 0, 1, 0))\n    Track track_right(ref = \"lego_42065_track_right\", glue = (0.08, -0.064, 0.004, 0, -1, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_42065, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_42065.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_42065_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_pf_m_motor",
+     "xyz": [
+      -0.08,
+      0.044,
+      -0.004
+     ],
+     "rpy": [
+      -3.141592653589793,
+      1.5707963267948966,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_pf_m_motor",
+     "xyz": [
+      0.08,
+      -0.044,
+      0.004
+     ],
+     "rpy": [
+      -0.0,
+      -1.5707963267948966,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "track_left",
+     "category": "track",
+     "part": "lego_42065_track_left",
+     "xyz": [
+      -0.08,
+      0.064,
+      -0.004
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "track_right",
+     "category": "track",
+     "part": "lego_42065_track_right",
+     "xyz": [
+      0.08,
+      -0.064,
+      0.004
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.03560000000000001,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.25 m from the point), then turned in place by about 3.3 rad, 3.1 commanded, touching nothing",
+   "lego": {
+    "file": "lego/lego_42065.glb",
+    "name": "lego_42065",
+    "chassis": "lego_42065_chassis",
+    "replaces": [
+     "lego_42065_chassis",
+     "lego_42065_track_left",
+     "lego_42065_track_right",
+     "lego_pf_m_motor"
+    ],
+    "elements": 704,
+    "shapes": 63,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "bytes": 1058856
+   },
+   "summary": "Model: 42065-1.mpd by Philippe Hurbain, without its remote (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 42065 RC Tracked Racer (2017)",
+     "url": "https://brickset.com/sets/42065-1"
+    },
+    {
+     "text": "Model: 42065-1.mpd by Philippe Hurbain, without its remote (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/349"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 35 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, Ishino Keiichiro, J.C. Tchang, James Jessiman, Jens Brühl, Joerg Sommerer, Jonathan P. Brown, Lutz Uhlmann, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Rene Rechthaler, Rolf Osterthun, Ross Crawford, Santeri Piippo, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, William Howard, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ]
+  },
+  {
    "id": "lego_8527_tribot",
    "robots": [
     "LEGO® Mindstorms® NXT 8527 Tri-bot"
