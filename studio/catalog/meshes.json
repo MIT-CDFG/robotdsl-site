@@ -38,7 +38,7 @@
    "bytes": 134268
   },
   "pololu_ball_caster_3_8in_metal": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_8in_metal/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_3_8in_plastic/assets/model.glb",
    "bytes": 134268
   },
   "pololu_ball_caster_1_2in_plastic": {
@@ -46,7 +46,7 @@
    "bytes": 136700
   },
   "pololu_ball_caster_1_2in_metal": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1_2in_metal/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1_2in_plastic/assets/model.glb",
    "bytes": 136700
   },
   "pololu_ball_caster_3_4in_plastic": {
@@ -62,7 +62,7 @@
    "bytes": 291360
   },
   "pololu_ball_caster_1in_ball_bearings": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1in_ball_bearings/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/pololu_ball_caster_1in_plastic_rollers/assets/model.glb",
    "bytes": 291360
   },
   "unitree_4d_lidar_l2": {
@@ -94,7 +94,7 @@
    "bytes": 1739444
   },
   "raspberry_pi_5_8gb": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/raspberry_pi_5_8gb/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/raspberry_pi_5_4gb/assets/model.glb",
    "bytes": 1739444
   },
   "pololu_romi_chassis_kit": {
@@ -458,11 +458,11 @@
    "bytes": 3674940
   },
   "realsense_d435i": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d435i/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d435/assets/model.glb",
    "bytes": 3674940
   },
   "realsense_d436": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d436/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/12a1e8dc4f50a6cce5994f93e06d6936ed145d0d/parts/realsense_d435/assets/model.glb",
    "bytes": 3674940
   },
   "realsense_d455": {
@@ -518,15 +518,15 @@
    "bytes": 290540
   },
   "pololu_digital_distance_sensor_10cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_10cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_5cm/assets/model.glb",
    "bytes": 290540
   },
   "pololu_digital_distance_sensor_15cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_15cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_5cm/assets/model.glb",
    "bytes": 290540
   },
   "pololu_distance_sensor_pw_50cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_50cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_5cm/assets/model.glb",
    "bytes": 290540
   },
   "pololu_digital_distance_sensor_25cm": {
@@ -534,23 +534,23 @@
    "bytes": 286740
   },
   "pololu_digital_distance_sensor_50cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_50cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
    "bytes": 286740
   },
   "pololu_digital_distance_sensor_100cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_100cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
    "bytes": 286740
   },
   "pololu_digital_distance_sensor_200cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_200cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
    "bytes": 286740
   },
   "pololu_distance_sensor_pw_130cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_130cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
    "bytes": 286740
   },
   "pololu_distance_sensor_pw_300cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_300cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm/assets/model.glb",
    "bytes": 286740
   },
   "pololu_digital_distance_sensor_25cm_side_entry": {
@@ -558,23 +558,23 @@
    "bytes": 272100
   },
   "pololu_digital_distance_sensor_50cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_50cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
    "bytes": 272100
   },
   "pololu_digital_distance_sensor_100cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_100cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
    "bytes": 272100
   },
   "pololu_digital_distance_sensor_200cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_200cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
    "bytes": 272100
   },
   "pololu_distance_sensor_pw_130cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_130cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
    "bytes": 272100
   },
   "pololu_distance_sensor_pw_300cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_pw_300cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_25cm_side_entry/assets/model.glb",
    "bytes": 272100
   },
   "pololu_digital_distance_sensor_v2_5cm": {
@@ -582,15 +582,15 @@
    "bytes": 265984
   },
   "pololu_digital_distance_sensor_v2_10cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_10cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm/assets/model.glb",
    "bytes": 265984
   },
   "pololu_digital_distance_sensor_v2_15cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_15cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm/assets/model.glb",
    "bytes": 265984
   },
   "pololu_distance_sensor_v2_pw_50cm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_v2_pw_50cm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm/assets/model.glb",
    "bytes": 265984
   },
   "pololu_digital_distance_sensor_v2_5cm_side_entry": {
@@ -598,15 +598,15 @@
    "bytes": 263440
   },
   "pololu_digital_distance_sensor_v2_10cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_10cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm_side_entry/assets/model.glb",
    "bytes": 263440
   },
   "pololu_digital_distance_sensor_v2_15cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_15cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm_side_entry/assets/model.glb",
    "bytes": 263440
   },
   "pololu_distance_sensor_v2_pw_50cm_side_entry": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_distance_sensor_v2_pw_50cm_side_entry/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_v2_5cm_side_entry/assets/model.glb",
    "bytes": 263440
   },
   "pololu_vl53l0x_carrier": {
@@ -614,15 +614,15 @@
    "bytes": 269352
   },
   "pololu_vl53l1x_carrier": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l1x_carrier/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l0x_carrier/assets/model.glb",
    "bytes": 269352
   },
   "pololu_vl53l3cx_carrier": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l3cx_carrier/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l0x_carrier/assets/model.glb",
    "bytes": 269352
   },
   "pololu_vl53l4cd_carrier": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l4cd_carrier/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_vl53l0x_carrier/assets/model.glb",
    "bytes": 269352
   },
   "pololu_vl6180x_carrier": {
@@ -670,23 +670,23 @@
    "bytes": 124644
   },
   "pololu_3pi_plus_2040_robot_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_hyper/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
    "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_turtle/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
    "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_hyper/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
    "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_standard/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
    "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_turtle/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
    "bytes": 2132620
   },
   "pololu_3pi_plus_32u4_oled_robot_hyper": {
@@ -694,23 +694,23 @@
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_standard/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_turtle/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_hyper/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_standard/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_turtle/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
    "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_robot_kit_hyper": {
@@ -718,11 +718,11 @@
    "bytes": 2134336
   },
   "pololu_3pi_plus_32u4_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_standard/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_hyper/assets/model.glb",
    "bytes": 2134336
   },
   "pololu_3pi_plus_32u4_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_turtle/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_hyper/assets/model.glb",
    "bytes": 2134336
   },
   "pololu_3pi_plus_chassis_kit": {
@@ -874,7 +874,7 @@
    "bytes": 5249052
   },
   "luxonis_oak_1_lite": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_lite/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1/assets/model.glb",
    "bytes": 5249052
   },
   "luxonis_oak_1_lite_w": {
@@ -882,7 +882,7 @@
    "bytes": 8367480
   },
   "luxonis_oak_1_max": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_max/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_lite_w/assets/model.glb",
    "bytes": 8367480
   },
   "luxonis_oak_1_poe": {
@@ -890,7 +890,7 @@
    "bytes": 10311532
   },
   "luxonis_oak_1_w": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_w/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/871dd148a85041d164416ff404ebeba3bf0baddd/parts/luxonis_oak_1_lite_w/assets/model.glb",
    "bytes": 8367480
   },
   "hello_robot_pg4_parallel_gripper": {
@@ -918,7 +918,7 @@
    "bytes": 1829788
   },
   "yahboom_microros_esp32_wheel": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6a6440eab3f76643d8975eb6849dbac05a3d8fbd/parts/yahboom_microros_esp32_wheel/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_wheel/assets/model.glb",
    "bytes": 214188
   },
   "yahboom_microros_esp32_lidar": {
@@ -1150,7 +1150,7 @@
    "bytes": 529276
   },
   "hiwonder_clawpi_grey_lidar": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9438ba6948f6018822f8ce283ba2b323cfd0a48b/parts/hiwonder_clawpi_grey_lidar/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/df40f2bf4f62a14b29f1899b864e04b4262e5a5c/parts/hiwonder_clawpi_lidar/assets/model.glb",
    "bytes": 66728
   },
   "hiwonder_clawpi_grey_claw": {
@@ -1174,7 +1174,7 @@
    "bytes": 2666700
   },
   "hiwonder_ackermann_chassis_double_wheel": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/847c357663584cbf75c7dba3cfd6140b90cfd882/parts/hiwonder_ackermann_chassis_double_wheel/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5e52d9b4a72ca51120d0e9092f72dff3a47962d7/parts/hiwonder_ackermann_chassis_wheel/assets/model.glb",
    "bytes": 1044064
   },
   "hiwonder_jetrover_acker_chassis": {
@@ -1182,15 +1182,15 @@
    "bytes": 723172
   },
   "hiwonder_jetrover_acker_lidar": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_lidar/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_lidar/assets/model.glb",
    "bytes": 84176
   },
   "hiwonder_jetrover_acker_arm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a55686af873021a392ba4d88c5cee64ec882b7a/parts/hiwonder_jetrover_acker_arm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a55686af873021a392ba4d88c5cee64ec882b7a/parts/hiwonder_jetrover_arm/assets/model.glb",
    "bytes": 1266552
   },
   "hiwonder_jetrover_acker_depth_camera": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_jetrover_acker_depth_camera/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_jetrover_depth_camera/assets/model.glb",
    "bytes": 413188
   },
   "hiwonder_landerpi_acker_chassis": {
@@ -1198,23 +1198,23 @@
    "bytes": 551292
   },
   "hiwonder_landerpi_acker_front_wheel": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_front_wheel/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_front_wheel/assets/model.glb",
    "bytes": 997224
   },
   "hiwonder_landerpi_acker_rear_wheel": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_rear_wheel/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_mentorpi_a1_rear_wheel/assets/model.glb",
    "bytes": 1005212
   },
   "hiwonder_landerpi_acker_lidar": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_lidar/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_lidar/assets/model.glb",
    "bytes": 93640
   },
   "hiwonder_landerpi_acker_arm": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_arm/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_arm/assets/model.glb",
    "bytes": 1163628
   },
   "hiwonder_landerpi_acker_depth_camera": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1a5d467d60414d66567bad81759efd4f2eae7298/parts/hiwonder_landerpi_acker_depth_camera/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_landerpi_depth_camera/assets/model.glb",
    "bytes": 400112
   },
   "hiwonder_rosorin_diff_chassis": {
@@ -1230,11 +1230,11 @@
    "bytes": 844048
   },
   "hiwonder_rosorin_advanced_lidar": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_advanced_lidar/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_rosorin_lidar/assets/model.glb",
    "bytes": 126580
   },
   "hiwonder_rosorin_advanced_depth_camera": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_advanced_depth_camera/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_depth_camera/assets/model.glb",
    "bytes": 350164
   },
   "luxonis_oak_ffc_4p_poe": {
@@ -1274,7 +1274,7 @@
    "bytes": 16979556
   },
   "robotis_omy_ai3m_follower": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omy_ai3m_follower/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/30d19b423722004acbdc9f2fb4f8d7c3ede6415c/parts/robotis_omy_f3m/assets/model.glb",
    "bytes": 16979556
   },
   "robotis_omx_ai_follower": {
@@ -1482,7 +1482,7 @@
    "bytes": 1084536
   },
   "pololu_micro_metal_gearmotor_75_lp_6v_extended": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_75_lp_6v_extended/assets/model.glb",
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
    "bytes": 1084536
   },
   "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": {
@@ -1548,6 +1548,1034 @@
   "hiwonder_7_4v_2200mah_battery": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/18fdd51224854217b44bdbe5e1cd6efe0da30772/parts/hiwonder_7_4v_2200mah_battery/assets/model.glb",
    "bytes": 647912
+  },
+  "pololu_micro_metal_gearmotor_5_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_5_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_5_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_5_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_10_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_10_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_10_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_10_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_15_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_15_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_15_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_15_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_30_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_30_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_30_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_30_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_50_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_50_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_50_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_50_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_75_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_75_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_75_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_100_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_100_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_100_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_100_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_150_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_150_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_150_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_150_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_210_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_210_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_210_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_210_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_250_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_250_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_250_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_250_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_298_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_298_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_298_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_298_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_380_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_380_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_380_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_380_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_1000_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v/assets/model.glb",
+   "bytes": 1329860
+  },
+  "pololu_micro_metal_gearmotor_1000_lp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_extended/assets/model.glb",
+   "bytes": 1344256
+  },
+  "pololu_micro_metal_gearmotor_1000_lp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1559456
+  },
+  "pololu_micro_metal_gearmotor_1000_lp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1560148
+  },
+  "pololu_micro_metal_gearmotor_5_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_5_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_5_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_5_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_10_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_10_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_10_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_10_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_15_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_15_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_15_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_15_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_30_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_30_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_30_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_50_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_50_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_50_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_50_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_75_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_75_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_75_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_75_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_100_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_100_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_100_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_100_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_150_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_150_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_150_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_150_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_210_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_210_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_210_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_210_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_250_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_250_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_250_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_250_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_298_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_298_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_298_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_298_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_380_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_380_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_380_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_380_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_1000_mp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v/assets/model.glb",
+   "bytes": 1329860
+  },
+  "pololu_micro_metal_gearmotor_1000_mp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_extended/assets/model.glb",
+   "bytes": 1344256
+  },
+  "pololu_micro_metal_gearmotor_1000_mp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1559456
+  },
+  "pololu_micro_metal_gearmotor_1000_mp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1560148
+  },
+  "pololu_micro_metal_gearmotor_5_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_5_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_5_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_5_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_10_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_10_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_10_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_10_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_15_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_15_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_15_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_15_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_30_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_30_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_30_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_30_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_50_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_50_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_50_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_50_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_75_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_75_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_75_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_75_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_100_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_100_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_100_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_100_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_150_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_150_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_150_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_150_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_210_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_210_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_210_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_210_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_250_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_250_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_250_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_250_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_298_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_298_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_298_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_298_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_380_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v/assets/model.glb",
+   "bytes": 1079572
+  },
+  "pololu_micro_metal_gearmotor_380_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
+  },
+  "pololu_micro_metal_gearmotor_380_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1320792
+  },
+  "pololu_micro_metal_gearmotor_380_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1321828
+  },
+  "pololu_micro_metal_gearmotor_1000_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v/assets/model.glb",
+   "bytes": 1329860
+  },
+  "pololu_micro_metal_gearmotor_1000_hp_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_extended/assets/model.glb",
+   "bytes": 1344256
+  },
+  "pololu_micro_metal_gearmotor_1000_hp_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_back/assets/model.glb",
+   "bytes": 1559456
+  },
+  "pololu_micro_metal_gearmotor_1000_hp_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_lp_6v_encoder_side/assets/model.glb",
+   "bytes": 1560148
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v/assets/model.glb",
+   "bytes": 1331496
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_6v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1346572
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1561080
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1561648
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_5_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_10_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_15_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_30_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_50_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_75_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_100_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_150_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_210_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_250_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_298_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v/assets/model.glb",
+   "bytes": 1081888
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1298812
+  },
+  "pololu_micro_metal_gearmotor_380_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_5_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1300884
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v/assets/model.glb",
+   "bytes": 1331496
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_12v_extended": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1346572
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_12v_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_back/assets/model.glb",
+   "bytes": 1561080
+  },
+  "pololu_micro_metal_gearmotor_1000_hpcb_12v_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_side/assets/model.glb",
+   "bytes": 1561648
   }
  }
 }
