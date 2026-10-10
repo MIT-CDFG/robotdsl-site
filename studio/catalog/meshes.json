@@ -1521,25 +1521,13 @@
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_rosorin_battery/assets/model.glb",
    "bytes": 687408
   },
-  "hiwonder_mentorpi_m1_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_mentorpi_m1_battery/assets/model.glb",
-   "bytes": 647912
-  },
   "yahboom_l_type_520_encoder_motor": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_l_type_520_encoder_motor/assets/model.glb",
    "bytes": 258612
   },
   "yahboom_7_4v_2000mah_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_7_4v_2000mah_battery/assets/model.glb",
-   "bytes": 674096
-  },
-  "hiwonder_520_gearmotor_90_12v_legacy": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/290670b8e48de05fe8478b2d97a14f560a93dc53/parts/hiwonder_520_gearmotor_90_12v_legacy/assets/model.glb",
-   "bytes": 59540
-  },
-  "hiwonder_clawpi_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0803b3c0b29641cd60641d176e0435836dd7791/parts/hiwonder_clawpi_battery/assets/model.glb",
-   "bytes": 647912
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/18fdd51224854217b44bdbe5e1cd6efe0da30772/parts/yahboom_7_4v_2000mah_battery/assets/model.glb",
+   "bytes": 570384
   },
   "yahboom_rdk_x3_7_4v_6600mah_battery": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/744201076886dc5efc7113fe2a1d98a2ddcc1ef1/parts/yahboom_rdk_x3_7_4v_6600mah_battery/assets/model.glb",
@@ -1557,17 +1545,9 @@
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/744201076886dc5efc7113fe2a1d98a2ddcc1ef1/parts/yahboom_rosmaster_11_1v_6000mah_battery/assets/model.glb",
    "bytes": 664600
   },
-  "yahboom_raspbot_v2_7_4v_2000mah_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56cfe0f6a5afababe2e43d01f3fb000917dda1e7/parts/yahboom_raspbot_v2_7_4v_2000mah_battery/assets/model.glb",
-   "bytes": 586444
-  },
-  "yahboom_roboduino_7_4v_2000mah_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/56cfe0f6a5afababe2e43d01f3fb000917dda1e7/parts/yahboom_roboduino_7_4v_2000mah_battery/assets/model.glb",
-   "bytes": 576740
-  },
-  "yahboom_mspm0_7_4v_2000mah_battery": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c44fd6f5286445a3d6d662d5c363ae53f729d3be/parts/yahboom_mspm0_7_4v_2000mah_battery/assets/model.glb",
-   "bytes": 583664
+  "hiwonder_7_4v_2200mah_battery": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/18fdd51224854217b44bdbe5e1cd6efe0da30772/parts/hiwonder_7_4v_2200mah_battery/assets/model.glb",
+   "bytes": 647912
   }
  }
 }

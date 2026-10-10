@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 392,
+ "count": 387,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -360,7 +360,7 @@
    "pack": 1,
    "product": "MentorPi M1 Standard, without Raspberry Pi 5",
    "includes": {
-    "hiwonder_mentorpi_m1_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -811,7 +811,7 @@
    "pack": 1,
    "product": "MentorPi A1 Standard, without Raspberry Pi 5",
    "includes": {
-    "hiwonder_mentorpi_m1_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -871,7 +871,7 @@
    "category": "chassis",
    "subtype": "Mecanum_four_wheel",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JetAuto body, a green anodised aluminium chassis 297 mm long with four encoder gearmotors on a pendulum suspension, its control board and battery, a rear shell for the computer, a bay for a LiDAR under the upper deck and a pan servo on top for a camera. It comes as a kit with four mecanum wheels, a LiDAR and a depth camera. Its 4 drive motors are represented separately; their brackets and shaft couplings remain on this chassis.",
+   "description": "Hiwonder JetAuto body, a green anodised aluminium chassis 297 mm long with four encoder gearmotors on a pendulum suspension, its control board and battery, a rear shell for the computer, a bay for a LiDAR under the upper deck and a pan servo on top for a camera. It comes as a kit with four mecanum wheels, a LiDAR and a depth camera. Its four drive motors are parts of their own here; their brackets and shaft couplings stay on the chassis.",
    "source_url": "https://www.hiwonder.com/products/jetauto",
    "price": 639.99,
    "currency": "USD",
@@ -880,7 +880,7 @@
    "includes": {
     "hiwonder_mecanum_wheel_97mm_fl_rr": 2,
     "hiwonder_mecanum_wheel_97mm_fr_rl": 2,
-    "hiwonder_520_gearmotor_90_12v_legacy": 4,
+    "hiwonder_520_gearmotor_90_12v": 4,
     "hiwonder_rosorin_battery": 1
    }
   },
@@ -967,7 +967,7 @@
    "category": "chassis",
    "subtype": "Ackermann",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JetAcker body, an aluminium Ackermann chassis 296 mm long whose front wheels a servo steers and whose rear wheels two encoder gearmotors drive on a pendulum suspension, with green anodised panels, its control board and battery, a rear shell for the computer, a bay for a LiDAR under the upper deck and a pan servo on top for a camera. It comes as a kit with four 100 mm wheels, a LiDAR and a depth camera. Its 2 drive motors are represented separately; their brackets and shaft couplings remain on this chassis.",
+   "description": "Hiwonder JetAcker body, an aluminium Ackermann chassis 296 mm long whose front wheels a servo steers and whose rear wheels two encoder gearmotors drive on a pendulum suspension, with green anodised panels, its control board and battery, a rear shell for the computer, a bay for a LiDAR under the upper deck and a pan servo on top for a camera. It comes as a kit with four 100 mm wheels, a LiDAR and a depth camera. Its two drive motors are parts of their own here; their brackets and shaft couplings stay on the chassis.",
    "source_url": "https://www.hiwonder.com/products/jetacker",
    "price": 599.99,
    "currency": "USD",
@@ -975,7 +975,7 @@
    "product": "JetAcker Standard Kit, without controller",
    "includes": {
     "hiwonder_rubber_wheel_100mm": 4,
-    "hiwonder_520_gearmotor_90_12v_legacy": 2,
+    "hiwonder_520_gearmotor_90_12v": 2,
     "hiwonder_rosorin_battery": 1
    }
   },
@@ -1036,7 +1036,7 @@
    "category": "chassis",
    "subtype": "Mecanum_four_wheel",
    "supplier": "Hiwonder",
-   "description": "Hiwonder ROSOrin silver aluminium chassis, 276 mm long, with its motor brackets and shaft couplings, control-board mounting structure, battery cover, front display and black top deck. Its four 520 encoder gearmotors are separate parts. The Standard Kit brings four 80 mm mecanum wheels, a LiDAR, depth camera and voice module.",
+   "description": "Hiwonder ROSOrin silver aluminium chassis, 276 mm long, with its motor brackets and shaft couplings, the mounts of its control board, its battery cover, a small display at the front and a black deck on top. Its four 520 encoder gearmotors are parts of their own here. The Standard Kit brings four 80 mm mecanum wheels, a LiDAR, a depth camera and a voice module.",
    "source_url": "https://www.hiwonder.com/products/rosorin",
    "price": 429.99,
    "currency": "USD",
@@ -1080,7 +1080,7 @@
    "category": "chassis",
    "subtype": "Mecanum_four_wheel",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JetRover body on its mecanum chassis, green anodised aluminium 302 mm long with a pendulum suspension and physical seats for four separately represented encoder gearmotors, its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four mecanum wheels, a LiDAR, a six-axis arm and a depth camera.",
+   "description": "Hiwonder JetRover body on its mecanum chassis, green anodised aluminium 302 mm long with four encoder gearmotors on a pendulum suspension, which are parts of their own here, its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four mecanum wheels, a LiDAR, a six-axis arm and a depth camera.",
    "source_url": "https://www.hiwonder.com/products/jetrover",
    "price": 779.99,
    "currency": "USD",
@@ -1089,7 +1089,7 @@
    "includes": {
     "hiwonder_mecanum_wheel_97mm_fl_rr": 2,
     "hiwonder_mecanum_wheel_97mm_fr_rl": 2,
-    "hiwonder_520_gearmotor_90_12v_legacy": 4,
+    "hiwonder_520_gearmotor_90_12v": 4,
     "hiwonder_rosorin_battery": 1
    }
   },
@@ -1144,7 +1144,7 @@
    "pack": 1,
    "product": "LanderPi Standard Kit on the mecanum chassis, without Raspberry Pi 5",
    "includes": {
-    "hiwonder_mentorpi_m1_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -1224,7 +1224,7 @@
    "pack": 1,
    "product": "ClawPi Ultimate Kit, without Raspberry Pi",
    "includes": {
-    "hiwonder_clawpi_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -1362,7 +1362,7 @@
    "category": "chassis",
    "subtype": "Mecanum_four_wheel",
    "supplier": "Hiwonder",
-   "description": "Hiwonder large metal 4WD chassis, a green anodised aluminium box 297 mm long and 145 mm wide with four 12 V encoder gearmotors inside, one for each wheel, and a motor driver board; the JetAuto is built on it. Sold alone with four 97 mm mecanum wheels and their couplings, and without a battery. Its 4 drive motors are represented separately; their brackets and shaft couplings remain on this chassis.",
+   "description": "Hiwonder large metal 4WD chassis, a green anodised aluminium box 297 mm long and 145 mm wide with four 12 V encoder gearmotors inside, one for each wheel, and a motor driver board; the JetAuto is built on it. Sold alone with four 97 mm mecanum wheels and their couplings, and without a battery. Its four drive motors are parts of their own here; their brackets and shaft couplings stay on the chassis.",
    "source_url": "https://www.hiwonder.com/products/large-metal-4wd-vehicle-chassis-green",
    "price": 129.99,
    "currency": "USD",
@@ -1371,7 +1371,7 @@
    "includes": {
     "hiwonder_mecanum_wheel_97mm_fl_rr": 2,
     "hiwonder_mecanum_wheel_97mm_fr_rl": 2,
-    "hiwonder_520_gearmotor_90_12v_legacy": 4
+    "hiwonder_520_gearmotor_90_12v": 4
    }
   },
   {
@@ -1380,7 +1380,7 @@
    "category": "chassis",
    "subtype": "Ackermann",
    "supplier": "Hiwonder",
-   "description": "Hiwonder Ackermann steering chassis, two black aluminium plates 270 mm long and 120 mm wide on brass standoffs, with a servo that steers the front wheels through a linkage and two 12 V encoder gearmotors that drive the rear wheels. Sold alone as a kit with four 75 mm rubber wheels and a motor driver module, without a controller or a battery. Its two motors are separate Motor parts; their original brackets and coupling hardware remain on this body.",
+   "description": "Hiwonder Ackermann steering chassis, two black aluminium plates 270 mm long and 120 mm wide on brass standoffs, with a servo that steers the front wheels through a linkage and two 12 V encoder gearmotors that drive the rear wheels. Sold alone as a kit with four 75 mm rubber wheels and a motor driver module, without a controller or a battery. Its two motors are parts of their own here; their brackets and couplings stay on the chassis.",
    "source_url": "https://www.hiwonder.com/products/ackermann-steering-chassis",
    "price": 49.99,
    "currency": "USD",
@@ -3065,7 +3065,10 @@
    "price": 110.0,
    "currency": "USD",
    "pack": 1,
-   "product": "Roboduino V2 robot car"
+   "product": "Roboduino V2 robot car",
+   "includes": {
+    "yahboom_7_4v_2000mah_battery": 1
+   }
   },
   {
    "ref": "yahboom_roboduino_v2_mecanum_wheel_fl_rr",
@@ -3528,7 +3531,10 @@
    "price": 99.0,
    "currency": "USD",
    "pack": 1,
-   "product": "MSPM0 smart robot car, Advanced Kit"
+   "product": "MSPM0 smart robot car, Advanced Kit",
+   "includes": {
+    "yahboom_7_4v_2000mah_battery": 1
+   }
   },
   {
    "ref": "yahboom_mspm0_car_wheel",
@@ -3640,7 +3646,7 @@
    "pack": 1,
    "product": "Raspbot V2 robot car, Standard kit without the Raspberry Pi",
    "includes": {
-    "yahboom_raspbot_v2_7_4v_2000mah_battery": 1
+    "yahboom_7_4v_2000mah_battery": 1
    }
   },
   {
@@ -3708,7 +3714,7 @@
    "pack": 1,
    "product": "ClawPi Ultimate Kit in grey, without Raspberry Pi",
    "includes": {
-    "hiwonder_clawpi_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -3821,7 +3827,7 @@
    "category": "chassis",
    "subtype": "Ackermann",
    "supplier": "Hiwonder",
-   "description": "Hiwonder Ackermann steering chassis in its double-layer version, three black aluminium plates 270 mm long and 120 mm wide on brass standoffs, the top deck 94 mm above the base plate with a bay 40 mm high under it, with a servo that steers the front wheels through a linkage and two 12 V encoder gearmotors that drive the rear wheels. Sold alone as a kit with four 75 mm rubber wheels and a motor driver module, without a controller or a battery. Its two motors are separate Motor parts; their original brackets and coupling hardware remain on this body.",
+   "description": "Hiwonder Ackermann steering chassis in its double-layer version, three black aluminium plates 270 mm long and 120 mm wide on brass standoffs, the top deck 94 mm above the base plate with a bay 40 mm high under it, with a servo that steers the front wheels through a linkage and two 12 V encoder gearmotors that drive the rear wheels. Sold alone as a kit with four 75 mm rubber wheels and a motor driver module, without a controller or a battery. Its two motors are parts of their own here; their brackets and couplings stay on the chassis.",
    "source_url": "https://www.hiwonder.com/products/ackermann-steering-chassis",
    "price": 59.99,
    "currency": "USD",
@@ -3850,7 +3856,7 @@
    "category": "chassis",
    "subtype": "Ackermann",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JetRover body on its Ackermann chassis, green anodised aluminium 296 mm long whose front wheels a servo steers and whose rear wheels two encoder gearmotors drive, with its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four 100 mm wheels, a LiDAR, a six-axis arm and a depth camera.",
+   "description": "Hiwonder JetRover body on its Ackermann chassis, green anodised aluminium 296 mm long whose front wheels a servo steers and whose rear wheels two encoder gearmotors drive, which are parts of their own here, with its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four 100 mm wheels, a LiDAR, a six-axis arm and a depth camera.",
    "source_url": "https://www.hiwonder.com/products/jetrover",
    "price": 779.99,
    "currency": "USD",
@@ -3858,7 +3864,7 @@
    "product": "JetRover Standard Kit on the Ackermann chassis, without controller",
    "includes": {
     "hiwonder_rubber_wheel_100mm": 4,
-    "hiwonder_520_gearmotor_90_12v_legacy": 2,
+    "hiwonder_520_gearmotor_90_12v": 2,
     "hiwonder_rosorin_battery": 1
    }
   },
@@ -3913,7 +3919,7 @@
    "pack": 1,
    "product": "LanderPi Standard Kit on the Ackermann chassis, without Raspberry Pi 5",
    "includes": {
-    "hiwonder_mentorpi_m1_battery": 1
+    "hiwonder_7_4v_2200mah_battery": 1
    }
   },
   {
@@ -3986,7 +3992,7 @@
    "category": "chassis",
    "subtype": "Diff_drive",
    "supplier": "Hiwonder",
-   "description": "Hiwonder ROSOrin silver aluminium chassis, 276 mm long, with its motor brackets and shaft couplings, control-board mounting structure, battery cover, front display and black top deck. Its four 520 encoder gearmotors are separate parts. The Advanced Kit brings mecanum wheels, four rubber tyres and the Ackermann conversion module; this part depicts its differential-drive configuration.",
+   "description": "Hiwonder ROSOrin silver aluminium chassis, 276 mm long, with its motor brackets and shaft couplings, the mounts of its control board, its battery cover, a small display at the front and a black deck on top, as the Advanced Kit builds it for four-wheel differential drive on rubber tyres. Its four 520 encoder gearmotors are parts of their own here. The kit brings the robot on mecanum wheels with four rubber tyres and an Ackermann steering module.",
    "source_url": "https://www.hiwonder.com/products/rosorin",
    "price": 529.99,
    "currency": "USD",
@@ -4003,7 +4009,7 @@
    "category": "chassis",
    "subtype": "Ackermann",
    "supplier": "Hiwonder",
-   "description": "Hiwonder ROSOrin silver aluminium chassis configured for Ackermann steering, with its steering module, retained rear-motor brackets and couplings, battery cover and decks. The two rear motors are separate parts; its Advanced Kit includes the four motors used in its mecanum configuration and the parts to change drive modes.",
+   "description": "Hiwonder ROSOrin silver aluminium chassis as the Advanced Kit builds it for Ackermann steering, with the steering module of the kit in place of its front motors, the brackets and couplings of its two rear motors, its battery cover and its decks. The two rear motors are parts of their own here. The kit brings four motors, for its mecanum form, and the parts that change it.",
    "source_url": "https://www.hiwonder.com/products/rosorin",
    "price": 529.99,
    "currency": "USD",
@@ -4964,7 +4970,7 @@
    "category": "attachment",
    "subtype": "Attachment",
    "supplier": "Pololu",
-   "description": "The black-PCB 128 x 64 graphical OLED supplied with the 3pi+ 2040 and current 3pi+ 32U4 OLED robots. Represented as a passive Attachment with its fitted low-profile header; no display commands are simulated. It mounts on its control board, not on the bare chassis.",
+   "description": "Pololu's graphical OLED display, 128 x 64 pixels on a black board, the display of the 3pi+ 2040 and 3pi+ 32U4 OLED robots. It plugs into a header on the control board and stands on two standoffs over it. It shows nothing in simulation.",
    "source_url": "https://www.pololu.com/product/3761",
    "price": 19.95,
    "currency": "USD",
@@ -4976,7 +4982,7 @@
    "category": "attachment",
    "subtype": "Attachment",
    "supplier": "Pololu",
-   "description": "The 8 x 2 character LCD with black bezel supplied with the original 3pi+ 32U4 robots. Represented as a passive Attachment with its fitted low-profile header; no display commands are simulated. It mounts on its control board, not on the bare chassis.",
+   "description": "Pololu's 8 x 2 character LCD with a black bezel, the display of the first 3pi+ 32U4 robots. It plugs into a header on the control board and lies over it. It shows nothing in simulation.",
    "source_url": "https://www.pololu.com/product/356",
    "price": 11.45,
    "currency": "USD",
@@ -4988,7 +4994,7 @@
    "category": "motor",
    "subtype": "Motor",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JGB37-520R90-12 brushed encoder gearmotor: 37 mm gearbox, 6 mm eccentric D-shaft and a protected magnetic encoder. The 90:1 motor is rated at 12 V, 110 rpm unloaded, 15 kg cm stalled and 3.2 A stall current. Taken from the official Ackermann chassis CAD whose motor specification matches this sold-alone variant.",
+   "description": "Hiwonder JGB37-520R90-12 brushed gearmotor with a Hall encoder: a 37 mm gearbox, 90:1, and a 6 mm D-shaft set 7 mm off the gearbox's centre. At 12 V it turns 110 rpm unloaded and stalls at 15 kg cm (1.47 N m) and 3.2 A. It is the drive motor of Hiwonder's Ackermann chassis, large metal chassis, ROSOrin, JetAuto, JetAcker and JetRover kits, and is sold alone.",
    "source_url": "https://www.hiwonder.com/products/hall-encoder-dc-geared-motor",
    "price": 12.99,
    "currency": "USD",
@@ -5001,7 +5007,7 @@
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Hiwonder",
-   "description": "The shared 11.1 V, 6 Ah wrapped lithium battery shown for the ROSOrin Standard and Advanced kits, JetAuto, JetAcker and both JetRover chassis kits, drawn from their matching official body dimensions and photographs with the printed label, folded wrapping, leads, SM connector and DC charging socket. Its original ROSOrin product provenance is retained; each host records the supplied pack in includes, so using it in that kit does not add a separate purchase.",
+   "description": "The battery pack of Hiwonder's ROSOrin, JetAuto, JetAcker and JetRover kits: 11.1 V, 6000 mAh, 86 x 60 x 21 mm, wrapped in black with a white label, an SM discharge plug and a DC charging socket. It comes with those kits and is not sold alone.",
    "source_url": "https://www.hiwonder.com/products/rosorin",
    "price": 429.99,
    "currency": "USD",
@@ -5009,25 +5015,12 @@
    "product": "ROSOrin Standard Kit, without controller"
   },
   {
-   "ref": "hiwonder_mentorpi_m1_battery",
-   "name": "Hiwonder MentorPi and LanderPi battery pack, 7.4 V 2200 mAh",
-   "category": "battery",
-   "subtype": "Battery",
-   "supplier": "Hiwonder",
-   "description": "The shared 7.4 V, 2.2 Ah wrapped lithium battery shown for MentorPi M1 and A1 and both LanderPi chassis kits, drawn from the identical official size and photograph with the printed label, folded wrapping, leads, SM connector and DC charging socket. Its original M1 Standard kit provenance is retained; all four hosts record the supplied pack in includes.",
-   "source_url": "https://www.hiwonder.com/products/mentorpi-m1",
-   "price": 439.99,
-   "currency": "USD",
-   "pack": 1,
-   "product": "MentorPi M1 Standard, without Raspberry Pi 5"
-  },
-  {
    "ref": "yahboom_l_type_520_encoder_motor",
    "name": "L-type 520 encoder gearmotor, 12 V, 40:1",
    "category": "motor",
    "subtype": "Motor",
    "supplier": "Yahboom",
-   "description": "Yahboom L-type 520 encoder gearmotor with its 6 mm D output shaft offset from a brushed motor, a 40:1 metal gearbox, a rear Hall encoder board and a six-pin socket. Its four M3 gearbox mounting holes fit the brackets supplied with Yahboom's aluminium alloy chassis kits; the brackets and couplings are not included in this Separate motor variant.",
+   "description": "Yahboom L-type 520 encoder gearmotor: a 12 V brushed motor beside a 40:1 metal gearbox, with a 6 mm D output shaft, a Hall encoder board at its rear and a six-pin socket. At 12 V it turns 300 rpm unloaded and stalls at 10 kg cm (0.98 N m) and 4 A. Its four M3 holes fit the brackets of Yahboom's aluminium alloy chassis kits; the brackets and couplings come with those kits, not with the motor sold alone.",
    "source_url": "https://category.yahboom.net/products/l-type-encoder-dc-reduction-motor",
    "price": 7.9,
    "currency": "USD",
@@ -5036,11 +5029,11 @@
   },
   {
    "ref": "yahboom_7_4v_2000mah_battery",
-   "name": "7.4 V 2000 mAh lithium battery pack",
+   "name": "Yahboom battery pack, 7.4 V 2000 mAh",
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "Yahboom two-cell lithium battery pack supplied with the Raspbot V2, MicroROS-Pi5 and ESP32 MicroROS kits, with a blue sleeve, white 7.4 V 2000 mAh label, red T discharge plug and black charging socket. The three kits' own charging manuals state matching dimensions, mass and electrical ratings. It is priced as the Raspbot V2 kit that supplies it; each of the three chassis purchases includes one. No standalone battery listing is asserted.",
+   "description": "Yahboom 7.4 V 2000 mAh lithium battery pack, 67 x 37 x 22 mm and 115 g, in a blue sleeve with a white label, a red T discharge plug and a black charging socket. It comes with the Raspbot V2, MicroROS-Pi5, ESP32 MicroROS, Roboduino V2 and MSPM0 smart car kits and is not sold alone.",
    "source_url": "https://category.yahboom.net/products/raspbot-v2",
    "price": 134.99,
    "currency": "USD",
@@ -5048,38 +5041,12 @@
    "product": "Raspbot V2 robot car, Standard kit without the Raspberry Pi"
   },
   {
-   "ref": "hiwonder_520_gearmotor_90_12v_legacy",
-   "name": "520 encoder gearmotor, 90:1, JetAuto and JetAcker description geometry",
-   "category": "motor",
-   "subtype": "Motor",
-   "supplier": "Hiwonder",
-   "description": "The 12 V 90:1 520 encoder gearmotor supplied in Hiwonder JetAuto and JetAcker kits, represented by the older or simplified geometry in their official robot descriptions. Its metal housing and shaft share the same geometry in both descriptions; the JetAcker version also draws its encoder pieces. The electrical ratings map the kits' published 12 V, 90:1 and 15 kg cm conditions to the current R90 specification table by inference; they are not measurements of the legacy CAD revision, whose identity remains unconfirmed.",
-   "source_url": "https://www.hiwonder.com/products/jetacker",
-   "price": 599.99,
-   "currency": "USD",
-   "pack": 2,
-   "product": "JetAcker Standard Kit, without controller"
-  },
-  {
-   "ref": "hiwonder_clawpi_battery",
-   "name": "ClawPi 7.4 V 2200 mAh battery pack",
-   "category": "battery",
-   "subtype": "Battery",
-   "supplier": "Hiwonder",
-   "description": "The 7.4 V, 2.2 Ah, 10C wrapped lithium battery supplied in the black and grey ClawPi kits, drawn from their official 69.5 x 37 x 19 mm dimensions and photographs with the printed label, folded wrapping, leads, SM connector and DC charging socket. This is a kit component, not a separately priced replacement battery.",
-   "source_url": "https://www.hiwonder.com/products/clawpi-ros2",
-   "price": 332.99,
-   "currency": "USD",
-   "pack": 1,
-   "product": "ClawPi Ultimate Kit, without Raspberry Pi"
-  },
-  {
    "ref": "yahboom_rdk_x3_7_4v_6600mah_battery",
    "name": "7.4 V 6600 mAh battery for RDK X3 Robot",
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "The wrapped lithium battery supplied by RDK X3 Robot chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "description": "The battery pack of Yahboom's RDK X3 Robot kit: 7.4 V, 6600 mAh, about 70 x 55 x 37 mm, in a blue sleeve with a white label, a red T discharge plug and a black charging socket. It comes with the kit and is not sold alone.",
    "source_url": "https://category.yahboom.net/products/rdk-x3-robot",
    "price": 359.0,
    "currency": "USD",
@@ -5092,7 +5059,7 @@
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "The wrapped lithium battery supplied by MicroROS V2 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "description": "The battery pack of Yahboom's MicroROS V2 kit: 11.1 V, labelled 12 V, 2200 mAh, about 58 x 70 x 19 mm, in a blue sleeve with a white label, a charging socket on one lead and an angled plug for the robot on the other. It comes with the kit and is not sold alone.",
    "source_url": "https://category.yahboom.net/products/microros-v2",
    "price": 179.0,
    "currency": "USD",
@@ -5105,7 +5072,7 @@
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "The wrapped lithium battery supplied by ROSMASTER X3 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "description": "The battery pack of Yahboom's ROSMASTER X3 kit: 11.1 V, 6000 mAh, about 60 x 70 x 45 mm, in a blue sleeve, with a red T discharge plug and a black charging socket. It comes with the kit and is not sold alone.",
    "source_url": "https://category.yahboom.net/products/rosmaster-x3",
    "price": 659.0,
    "currency": "USD",
@@ -5118,7 +5085,7 @@
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "The wrapped lithium battery supplied by ROSMASTER M3 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "description": "The battery pack of Yahboom's ROSMASTER M3 kit: 11.1 V, labelled 12 V, 6000 mAh, about 59 x 71 x 38 mm, in a blue sleeve with a white label, a red T discharge plug and a black charging socket. It comes with the kit and is not sold alone.",
    "source_url": "https://category.yahboom.net/products/rosmaster-m3",
    "price": 779.9,
    "currency": "USD",
@@ -5126,43 +5093,17 @@
    "product": "ROSMASTER M3 Standard kit for Raspberry Pi 5, without main control board"
   },
   {
-   "ref": "yahboom_raspbot_v2_7_4v_2000mah_battery",
-   "name": "7.4 V 2000 mAh lithium battery pack for Raspbot V2",
+   "ref": "hiwonder_7_4v_2200mah_battery",
+   "name": "Hiwonder battery pack, 7.4 V 2200 mAh",
    "category": "battery",
    "subtype": "Battery",
-   "supplier": "Yahboom",
-   "description": "Yahboom two-cell lithium battery pack supplied with Raspbot V2, with a blue sleeve, white 7.4 V 2000 mAh label, red T discharge plug and black charging socket. The Raspbot charging manual supplies its body dimensions, mass and electrical ratings. Its flexible leads have a documented estimated stored pose that fits behind the battery inside the Raspbot chassis. It is priced as the kit that supplies it; no standalone battery listing is asserted.",
-   "source_url": "https://category.yahboom.net/products/raspbot-v2",
-   "price": 134.99,
+   "supplier": "Hiwonder",
+   "description": "The battery pack of Hiwonder's ClawPi, MentorPi and LanderPi kits: 7.4 V, 2200 mAh, 10C, 69.5 x 37 x 19 mm, wrapped in black with a white label, an SM discharge plug and a DC charging socket. It comes with those kits and is not sold alone.",
+   "source_url": "https://www.hiwonder.com/products/clawpi-ros2",
+   "price": 332.99,
    "currency": "USD",
    "pack": 1,
-   "product": "Raspbot V2 robot car, Standard kit without the Raspberry Pi"
-  },
-  {
-   "ref": "yahboom_roboduino_7_4v_2000mah_battery",
-   "name": "Roboduino V2 7.4 V 2000 mAh battery pack",
-   "category": "battery",
-   "subtype": "Battery",
-   "supplier": "Yahboom",
-   "description": "The blue lithium battery supplied by the Roboduino V2 kit, drawn from this kit's own CAD envelope and shipping-list photograph. It has a white 7.4 V 2000 mAh label, red T discharge plug and black female charging socket. Its mass is an explicit envelope-density estimate; it is not identified as the separate pack supplied with Raspbot and MicroROS kits.",
-   "source_url": "https://category.yahboom.net/products/roboduino-v2",
-   "price": 110.0,
-   "currency": "USD",
-   "pack": 1,
-   "product": "Roboduino V2 robot car"
-  },
-  {
-   "ref": "yahboom_mspm0_7_4v_2000mah_battery",
-   "name": "7.4 V 2000 mAh battery for MSPM0 smart car",
-   "category": "battery",
-   "subtype": "Battery",
-   "supplier": "Yahboom",
-   "description": "The blue wrapped 7.4 V 2000 mAh lithium battery supplied by the MSPM0 smart car kit. Its body dimensions are measured from this kit CAD, and visible wrapping and plug details are drawn from its own photographs. No exact manufacturer-part equivalence to another kit battery is asserted.",
-   "source_url": "https://category.yahboom.net/products/mspm0-smartcar",
-   "price": 99.0,
-   "currency": "USD",
-   "pack": 1,
-   "product": "MSPM0 smart robot car, Advanced Kit"
+   "product": "ClawPi Ultimate Kit, without Raspberry Pi"
   }
  ]
 }
