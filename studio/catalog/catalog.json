@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 384,
+ "count": 392,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -809,7 +809,10 @@
    "price": 439.99,
    "currency": "USD",
    "pack": 1,
-   "product": "MentorPi A1 Standard, without Raspberry Pi 5"
+   "product": "MentorPi A1 Standard, without Raspberry Pi 5",
+   "includes": {
+    "hiwonder_mentorpi_m1_battery": 1
+   }
   },
   {
    "ref": "hiwonder_mentorpi_a1_front_wheel",
@@ -877,7 +880,8 @@
    "includes": {
     "hiwonder_mecanum_wheel_97mm_fl_rr": 2,
     "hiwonder_mecanum_wheel_97mm_fr_rl": 2,
-    "hiwonder_520_gearmotor_90_12v_legacy": 4
+    "hiwonder_520_gearmotor_90_12v_legacy": 4,
+    "hiwonder_rosorin_battery": 1
    }
   },
   {
@@ -971,7 +975,8 @@
    "product": "JetAcker Standard Kit, without controller",
    "includes": {
     "hiwonder_rubber_wheel_100mm": 4,
-    "hiwonder_520_gearmotor_90_12v_legacy": 2
+    "hiwonder_520_gearmotor_90_12v_legacy": 2,
+    "hiwonder_rosorin_battery": 1
    }
   },
   {
@@ -1075,7 +1080,7 @@
    "category": "chassis",
    "subtype": "Mecanum_four_wheel",
    "supplier": "Hiwonder",
-   "description": "Hiwonder JetRover body on its mecanum chassis, green anodised aluminium 302 mm long with four encoder gearmotors on a pendulum suspension, its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four mecanum wheels, a LiDAR, a six-axis arm and a depth camera.",
+   "description": "Hiwonder JetRover body on its mecanum chassis, green anodised aluminium 302 mm long with a pendulum suspension and physical seats for four separately represented encoder gearmotors, its control board and battery, a rear shell for the computer, a place for a LiDAR under the upper deck and a turntable on top that an arm stands on. It comes as a kit with four mecanum wheels, a LiDAR, a six-axis arm and a depth camera.",
    "source_url": "https://www.hiwonder.com/products/jetrover",
    "price": 779.99,
    "currency": "USD",
@@ -1083,7 +1088,9 @@
    "product": "JetRover Standard Kit on the mecanum chassis, without controller",
    "includes": {
     "hiwonder_mecanum_wheel_97mm_fl_rr": 2,
-    "hiwonder_mecanum_wheel_97mm_fr_rl": 2
+    "hiwonder_mecanum_wheel_97mm_fr_rl": 2,
+    "hiwonder_520_gearmotor_90_12v_legacy": 4,
+    "hiwonder_rosorin_battery": 1
    }
   },
   {
@@ -1135,7 +1142,10 @@
    "price": 569.99,
    "currency": "USD",
    "pack": 1,
-   "product": "LanderPi Standard Kit on the mecanum chassis, without Raspberry Pi 5"
+   "product": "LanderPi Standard Kit on the mecanum chassis, without Raspberry Pi 5",
+   "includes": {
+    "hiwonder_mentorpi_m1_battery": 1
+   }
   },
   {
    "ref": "hiwonder_landerpi_mecanum_wheel_fl_rr",
@@ -1212,7 +1222,10 @@
    "price": 332.99,
    "currency": "USD",
    "pack": 1,
-   "product": "ClawPi Ultimate Kit, without Raspberry Pi"
+   "product": "ClawPi Ultimate Kit, without Raspberry Pi",
+   "includes": {
+    "hiwonder_clawpi_battery": 1
+   }
   },
   {
    "ref": "hiwonder_clawpi_mecanum_wheel_fl_rr",
@@ -2971,7 +2984,10 @@
    "price": 199.0,
    "currency": "USD",
    "pack": 1,
-   "product": "ESP32 MicroROS robot car, Standard version"
+   "product": "ESP32 MicroROS robot car, Standard version",
+   "includes": {
+    "yahboom_7_4v_2000mah_battery": 1
+   }
   },
   {
    "ref": "yahboom_microros_esp32_wheel",
@@ -3624,7 +3640,7 @@
    "pack": 1,
    "product": "Raspbot V2 robot car, Standard kit without the Raspberry Pi",
    "includes": {
-    "yahboom_7_4v_2000mah_battery": 1
+    "yahboom_raspbot_v2_7_4v_2000mah_battery": 1
    }
   },
   {
@@ -3690,7 +3706,10 @@
    "price": 349.99,
    "currency": "USD",
    "pack": 1,
-   "product": "ClawPi Ultimate Kit in grey, without Raspberry Pi"
+   "product": "ClawPi Ultimate Kit in grey, without Raspberry Pi",
+   "includes": {
+    "hiwonder_clawpi_battery": 1
+   }
   },
   {
    "ref": "hiwonder_clawpi_grey_mecanum_wheel_fl_rr",
@@ -3838,7 +3857,9 @@
    "pack": 1,
    "product": "JetRover Standard Kit on the Ackermann chassis, without controller",
    "includes": {
-    "hiwonder_rubber_wheel_100mm": 4
+    "hiwonder_rubber_wheel_100mm": 4,
+    "hiwonder_520_gearmotor_90_12v_legacy": 2,
+    "hiwonder_rosorin_battery": 1
    }
   },
   {
@@ -3890,7 +3911,10 @@
    "price": 569.99,
    "currency": "USD",
    "pack": 1,
-   "product": "LanderPi Standard Kit on the Ackermann chassis, without Raspberry Pi 5"
+   "product": "LanderPi Standard Kit on the Ackermann chassis, without Raspberry Pi 5",
+   "includes": {
+    "hiwonder_mentorpi_m1_battery": 1
+   }
   },
   {
    "ref": "hiwonder_landerpi_acker_front_wheel",
@@ -4973,11 +4997,11 @@
   },
   {
    "ref": "hiwonder_rosorin_battery",
-   "name": "ROSOrin battery pack, 11.1 V 6000 mAh",
+   "name": "Hiwonder robot battery pack, 11.1 V 6000 mAh",
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Hiwonder",
-   "description": "The shared 11.1 V, 6 Ah wrapped lithium battery supplied with the ROSOrin Standard and Advanced kits, drawn from its official size and photograph with the printed label, folded wrapping, leads, SM connector and DC charging socket. This is a kit component, not a separately priced replacement battery.",
+   "description": "The shared 11.1 V, 6 Ah wrapped lithium battery shown for the ROSOrin Standard and Advanced kits, JetAuto, JetAcker and both JetRover chassis kits, drawn from their matching official body dimensions and photographs with the printed label, folded wrapping, leads, SM connector and DC charging socket. Its original ROSOrin product provenance is retained; each host records the supplied pack in includes, so using it in that kit does not add a separate purchase.",
    "source_url": "https://www.hiwonder.com/products/rosorin",
    "price": 429.99,
    "currency": "USD",
@@ -4986,11 +5010,11 @@
   },
   {
    "ref": "hiwonder_mentorpi_m1_battery",
-   "name": "MentorPi M1 battery pack",
+   "name": "Hiwonder MentorPi and LanderPi battery pack, 7.4 V 2200 mAh",
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Hiwonder",
-   "description": "The 7.4 V, 2.2 Ah wrapped lithium battery supplied with MentorPi M1 Standard, without Raspberry Pi 5, drawn from its official size and photograph with the printed label, folded wrapping, leads, SM connector and DC charging socket. This is a kit component, not a separately priced replacement battery.",
+   "description": "The shared 7.4 V, 2.2 Ah wrapped lithium battery shown for MentorPi M1 and A1 and both LanderPi chassis kits, drawn from the identical official size and photograph with the printed label, folded wrapping, leads, SM connector and DC charging socket. Its original M1 Standard kit provenance is retained; all four hosts record the supplied pack in includes.",
    "source_url": "https://www.hiwonder.com/products/mentorpi-m1",
    "price": 439.99,
    "currency": "USD",
@@ -5016,7 +5040,7 @@
    "category": "battery",
    "subtype": "Battery",
    "supplier": "Yahboom",
-   "description": "Yahboom two-cell lithium battery pack supplied with the Raspbot V2 and MicroROS-Pi5, with a blue sleeve, white 7.4 V 2000 mAh label, red T discharge plug and black charging socket. The two kits' own charging manuals state the same dimensions, mass and electrical ratings. It is priced as the Raspbot V2 kit that supplies it; a MicroROS-Pi5 purchase includes it too. No standalone battery listing is asserted.",
+   "description": "Yahboom two-cell lithium battery pack supplied with the Raspbot V2, MicroROS-Pi5 and ESP32 MicroROS kits, with a blue sleeve, white 7.4 V 2000 mAh label, red T discharge plug and black charging socket. The three kits' own charging manuals state matching dimensions, mass and electrical ratings. It is priced as the Raspbot V2 kit that supplies it; each of the three chassis purchases includes one. No standalone battery listing is asserted.",
    "source_url": "https://category.yahboom.net/products/raspbot-v2",
    "price": 134.99,
    "currency": "USD",
@@ -5035,6 +5059,110 @@
    "currency": "USD",
    "pack": 2,
    "product": "JetAcker Standard Kit, without controller"
+  },
+  {
+   "ref": "hiwonder_clawpi_battery",
+   "name": "ClawPi 7.4 V 2200 mAh battery pack",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Hiwonder",
+   "description": "The 7.4 V, 2.2 Ah, 10C wrapped lithium battery supplied in the black and grey ClawPi kits, drawn from their official 69.5 x 37 x 19 mm dimensions and photographs with the printed label, folded wrapping, leads, SM connector and DC charging socket. This is a kit component, not a separately priced replacement battery.",
+   "source_url": "https://www.hiwonder.com/products/clawpi-ros2",
+   "price": 332.99,
+   "currency": "USD",
+   "pack": 1,
+   "product": "ClawPi Ultimate Kit, without Raspberry Pi"
+  },
+  {
+   "ref": "yahboom_rdk_x3_7_4v_6600mah_battery",
+   "name": "7.4 V 6600 mAh battery for RDK X3 Robot",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The wrapped lithium battery supplied by RDK X3 Robot chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "source_url": "https://category.yahboom.net/products/rdk-x3-robot",
+   "price": 359.0,
+   "currency": "USD",
+   "pack": 1,
+   "product": "RDK X3 Robot Car Standard Kit with the RDK X3 4GB board"
+  },
+  {
+   "ref": "yahboom_microros_v2_11_1v_2200mah_battery",
+   "name": "11.1 V 2200 mAh battery for MicroROS V2",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The wrapped lithium battery supplied by MicroROS V2 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "source_url": "https://category.yahboom.net/products/microros-v2",
+   "price": 179.0,
+   "currency": "USD",
+   "pack": 1,
+   "product": "MicroROS V2 robot car, Standard kit"
+  },
+  {
+   "ref": "yahboom_rosmaster_x3_11_1v_6000mah_battery",
+   "name": "11.1 V 6000 mAh battery for ROSMASTER X3",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The wrapped lithium battery supplied by ROSMASTER X3 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "source_url": "https://category.yahboom.net/products/rosmaster-x3",
+   "price": 659.0,
+   "currency": "USD",
+   "pack": 1,
+   "product": "ROSMASTER X3 Standard version for Raspberry Pi 5, without main control board"
+  },
+  {
+   "ref": "yahboom_rosmaster_11_1v_6000mah_battery",
+   "name": "11.1 V 6000 mAh battery for ROSMASTER M3",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The wrapped lithium battery supplied by ROSMASTER M3 chassis. Its outer body is drawn from the retained kit CAD and its wrapping, visible label and connectors from manufacturer photographs. This separately placed model is priced through the supplied kit, not as an independently purchasable battery.",
+   "source_url": "https://category.yahboom.net/products/rosmaster-m3",
+   "price": 779.9,
+   "currency": "USD",
+   "pack": 1,
+   "product": "ROSMASTER M3 Standard kit for Raspberry Pi 5, without main control board"
+  },
+  {
+   "ref": "yahboom_raspbot_v2_7_4v_2000mah_battery",
+   "name": "7.4 V 2000 mAh lithium battery pack for Raspbot V2",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "Yahboom two-cell lithium battery pack supplied with Raspbot V2, with a blue sleeve, white 7.4 V 2000 mAh label, red T discharge plug and black charging socket. The Raspbot charging manual supplies its body dimensions, mass and electrical ratings. Its flexible leads have a documented estimated stored pose that fits behind the battery inside the Raspbot chassis. It is priced as the kit that supplies it; no standalone battery listing is asserted.",
+   "source_url": "https://category.yahboom.net/products/raspbot-v2",
+   "price": 134.99,
+   "currency": "USD",
+   "pack": 1,
+   "product": "Raspbot V2 robot car, Standard kit without the Raspberry Pi"
+  },
+  {
+   "ref": "yahboom_roboduino_7_4v_2000mah_battery",
+   "name": "Roboduino V2 7.4 V 2000 mAh battery pack",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The blue lithium battery supplied by the Roboduino V2 kit, drawn from this kit's own CAD envelope and shipping-list photograph. It has a white 7.4 V 2000 mAh label, red T discharge plug and black female charging socket. Its mass is an explicit envelope-density estimate; it is not identified as the separate pack supplied with Raspbot and MicroROS kits.",
+   "source_url": "https://category.yahboom.net/products/roboduino-v2",
+   "price": 110.0,
+   "currency": "USD",
+   "pack": 1,
+   "product": "Roboduino V2 robot car"
+  },
+  {
+   "ref": "yahboom_mspm0_7_4v_2000mah_battery",
+   "name": "7.4 V 2000 mAh battery for MSPM0 smart car",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Yahboom",
+   "description": "The blue wrapped 7.4 V 2000 mAh lithium battery supplied by the MSPM0 smart car kit. Its body dimensions are measured from this kit CAD, and visible wrapping and plug details are drawn from its own photographs. No exact manufacturer-part equivalence to another kit battery is asserted.",
+   "source_url": "https://category.yahboom.net/products/mspm0-smartcar",
+   "price": 99.0,
+   "currency": "USD",
+   "pack": 1,
+   "product": "MSPM0 smart robot car, Advanced Kit"
   }
  ]
 }
