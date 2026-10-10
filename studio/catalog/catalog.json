@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 369,
+ "count": 376,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -1620,13 +1620,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Standard Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors, with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Standard Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors, with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5001",
    "price": 194.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_30_mp_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2103,13 +2105,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Hyper Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Hyper Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5000",
    "price": 208.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2118,13 +2122,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Turtle Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Turtle Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5002",
    "price": 194.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_75_lp_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2133,13 +2139,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5003",
    "price": 193.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2148,13 +2156,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5004",
    "price": 179.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_30_mp_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2163,13 +2173,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 2040 Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 2040 Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an RP2040 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/5005",
    "price": 179.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_75_lp_6v_extended": 2,
+    "pololu_3pi_plus_2040_control_board": 1
    }
   },
   {
@@ -2178,13 +2190,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Hyper Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Hyper Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4974",
    "price": 208.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2193,13 +2207,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Standard Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Standard Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4975",
    "price": 194.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_30_mp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2208,13 +2224,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Turtle Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Turtle Edition, assembled - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4976",
    "price": 194.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_75_lp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2223,13 +2241,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4977",
    "price": 193.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2238,13 +2258,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4978",
    "price": 179.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_30_mp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2253,13 +2275,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 OLED Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 OLED Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an OLED display, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/4979",
    "price": 179.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_75_lp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_oled_control_board": 1
    }
   },
   {
@@ -2268,13 +2292,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 Robot, Hyper Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 15:1 high-power micro metal gearmotors (up to about 4 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/3739",
    "price": 203.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": 2,
+    "pololu_3pi_plus_32u4_control_board": 1
    }
   },
   {
@@ -2283,13 +2309,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 Robot, Standard Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 30:1 micro metal gearmotors (up to 1.5 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/3740",
    "price": 189.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_30_mp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_control_board": 1
    }
   },
   {
@@ -2298,13 +2326,15 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ 32U4 Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, and without batteries.",
+   "description": "Pololu 3pi+ 32U4 Robot, Turtle Edition, sold as a kit (assembly, including soldering, is required) - a round robot 97 mm across on two 32 mm wheels driven by 75:1 micro metal gearmotors (up to 0.4 m/s), with an ATmega32U4 control board, an LCD, line and bump sensors, an IMU, a 4xAAA battery holder and a 1/2-inch ball caster under its rear. It comes with its wheels, its two motors and its control board, which are parts of their own here, and without batteries; a seat in its battery holder takes four AAA cells.",
    "source_url": "https://www.pololu.com/product/3741",
    "price": 189.95,
    "currency": "USD",
    "pack": 1,
    "includes": {
-    "pololu_wheel_32x7mm_white": 2
+    "pololu_wheel_32x7mm_white": 2,
+    "pololu_micro_metal_gearmotor_75_lp_6v_extended": 2,
+    "pololu_3pi_plus_32u4_control_board": 1
    }
   },
   {
@@ -2313,7 +2343,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "Pololu",
-   "description": "Pololu 3pi+ chassis kit, the round 97 mm chassis of the 3pi+ robots with its 4xAAA battery holder, its bumper skirt and a 1/2-inch ball caster under its rear, without motors or electronics. The kit also brings a pair of 32 mm wheels.",
+   "description": "Pololu 3pi+ chassis kit, the round 97 mm chassis of the 3pi+ robots with its 4xAAA battery holder, its bumper skirt and a 1/2-inch ball caster under its rear, without motors or electronics. It has a seat for a micro metal gearmotor at each wheel, one on its top for a 3pi+ control board and one in its battery holder for four AAA cells. The kit also brings a pair of 32 mm wheels.",
    "source_url": "https://www.pololu.com/product/3725",
    "price": 27.95,
    "currency": "USD",
@@ -4768,6 +4798,90 @@
    "description": "Six of Pololu's rechargeable NiMH AA cells, 1.2 V and 2200 mAh each, as the Romi chassis holds them in its battery compartment: two between the motors and four behind them, 7.2 V in series. The cells are sold one at a time; this part is the six a Romi takes.",
    "source_url": "https://www.pololu.com/product/1003",
    "price": 29.7,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_micro_metal_gearmotor_30_mp_6v_extended",
+   "name": "30:1 Micro Metal Gearmotor MP 6V with Extended Motor Shaft",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 30:1 Micro Metal Gearmotor MP 6V with an extended motor shaft, the motor of the Standard Edition 3pi+ robots: a brushed motor 10 x 12 mm in section with a metal gearbox between brass plates and a 3 mm D-shaft output. At 6 V it turns 720 rpm unloaded and stalls at 0.33 kg cm (0.032 N m) and 0.67 A.",
+   "source_url": "https://www.pololu.com/product/2378",
+   "price": 24.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_micro_metal_gearmotor_75_lp_6v_extended",
+   "name": "75:1 Micro Metal Gearmotor LP 6V with Extended Motor Shaft",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 75:1 Micro Metal Gearmotor LP 6V with an extended motor shaft, the motor of the Turtle Edition 3pi+ robots: a brushed motor 10 x 12 mm in section with a metal gearbox between brass plates and a 3 mm D-shaft output. At 6 V it turns 180 rpm unloaded and stalls at 0.64 kg cm (0.063 N m) and 0.36 A.",
+   "source_url": "https://www.pololu.com/product/2209",
+   "price": 24.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_micro_metal_gearmotor_15_hpcb_6v_extended",
+   "name": "15:1 Micro Metal Gearmotor HPCB 6V with Extended Motor Shaft",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 15:1 Micro Metal Gearmotor HPCB 6V with an extended motor shaft, the motor of the Hyper Edition 3pi+ robots: a brushed motor with carbon brushes, 10 x 12 mm in section, with a metal gearbox between brass plates and a 3 mm D-shaft output. At 6 V it turns 2100 rpm unloaded and stalls at 0.25 kg cm (0.025 N m) and 1.5 A.",
+   "source_url": "https://www.pololu.com/product/4787",
+   "price": 27.45,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_3pi_plus_2040_control_board",
+   "name": "3pi+ 2040 Control Board",
+   "category": "motor_driver",
+   "subtype": "MotorDriver",
+   "supplier": "Pololu",
+   "description": "Pololu 3pi+ 2040 Control Board: an RP2040 controller with two DRV8838 motor drivers, 1.8 A a channel, on a 2.7 V to 8.5 V supply that a regulator on it turns into a constant 8 V for the motors; with five line sensors, two bump sensors, an IMU, sensors for the motors' encoders, buttons, RGB LEDs and a buzzer. It screws onto a 3pi+ chassis and solders to its battery contacts. Sold without the OLED display it has a header for.",
+   "source_url": "https://www.pololu.com/product/5006",
+   "price": 74.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_3pi_plus_32u4_oled_control_board",
+   "name": "3pi+ 32U4 OLED Control Board",
+   "category": "motor_driver",
+   "subtype": "MotorDriver",
+   "supplier": "Pololu",
+   "description": "Pololu 3pi+ 32U4 OLED Control Board: an ATmega32U4 controller with two DRV8838 motor drivers, 1.8 A a channel, on a 2.7 V to 6.5 V supply that a regulator on it turns into a constant 8 V for the motors; with five line sensors, two bump sensors, an IMU, sensors for the motors' encoders, buttons and a buzzer. It screws onto a 3pi+ chassis and solders to its battery contacts. Sold without the OLED display it has a header for.",
+   "source_url": "https://www.pololu.com/product/4973",
+   "price": 74.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_3pi_plus_32u4_control_board",
+   "name": "3pi+ 32U4 Control Board",
+   "category": "motor_driver",
+   "subtype": "MotorDriver",
+   "supplier": "Pololu",
+   "description": "Pololu 3pi+ 32U4 Control Board, the board of the original 3pi+ 32U4 robot with an LCD: an ATmega32U4 controller with two DRV8838 motor drivers, 1.8 A a channel, on a 2.7 V to 6.5 V supply that a regulator on it turns into a constant 8 V for the motors; with five line sensors, two bump sensors, an IMU, sensors for the motors' encoders, buttons and a buzzer. It screws onto a 3pi+ chassis and solders to its battery contacts. Sold without the 8x2 character LCD it has a header for.",
+   "source_url": "https://www.pololu.com/product/3735",
+   "price": 84.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_3pi_plus_four_nimh_aaa_cells",
+   "name": "Rechargeable NiMH AAA Battery: 1.2 V, 900 mAh, four cells for a 3pi+ chassis",
+   "category": "battery",
+   "subtype": "Battery",
+   "supplier": "Pololu",
+   "description": "Four of Pololu's rechargeable NiMH AAA cells, 1.2 V and 900 mAh each, as a 3pi+ chassis holds them under its control board: two in front of the motors and two behind them, 4.8 V in series. The cells are sold one at a time; this part is the four a 3pi+ takes.",
+   "source_url": "https://www.pololu.com/product/1002",
+   "price": 13.28,
    "currency": "USD",
    "pack": 1
   }
