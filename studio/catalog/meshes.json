@@ -134,8 +134,8 @@
    "bytes": 745276
   },
   "pololu_wheel_32x7mm_white": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_32x7mm_white/assets/model.glb",
-   "bytes": 308412
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_wheel_32x7mm_white/assets/model.glb",
+   "bytes": 308408
   },
   "pololu_wheel_42x19mm": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7e55416a651c65e9f7ad26285b9b92547eae225e/parts/pololu_wheel_42x19mm/assets/model.glb",
@@ -510,8 +510,8 @@
    "bytes": 109920
   },
   "pololu_3pi_plus_2040_robot": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_digital_distance_sensor_5cm": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f17e5e28fb294dee4f342730bf497e46981c8902/parts/pololu_digital_distance_sensor_5cm/assets/model.glb",
@@ -670,64 +670,64 @@
    "bytes": 124644
   },
   "pololu_3pi_plus_2040_robot_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot_hyper/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_hyper/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot_turtle/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_turtle/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot_kit_hyper/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_hyper/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot_kit_standard/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_standard/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_3pi_plus_2040_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_robot_kit_turtle/assets/model.glb",
-   "bytes": 1896448
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_robot_kit_turtle/assets/model.glb",
+   "bytes": 2132620
   },
   "pololu_3pi_plus_32u4_oled_robot_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_hyper/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_standard/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_standard/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_turtle/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_turtle/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_kit_hyper/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_hyper/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_kit_standard/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_standard/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_oled_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_robot_kit_turtle/assets/model.glb",
-   "bytes": 1961992
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_robot_kit_turtle/assets/model.glb",
+   "bytes": 2130652
   },
   "pololu_3pi_plus_32u4_robot_kit_hyper": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_robot_kit_hyper/assets/model.glb",
-   "bytes": 1819856
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_hyper/assets/model.glb",
+   "bytes": 2134336
   },
   "pololu_3pi_plus_32u4_robot_kit_standard": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_robot_kit_standard/assets/model.glb",
-   "bytes": 1819856
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_standard/assets/model.glb",
+   "bytes": 2134336
   },
   "pololu_3pi_plus_32u4_robot_kit_turtle": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_robot_kit_turtle/assets/model.glb",
-   "bytes": 1819856
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_robot_kit_turtle/assets/model.glb",
+   "bytes": 2134336
   },
   "pololu_3pi_plus_chassis_kit": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_3pi_plus_chassis_kit/assets/model.glb",
-   "bytes": 1707608
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_chassis_kit/assets/model.glb",
+   "bytes": 2130368
   },
   "pololu_micro_gripper": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f0927e239b3650c22579bd4c841d6cd3033797cf/parts/pololu_micro_gripper/assets/model.glb",
@@ -1478,32 +1478,40 @@
    "bytes": 802868
   },
   "pololu_micro_metal_gearmotor_30_mp_6v_extended": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
-   "bytes": 642856
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_30_mp_6v_extended/assets/model.glb",
+   "bytes": 1084536
   },
   "pololu_micro_metal_gearmotor_75_lp_6v_extended": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_micro_metal_gearmotor_75_lp_6v_extended/assets/model.glb",
-   "bytes": 642856
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_75_lp_6v_extended/assets/model.glb",
+   "bytes": 1084536
   },
   "pololu_micro_metal_gearmotor_15_hpcb_6v_extended": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
-   "bytes": 635036
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_micro_metal_gearmotor_15_hpcb_6v_extended/assets/model.glb",
+   "bytes": 1086392
   },
   "pololu_3pi_plus_2040_control_board": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_2040_control_board/assets/model.glb",
-   "bytes": 1982672
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_2040_control_board/assets/model.glb",
+   "bytes": 2692664
   },
   "pololu_3pi_plus_32u4_oled_control_board": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_oled_control_board/assets/model.glb",
-   "bytes": 1891864
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_oled_control_board/assets/model.glb",
+   "bytes": 2776772
   },
   "pololu_3pi_plus_32u4_control_board": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_32u4_control_board/assets/model.glb",
-   "bytes": 1891412
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_32u4_control_board/assets/model.glb",
+   "bytes": 2827516
   },
   "pololu_3pi_plus_four_nimh_aaa_cells": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1acdd770c57db89d434338645af9b489129e20d3/parts/pololu_3pi_plus_four_nimh_aaa_cells/assets/model.glb",
    "bytes": 541912
+  },
+  "pololu_3pi_plus_oled_display": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/09908c0ec71e73d8a1b1f241a443d6e5ec18afec/parts/pololu_3pi_plus_oled_display/assets/model.glb",
+   "bytes": 298020
+  },
+  "pololu_3pi_plus_lcd_display": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea27f04673dc8d1ac9e66d4be99a594aee2119af/parts/pololu_3pi_plus_lcd_display/assets/model.glb",
+   "bytes": 246224
   }
  }
 }
