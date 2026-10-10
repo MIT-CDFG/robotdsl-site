@@ -282,8 +282,8 @@
    "bytes": 744864
   },
   "hiwonder_jetauto_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_jetauto_chassis/assets/model.glb",
-   "bytes": 461024
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/290670b8e48de05fe8478b2d97a14f560a93dc53/parts/hiwonder_jetauto_chassis/assets/model.glb",
+   "bytes": 391952
   },
   "hiwonder_jetauto_lidar": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/41af2f31ff00ef742b720a94ffe08b9f9caca4e5/parts/hiwonder_jetauto_lidar/assets/model.glb",
@@ -310,8 +310,8 @@
    "bytes": 786476
   },
   "hiwonder_jetacker_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_jetacker_chassis/assets/model.glb",
-   "bytes": 708800
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/290670b8e48de05fe8478b2d97a14f560a93dc53/parts/hiwonder_jetacker_chassis/assets/model.glb",
+   "bytes": 625928
   },
   "hiwonder_jetacker_lidar": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea7da31d84a9bb2c363d337a494ac0b97dbc7108/parts/hiwonder_jetacker_lidar/assets/model.glb",
@@ -330,8 +330,8 @@
    "bytes": 711648
   },
   "hiwonder_rosorin_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_chassis/assets/model.glb",
-   "bytes": 1850288
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_rosorin_chassis/assets/model.glb",
+   "bytes": 1148768
   },
   "hiwonder_rosorin_lidar": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/69f0ae897f6c6de26d7809d2efe9e3861431ea2e/parts/hiwonder_rosorin_lidar/assets/model.glb",
@@ -426,12 +426,12 @@
    "bytes": 139812
   },
   "hiwonder_large_metal_4wd_chassis_green": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/88457334dc7fc1db24ea864fd98e844676a16628/parts/hiwonder_large_metal_4wd_chassis_green/assets/model.glb",
-   "bytes": 275936
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/290670b8e48de05fe8478b2d97a14f560a93dc53/parts/hiwonder_large_metal_4wd_chassis_green/assets/model.glb",
+   "bytes": 206868
   },
   "hiwonder_ackermann_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5e52d9b4a72ca51120d0e9092f72dff3a47962d7/parts/hiwonder_ackermann_chassis/assets/model.glb",
-   "bytes": 2573060
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f6043012399bc89e0e5f1727378b6b95b7c14653/parts/hiwonder_ackermann_chassis/assets/model.glb",
+   "bytes": 2381220
   },
   "hiwonder_ackermann_chassis_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/5e52d9b4a72ca51120d0e9092f72dff3a47962d7/parts/hiwonder_ackermann_chassis_wheel/assets/model.glb",
@@ -898,8 +898,8 @@
    "bytes": 528896
   },
   "yahboom_microros_pi5_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_chassis/assets/model.glb",
-   "bytes": 6195476
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_microros_pi5_chassis/assets/model.glb",
+   "bytes": 6187124
   },
   "yahboom_microros_pi5_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/9714ba0adeee647316776062fff5871ff30d097f/parts/yahboom_microros_pi5_wheel/assets/model.glb",
@@ -1094,16 +1094,16 @@
    "bytes": 574364
   },
   "yahboom_alloy_chassis_2wd": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_2wd/assets/model.glb",
-   "bytes": 2951584
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_alloy_chassis_2wd/assets/model.glb",
+   "bytes": 2787648
   },
   "yahboom_alloy_chassis_2wd_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_2wd_wheel/assets/model.glb",
    "bytes": 1181860
   },
   "yahboom_alloy_chassis_4wd": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_4wd/assets/model.glb",
-   "bytes": 2904036
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_alloy_chassis_4wd/assets/model.glb",
+   "bytes": 2529556
   },
   "yahboom_alloy_chassis_4wd_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/86bd00347b341141f480f0d47a8f2dda746fce56/parts/yahboom_alloy_chassis_4wd_wheel/assets/model.glb",
@@ -1170,8 +1170,8 @@
    "bytes": 3689600
   },
   "hiwonder_ackermann_chassis_double": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/847c357663584cbf75c7dba3cfd6140b90cfd882/parts/hiwonder_ackermann_chassis_double/assets/model.glb",
-   "bytes": 2844208
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f6043012399bc89e0e5f1727378b6b95b7c14653/parts/hiwonder_ackermann_chassis_double/assets/model.glb",
+   "bytes": 2666700
   },
   "hiwonder_ackermann_chassis_double_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/847c357663584cbf75c7dba3cfd6140b90cfd882/parts/hiwonder_ackermann_chassis_double_wheel/assets/model.glb",
@@ -1218,12 +1218,12 @@
    "bytes": 400112
   },
   "hiwonder_rosorin_diff_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_diff_chassis/assets/model.glb",
-   "bytes": 1854832
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_rosorin_diff_chassis/assets/model.glb",
+   "bytes": 1239148
   },
   "hiwonder_rosorin_acker_chassis": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_acker_chassis/assets/model.glb",
-   "bytes": 1544832
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_rosorin_acker_chassis/assets/model.glb",
+   "bytes": 1252544
   },
   "hiwonder_rosorin_rubber_wheel": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c96c102bc351550ca0d0641f624e051d36a4faac/parts/hiwonder_rosorin_rubber_wheel/assets/model.glb",
@@ -1512,6 +1512,30 @@
   "pololu_3pi_plus_lcd_display": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/ea27f04673dc8d1ac9e66d4be99a594aee2119af/parts/pololu_3pi_plus_lcd_display/assets/model.glb",
    "bytes": 246224
+  },
+  "hiwonder_520_gearmotor_90_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/f6043012399bc89e0e5f1727378b6b95b7c14653/parts/hiwonder_520_gearmotor_90_12v/assets/model.glb",
+   "bytes": 1190828
+  },
+  "hiwonder_rosorin_battery": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_rosorin_battery/assets/model.glb",
+   "bytes": 687408
+  },
+  "hiwonder_mentorpi_m1_battery": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a0eb51207ad817f27ed7120a861c51de5db81cdd/parts/hiwonder_mentorpi_m1_battery/assets/model.glb",
+   "bytes": 647912
+  },
+  "yahboom_l_type_520_encoder_motor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_l_type_520_encoder_motor/assets/model.glb",
+   "bytes": 258612
+  },
+  "yahboom_7_4v_2000mah_battery": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/b71b92064060d9cb838b123f4c15b77662123b19/parts/yahboom_7_4v_2000mah_battery/assets/model.glb",
+   "bytes": 674096
+  },
+  "hiwonder_520_gearmotor_90_12v_legacy": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/290670b8e48de05fe8478b2d97a14f560a93dc53/parts/hiwonder_520_gearmotor_90_12v_legacy/assets/model.glb",
+   "bytes": 59540
   }
  }
 }
