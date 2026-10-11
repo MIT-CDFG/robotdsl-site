@@ -4,19 +4,11 @@
   {
    "id": "makers",
    "title": "Robot kits and platforms",
-   "about": "Robots their makers sell, each assembled from the parts library's parts, which are drawn from the makers' own published models, with the world and task it drove in. Open one to see its parts and what they cost, or drive it with the keys.",
+   "about": "Robots and kits their makers sell, some with parts of other makers added, each assembled from the parts library's parts, drawn from their makers' published models where the makers publish them, with the world and task it drove in. Open one to see its parts and what they cost, or drive it with the keys.",
    "notices": [
     {
      "text": "Hiwonder, Husarion, PCX, Pololu, Raspberry Pi, Unitree Robotics and Yahboom are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
      "shown": true
-    },
-    {
-     "text": "Apache-2.0",
-     "url": "https://www.apache.org/licenses/LICENSE-2.0"
-    },
-    {
-     "text": "MIT",
-     "url": "https://opensource.org/license/mit"
     }
    ]
   },
@@ -278,8 +270,8 @@
     }
    ],
    "ground": -0.035,
-   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.28 m from the point), past a box beside its way, touching nothing",
-   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.28 m from the point), past a box beside its way without touching it",
+   "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Pololu: Romi Chassis Kit - Black",
@@ -464,8 +456,8 @@
     }
    ],
    "ground": -0.1022,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "5 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: MSPM0 smart robot car aluminium alloy chassis kit, two-wheel drive, without battery",
@@ -738,8 +730,8 @@
     }
    ],
    "ground": -0.1022,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "9 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: MSPM0 smart robot car aluminium alloy chassis kit, four-wheel drive, without battery",
@@ -887,8 +879,8 @@
     }
    ],
    "ground": -0.0325,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "4 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: MSPM0 smart robot car, Advanced Kit",
@@ -1061,8 +1053,8 @@
     }
    ],
    "ground": -0.022500000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way, touching nothing",
-   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "summary": "5 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: MicroROS V2 robot car, Standard kit",
@@ -1289,16 +1281,16 @@
     }
    ],
    "ground": -0.0453,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way, touching nothing",
-   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models; 1 drawn by the RobotDSL Team where the maker publishes none",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
    "credits": [
     {
      "text": "Sold by Yahboom: ESP32 MicroROS robot car, Standard version",
      "url": "https://category.yahboom.net/products/microros-esp32"
     },
     {
-     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team, since Yahboom publishes no model of it",
-     "url": "https://category.yahboom.net/products/raspbot-v2"
+     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team after the maker's photograph and stated size",
+     "url": "https://cdn.shopify.com/s/files/1/0066/9686/1780/files/MicroROS-Pi5_Car_Yahboom_14.jpg"
     },
     {
      "text": "MicroROS ESP32 chassis (Yahboom): the model Yahboom publishes",
@@ -1567,8 +1559,8 @@
     }
    ],
    "ground": -0.0453,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way, touching nothing",
-   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models; 1 drawn by the RobotDSL Team where the maker publishes none",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "summary": "9 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
    "credits": [
     {
      "text": "Sold by Yahboom: MicroROS-Pi5 robot car, without the Raspberry Pi",
@@ -1579,8 +1571,8 @@
      "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
     },
     {
-     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team, since Yahboom publishes no model of it",
-     "url": "https://category.yahboom.net/products/raspbot-v2"
+     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team after the maker's photograph and stated size",
+     "url": "https://cdn.shopify.com/s/files/1/0066/9686/1780/files/MicroROS-Pi5_Car_Yahboom_14.jpg"
     },
     {
      "text": "MicroROS-Pi5 camera (Yahboom): the model Yahboom publishes",
@@ -1600,6 +1592,10 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "MIT",
+     "url": "https://opensource.org/license/mit"
     }
    ],
    "mjcf": {
@@ -1828,8 +1824,8 @@
     }
    ],
    "ground": -0.019000000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
+   "summary": "8 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: ROSMASTER A1 Ultimate kit for Raspberry Pi 5, without main control board",
@@ -1857,6 +1853,10 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "MIT",
+     "url": "https://opensource.org/license/mit"
     }
    ],
    "mjcf": {
@@ -2060,8 +2060,8 @@
     }
    ],
    "ground": -0.022400000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way, touching nothing",
-   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: ROSMASTER R2 Standard version for Raspberry Pi 5, without main control board",
@@ -2288,8 +2288,8 @@
     }
    ],
    "ground": -0.0235,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: Ackermann steering chassis, Standard Version (single layer) with motor driver module",
@@ -2512,8 +2512,8 @@
     }
    ],
    "ground": -0.0235,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: Ackermann steering chassis, Advanced Version (double layer) with motor driver module",
@@ -2736,8 +2736,8 @@
     }
    ],
    "ground": -0.0612,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.28 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.28 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: MentorPi A1 Standard, without Raspberry Pi 5",
@@ -3018,8 +3018,8 @@
     }
    ],
    "ground": -0.0245,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "summary": "9 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: ROSOrin Advanced Kit, without controller",
@@ -3350,8 +3350,8 @@
     }
    ],
    "ground": -0.0233,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.36 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.36 m from the point), past a box beside its way without touching it",
+   "summary": "11 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: ROSOrin Advanced Kit, without controller",
@@ -3632,8 +3632,8 @@
     }
    ],
    "ground": 0.0,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
+   "summary": "9 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: JetAcker Standard Kit, without controller",
@@ -3939,8 +3939,8 @@
     }
    ],
    "ground": -0.1158,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way, touching nothing",
-   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
+   "summary": "10 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: JetRover Standard Kit on the Ackermann chassis, without controller",
@@ -4200,8 +4200,8 @@
     }
    ],
    "ground": -0.0535,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way, touching nothing",
-   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
+   "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Hiwonder: LanderPi Standard Kit on the Ackermann chassis, without Raspberry Pi 5",
@@ -4386,8 +4386,8 @@
     }
    ],
    "ground": -0.042,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.23 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.23 m from the point), past a box beside its way without touching it",
+   "summary": "5 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Husarion: ROSbot 3, Standard (1 Year), no spare batteries",
@@ -4407,6 +4407,10 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "Apache-2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
    ],
    "mjcf": {
@@ -4560,8 +4564,8 @@
     }
    ],
    "ground": -0.144185526,
-   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.23 m from the point), past a box beside its way, touching nothing",
-   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.23 m from the point), past a box beside its way without touching it",
+   "summary": "5 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Husarion: Lynx standard LNX10 platform, one BAT01 battery and WH05 wheels",
@@ -4581,6 +4585,10 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "Apache-2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
    ],
    "mjcf": {
@@ -4734,8 +4742,8 @@
     }
    ],
    "ground": -0.187499959,
-   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
-   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "summary": "5 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Husarion: Panther standard PTH12/v1.2-family platform, native v1.21 WH01 geometry, one BAT01 battery; exact purchased minor revision unconfirmed",
