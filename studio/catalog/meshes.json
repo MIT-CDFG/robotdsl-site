@@ -3468,6 +3468,134 @@
   "pololu_37d_gearmotor_150_24v_encoder": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/8c1fbe7c05bdfc0f12baa11303544d93b0994588/parts/pololu_37d_gearmotor_100_12v_encoder/assets/model.glb",
    "bytes": 396956
+  },
+  "pololu_tb6612fng_dual_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb6612fng_dual_motor_driver_carrier/assets/model.glb",
+   "bytes": 356744
+  },
+  "pololu_high_power_motor_driver_18v15": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_high_power_motor_driver_18v15/assets/model.glb",
+   "bytes": 590116
+  },
+  "pololu_high_power_motor_driver_36v9": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_high_power_motor_driver_18v15/assets/model.glb",
+   "bytes": 590116
+  },
+  "pololu_mc33926_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_mc33926_motor_driver_carrier/assets/model.glb",
+   "bytes": 381360
+  },
+  "pololu_dual_mc33926_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_dual_mc33926_motor_driver_carrier/assets/model.glb",
+   "bytes": 509548
+  },
+  "pololu_vnh5019_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_vnh5019_motor_driver_carrier/assets/model.glb",
+   "bytes": 466740
+  },
+  "pololu_drv8833_dual_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8833_dual_motor_driver_carrier/assets/model.glb",
+   "bytes": 234952
+  },
+  "pololu_drv8835_dual_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8835_dual_motor_driver_carrier/assets/model.glb",
+   "bytes": 239968
+  },
+  "pololu_drv8801_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8801_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 187332
+  },
+  "pololu_a4990_dual_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_a4990_dual_motor_driver_carrier/assets/model.glb",
+   "bytes": 346208
+  },
+  "pololu_bd65496muv_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_bd65496muv_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 233712
+  },
+  "pololu_max14870_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_max14870_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 245900
+  },
+  "pololu_drv8838_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8838_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 237980
+  },
+  "pololu_g2_high_power_motor_driver_18v17": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_18v17/assets/model.glb",
+   "bytes": 503716
+  },
+  "pololu_g2_high_power_motor_driver_24v13": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_18v17/assets/model.glb",
+   "bytes": 503716
+  },
+  "pololu_h2_high_power_motor_driver_36v11_cs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_h2_high_power_motor_driver_36v11_cs/assets/model.glb",
+   "bytes": 550536
+  },
+  "pololu_g2_high_power_motor_driver_18v25": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_18v25/assets/model.glb",
+   "bytes": 460608
+  },
+  "pololu_g2_high_power_motor_driver_24v21": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_18v25/assets/model.glb",
+   "bytes": 460608
+  },
+  "pololu_tb9051ftg_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb9051ftg_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 418716
+  },
+  "pololu_tb67h420ftg_dual_single_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb67h420ftg_dual_single_motor_driver_carrier/assets/model.glb",
+   "bytes": 492752
+  },
+  "pololu_drv8874_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8874_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 326444
+  },
+  "pololu_drv8876_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8874_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 326444
+  },
+  "pololu_drv8876_qfn_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8876_qfn_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 249616
+  },
+  "pololu_drv8256e_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8256e_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 322892
+  },
+  "pololu_drv8256p_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8256e_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 322892
+  },
+  "pololu_mp6550_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_mp6550_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 266188
+  },
+  "pololu_tb67h453fng_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb67h453fng_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 321400
+  },
+  "pololu_tb67h453ftg_qfn_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb67h453ftg_qfn_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 245168
+  },
+  "pololu_drv8263h_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8263h_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 415140
+  },
+  "pololu_mpq6612a_single_brushed_dc_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_mpq6612a_single_brushed_dc_motor_driver_carrier/assets/model.glb",
+   "bytes": 332112
+  },
+  "pololu_mpq6612a_single_brushed_dc_motor_driver_carrier_soldered_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_mpq6612a_single_brushed_dc_motor_driver_carrier_soldered_connectors/assets/model.glb",
+   "bytes": 488248
+  },
+  "pololu_g2_high_power_motor_driver_24v30_cs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_24v30_cs/assets/model.glb",
+   "bytes": 536092
   }
  }
 }
