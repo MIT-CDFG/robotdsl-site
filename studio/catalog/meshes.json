@@ -3489,9 +3489,37 @@
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_dual_mc33926_motor_driver_carrier/assets/model.glb",
    "bytes": 509548
   },
+  "pololu_high_power_simple_motor_controller_g2_18v15": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_high_power_simple_motor_controller_g2_18v15/assets/model.glb",
+   "bytes": 1206000
+  },
+  "pololu_high_power_simple_motor_controller_g2_24v12": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_high_power_simple_motor_controller_g2_18v15/assets/model.glb",
+   "bytes": 1206000
+  },
+  "pololu_high_power_simple_motor_controller_g2_18v25": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_high_power_simple_motor_controller_g2_18v25/assets/model.glb",
+   "bytes": 1231900
+  },
+  "pololu_high_power_simple_motor_controller_g2_24v19": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_high_power_simple_motor_controller_g2_18v25/assets/model.glb",
+   "bytes": 1231900
+  },
+  "pololu_jrk_21v3_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_21v3_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 849556
+  },
+  "pololu_jrk_21v3_usb_motor_controller_with_feedback_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_21v3_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 849556
+  },
   "pololu_vnh5019_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_vnh5019_motor_driver_carrier/assets/model.glb",
    "bytes": 466740
+  },
+  "pololu_qik_2s15v9_dual_serial_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_qik_2s15v9_dual_serial_motor_controller/assets/model.glb",
+   "bytes": 735636
   },
   "pololu_drv8833_dual_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8833_dual_motor_driver_carrier/assets/model.glb",
@@ -3508,6 +3536,66 @@
   "pololu_a4990_dual_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_a4990_dual_motor_driver_carrier/assets/model.glb",
    "bytes": 346208
+  },
+  "pololu_dual_mc33926_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_mc33926_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 925036
+  },
+  "pololu_dual_vnh5019_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_vnh5019_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 993224
+  },
+  "pololu_drv8835_dual_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_drv8835_dual_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 394952
+  },
+  "pololu_a4990_dual_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_a4990_dual_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 557640
+  },
+  "pololu_dual_g2_high_power_motor_driver_18v18_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_shield_for_arduino/assets/model.glb",
+   "bytes": 1316592
+  },
+  "pololu_dual_g2_high_power_motor_driver_24v14_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_shield_for_arduino/assets/model.glb",
+   "bytes": 1316592
+  },
+  "pololu_dual_g2_high_power_motor_driver_18v22_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v22_shield_for_arduino/assets/model.glb",
+   "bytes": 1283548
+  },
+  "pololu_dual_g2_high_power_motor_driver_24v18_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v22_shield_for_arduino/assets/model.glb",
+   "bytes": 1283548
+  },
+  "pololu_dual_max14870_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_max14870_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 537124
+  },
+  "pololu_dual_tb9051ftg_motor_driver_shield_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_tb9051ftg_motor_driver_shield_for_arduino/assets/model.glb",
+   "bytes": 1222444
+  },
+  "pololu_drv8835_dual_motor_driver_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_drv8835_dual_motor_driver_kit_for_raspberry_pi/assets/model.glb",
+   "bytes": 783924
+  },
+  "pololu_dual_mc33926_motor_driver_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_mc33926_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1753088
+  },
+  "pololu_dual_mc33926_motor_driver_for_raspberry_pi_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_mc33926_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1753088
+  },
+  "pololu_dual_tb9051ftg_motor_driver_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_tb9051ftg_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1848360
+  },
+  "pololu_dual_tb9051ftg_motor_driver_for_raspberry_pi_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_tb9051ftg_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1848360
   },
   "pololu_bd65496muv_single_brushed_dc_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_bd65496muv_single_brushed_dc_motor_driver_carrier/assets/model.glb",
@@ -3549,6 +3637,62 @@
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb67h420ftg_dual_single_motor_driver_carrier/assets/model.glb",
    "bytes": 492752
   },
+  "pololu_jrk_g2_21v3_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_21v3_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1084448
+  },
+  "pololu_jrk_g2_21v3_usb_motor_controller_with_feedback_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_21v3_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1084448
+  },
+  "pololu_jrk_g2_18v19_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_18v19_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1067684
+  },
+  "pololu_jrk_g2_24v13_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_18v19_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1067684
+  },
+  "pololu_jrk_g2_18v27_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_18v27_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1163744
+  },
+  "pololu_jrk_g2_24v21_usb_motor_controller_with_feedback": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_jrk_g2_18v27_usb_motor_controller_with_feedback/assets/model.glb",
+   "bytes": 1163744
+  },
+  "pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1822056
+  },
+  "pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1822056
+  },
+  "pololu_dual_g2_high_power_motor_driver_24v14_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1822056
+  },
+  "pololu_dual_g2_high_power_motor_driver_24v14_for_raspberry_pi_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v18_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1822056
+  },
+  "pololu_dual_g2_high_power_motor_driver_18v22_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v22_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1804200
+  },
+  "pololu_dual_g2_high_power_motor_driver_24v18_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_g2_high_power_motor_driver_18v22_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 1804200
+  },
+  "pololu_dual_max14870_motor_driver_for_raspberry_pi_partial_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_max14870_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 849636
+  },
+  "pololu_dual_max14870_motor_driver_for_raspberry_pi_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_dual_max14870_motor_driver_for_raspberry_pi_partial_kit/assets/model.glb",
+   "bytes": 849636
+  },
   "pololu_drv8874_single_brushed_dc_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8874_single_brushed_dc_motor_driver_carrier/assets/model.glb",
    "bytes": 326444
@@ -3580,6 +3724,230 @@
   "pololu_tb67h453ftg_qfn_single_brushed_dc_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb67h453ftg_qfn_single_brushed_dc_motor_driver_carrier/assets/model.glb",
    "bytes": 245168
+  },
+  "pololu_motoron_m3s256_triple_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s256_triple_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1164324
+  },
+  "pololu_motoron_m3s256_triple_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s256_triple_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1164324
+  },
+  "pololu_motoron_m3s256_triple_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s256_triple_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 854708
+  },
+  "pololu_motoron_m3h256_triple_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h256_triple_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1202716
+  },
+  "pololu_motoron_m3h256_triple_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h256_triple_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1202716
+  },
+  "pololu_motoron_m3h256_triple_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h256_triple_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 883308
+  },
+  "pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1536640
+  },
+  "pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1536640
+  },
+  "pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 1213724
+  },
+  "pololu_motoron_m2s24v14_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1536640
+  },
+  "pololu_motoron_m2s24v14_dual_high_power_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1536640
+  },
+  "pololu_motoron_m2s24v14_dual_high_power_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v18_dual_high_power_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 1213724
+  },
+  "pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1513748
+  },
+  "pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1513748
+  },
+  "pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 1190492
+  },
+  "pololu_motoron_m2s24v16_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1513748
+  },
+  "pololu_motoron_m2s24v16_dual_high_power_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1513748
+  },
+  "pololu_motoron_m2s24v16_dual_high_power_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2s18v20_dual_high_power_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 1190492
+  },
+  "pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1653956
+  },
+  "pololu_motoron_m2h18v18_dual_high_power_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1653956
+  },
+  "pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 1293912
+  },
+  "pololu_motoron_m2h24v14_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1653956
+  },
+  "pololu_motoron_m2h24v14_dual_high_power_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1653956
+  },
+  "pololu_motoron_m2h24v14_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v18_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 1293912
+  },
+  "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1632828
+  },
+  "pololu_motoron_m2h18v20_dual_high_power_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1632828
+  },
+  "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 1271784
+  },
+  "pololu_motoron_m2h24v16_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1632828
+  },
+  "pololu_motoron_m2h24v16_dual_high_power_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1632828
+  },
+  "pololu_motoron_m2h24v16_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 1271784
+  },
+  "pololu_motoron_m1t256_single_i2c_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t256_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 373436
+  },
+  "pololu_motoron_m1t256_single_i2c_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t256_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 373436
+  },
+  "pololu_motoron_m1u256_single_serial_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t256_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 373436
+  },
+  "pololu_motoron_m1u256_single_serial_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t256_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 373436
+  },
+  "pololu_motoron_m2t256_dual_i2c_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t256_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 512092
+  },
+  "pololu_motoron_m2t256_dual_i2c_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t256_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 512092
+  },
+  "pololu_motoron_m2u256_dual_serial_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t256_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 512092
+  },
+  "pololu_motoron_m2u256_dual_serial_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t256_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 512092
+  },
+  "pololu_motoron_m3s550_triple_motor_controller_shield_for_arduino_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s550_triple_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1016180
+  },
+  "pololu_motoron_m3s550_triple_motor_controller_shield_kit_for_arduino": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s550_triple_motor_controller_shield_for_arduino_connectors_soldered/assets/model.glb",
+   "bytes": 1016180
+  },
+  "pololu_motoron_m3s550_triple_motor_controller_shield_for_arduino_no_connectors": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3s550_triple_motor_controller_shield_for_arduino_no_connectors/assets/model.glb",
+   "bytes": 707332
+  },
+  "pololu_motoron_m3h550_triple_motor_controller_for_raspberry_pi_connectors_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h550_triple_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1043356
+  },
+  "pololu_motoron_m3h550_triple_motor_controller_kit_for_raspberry_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h550_triple_motor_controller_for_raspberry_pi_connectors_soldered/assets/model.glb",
+   "bytes": 1043356
+  },
+  "pololu_motoron_m3h550_triple_motor_controller_for_raspberry_pi_no_connectors_or_standoffs": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3h550_triple_motor_controller_for_raspberry_pi_no_connectors_or_standoffs/assets/model.glb",
+   "bytes": 724724
+  },
+  "pololu_motoron_m1t550_single_i2c_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t550_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 337784
+  },
+  "pololu_motoron_m1t550_single_i2c_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t550_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 337784
+  },
+  "pololu_motoron_m1u550_single_serial_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t550_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 337784
+  },
+  "pololu_motoron_m1u550_single_serial_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m1t550_single_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 337784
+  },
+  "pololu_motoron_m2t550_dual_i2c_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t550_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 409180
+  },
+  "pololu_motoron_m2t550_dual_i2c_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t550_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 409180
+  },
+  "pololu_motoron_m2u550_dual_serial_motor_controller_header_pins_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t550_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 409180
+  },
+  "pololu_motoron_m2u550_dual_serial_motor_controller": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m2t550_dual_i2c_motor_controller_header_pins_soldered/assets/model.glb",
+   "bytes": 409180
+  },
+  "pololu_motoron_m3t453_triple_i2c_motor_controller_with_jst_sh_style_connectors_and_vin_terminal_block": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3t453_triple_i2c_motor_controller_with_jst_sh_style_connectors_and_vin_terminal_block/assets/model.glb",
+   "bytes": 564864
+  },
+  "pololu_motoron_m3t453_triple_i2c_motor_controller_with_jst_sh_style_connectors_no_vin_connector": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3t453_triple_i2c_motor_controller_with_jst_sh_style_connectors_no_vin_connector/assets/model.glb",
+   "bytes": 509772
+  },
+  "pololu_motoron_m3t453_triple_i2c_motor_controller_with_soldered_headers": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3t453_triple_i2c_motor_controller_with_soldered_headers/assets/model.glb",
+   "bytes": 544208
+  },
+  "pololu_motoron_m3t453_triple_i2c_motor_controller_with_0_1_pitch_through_holes_no_headers": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/393bff3c4d1c15c252ce64418900684db3a3901f/parts/pololu_motoron_m3t453_triple_i2c_motor_controller_with_0_1_pitch_through_holes_no_headers/assets/model.glb",
+   "bytes": 479380
   },
   "pololu_drv8263h_single_brushed_dc_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_drv8263h_single_brushed_dc_motor_driver_carrier/assets/model.glb",
