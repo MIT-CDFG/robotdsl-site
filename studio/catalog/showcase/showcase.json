@@ -1,13 +1,4775 @@
 {
  "schema": "robotdsl.showcase",
- "title": "LEGO robots",
- "about": "Robots LEGO designed and sold, each built as its instructions build it, element by element from genuine LEGO elements in LDraw, with the world and task it drove in. Build one step by step, spread it apart, or click an element to see what it is.",
+ "groups": [
+  {
+   "id": "makers",
+   "title": "Robot kits and platforms",
+   "about": "Robots their makers sell, each assembled from the parts library's parts, which are drawn from the makers' own published models, with the world and task it drove in. Open one to see its parts and what they cost, or drive it with the keys.",
+   "notices": [
+    {
+     "text": "Hiwonder, Husarion, PCX, Pololu, Raspberry Pi, Unitree Robotics and Yahboom are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
+     "shown": true
+    },
+    {
+     "text": "Apache-2.0",
+     "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+     "text": "MIT",
+     "url": "https://opensource.org/license/mit"
+    }
+   ]
+  },
+  {
+   "id": "lego",
+   "title": "LEGO robots",
+   "about": "Robots LEGO designed and sold, each built as its instructions build it, element by element from genuine LEGO elements in LDraw, with the world and task it drove in. Build one step by step, spread it apart, or click an element to see what it is.",
+   "notices": [
+    {
+     "text": "LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.",
+     "shown": true
+    },
+    {
+     "text": "LDraw™ is a trademark owned and licensed by the Estate of James Jessiman."
+    },
+    {
+     "text": "After the LEGO cases of MIT CDFG's living survey of AI for 3D modeling and robotics: Maksym Bondarenko's LEGO car, its joints checked in his Danish Bricks Builder (case I40), and Linzhan Mou's LEGO World (case M188)",
+     "url": "https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/"
+    },
+    {
+     "text": "The 3D view's lighting, and how it assembles, spreads and names a LEGO model's elements, follow the viewer of Linzhan Mou's LEGO World",
+     "url": "https://linzhanmou.com/resources/lego-world/"
+    },
+    {
+     "text": "CC BY 2.0",
+     "url": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+     "text": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ]
+  }
+ ],
  "meshes": {
   "frame": "declared visual",
   "parts": {},
   "encoding": "meshopt (gltfpack -cc)"
  },
  "examples": [
+  {
+   "id": "romi_lidar",
+   "group": "makers",
+   "robots": [
+    "Pololu Romi with a Unitree 4D LiDAR L2"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Romi that sees: a Unitree L2 lidar on the deck over the batteries and an IMU on the rear deck.\nRobot romi_lidar {\n    intent \"Pololu Romi differential base carrying a Unitree 4D LiDAR L2 and a MinIMU-9 inertial unit\"\n\n    Diff_two_caster chassis(ref = \"pololu_romi_chassis_kit\")\n\n    Motor motor_left(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, 0.06269, 0, 0, 1, 0))\n    Motor motor_right(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, -0.06269, 0, 0, -1, 0))\n\n    Standard wheel_left(ref = \"pololu_wheel_70x8mm\", glue = (0, 0.0704, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_70x8mm\", glue = (0, -0.0704, 0, 0, -1, 0))\n\n    Caster caster(ref = \"pololu_romi_ball_caster\", glue = (-0.064, 0, -0.0223, 0, 0, -1))\n\n    Lidar3D lidar(ref = \"unitree_4d_lidar_l2\", glue = (-0.03, 0, 0, 0, 0, 1))\n    IMU imu(ref = \"pololu_minimu_9_v6\", glue = (-0.062, 0.045, -0.01, 0, 0, 1))\n}\n",
+    "world": "World romi_lidar_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/romi_lidar, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task romi_lidar_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "romi_lidar.core",
+    "world": "romi_lidar_room.world",
+    "task": "romi_lidar_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "pololu_romi_chassis_kit",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      -0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      -0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "caster",
+     "category": "wheel",
+     "part": "pololu_romi_ball_caster",
+     "xyz": [
+      -0.064,
+      0.0,
+      -0.0223
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "unitree_4d_lidar_l2",
+     "xyz": [
+      -0.03,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "imu",
+     "category": "sensor",
+     "part": "pololu_minimu_9_v6",
+     "xyz": [
+      -0.062,
+      0.045,
+      -0.01
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.035,
+   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.28 m from the point), past a box beside its way, touching nothing",
+   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Pololu: Romi Chassis Kit - Black",
+     "url": "https://www.pololu.com/product/3500"
+    },
+    {
+     "text": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, Extended Motor Shaft (PCX): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2311/magnetic-encoder-pair-kit-with-connector-for-mini-plastic-gearmotor.zip"
+    },
+    {
+     "text": "MinIMU-9 v6 Gyro, Accelerometer, and Compass (LSM6DSO and LIS3MDL Carrier) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1978/minimu-9-v6-gyro-accelerometer-and-compass.step"
+    },
+    {
+     "text": "Romi Chassis Ball Caster Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Romi Chassis Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Pololu Wheel 70×8mm Pair - White (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1293/pololu-wheel-70%C3%978mm.zip"
+    },
+    {
+     "text": "Unitree 4D LiDAR L2 (Unitree Robotics): the model Unitree Robotics publishes",
+     "url": "https://oss-global-cdn.unitree.com/static/L2%203D%20Model.STEP"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/romi_lidar/scene.xml",
+    "drive": "mjcf/romi_lidar/drive.json"
+   }
+  },
+  {
+   "id": "alloy_chassis_2wd",
+   "group": "makers",
+   "robots": [
+    "Yahboom aluminium alloy chassis, two-wheel drive"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Yahboom's aluminium alloy chassis as its two-wheel drive kit builds it: the two plates with the two motors under\n// the rear, on the kit's two rubber wheels and the two casters under the nose.\nRobot alloy_chassis_2wd {\n    intent \"Yahboom aluminium alloy chassis kit, two-wheel differential drive with two casters\"\n\n    Diff_two_caster chassis(ref = \"yahboom_alloy_chassis_2wd\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_left(ref = \"yahboom_l_type_520_encoder_motor\", glue = (0, 0.0304, -0.06867, 0, 1, 0))\n    Motor motor_right(ref = \"yahboom_l_type_520_encoder_motor\", glue = (0, -0.0304, -0.06867, 0, -1, 0))\n\n    Standard wheel_left(ref = \"yahboom_alloy_chassis_2wd_wheel\", glue = (0, 0.06015, -0.0687, 0, 1, 0))\n    Standard wheel_right(ref = \"yahboom_alloy_chassis_2wd_wheel\", glue = (0, -0.06015, -0.0687, 0, -1, 0))\n}\n",
+    "world": "World alloy_chassis_2wd_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/alloy_chassis_2wd, pose = (0, 0, 0.105, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task alloy_chassis_2wd_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "alloy_chassis_2wd.core",
+    "world": "alloy_chassis_2wd_room.world",
+    "task": "alloy_chassis_2wd_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_alloy_chassis_2wd",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      0.0,
+      0.0304,
+      -0.06867
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      0.0,
+      -0.0304,
+      -0.06867
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_2wd_wheel",
+     "xyz": [
+      0.0,
+      0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_2wd_wheel",
+     "xyz": [
+      0.0,
+      -0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.1022,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: MSPM0 smart robot car aluminium alloy chassis kit, two-wheel drive, without battery",
+     "url": "https://category.yahboom.net/products/smart-robot-car-chassis-kit"
+    },
+    {
+     "text": "Aluminium alloy chassis, two-wheel drive (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1ZC8nWzCnrBBKuzJR7ScsrjP6dyF3FTvd"
+    },
+    {
+     "text": "Aluminium alloy chassis wheel, of the two-wheel drive kit (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1ZC8nWzCnrBBKuzJR7ScsrjP6dyF3FTvd"
+    },
+    {
+     "text": "L-type 520 encoder gearmotor, 12 V, 40:1 (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1ZC8nWzCnrBBKuzJR7ScsrjP6dyF3FTvd"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/alloy_chassis_2wd/scene.xml",
+    "drive": "mjcf/alloy_chassis_2wd/drive.json"
+   }
+  },
+  {
+   "id": "alloy_chassis_4wd",
+   "group": "makers",
+   "robots": [
+    "Yahboom aluminium alloy chassis, four-wheel drive"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Yahboom's aluminium alloy chassis as its four-wheel drive kit builds it: the two plates with the four motors under\n// the lower one, on the kit's four rubber wheels, all driven.\nRobot alloy_chassis_4wd {\n    intent \"Yahboom aluminium alloy chassis kit, four-wheel skid-steer drive\"\n\n    Diff_drive chassis(ref = \"yahboom_alloy_chassis_4wd\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_front_left(ref = \"yahboom_l_type_520_encoder_motor\", glue = (0.049698527324, 0.0304, -0.0686571542, 0, 1, 0))\n    Motor motor_front_right(ref = \"yahboom_l_type_520_encoder_motor\", glue = (0.0497, -0.0304, -0.06867, 0, -1, 0))\n    Motor motor_rear_left(ref = \"yahboom_l_type_520_encoder_motor\", glue = (-0.0497, 0.0304, -0.06867, 0, 1, 0))\n    Motor motor_rear_right(ref = \"yahboom_l_type_520_encoder_motor\", glue = (-0.0497, -0.0304, -0.06867, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"yahboom_alloy_chassis_4wd_wheel\", glue = (0.0497, 0.06015, -0.0687, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_alloy_chassis_4wd_wheel\", glue = (0.0497, -0.06015, -0.0687, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_alloy_chassis_4wd_wheel\", glue = (-0.0497, 0.06015, -0.0687, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_alloy_chassis_4wd_wheel\", glue = (-0.0497, -0.06015, -0.0687, 0, -1, 0))\n}\n",
+    "world": "World alloy_chassis_4wd_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/alloy_chassis_4wd, pose = (0, 0, 0.105, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task alloy_chassis_4wd_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "alloy_chassis_4wd.core",
+    "world": "alloy_chassis_4wd_room.world",
+    "task": "alloy_chassis_4wd_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_alloy_chassis_4wd",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      0.049698527324,
+      0.0304,
+      -0.0686571542
+     ],
+     "rpy": [
+      0.0020292495786914666,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      0.0497,
+      -0.0304,
+      -0.06867
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      -0.0497,
+      0.0304,
+      -0.06867
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "yahboom_l_type_520_encoder_motor",
+     "xyz": [
+      -0.0497,
+      -0.0304,
+      -0.06867
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_4wd_wheel",
+     "xyz": [
+      0.0497,
+      0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_4wd_wheel",
+     "xyz": [
+      0.0497,
+      -0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_4wd_wheel",
+     "xyz": [
+      -0.0497,
+      0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "yahboom_alloy_chassis_4wd_wheel",
+     "xyz": [
+      -0.0497,
+      -0.06015,
+      -0.0687
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.1022,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: MSPM0 smart robot car aluminium alloy chassis kit, four-wheel drive, without battery",
+     "url": "https://category.yahboom.net/products/smart-robot-car-chassis-kit"
+    },
+    {
+     "text": "Aluminium alloy chassis, four-wheel drive (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1A_0yuS8YIcb0suOdFVLW8RQ6fJOWNpZ-"
+    },
+    {
+     "text": "Aluminium alloy chassis wheel, of the four-wheel drive kit (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1A_0yuS8YIcb0suOdFVLW8RQ6fJOWNpZ-"
+    },
+    {
+     "text": "L-type 520 encoder gearmotor, 12 V, 40:1 (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1ZC8nWzCnrBBKuzJR7ScsrjP6dyF3FTvd"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/alloy_chassis_4wd/scene.xml",
+    "drive": "mjcf/alloy_chassis_4wd/drive.json"
+   }
+  },
+  {
+   "id": "mspm0_car",
+   "group": "makers",
+   "robots": [
+    "Yahboom MSPM0 smart car"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom MSPM0 smart car as its Advanced Kit builds it: the body on its two rubber wheels and the ball caster under\n// its rear, with the kit's ultrasonic module on the servo that turns it.\nRobot mspm0_car {\n    intent \"Yahboom MSPM0 smart car, a two-wheel differential base with its ultrasonic module\"\n\n    Diff_two_caster chassis(ref = \"yahboom_mspm0_car_chassis\")\n\n    Standard wheel_left(ref = \"yahboom_mspm0_car_wheel\", glue = (0, 0.0602, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"yahboom_mspm0_car_wheel\", glue = (0, -0.0602, 0, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"yahboom_mspm0_car_ultrasonic\", glue = (-0.0033, 0, 0.0867, 0, 0, 1))\n}\n",
+    "world": "World mspm0_car_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/mspm0_car, pose = (0, 0, 0.036, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task mspm0_car_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "mspm0_car.core",
+    "world": "mspm0_car_room.world",
+    "task": "mspm0_car_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_mspm0_car_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "yahboom_mspm0_car_wheel",
+     "xyz": [
+      0.0,
+      0.0602,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "yahboom_mspm0_car_wheel",
+     "xyz": [
+      0.0,
+      -0.0602,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "sonar",
+     "category": "sensor",
+     "part": "yahboom_mspm0_car_ultrasonic",
+     "xyz": [
+      0.0246,
+      0.0,
+      0.1051
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0325,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: MSPM0 smart robot car, Advanced Kit",
+     "url": "https://category.yahboom.net/products/mspm0-smartcar"
+    },
+    {
+     "text": "MSPM0 smart car chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1QHbj6Ew-JUoNEXwrSr9oW_w6o-DZRIAT"
+    },
+    {
+     "text": "MSPM0 smart car ultrasonic module (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1QHbj6Ew-JUoNEXwrSr9oW_w6o-DZRIAT"
+    },
+    {
+     "text": "MSPM0 smart car wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1QHbj6Ew-JUoNEXwrSr9oW_w6o-DZRIAT"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/mspm0_car/scene.xml",
+    "drive": "mjcf/mspm0_car/drive.json"
+   }
+  },
+  {
+   "id": "microros_v2",
+   "group": "makers",
+   "robots": [
+    "Yahboom MicroROS V2"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom MicroROS V2 as its Standard kit builds it: the body on its two rubber wheels and the ball caster under\n// its rear, with the kit's LiDAR on the top deck and its WiFi camera at the front of the upper plate.\nRobot microros_v2 {\n    intent \"Yahboom MicroROS V2 two-wheel differential base with its LiDAR and camera\"\n\n    Diff_two_caster chassis(ref = \"yahboom_microros_v2_chassis\")\n\n    Standard wheel_left(ref = \"yahboom_microros_v2_wheel\", glue = (0, 0.0857, 0.011, 0, 1, 0))\n    Standard wheel_right(ref = \"yahboom_microros_v2_wheel\", glue = (0, -0.0857, 0.011, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_v2_lidar\", glue = (-0.086, 0, 0.1067, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_v2_camera\", glue = (-0.0055, 0, 0.047, 0, 0, 1))\n}\n",
+    "world": "World microros_v2_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_v2, pose = (0, 0, 0.033, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task microros_v2_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "microros_v2.core",
+    "world": "microros_v2_room.world",
+    "task": "microros_v2_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_microros_v2_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "yahboom_microros_v2_wheel",
+     "xyz": [
+      0.0,
+      0.0857,
+      0.011
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "yahboom_microros_v2_wheel",
+     "xyz": [
+      0.0,
+      -0.0857,
+      0.011
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "yahboom_microros_v2_lidar",
+     "xyz": [
+      -0.086,
+      0.0,
+      0.133
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "yahboom_microros_v2_camera",
+     "xyz": [
+      0.0342,
+      0.0,
+      0.10005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.022500000000000003,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way, touching nothing",
+   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: MicroROS V2 robot car, Standard kit",
+     "url": "https://category.yahboom.net/products/microros-v2"
+    },
+    {
+     "text": "MicroROS V2 camera (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1VEtquwKcSAkUQUvfX3Txd7rdtCtuHNPB"
+    },
+    {
+     "text": "MicroROS V2 chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1VEtquwKcSAkUQUvfX3Txd7rdtCtuHNPB"
+    },
+    {
+     "text": "MicroROS V2 LiDAR (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1VEtquwKcSAkUQUvfX3Txd7rdtCtuHNPB"
+    },
+    {
+     "text": "MicroROS V2 wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1VEtquwKcSAkUQUvfX3Txd7rdtCtuHNPB"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/microros_v2/scene.xml",
+    "drive": "mjcf/microros_v2/drive.json"
+   }
+  },
+  {
+   "id": "microros_esp32",
+   "group": "makers",
+   "robots": [
+    "Yahboom MicroROS ESP32"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom ESP32 MicroROS car as its Standard version builds it: the body on four rubber wheels, all driven, with\n// the kit's LiDAR on the top cover. Its computer is a virtual machine on a PC, which the car talks to over Wi-Fi.\nRobot microros_esp32 {\n    intent \"Yahboom ESP32 MicroROS four-wheel base with its LiDAR\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_esp32_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.000733939411, -0.001997468167, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_esp32_lidar\", glue = (0, 0, 0.0459, 0, 0, 1))\n}\n",
+    "world": "World microros_esp32_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_esp32, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task microros_esp32_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "microros_esp32.core",
+    "world": "microros_esp32_room.world",
+    "task": "microros_esp32_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_microros_esp32_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "yahboom_7_4v_2000mah_battery",
+     "xyz": [
+      -0.000733939411,
+      -0.001997468167,
+      -0.0295
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "yahboom_microros_esp32_wheel",
+     "xyz": [
+      0.0475,
+      0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "yahboom_microros_esp32_wheel",
+     "xyz": [
+      0.0475,
+      -0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "yahboom_microros_esp32_wheel",
+     "xyz": [
+      -0.0475,
+      0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "yahboom_microros_esp32_wheel",
+     "xyz": [
+      -0.0475,
+      -0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "yahboom_microros_esp32_lidar",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0729
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0453,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way, touching nothing",
+   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models; 1 drawn by the RobotDSL Team where the maker publishes none",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: ESP32 MicroROS robot car, Standard version",
+     "url": "https://category.yahboom.net/products/microros-esp32"
+    },
+    {
+     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team, since Yahboom publishes no model of it",
+     "url": "https://category.yahboom.net/products/raspbot-v2"
+    },
+    {
+     "text": "MicroROS ESP32 chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/15h6xTYyL9jL-hJWP-TsZq0uJqVIUf3hM"
+    },
+    {
+     "text": "MicroROS ESP32 LiDAR (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/15h6xTYyL9jL-hJWP-TsZq0uJqVIUf3hM"
+    },
+    {
+     "text": "MicroROS ESP32 wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/15h6xTYyL9jL-hJWP-TsZq0uJqVIUf3hM"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/microros_esp32/scene.xml",
+    "drive": "mjcf/microros_esp32/drive.json"
+   }
+  },
+  {
+   "id": "microros_pi5",
+   "group": "makers",
+   "robots": [
+    "Yahboom MicroROS-Pi5"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom MicroROS-Pi5 as its kit builds it: the body on four rubber wheels, all driven, with the kit's LiDAR on\n// the top cover and its camera on the gimbal at the front. The kit is sold without a computer; a Raspberry Pi 5,\n// bought beside it, lies inside under the kit's cooler.\nRobot microros_pi5 {\n    intent \"Yahboom MicroROS-Pi5 four-wheel base with its LiDAR, its camera and a Raspberry Pi 5\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_pi5_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.00073393941, -0.00199746817, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_pi5_lidar\", glue = (0, 0, 0.0459, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_pi5_camera\", glue = (0.066, -0.001, 0, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.022, -0.003, 0.0055, 0, 0, 1))\n}\n",
+    "world": "World microros_pi5_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_pi5, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task microros_pi5_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "microros_pi5.core",
+    "world": "microros_pi5_room.world",
+    "task": "microros_pi5_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_microros_pi5_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "yahboom_7_4v_2000mah_battery",
+     "xyz": [
+      -0.00073393941,
+      -0.00199746817,
+      -0.0295
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "yahboom_microros_pi5_wheel",
+     "xyz": [
+      0.0475,
+      0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "yahboom_microros_pi5_wheel",
+     "xyz": [
+      0.0475,
+      -0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "yahboom_microros_pi5_wheel",
+     "xyz": [
+      -0.0475,
+      0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "yahboom_microros_pi5_wheel",
+     "xyz": [
+      -0.0475,
+      -0.0658,
+      -0.0213
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "yahboom_microros_pi5_lidar",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0729
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "yahboom_microros_pi5_camera",
+     "xyz": [
+      0.121,
+      0.0,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.022,
+      -0.003,
+      0.0055
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0453,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way, touching nothing",
+   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models; 1 drawn by the RobotDSL Team where the maker publishes none",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: MicroROS-Pi5 robot car, without the Raspberry Pi",
+     "url": "https://category.yahboom.net/products/microros-pi5"
+    },
+    {
+     "text": "Raspberry Pi 5 (8GB) (Raspberry Pi): the model Raspberry Pi publishes, MIT",
+     "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
+    },
+    {
+     "text": "Yahboom battery pack, 7.4 V 2000 mAh (Yahboom): drawn by the RobotDSL Team, since Yahboom publishes no model of it",
+     "url": "https://category.yahboom.net/products/raspbot-v2"
+    },
+    {
+     "text": "MicroROS-Pi5 camera (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/16DhOT89hJUGS5myLlvIoDH6Ouf3pyu7f"
+    },
+    {
+     "text": "MicroROS-Pi5 chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/16DhOT89hJUGS5myLlvIoDH6Ouf3pyu7f"
+    },
+    {
+     "text": "MicroROS-Pi5 LiDAR (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/16DhOT89hJUGS5myLlvIoDH6Ouf3pyu7f"
+    },
+    {
+     "text": "MicroROS-Pi5 wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/16DhOT89hJUGS5myLlvIoDH6Ouf3pyu7f"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/microros_pi5/scene.xml",
+    "drive": "mjcf/microros_pi5/drive.json"
+   }
+  },
+  {
+   "id": "rosmaster_a1",
+   "group": "makers",
+   "robots": [
+    "Yahboom ROSMASTER A1"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom ROSMASTER A1 as its Ultimate kit builds it: the body on four rubber wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on the roof and its depth camera on the nose. The kit is sold without a\n// computer; a Raspberry Pi 5, bought beside it, lies under the roof on the kit's USB hub board.\nRobot rosmaster_a1 {\n    intent \"Yahboom ROSMASTER A1 Ackermann base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Ackermann chassis(ref = \"yahboom_rosmaster_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, 0.08735, 0.0146, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, -0.08735, 0.0146, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, 0.08735, 0.0145, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, -0.08735, 0.0145, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_a1_lidar\", glue = (0.00606, 0, 0.122, 0, 0, 1))\n    RGBD camera(ref = \"yahboom_rosmaster_a1_depth_camera\", glue = (0.0915, 0, 0.0825, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.031, -0.016, 0.0787, 0, 0, 1))\n}\n",
+    "world": "World rosmaster_a1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosmaster_a1, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task rosmaster_a1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "rosmaster_a1.core",
+    "world": "rosmaster_a1_room.world",
+    "task": "rosmaster_a1_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_rosmaster_a1_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_a1_wheel",
+     "xyz": [
+      0.097,
+      0.08735,
+      0.0146
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_a1_wheel",
+     "xyz": [
+      0.097,
+      -0.08735,
+      0.0146
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_a1_wheel",
+     "xyz": [
+      -0.097,
+      0.08735,
+      0.0145
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_a1_wheel",
+     "xyz": [
+      -0.097,
+      -0.08735,
+      0.0145
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "yahboom_rosmaster_a1_lidar",
+     "xyz": [
+      0.00606,
+      0.0,
+      0.1519
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "yahboom_rosmaster_a1_depth_camera",
+     "xyz": [
+      0.1095,
+      0.0003,
+      0.11215
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.031,
+      -0.016,
+      0.0787
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.019000000000000003,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: ROSMASTER A1 Ultimate kit for Raspberry Pi 5, without main control board",
+     "url": "https://category.yahboom.net/products/rosmaster-a1"
+    },
+    {
+     "text": "Raspberry Pi 5 (8GB) (Raspberry Pi): the model Raspberry Pi publishes, MIT",
+     "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
+    },
+    {
+     "text": "ROSMASTER A1 chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1JbxemCjuVDe1HxrrH6EhMrN7B-n6H4Cq"
+    },
+    {
+     "text": "ROSMASTER A1 depth camera (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1JbxemCjuVDe1HxrrH6EhMrN7B-n6H4Cq"
+    },
+    {
+     "text": "ROSMASTER A1 LiDAR (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1JbxemCjuVDe1HxrrH6EhMrN7B-n6H4Cq"
+    },
+    {
+     "text": "ROSMASTER A1 wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1JbxemCjuVDe1HxrrH6EhMrN7B-n6H4Cq"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/rosmaster_a1/scene.xml",
+    "drive": "mjcf/rosmaster_a1/drive.json"
+   }
+  },
+  {
+   "id": "rosmaster_r2",
+   "group": "makers",
+   "robots": [
+    "Yahboom ROSMASTER R2"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Yahboom ROSMASTER R2 as its Standard version builds it: the body on four rubber wheels, the front pair steered\n// and the rear pair driven, with the kit's LiDAR on the upper deck and its depth camera at the front of the deck\n// below. The kit is sold with or without a computer; this one is without.\nRobot rosmaster_r2 {\n    intent \"Yahboom ROSMASTER R2 Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"yahboom_rosmaster_r2_chassis\")\n\n    Standard wheel_front_left(ref = \"yahboom_rosmaster_r2_wheel\", glue = (0.1192, 0.0823, 0.0121, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_rosmaster_r2_wheel\", glue = (0.1192, -0.0823, 0.0121, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_rosmaster_r2_wheel\", glue = (-0.1161, 0.082, 0.0125, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_rosmaster_r2_wheel\", glue = (-0.1161, -0.082, 0.0125, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_r2_lidar\", glue = (0.0214, 0, 0.099, 0, 0, 1))\n    RGBD camera(ref = \"yahboom_rosmaster_r2_depth_camera\", glue = (0.0922, 0, 0.047, 0, 0, 1))\n}\n",
+    "world": "World rosmaster_r2_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosmaster_r2, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task rosmaster_r2_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "rosmaster_r2.core",
+    "world": "rosmaster_r2_room.world",
+    "task": "rosmaster_r2_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "yahboom_rosmaster_r2_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_r2_wheel",
+     "xyz": [
+      0.1192,
+      0.0823,
+      0.0121
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_r2_wheel",
+     "xyz": [
+      0.1192,
+      -0.0823,
+      0.0121
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_r2_wheel",
+     "xyz": [
+      -0.1161,
+      0.082,
+      0.0125
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "yahboom_rosmaster_r2_wheel",
+     "xyz": [
+      -0.1161,
+      -0.082,
+      0.0125
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "yahboom_rosmaster_r2_lidar",
+     "xyz": [
+      0.0214,
+      0.0,
+      0.1461
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "yahboom_rosmaster_r2_depth_camera",
+     "xyz": [
+      0.0951,
+      0.0,
+      0.0816
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.022400000000000003,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way, touching nothing",
+   "summary": "4 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Yahboom: ROSMASTER R2 Standard version for Raspberry Pi 5, without main control board",
+     "url": "https://category.yahboom.net/products/rosmaster-r2"
+    },
+    {
+     "text": "ROSMASTER R2 chassis (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1-c7kDXBg3K4fGobxWS9SkPeAG0ZfDJ-2"
+    },
+    {
+     "text": "ROSMASTER R2 depth camera (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1-c7kDXBg3K4fGobxWS9SkPeAG0ZfDJ-2"
+    },
+    {
+     "text": "ROSMASTER R2 LiDAR (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1-c7kDXBg3K4fGobxWS9SkPeAG0ZfDJ-2"
+    },
+    {
+     "text": "ROSMASTER R2 wheel (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1-c7kDXBg3K4fGobxWS9SkPeAG0ZfDJ-2"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/rosmaster_r2/scene.xml",
+    "drive": "mjcf/rosmaster_r2/drive.json"
+   }
+  },
+  {
+   "id": "ackermann_chassis",
+   "group": "makers",
+   "robots": [
+    "Hiwonder Ackermann steering chassis"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Hiwonder's Ackermann steering chassis as it is sold: the two black plates with the steering servo and the two\n// motors, on the four wheels it comes with, the front pair steered and the rear pair driven. What a robot carries\n// stands on its upper deck.\nRobot ackermann_chassis {\n    intent \"Hiwonder Ackermann steering chassis as it is sold\"\n\n    Ackermann chassis(ref = \"hiwonder_ackermann_chassis\")\n\n    // The kit's two motors, each on its bracket at a rear wheel.\n    Motor motor_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08607209, 0.06030475, 0.01400358, 0, 1, 0))\n    Motor motor_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08607209, -0.06026475, 0.01400358, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_ackermann_chassis_wheel\", glue = (0.0856, 0.0845, 0.014, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_ackermann_chassis_wheel\", glue = (0.0856, -0.0845, 0.014, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_ackermann_chassis_wheel\", glue = (-0.086, 0.0837, 0.014, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_ackermann_chassis_wheel\", glue = (-0.086, -0.0837, 0.014, 0, -1, 0))\n}\n",
+    "world": "World ackermann_chassis_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/ackermann_chassis, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task ackermann_chassis_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "ackermann_chassis.core",
+    "world": "ackermann_chassis_room.world",
+    "task": "ackermann_chassis_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_ackermann_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08607209,
+      0.06030475,
+      0.01400358
+     ],
+     "rpy": [
+      -0.01538999746160164,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08607209,
+      -0.06026475,
+      0.01400358
+     ],
+     "rpy": [
+      0.01538999746160164,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_wheel",
+     "xyz": [
+      0.0856,
+      0.0845,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_wheel",
+     "xyz": [
+      0.0856,
+      -0.0845,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_wheel",
+     "xyz": [
+      -0.086,
+      0.0837,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_wheel",
+     "xyz": [
+      -0.086,
+      -0.0837,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0235,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: Ackermann steering chassis, Standard Version (single layer) with motor driver module",
+     "url": "https://www.hiwonder.com/products/ackermann-steering-chassis"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "Ackermann steering chassis, single layer (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "Ackermann steering chassis wheel (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/ackermann_chassis/scene.xml",
+    "drive": "mjcf/ackermann_chassis/drive.json"
+   }
+  },
+  {
+   "id": "ackermann_chassis_double",
+   "group": "makers",
+   "robots": [
+    "Hiwonder Ackermann steering chassis, double layer"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Hiwonder's Ackermann steering chassis in its double-layer version, as it is sold: three black plates with the\n// steering servo and the two motors, on the four wheels it comes with, the front pair steered and the rear pair\n// driven. What a robot carries stands on its top deck or in the bay under it.\nRobot ackermann_chassis_double {\n    intent \"Hiwonder Ackermann steering chassis with two decks, as it is sold\"\n\n    Ackermann chassis(ref = \"hiwonder_ackermann_chassis_double\")\n\n    // The kit's two motors, each on its bracket at a rear wheel.\n    Motor motor_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08607209, 0.06030475, 0.01400358, 0, 1, 0))\n    Motor motor_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08607209, -0.06026475, 0.01400358, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_ackermann_chassis_double_wheel\", glue = (0.0856, 0.0845, 0.014, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_ackermann_chassis_double_wheel\", glue = (0.0856, -0.0845, 0.014, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_ackermann_chassis_double_wheel\", glue = (-0.086, 0.0837, 0.014, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_ackermann_chassis_double_wheel\", glue = (-0.086, -0.0837, 0.014, 0, -1, 0))\n}\n",
+    "world": "World ackermann_chassis_double_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/ackermann_chassis_double, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task ackermann_chassis_double_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "ackermann_chassis_double.core",
+    "world": "ackermann_chassis_double_room.world",
+    "task": "ackermann_chassis_double_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_ackermann_chassis_double",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08607209,
+      0.06030475,
+      0.01400358
+     ],
+     "rpy": [
+      -0.01538999746160164,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08607209,
+      -0.06026475,
+      0.01400358
+     ],
+     "rpy": [
+      0.01538999746160164,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_double_wheel",
+     "xyz": [
+      0.0856,
+      0.0845,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_double_wheel",
+     "xyz": [
+      0.0856,
+      -0.0845,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_double_wheel",
+     "xyz": [
+      -0.086,
+      0.0837,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_ackermann_chassis_double_wheel",
+     "xyz": [
+      -0.086,
+      -0.0837,
+      0.014
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0235,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: Ackermann steering chassis, Advanced Version (double layer) with motor driver module",
+     "url": "https://www.hiwonder.com/products/ackermann-steering-chassis"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "Ackermann steering chassis, double layer (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1bFIBafjhIZUklti6kbgmBzaIPN1v2vvc"
+    },
+    {
+     "text": "Ackermann steering chassis wheel, of the double-layer kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1bFIBafjhIZUklti6kbgmBzaIPN1v2vvc"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/ackermann_chassis_double/scene.xml",
+    "drive": "mjcf/ackermann_chassis_double/drive.json"
+   }
+  },
+  {
+   "id": "mentorpi_a1",
+   "group": "makers",
+   "robots": [
+    "Hiwonder MentorPi A1"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder MentorPi A1 as its kit builds it: the body on its four wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on top and its depth camera on the front step. A Raspberry Pi 5\n// rides on the deck; the kit is sold without one.\nRobot mentorpi_a1 {\n    intent \"Hiwonder MentorPi A1 Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_mentorpi_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, 0.0664, -0.0288, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, -0.0664, -0.0288, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, 0.0668, -0.0278, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, -0.0668, -0.0278, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_mentorpi_a1_lidar\", glue = (-0.0096, -0.0001, 0.0575, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_mentorpi_a1_depth_camera\", glue = (0.0448, 0, 0.0253, 0, 0, 1))\n}\n",
+    "world": "World mentorpi_a1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/mentorpi_a1, pose = (0, 0, 0.07, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task mentorpi_a1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "mentorpi_a1.core",
+    "world": "mentorpi_a1_room.world",
+    "task": "mentorpi_a1_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_mentorpi_a1_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_mentorpi_a1_front_wheel",
+     "xyz": [
+      0.0668,
+      0.0664,
+      -0.0288
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_mentorpi_a1_front_wheel",
+     "xyz": [
+      0.0668,
+      -0.0664,
+      -0.0288
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_mentorpi_a1_rear_wheel",
+     "xyz": [
+      -0.0703,
+      0.0668,
+      -0.0278
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_mentorpi_a1_rear_wheel",
+     "xyz": [
+      -0.0703,
+      -0.0668,
+      -0.0278
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_mentorpi_a1_lidar",
+     "xyz": [
+      -0.0096,
+      -0.0001,
+      0.0925
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_mentorpi_a1_depth_camera",
+     "xyz": [
+      0.064,
+      -0.0001,
+      0.0511
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0612,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.28 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: MentorPi A1 Standard, without Raspberry Pi 5",
+     "url": "https://www.hiwonder.com/products/mentorpi-a1"
+    },
+    {
+     "text": "MentorPi A1 chassis (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/MentorPi/tree/fb6d9969e935eb0e31966185158e33347951e761"
+    },
+    {
+     "text": "MentorPi A1 depth camera (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/MentorPi/tree/fb6d9969e935eb0e31966185158e33347951e761"
+    },
+    {
+     "text": "MentorPi A1 front wheel (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/MentorPi/tree/fb6d9969e935eb0e31966185158e33347951e761"
+    },
+    {
+     "text": "MentorPi A1 LiDAR (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/MentorPi/tree/fb6d9969e935eb0e31966185158e33347951e761"
+    },
+    {
+     "text": "MentorPi A1 rear wheel (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/MentorPi/tree/fb6d9969e935eb0e31966185158e33347951e761"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/mentorpi_a1/scene.xml",
+    "drive": "mjcf/mentorpi_a1/drive.json"
+   }
+  },
+  {
+   "id": "rosorin_acker",
+   "group": "makers",
+   "robots": [
+    "Hiwonder ROSOrin, Ackermann"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for Ackermann steering: the body with the kit's steering module\n// in place of its front motors, on the kit's four rubber tyres, the front pair steered and the rear pair driven,\n// with the kit's LiDAR on the top deck and its depth camera under the deck's front. The kit is sold without a\n// computer.\nRobot rosorin_acker {\n    intent \"Hiwonder ROSOrin Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_rosorin_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, 0.0619618, 0.0154721, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, -0.0618128, 0.0154721, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, -0.086, 0.0155, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, -0.086, 0.0155, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0099, 0.0001, 0.1097, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0464, 0.0001, 0.0921, 1, 0, 0))\n}\n",
+    "world": "World rosorin_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosorin_acker, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task rosorin_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "rosorin_acker.core",
+    "world": "rosorin_acker_room.world",
+    "task": "rosorin_acker_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_rosorin_acker_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.0808847,
+      0.0619618,
+      0.0154721
+     ],
+     "rpy": [
+      -0.015210000453195245,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.0808847,
+      -0.0618128,
+      0.0154721
+     ],
+     "rpy": [
+      0.015210000453195245,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      0.0907,
+      0.086,
+      0.0155
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      0.0907,
+      -0.086,
+      0.0155
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      -0.0808,
+      0.086,
+      0.0155
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      -0.0808,
+      -0.086,
+      0.0155
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_rosorin_advanced_lidar",
+     "xyz": [
+      0.0099,
+      0.0001,
+      0.1366
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_rosorin_advanced_depth_camera",
+     "xyz": [
+      0.0567,
+      0.0001,
+      0.0921
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0245,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: ROSOrin Advanced Kit, without controller",
+     "url": "https://www.hiwonder.com/products/rosorin"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "ROSOrin chassis, Ackermann (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin depth camera, of the Advanced Kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin LiDAR, of the Advanced Kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin rubber tyre (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/rosorin_acker/scene.xml",
+    "drive": "mjcf/rosorin_acker/drive.json"
+   }
+  },
+  {
+   "id": "rosorin_diff",
+   "group": "makers",
+   "robots": [
+    "Hiwonder ROSOrin, four-wheel differential"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for four-wheel differential drive: the body on the kit's four\n// rubber tyres, all driven, with the kit's LiDAR on the top deck and its depth camera under the deck's front. The\n// kit is sold without a computer.\nRobot rosorin_diff {\n    intent \"Hiwonder ROSOrin four-wheel differential base with its LiDAR and depth camera\"\n\n    Diff_drive chassis(ref = \"hiwonder_rosorin_diff_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, 0.0619651, 0.0170888, 0, 1, 0))\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, -0.0618171, 0.0170888, 0, -1, 0))\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, 0.0619618, 0.0167005, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, -0.0618128, 0.0167005, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, 0.086, 0.0171, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, -0.086, 0.0171, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, 0.086, 0.0167, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, -0.086, 0.0167, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0115, 0.0001, 0.1095, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0478, 0.0001, 0.0914, 1, 0, 0))\n}\n",
+    "world": "World rosorin_diff_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosorin_diff, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task rosorin_diff_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "rosorin_diff.core",
+    "world": "rosorin_diff_room.world",
+    "task": "rosorin_diff_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_rosorin_diff_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      0.0908915,
+      0.0619651,
+      0.0170888
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      0.0908915,
+      -0.0618171,
+      0.0170888
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08064,
+      0.0619618,
+      0.0167005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.08064,
+      -0.0618128,
+      0.0167005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      0.0908,
+      0.086,
+      0.0171
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      0.0908,
+      -0.086,
+      0.0171
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      -0.0806,
+      0.086,
+      0.0167
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_rosorin_rubber_wheel",
+     "xyz": [
+      -0.0806,
+      -0.086,
+      0.0167
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_rosorin_advanced_lidar",
+     "xyz": [
+      0.0115,
+      0.0001,
+      0.1364
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_rosorin_advanced_depth_camera",
+     "xyz": [
+      0.0581,
+      0.0001,
+      0.0914
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0233,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.36 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: ROSOrin Advanced Kit, without controller",
+     "url": "https://www.hiwonder.com/products/rosorin"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "ROSOrin depth camera, of the Advanced Kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin LiDAR, of the Advanced Kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin chassis, four-wheel differential (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "ROSOrin rubber tyre (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/ROSOrin/tree/7e9cbed4267e21a2df5f7fb0c3ce14c9856f6e48"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/rosorin_diff/scene.xml",
+    "drive": "mjcf/rosorin_diff/drive.json"
+   }
+  },
+  {
+   "id": "jetacker",
+   "group": "makers",
+   "robots": [
+    "Hiwonder JetAcker"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder JetAcker as its Standard Kit builds it: the body on four 100 mm wheels, the front pair steered and\n// the rear pair driven, with the kit's LiDAR in the bay under the upper deck and its depth camera on the pan\n// servo. The kit is sold without a computer.\nRobot jetacker {\n    intent \"Hiwonder JetAcker Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_jetacker_chassis\")\n\n    // The kit's motors, each on its seat at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, 0.069117841, 0.050334688, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, -0.070142354, 0.050334688, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, 0.1108, 0.05, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, -0.1108, 0.05, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, 0.1096, 0.0503, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, -0.1096, 0.0503, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetacker_lidar\", glue = (0.1041, 0.0007, 0.0862, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetacker_depth_camera\", glue = (0.0313, 0.0007, 0.1616, 0, 0, 1))\n}\n",
+    "world": "World jetacker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetacker, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task jetacker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "jetacker.core",
+    "world": "jetacker_room.world",
+    "task": "jetacker_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_jetacker_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.105996342,
+      0.069117841,
+      0.050334688
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.105996342,
+      -0.070142354,
+      0.050334688
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      0.1073,
+      0.1108,
+      0.05
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      0.1073,
+      -0.1108,
+      0.05
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      -0.106,
+      0.1096,
+      0.0503
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      -0.106,
+      -0.1096,
+      0.0503
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_jetacker_lidar",
+     "xyz": [
+      0.1041,
+      0.0007,
+      0.1338
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_jetacker_depth_camera",
+     "xyz": [
+      0.0371,
+      0.001,
+      0.2195
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": 0.0,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: JetAcker Standard Kit, without controller",
+     "url": "https://www.hiwonder.com/products/jetacker"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "JetAcker chassis (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetAcker/tree/80639fd8d913f123cdbdfa835c56f1c5e658c0b3"
+    },
+    {
+     "text": "JetAcker depth camera (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetAcker/tree/80639fd8d913f123cdbdfa835c56f1c5e658c0b3"
+    },
+    {
+     "text": "JetAcker LiDAR (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetAcker/tree/80639fd8d913f123cdbdfa835c56f1c5e658c0b3"
+    },
+    {
+     "text": "100 mm solid rubber wheel (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetAcker/tree/80639fd8d913f123cdbdfa835c56f1c5e658c0b3"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/jetacker/scene.xml",
+    "drive": "mjcf/jetacker/drive.json"
+   }
+  },
+  {
+   "id": "jetrover_acker",
+   "group": "makers",
+   "robots": [
+    "Hiwonder JetRover, Ackermann"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder JetRover as its Standard Kit builds it on the Ackermann chassis: the body on four 100 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR under the upper deck and its six-axis arm on\n// the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's software starts it\n// in for mapping, where the camera looks straight ahead. The kit is sold without a computer.\nRobot jetrover_acker {\n    intent \"Hiwonder JetRover Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_jetrover_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, 0.070748952, -0.065486764, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, -0.070901681, -0.065486764, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, 0.1107, -0.0658, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, -0.1107, -0.0658, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, 0.1107, -0.0655, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, -0.1107, -0.0655, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetrover_acker_lidar\", glue = (0.09, 0, 0.002, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_jetrover_acker_arm\", glue = (0.0251, 0, 0.0774, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetrover_acker_depth_camera\", glue = (0.0756, 0, 0.2984, 1, 0, 0))\n}\n",
+    "world": "World jetrover_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetrover_acker, pose = (0, 0, 0.12, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task jetrover_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "jetrover_acker.core",
+    "world": "jetrover_acker_room.world",
+    "task": "jetrover_acker_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_jetrover_acker_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.106579884,
+      0.070748952,
+      -0.065486764
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "hiwonder_520_gearmotor_90_12v",
+     "xyz": [
+      -0.106579884,
+      -0.070901681,
+      -0.065486764
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      0.1068,
+      0.1107,
+      -0.0658
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      0.1068,
+      -0.1107,
+      -0.0658
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      -0.1066,
+      0.1107,
+      -0.0655
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_rubber_wheel_100mm",
+     "xyz": [
+      -0.1066,
+      -0.1107,
+      -0.0655
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_jetrover_acker_lidar",
+     "xyz": [
+      0.09,
+      0.0,
+      0.0405
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm",
+     "category": "attachment",
+     "part": "hiwonder_jetrover_acker_arm",
+     "xyz": [
+      0.0251,
+      0.0,
+      0.0774
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_jetrover_acker_depth_camera",
+     "xyz": [
+      0.0881,
+      0.0,
+      0.2984
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.1158,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way, touching nothing",
+   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: JetRover Standard Kit on the Ackermann chassis, without controller",
+     "url": "https://www.hiwonder.com/products/jetrover"
+    },
+    {
+     "text": "520 encoder gearmotor, 90:1, 12 V (Hiwonder): the model Hiwonder publishes",
+     "url": "https://drive.google.com/file/d/1YhBjnXsZ6Ar3Ll3XWJHlY_HMyDOMOSHP"
+    },
+    {
+     "text": "JetRover arm, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetRover/tree/430b9c89602901f9278e32a7794d3066998096b0"
+    },
+    {
+     "text": "JetRover chassis, Ackermann (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetRover/tree/430b9c89602901f9278e32a7794d3066998096b0"
+    },
+    {
+     "text": "JetRover depth camera, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetRover/tree/430b9c89602901f9278e32a7794d3066998096b0"
+    },
+    {
+     "text": "JetRover LiDAR, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetRover/tree/430b9c89602901f9278e32a7794d3066998096b0"
+    },
+    {
+     "text": "100 mm solid rubber wheel (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/JetAcker/tree/80639fd8d913f123cdbdfa835c56f1c5e658c0b3"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/jetrover_acker/scene.xml",
+    "drive": "mjcf/jetrover_acker/drive.json"
+   }
+  },
+  {
+   "id": "landerpi_acker",
+   "group": "makers",
+   "robots": [
+    "Hiwonder LanderPi, Ackermann"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Hiwonder LanderPi as its Standard Kit builds it on the Ackermann chassis: the body on four 65 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR at the front of the middle deck and its\n// six-axis arm on the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's LiDAR\n// app puts it in to drive, where the camera looks ahead and down. A Raspberry Pi 5 rides on the deck; the kit is\n// sold without one.\nRobot landerpi_acker {\n    intent \"Hiwonder LanderPi Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_landerpi_acker_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, -0.0704, -0.0211, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, -0.0704, -0.0211, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_landerpi_acker_lidar\", glue = (0.073, 0, 0.018, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_landerpi_acker_arm\", glue = (0.0446, 0, 0.0691, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_landerpi_acker_depth_camera\", glue = (0.0889, 0, 0.2051, 0.7658, 0, -0.6431))\n}\n",
+    "world": "World landerpi_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/landerpi_acker, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task landerpi_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "landerpi_acker.core",
+    "world": "landerpi_acker_room.world",
+    "task": "landerpi_acker_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "hiwonder_landerpi_acker_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "hiwonder_landerpi_acker_front_wheel",
+     "xyz": [
+      0.0668,
+      0.0704,
+      -0.0211
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "hiwonder_landerpi_acker_front_wheel",
+     "xyz": [
+      0.0668,
+      -0.0704,
+      -0.0211
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "hiwonder_landerpi_acker_rear_wheel",
+     "xyz": [
+      -0.0677,
+      0.0704,
+      -0.0211
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "hiwonder_landerpi_acker_rear_wheel",
+     "xyz": [
+      -0.0677,
+      -0.0704,
+      -0.0211
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "hiwonder_landerpi_acker_lidar",
+     "xyz": [
+      0.073,
+      0.0,
+      0.0387
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm",
+     "category": "attachment",
+     "part": "hiwonder_landerpi_acker_arm",
+     "xyz": [
+      0.0446,
+      0.0,
+      0.0691
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera",
+     "category": "sensor",
+     "part": "hiwonder_landerpi_acker_depth_camera",
+     "xyz": [
+      0.10482842297671541,
+      0.0,
+      0.19172370225081525
+     ],
+     "rpy": [
+      0.0,
+      0.6985281252787313,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0535,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way, touching nothing",
+   "summary": "6 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Hiwonder: LanderPi Standard Kit on the Ackermann chassis, without Raspberry Pi 5",
+     "url": "https://www.hiwonder.com/products/landerpi"
+    },
+    {
+     "text": "LanderPi arm, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "LanderPi chassis, Ackermann (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "LanderPi depth camera, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "LanderPi front wheel, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "LanderPi LiDAR, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "LanderPi rear wheel, of the Ackermann kit (Hiwonder): the model Hiwonder publishes",
+     "url": "https://github.com/Hiwonder/LanderPi/tree/e93be9a2152148ca1a957606afd8cfbeec83a9e0"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/landerpi_acker/scene.xml",
+    "drive": "mjcf/landerpi_acker/drive.json"
+   }
+  },
+  {
+   "id": "rosbot3",
+   "group": "makers",
+   "robots": [
+    "Husarion ROSbot 3"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Exact ROSbot 3 standard-wheel platform; the supplied sensor/compute parts are outside this model scope.\nRobot husarion_rosbot3 {\n    intent \"ROSbot 3 chassis and its four supplied standard wheels\"\n    Diff_drive chassis(ref = \"husarion_rosbot3_chassis\")\n    Standard wheel_front_left(ref = \"husarion_rosbot3_standard_wheel_left\", glue = (0.053, 0.10165, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"husarion_rosbot3_standard_wheel_right\", glue = (0.053, -0.10165, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"husarion_rosbot3_standard_wheel_left\", glue = (-0.053, 0.10165, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"husarion_rosbot3_standard_wheel_right\", glue = (-0.053, -0.10165, 0, 0, -1, 0))\n}\n",
+    "world": "World rosbot3_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/husarion_rosbot3, pose = (0, 0, 0.2, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task rosbot3_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "husarion_rosbot3.core",
+    "world": "rosbot3_room.world",
+    "task": "rosbot3_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "husarion_rosbot3_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "husarion_rosbot3_standard_wheel_left",
+     "xyz": [
+      0.053,
+      0.096,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "husarion_rosbot3_standard_wheel_right",
+     "xyz": [
+      0.053,
+      -0.096,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "husarion_rosbot3_standard_wheel_left",
+     "xyz": [
+      -0.053,
+      0.096,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "husarion_rosbot3_standard_wheel_right",
+     "xyz": [
+      -0.053,
+      -0.096,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.042,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.23 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Husarion: ROSbot 3, Standard (1 Year), no spare batteries",
+     "url": "https://store.husarion.com/products/rosbot-3"
+    },
+    {
+     "text": "ROSbot 3 chassis (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/rosbot_ros/tree/ff77c662bdfd1fac933af74df488c917f987afc5"
+    },
+    {
+     "text": "ROSbot 3 standard wheel, left (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/rosbot_ros/tree/ff77c662bdfd1fac933af74df488c917f987afc5"
+    },
+    {
+     "text": "ROSbot 3 standard wheel, right (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/rosbot_ros/tree/ff77c662bdfd1fac933af74df488c917f987afc5"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/rosbot3/scene.xml",
+    "drive": "mjcf/rosbot3/drive.json"
+   }
+  },
+  {
+   "id": "lynx",
+   "group": "makers",
+   "robots": [
+    "Husarion Lynx"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Exact Lynx 1.0/WH05 platform with the manufacturer's stationary/rotating hub split.\nRobot husarion_lynx {\n    intent \"Lynx chassis with stationary hub housings and four supplied WH05 rotors\"\n    Diff_drive chassis(ref = \"husarion_lynx_chassis\")\n    Standard wheel_front_left(ref = \"husarion_lynx_wh05_wheel_left\", glue = (0.175, 0.203, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"husarion_lynx_wh05_wheel_right\", glue = (0.175, -0.203, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"husarion_lynx_wh05_wheel_left\", glue = (-0.175, 0.203, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"husarion_lynx_wh05_wheel_right\", glue = (-0.175, -0.203, 0, 0, -1, 0))\n}\n",
+    "world": "World lynx_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/husarion_lynx, pose = (0, 0, 0.3, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.5, 1.2, 0.25, 0, 0, 0, 1), size = (0.5, 0.5, 0.5),\n        ),\n    }\n    Goal goal(pose = (3.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task lynx_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "husarion_lynx.core",
+    "world": "lynx_room.world",
+    "task": "lynx_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "husarion_lynx_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "husarion_lynx_wh05_wheel_left",
+     "xyz": [
+      0.175,
+      0.2275,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "husarion_lynx_wh05_wheel_right",
+     "xyz": [
+      0.175,
+      -0.2275,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "husarion_lynx_wh05_wheel_left",
+     "xyz": [
+      -0.175,
+      0.2275,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "husarion_lynx_wh05_wheel_right",
+     "xyz": [
+      -0.175,
+      -0.2275,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.144185526,
+   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.23 m from the point), past a box beside its way, touching nothing",
+   "summary": "3 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Husarion: Lynx standard LNX10 platform, one BAT01 battery and WH05 wheels",
+     "url": "https://store.husarion.com/products/lynx"
+    },
+    {
+     "text": "Lynx 1.0 chassis with stationary hub housings (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/husarion_ugv_ros/tree/559e784b84c05c813b6ecfce02751d8b3966528a"
+    },
+    {
+     "text": "Lynx WH05 wheel rotor, left (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/husarion_ugv_ros/tree/559e784b84c05c813b6ecfce02751d8b3966528a"
+    },
+    {
+     "text": "Lynx WH05 wheel rotor, right (Husarion): the model Husarion publishes, Apache-2.0",
+     "url": "https://github.com/husarion/husarion_ugv_ros/tree/559e784b84c05c813b6ecfce02751d8b3966528a"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/lynx/scene.xml",
+    "drive": "mjcf/lynx/drive.json"
+   }
+  },
+  {
+   "id": "panther",
+   "group": "makers",
+   "robots": [
+    "Husarion Panther"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// Native v1.21 WH01/BAT01 source exterior; purchased current minor revision unconfirmed.\nRobot husarion_panther {\n    intent \"Factory Panther kit represented by stationary housing exterior and four native rotors\"\n    Diff_drive chassis(ref = \"husarion_panther_chassis\")\n    Standard wheel_front_left(ref = \"husarion_panther_wh01_wheel_front_left\", glue = (0.22, 0.293, 0, 0, 1, 0))\n    Standard wheel_front_right(ref = \"husarion_panther_wh01_wheel_front_right\", glue = (0.22, -0.293, 0, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"husarion_panther_wh01_wheel_rear_left\", glue = (-0.22, 0.293, 0, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"husarion_panther_wh01_wheel_rear_right\", glue = (-0.22, -0.293, 0, 0, -1, 0))\n}\n",
+    "world": "World panther_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/husarion_panther, pose = (0, 0, 0.187499959, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.5, 1.2, 0.25, 0, 0, 0, 1), size = (0.5, 0.5, 0.5),\n        ),\n    }\n    Goal goal(pose = (3.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task panther_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "husarion_panther.core",
+    "world": "panther_room.world",
+    "task": "panther_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "husarion_panther_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "husarion_panther_wh01_wheel_front_left",
+     "xyz": [
+      0.22,
+      0.3485,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "husarion_panther_wh01_wheel_front_right",
+     "xyz": [
+      0.22,
+      -0.3485,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "husarion_panther_wh01_wheel_rear_left",
+     "xyz": [
+      -0.22,
+      0.3485,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "husarion_panther_wh01_wheel_rear_right",
+     "xyz": [
+      -0.22,
+      -0.3485,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.187499959,
+   "drove": "in Gazebo it reached its goal 3.5 m ahead (0.24 m from the point), past a box beside its way, touching nothing",
+   "summary": "5 parts from the RobotDSL parts library, drawn from their makers' published models",
+   "credits": [
+    {
+     "text": "Sold by Husarion: Panther standard PTH12/v1.2-family platform, native v1.21 WH01 geometry, one BAT01 battery; exact purchased minor revision unconfirmed",
+     "url": "https://store.husarion.com/products/panther"
+    },
+    {
+     "text": "Panther chassis with native stationary hub exteriors (Husarion): the model Husarion publishes",
+     "url": "https://docs-new.s3.eu-west-1.amazonaws.com/models/Panther_v1.21_pub3D_WH01.step.zip"
+    },
+    {
+     "text": "Panther WH01 wheel rotor, front left (Husarion): the model Husarion publishes",
+     "url": "https://docs-new.s3.eu-west-1.amazonaws.com/models/Panther_v1.21_pub3D_WH01.step.zip"
+    },
+    {
+     "text": "Panther WH01 wheel rotor, front right (Husarion): the model Husarion publishes",
+     "url": "https://docs-new.s3.eu-west-1.amazonaws.com/models/Panther_v1.21_pub3D_WH01.step.zip"
+    },
+    {
+     "text": "Panther WH01 wheel rotor, rear left (Husarion): the model Husarion publishes",
+     "url": "https://docs-new.s3.eu-west-1.amazonaws.com/models/Panther_v1.21_pub3D_WH01.step.zip"
+    },
+    {
+     "text": "Panther WH01 wheel rotor, rear right (Husarion): the model Husarion publishes",
+     "url": "https://docs-new.s3.eu-west-1.amazonaws.com/models/Panther_v1.21_pub3D_WH01.step.zip"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/panther/scene.xml",
+    "drive": "mjcf/panther/drive.json"
+   }
+  },
   {
    "id": "lego_42109",
    "robots": [
@@ -295,7 +5057,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42109/scene.xml",
     "drive": "mjcf/lego_42109/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_42124",
@@ -571,7 +5334,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42124/scene.xml",
     "drive": "mjcf/lego_42124/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_42099",
@@ -992,7 +5756,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42099/scene.xml",
     "drive": "mjcf/lego_42099/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_42129",
@@ -1630,7 +6395,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42129/scene.xml",
     "drive": "mjcf/lego_42129/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_42095",
@@ -1863,7 +6629,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42095/scene.xml",
     "drive": "mjcf/lego_42095/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_42065",
@@ -2093,7 +6860,8 @@
    "mjcf": {
     "scene": "mjcf/lego_42065/scene.xml",
     "drive": "mjcf/lego_42065/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_8527_tribot",
@@ -2315,7 +7083,8 @@
    "mjcf": {
     "scene": "mjcf/lego_8527_tribot/scene.xml",
     "drive": "mjcf/lego_8527_tribot/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45678_driving_base",
@@ -2520,7 +7289,8 @@
    "mjcf": {
     "scene": "mjcf/lego_45678_driving_base/scene.xml",
     "drive": "mjcf/lego_45678_driving_base/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45678_driving_base_sonar",
@@ -2755,7 +7525,8 @@
    "mjcf": {
     "scene": "mjcf/lego_45678_driving_base_sonar/scene.xml",
     "drive": "mjcf/lego_45678_driving_base_sonar/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45544_driving_base",
@@ -2977,7 +7748,8 @@
    "mjcf": {
     "scene": "mjcf/lego_45544_driving_base/scene.xml",
     "drive": "mjcf/lego_45544_driving_base/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45544_driving_base_sonar",
@@ -3229,7 +8001,8 @@
    "mjcf": {
     "scene": "mjcf/lego_45544_driving_base_sonar/scene.xml",
     "drive": "mjcf/lego_45544_driving_base_sonar/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45544_driving_base_touch",
@@ -3479,32 +8252,8 @@
    "mjcf": {
     "scene": "mjcf/lego_45544_driving_base_touch/scene.xml",
     "drive": "mjcf/lego_45544_driving_base_touch/drive.json"
-   }
-  }
- ],
- "notices": [
-  {
-   "text": "LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.",
-   "shown": true
-  },
-  {
-   "text": "LDraw™ is a trademark owned and licensed by the Estate of James Jessiman."
-  },
-  {
-   "text": "After the LEGO cases of MIT CDFG's living survey of AI for 3D modeling and robotics: Maksym Bondarenko's LEGO car, its joints checked in his Danish Bricks Builder (case I40), and Linzhan Mou's LEGO World (case M188)",
-   "url": "https://mit-cdfg.github.io/Survey-AI-for-3D-modeling-Robotics/"
-  },
-  {
-   "text": "The 3D view's lighting, and how it assembles, spreads and names a LEGO model's elements, follow the viewer of Linzhan Mou's LEGO World",
-   "url": "https://linzhanmou.com/resources/lego-world/"
-  },
-  {
-   "text": "CC BY 2.0",
-   "url": "https://creativecommons.org/licenses/by/2.0/"
-  },
-  {
-   "text": "CC BY 4.0",
-   "url": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "group": "lego"
   }
  ]
 }

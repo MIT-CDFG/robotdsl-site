@@ -1,0 +1,76 @@
+<mujoco model="jetrover_acker">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.12" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.1158">
+        <inertial pos="-0.0009729 -8.514e-06 -0.02728" mass="3.879" fullinertia="0.02087 0.04432 0.04317 -1.193e-06 -0.000123 -1.045e-05" />
+        <geom type="box" size="0.1529 0.0791 0.0855" pos="-0.0095 0 -0.0081" group="1" conaffinity="0" />
+        <body name="motor_rear_left" pos="-0.106579884 0.070748952 -0.065486764" quat="0.70710678 0 0 0.707106782">
+          <inertial pos="-0.02904 -4.66e-05 0.006748" mass="0.152" fullinertia="2.384e-05 4.582e-05 4.543e-05 -2.095e-07 1.287e-06 4.339e-09" />
+          <geom type="box" size="0.02835 0.01845 0.01845" pos="-0.02835 0 0.007" group="1" conaffinity="0" />
+        </body>
+        <body name="motor_rear_right" pos="-0.106579884 -0.070901681 -0.065486764" quat="0.70710678 0 0 -0.707106782">
+          <inertial pos="-0.02904 -4.66e-05 0.006748" mass="0.152" fullinertia="2.384e-05 4.582e-05 4.543e-05 -2.095e-07 1.287e-06 4.339e-09" />
+          <geom type="box" size="0.02835 0.01845 0.01845" pos="-0.02835 0 0.007" group="1" conaffinity="0" />
+        </body>
+        <body name="wheel_front_left_steer" pos="0.1068 0.1107 -0.0658">
+          <joint name="wheel_front_left_steer_joint" type="hinge" axis="0 0 1" range="-0.646 0.646" actuatorfrcrange="-50 50" />
+          <inertial pos="0 0 0" mass="0.01" fullinertia="1e-05 1e-05 1e-05 0 0 0" />
+          <body name="wheel_front_left" pos="0 0 0">
+            <joint name="wheel_front_left_joint" type="hinge" axis="0 1 0" />
+            <inertial pos="-1.387e-05 0.0009731 1.059e-06" mass="0.246" fullinertia="0.0002152 0.0003931 0.0002153 4.376e-08 2.089e-08 -2.529e-08" />
+            <geom type="sphere" size="0.05" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="wheel_front_right_steer" pos="0.1068 -0.1107 -0.0658">
+          <joint name="wheel_front_right_steer_joint" type="hinge" axis="0 0 1" range="-0.646 0.646" actuatorfrcrange="-50 50" />
+          <inertial pos="0 0 0" mass="0.01" fullinertia="1e-05 1e-05 1e-05 0 0 0" />
+          <body name="wheel_front_right" pos="0 0 0" quat="1.79489651e-09 0 0 1">
+            <joint name="wheel_front_right_joint" type="hinge" axis="0 -1 0" />
+            <inertial pos="-1.387e-05 0.0009731 1.059e-06" mass="0.246" fullinertia="0.0002152 0.0003931 0.0002153 4.376e-08 2.089e-08 -2.529e-08" />
+            <geom type="sphere" size="0.05" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="wheel_rear_left" pos="-0.1066 0.1107 -0.0655">
+          <joint name="wheel_rear_left_joint" type="hinge" axis="0 1 0" actuatorfrcrange="-1.4709975 1.4709975" armature="0.0001" />
+          <inertial pos="-1.387e-05 0.0009731 1.059e-06" mass="0.246" fullinertia="0.0002152 0.0003931 0.0002153 4.376e-08 2.089e-08 -2.529e-08" />
+          <geom type="sphere" size="0.05" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_rear_right" pos="-0.1066 -0.1107 -0.0655" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_rear_right_joint" type="hinge" axis="0 -1 0" actuatorfrcrange="-1.4709975 1.4709975" armature="0.0001" />
+          <inertial pos="-1.387e-05 0.0009731 1.059e-06" mass="0.246" fullinertia="0.0002152 0.0003931 0.0002153 4.376e-08 2.089e-08 -2.529e-08" />
+          <geom type="sphere" size="0.05" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="lidar" pos="0.09 0 0.0405">
+          <inertial pos="-0.0005039 -0.0002638 -0.01012" mass="0.17" fullinertia="8.307e-05 8.498e-05 0.0001128 4.52e-07 8.664e-07 4.54e-07" />
+          <geom type="box" size="0.044 0.04 0.02555" pos="0 0.0001 -0.013" group="1" conaffinity="0" />
+        </body>
+        <body name="arm" pos="0.0251 0 0.0774">
+          <inertial pos="0.001184 -0.0009917 0.1066" mass="0.1474" fullinertia="0.0006276 0.00127 0.0007188 2.168e-06 -0.0001986 -2.639e-06" />
+          <geom type="box" size="0.15185 0.03 0.11525" pos="0.0183 -0.0018 0.1138" group="1" conaffinity="0" />
+          <body name="camera" pos="0.063 0 0.221">
+            <inertial pos="0.002347 0.0003689 -2.44e-05" mass="0.0154" fullinertia="1.362e-05 2.208e-06 1.368e-05 2.673e-09 -5.022e-09 -1.683e-08" />
+            <geom type="box" size="0.01255 0.0449 0.01255" pos="0 0.001 0" group="1" conaffinity="0" />
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_rear_right_joint_actuator" joint="wheel_rear_right_joint" kv="0.5" ctrlrange="-11.51917 11.51917" forcerange="-1.4709975 1.4709975" />
+    <velocity name="wheel_rear_left_joint_actuator" joint="wheel_rear_left_joint" kv="0.5" ctrlrange="-11.51917 11.51917" forcerange="-1.4709975 1.4709975" />
+    <position name="wheel_front_right_steer_joint_actuator" joint="wheel_front_right_steer_joint" kp="50" kv="2" />
+    <position name="wheel_front_left_steer_joint_actuator" joint="wheel_front_left_steer_joint" kp="50" kv="2" />
+  </actuator>
+</mujoco>

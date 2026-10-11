@@ -1,0 +1,33 @@
+{
+  "bodies": {
+    "caster": "caster",
+    "chassis": "base_link",
+    "imu": "imu",
+    "lidar": "lidar",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": 15.71,
+      "radius": 0.035,
+      "y": 0.0704
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": 15.71,
+      "radius": 0.035,
+      "y": -0.0704
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "romi_lidar",
+  "schema": "robotdsl.mjcf_drive"
+}

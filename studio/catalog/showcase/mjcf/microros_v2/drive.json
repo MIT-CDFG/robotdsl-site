@@ -1,0 +1,30 @@
+{
+  "bodies": {
+    "camera": "camera",
+    "chassis": "base_link",
+    "lidar": "lidar",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": null,
+      "radius": 0.0335,
+      "y": 0.0857
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": null,
+      "radius": 0.0335,
+      "y": -0.0857
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "microros_v2",
+  "schema": "robotdsl.mjcf_drive"
+}
