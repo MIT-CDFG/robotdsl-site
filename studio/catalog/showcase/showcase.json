@@ -2318,6 +2318,298 @@
    }
   },
   {
+   "id": "lego_8527_tribot_sensors",
+   "robots": [
+    "LEGO® Mindstorms® NXT 8527 Tri-bot with its touch and ultrasonic sensors"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Tri-bot of LEGO Mindstorms NXT 8527 with its touch sensor attachment and its ultrasonic sensor, as the LDraw\n// Official Model Repository's 8527-1_Tri-bot builds them: the NXT brick on two NXT motors, each driving one wheel, a\n// rear support of two belt wheels, and at the front the touch sensor behind the paddle that swings onto its button,\n// the ultrasonic sensor on top of it, looking forward. The claws are left out.\nRobot lego_8527_tribot_sensors {\n    intent \"LEGO Mindstorms NXT Tri-bot with its touch and ultrasonic sensors, a two-wheel differential base that sees what is ahead and feels what it runs into\"\n\n    Diff_two_caster chassis(ref = \"lego_8527_tribot_chassis\")\n\n    Motor motor_left(ref = \"lego_nxt_motor\", glue = (0, 0.0315, 0, -0.04, 0, -0.9992))\n    Motor motor_right(ref = \"lego_nxt_motor\", glue = (0, -0.0325, 0, -0.04, 0, -0.9992))\n\n    Standard wheel_left(ref = \"lego_8527_tribot_wheel\", glue = (0, 0.056, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"lego_8527_tribot_wheel\", glue = (0, -0.056, 0, 0, -1, 0))\n\n    Bumper touch(ref = \"lego_8527_touch_sensor\", glue = (0.037008, -0.000515, 0.023531, 1, 0, 0))\n    Ultrasonic sonar(ref = \"lego_8527_ultrasonic_sensor\", glue = (0.086175, -0.000515, 0.061965, 1, 0, 0))\n}\n",
+    "world": "World drive_check {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/lego_8527_tribot_sensors, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle marker(\n            type = \"box\", pos = (1.0, 1.0, 0.1, 0, 0, 0, 1), size = (0.2, 0.2, 0.2),\n            is_static = true,\n        ),\n    }\n    Goal goal(pose = (2.0, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task drive_check(timeout_s = 120) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Spin(angle_rad = 3.14),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "lego_8527_tribot_sensors.core",
+    "world": "drive_check.world",
+    "task": "drive_check.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "lego_8527_tribot_chassis",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "lego_nxt_motor",
+     "xyz": [
+      0.0,
+      0.0315,
+      0.0
+     ],
+     "rpy": [
+      -3.1015819920460506,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "lego_nxt_motor",
+     "xyz": [
+      0.0,
+      -0.0325,
+      0.0
+     ],
+     "rpy": [
+      -3.1015819920460506,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "lego_8527_tribot_wheel",
+     "xyz": [
+      0.0,
+      0.056,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "lego_8527_tribot_wheel",
+     "xyz": [
+      0.0,
+      -0.056,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "touch",
+     "category": "sensor",
+     "part": "lego_8527_touch_sensor",
+     "xyz": [
+      0.10981199999999999,
+      -0.000515,
+      0.045632
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "sonar",
+     "category": "sensor",
+     "part": "lego_8527_ultrasonic_sensor",
+     "xyz": [
+      0.129775,
+      -0.000515,
+      0.079965
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.0284,
+   "drove": "in Gazebo it reached its goal 2 m ahead (0.24 m from the point), then turned in place, touching nothing",
+   "lego": {
+    "file": "lego/lego_8527_tribot_sensors.glb",
+    "name": "lego_8527_tribot_sensors",
+    "chassis": "lego_8527_tribot_chassis",
+    "replaces": [
+     "lego_8527_touch_sensor",
+     "lego_8527_tribot_chassis",
+     "lego_8527_tribot_wheel",
+     "lego_8527_ultrasonic_sensor",
+     "lego_nxt_motor"
+    ],
+    "elements": 1324,
+    "shapes": 40,
+    "steps": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "Step 1 of the touch sensor attachment: an axle 5, a double bent liftarm 3 x 3.8 x 7 and a pin.",
+     "Step 2 of the touch sensor attachment: two long pins, the long pin the paddle pivots on and a beam 9.",
+     "Step 3 of the touch sensor attachment: the paddle's angle connector, on that long pin, and the touch sensor, its button forward.",
+     "Step 4 of the touch sensor attachment: a pin and the second beam 9.",
+     "Step 5 of the touch sensor attachment: the second double bent liftarm, and the paddle's axle 6 in the angle connector.",
+     "Step 6 of the touch sensor attachment: the axle 7 across the top that the ultrasonic sensor will sit on, and the paddle's 12-tooth double bevel gear, in front of the button.",
+     "Step 7 of the touch sensor attachment: an angle connector #2 and an axle 2.",
+     "Step 8 of the touch sensor attachment: an axle 7 across the back with a bush at each end, and an angle connector #1 at the paddle's foot.",
+     "Step 9 of the touch sensor attachment: an axle 7 through it, across the paddle's foot, with a bush at each end.",
+     "Step 10 of the touch sensor attachment: four cross blocks on four axle pins: the claws' pivots.",
+     "Step 11 of the touch sensor attachment: the mount: a beam 9 on four long pins.",
+     "Step 12 of the touch sensor attachment: the mount: two axles 3 with studs and two bent liftarms 2 x 4.",
+     "Step 13 of the touch sensor attachment: the mount: a split cross block 2 x 2 and a cross block 2 x 2 on an axle 2.",
+     "Step 14 of the touch sensor attachment: the mount: two more bent liftarms 2 x 4.",
+     "Step 15 of the touch sensor attachment: the mount: two pins and two beams 3; the mount goes onto the attachment.",
+     "Step 16 of the touch sensor attachment: two axles 3.",
+     "Step 17 of the touch sensor attachment: a cross block 1 x 3, which the full model's main file adds over the base's two axles 3 at the mount.",
+     "Step 1 of the ultrasonic sensor: the ultrasonic sensor on the axle 7 across the attachment's top, through its lower lug."
+    ],
+    "bytes": 1294784
+   },
+   "summary": "Model: 8527-1_Tri-bot.mpd by Cameron Brick, its base and its touch and ultrasonic sensors (LDraw Official Model Repository, CC BY 2.0); elements from the LDraw parts library (CC BY 2.0 and CC BY 4.0)",
+   "credits": [
+    {
+     "text": "Brickset: 8527 Mindstorms NXT (2006)",
+     "url": "https://brickset.com/sets/8527-1"
+    },
+    {
+     "text": "Model: 8527-1_Tri-bot.mpd by Cameron Brick, its base and its touch and ultrasonic sensors (LDraw Official Model Repository, CC BY 2.0)",
+     "url": "https://library.ldraw.org/omr/sets/1389"
+    },
+    {
+     "text": "Elements: the LDraw parts library by 31 authors (Alex Taylor, Chris Dee, Donald Sutter, Franklin W. Cain, Gerald Lasser, Guy Vivan, J.C. Tchang, James Jessiman, Jeff Boen, Jens Brühl, Kevin Clague, LDCad, Lutz Uhlmann, Magnus Forsberg, Marc Klein, Mark Kennedy, Massimo Maso, Max Martin Richter, Max Murtazin, Michael Heidemann, Niels Karsdorp, Orion Pobursky, Owen Burgoyne, Paul Easter, Philippe Hurbain, Ross Crawford, Steffen, Steve Bliss, Tim Gould, Tore Eriksson, Willy Tschager), CC BY 2.0 and CC BY 4.0",
+     "url": "https://library.ldraw.org"
+    },
+    {
+     "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_8527_tribot_sensors/scene.xml",
+    "drive": "mjcf/lego_8527_tribot_sensors/drive.json"
+   }
+  },
+  {
    "id": "lego_45678_driving_base",
    "robots": [
     "LEGO® Education SPIKE™ Prime Driving Base"
