@@ -1,0 +1,38 @@
+<mujoco model="lego_42065">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.03" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.0356">
+        <inertial pos="0.009655 -1.141e-17 0.06071" mass="0.3595" fullinertia="0.001644 0.002461 0.002382 -3.962e-20 2.404e-20 1.099e-19" />
+        <geom type="box" size="0.11555 0.0808 0.04655" pos="0.0096 0 0.023" group="1" conaffinity="0" />
+        <body name="motor_left" pos="-0.08 0.044 -0.004" quat="1.2691835e-09 -0.70710678 1.2691835e-09 0.707106782">
+          <inertial pos="0 0.024 -0.0001998" mass="0.031" fullinertia="7.391e-06 2.829e-06 7.343e-06 2.602e-22 0 -1.22e-22" />
+          <geom type="box" size="0.0116 0.024 0.0118" pos="0 0.024 -0.0002" group="1" conaffinity="0" />
+        </body>
+        <body name="motor_right" pos="0.08 -0.044 0.004" quat="0.70710678 0 -0.707106782 0">
+          <inertial pos="0 0.024 -0.0001998" mass="0.031" fullinertia="7.391e-06 2.829e-06 7.343e-06 2.602e-22 0 -1.22e-22" />
+          <geom type="box" size="0.0116 0.024 0.0118" pos="0 0.024 -0.0002" group="1" conaffinity="0" />
+        </body>
+        <body name="track_left" pos="-0.08 0.064 -0.004">
+          <inertial pos="0.08015 2.49e-07 0.0009341" mass="0.0616" fullinertia="2.93e-05 0.0002482 0.000234 -7.26e-21 1.398e-20 5.662e-23" />
+          <geom type="box" size="0.03685 0.0192 0.0190985931" pos="0.07495 0 -0.0125014068" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="track_right" pos="0.08 -0.064 0.004" quat="1.79489651e-09 0 0 1">
+          <inertial pos="0.07985 -2.49e-07 -0.007066" mass="0.0616" fullinertia="2.93e-05 0.0002482 0.000234 3.935e-21 6.213e-21 -1.172e-21" />
+          <geom type="box" size="0.03685 0.0192 0.0190985931" pos="0.08505 0 -0.0205014068" quat="1.79489651e-09 0 0 1" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

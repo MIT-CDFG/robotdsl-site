@@ -1859,7 +1859,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42095/scene.xml",
+    "drive": "mjcf/lego_42095/drive.json"
+   }
   },
   {
    "id": "lego_42065",
@@ -2085,7 +2089,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42065/scene.xml",
+    "drive": "mjcf/lego_42065/drive.json"
+   }
   },
   {
    "id": "lego_8527_tribot",
