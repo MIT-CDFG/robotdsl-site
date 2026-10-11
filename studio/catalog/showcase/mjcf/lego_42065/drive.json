@@ -1,0 +1,26 @@
+{
+  "belts": [
+    {
+      "body": "track_left",
+      "max_speed": 0.8099713363832737
+    },
+    {
+      "body": "track_right",
+      "max_speed": 0.8099713363832737
+    }
+  ],
+  "bodies": {
+    "chassis": "base_link",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "track_left": "track_left",
+    "track_right": "track_right"
+  },
+  "chassis": "Tracked",
+  "driven": [],
+  "kinematics": "tracks",
+  "kingpins": [],
+  "robot": "lego_42065",
+  "root": "base_footprint",
+  "schema": "robotdsl.mjcf_drive"
+}

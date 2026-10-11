@@ -1,0 +1,38 @@
+<mujoco model="lego_42095">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.03" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.0336">
+        <inertial pos="0.02882 0 0.06431" mass="0.3417" fullinertia="0.001421 0.002375 0.002157 0 -2.009e-19 0" />
+        <geom type="box" size="0.11675 0.0726 0.08475" pos="0.0287 0 0.0642" group="1" conaffinity="0" />
+        <body name="motor_left" pos="-0.0158 0.028 0.0022" quat="1.79047223e-09 0.0701696018 -1.25947174e-10 0.997535076">
+          <inertial pos="0 0.028 0" mass="0.042" fullinertia="1.447e-05 5.511e-06 1.299e-05 4.363e-22 0 0" />
+          <geom type="box" size="0.012 0.028 0.0158" pos="0 0.028 0" group="1" conaffinity="0" />
+        </body>
+        <body name="motor_right" pos="0.0158 -0.028 -0.0022" quat="0.997535076 0 0.0701696018 0">
+          <inertial pos="0 0.028 0" mass="0.042" fullinertia="1.447e-05 5.511e-06 1.299e-05 4.363e-22 0 0" />
+          <geom type="box" size="0.012 0.028 0.0158" pos="0 0.028 0" group="1" conaffinity="0" />
+        </body>
+        <body name="track_left" pos="0 0.056 0">
+          <inertial pos="0.04823 -8.87e-07 0.003824" mass="0.0508" fullinertia="2.99e-05 0.0001365 0.0001191 -4.054e-21 5.739e-21 -4.171e-22" />
+          <geom type="box" size="0.04865 0.0192 0.0267380304" pos="0.04485 0 -0.00686196956" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="track_right" pos="0 -0.056 0">
+          <inertial pos="0.04823 -8.87e-07 0.003824" mass="0.0508" fullinertia="2.99e-05 0.0001365 0.0001191 1.135e-21 5.739e-21 2.083e-22" />
+          <geom type="box" size="0.04865 0.0192 0.0267380304" pos="0.04485 0 -0.00686196956" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
