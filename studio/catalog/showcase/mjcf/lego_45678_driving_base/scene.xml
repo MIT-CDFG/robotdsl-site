@@ -1,0 +1,47 @@
+<mujoco model="lego_45678_driving_base">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.03" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.0282">
+        <inertial pos="-0.0082 0 0.008" mass="0.2536" fullinertia="0.0004981 0.0004981 0.0007772 0 1.014e-20 0" />
+        <geom type="box" size="0.0678 0.052 0.032" pos="-0.0082 0 0.012" group="1" conaffinity="0" />
+        <body name="base_link_contact_0" pos="-0.056 0 -0.0185">
+          <geom type="sphere" size="0.0095" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
+        </body>
+        <body name="motor_left" pos="0 0.032 0" quat="0.499999998 -0.5 0.5 0.500000002">
+          <inertial pos="0 0.0242 0.004" mass="0.049" fullinertia="2.511e-05 6.533e-06 2.329e-05 -3.931e-22 0 0" />
+          <geom type="box" size="0.012 0.0358 0.016" pos="0 0.0242 0.004" group="1" conaffinity="0" />
+        </body>
+        <body name="motor_right" pos="0 -0.032 0" quat="0.499999998 0.5 -0.5 0.500000002">
+          <inertial pos="0 0.0242 0.004" mass="0.049" fullinertia="2.511e-05 6.533e-06 2.329e-05 -3.931e-22 0 0" />
+          <geom type="box" size="0.012 0.0358 0.016" pos="0 0.0242 0.004" group="1" conaffinity="0" />
+        </body>
+        <body name="wheel_left" pos="0 0.059 0">
+          <joint name="wheel_left_joint" type="hinge" axis="0 1 0" actuatorfrcrange="-0.135 0.135" armature="0.0001" />
+          <inertial pos="-3e-07 0.002473 -0.0001903" mass="0.0144" fullinertia="4.2e-06 7.526e-06 4.2e-06 -7.237e-23 1.258e-22 8.714e-23" />
+          <geom type="sphere" size="0.0282" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_right" pos="0 -0.059 0" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_right_joint" type="hinge" axis="0 -1 0" actuatorfrcrange="-0.135 0.135" armature="0.0001" />
+          <inertial pos="-3e-07 0.002473 -0.0001903" mass="0.0144" fullinertia="4.2e-06 7.526e-06 4.2e-06 -7.237e-23 1.258e-22 8.714e-23" />
+          <geom type="sphere" size="0.0282" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_left_joint_actuator" joint="wheel_left_joint" kv="0.5" ctrlrange="-23.88 23.88" forcerange="-0.135 0.135" />
+    <velocity name="wheel_right_joint_actuator" joint="wheel_right_joint" kv="0.5" ctrlrange="-23.88 23.88" forcerange="-0.135 0.135" />
+  </actuator>
+</mujoco>
