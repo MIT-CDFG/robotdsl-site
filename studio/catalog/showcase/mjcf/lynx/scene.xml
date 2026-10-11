@@ -1,0 +1,48 @@
+<mujoco model="husarion_lynx">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.3" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.144185526">
+        <inertial pos="-0.007898 0 0.1638" mass="30.66" fullinertia="1.217 1.505 1.789 0 -3.377e-17 0" />
+        <geom type="box" size="0.318824 0.271033 0.213536" pos="-0.0078982 0 0.1637849" group="1" conaffinity="0" />
+        <body name="wheel_front_left" pos="0.175 0.2275 0">
+          <joint name="wheel_front_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="0 5.62e-06 -2.761e-09" mass="2.036" fullinertia="0.01548 0.02822 0.01548 0 0 2.34e-20" />
+          <geom type="sphere" size="0.144185526" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_front_right" pos="0.175 -0.2275 0">
+          <joint name="wheel_front_right_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="0 -5.62e-06 4.769e-09" mass="2.036" fullinertia="0.01548 0.02822 0.01548 0 0 -1.103e-19" />
+          <geom type="sphere" size="0.144185526" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_rear_left" pos="-0.175 0.2275 0">
+          <joint name="wheel_rear_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="0 5.62e-06 -2.761e-09" mass="2.036" fullinertia="0.01548 0.02822 0.01548 0 0 2.34e-20" />
+          <geom type="sphere" size="0.144185526" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_rear_right" pos="-0.175 -0.2275 0">
+          <joint name="wheel_rear_right_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="0 -5.62e-06 4.769e-09" mass="2.036" fullinertia="0.01548 0.02822 0.01548 0 0 -1.103e-19" />
+          <geom type="sphere" size="0.144185526" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_front_left_joint_actuator" joint="wheel_front_left_joint" kv="10.0839304" />
+    <velocity name="wheel_rear_left_joint_actuator" joint="wheel_rear_left_joint" kv="10.0839304" />
+    <velocity name="wheel_front_right_joint_actuator" joint="wheel_front_right_joint" kv="10.0839304" />
+    <velocity name="wheel_rear_right_joint_actuator" joint="wheel_rear_right_joint" kv="10.0839304" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,29 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "sonar": "sonar",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": null,
+      "radius": 0.0325,
+      "y": 0.0602
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": null,
+      "radius": 0.0325,
+      "y": -0.0602
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "mspm0_car",
+  "schema": "robotdsl.mjcf_drive"
+}

@@ -1,0 +1,44 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Diff_drive",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "joint": "wheel_front_left_joint",
+      "max_speed": null,
+      "radius": 0.144185526,
+      "y": 0.2275
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "radius": 0.144185526,
+      "y": 0.2275
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "joint": "wheel_front_right_joint",
+      "max_speed": null,
+      "radius": 0.144185526,
+      "y": -0.2275
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "radius": 0.144185526,
+      "y": -0.2275
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "husarion_lynx",
+  "schema": "robotdsl.mjcf_drive"
+}

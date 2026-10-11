@@ -1,0 +1,48 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "motor_front_left": "motor_front_left",
+    "motor_front_right": "motor_front_right",
+    "motor_rear_left": "motor_rear_left",
+    "motor_rear_right": "motor_rear_right",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Diff_drive",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "joint": "wheel_front_left_joint",
+      "max_speed": 31.4159265359,
+      "radius": 0.0335,
+      "y": 0.06015
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "joint": "wheel_rear_left_joint",
+      "max_speed": 31.4159265359,
+      "radius": 0.0335,
+      "y": 0.06015
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "joint": "wheel_front_right_joint",
+      "max_speed": 31.4159265359,
+      "radius": 0.0335,
+      "y": -0.06015
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "joint": "wheel_rear_right_joint",
+      "max_speed": 31.4159265359,
+      "radius": 0.0335,
+      "y": -0.06015
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "alloy_chassis_4wd",
+  "schema": "robotdsl.mjcf_drive"
+}

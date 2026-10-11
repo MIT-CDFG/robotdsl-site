@@ -1,0 +1,55 @@
+{
+  "axle_x": -0.0703,
+  "bodies": {
+    "camera": "camera",
+    "chassis": "base_link",
+    "lidar": "lidar",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Ackermann",
+  "driven": [
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0324,
+      "x": -0.0703,
+      "y": -0.0668
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0324,
+      "x": -0.0703,
+      "y": 0.0668
+    }
+  ],
+  "kinematics": "steering",
+  "kingpins": [
+    {
+      "actuator": "wheel_front_right_steer_joint_actuator",
+      "joint": "wheel_front_right_steer_joint",
+      "limit": 0.785,
+      "sign": 1.0,
+      "x": 0.0668,
+      "y": -0.0664
+    },
+    {
+      "actuator": "wheel_front_left_steer_joint_actuator",
+      "joint": "wheel_front_left_steer_joint",
+      "limit": 0.785,
+      "sign": 1.0,
+      "x": 0.0668,
+      "y": 0.0664
+    }
+  ],
+  "min_turning_radius": 0.20360921989671715,
+  "robot": "mentorpi_a1",
+  "schema": "robotdsl.mjcf_drive"
+}

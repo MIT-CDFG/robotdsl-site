@@ -1,0 +1,43 @@
+<mujoco model="mspm0_car">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.036" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.0325">
+        <inertial pos="-0.03697 0.002289 0.02785" mass="0.49" fullinertia="0.0009998 0.0021 0.00185 5.757e-21 9.212e-20 -1.727e-20" />
+        <geom type="box" size="0.09505 0.0456 0.03285" pos="-0.03695 0 0.01375" group="1" conaffinity="0" />
+        <body name="base_link_contact_0" pos="-0.115 0 -0.0275">
+          <geom type="sphere" size="0.0065" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_left" pos="0 0.0602 0">
+          <joint name="wheel_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="-2.642e-05 0.001158 -2.657e-05" mass="0.04574" fullinertia="1.943e-05 3.345e-05 1.932e-05 2.527e-08 1.912e-08 -2.489e-08" />
+          <geom type="sphere" size="0.0325" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_right" pos="0 -0.0602 0" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_right_joint" type="hinge" axis="0 -1 0" armature="0.0001" />
+          <inertial pos="-2.642e-05 0.001158 -2.657e-05" mass="0.04574" fullinertia="1.943e-05 3.345e-05 1.932e-05 2.527e-08 1.912e-08 -2.489e-08" />
+          <geom type="sphere" size="0.0325" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="sonar" pos="0.0246 0 0.1051">
+          <inertial pos="-0.01429 -2.127e-05 -0.004059" mass="0.008015" fullinertia="1.094e-06 1.537e-06 1.564e-06 4.04e-11 -5.167e-07 -1.119e-09" />
+          <geom type="box" size="0.0086 0.02285 0.01315" pos="-0.0086 0 -0.0029" group="1" conaffinity="0" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_left_joint_actuator" joint="wheel_left_joint" kv="0.5" />
+    <velocity name="wheel_right_joint_actuator" joint="wheel_right_joint" kv="0.5" />
+  </actuator>
+</mujoco>

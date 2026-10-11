@@ -1,0 +1,46 @@
+{
+  "bodies": {
+    "battery": "battery",
+    "chassis": "base_link",
+    "lidar": "lidar",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Diff_drive",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "joint": "wheel_front_left_joint",
+      "max_speed": null,
+      "radius": 0.024,
+      "y": 0.0658
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "radius": 0.024,
+      "y": 0.0658
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "joint": "wheel_front_right_joint",
+      "max_speed": null,
+      "radius": 0.024,
+      "y": -0.0658
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "radius": 0.024,
+      "y": -0.0658
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "microros_esp32",
+  "schema": "robotdsl.mjcf_drive"
+}
