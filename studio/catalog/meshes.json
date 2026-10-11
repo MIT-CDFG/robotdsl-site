@@ -2576,6 +2576,454 @@
   "pololu_micro_metal_gearmotor_1000_hpcb_12v_encoder_side": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e694312f918fdb302646bce1abc1ef7caca329e2/parts/pololu_micro_metal_gearmotor_1000_hpcb_6v_encoder_side/assets/model.glb",
    "bytes": 1561648
+  },
+  "pololu_25d_motor_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_172_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_172_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_227_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_227_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_227_lp_6v_encoder_no_end_cap": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_227_lp_6v_encoder_no_end_cap/assets/model.glb",
+   "bytes": 306324
+  },
+  "pololu_25d_gearmotor_378_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_378_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_499_lp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_499_lp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_499_lp_6v_encoder_no_end_cap": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_499_lp_6v_encoder_no_end_cap/assets/model.glb",
+   "bytes": 306328
+  },
+  "pololu_25d_motor_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_172_hp_6v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_172_hp_6v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_motor_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_172_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_172_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_227_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_227_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_378_lp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_378_lp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_378_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_motor_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_172_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_172_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_227_mp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v/assets/model.glb",
+   "bytes": 246372
+  },
+  "pololu_25d_gearmotor_227_mp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_172_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_motor_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_hp_12v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_hp_12v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_motor_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_motor_lp_6v_encoder/assets/model.glb",
+   "bytes": 374464
+  },
+  "pololu_25d_gearmotor_4_4_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_4_4_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_9_7_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_9_7_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_4_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363876
+  },
+  "pololu_25d_gearmotor_20_4_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v/assets/model.glb",
+   "bytes": 246368
+  },
+  "pololu_25d_gearmotor_20_4_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_20_4_lp_6v_encoder/assets/model.glb",
+   "bytes": 363868
+  },
+  "pololu_25d_gearmotor_34_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_34_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_47_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v/assets/model.glb",
+   "bytes": 246376
+  },
+  "pololu_25d_gearmotor_47_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_34_lp_6v_encoder/assets/model.glb",
+   "bytes": 363804
+  },
+  "pololu_25d_gearmotor_75_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_75_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
+  },
+  "pololu_25d_gearmotor_99_hp_24v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v/assets/model.glb",
+   "bytes": 246312
+  },
+  "pololu_25d_gearmotor_99_hp_24v_encoder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d462e647cf57f90e380470b56ba5a8f7b1e0c22/parts/pololu_25d_gearmotor_75_lp_6v_encoder/assets/model.glb",
+   "bytes": 363812
   }
  }
 }
