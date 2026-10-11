@@ -1,0 +1,30 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": 17.8,
+      "radius": 0.0284,
+      "y": 0.056
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": 17.8,
+      "radius": 0.0284,
+      "y": -0.056
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "lego_8527_tribot",
+  "schema": "robotdsl.mjcf_drive"
+}

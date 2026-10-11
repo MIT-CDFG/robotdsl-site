@@ -291,7 +291,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42109/scene.xml",
+    "drive": "mjcf/lego_42109/drive.json"
+   }
   },
   {
    "id": "lego_42124",
@@ -563,7 +567,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42124/scene.xml",
+    "drive": "mjcf/lego_42124/drive.json"
+   }
   },
   {
    "id": "lego_42099",
@@ -980,7 +988,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42099/scene.xml",
+    "drive": "mjcf/lego_42099/drive.json"
+   }
   },
   {
    "id": "lego_42129",
@@ -1614,7 +1626,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_42129/scene.xml",
+    "drive": "mjcf/lego_42129/drive.json"
+   }
   },
   {
    "id": "lego_42095",
@@ -2287,7 +2303,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_8527_tribot/scene.xml",
+    "drive": "mjcf/lego_8527_tribot/drive.json"
+   }
   },
   {
    "id": "lego_45678_driving_base",
@@ -2488,7 +2508,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_45678_driving_base/scene.xml",
+    "drive": "mjcf/lego_45678_driving_base/drive.json"
+   }
   },
   {
    "id": "lego_45678_driving_base_sonar",
@@ -2719,7 +2743,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_45678_driving_base_sonar/scene.xml",
+    "drive": "mjcf/lego_45678_driving_base_sonar/drive.json"
+   }
   },
   {
    "id": "lego_45544_driving_base",
@@ -2937,7 +2965,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_45544_driving_base/scene.xml",
+    "drive": "mjcf/lego_45544_driving_base/drive.json"
+   }
   },
   {
    "id": "lego_45544_driving_base_sonar",
@@ -3185,7 +3217,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_45544_driving_base_sonar/scene.xml",
+    "drive": "mjcf/lego_45544_driving_base_sonar/drive.json"
+   }
   },
   {
    "id": "lego_45544_driving_base_touch",
@@ -3431,7 +3467,11 @@
     {
      "text": "Changed: the 3D view draws the model element by element from the LDraw library's shapes; the robot's parts are meshes made from it, reduced, their unseen faces left out, the wheels parts of their own"
     }
-   ]
+   ],
+   "mjcf": {
+    "scene": "mjcf/lego_45544_driving_base_touch/scene.xml",
+    "drive": "mjcf/lego_45544_driving_base_touch/drive.json"
+   }
   }
  ],
  "notices": [

@@ -1,0 +1,73 @@
+{
+  "axle_x": -0.152,
+  "bodies": {
+    "chassis": "base_link",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Ackermann",
+  "driven": [
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0404,
+      "x": -0.152,
+      "y": -0.076
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0404,
+      "x": -0.152,
+      "y": 0.076
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "joint": "wheel_front_right_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0404,
+      "x": 0.152,
+      "y": -0.076
+    },
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "joint": "wheel_front_left_joint",
+      "max_speed": null,
+      "offset": 0.0,
+      "radius": 0.0404,
+      "x": 0.152,
+      "y": 0.076
+    }
+  ],
+  "kinematics": "steering",
+  "kingpins": [
+    {
+      "actuator": "wheel_front_right_steer_joint_actuator",
+      "joint": "wheel_front_right_steer_joint",
+      "limit": 0.253,
+      "sign": 1.0,
+      "x": 0.152,
+      "y": -0.076
+    },
+    {
+      "actuator": "wheel_front_left_steer_joint_actuator",
+      "joint": "wheel_front_left_steer_joint",
+      "limit": 0.253,
+      "sign": 1.0,
+      "x": 0.152,
+      "y": 0.076
+    }
+  ],
+  "min_turning_radius": 1.2518336217790447,
+  "robot": "lego_42129",
+  "schema": "robotdsl.mjcf_drive"
+}

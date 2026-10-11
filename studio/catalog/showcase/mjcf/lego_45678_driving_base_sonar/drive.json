@@ -1,0 +1,31 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "sonar": "sonar",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": 23.88,
+      "radius": 0.0282,
+      "y": 0.059
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": 23.88,
+      "radius": 0.0282,
+      "y": -0.059
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "lego_45678_driving_base_sonar",
+  "schema": "robotdsl.mjcf_drive"
+}
