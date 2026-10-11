@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 991,
+ "count": 997,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -10862,6 +10862,78 @@
    "description": "Pololu 150:1 Metal Gearmotor 37Dx73L mm 24V with a built-in encoder on the motor's shaft (64 counts a turn of it) under a black end cap: a brushed motor 37 mm across with a 150:1 metal gearbox, whose first stage is helical, and a 6 mm D-shaft output 7 mm off its middle, 73 mm long behind its face plate, which has six M3 mounting holes; six leads carry the motor and the encoder. At 24 V it turns 68 rpm unloaded and stalls at 56 kg cm (5.5 N m) and 3 A.",
    "source_url": "https://www.pololu.com/product/4697",
    "price": 60.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_mini_plastic_gearmotor_120_hp_offset_encoder_back",
+   "name": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, with 12 CPR Encoder, Back Connector",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "PCX",
+   "description": "Pololu 120:1 Mini Plastic Gearmotor HP with an offset 3 mm D-shaft output and a 12 CPR encoder on the motor's shaft, its connector at the back: the motor of the Romi chassis kit with the encoder soldered on. At 4.5 V it turns 150 rpm unloaded and stalls at 25 oz in (0.18 N m) and 1.25 A; a clutch in its gearbox slips near that load.",
+   "source_url": "https://www.pololu.com/product/3548",
+   "price": 14.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_mini_plastic_gearmotor_120_hp_offset_encoder_side",
+   "name": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, with 12 CPR Encoder, Side Connector",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "PCX",
+   "description": "Pololu 120:1 Mini Plastic Gearmotor HP with an offset 3 mm D-shaft output and a 12 CPR encoder on the motor's shaft, its connector at the side: the motor of the Romi chassis kit with the encoder soldered on. At 4.5 V it turns 150 rpm unloaded and stalls at 25 oz in (0.18 N m) and 1.25 A; a clutch in its gearbox slips near that load.",
+   "source_url": "https://www.pololu.com/product/3549",
+   "price": 14.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_sub_micro_plastic_planetary_gearmotor_5_1",
+   "name": "5.1:1 Sub-Micro Plastic Planetary Gearmotor 6Dx14L mm",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 5.1:1 Sub-Micro Plastic Planetary Gearmotor 6Dx14L mm: a coreless motor 6 mm across with a plastic planetary gearbox and a 2 mm nylon D-shaft output, the fastest of four gear ratios. At 6 V it turns 13000 rpm unloaded and stalls at 0.3 oz in (0.0021 N m) and 0.4 A.",
+   "source_url": "https://www.pololu.com/product/2331",
+   "price": 19.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_sub_micro_plastic_planetary_gearmotor_26",
+   "name": "26:1 Sub-Micro Plastic Planetary Gearmotor 6Dx16L mm",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 26:1 Sub-Micro Plastic Planetary Gearmotor 6Dx16L mm: a coreless motor 6 mm across with a plastic planetary gearbox and a 2 mm nylon D-shaft output, the second of four gear ratios. At 6 V it turns 2500 rpm unloaded and stalls at 1.5 oz in (0.011 N m) and 0.4 A.",
+   "source_url": "https://www.pololu.com/product/2357",
+   "price": 19.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_sub_micro_plastic_planetary_gearmotor_136",
+   "name": "136:1 Sub-Micro Plastic Planetary Gearmotor 6Dx19L mm",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 136:1 Sub-Micro Plastic Planetary Gearmotor 6Dx19L mm: a coreless motor 6 mm across with a plastic planetary gearbox and a 2 mm nylon D-shaft output, the third of four gear ratios. At 6 V it turns 500 rpm unloaded and stalls at 8 oz in (0.056 N m) and 0.4 A.",
+   "source_url": "https://www.pololu.com/product/2358",
+   "price": 19.95,
+   "currency": "USD",
+   "pack": 1
+  },
+  {
+   "ref": "pololu_sub_micro_plastic_planetary_gearmotor_700",
+   "name": "700:1 Sub-Micro Plastic Planetary Gearmotor 6Dx21L mm",
+   "category": "motor",
+   "subtype": "Motor",
+   "supplier": "Pololu",
+   "description": "Pololu 700:1 Sub-Micro Plastic Planetary Gearmotor 6Dx21L mm: a coreless motor 6 mm across with a plastic planetary gearbox and a 2 mm nylon D-shaft output, the slowest of four gear ratios. At 6 V it turns 90 rpm unloaded and stalls at 12 oz in (0.085 N m) and 0.4 A.",
+   "source_url": "https://www.pololu.com/product/2359",
+   "price": 19.95,
    "currency": "USD",
    "pack": 1
   },

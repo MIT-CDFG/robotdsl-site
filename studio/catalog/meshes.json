@@ -3469,6 +3469,30 @@
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/8c1fbe7c05bdfc0f12baa11303544d93b0994588/parts/pololu_37d_gearmotor_100_12v_encoder/assets/model.glb",
    "bytes": 396956
   },
+  "pololu_mini_plastic_gearmotor_120_hp_offset_encoder_back": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_mini_plastic_gearmotor_120_hp_offset_encoder_back/assets/model.glb",
+   "bytes": 477768
+  },
+  "pololu_mini_plastic_gearmotor_120_hp_offset_encoder_side": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_mini_plastic_gearmotor_120_hp_offset_encoder_side/assets/model.glb",
+   "bytes": 477768
+  },
+  "pololu_sub_micro_plastic_planetary_gearmotor_5_1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_sub_micro_plastic_planetary_gearmotor_5_1/assets/model.glb",
+   "bytes": 228988
+  },
+  "pololu_sub_micro_plastic_planetary_gearmotor_26": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_sub_micro_plastic_planetary_gearmotor_26/assets/model.glb",
+   "bytes": 227488
+  },
+  "pololu_sub_micro_plastic_planetary_gearmotor_136": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_sub_micro_plastic_planetary_gearmotor_136/assets/model.glb",
+   "bytes": 227484
+  },
+  "pololu_sub_micro_plastic_planetary_gearmotor_700": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/cb6995b548b297f087f616a69b88056d693d37b7/parts/pololu_sub_micro_plastic_planetary_gearmotor_700/assets/model.glb",
+   "bytes": 227488
+  },
   "pololu_tb6612fng_dual_motor_driver_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_tb6612fng_dual_motor_driver_carrier/assets/model.glb",
    "bytes": 356744
