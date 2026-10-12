@@ -1,0 +1,62 @@
+{
+  "bodies": {
+    "camera": "camera",
+    "chassis": "base_link",
+    "sonar": "sonar",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Mecanum_four_wheel",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "coupling": [
+        33.003300330033,
+        -33.003300330033,
+        -4.122112211221122
+      ],
+      "joint": "wheel_front_left_joint",
+      "max_speed": null,
+      "radius": 0.0303
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "coupling": [
+        33.003300330033,
+        33.003300330033,
+        4.122112211221122
+      ],
+      "joint": "wheel_front_right_joint",
+      "max_speed": null,
+      "radius": 0.0303
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "coupling": [
+        33.003300330033,
+        33.003300330033,
+        -4.122112211221122
+      ],
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "radius": 0.0303
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "coupling": [
+        33.003300330033,
+        -33.003300330033,
+        4.122112211221122
+      ],
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "radius": 0.0303
+    }
+  ],
+  "kinematics": "holonomic",
+  "kingpins": [],
+  "robot": "roboduino_v2",
+  "schema": "robotdsl.mjcf_drive"
+}

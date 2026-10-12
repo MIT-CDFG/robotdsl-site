@@ -1,0 +1,63 @@
+{
+  "bodies": {
+    "camera": "camera",
+    "chassis": "base_link",
+    "claw": "claw",
+    "lidar": "lidar",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Mecanum_four_wheel",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "coupling": [
+        30.8641975308642,
+        -30.8641975308642,
+        -4.2253086419753085
+      ],
+      "joint": "wheel_front_left_joint",
+      "max_speed": null,
+      "radius": 0.0324
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "coupling": [
+        30.8641975308642,
+        30.8641975308642,
+        4.2253086419753085
+      ],
+      "joint": "wheel_front_right_joint",
+      "max_speed": null,
+      "radius": 0.0324
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "coupling": [
+        30.8641975308642,
+        30.8641975308642,
+        -4.2253086419753085
+      ],
+      "joint": "wheel_rear_left_joint",
+      "max_speed": null,
+      "radius": 0.0324
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "coupling": [
+        30.8641975308642,
+        -30.8641975308642,
+        4.2253086419753085
+      ],
+      "joint": "wheel_rear_right_joint",
+      "max_speed": null,
+      "radius": 0.0324
+    }
+  ],
+  "kinematics": "holonomic",
+  "kingpins": [],
+  "robot": "clawpi",
+  "schema": "robotdsl.mjcf_drive"
+}
