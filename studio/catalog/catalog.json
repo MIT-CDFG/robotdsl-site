@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 997,
+ "count": 999,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -4528,7 +4528,7 @@
    "category": "chassis",
    "subtype": "Diff_two_caster",
    "supplier": "LEGO",
-   "description": "The Tri-bot of LEGO Mindstorms NXT 8527 as its instructions build it: the NXT brick on top, two NXT motors that each drive one wheel and a third for a tool at the front, and a rear support of two belt wheels on an axle; two wheel mounts and a seat on the NXT brick.",
+   "description": "The Tri-bot of LEGO Mindstorms NXT 8527 as its instructions build it: the NXT brick on top, two NXT motors that each drive one wheel and a third for a tool at the front, and a rear support of two belt wheels on an axle; two wheel mounts, a seat on the NXT brick, and the front seat where the set's touch sensor attachment goes (lego_8527_touch_sensor), which carries its ultrasonic sensor (lego_8527_ultrasonic_sensor).",
    "source_url": "https://brickset.com/sets/8527-1",
    "price": 249.99,
    "currency": "USD",
@@ -4536,7 +4536,9 @@
    "product": "LEGO Mindstorms NXT 8527",
    "includes": {
     "lego_8527_tribot_wheel": 2,
-    "lego_nxt_motor": 2
+    "lego_nxt_motor": 2,
+    "lego_8527_touch_sensor": 1,
+    "lego_8527_ultrasonic_sensor": 1
    }
   },
   {
@@ -12424,6 +12426,32 @@
    "price": 74.95,
    "currency": "USD",
    "pack": 1
+  },
+  {
+   "ref": "lego_8527_touch_sensor",
+   "name": "LEGO Mindstorms NXT 8527 Touch Sensor on the Tri-bot's front attachment",
+   "category": "sensor",
+   "subtype": "Bumper",
+   "supplier": "LEGO",
+   "description": "The NXT Touch Sensor on the attachment the Tri-bot's instructions build at its front, which goes on the Tri-bot (lego_8527_tribot_chassis) at its front seat: its button forward, behind a paddle, an axle 6 hung from an angle connector that pivots on a long pin, with a 12-tooth bevel gear on it in front of the button and an axle 7 across its foot; something in the robot's way swings the paddle back, and the gear presses the button. It tells whether its button is pressed. The two claws, which the Tri-bot's third motor opens and closes on axles of their own, are left out, and so are the gears that turn them. The ultrasonic sensor (lego_8527_ultrasonic_sensor) sits on an axle 7 across the attachment's top, at its sonar connector.",
+   "source_url": "https://brickset.com/sets/8527-1",
+   "price": 249.99,
+   "currency": "USD",
+   "pack": 1,
+   "product": "LEGO Mindstorms NXT 8527"
+  },
+  {
+   "ref": "lego_8527_ultrasonic_sensor",
+   "name": "LEGO Mindstorms NXT 8527 Ultrasonic Sensor on the Tri-bot's touch sensor attachment",
+   "category": "sensor",
+   "subtype": "Ultrasonic",
+   "supplier": "LEGO",
+   "description": "The NXT Ultrasonic Sensor where the Tri-bot's instructions put it: on the axle 7 across the top of the touch sensor attachment (lego_8527_touch_sensor, at its sonar connector), through its lower lug, high at the front, looking forward. It measures the distance to the nearest object in front of it with sound.",
+   "source_url": "https://brickset.com/sets/8527-1",
+   "price": 249.99,
+   "currency": "USD",
+   "pack": 1,
+   "product": "LEGO Mindstorms NXT 8527"
   }
  ]
 }

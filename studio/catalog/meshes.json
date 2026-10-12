@@ -3988,6 +3988,14 @@
   "pololu_g2_high_power_motor_driver_24v30_cs": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/bdd0cfc325adf2632525c9cc05a9678374bd50b2/parts/pololu_g2_high_power_motor_driver_24v30_cs/assets/model.glb",
    "bytes": 536092
+  },
+  "lego_8527_touch_sensor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/96853b64ea44de7433a4dd52e8ebdd23f6e1b870/parts/lego_8527_touch_sensor/assets/model.glb",
+   "bytes": 2161008
+  },
+  "lego_8527_ultrasonic_sensor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/96853b64ea44de7433a4dd52e8ebdd23f6e1b870/parts/lego_8527_ultrasonic_sensor/assets/model.glb",
+   "bytes": 165620
   }
  }
 }
