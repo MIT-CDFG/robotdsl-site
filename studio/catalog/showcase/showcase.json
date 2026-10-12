@@ -2607,7 +2607,8 @@
    "mjcf": {
     "scene": "mjcf/lego_8527_tribot_sensors/scene.xml",
     "drive": "mjcf/lego_8527_tribot_sensors/drive.json"
-   }
+   },
+   "group": "lego"
   },
   {
    "id": "lego_45678_driving_base",
