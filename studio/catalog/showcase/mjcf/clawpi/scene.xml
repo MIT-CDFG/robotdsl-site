@@ -1,0 +1,488 @@
+<mujoco model="clawpi">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.06" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.0515">
+        <inertial pos="-0.006558 -0.0001537 0.01381" mass="0.902" fullinertia="0.002118 0.00379 0.003757 -5.109e-07 0.0003854 3.522e-06" />
+        <geom type="box" size="0.11025 0.0525 0.0615" pos="-0.005 0 0.0243" group="1" conaffinity="0" />
+        <body name="wheel_front_left" pos="0.0628 0.0698 -0.0191">
+          <joint name="wheel_front_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="9.268e-05 0.0001725 1.22e-05" mass="0.02589" fullinertia="1.302e-05 2.158e-05 1.302e-05 2.682e-09 -1.026e-08 -1.551e-09" />
+          <body name="wheel_front_left/roller_0" pos="0 0 -0.026415">
+            <joint name="wheel_front_left/roller_0" type="hinge" axis="-0.707106781 0.707106781 0" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 -0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 -0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_1" pos="-0.0132075 0 -0.022876061">
+            <joint name="wheel_front_left/roller_1" type="hinge" axis="-0.612372436 0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_2" pos="-0.022876061 0 -0.0132075">
+            <joint name="wheel_front_left/roller_2" type="hinge" axis="-0.353553391 0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_3" pos="-0.026415 0 -1.61745226e-18">
+            <joint name="wheel_front_left/roller_3" type="hinge" axis="-4.32978028e-17 0.707106781 0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="4.20155344e-19 -0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="2.10077672e-19 -0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-2.10077672e-19 0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-4.20155344e-19 0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_4" pos="-0.022876061 0 0.0132075">
+            <joint name="wheel_front_left/roller_4" type="hinge" axis="0.353553391 0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_5" pos="-0.0132075 0 0.022876061">
+            <joint name="wheel_front_left/roller_5" type="hinge" axis="0.612372436 0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_6" pos="-3.23490452e-18 0 0.026415">
+            <joint name="wheel_front_left/roller_6" type="hinge" axis="0.707106781 0.707106781 8.65956056e-17" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 -0.00686165749 -8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 -0.00343082874 -4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 0.00343082874 4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 0.00686165749 8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_7" pos="0.0132075 0 0.022876061">
+            <joint name="wheel_front_left/roller_7" type="hinge" axis="0.612372436 0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_8" pos="0.022876061 0 0.0132075">
+            <joint name="wheel_front_left/roller_8" type="hinge" axis="0.353553391 0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_9" pos="0.026415 0 4.85235678e-18">
+            <joint name="wheel_front_left/roller_9" type="hinge" axis="1.29893408e-16 0.707106781 -0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-1.26046603e-18 -0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-6.30233016e-19 -0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="6.30233016e-19 0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="1.26046603e-18 0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_10" pos="0.022876061 0 -0.0132075">
+            <joint name="wheel_front_left/roller_10" type="hinge" axis="-0.353553391 0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_left/roller_11" pos="0.0132075 0 -0.022876061">
+            <joint name="wheel_front_left/roller_11" type="hinge" axis="-0.612372436 0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="wheel_front_right" pos="0.0628 -0.0698 -0.0191" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_front_right_joint" type="hinge" axis="0 -1 0" armature="0.0001" />
+          <inertial pos="-9.728e-05 0.0001761 1.429e-05" mass="0.02587" fullinertia="1.301e-05 2.157e-05 1.302e-05 -2.35e-09 1.185e-08 -1.836e-09" />
+          <body name="wheel_front_right/roller_0" pos="0 0 -0.026415">
+            <joint name="wheel_front_right/roller_0" type="hinge" axis="-0.707106781 -0.707106781 0" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 -0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 -0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_1" pos="0.0132075 0 -0.022876061">
+            <joint name="wheel_front_right/roller_1" type="hinge" axis="-0.612372436 -0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_2" pos="0.022876061 0 -0.0132075">
+            <joint name="wheel_front_right/roller_2" type="hinge" axis="-0.353553391 -0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_3" pos="0.026415 0 -1.61745226e-18">
+            <joint name="wheel_front_right/roller_3" type="hinge" axis="-4.32978028e-17 -0.707106781 -0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="4.20155344e-19 0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="2.10077672e-19 0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-2.10077672e-19 -0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-4.20155344e-19 -0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_4" pos="0.022876061 0 0.0132075">
+            <joint name="wheel_front_right/roller_4" type="hinge" axis="0.353553391 -0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_5" pos="0.0132075 0 0.022876061">
+            <joint name="wheel_front_right/roller_5" type="hinge" axis="0.612372436 -0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_6" pos="3.23490452e-18 0 0.026415">
+            <joint name="wheel_front_right/roller_6" type="hinge" axis="0.707106781 -0.707106781 -8.65956056e-17" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 0.00686165749 8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 0.00343082874 4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 -0.00343082874 -4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 -0.00686165749 -8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_7" pos="-0.0132075 0 0.022876061">
+            <joint name="wheel_front_right/roller_7" type="hinge" axis="0.612372436 -0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_8" pos="-0.022876061 0 0.0132075">
+            <joint name="wheel_front_right/roller_8" type="hinge" axis="0.353553391 -0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_9" pos="-0.026415 0 4.85235678e-18">
+            <joint name="wheel_front_right/roller_9" type="hinge" axis="1.29893408e-16 -0.707106781 0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-1.26046603e-18 0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-6.30233016e-19 0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="6.30233016e-19 -0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="1.26046603e-18 -0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_10" pos="-0.022876061 0 -0.0132075">
+            <joint name="wheel_front_right/roller_10" type="hinge" axis="-0.353553391 -0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_front_right/roller_11" pos="-0.0132075 0 -0.022876061">
+            <joint name="wheel_front_right/roller_11" type="hinge" axis="-0.612372436 -0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="wheel_rear_left" pos="-0.0714 0.0698 -0.0191">
+          <joint name="wheel_rear_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
+          <inertial pos="-9.728e-05 0.0001761 1.429e-05" mass="0.02587" fullinertia="1.301e-05 2.157e-05 1.302e-05 -2.35e-09 1.185e-08 -1.836e-09" />
+          <body name="wheel_rear_left/roller_0" pos="0 0 -0.026415">
+            <joint name="wheel_rear_left/roller_0" type="hinge" axis="0.707106781 0.707106781 0" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 -0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 -0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_1" pos="-0.0132075 0 -0.022876061">
+            <joint name="wheel_rear_left/roller_1" type="hinge" axis="0.612372436 0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_2" pos="-0.022876061 0 -0.0132075">
+            <joint name="wheel_rear_left/roller_2" type="hinge" axis="0.353553391 0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_3" pos="-0.026415 0 -1.61745226e-18">
+            <joint name="wheel_rear_left/roller_3" type="hinge" axis="4.32978028e-17 0.707106781 -0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-4.20155344e-19 -0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-2.10077672e-19 -0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="2.10077672e-19 0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="4.20155344e-19 0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_4" pos="-0.022876061 0 0.0132075">
+            <joint name="wheel_rear_left/roller_4" type="hinge" axis="-0.353553391 0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_5" pos="-0.0132075 0 0.022876061">
+            <joint name="wheel_rear_left/roller_5" type="hinge" axis="-0.612372436 0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_6" pos="-3.23490452e-18 0 0.026415">
+            <joint name="wheel_rear_left/roller_6" type="hinge" axis="-0.707106781 0.707106781 -8.65956056e-17" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 -0.00686165749 8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 -0.00343082874 4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 0.00343082874 -4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 0.00686165749 -8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_7" pos="0.0132075 0 0.022876061">
+            <joint name="wheel_rear_left/roller_7" type="hinge" axis="-0.612372436 0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_8" pos="0.022876061 0 0.0132075">
+            <joint name="wheel_rear_left/roller_8" type="hinge" axis="-0.353553391 0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_9" pos="0.026415 0 4.85235678e-18">
+            <joint name="wheel_rear_left/roller_9" type="hinge" axis="-1.29893408e-16 0.707106781 0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="1.26046603e-18 -0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="6.30233016e-19 -0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-6.30233016e-19 0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-1.26046603e-18 0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_10" pos="0.022876061 0 -0.0132075">
+            <joint name="wheel_rear_left/roller_10" type="hinge" axis="0.353553391 0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_left/roller_11" pos="0.0132075 0 -0.022876061">
+            <joint name="wheel_rear_left/roller_11" type="hinge" axis="0.612372436 0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="wheel_rear_right" pos="-0.0714 -0.0698 -0.0191" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_rear_right_joint" type="hinge" axis="0 -1 0" armature="0.0001" />
+          <inertial pos="9.268e-05 0.0001725 1.22e-05" mass="0.02589" fullinertia="1.302e-05 2.158e-05 1.302e-05 2.682e-09 -1.026e-08 -1.551e-09" />
+          <body name="wheel_rear_right/roller_0" pos="0 0 -0.026415">
+            <joint name="wheel_rear_right/roller_0" type="hinge" axis="0.707106781 -0.707106781 0" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 -0.00343082874 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 -0.00686165749 0" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_1" pos="0.0132075 0 -0.022876061">
+            <joint name="wheel_rear_right/roller_1" type="hinge" axis="0.612372436 -0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_2" pos="0.022876061 0 -0.0132075">
+            <joint name="wheel_rear_right/roller_2" type="hinge" axis="0.353553391 -0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_3" pos="0.026415 0 -1.61745226e-18">
+            <joint name="wheel_rear_right/roller_3" type="hinge" axis="4.32978028e-17 -0.707106781 0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-4.20155344e-19 0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-2.10077672e-19 0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="2.10077672e-19 -0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="4.20155344e-19 -0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_4" pos="0.022876061 0 0.0132075">
+            <joint name="wheel_rear_right/roller_4" type="hinge" axis="-0.353553391 -0.707106781 0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_5" pos="0.0132075 0 0.022876061">
+            <joint name="wheel_rear_right/roller_5" type="hinge" axis="-0.612372436 -0.707106781 0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_6" pos="3.23490452e-18 0 0.026415">
+            <joint name="wheel_rear_right/roller_6" type="hinge" axis="-0.707106781 -0.707106781 8.65956056e-17" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00686165749 0.00686165749 -8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00343082874 0.00343082874 -4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00343082874 -0.00343082874 4.20155344e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00686165749 -0.00686165749 8.40310688e-19" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_7" pos="-0.0132075 0 0.022876061">
+            <joint name="wheel_rear_right/roller_7" type="hinge" axis="-0.612372436 -0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_8" pos="-0.022876061 0 0.0132075">
+            <joint name="wheel_rear_right/roller_8" type="hinge" axis="-0.353553391 -0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_9" pos="-0.026415 0 4.85235678e-18">
+            <joint name="wheel_rear_right/roller_9" type="hinge" axis="-1.29893408e-16 -0.707106781 -0.707106781" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="1.26046603e-18 0.00686165749 0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="6.30233016e-19 0.00343082874 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-6.30233016e-19 -0.00343082874 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="-1.26046603e-18 -0.00686165749 -0.00686165749" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_10" pos="-0.022876061 0 -0.0132075">
+            <joint name="wheel_rear_right/roller_10" type="hinge" axis="0.353553391 -0.707106781 -0.612372436" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.00343082874 0.00686165749 0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00171541437 0.00343082874 0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00171541437 -0.00343082874 -0.00297118485" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.00343082874 -0.00686165749 -0.0059423697" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+          <body name="wheel_rear_right/roller_11" pos="-0.0132075 0 -0.022876061">
+            <joint name="wheel_rear_right/roller_11" type="hinge" axis="0.612372436 -0.707106781 -0.353553391" />
+            <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
+            <geom type="sphere" size="0.00510834251" pos="-0.0059423697 0.00686165749 0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="-0.00297118485 0.00343082874 0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.005985" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00576313061" pos="0.00297118485 -0.00343082874 -0.00171541437" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+            <geom type="sphere" size="0.00510834251" pos="0.0059423697 -0.00686165749 -0.00343082874" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+          </body>
+        </body>
+        <body name="lidar" pos="-0.0324 0 0.1188">
+          <inertial pos="9.109e-06 -3.018e-05 -0.01784" mass="0.0394" fullinertia="7.485e-06 7.399e-06 8.062e-06 -1.394e-07 7.448e-09 -1.296e-08" />
+          <geom type="box" size="0.02235 0.026 0.0165" pos="0.0037 0 -0.0165" group="1" conaffinity="0" />
+        </body>
+        <body name="camera" pos="0.0906 0 0.0669">
+          <inertial pos="-0.03344 -0.0001213 -0.006431" mass="0.01374" fullinertia="2.705e-06 6.149e-06 6.301e-06 1.662e-09 -1.562e-06 1.565e-08" />
+          <geom type="box" size="0.03755 0.0191 0.0248" pos="-0.0375 0 -0.009" group="1" conaffinity="0" />
+        </body>
+        <body name="claw" pos="0.1372 -0.0063 -0.0035">
+          <inertial pos="-0.009525 0.004947 -0.01834" mass="0.023" fullinertia="9.356e-06 2.07e-05 2.344e-05 3.021e-07 3.071e-06 1.026e-07" />
+          <geom type="box" size="0.05815 0.0374 0.02405" pos="0.0034 0.0063 -0.0126" group="1" conaffinity="0" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_front_left_joint_actuator" joint="wheel_front_left_joint" kv="0.5" />
+    <velocity name="wheel_front_right_joint_actuator" joint="wheel_front_right_joint" kv="0.5" />
+    <velocity name="wheel_rear_left_joint_actuator" joint="wheel_rear_left_joint" kv="0.5" />
+    <velocity name="wheel_rear_right_joint_actuator" joint="wheel_rear_right_joint" kv="0.5" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,64 @@
+{
+  "bodies": {
+    "chassis": "base_link",
+    "motor_front_left": "motor_front_left",
+    "motor_front_right": "motor_front_right",
+    "motor_rear_left": "motor_rear_left",
+    "motor_rear_right": "motor_rear_right",
+    "wheel_front_left": "wheel_front_left",
+    "wheel_front_right": "wheel_front_right",
+    "wheel_rear_left": "wheel_rear_left",
+    "wheel_rear_right": "wheel_rear_right"
+  },
+  "chassis": "Mecanum_four_wheel",
+  "driven": [
+    {
+      "actuator": "wheel_front_left_joint_actuator",
+      "coupling": [
+        20.449897750511248,
+        -20.449897750511248,
+        -4.188139059304703
+      ],
+      "joint": "wheel_front_left_joint",
+      "max_speed": 11.51917,
+      "radius": 0.0489
+    },
+    {
+      "actuator": "wheel_front_right_joint_actuator",
+      "coupling": [
+        20.449897750511248,
+        20.449897750511248,
+        4.188139059304703
+      ],
+      "joint": "wheel_front_right_joint",
+      "max_speed": 11.51917,
+      "radius": 0.0489
+    },
+    {
+      "actuator": "wheel_rear_left_joint_actuator",
+      "coupling": [
+        20.449897750511248,
+        20.449897750511248,
+        -4.188139059304703
+      ],
+      "joint": "wheel_rear_left_joint",
+      "max_speed": 11.51917,
+      "radius": 0.0489
+    },
+    {
+      "actuator": "wheel_rear_right_joint_actuator",
+      "coupling": [
+        20.449897750511248,
+        -20.449897750511248,
+        4.188139059304703
+      ],
+      "joint": "wheel_rear_right_joint",
+      "max_speed": 11.51917,
+      "radius": 0.0489
+    }
+  ],
+  "kinematics": "holonomic",
+  "kingpins": [],
+  "robot": "large_4wd",
+  "schema": "robotdsl.mjcf_drive"
+}
