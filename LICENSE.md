@@ -17,6 +17,16 @@ LDraw files it is drawn from, and the Studio shows them with the robot. LEGO® i
 companies which does not sponsor, authorize or endorse this site. LDraw™ is a trademark owned and licensed by the
 Estate of James Jessiman.
 
+**Walking robots in the Studio** (`studio/catalog/showcase/mjcf/unitree_go1/`, `unitree_g1/` and `booster_t1/`):
+each robot's model (`scene.xml`), which RobotDSL-Core writes from MuJoCo Playground's model of the robot, and its
+walking controller (`policy.onnx`, MuJoCo Playground's, unchanged) keep the licences of what they are made from,
+which are beside them: MuJoCo Playground's Apache-2.0 (`LICENSE-playground.txt`) and MuJoCo Menagerie's licence of
+the robot (`LICENSE-menagerie.txt`: BSD-3-Clause, Copyright (c) Unitree Robotics, for the Go1 and the G1;
+Apache-2.0 for the T1). These files are under those licences, not under the reservation above, and each
+`scene.xml` says at its top what was changed. The meshes the robots are drawn with come from the component
+library's dataset like the other parts', reduced from MuJoCo Menagerie's, under the same licences. Unitree and
+Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.
+
 **Parts submitted** through the Studio's form (an issue of this repository) go into the component library once a maintainer has built and approved them: a product under its maker's rights, a part of the submitter's own under the licence they chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, or as stated in the submission).
 
 **Third-party interface assets** (`assets/vendor/`, `assets/icons/`) retain their

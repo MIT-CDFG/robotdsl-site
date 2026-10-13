@@ -1,0 +1,187 @@
+{
+  "bodies": {
+    "body": "base_link"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "keyframe": "hold",
+  "kinematics": "policy",
+  "kingpins": [],
+  "links": {
+    "body": {
+      "FL_calf": "body/FL_calf",
+      "FL_hip": "body/FL_hip",
+      "FL_thigh": "body/FL_thigh",
+      "FR_calf": "body/FR_calf",
+      "FR_hip": "body/FR_hip",
+      "FR_thigh": "body/FR_thigh",
+      "RL_calf": "body/RL_calf",
+      "RL_hip": "body/RL_hip",
+      "RL_thigh": "body/RL_thigh",
+      "RR_calf": "body/RR_calf",
+      "RR_hip": "body/RR_hip",
+      "RR_thigh": "body/RR_thigh"
+    }
+  },
+  "policy": {
+    "action_scale": 0.5,
+    "command": {
+      "ahead": [
+        -1.5,
+        1.5
+      ],
+      "aside": [
+        -0.8,
+        0.8
+      ],
+      "turn": [
+        -1.2,
+        1.2
+      ]
+    },
+    "file": "policy.onnx",
+    "hidden": [],
+    "imu": {
+      "gyro": "imu_gyro",
+      "site": "imu",
+      "velocimeter": "imu_velocimeter"
+    },
+    "joints": [
+      "body/FR_hip",
+      "body/FR_thigh",
+      "body/FR_calf",
+      "body/FL_hip",
+      "body/FL_thigh",
+      "body/FL_calf",
+      "body/RR_hip",
+      "body/RR_thigh",
+      "body/RR_calf",
+      "body/RL_hip",
+      "body/RL_thigh",
+      "body/RL_calf"
+    ],
+    "observation": [
+      "linear_velocity",
+      "angular_velocity",
+      "gravity",
+      "joint_angles",
+      "joint_velocities",
+      "last_action",
+      "command"
+    ],
+    "period": 0.02,
+    "phase": null
+  },
+  "robot": "go1",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "body/FR_hip_actuator",
+      "hold": 0.1,
+      "joint": "body/FR_hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "body/FR_thigh_actuator",
+      "hold": 0.9,
+      "joint": "body/FR_thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "body/FR_calf_actuator",
+      "hold": -1.8,
+      "joint": "body/FR_calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "body/FL_hip_actuator",
+      "hold": -0.1,
+      "joint": "body/FL_hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "body/FL_thigh_actuator",
+      "hold": 0.9,
+      "joint": "body/FL_thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "body/FL_calf_actuator",
+      "hold": -1.8,
+      "joint": "body/FL_calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "body/RR_hip_actuator",
+      "hold": 0.1,
+      "joint": "body/RR_hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "body/RR_thigh_actuator",
+      "hold": 0.9,
+      "joint": "body/RR_thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "body/RR_calf_actuator",
+      "hold": -1.8,
+      "joint": "body/RR_calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "body/RL_hip_actuator",
+      "hold": -0.1,
+      "joint": "body/RL_hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "body/RL_thigh_actuator",
+      "hold": 0.9,
+      "joint": "body/RL_thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "body/RL_calf_actuator",
+      "hold": -1.8,
+      "joint": "body/RL_calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    }
+  ]
+}
