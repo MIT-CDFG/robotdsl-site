@@ -2,6 +2,20 @@
  "schema": "robotdsl.showcase",
  "groups": [
   {
+   "id": "legged",
+   "title": "Walking robots",
+   "about": "Quadrupeds and humanoids from the parts library, each walking in the page by the walking controller trained for its model. Open one to see its parts, or walk it with the keys.",
+   "notices": [
+    {
+     "text": "Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
+     "shown": true
+    },
+    {
+     "text": "The models are MuJoCo Menagerie's and the walking controllers MuJoCo Playground's, by Google DeepMind."
+    }
+   ]
+  },
+  {
    "id": "makers",
    "title": "Robot kits and platforms",
    "about": "Robots and kits their makers sell, some with parts of other makers added, each assembled from the parts library's parts, drawn from their makers' published models where the makers publish them, with the world and task it drove in. Open one to see its parts and what they cost, or drive it with the keys.",
@@ -49,6 +63,1721 @@
   "encoding": "meshopt (gltfpack -cc)"
  },
  "examples": [
+  {
+   "id": "unitree_go1",
+   "group": "legged",
+   "robots": [
+    "Unitree Go1"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Unitree Go1, which walks by the joystick policy MuJoCo Playground trained for it.\nRobot go1 {\n    intent \"Unitree Go1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_go1\")\n}\n",
+    "world": "World go1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/go1, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task go1_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "go1.core",
+    "world": "go1_room.world",
+    "task": "go1_walk.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "unitree_go1",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "FR_hip",
+       "xyz": [
+        0.1881,
+        -0.04675,
+        0.0
+       ],
+       "rpy": [
+        0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "FR_thigh",
+       "xyz": [
+        0.1881,
+        -0.12635033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        0.16003071583444606,
+        0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "FR_calf",
+       "xyz": [
+        0.021251368249346037,
+        -0.11313209702100027,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        0.16003071583444606,
+        -0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "FL_hip",
+       "xyz": [
+        0.1881,
+        0.04675,
+        0.0
+       ],
+       "rpy": [
+        -0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "FL_thigh",
+       "xyz": [
+        0.1881,
+        0.12635033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "FL_calf",
+       "xyz": [
+        0.021251368249346037,
+        0.11313209702100027,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        -0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RR_hip",
+       "xyz": [
+        -0.1881,
+        -0.04675,
+        0.0
+       ],
+       "rpy": [
+        0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RR_thigh",
+       "xyz": [
+        -0.1881,
+        -0.12635033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        0.16003071583444606,
+        0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RR_calf",
+       "xyz": [
+        -0.35494863175065394,
+        -0.11313209702100027,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        0.16003071583444606,
+        -0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RL_hip",
+       "xyz": [
+        -0.1881,
+        0.04675,
+        0.0
+       ],
+       "rpy": [
+        -0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RL_thigh",
+       "xyz": [
+        -0.1881,
+        0.12635033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "RL_calf",
+       "xyz": [
+        -0.35494863175065394,
+        0.11313209702100027,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        -0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.2944695935726062,
+   "drove": "in MuJoCo it walked by its walking controller alone, 2.46 m in 5 s told 0.5 m/s and 3.41 rad in 4 s told 1 rad/s, without falling",
+   "summary": "1 part from the RobotDSL parts library with its 12 links, drawn from MuJoCo Menagerie's model, and the walking controller MuJoCo Playground trained for it",
+   "credits": [
+    {
+     "text": "Made by Unitree Robotics: Unitree Go1",
+     "url": "https://www.unitree.com/go1"
+    },
+    {
+     "text": "The model: MuJoCo Menagerie's unitree_go1, Copyright (c) 2016-2022 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\"), BSD-3-Clause",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_go1"
+    },
+    {
+     "text": "The walking controller and the model it was trained on: MuJoCo Playground's joystick policy, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "Changed: the model's meshes reduced for the web; the robot written by RobotDSL-Core's mjcf target as the model the policy was trained on, as the top of its scene.xml says"
+    },
+    {
+     "text": "MuJoCo Menagerie's licence of the model, BSD-3-Clause",
+     "url": "catalog/showcase/mjcf/unitree_go1/LICENSE-menagerie.txt"
+    },
+    {
+     "text": "MuJoCo Playground's licence of its model and walking controller, Apache-2.0",
+     "url": "catalog/showcase/mjcf/unitree_go1/LICENSE-playground.txt"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/unitree_go1/scene.xml",
+    "drive": "mjcf/unitree_go1/drive.json",
+    "policy": "mjcf/unitree_go1/policy.onnx"
+   }
+  },
+  {
+   "id": "unitree_g1",
+   "group": "legged",
+   "robots": [
+    "Unitree G1"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Unitree G1, which walks by the joystick policy MuJoCo Playground trained for it.\nRobot g1 {\n    intent \"Unitree G1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_g1\")\n}\n",
+    "world": "World g1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/g1, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task g1_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "g1.core",
+    "world": "g1_room.world",
+    "task": "g1_walk.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "unitree_g1",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "left_hip_pitch_link",
+       "xyz": [
+        0.0,
+        0.064452,
+        -0.1027
+       ],
+       "rpy": [
+        0.0,
+        -0.312,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_hip_roll_link",
+       "xyz": [
+        0.009351618417762338,
+        0.116452,
+        -0.13169419697057616
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_hip_yaw_link",
+       "xyz": [
+        0.0895214977146116,
+        0.116452,
+        -0.22969223192295987
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_knee_link",
+       "xyz": [
+        0.10332011997296352,
+        0.1186009,
+        -0.42304614616513736
+       ],
+       "rpy": [
+        0.0,
+        0.35700000000000004,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_ankle_pitch_link",
+       "xyz": [
+        -0.0015228632114730745,
+        0.118506455,
+        -0.7041403456374636
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_ankle_roll_link",
+       "xyz": [
+        -0.0014175158435599377,
+        0.118506455,
+        -0.7216980295944118
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_hip_pitch_link",
+       "xyz": [
+        0.0,
+        -0.064452,
+        -0.1027
+       ],
+       "rpy": [
+        0.0,
+        -0.312,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_hip_roll_link",
+       "xyz": [
+        0.009351618417762338,
+        -0.116452,
+        -0.13169419697057616
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_hip_yaw_link",
+       "xyz": [
+        0.0895214977146116,
+        -0.116452,
+        -0.22969223192295987
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_knee_link",
+       "xyz": [
+        0.10332011997296352,
+        -0.1186009,
+        -0.42304614616513736
+       ],
+       "rpy": [
+        0.0,
+        0.35700000000000004,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_ankle_pitch_link",
+       "xyz": [
+        -0.0015228632114730745,
+        -0.118506455,
+        -0.7041403456374636
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_ankle_roll_link",
+       "xyz": [
+        -0.0014175158435599377,
+        -0.118506455,
+        -0.7216980295944118
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "waist_yaw_link",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "waist_roll_link",
+       "xyz": [
+        -0.0039635,
+        0.0,
+        0.044
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "torso_link",
+       "xyz": [
+        -0.0039635,
+        0.0,
+        0.044
+       ],
+       "rpy": [
+        0.0,
+        0.07300000000000001,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_pitch_link",
+       "xyz": [
+        0.018054142293777803,
+        0.10022,
+        0.2908315298690855
+       ],
+       "rpy": [
+        0.28889632930502074,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_roll_link",
+       "xyz": [
+        0.015134975164541742,
+        0.14048496151158363,
+        0.28848463857584705
+       ],
+       "rpy": [
+        0.2096458103436468,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_yaw_link",
+       "xyz": [
+        -0.012488984087553416,
+        0.16654496779925904,
+        0.1923234689306888
+       ],
+       "rpy": [
+        0.2096458103436468,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_elbow_link",
+       "xyz": [
+        -0.018829962293994057,
+        0.18296949887219405,
+        0.11218435122017467
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_roll_link",
+       "xyz": [
+        0.0379312037958537,
+        0.20152475658305366,
+        0.031329934893220696
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_pitch_link",
+       "xyz": [
+        0.0624077894057626,
+        0.20738388493588086,
+        0.0028594699896421667
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_yaw_link",
+       "xyz": [
+        0.09203734040723127,
+        0.2144765139945664,
+        -0.03160477699890027
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_pitch_link",
+       "xyz": [
+        0.018054142293777803,
+        -0.10021,
+        0.2908315298690855
+       ],
+       "rpy": [
+        -0.28889632930502074,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_roll_link",
+       "xyz": [
+        0.015134975164541742,
+        -0.14047496151158362,
+        0.28848463857584705
+       ],
+       "rpy": [
+        -0.2096458103436468,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_yaw_link",
+       "xyz": [
+        -0.012488984087553416,
+        -0.16653496779925903,
+        0.1923234689306888
+       ],
+       "rpy": [
+        -0.2096458103436468,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_elbow_link",
+       "xyz": [
+        -0.018829962293994057,
+        -0.18295949887219404,
+        0.11218435122017467
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_roll_link",
+       "xyz": [
+        0.0379312037958537,
+        -0.20151475658305365,
+        0.031329934893220696
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_pitch_link",
+       "xyz": [
+        0.0624077894057626,
+        -0.20737388493588085,
+        0.0028594699896421667
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_yaw_link",
+       "xyz": [
+        0.09203734040723127,
+        -0.2144665139945664,
+        -0.03160477699890027
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.758997361796413,
+   "drove": "in MuJoCo it walked by its walking controller alone, 2.84 m in 5 s told 0.5 m/s and 2.52 rad in 4 s told 1 rad/s, without falling",
+   "summary": "1 part from the RobotDSL parts library with its 29 links, drawn from MuJoCo Menagerie's model, and the walking controller MuJoCo Playground trained for it",
+   "credits": [
+    {
+     "text": "Made by Unitree Robotics: Unitree G1",
+     "url": "https://www.unitree.com/g1"
+    },
+    {
+     "text": "The model: MuJoCo Menagerie's unitree_g1, Copyright (c) 2016-2023 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\"), BSD-3-Clause",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_g1"
+    },
+    {
+     "text": "The walking controller and the model it was trained on: MuJoCo Playground's joystick policy, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "Changed: the model's meshes reduced for the web; the robot written by RobotDSL-Core's mjcf target as the model the policy was trained on, as the top of its scene.xml says"
+    },
+    {
+     "text": "MuJoCo Menagerie's licence of the model, BSD-3-Clause",
+     "url": "catalog/showcase/mjcf/unitree_g1/LICENSE-menagerie.txt"
+    },
+    {
+     "text": "MuJoCo Playground's licence of its model and walking controller, Apache-2.0",
+     "url": "catalog/showcase/mjcf/unitree_g1/LICENSE-playground.txt"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/unitree_g1/scene.xml",
+    "drive": "mjcf/unitree_g1/drive.json",
+    "policy": "mjcf/unitree_g1/policy.onnx"
+   }
+  },
+  {
+   "id": "booster_t1",
+   "group": "legged",
+   "robots": [
+    "Booster T1"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Booster T1, which walks by the joystick policy MuJoCo Playground trained for it.\nRobot t1 {\n    intent \"Booster T1 that walks by its walking controller\"\n\n    Legged body(ref = \"booster_t1\")\n}\n",
+    "world": "World t1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/t1, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task t1_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "t1.core",
+    "world": "t1_room.world",
+    "task": "t1_walk.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "booster_t1",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "H1",
+       "xyz": [
+        0.0625,
+        0.0,
+        0.243
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "H2",
+       "xyz": [
+        0.0625,
+        0.0,
+        0.30485
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AL1",
+       "xyz": [
+        0.0575,
+        0.1063,
+        0.219
+       ],
+       "rpy": [
+        0.0,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AL2",
+       "xyz": [
+        0.0575,
+        0.1533,
+        0.219
+       ],
+       "rpy": [
+        -1.4,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AL3",
+       "xyz": [
+        0.05769746719925235,
+        0.16358301214546458,
+        0.15938009419731153
+       ],
+       "rpy": [
+        -1.4,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_hand_link",
+       "xyz": [
+        0.05756973892298608,
+        0.18858517886609005,
+        0.014420495188617044
+       ],
+       "rpy": [
+        -1.3857498158006352,
+        -0.39297732083716924,
+        -0.07171143229267624
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AR1",
+       "xyz": [
+        0.0575,
+        -0.1063,
+        0.219
+       ],
+       "rpy": [
+        0.0,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AR2",
+       "xyz": [
+        0.0575,
+        -0.1533,
+        0.219
+       ],
+       "rpy": [
+        1.4,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "AR3",
+       "xyz": [
+        0.05769746719925235,
+        -0.16358301214546458,
+        0.15938009419731153
+       ],
+       "rpy": [
+        1.4,
+        0.0008811299429916245,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_hand_link",
+       "xyz": [
+        0.05756973892298608,
+        -0.18858517886609005,
+        0.014420495188617044
+       ],
+       "rpy": [
+        1.3857498158006352,
+        -0.39297732083716924,
+        0.07171143229267624
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Waist",
+       "xyz": [
+        0.0625,
+        0.0,
+        -0.1155
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Pitch_Left",
+       "xyz": [
+        0.0625,
+        0.106,
+        -0.1155
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Roll_Left",
+       "xyz": [
+        0.06647338661590123,
+        0.106,
+        -0.13510133155682483
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Yaw_Left",
+       "xyz": [
+        0.08273526601880017,
+        0.106,
+        -0.21532370121944183
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Shank_Left",
+       "xyz": [
+        0.09563602425556099,
+        0.106,
+        -0.3494339932812991
+       ],
+       "rpy": [
+        0.0,
+        0.19999999999999998,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Ankle_Cross_Left",
+       "xyz": [
+        0.04000861163294384,
+        0.106,
+        -0.6238526350768467
+       ],
+       "rpy": [
+        0.0,
+        -2.7755575615628907e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_foot_link",
+       "xyz": [
+        0.04000861163294384,
+        0.10625,
+        -0.6358526350768468
+       ],
+       "rpy": [
+        0.0,
+        -2.7755575615628907e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Pitch_Right",
+       "xyz": [
+        0.0625,
+        -0.106,
+        -0.1155
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Roll_Right",
+       "xyz": [
+        0.06647338661590123,
+        -0.106,
+        -0.13510133155682483
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Hip_Yaw_Right",
+       "xyz": [
+        0.08273526601880017,
+        -0.106,
+        -0.21532370121944183
+       ],
+       "rpy": [
+        0.0,
+        -0.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Shank_Right",
+       "xyz": [
+        0.09563602425556099,
+        -0.106,
+        -0.3494339932812991
+       ],
+       "rpy": [
+        0.0,
+        0.19999999999999998,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "Ankle_Cross_Right",
+       "xyz": [
+        0.04000861163294384,
+        -0.106,
+        -0.6238526350768467
+       ],
+       "rpy": [
+        0.0,
+        -2.7755575615628907e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_foot_link",
+       "xyz": [
+        0.04000861163294384,
+        -0.10625,
+        -0.6358526350768468
+       ],
+       "rpy": [
+        0.0,
+        -2.7755575615628907e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.6658526350768468,
+   "drove": "in MuJoCo it walked by its walking controller alone, 2.17 m in 5 s told 0.5 m/s and 3.78 rad in 4 s told 1 rad/s, without falling",
+   "summary": "1 part from the RobotDSL parts library with its 23 links, drawn from MuJoCo Menagerie's model, and the walking controller MuJoCo Playground trained for it",
+   "credits": [
+    {
+     "text": "Made by Booster Robotics: Booster T1",
+     "url": "https://www.boosterobotics.com/robots/"
+    },
+    {
+     "text": "The model: MuJoCo Menagerie's booster_t1, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/booster_t1"
+    },
+    {
+     "text": "The walking controller and the model it was trained on: MuJoCo Playground's joystick policy, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "Changed: the model's meshes reduced for the web; the robot written by RobotDSL-Core's mjcf target as the model the policy was trained on, as the top of its scene.xml says"
+    },
+    {
+     "text": "MuJoCo Menagerie's licence of the model, Apache-2.0",
+     "url": "catalog/showcase/mjcf/booster_t1/LICENSE-menagerie.txt"
+    },
+    {
+     "text": "MuJoCo Playground's licence of its model and walking controller, Apache-2.0",
+     "url": "catalog/showcase/mjcf/booster_t1/LICENSE-playground.txt"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/booster_t1/scene.xml",
+    "drive": "mjcf/booster_t1/drive.json",
+    "policy": "mjcf/booster_t1/policy.onnx"
+   }
+  },
   {
    "id": "strafer",
    "group": "makers",

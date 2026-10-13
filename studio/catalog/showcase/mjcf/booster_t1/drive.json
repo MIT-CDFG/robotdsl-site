@@ -1,0 +1,320 @@
+{
+  "bodies": {
+    "body": "base_link"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "keyframe": "hold",
+  "kinematics": "policy",
+  "kingpins": [],
+  "links": {
+    "body": {
+      "AL1": "body/AL1",
+      "AL2": "body/AL2",
+      "AL3": "body/AL3",
+      "AR1": "body/AR1",
+      "AR2": "body/AR2",
+      "AR3": "body/AR3",
+      "Ankle_Cross_Left": "body/Ankle_Cross_Left",
+      "Ankle_Cross_Right": "body/Ankle_Cross_Right",
+      "H1": "body/H1",
+      "H2": "body/H2",
+      "Hip_Pitch_Left": "body/Hip_Pitch_Left",
+      "Hip_Pitch_Right": "body/Hip_Pitch_Right",
+      "Hip_Roll_Left": "body/Hip_Roll_Left",
+      "Hip_Roll_Right": "body/Hip_Roll_Right",
+      "Hip_Yaw_Left": "body/Hip_Yaw_Left",
+      "Hip_Yaw_Right": "body/Hip_Yaw_Right",
+      "Shank_Left": "body/Shank_Left",
+      "Shank_Right": "body/Shank_Right",
+      "Waist": "body/Waist",
+      "left_foot_link": "body/left_foot_link",
+      "left_hand_link": "body/left_hand_link",
+      "right_foot_link": "body/right_foot_link",
+      "right_hand_link": "body/right_hand_link"
+    }
+  },
+  "policy": {
+    "action_scale": 1.0,
+    "command": {
+      "ahead": [
+        -1.0,
+        1.0
+      ],
+      "aside": [
+        -0.8,
+        0.8
+      ],
+      "turn": [
+        -1.0,
+        1.0
+      ]
+    },
+    "file": "policy.onnx",
+    "hidden": [
+      "body/H1",
+      "body/H2"
+    ],
+    "imu": {
+      "gyro": "imu_gyro",
+      "site": "imu",
+      "velocimeter": "imu_velocimeter"
+    },
+    "joints": [
+      "body/H1",
+      "body/H2",
+      "body/AL1",
+      "body/AL2",
+      "body/AL3",
+      "body/left_hand_link",
+      "body/AR1",
+      "body/AR2",
+      "body/AR3",
+      "body/right_hand_link",
+      "body/Waist",
+      "body/Hip_Pitch_Left",
+      "body/Hip_Roll_Left",
+      "body/Hip_Yaw_Left",
+      "body/Shank_Left",
+      "body/Ankle_Cross_Left",
+      "body/left_foot_link",
+      "body/Hip_Pitch_Right",
+      "body/Hip_Roll_Right",
+      "body/Hip_Yaw_Right",
+      "body/Shank_Right",
+      "body/Ankle_Cross_Right",
+      "body/right_foot_link"
+    ],
+    "observation": [
+      "linear_velocity",
+      "angular_velocity",
+      "gravity",
+      "command",
+      "joint_angles",
+      "joint_velocities",
+      "last_action",
+      "phase"
+    ],
+    "period": 0.02,
+    "phase": {
+      "frequency": 1.5,
+      "offsets": [
+        0.0,
+        3.141592653589793
+      ],
+      "still_at": 3.141592653589793,
+      "still_below": 0.01
+    }
+  },
+  "robot": "t1",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "body/H1_actuator",
+      "hold": 0.0,
+      "joint": "body/H1",
+      "range": [
+        -1.57,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/H2_actuator",
+      "hold": 0.0,
+      "joint": "body/H2",
+      "range": [
+        -0.35,
+        1.22
+      ]
+    },
+    {
+      "actuator": "body/AL1_actuator",
+      "hold": 0.0,
+      "joint": "body/AL1",
+      "range": [
+        -3.31,
+        1.22
+      ]
+    },
+    {
+      "actuator": "body/AL2_actuator",
+      "hold": -1.4,
+      "joint": "body/AL2",
+      "range": [
+        -1.74,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/AL3_actuator",
+      "hold": 0.0,
+      "joint": "body/AL3",
+      "range": [
+        -2.27,
+        2.27
+      ]
+    },
+    {
+      "actuator": "body/left_hand_link_actuator",
+      "hold": -0.4,
+      "joint": "body/left_hand_link",
+      "range": [
+        -2.44,
+        0.0
+      ]
+    },
+    {
+      "actuator": "body/AR1_actuator",
+      "hold": 0.0,
+      "joint": "body/AR1",
+      "range": [
+        -3.31,
+        1.22
+      ]
+    },
+    {
+      "actuator": "body/AR2_actuator",
+      "hold": 1.4,
+      "joint": "body/AR2",
+      "range": [
+        -1.57,
+        1.74
+      ]
+    },
+    {
+      "actuator": "body/AR3_actuator",
+      "hold": 0.0,
+      "joint": "body/AR3",
+      "range": [
+        -2.27,
+        2.27
+      ]
+    },
+    {
+      "actuator": "body/right_hand_link_actuator",
+      "hold": 0.4,
+      "joint": "body/right_hand_link",
+      "range": [
+        0.0,
+        2.44
+      ]
+    },
+    {
+      "actuator": "body/Waist_actuator",
+      "hold": 0.0,
+      "joint": "body/Waist",
+      "range": [
+        -1.57,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/Hip_Pitch_Left_actuator",
+      "hold": -0.2,
+      "joint": "body/Hip_Pitch_Left",
+      "range": [
+        -1.8,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/Hip_Roll_Left_actuator",
+      "hold": 0.0,
+      "joint": "body/Hip_Roll_Left",
+      "range": [
+        -0.2,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/Hip_Yaw_Left_actuator",
+      "hold": 0.0,
+      "joint": "body/Hip_Yaw_Left",
+      "range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "actuator": "body/Shank_Left_actuator",
+      "hold": 0.4,
+      "joint": "body/Shank_Left",
+      "range": [
+        0.0,
+        2.34
+      ]
+    },
+    {
+      "actuator": "body/Ankle_Cross_Left_actuator",
+      "hold": -0.2,
+      "joint": "body/Ankle_Cross_Left",
+      "range": [
+        -0.87,
+        0.35
+      ]
+    },
+    {
+      "actuator": "body/left_foot_link_actuator",
+      "hold": 0.0,
+      "joint": "body/left_foot_link",
+      "range": [
+        -0.44,
+        0.44
+      ]
+    },
+    {
+      "actuator": "body/Hip_Pitch_Right_actuator",
+      "hold": -0.2,
+      "joint": "body/Hip_Pitch_Right",
+      "range": [
+        -1.8,
+        1.57
+      ]
+    },
+    {
+      "actuator": "body/Hip_Roll_Right_actuator",
+      "hold": 0.0,
+      "joint": "body/Hip_Roll_Right",
+      "range": [
+        -1.57,
+        0.2
+      ]
+    },
+    {
+      "actuator": "body/Hip_Yaw_Right_actuator",
+      "hold": 0.0,
+      "joint": "body/Hip_Yaw_Right",
+      "range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "actuator": "body/Shank_Right_actuator",
+      "hold": 0.4,
+      "joint": "body/Shank_Right",
+      "range": [
+        0.0,
+        2.34
+      ]
+    },
+    {
+      "actuator": "body/Ankle_Cross_Right_actuator",
+      "hold": -0.2,
+      "joint": "body/Ankle_Cross_Right",
+      "range": [
+        -0.87,
+        0.35
+      ]
+    },
+    {
+      "actuator": "body/right_foot_link_actuator",
+      "hold": 0.0,
+      "joint": "body/right_foot_link",
+      "range": [
+        -0.44,
+        0.44
+      ]
+    }
+  ]
+}
