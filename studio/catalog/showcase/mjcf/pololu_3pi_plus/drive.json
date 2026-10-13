@@ -1,0 +1,33 @@
+{
+  "bodies": {
+    "board": "board",
+    "cells": "cells",
+    "chassis": "base_link",
+    "display": "display",
+    "motor_left": "motor_left",
+    "motor_right": "motor_right",
+    "wheel_left": "wheel_left",
+    "wheel_right": "wheel_right"
+  },
+  "chassis": "Diff_two_caster",
+  "driven": [
+    {
+      "actuator": "wheel_left_joint_actuator",
+      "joint": "wheel_left_joint",
+      "max_speed": 75.4,
+      "radius": 0.016,
+      "y": 0.0427
+    },
+    {
+      "actuator": "wheel_right_joint_actuator",
+      "joint": "wheel_right_joint",
+      "max_speed": 75.4,
+      "radius": 0.016,
+      "y": -0.0427
+    }
+  ],
+  "kinematics": "differential",
+  "kingpins": [],
+  "robot": "pololu_3pi_plus",
+  "schema": "robotdsl.mjcf_drive"
+}
