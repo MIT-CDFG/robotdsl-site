@@ -1,0 +1,59 @@
+<mujoco model="pololu_3pi_plus">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_footprint" pos="0 0 0.05" quat="1 0 0 0">
+      <freejoint />
+      <body name="base_link" pos="0 0 0.016">
+        <inertial pos="-0.002457 -8.824e-06 4.793e-05" mass="0.0493" fullinertia="3.204e-05 3.337e-05 6.045e-05 3.862e-10 -6.761e-07 2.554e-09" />
+        <geom type="box" size="0.0485 0.045 0.01665" pos="0 0 0.00355" group="1" conaffinity="0" />
+        <body name="base_link_contact_0" pos="-0.0404 0 -0.00965">
+          <geom type="sphere" size="0.00635" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
+        </body>
+        <body name="cells" pos="0 0 -0.0085">
+          <inertial pos="-0.00225 3.195e-19 0.005" mass="0.0476" fullinertia="8.012e-06 2.191e-05 2.933e-05 8.358e-08 9.801e-22 1.236e-22" />
+          <geom type="box" size="0.03075 0.0225 0.005" pos="-0.00225 0 0.005" group="1" conaffinity="0" />
+        </body>
+        <body name="board" pos="0 0 0.005">
+          <inertial pos="-0.001117 0.001408 0.001246" mass="0.02" fullinertia="5.636e-06 1.077e-05 1.631e-05 -7.734e-09 8.708e-08 -7.042e-08" />
+          <geom type="box" size="0.04368 0.03302 0.00575" pos="0.00077 0 0.00575" group="1" conaffinity="0" />
+          <body name="display" pos="-0.00852 0 0.0084">
+            <inertial pos="0.001253 8.999e-06 0.001138" mass="0.0055" fullinertia="5.551e-07 3.718e-07 9.175e-07 -7.337e-10 5.434e-09 9.595e-11" />
+            <geom type="box" size="0.01675 0.0177 0.0015" pos="0 0 0.0015" group="1" conaffinity="0" />
+          </body>
+        </body>
+        <body name="motor_left" pos="0 0.038 0" quat="0.70710678 0 0 0.707106782">
+          <inertial pos="-0.01319 -2.931e-05 3.484e-06" mass="0.0095" fullinertia="1.543e-07 5.663e-07 5.887e-07 3.099e-09 -8.667e-10 -3.772e-09" />
+          <geom type="box" size="0.0129 0.006 0.005" pos="-0.0129 0 0" group="1" conaffinity="0" />
+        </body>
+        <body name="motor_right" pos="0 -0.038 0" quat="0.70710678 0 0 -0.707106782">
+          <inertial pos="-0.01319 -2.931e-05 3.484e-06" mass="0.0095" fullinertia="1.543e-07 5.663e-07 5.887e-07 3.099e-09 -8.667e-10 -3.772e-09" />
+          <geom type="box" size="0.0129 0.006 0.005" pos="-0.0129 0 0" group="1" conaffinity="0" />
+        </body>
+        <body name="wheel_left" pos="0 0.0427 0">
+          <joint name="wheel_left_joint" type="hinge" axis="0 1 0" actuatorfrcrange="-0.03236 0.03236" armature="0.0001" />
+          <inertial pos="4.549e-10 -8.233e-05 -2.811e-06" mass="0.00312" fullinertia="2.593e-07 4.953e-07 2.592e-07 4.567e-15 1.156e-14 -1.082e-11" />
+          <geom type="sphere" size="0.016" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+        <body name="wheel_right" pos="0 -0.0427 0" quat="1.79489651e-09 0 0 1">
+          <joint name="wheel_right_joint" type="hinge" axis="0 -1 0" actuatorfrcrange="-0.03236 0.03236" armature="0.0001" />
+          <inertial pos="4.549e-10 -8.233e-05 -2.811e-06" mass="0.00312" fullinertia="2.593e-07 4.953e-07 2.592e-07 4.567e-15 1.156e-14 -1.082e-11" />
+          <geom type="sphere" size="0.016" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="wheel_left_joint_actuator" joint="wheel_left_joint" kv="0.5" ctrlrange="-75.4 75.4" forcerange="-0.03236 0.03236" />
+    <velocity name="wheel_right_joint_actuator" joint="wheel_right_joint" kv="0.5" ctrlrange="-75.4 75.4" forcerange="-0.03236 0.03236" />
+  </actuator>
+</mujoco>
