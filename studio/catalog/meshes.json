@@ -4264,6 +4264,74 @@
   "booster_t1/right_foot_link": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/booster_t1/assets/links/right_foot_link.glb",
    "bytes": 183668
+  },
+  "unitree_go1_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/model.glb",
+   "bytes": 443464
+  },
+  "unitree_go1_leg_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_go1_leg_front_left/hip": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_hip.glb",
+   "bytes": 115044
+  },
+  "unitree_go1_leg_front_left/thigh": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FL_thigh.glb",
+   "bytes": 106336
+  },
+  "unitree_go1_leg_front_left/calf": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_calf.glb",
+   "bytes": 133072
+  },
+  "unitree_go1_leg_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_go1_leg_front_right/hip": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_hip.glb",
+   "bytes": 115044
+  },
+  "unitree_go1_leg_front_right/thigh": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_thigh.glb",
+   "bytes": 108496
+  },
+  "unitree_go1_leg_front_right/calf": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_calf.glb",
+   "bytes": 133072
+  },
+  "unitree_go1_leg_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_go1_leg_rear_left/hip": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/RL_hip.glb",
+   "bytes": 115044
+  },
+  "unitree_go1_leg_rear_left/thigh": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FL_thigh.glb",
+   "bytes": 106336
+  },
+  "unitree_go1_leg_rear_left/calf": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_calf.glb",
+   "bytes": 133072
+  },
+  "unitree_go1_leg_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_go1_leg_rear_right/hip": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/RR_hip.glb",
+   "bytes": 115044
+  },
+  "unitree_go1_leg_rear_right/thigh": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_thigh.glb",
+   "bytes": 108496
+  },
+  "unitree_go1_leg_rear_right/calf": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_calf.glb",
+   "bytes": 133072
   }
  }
 }

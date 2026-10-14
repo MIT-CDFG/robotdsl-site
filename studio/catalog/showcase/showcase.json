@@ -4,14 +4,14 @@
   {
    "id": "legged",
    "title": "Walking robots",
-   "about": "Quadrupeds and humanoids from the parts library, each walking in the page by the walking controller trained for its model. Open one to see its parts, or walk it with the keys.",
+   "about": "Quadrupeds and humanoids from the parts library, walking in the page: by the walking controller trained for its model, or, for a robot put together from parts, by a gait that needs no training. Open one to see its parts, or walk it with the keys.",
    "notices": [
     {
      "text": "Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
      "shown": true
     },
     {
-     "text": "The models are MuJoCo Menagerie's and the walking controllers MuJoCo Playground's, by Google DeepMind."
+     "text": "The models are MuJoCo Menagerie's and the trained walking controllers MuJoCo Playground's, by Google DeepMind."
     }
    ]
   },
@@ -1776,6 +1776,468 @@
     "scene": "mjcf/booster_t1/scene.xml",
     "drive": "mjcf/booster_t1/drive.json",
     "policy": "mjcf/booster_t1/policy.onnx"
+   }
+  },
+  {
+   "id": "unitree_go1_modular",
+   "group": "legged",
+   "robots": [
+    "Unitree Go1, a body and four legs"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Unitree Go1 put together from its body and its four legs, each a part of its own, walking by a gait.\nRobot go1_modular {\n    intent \"Unitree Go1 of a body and four legs that walks by a gait\"\n\n    Legged body(ref = \"unitree_go1_body\")\n    Leg front_left(ref = \"unitree_go1_leg_front_left\", glue = (0.1881, 0.04675, 0, 0, 0, -1))\n    Leg front_right(ref = \"unitree_go1_leg_front_right\", glue = (0.1881, -0.04675, 0, 0, 0, -1))\n    Leg rear_left(ref = \"unitree_go1_leg_rear_left\", glue = (-0.1881, 0.04675, 0, 0, 0, -1))\n    Leg rear_right(ref = \"unitree_go1_leg_rear_right\", glue = (-0.1881, -0.04675, 0, 0, 0, -1))\n}\n",
+    "world": "World go1_modular_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/go1_modular, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task go1_modular_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "go1_modular.core",
+    "world": "go1_modular_room.world",
+    "task": "go1_modular_walk.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "unitree_go1_body",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "front_left",
+     "category": "leg",
+     "part": "unitree_go1_leg_front_left",
+     "xyz": [
+      0.1881,
+      0.04675,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        -0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "thigh",
+       "xyz": [
+        0.0,
+        0.07960033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "calf",
+       "xyz": [
+        -0.16684863175065395,
+        0.06638209702100026,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        -0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "front_right",
+     "category": "leg",
+     "part": "unitree_go1_leg_front_right",
+     "xyz": [
+      0.1881,
+      -0.04675,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "thigh",
+       "xyz": [
+        0.0,
+        -0.07960033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        0.16003071583444606,
+        0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "calf",
+       "xyz": [
+        -0.16684863175065395,
+        -0.06638209702100026,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        0.16003071583444606,
+        -0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "rear_left",
+     "category": "leg",
+     "part": "unitree_go1_leg_rear_left",
+     "xyz": [
+      -0.1881,
+      0.04675,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        -0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "thigh",
+       "xyz": [
+        0.0,
+        0.07960033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "calf",
+       "xyz": [
+        -0.16684863175065395,
+        0.06638209702100026,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        -0.16003071583444606,
+        -0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "rear_right",
+     "category": "leg",
+     "part": "unitree_go1_leg_rear_right",
+     "xyz": [
+      -0.1881,
+      -0.04675,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.09999999999999999,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "thigh",
+       "xyz": [
+        0.0,
+        -0.07960033322224207,
+        -0.007986673331746252
+       ],
+       "rpy": [
+        0.16003071583444606,
+        0.8937291932542889,
+        0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "calf",
+       "xyz": [
+        -0.16684863175065395,
+        -0.06638209702100026,
+        -0.13972813345217622
+       ],
+       "rpy": [
+        0.16003071583444606,
+        -0.8937291932542889,
+        -0.12514841758875667
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.2944695935726062,
+   "drove": "in MuJoCo it walked by its gait alone, with no training, 2.36 m in 5 s told 0.5 m/s and 3.76 rad in 4 s told 1 rad/s, without falling",
+   "summary": "5 parts from the RobotDSL parts library, a body and four legs of three links each, drawn from MuJoCo Menagerie's model of the Unitree Go1, walking by a gait that needs no training",
+   "credits": [
+    {
+     "text": "Made by Unitree Robotics: Unitree Go1",
+     "url": "https://www.unitree.com/go1"
+    },
+    {
+     "text": "The model: MuJoCo Menagerie's unitree_go1, Copyright (c) 2016-2022 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\"), BSD-3-Clause",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_go1"
+    },
+    {
+     "text": "The model its parts are read from: MuJoCo Playground's feet-only model of the Go1, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "Changed: the model's meshes reduced for the web; the robot split into a body and four legs, each leg hung from a flange of 10 g the body gives up; written by RobotDSL-Core's mjcf target to walk by a gait, as the top of its scene.xml says"
+    },
+    {
+     "text": "MuJoCo Menagerie's licence of the model, BSD-3-Clause",
+     "url": "catalog/showcase/mjcf/unitree_go1_modular/LICENSE-menagerie.txt"
+    },
+    {
+     "text": "MuJoCo Playground's licence of its model, Apache-2.0",
+     "url": "catalog/showcase/mjcf/unitree_go1_modular/LICENSE-playground.txt"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/unitree_go1_modular/scene.xml",
+    "drive": "mjcf/unitree_go1_modular/drive.json"
    }
   },
   {

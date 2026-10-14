@@ -1,0 +1,113 @@
+<!-- Unitree Go1 of a body and four legs, written by RobotDSL-Core's mjcf target for walking in RobotDSL Studio by a gait, which needs no training. Changed from MuJoCo Playground's feet-only model of the Go1 (go1; Apache-2.0, see LICENSE-playground.txt), itself from MuJoCo Menagerie's unitree_go1 (BSD-3-Clause, Copyright (c) 2016-2022 HangZhou YuShu TECHNOLOGY CO.,LTD. ("Unitree Robotics"), see LICENSE-menagerie.txt): written anew from the parts library's declarations of the robot's body and its four legs, which the library splits from the robot with a flange of 10 g at each hip that the body gives up, with the bodies, joints and servos of Playground's model and the library's convex hull of the body; the meshes it is drawn with are not in this file but copies of Menagerie's reduced for the web. -->
+<mujoco model="go1_modular">
+  <compiler angle="radian" autolimits="true" fusestatic="false" inertiafromgeom="false" boundmass="0.001" boundinertia="1e-6" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 -9.81" />
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0 0 0" specular="0 0 0" />
+    <map shadowclip="4" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="flat" rgb1="0.8503 0.8774 0.9288" rgb2="0.8503 0.8774 0.9288" width="16" height="96" />
+    <mesh name="unitree_go1_body_hull" vertex="-0.13162 -0.09165 -0.02849 -0.13162 -0.09165 0.02849 -0.13162 -0.06849 -0.05165 -0.13162 -0.06849 0.05165 -0.13162 0.06849 -0.05165 -0.13162 0.06849 0.05165 -0.13162 0.09165 -0.02849 -0.13162 0.09165 0.02849 -0.1303 -0.06849 0.05297 -0.1303 0.06849 0.05297 -0.13025 -0.06849 -0.05302 -0.13025 0.06849 -0.05302 -0.13011 -0.09316 -0.02849 -0.13011 0.09316 -0.02849 -0.12995 -0.09332 0.02849 -0.12973 -0.09296 -0.02907 -0.12941 -0.06991 0.05244 -0.1263 -0.0577 0.05697 -0.1263 0.0577 0.05697 -0.12625 -0.09702 -0.01701 -0.12625 -0.09702 0.02253 -0.12625 0.09702 -0.01701 -0.12625 0.09702 0.02849 -0.12596 -0.08682 -0.03898 -0.12596 -0.08682 0.03898 -0.12596 -0.07898 0.04682 -0.12596 -0.07495 -0.05085 -0.12596 0.07495 -0.05085 -0.12596 0.07538 0.05042 -0.12596 0.09105 -0.03475 -0.12596 0.09702 0.02878 -0.12219 -0.04456 -0.06108 -0.12219 0.04456 -0.06108 0.10165 0.09702 0.02878 0.1176 -0.09702 0.02253 0.12166 0.07538 0.05042 0.12262 0.09702 -0.01662 0.12395 -0.07898 0.04682 0.12501 -0.07495 -0.05085 0.12501 0.07495 -0.05085 0.12511 -0.0749 -0.05087 0.12511 -0.04456 -0.06108 0.12511 0.04456 -0.06108 0.12511 0.0749 -0.05087 0.12527 -0.09702 -0.01661 0.12527 -0.09702 0.01952 0.12527 0.09702 -0.01372 0.12527 0.09702 0.01952 0.12563 -0.08682 -0.03898 0.12583 0.09085 -0.03495 0.12893 -0.08682 0.03898 0.1293 0.08739 0.03841 0.1304 -0.08723 0.03832 0.13111 0.09168 -0.03246 0.13479 -0.06991 0.05244 0.13724 -0.09265 -0.02957 0.14257 -0.0935 -0.02706 0.2626 -0.01497 0.0728 0.2626 0.01497 0.0728 0.26647 -0.01497 0.0728 0.26647 0.01497 0.0728 0.2686 -0.06781 -0.01252 0.2686 -0.06781 0.02543 0.2686 0.0678 0.00533 0.2686 0.0678 0.02544 0.26959 -0.06681 0.02716 0.2696 0.06681 0.02717 0.27026 0.06615 0.02761 0.27027 -0.06614 0.0276 0.27048 -0.06593 -0.01378 0.27114 -0.06403 -0.01543 0.27117 0.06247 -0.01696 0.27168 0.06472 0.02761 0.27169 -0.06472 0.0276 0.27179 0.06245 -0.01636 0.27215 -0.02163 -0.05682 0.27215 0.02164 -0.05681 0.2726 0.06381 -0.00912 0.27355 -0.00864 -0.06108 0.27355 0.00862 -0.06108 0.27592 -0.01642 -0.05827 0.27607 -0.01551 -0.05856 0.27624 0.01597 -0.05838 0.27747 -0.01234 0.0728 0.27747 0.01234 0.0728 0.27899 -0.01373 0.07128 0.27899 0.01373 0.07128 0.27987 0.01597 -0.05476 0.28086 0.05555 0.00889 0.28098 -0.05543 0.00864 0.28278 -0.00578 -0.05185 0.28291 -0.03527 -0.03241 0.28538 -0.01373 0.0649 0.28726 0.02502 -0.03832 0.28737 0.01373 0.06291 0.28917 -0.02013 0.0547 0.29018 0.01755 0.05628 0.29928 -0.02119 0.00819 0.29928 -0.01164 0.03032 0.29928 -0.01138 -0.01617 0.29928 -0.00806 -0.01832 0.29928 0.0106 0.03275 0.29928 0.01165 -0.01555 0.29928 0.0211 0.00842" face="35 28 18 59 57 17 89 97 98 9 18 28 43 42 32 43 32 27 43 27 39 43 79 42 93 77 102 93 74 77 54 37 59 54 8 16 54 17 8 54 59 17 85 37 65 85 59 37 73 89 98 73 98 95 99 97 89 40 31 41 40 26 31 20 24 14 10 31 26 11 27 32 76 79 43 88 103 102 88 102 77 60 35 18 68 85 65 68 65 62 69 99 89 69 91 99 56 61 62 56 62 45 56 69 61 56 40 69 56 19 12 52 24 20 52 65 37 52 62 65 71 76 43 71 77 74 87 93 102 13 21 36 101 103 88 101 88 96 58 60 18 80 99 91 80 40 41 78 80 41 78 81 80 44 56 45 44 19 56 48 40 56 48 15 23 34 52 20 34 45 62 34 62 52 50 52 37 50 24 52 82 76 87 82 87 79 82 79 76 90 99 80 90 80 81 90 87 102 53 77 71 53 36 77 46 63 77 46 77 36 49 29 13 49 13 36 49 36 53 49 43 39 49 71 43 49 53 71 92 98 101 92 95 98 92 73 95 92 68 73 92 85 68 83 59 85 83 85 92 83 92 84 67 51 35 70 91 69 70 80 91 38 26 40 38 40 48 55 48 56 55 15 48 55 12 15 55 56 12 100 90 102 100 99 90 94 101 96 94 92 101 94 84 92 94 96 67 72 96 88 72 88 67 72 67 96 66 77 63 66 51 67 66 47 33 66 33 51 75 69 40 75 70 69 75 40 80 75 80 70 86 84 94 86 94 67 86 60 84 86 35 60 86 67 35 64 47 66 64 66 63 9 8 17 9 17 18 9 3 8 9 5 3 20 1 0 20 0 12 20 14 1 20 12 19 11 32 31 11 10 2 11 2 4 11 31 10 22 5 9 22 28 30 22 9 28 22 7 5 6 3 5 6 1 3 6 2 0 6 0 1 6 4 2 6 5 7 25 8 3 25 16 8 25 3 1 25 1 14 25 14 24 25 54 16 25 37 54 69 68 62 69 89 73 69 62 61 69 73 68 87 71 74 87 74 93 87 76 71 13 7 22 13 22 21 13 6 7 13 11 4 13 27 11 13 29 27 13 4 6 58 18 17 58 17 57 78 31 32 78 42 79 78 41 31 78 32 42 15 0 2 15 12 0 15 2 10 15 10 26 15 26 23 34 20 19 34 44 45 34 19 44 50 25 24 50 37 25 90 78 79 90 79 87 90 81 78 51 30 28 51 33 30 51 28 35 46 22 30 46 30 33 46 21 22 46 33 47 46 36 21 49 27 29 49 39 27 83 58 57 83 57 59 83 84 60 83 60 58 38 23 26 38 48 23 100 97 99 100 98 97 100 102 103 100 103 101 100 101 98 66 67 88 66 88 77 64 46 47 64 63 46" />
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="0 0 10" dir="-0.5 0.1 -0.9" diffuse="0.5 0.5 0.5" specular="0.25 0.25 0.25" />
+    <geom name="ground_plane" type="plane" size="0 0 1" group="2" rgba="0.9035 0.9035 0.9035 1" />
+    <body name="base_link" pos="0 0 0.294469594" quat="1 0 0 0">
+      <freejoint />
+      <inertial pos="0.022472734314 0.002015491867 -0.000503872967" mass="5.164" quat="0.9999901411963245 0.002369072426365643 -0.0027578057951537383 0.002549414283723217" diaginertia="0.0167181091814629 0.0615708604130815 0.07012565594745562" />
+      <geom type="mesh" mesh="unitree_go1_body_hull" group="1" contype="0" conaffinity="0" />
+      <body name="front_left" pos="0.1881 0.04675 0">
+        <inertial pos="0 0 0" mass="0.01" fullinertia="1.08333333e-06 1.08333333e-06 2e-06 0 0 0" />
+        <geom type="box" size="0.0140005 0.0140005 0.005" group="1" contype="0" conaffinity="0" />
+        <body name="front_left/hip" pos="0 0 0">
+          <joint name="front_left/hip" type="hinge" axis="1.0 0 0" range="-0.863 0.863" damping="0.5" armature="0.005" frictionloss="0.3" />
+          <inertial pos="-0.0049166 -0.00762615 -8.865e-05" mass="0.68" quat="0.705027852191645 0.7087811747995454 0.02211688480216873 0.008707312470551318" diaginertia="0.00039871900000000023 0.00046843800000000017 0.0007340640000000004" />
+          <body name="front_left/thigh" pos="0 0.08 0">
+            <joint name="front_left/thigh" type="hinge" axis="0 1.0 0" range="-0.686 4.501" damping="0.5" armature="0.005" frictionloss="0.3" />
+            <inertial pos="-0.00304722 -0.019315 -0.0305004" mass="1.009" quat="0.5161472084096184 -0.5134666381122299 -0.40652787092589987 -0.5519775004084291" diaginertia="0.0007092679999999994 0.004609029999999997 0.004787169999999996" />
+            <body name="front_left/calf" pos="0 0 -0.213">
+              <joint name="front_left/calf" type="hinge" axis="0 1.0 0" range="-2.818 -0.888" damping="0.5" armature="0.005" frictionloss="1.0" />
+              <inertial pos="0.00429862 0.000976676 -0.146197" mass="0.195862" quat="0.5134775991168533 -0.4923990974608888 -0.5084222501313784 -0.48517079425315807" diaginertia="3.5842700000000015e-05 0.0014846800000000004 0.00149767" />
+              <geom name="front_left/foot" type="sphere" size="0.023" pos="0 0 -0.213" group="1" contype="0" conaffinity="0" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="front_right" pos="0.1881 -0.04675 0">
+        <inertial pos="0 0 0" mass="0.01" fullinertia="1.08333333e-06 1.08333333e-06 2e-06 0 0 0" />
+        <geom type="box" size="0.0140005 0.0140005 0.005" group="1" contype="0" conaffinity="0" />
+        <body name="front_right/hip" pos="0 0 0">
+          <joint name="front_right/hip" type="hinge" axis="1.0 0 0" range="-0.863 0.863" damping="0.5" armature="0.005" frictionloss="0.3" />
+          <inertial pos="-0.0049166 0.00762615 -8.865e-05" mass="0.68" quat="0.7087811747995454 0.705027852191645 -0.008707312470551199 -0.022116884802168717" diaginertia="0.0003987190000000002 0.00046843800000000017 0.0007340640000000004" />
+          <body name="front_right/thigh" pos="0 -0.08 0">
+            <joint name="front_right/thigh" type="hinge" axis="0 1.0 0" range="-0.686 4.501" damping="0.5" armature="0.005" frictionloss="0.3" />
+            <inertial pos="-0.00304722 0.019315 -0.0305004" mass="1.009" quat="0.5134666381122287 -0.5161472084096196 -0.5519775004084281 -0.40652787092590115" diaginertia="0.0007092680000000005 0.004609030000000003 0.004787170000000003" />
+            <body name="front_right/calf" pos="0 0 -0.213">
+              <joint name="front_right/calf" type="hinge" axis="0 1.0 0" range="-2.818 -0.888" damping="0.5" armature="0.005" frictionloss="1.0" />
+              <inertial pos="0.00429862 0.000976676 -0.146197" mass="0.195862" quat="0.5134775991168533 -0.4923990974608888 -0.5084222501313784 -0.48517079425315807" diaginertia="3.5842700000000015e-05 0.0014846800000000004 0.00149767" />
+              <geom name="front_right/foot" type="sphere" size="0.023" pos="0 0 -0.213" group="1" contype="0" conaffinity="0" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="rear_left" pos="-0.1881 0.04675 0">
+        <inertial pos="0 0 0" mass="0.01" fullinertia="1.08333333e-06 1.08333333e-06 2e-06 0 0 0" />
+        <geom type="box" size="0.0140005 0.0140005 0.005" group="1" contype="0" conaffinity="0" />
+        <body name="rear_left/hip" pos="0 0 0">
+          <joint name="rear_left/hip" type="hinge" axis="1.0 0 0" range="-0.863 0.863" damping="0.5" armature="0.005" frictionloss="0.3" />
+          <inertial pos="0.0049166 -0.00762615 -8.865e-05" mass="0.68" quat="0.705027852191645 0.7087811747995454 -0.022116884802168706 -0.008707312470551294" diaginertia="0.00039871900000000023 0.00046843800000000017 0.0007340640000000004" />
+          <body name="rear_left/thigh" pos="0 0.08 0">
+            <joint name="rear_left/thigh" type="hinge" axis="0 1.0 0" range="-0.686 4.501" damping="0.5" armature="0.005" frictionloss="0.3" />
+            <inertial pos="-0.00304722 -0.019315 -0.0305004" mass="1.009" quat="0.5161472084096184 -0.5134666381122299 -0.40652787092589987 -0.5519775004084291" diaginertia="0.0007092679999999994 0.004609029999999997 0.004787169999999996" />
+            <body name="rear_left/calf" pos="0 0 -0.213">
+              <joint name="rear_left/calf" type="hinge" axis="0 1.0 0" range="-2.818 -0.888" damping="0.5" armature="0.005" frictionloss="1.0" />
+              <inertial pos="0.00429862 0.000976676 -0.146197" mass="0.195862" quat="0.5134775991168533 -0.4923990974608888 -0.5084222501313784 -0.48517079425315807" diaginertia="3.5842700000000015e-05 0.0014846800000000004 0.00149767" />
+              <geom name="rear_left/foot" type="sphere" size="0.023" pos="0 0 -0.213" group="1" contype="0" conaffinity="0" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="rear_right" pos="-0.1881 -0.04675 0">
+        <inertial pos="0 0 0" mass="0.01" fullinertia="1.08333333e-06 1.08333333e-06 2e-06 0 0 0" />
+        <geom type="box" size="0.0140005 0.0140005 0.005" group="1" contype="0" conaffinity="0" />
+        <body name="rear_right/hip" pos="0 0 0">
+          <joint name="rear_right/hip" type="hinge" axis="1.0 0 0" range="-0.863 0.863" damping="0.5" armature="0.005" frictionloss="0.3" />
+          <inertial pos="0.0049166 0.00762615 -8.865e-05" mass="0.68" quat="0.7087811747995454 0.705027852191645 0.008707312470551317 0.022116884802168734" diaginertia="0.00039871900000000023 0.00046843800000000017 0.0007340640000000004" />
+          <body name="rear_right/thigh" pos="0 -0.08 0">
+            <joint name="rear_right/thigh" type="hinge" axis="0 1.0 0" range="-0.686 4.501" damping="0.5" armature="0.005" frictionloss="0.3" />
+            <inertial pos="-0.00304722 0.019315 -0.0305004" mass="1.009" quat="0.5134666381122287 -0.5161472084096196 -0.5519775004084281 -0.40652787092590115" diaginertia="0.0007092680000000005 0.004609030000000003 0.004787170000000003" />
+            <body name="rear_right/calf" pos="0 0 -0.213">
+              <joint name="rear_right/calf" type="hinge" axis="0 1.0 0" range="-2.818 -0.888" damping="0.5" armature="0.005" frictionloss="1.0" />
+              <inertial pos="0.00429862 0.000976676 -0.146197" mass="0.195862" quat="0.5134775991168533 -0.4923990974608888 -0.5084222501313784 -0.48517079425315807" diaginertia="3.5842700000000015e-05 0.0014846800000000004 0.00149767" />
+              <geom name="rear_right/foot" type="sphere" size="0.023" pos="0 0 -0.213" group="1" contype="0" conaffinity="0" />
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <pair geom1="ground_plane" geom2="front_left/foot" condim="3" friction="0.6 0.6 0.005 0.0001 0.0001" />
+    <pair geom1="ground_plane" geom2="front_right/foot" condim="3" friction="0.6 0.6 0.005 0.0001 0.0001" />
+    <pair geom1="ground_plane" geom2="rear_left/foot" condim="3" friction="0.6 0.6 0.005 0.0001 0.0001" />
+    <pair geom1="ground_plane" geom2="rear_right/foot" condim="3" friction="0.6 0.6 0.005 0.0001 0.0001" />
+  </contact>
+  <actuator>
+    <position name="front_left/hip_actuator" joint="front_left/hip" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.863 0.863" />
+    <position name="front_left/thigh_actuator" joint="front_left/thigh" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.686 4.501" />
+    <position name="front_left/calf_actuator" joint="front_left/calf" kp="35.0" forcerange="-35.55 35.55" ctrlrange="-2.818 -0.888" />
+    <position name="front_right/hip_actuator" joint="front_right/hip" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.863 0.863" />
+    <position name="front_right/thigh_actuator" joint="front_right/thigh" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.686 4.501" />
+    <position name="front_right/calf_actuator" joint="front_right/calf" kp="35.0" forcerange="-35.55 35.55" ctrlrange="-2.818 -0.888" />
+    <position name="rear_left/hip_actuator" joint="rear_left/hip" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.863 0.863" />
+    <position name="rear_left/thigh_actuator" joint="rear_left/thigh" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.686 4.501" />
+    <position name="rear_left/calf_actuator" joint="rear_left/calf" kp="35.0" forcerange="-35.55 35.55" ctrlrange="-2.818 -0.888" />
+    <position name="rear_right/hip_actuator" joint="rear_right/hip" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.863 0.863" />
+    <position name="rear_right/thigh_actuator" joint="rear_right/thigh" kp="35.0" forcerange="-23.7 23.7" ctrlrange="-0.686 4.501" />
+    <position name="rear_right/calf_actuator" joint="rear_right/calf" kp="35.0" forcerange="-35.55 35.55" ctrlrange="-2.818 -0.888" />
+  </actuator>
+  <keyframe>
+    <key name="hold" qpos="0 0 0.294469594 1.0 0 0 0 -0.1 0.9 -1.8 0.1 0.9 -1.8 -0.1 0.9 -1.8 0.1 0.9 -1.8" ctrl="-0.1 0.9 -1.8 0.1 0.9 -1.8 -0.1 0.9 -1.8 0.1 0.9 -1.8" />
+  </keyframe>
+</mujoco>

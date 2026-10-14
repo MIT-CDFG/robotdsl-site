@@ -1,0 +1,228 @@
+{
+  "bodies": {
+    "body": "base_link",
+    "front_left": "front_left",
+    "front_right": "front_right",
+    "rear_left": "rear_left",
+    "rear_right": "rear_right"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "gait": {
+    "balance": {
+      "damping": 0.8,
+      "frequency": 3.0
+    },
+    "command": {
+      "ahead": [
+        -0.5,
+        1.0
+      ],
+      "aside": [
+        -0.3,
+        0.3
+      ],
+      "turn": [
+        -1.0,
+        1.0
+      ]
+    },
+    "control": 0.004,
+    "duty": 0.55,
+    "feet": [
+      {
+        "friction": 0.6,
+        "geom": "front_left/foot",
+        "joints": [
+          "front_left/hip",
+          "front_left/thigh",
+          "front_left/calf"
+        ],
+        "offset": 0.0
+      },
+      {
+        "friction": 0.6,
+        "geom": "front_right/foot",
+        "joints": [
+          "front_right/hip",
+          "front_right/thigh",
+          "front_right/calf"
+        ],
+        "offset": 0.5
+      },
+      {
+        "friction": 0.6,
+        "geom": "rear_left/foot",
+        "joints": [
+          "rear_left/hip",
+          "rear_left/thigh",
+          "rear_left/calf"
+        ],
+        "offset": 0.5
+      },
+      {
+        "friction": 0.6,
+        "geom": "rear_right/foot",
+        "joints": [
+          "rear_right/hip",
+          "rear_right/thigh",
+          "rear_right/calf"
+        ],
+        "offset": 0.0
+      }
+    ],
+    "lead": {
+      "distance": 0.03,
+      "yaw": 0.15
+    },
+    "period": 0.4,
+    "settle": {
+      "speed": 0.05,
+      "turn": 0.1
+    },
+    "slew": {
+      "ahead": 1.0,
+      "aside": 1.0,
+      "turn": 2.0
+    },
+    "standing": 0.2944695935726062,
+    "step_height": 0.07
+  },
+  "keyframe": "hold",
+  "kinematics": "gait",
+  "kingpins": [],
+  "links": {
+    "front_left": {
+      "calf": "front_left/calf",
+      "hip": "front_left/hip",
+      "thigh": "front_left/thigh"
+    },
+    "front_right": {
+      "calf": "front_right/calf",
+      "hip": "front_right/hip",
+      "thigh": "front_right/thigh"
+    },
+    "rear_left": {
+      "calf": "rear_left/calf",
+      "hip": "rear_left/hip",
+      "thigh": "rear_left/thigh"
+    },
+    "rear_right": {
+      "calf": "rear_right/calf",
+      "hip": "rear_right/hip",
+      "thigh": "rear_right/thigh"
+    }
+  },
+  "robot": "go1_modular",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "front_left/hip_actuator",
+      "hold": -0.1,
+      "joint": "front_left/hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "front_left/thigh_actuator",
+      "hold": 0.9,
+      "joint": "front_left/thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "front_left/calf_actuator",
+      "hold": -1.8,
+      "joint": "front_left/calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "front_right/hip_actuator",
+      "hold": 0.1,
+      "joint": "front_right/hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "front_right/thigh_actuator",
+      "hold": 0.9,
+      "joint": "front_right/thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "front_right/calf_actuator",
+      "hold": -1.8,
+      "joint": "front_right/calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "rear_left/hip_actuator",
+      "hold": -0.1,
+      "joint": "rear_left/hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "rear_left/thigh_actuator",
+      "hold": 0.9,
+      "joint": "rear_left/thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "rear_left/calf_actuator",
+      "hold": -1.8,
+      "joint": "rear_left/calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    },
+    {
+      "actuator": "rear_right/hip_actuator",
+      "hold": 0.1,
+      "joint": "rear_right/hip",
+      "range": [
+        -0.863,
+        0.863
+      ]
+    },
+    {
+      "actuator": "rear_right/thigh_actuator",
+      "hold": 0.9,
+      "joint": "rear_right/thigh",
+      "range": [
+        -0.686,
+        4.501
+      ]
+    },
+    {
+      "actuator": "rear_right/calf_actuator",
+      "hold": -1.8,
+      "joint": "rear_right/calf",
+      "range": [
+        -2.818,
+        -0.888
+      ]
+    }
+  ]
+}

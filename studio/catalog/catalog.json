@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 999,
+ "count": 1007,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12452,6 +12452,78 @@
    "currency": "USD",
    "pack": 1,
    "product": "LEGO Mindstorms NXT 8527"
+  },
+  {
+   "ref": "unitree_go1",
+   "name": "Unitree Go1",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1, a quadruped of twelve joints, three on each leg, as MuJoCo Playground's feet-only model has it, with the joystick policy Playground trained on that model as its walking controller.",
+   "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_g1",
+   "name": "Unitree G1",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree G1, a humanoid of 29 joints: three in its waist, seven in each arm and six in each leg, as MuJoCo Playground's feet-only model has it, with the joystick policy Playground trained on that model as its walking controller.",
+   "source_url": "https://www.unitree.com/g1"
+  },
+  {
+   "ref": "booster_t1",
+   "name": "Booster T1",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "Booster Robotics",
+   "description": "Booster T1, a humanoid of 23 joints: two in its head, four in each arm, one in its waist and six in each leg, as MuJoCo Playground's feet-only model has it, with the joystick policy Playground trained on that model as its walking controller.",
+   "source_url": "https://www.boosterobotics.com/robots/"
+  },
+  {
+   "ref": "unitree_go1_body",
+   "name": "Unitree Go1's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1's body without its legs, a hip under each corner for a leg of its own part, walking by a gait.",
+   "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_go1_leg_front_left",
+   "name": "Unitree Go1's front left leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1's front left leg, its hip, thigh and calf, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_go1_leg_front_right",
+   "name": "Unitree Go1's front right leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1's front right leg, its hip, thigh and calf, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_go1_leg_rear_left",
+   "name": "Unitree Go1's rear left leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1's rear left leg, its hip, thigh and calf, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_go1_leg_rear_right",
+   "name": "Unitree Go1's rear right leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree Go1's rear right leg, its hip, thigh and calf, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/go1"
   }
  ]
 }
