@@ -1,0 +1,389 @@
+{
+  "bodies": {
+    "body": "base_link",
+    "left": "left",
+    "right": "right"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "keyframe": "hold",
+  "kinematics": "policy",
+  "kingpins": [],
+  "links": {
+    "body": {
+      "left_elbow_link": "body/left_elbow_link",
+      "left_shoulder_pitch_link": "body/left_shoulder_pitch_link",
+      "left_shoulder_roll_link": "body/left_shoulder_roll_link",
+      "left_shoulder_yaw_link": "body/left_shoulder_yaw_link",
+      "left_wrist_pitch_link": "body/left_wrist_pitch_link",
+      "left_wrist_roll_link": "body/left_wrist_roll_link",
+      "left_wrist_yaw_link": "body/left_wrist_yaw_link",
+      "right_elbow_link": "body/right_elbow_link",
+      "right_shoulder_pitch_link": "body/right_shoulder_pitch_link",
+      "right_shoulder_roll_link": "body/right_shoulder_roll_link",
+      "right_shoulder_yaw_link": "body/right_shoulder_yaw_link",
+      "right_wrist_pitch_link": "body/right_wrist_pitch_link",
+      "right_wrist_roll_link": "body/right_wrist_roll_link",
+      "right_wrist_yaw_link": "body/right_wrist_yaw_link",
+      "torso_link": "body/torso_link",
+      "waist_roll_link": "body/waist_roll_link",
+      "waist_yaw_link": "body/waist_yaw_link"
+    },
+    "left": {
+      "ankle_pitch_link": "left/ankle_pitch_link",
+      "ankle_roll_link": "left/ankle_roll_link",
+      "hip_pitch_link": "left/hip_pitch_link",
+      "hip_roll_link": "left/hip_roll_link",
+      "hip_yaw_link": "left/hip_yaw_link",
+      "knee_link": "left/knee_link"
+    },
+    "right": {
+      "ankle_pitch_link": "right/ankle_pitch_link",
+      "ankle_roll_link": "right/ankle_roll_link",
+      "hip_pitch_link": "right/hip_pitch_link",
+      "hip_roll_link": "right/hip_roll_link",
+      "hip_yaw_link": "right/hip_yaw_link",
+      "knee_link": "right/knee_link"
+    }
+  },
+  "policy": {
+    "action_scale": 0.5,
+    "command": {
+      "ahead": [
+        -1.0,
+        1.0
+      ],
+      "aside": [
+        -0.5,
+        0.5
+      ],
+      "turn": [
+        -1.0,
+        1.0
+      ]
+    },
+    "file": "policy.onnx",
+    "hidden": [],
+    "imu": {
+      "gyro": "imu_gyro",
+      "site": "imu",
+      "velocimeter": "imu_velocimeter"
+    },
+    "joints": [
+      "left/hip_pitch_link",
+      "left/hip_roll_link",
+      "left/hip_yaw_link",
+      "left/knee_link",
+      "left/ankle_pitch_link",
+      "left/ankle_roll_link",
+      "right/hip_pitch_link",
+      "right/hip_roll_link",
+      "right/hip_yaw_link",
+      "right/knee_link",
+      "right/ankle_pitch_link",
+      "right/ankle_roll_link",
+      "body/waist_yaw_link",
+      "body/waist_roll_link",
+      "body/torso_link",
+      "body/left_shoulder_pitch_link",
+      "body/left_shoulder_roll_link",
+      "body/left_shoulder_yaw_link",
+      "body/left_elbow_link",
+      "body/left_wrist_roll_link",
+      "body/left_wrist_pitch_link",
+      "body/left_wrist_yaw_link",
+      "body/right_shoulder_pitch_link",
+      "body/right_shoulder_roll_link",
+      "body/right_shoulder_yaw_link",
+      "body/right_elbow_link",
+      "body/right_wrist_roll_link",
+      "body/right_wrist_pitch_link",
+      "body/right_wrist_yaw_link"
+    ],
+    "observation": [
+      "linear_velocity",
+      "angular_velocity",
+      "gravity",
+      "command",
+      "joint_angles",
+      "joint_velocities",
+      "last_action",
+      "phase"
+    ],
+    "period": 0.02,
+    "phase": {
+      "frequency": 1.5,
+      "offsets": [
+        0.0,
+        3.141592653589793
+      ],
+      "still_at": null,
+      "still_below": null
+    }
+  },
+  "robot": "g1_modular",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "body/waist_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "body/waist_yaw_link",
+      "range": [
+        -2.618,
+        2.618
+      ]
+    },
+    {
+      "actuator": "body/waist_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "body/waist_roll_link",
+      "range": [
+        -0.52,
+        0.52
+      ]
+    },
+    {
+      "actuator": "body/torso_link_actuator",
+      "hold": 0.073,
+      "joint": "body/torso_link",
+      "range": [
+        -0.52,
+        0.52
+      ]
+    },
+    {
+      "actuator": "body/left_shoulder_pitch_link_actuator",
+      "hold": 0.2,
+      "joint": "body/left_shoulder_pitch_link",
+      "range": [
+        -3.0892,
+        2.6704
+      ]
+    },
+    {
+      "actuator": "body/left_shoulder_roll_link_actuator",
+      "hold": 0.2,
+      "joint": "body/left_shoulder_roll_link",
+      "range": [
+        -1.5882,
+        2.2515
+      ]
+    },
+    {
+      "actuator": "body/left_shoulder_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "body/left_shoulder_yaw_link",
+      "range": [
+        -2.618,
+        2.618
+      ]
+    },
+    {
+      "actuator": "body/left_elbow_link_actuator",
+      "hold": 0.6,
+      "joint": "body/left_elbow_link",
+      "range": [
+        -1.0472,
+        2.0944
+      ]
+    },
+    {
+      "actuator": "body/left_wrist_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "body/left_wrist_roll_link",
+      "range": [
+        -1.97222,
+        1.97222
+      ]
+    },
+    {
+      "actuator": "body/left_wrist_pitch_link_actuator",
+      "hold": 0.0,
+      "joint": "body/left_wrist_pitch_link",
+      "range": [
+        -1.61443,
+        1.61443
+      ]
+    },
+    {
+      "actuator": "body/left_wrist_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "body/left_wrist_yaw_link",
+      "range": [
+        -1.61443,
+        1.61443
+      ]
+    },
+    {
+      "actuator": "body/right_shoulder_pitch_link_actuator",
+      "hold": 0.2,
+      "joint": "body/right_shoulder_pitch_link",
+      "range": [
+        -3.0892,
+        2.6704
+      ]
+    },
+    {
+      "actuator": "body/right_shoulder_roll_link_actuator",
+      "hold": -0.2,
+      "joint": "body/right_shoulder_roll_link",
+      "range": [
+        -2.2515,
+        1.5882
+      ]
+    },
+    {
+      "actuator": "body/right_shoulder_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "body/right_shoulder_yaw_link",
+      "range": [
+        -2.618,
+        2.618
+      ]
+    },
+    {
+      "actuator": "body/right_elbow_link_actuator",
+      "hold": 0.6,
+      "joint": "body/right_elbow_link",
+      "range": [
+        -1.0472,
+        2.0944
+      ]
+    },
+    {
+      "actuator": "body/right_wrist_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "body/right_wrist_roll_link",
+      "range": [
+        -1.97222,
+        1.97222
+      ]
+    },
+    {
+      "actuator": "body/right_wrist_pitch_link_actuator",
+      "hold": 0.0,
+      "joint": "body/right_wrist_pitch_link",
+      "range": [
+        -1.61443,
+        1.61443
+      ]
+    },
+    {
+      "actuator": "body/right_wrist_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "body/right_wrist_yaw_link",
+      "range": [
+        -1.61443,
+        1.61443
+      ]
+    },
+    {
+      "actuator": "left/hip_pitch_link_actuator",
+      "hold": -0.312,
+      "joint": "left/hip_pitch_link",
+      "range": [
+        -2.5307,
+        2.8798
+      ]
+    },
+    {
+      "actuator": "left/hip_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "left/hip_roll_link",
+      "range": [
+        -0.5236,
+        2.9671
+      ]
+    },
+    {
+      "actuator": "left/hip_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "left/hip_yaw_link",
+      "range": [
+        -2.7576,
+        2.7576
+      ]
+    },
+    {
+      "actuator": "left/knee_link_actuator",
+      "hold": 0.669,
+      "joint": "left/knee_link",
+      "range": [
+        -0.087267,
+        2.8798
+      ]
+    },
+    {
+      "actuator": "left/ankle_pitch_link_actuator",
+      "hold": -0.363,
+      "joint": "left/ankle_pitch_link",
+      "range": [
+        -0.87267,
+        0.5236
+      ]
+    },
+    {
+      "actuator": "left/ankle_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "left/ankle_roll_link",
+      "range": [
+        -0.2618,
+        0.2618
+      ]
+    },
+    {
+      "actuator": "right/hip_pitch_link_actuator",
+      "hold": -0.312,
+      "joint": "right/hip_pitch_link",
+      "range": [
+        -2.5307,
+        2.8798
+      ]
+    },
+    {
+      "actuator": "right/hip_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "right/hip_roll_link",
+      "range": [
+        -0.5236,
+        2.9671
+      ]
+    },
+    {
+      "actuator": "right/hip_yaw_link_actuator",
+      "hold": 0.0,
+      "joint": "right/hip_yaw_link",
+      "range": [
+        -2.7576,
+        2.7576
+      ]
+    },
+    {
+      "actuator": "right/knee_link_actuator",
+      "hold": 0.669,
+      "joint": "right/knee_link",
+      "range": [
+        -0.087267,
+        2.8798
+      ]
+    },
+    {
+      "actuator": "right/ankle_pitch_link_actuator",
+      "hold": -0.363,
+      "joint": "right/ankle_pitch_link",
+      "range": [
+        -0.87267,
+        0.5236
+      ]
+    },
+    {
+      "actuator": "right/ankle_roll_link_actuator",
+      "hold": 0.0,
+      "joint": "right/ankle_roll_link",
+      "range": [
+        -0.2618,
+        0.2618
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1007,
+ "count": 1010,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12524,6 +12524,33 @@
    "supplier": "Unitree Robotics",
    "description": "Unitree Go1's rear right leg, its hip, thigh and calf, on a flange at its hip.",
    "source_url": "https://www.unitree.com/go1"
+  },
+  {
+   "ref": "unitree_g1_body",
+   "name": "Unitree G1's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree G1's pelvis, waist, torso and arms without its legs, a hip on each side for a leg of its own part, walking on them by a walker trained for it.",
+   "source_url": "https://www.unitree.com/g1"
+  },
+  {
+   "ref": "unitree_g1_leg_left",
+   "name": "Unitree G1's left leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree G1's left leg, the links of its hip, knee and ankle, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/g1"
+  },
+  {
+   "ref": "unitree_g1_leg_right",
+   "name": "Unitree G1's right leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "Unitree Robotics",
+   "description": "Unitree G1's right leg, the links of its hip, knee and ankle, on a flange at its hip.",
+   "source_url": "https://www.unitree.com/g1"
   }
  ]
 }

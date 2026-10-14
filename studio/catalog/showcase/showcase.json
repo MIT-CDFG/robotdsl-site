@@ -4,7 +4,7 @@
   {
    "id": "legged",
    "title": "Walking robots",
-   "about": "Quadrupeds and humanoids from the parts library, walking in the page: by the walking controller trained for its model, or, for a robot put together from parts, by a gait that needs no training. Open one to see its parts, or walk it with the keys.",
+   "about": "Quadrupeds and humanoids from the parts library, walking in the page: by the walking controller trained for its model, or, for a robot put together from parts, by a gait that needs no training or by the controller trained for the robot its parts make up. Open one to see its parts, or walk it with the keys.",
    "notices": [
     {
      "text": "Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
@@ -2238,6 +2238,808 @@
    "mjcf": {
     "scene": "mjcf/unitree_go1_modular/scene.xml",
     "drive": "mjcf/unitree_go1_modular/drive.json"
+   }
+  },
+  {
+   "id": "unitree_g1_modular",
+   "group": "legged",
+   "robots": [
+    "Unitree G1, a body and two legs"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The Unitree G1 put together from its body and its two legs, each a part of its own, walking by a walker trained for it.\nRobot g1_modular {\n    intent \"Unitree G1 of a body and two legs that walks by a walker trained for it\"\n\n    Legged body(ref = \"unitree_g1_body\")\n    Leg left(ref = \"unitree_g1_leg_left\", glue = (0, 0.064452, -0.1027, 0, 0, -1))\n    Leg right(ref = \"unitree_g1_leg_right\", glue = (0, -0.064452, -0.1027, 0, 0, -1))\n}\n",
+    "world": "World g1_modular_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/g1_modular, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task g1_modular_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "g1_modular.core",
+    "world": "g1_modular_room.world",
+    "task": "g1_modular_walk.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "unitree_g1_body",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "waist_yaw_link",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "waist_roll_link",
+       "xyz": [
+        -0.0039635,
+        0.0,
+        0.044
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "torso_link",
+       "xyz": [
+        -0.0039635,
+        0.0,
+        0.044
+       ],
+       "rpy": [
+        0.0,
+        0.07300000000000001,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_pitch_link",
+       "xyz": [
+        0.018054142293777803,
+        0.10022,
+        0.2908315298690855
+       ],
+       "rpy": [
+        0.28889632930502074,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_roll_link",
+       "xyz": [
+        0.015134975164541742,
+        0.14048496151158363,
+        0.28848463857584705
+       ],
+       "rpy": [
+        0.2096458103436468,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_shoulder_yaw_link",
+       "xyz": [
+        -0.012488984087553416,
+        0.16654496779925904,
+        0.1923234689306888
+       ],
+       "rpy": [
+        0.2096458103436468,
+        0.26509044806475035,
+        0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_elbow_link",
+       "xyz": [
+        -0.018829962293994057,
+        0.18296949887219405,
+        0.11218435122017467
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_roll_link",
+       "xyz": [
+        0.0379312037958537,
+        0.20152475658305366,
+        0.031329934893220696
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_pitch_link",
+       "xyz": [
+        0.0624077894057626,
+        0.20738388493588086,
+        0.0028594699896421667
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_wrist_yaw_link",
+       "xyz": [
+        0.09203734040723127,
+        0.2144765139945664,
+        -0.03160477699890027
+       ],
+       "rpy": [
+        0.30809486175093087,
+        0.8468877850219964,
+        0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_pitch_link",
+       "xyz": [
+        0.018054142293777803,
+        -0.10021,
+        0.2908315298690855
+       ],
+       "rpy": [
+        -0.28889632930502074,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_roll_link",
+       "xyz": [
+        0.015134975164541742,
+        -0.14047496151158362,
+        0.28848463857584705
+       ],
+       "rpy": [
+        -0.2096458103436468,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_shoulder_yaw_link",
+       "xyz": [
+        -0.012488984087553416,
+        -0.16653496779925903,
+        0.1923234689306888
+       ],
+       "rpy": [
+        -0.2096458103436468,
+        0.26509044806475035,
+        -0.05658957156017583
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_elbow_link",
+       "xyz": [
+        -0.018829962293994057,
+        -0.18295949887219404,
+        0.11218435122017467
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_roll_link",
+       "xyz": [
+        0.0379312037958537,
+        -0.20151475658305365,
+        0.031329934893220696
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_pitch_link",
+       "xyz": [
+        0.0624077894057626,
+        -0.20737388493588085,
+        0.0028594699896421667
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_wrist_yaw_link",
+       "xyz": [
+        0.09203734040723127,
+        -0.2144665139945664,
+        -0.03160477699890027
+       ],
+       "rpy": [
+        -0.30809486175093087,
+        0.8468877850219964,
+        -0.23495570113426914
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "left",
+     "category": "leg",
+     "part": "unitree_g1_leg_left",
+     "xyz": [
+      0.0,
+      0.064452,
+      -0.1027
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip_pitch_link",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.312,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_roll_link",
+       "xyz": [
+        0.009351618417762338,
+        0.052,
+        -0.028994196970576168
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_yaw_link",
+       "xyz": [
+        0.0895214977146116,
+        0.052,
+        -0.1269922319229599
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "knee_link",
+       "xyz": [
+        0.10332011997296352,
+        0.0541489,
+        -0.32034614616513735
+       ],
+       "rpy": [
+        0.0,
+        0.35700000000000004,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_pitch_link",
+       "xyz": [
+        -0.0015228632114730745,
+        0.054054455,
+        -0.6014403456374636
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_roll_link",
+       "xyz": [
+        -0.0014175158435599377,
+        0.054054455,
+        -0.6189980295944117
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "right",
+     "category": "leg",
+     "part": "unitree_g1_leg_right",
+     "xyz": [
+      0.0,
+      -0.064452,
+      -0.1027
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip_pitch_link",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.312,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_roll_link",
+       "xyz": [
+        0.009351618417762338,
+        -0.052,
+        -0.028994196970576168
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_yaw_link",
+       "xyz": [
+        0.0895214977146116,
+        -0.052,
+        -0.1269922319229599
+       ],
+       "rpy": [
+        0.0,
+        -0.48689998429394254,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "knee_link",
+       "xyz": [
+        0.10332011997296352,
+        -0.0541489,
+        -0.32034614616513735
+       ],
+       "rpy": [
+        0.0,
+        0.35700000000000004,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_pitch_link",
+       "xyz": [
+        -0.0015228632114730745,
+        -0.054054455,
+        -0.6014403456374636
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_roll_link",
+       "xyz": [
+        -0.0014175158435599377,
+        -0.054054455,
+        -0.6189980295944117
+       ],
+       "rpy": [
+        0.0,
+        -0.00599999999999995,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.758997361796413,
+   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 2.84 m in 5 s told 0.5 m/s and 2.53 rad in 4 s told 1 rad/s, without falling",
+   "summary": "3 parts from the RobotDSL parts library, a body and two legs of six links each, drawn from MuJoCo Menagerie's model of the Unitree G1, walking by the walking controller MuJoCo Playground trained for the robot they make",
+   "credits": [
+    {
+     "text": "Made by Unitree Robotics: Unitree G1",
+     "url": "https://www.unitree.com/g1"
+    },
+    {
+     "text": "The model: MuJoCo Menagerie's unitree_g1, Copyright (c) 2016-2023 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\"), BSD-3-Clause",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_g1"
+    },
+    {
+     "text": "The walking controller and the model its parts are read from: MuJoCo Playground's joystick policy for the G1 and its feet-only model, Apache-2.0",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "Changed: the model's meshes reduced for the web; the robot split into a body and two legs, each leg hung from a flange of 10 g the body gives up; written by RobotDSL-Core's mjcf target to walk by Playground's policy, unchanged, as the top of its scene.xml says"
+    },
+    {
+     "text": "MuJoCo Menagerie's licence of the model, BSD-3-Clause",
+     "url": "catalog/showcase/mjcf/unitree_g1_modular/LICENSE-menagerie.txt"
+    },
+    {
+     "text": "MuJoCo Playground's licence of its model and walking controller, Apache-2.0",
+     "url": "catalog/showcase/mjcf/unitree_g1_modular/LICENSE-playground.txt"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/unitree_g1_modular/scene.xml",
+    "drive": "mjcf/unitree_g1_modular/drive.json",
+    "policy": "mjcf/unitree_g1_modular/policy.onnx"
    }
   },
   {
