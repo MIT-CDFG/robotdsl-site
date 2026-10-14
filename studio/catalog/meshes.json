@@ -4332,6 +4332,134 @@
   "unitree_go1_leg_rear_right/calf": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_go1/assets/links/FR_calf.glb",
    "bytes": 133072
+  },
+  "unitree_g1_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/model.glb",
+   "bytes": 400132
+  },
+  "unitree_g1_body/waist_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/waist_yaw_link.glb",
+   "bytes": 166728
+  },
+  "unitree_g1_body/waist_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/waist_roll_link.glb",
+   "bytes": 57004
+  },
+  "unitree_g1_body/torso_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/torso_link.glb",
+   "bytes": 691340
+  },
+  "unitree_g1_body/left_shoulder_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_shoulder_pitch_link.glb",
+   "bytes": 91664
+  },
+  "unitree_g1_body/left_shoulder_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_shoulder_roll_link.glb",
+   "bytes": 111948
+  },
+  "unitree_g1_body/left_shoulder_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_shoulder_yaw_link.glb",
+   "bytes": 97992
+  },
+  "unitree_g1_body/left_elbow_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_elbow_link.glb",
+   "bytes": 65632
+  },
+  "unitree_g1_body/left_wrist_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_wrist_roll_link.glb",
+   "bytes": 108016
+  },
+  "unitree_g1_body/left_wrist_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_wrist_pitch_link.glb",
+   "bytes": 69296
+  },
+  "unitree_g1_body/left_wrist_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_wrist_yaw_link.glb",
+   "bytes": 369424
+  },
+  "unitree_g1_body/right_shoulder_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_shoulder_pitch_link.glb",
+   "bytes": 91912
+  },
+  "unitree_g1_body/right_shoulder_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_shoulder_roll_link.glb",
+   "bytes": 110736
+  },
+  "unitree_g1_body/right_shoulder_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_shoulder_yaw_link.glb",
+   "bytes": 97008
+  },
+  "unitree_g1_body/right_elbow_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_elbow_link.glb",
+   "bytes": 65608
+  },
+  "unitree_g1_body/right_wrist_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_wrist_roll_link.glb",
+   "bytes": 108668
+  },
+  "unitree_g1_body/right_wrist_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_wrist_pitch_link.glb",
+   "bytes": 64888
+  },
+  "unitree_g1_body/right_wrist_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_wrist_yaw_link.glb",
+   "bytes": 365976
+  },
+  "unitree_g1_leg_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_g1_leg_left/hip_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_hip_pitch_link.glb",
+   "bytes": 100700
+  },
+  "unitree_g1_leg_left/hip_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_hip_roll_link.glb",
+   "bytes": 113176
+  },
+  "unitree_g1_leg_left/hip_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_hip_yaw_link.glb",
+   "bytes": 103468
+  },
+  "unitree_g1_leg_left/knee_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_knee_link.glb",
+   "bytes": 126512
+  },
+  "unitree_g1_leg_left/ankle_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_ankle_pitch_link.glb",
+   "bytes": 59272
+  },
+  "unitree_g1_leg_left/ankle_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/left_ankle_roll_link.glb",
+   "bytes": 119796
+  },
+  "unitree_g1_leg_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/6916aef1d1c96cbe9b64ed6c0a4da0ee7bcc8439/parts/unitree_go1_leg_front_left/assets/model.glb",
+   "bytes": 3612
+  },
+  "unitree_g1_leg_right/hip_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_hip_pitch_link.glb",
+   "bytes": 100872
+  },
+  "unitree_g1_leg_right/hip_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_hip_roll_link.glb",
+   "bytes": 114096
+  },
+  "unitree_g1_leg_right/hip_yaw_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_hip_yaw_link.glb",
+   "bytes": 104720
+  },
+  "unitree_g1_leg_right/knee_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_knee_link.glb",
+   "bytes": 128668
+  },
+  "unitree_g1_leg_right/ankle_pitch_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_ankle_pitch_link.glb",
+   "bytes": 59272
+  },
+  "unitree_g1_leg_right/ankle_roll_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_ankle_roll_link.glb",
+   "bytes": 117540
   }
  }
 }
