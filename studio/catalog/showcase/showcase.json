@@ -3665,7 +3665,7 @@
    ],
    "ground": -0.15138249765476774,
    "drove": "in MuJoCo it walked by its gait alone, with no training, 0.76 m in 5 s told 0.15 m/s and 1.20 rad in 4 s told 0.3 rad/s, without falling",
-   "summary": "2 parts of the RobotDSL Team's own design, a body and a leg of three ROBOTIS XM430-W350 servos placed at its six hips, drawn as CAD in code and weighed from their solids, walking by a gait that needs no training",
+   "summary": "7 parts (2 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and six of one leg of three ROBOTIS XM430-W350 servos, drawn as CAD in code and weighed from their solids, walking by a gait that needs no training",
    "credits": [
     {
      "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts are published under CC BY 4.0",
