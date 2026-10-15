@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1010,
+ "count": 1012,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12551,6 +12551,22 @@
    "supplier": "Unitree Robotics",
    "description": "Unitree G1's right leg, the links of its hip, knee and ankle, on a flange at its hip.",
    "source_url": "https://www.unitree.com/g1"
+  },
+  {
+   "ref": "robotdsl_hexapod_body",
+   "name": "RobotDSL Hexapod's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Hexapod's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its 6 legs, walking by a gait."
+  },
+  {
+   "ref": "robotdsl_hexapod_leg",
+   "name": "RobotDSL Hexapod's leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A leg of the RobotDSL Hexapod, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU."
   }
  ]
 }

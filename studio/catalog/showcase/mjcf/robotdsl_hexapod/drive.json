@@ -1,0 +1,314 @@
+{
+  "bodies": {
+    "body": "base_link",
+    "front_left": "front_left",
+    "front_right": "front_right",
+    "middle_left": "middle_left",
+    "middle_right": "middle_right",
+    "rear_left": "rear_left",
+    "rear_right": "rear_right"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "gait": {
+    "balance": {
+      "damping": 0.8,
+      "frequency": 3.0
+    },
+    "command": {
+      "ahead": [
+        -0.15,
+        0.15
+      ],
+      "aside": [
+        -0.1,
+        0.1
+      ],
+      "turn": [
+        -0.3,
+        0.3
+      ]
+    },
+    "control": 0.004,
+    "duty": 0.6,
+    "feet": [
+      {
+        "friction": 0.9,
+        "geom": "front_left/foot",
+        "joints": [
+          "front_left/coxa",
+          "front_left/femur",
+          "front_left/tibia"
+        ],
+        "offset": 0.5
+      },
+      {
+        "friction": 0.9,
+        "geom": "middle_left/foot",
+        "joints": [
+          "middle_left/coxa",
+          "middle_left/femur",
+          "middle_left/tibia"
+        ],
+        "offset": 0.0
+      },
+      {
+        "friction": 0.9,
+        "geom": "rear_left/foot",
+        "joints": [
+          "rear_left/coxa",
+          "rear_left/femur",
+          "rear_left/tibia"
+        ],
+        "offset": 0.5
+      },
+      {
+        "friction": 0.9,
+        "geom": "front_right/foot",
+        "joints": [
+          "front_right/coxa",
+          "front_right/femur",
+          "front_right/tibia"
+        ],
+        "offset": 0.0
+      },
+      {
+        "friction": 0.9,
+        "geom": "middle_right/foot",
+        "joints": [
+          "middle_right/coxa",
+          "middle_right/femur",
+          "middle_right/tibia"
+        ],
+        "offset": 0.5
+      },
+      {
+        "friction": 0.9,
+        "geom": "rear_right/foot",
+        "joints": [
+          "rear_right/coxa",
+          "rear_right/femur",
+          "rear_right/tibia"
+        ],
+        "offset": 0.0
+      }
+    ],
+    "lead": {
+      "distance": 0.03,
+      "yaw": 0.15
+    },
+    "period": 0.45,
+    "settle": {
+      "speed": 0.05,
+      "turn": 0.1
+    },
+    "slew": {
+      "ahead": 1.0,
+      "aside": 1.0,
+      "turn": 2.0
+    },
+    "standing": 0.15138249765476774,
+    "step_height": 0.03
+  },
+  "keyframe": "hold",
+  "kinematics": "gait",
+  "kingpins": [],
+  "links": {
+    "front_left": {
+      "coxa": "front_left/coxa",
+      "femur": "front_left/femur",
+      "tibia": "front_left/tibia"
+    },
+    "front_right": {
+      "coxa": "front_right/coxa",
+      "femur": "front_right/femur",
+      "tibia": "front_right/tibia"
+    },
+    "middle_left": {
+      "coxa": "middle_left/coxa",
+      "femur": "middle_left/femur",
+      "tibia": "middle_left/tibia"
+    },
+    "middle_right": {
+      "coxa": "middle_right/coxa",
+      "femur": "middle_right/femur",
+      "tibia": "middle_right/tibia"
+    },
+    "rear_left": {
+      "coxa": "rear_left/coxa",
+      "femur": "rear_left/femur",
+      "tibia": "rear_left/tibia"
+    },
+    "rear_right": {
+      "coxa": "rear_right/coxa",
+      "femur": "rear_right/femur",
+      "tibia": "rear_right/tibia"
+    }
+  },
+  "robot": "hexapod",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "front_left/coxa_actuator",
+      "hold": 0.0,
+      "joint": "front_left/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "front_left/femur_actuator",
+      "hold": -0.55,
+      "joint": "front_left/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "front_left/tibia_actuator",
+      "hold": 2.05,
+      "joint": "front_left/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "actuator": "middle_left/coxa_actuator",
+      "hold": 0.0,
+      "joint": "middle_left/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "middle_left/femur_actuator",
+      "hold": -0.55,
+      "joint": "middle_left/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "middle_left/tibia_actuator",
+      "hold": 2.05,
+      "joint": "middle_left/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "actuator": "rear_left/coxa_actuator",
+      "hold": 0.0,
+      "joint": "rear_left/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "rear_left/femur_actuator",
+      "hold": -0.55,
+      "joint": "rear_left/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "rear_left/tibia_actuator",
+      "hold": 2.05,
+      "joint": "rear_left/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "actuator": "front_right/coxa_actuator",
+      "hold": 0.0,
+      "joint": "front_right/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "front_right/femur_actuator",
+      "hold": -0.55,
+      "joint": "front_right/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "front_right/tibia_actuator",
+      "hold": 2.05,
+      "joint": "front_right/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "actuator": "middle_right/coxa_actuator",
+      "hold": 0.0,
+      "joint": "middle_right/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "middle_right/femur_actuator",
+      "hold": -0.55,
+      "joint": "middle_right/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "middle_right/tibia_actuator",
+      "hold": 2.05,
+      "joint": "middle_right/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "actuator": "rear_right/coxa_actuator",
+      "hold": 0.0,
+      "joint": "rear_right/coxa",
+      "range": [
+        -1.1,
+        1.1
+      ]
+    },
+    {
+      "actuator": "rear_right/femur_actuator",
+      "hold": -0.55,
+      "joint": "rear_right/femur",
+      "range": [
+        -1.5,
+        1.6
+      ]
+    },
+    {
+      "actuator": "rear_right/tibia_actuator",
+      "hold": 2.05,
+      "joint": "rear_right/tibia",
+      "range": [
+        -0.5,
+        2.8
+      ]
+    }
+  ]
+}
