@@ -4460,6 +4460,26 @@
   "unitree_g1_leg_right/ankle_roll_link": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/afe59251ac9c3e13502a178c1eb64c641dd493ff/parts/unitree_g1/assets/links/right_ankle_roll_link.glb",
    "bytes": 117540
+  },
+  "robotdsl_hexapod_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/badc04051148f4fea137ac8896544e5a23145e34/parts/robotdsl_hexapod_body/assets/model.glb",
+   "bytes": 27408
+  },
+  "robotdsl_hexapod_leg": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/badc04051148f4fea137ac8896544e5a23145e34/parts/robotdsl_hexapod_leg/assets/model.glb",
+   "bytes": 33064
+  },
+  "robotdsl_hexapod_leg/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/badc04051148f4fea137ac8896544e5a23145e34/parts/robotdsl_hexapod_leg/assets/links/coxa.glb",
+   "bytes": 37160
+  },
+  "robotdsl_hexapod_leg/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/badc04051148f4fea137ac8896544e5a23145e34/parts/robotdsl_hexapod_leg/assets/links/femur.glb",
+   "bytes": 22628
+  },
+  "robotdsl_hexapod_leg/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4285e9e4cc35c2be35467622090d54a0d1912648/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
+   "bytes": 48872
   }
  }
 }
