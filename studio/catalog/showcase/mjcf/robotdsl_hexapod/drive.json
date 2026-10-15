@@ -107,7 +107,7 @@
       "aside": 1.0,
       "turn": 2.0
     },
-    "standing": 0.15138249765476774,
+    "standing": 0.14988249765476774,
     "step_height": 0.03
   },
   "keyframe": "hold",
@@ -153,8 +153,8 @@
       "hold": 0.0,
       "joint": "front_left/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -162,8 +162,8 @@
       "hold": -0.55,
       "joint": "front_left/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -171,8 +171,8 @@
       "hold": 2.05,
       "joint": "front_left/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     },
     {
@@ -180,8 +180,8 @@
       "hold": 0.0,
       "joint": "middle_left/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -189,8 +189,8 @@
       "hold": -0.55,
       "joint": "middle_left/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -198,8 +198,8 @@
       "hold": 2.05,
       "joint": "middle_left/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     },
     {
@@ -207,8 +207,8 @@
       "hold": 0.0,
       "joint": "rear_left/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -216,8 +216,8 @@
       "hold": -0.55,
       "joint": "rear_left/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -225,8 +225,8 @@
       "hold": 2.05,
       "joint": "rear_left/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     },
     {
@@ -234,8 +234,8 @@
       "hold": 0.0,
       "joint": "front_right/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -243,8 +243,8 @@
       "hold": -0.55,
       "joint": "front_right/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -252,8 +252,8 @@
       "hold": 2.05,
       "joint": "front_right/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     },
     {
@@ -261,8 +261,8 @@
       "hold": 0.0,
       "joint": "middle_right/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -270,8 +270,8 @@
       "hold": -0.55,
       "joint": "middle_right/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -279,8 +279,8 @@
       "hold": 2.05,
       "joint": "middle_right/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     },
     {
@@ -288,8 +288,8 @@
       "hold": 0.0,
       "joint": "rear_right/coxa",
       "range": [
-        -1.1,
-        1.1
+        -1.07,
+        1.07
       ]
     },
     {
@@ -297,8 +297,8 @@
       "hold": -0.55,
       "joint": "rear_right/femur",
       "range": [
-        -1.5,
-        1.6
+        -1.57,
+        2.16
       ]
     },
     {
@@ -306,8 +306,8 @@
       "hold": 2.05,
       "joint": "rear_right/tibia",
       "range": [
-        -0.5,
-        2.8
+        0.02,
+        2.83
       ]
     }
   ]
