@@ -4500,6 +4500,42 @@
   "robotdsl_quadruped_leg/tibia": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
    "bytes": 118204
+  },
+  "robotdsl_dog_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_body/assets/model.glb",
+   "bytes": 141024
+  },
+  "robotdsl_dog_leg_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/model.glb",
+   "bytes": 92220
+  },
+  "robotdsl_dog_leg_left/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/coxa.glb",
+   "bytes": 164640
+  },
+  "robotdsl_dog_leg_left/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
+   "bytes": 144644
+  },
+  "robotdsl_dog_leg_left/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
+   "bytes": 118200
+  },
+  "robotdsl_dog_leg_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_right/assets/model.glb",
+   "bytes": 92212
+  },
+  "robotdsl_dog_leg_right/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_right/assets/links/coxa.glb",
+   "bytes": 168852
+  },
+  "robotdsl_dog_leg_right/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
+   "bytes": 144644
+  },
+  "robotdsl_dog_leg_right/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
+   "bytes": 118200
   }
  }
 }
