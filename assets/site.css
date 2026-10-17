@@ -96,7 +96,7 @@
 .ico-studio { --icon: url(icons/app-window.svg); }
 .ico-docs { --icon: url(icons/book-open.svg); }
 .ico-video { --icon: url(icons/video.svg); }
-.ico-paper { --icon: url(icons/file-text.svg); }
+.ico-cite { --icon: url(icons/file-text.svg); }
 .ico-community { --icon: url(icons/users.svg); }
 .ico-results { --icon: url(icons/chart-column.svg); }
 .ico-x { --icon: url(icons/x.svg); }
