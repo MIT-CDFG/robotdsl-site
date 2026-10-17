@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1012,
+ "count": 1017,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12567,6 +12567,46 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A leg of the RobotDSL Hexapod, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU."
+  },
+  {
+   "ref": "robotdsl_quadruped_body",
+   "name": "RobotDSL Quadruped's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Quadruped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait."
+  },
+  {
+   "ref": "robotdsl_quadruped_leg",
+   "name": "RobotDSL Quadruped's leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A leg of the RobotDSL Quadruped, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU."
+  },
+  {
+   "ref": "robotdsl_dog_body",
+   "name": "RobotDSL Dog's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Dog's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait."
+  },
+  {
+   "ref": "robotdsl_dog_leg_left",
+   "name": "RobotDSL Dog's left leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A left leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU."
+  },
+  {
+   "ref": "robotdsl_dog_leg_right",
+   "name": "RobotDSL Dog's right leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A right leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU."
   }
  ]
 }
