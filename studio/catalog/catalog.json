@@ -12468,7 +12468,7 @@
    "category": "chassis",
    "subtype": "Legged",
    "supplier": "Unitree Robotics",
-   "description": "Unitree G1, a humanoid of 29 joints: three in its waist, seven in each arm and six in each leg, as MuJoCo Playground's feet-only model has it, with the joystick policy Playground trained on that model as its walking controller.",
+   "description": "Unitree G1, a humanoid of 29 joints: three in its waist, seven in each arm and six in each leg, as MuJoCo Playground's feet-only model has it, with a policy trained by Playground's joystick task on that model, standing still when told nothing, as its walking controller.",
    "source_url": "https://www.unitree.com/g1"
   },
   {

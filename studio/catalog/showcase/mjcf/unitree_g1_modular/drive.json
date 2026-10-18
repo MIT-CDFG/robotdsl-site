@@ -117,8 +117,8 @@
         0.0,
         3.141592653589793
       ],
-      "still_at": null,
-      "still_below": null
+      "still_at": 3.141592653589793,
+      "still_below": 0.01
     }
   },
   "robot": "g1_modular",
