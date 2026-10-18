@@ -1135,7 +1135,7 @@
     }
    ],
    "ground": -0.758997361796413,
-   "drove": "in MuJoCo it walked by its walking controller alone, 2.18 m in 5 s told 0.5 m/s and 1.62 rad in 4 s told 1 rad/s, without falling",
+   "drove": "in MuJoCo it walked by its walking controller alone, 2.16 m in 5 s told 0.5 m/s and 3.82 rad in 4 s told 1 rad/s, without falling",
    "summary": "1 part from the RobotDSL parts library with its 29 links, drawn from MuJoCo Menagerie's model, and the walking controller the RobotDSL Team trained for it by MuJoCo Playground's joystick task",
    "credits": [
     {
@@ -3013,7 +3013,7 @@
     }
    ],
    "ground": -0.758997361796413,
-   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 2.18 m in 5 s told 0.5 m/s and 1.62 rad in 4 s told 1 rad/s, without falling",
+   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 2.16 m in 5 s told 0.5 m/s and 3.82 rad in 4 s told 1 rad/s, without falling",
    "summary": "3 parts from the RobotDSL parts library, a body and two legs of six links each, drawn from MuJoCo Menagerie's model of the Unitree G1, walking by the walking controller the RobotDSL Team trained for the robot they make by MuJoCo Playground's joystick task",
    "credits": [
     {
