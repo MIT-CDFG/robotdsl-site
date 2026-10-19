@@ -4971,7 +4971,7 @@
     }
    ],
    "ground": -0.38500116317022426,
-   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 1.41 m in 5 s told 0.3 m/s and 1.85 rad in 4 s told 0.5 rad/s, without falling",
+   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 1.35 m in 5 s told 0.3 m/s and 1.89 rad in 4 s told 0.5 rad/s, without falling",
    "summary": "3 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and two legs of six ROBOTIS XM430-W350 servos each, the right the mirror image of the left, drawn as CAD in code and weighed from their solids, walking by the walking controller the RobotDSL Team trained for the robot they make, by MuJoCo Playground's joystick task; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
    "credits": [
     {
