@@ -4,14 +4,14 @@
   {
    "id": "legged",
    "title": "Walking robots",
-   "about": "Quadrupeds, humanoids and a hexapod of our own design from the parts library, walking in the page: by the walking controller trained for its model, or, for a robot put together from parts, by a gait that needs no training or by the controller trained for the robot its parts make up. Open one to see its parts, or walk it with the keys.",
+   "about": "Quadrupeds, humanoids, and a hexapod and a biped of our own design from the parts library, walking in the page: by the walking controller trained for its model, or, for a robot put together from parts, by a gait that needs no training or by the controller trained for the robot its parts make up. Open one to see its parts, or walk it with the keys.",
    "notices": [
     {
      "text": "Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
      "shown": true
     },
     {
-     "text": "The Unitree and Booster models are MuJoCo Menagerie's and the Go1's and the T1's trained walking controllers MuJoCo Playground's, both by Google DeepMind; the G1's walking controller is the RobotDSL Team's, trained by Playground's joystick task, CC BY 4.0. The RobotDSL Hexapod, Quadruped and Dog are the RobotDSL Team's own designs, CC BY 4.0."
+     "text": "The Unitree and Booster models are MuJoCo Menagerie's and the Go1's and the T1's trained walking controllers MuJoCo Playground's, both by Google DeepMind; the G1's and the RobotDSL Biped's walking controllers are the RobotDSL Team's, trained by Playground's joystick task, CC BY 4.0. The RobotDSL Hexapod, Quadruped, Dog and Biped are the RobotDSL Team's own designs, CC BY 4.0."
     }
    ]
   },
@@ -4593,6 +4593,412 @@
    "mjcf": {
     "scene": "mjcf/robotdsl_dog/scene.xml",
     "drive": "mjcf/robotdsl_dog/drive.json"
+   }
+  },
+  {
+   "id": "robotdsl_biped",
+   "group": "legged",
+   "robots": [
+    "RobotDSL Biped, of our own design"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The RobotDSL Biped, of the library's own design: its body on its two legs, walking by a walker trained for it.\nRobot biped {\n    intent \"RobotDSL Biped of a body and two legs that walks by a walker trained for it\"\n\n    Legged body(ref = \"robotdsl_biped_body\")\n    Leg left(ref = \"robotdsl_biped_leg_left\", glue = (0, 0.07, 0, 0, 0, -1))\n    Leg right(ref = \"robotdsl_biped_leg_right\", glue = (0, -0.07, 0, 0, 0, -1))\n}\n",
+    "world": "World biped_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/biped, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.5, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n}\n",
+    "task": "Task biped_stand(timeout_s = 120) {\n    Sequence {\n        Wait(duration_s = 60)\n    }\n}\n"
+   },
+   "names": {
+    "core": "biped.core",
+    "world": "biped_room.world",
+    "task": "biped_stand.task"
+   },
+   "scene": [
+    {
+     "name": "body",
+     "category": "chassis",
+     "part": "robotdsl_biped_body",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "left",
+     "category": "leg",
+     "part": "robotdsl_biped_leg_left",
+     "xyz": [
+      0.0,
+      0.07,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip_yaw",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.036
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_roll",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.07924999999999999
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_pitch",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.11865557765499998
+       ],
+       "rpy": [
+        0.0,
+        1.254596326795,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "knee",
+       "xyz": [
+        0.031095720354053953,
+        0.0,
+        -0.21369796912145286
+       ],
+       "rpy": [
+        3.141592653589793,
+        1.254696326794793,
+        3.141592653589793
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_pitch",
+       "xyz": [
+        9.504394589736342e-06,
+        0.0,
+        -0.30874346968471755
+       ],
+       "rpy": [
+        -0.0,
+        1.570796326794793,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_roll",
+       "xyz": [
+        9.50439458565675e-06,
+        0.0,
+        -0.3481490473397175
+       ],
+       "rpy": [
+        -0.0,
+        1.570796326794793,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "right",
+     "category": "leg",
+     "part": "robotdsl_biped_leg_right",
+     "xyz": [
+      0.0,
+      -0.07,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "hip_yaw",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.036
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_roll",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.07924999999999999
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "hip_pitch",
+       "xyz": [
+        0.0,
+        0.0,
+        -0.11865557765499998
+       ],
+       "rpy": [
+        0.0,
+        1.254596326795,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "knee",
+       "xyz": [
+        0.031095720354053953,
+        0.0,
+        -0.21369796912145286
+       ],
+       "rpy": [
+        3.141592653589793,
+        1.254696326794793,
+        3.141592653589793
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_pitch",
+       "xyz": [
+        9.504394589736342e-06,
+        0.0,
+        -0.30874346968471755
+       ],
+       "rpy": [
+        -0.0,
+        1.570796326794793,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "ankle_roll",
+       "xyz": [
+        9.50439458565675e-06,
+        0.0,
+        -0.3481490473397175
+       ],
+       "rpy": [
+        -0.0,
+        1.570796326794793,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "ground": -0.38500116317022426,
+   "drove": "in MuJoCo it walked by the walking controller trained for it alone, 1.41 m in 5 s told 0.3 m/s and 1.85 rad in 4 s told 0.5 rad/s, without falling",
+   "summary": "3 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and two legs of six ROBOTIS XM430-W350 servos each, the right the mirror image of the left, drawn as CAD in code and weighed from their solids, walking by the walking controller the RobotDSL Team trained for the robot they make, by MuJoCo Playground's joystick task; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
+   "credits": [
+    {
+     "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts, the pieces to print among them, are published under CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+     "text": "Its servos: the ROBOTIS Dynamixel XM430-W350, drawn as ROBOTIS's drawings give them where its pieces are screwed to them, no model of ROBOTIS's",
+     "url": "https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/"
+    },
+    {
+     "text": "How its servos turn: as MuJoCo Menagerie's model of the ROBOTIS OP3 has the same servos turn (stiffness, damping, armature and friction)",
+     "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotis_op3"
+    },
+    {
+     "text": "The task its walking controller was trained by: MuJoCo Playground's joystick task of the G1, Apache-2.0, on RobotDSL-Core's own model of this robot",
+     "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "The walking controller: the RobotDSL Team's, trained to stand still when told nothing, CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/robotdsl_biped/scene.xml",
+    "drive": "mjcf/robotdsl_biped/drive.json",
+    "policy": "mjcf/robotdsl_biped/policy.onnx"
    }
   },
   {

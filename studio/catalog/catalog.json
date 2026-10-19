@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1017,
+ "count": 1020,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12558,7 +12558,8 @@
    "category": "chassis",
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
-   "description": "The RobotDSL Hexapod's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its 6 legs, walking by a gait."
+   "description": "The RobotDSL Hexapod's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its 6 legs, walking by a gait.",
+   "sold": false
   },
   {
    "ref": "robotdsl_hexapod_leg",
@@ -12566,7 +12567,8 @@
    "category": "leg",
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
-   "description": "A leg of the RobotDSL Hexapod, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU."
+   "description": "A leg of the RobotDSL Hexapod, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU.",
+   "sold": false
   },
   {
    "ref": "robotdsl_quadruped_body",
@@ -12574,7 +12576,8 @@
    "category": "chassis",
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
-   "description": "The RobotDSL Quadruped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait."
+   "description": "The RobotDSL Quadruped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait.",
+   "sold": false
   },
   {
    "ref": "robotdsl_quadruped_leg",
@@ -12582,7 +12585,8 @@
    "category": "leg",
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
-   "description": "A leg of the RobotDSL Quadruped, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU."
+   "description": "A leg of the RobotDSL Quadruped, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU.",
+   "sold": false
   },
   {
    "ref": "robotdsl_dog_body",
@@ -12590,7 +12594,8 @@
    "category": "chassis",
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
-   "description": "The RobotDSL Dog's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait."
+   "description": "The RobotDSL Dog's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait.",
+   "sold": false
   },
   {
    "ref": "robotdsl_dog_leg_left",
@@ -12598,7 +12603,8 @@
    "category": "leg",
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
-   "description": "A left leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU."
+   "description": "A left leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU.",
+   "sold": false
   },
   {
    "ref": "robotdsl_dog_leg_right",
@@ -12606,7 +12612,35 @@
    "category": "leg",
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
-   "description": "A right leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU."
+   "description": "A right leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU.",
+   "sold": false
+  },
+  {
+   "ref": "robotdsl_biped_body",
+   "name": "RobotDSL Biped's body",
+   "category": "chassis",
+   "subtype": "Legged",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Biped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its two legs, walking by a walker trained for the robot they make.",
+   "sold": false
+  },
+  {
+   "ref": "robotdsl_biped_leg_left",
+   "name": "RobotDSL Biped's left leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A left leg of the RobotDSL Biped, of six ROBOTIS Dynamixel XM430-W350 servos: its hip turns about the vertical, rolls and pitches, its knee pitches, and its ankle pitches and rolls its foot, a flat sole, which stands on a pad of TPU.",
+   "sold": false
+  },
+  {
+   "ref": "robotdsl_biped_leg_right",
+   "name": "RobotDSL Biped's right leg",
+   "category": "leg",
+   "subtype": "Leg",
+   "supplier": "RobotDSL Team",
+   "description": "A right leg of the RobotDSL Biped, of six ROBOTIS Dynamixel XM430-W350 servos: its hip turns about the vertical, rolls and pitches, its knee pitches, and its ankle pitches and rolls its foot, a flat sole, which stands on a pad of TPU.",
+   "sold": false
   }
  ]
 }

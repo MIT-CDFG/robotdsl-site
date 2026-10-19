@@ -6239,6 +6239,248 @@
      0.864873421
     ]
    }
+  },
+  "robotdsl_biped_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/assets/model.glb",
+   "bytes": 106428
+  },
+  "robotdsl_biped_leg_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
+   "bytes": 82296,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/hip_yaw": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/hip_yaw.glb",
+   "bytes": 134164,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.036
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/hip_roll": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/coxa.glb",
+   "bytes": 164640,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.07925
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/hip_pitch": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/hip_pitch.glb",
+   "bytes": 144652,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.118655578
+    ],
+    "quat": [
+     0.0,
+     0.586959452,
+     4e-09,
+     0.80961633
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/knee": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/knee.glb",
+   "bytes": 188664,
+   "standing": {
+    "xyz": [
+     0.03109572,
+     0.0,
+     -0.213697969
+    ],
+    "quat": [
+     0.0,
+     0.809586981,
+     0.0,
+     0.586999932
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/ankle_pitch": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/ankle_pitch.glb",
+   "bytes": 164628,
+   "standing": {
+    "xyz": [
+     9.504e-06,
+     0.0,
+     -0.30874347
+    ],
+    "quat": [
+     4e-09,
+     0.707106781,
+     0.0,
+     0.707106781
+    ]
+   }
+  },
+  "robotdsl_biped_leg_left/ankle_roll": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/ankle_roll.glb",
+   "bytes": 86864,
+   "standing": {
+    "xyz": [
+     9.504e-06,
+     0.0,
+     -0.348149047
+    ],
+    "quat": [
+     4e-09,
+     0.707106781,
+     0.0,
+     0.707106781
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
+   "bytes": 82296,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/hip_yaw": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/assets/links/hip_yaw.glb",
+   "bytes": 132048,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.036
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/hip_roll": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_right/assets/links/coxa.glb",
+   "bytes": 168852,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.07925
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/hip_pitch": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/hip_pitch.glb",
+   "bytes": 144652,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.118655578
+    ],
+    "quat": [
+     0.0,
+     0.586959452,
+     4e-09,
+     0.80961633
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/knee": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/assets/links/knee.glb",
+   "bytes": 188664,
+   "standing": {
+    "xyz": [
+     0.03109572,
+     0.0,
+     -0.213697969
+    ],
+    "quat": [
+     0.0,
+     0.809586981,
+     0.0,
+     0.586999932
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/ankle_pitch": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/assets/links/ankle_pitch.glb",
+   "bytes": 162516,
+   "standing": {
+    "xyz": [
+     9.504e-06,
+     0.0,
+     -0.30874347
+    ],
+    "quat": [
+     4e-09,
+     0.707106781,
+     0.0,
+     0.707106781
+    ]
+   }
+  },
+  "robotdsl_biped_leg_right/ankle_roll": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/assets/links/ankle_roll.glb",
+   "bytes": 84756,
+   "standing": {
+    "xyz": [
+     9.504e-06,
+     0.0,
+     -0.348149047
+    ],
+    "quat": [
+     4e-09,
+     0.707106781,
+     0.0,
+     0.707106781
+    ]
+   }
   }
  }
 }

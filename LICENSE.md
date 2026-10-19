@@ -26,8 +26,10 @@ Apache-2.0 for the T1). The Go1's and the T1's walking controllers are MuJoCo Pl
 the G1's is the RobotDSL Team's, trained by Playground's joystick task (CC BY 4.0); the modular Go1 walks by a gait
 and has none. These files are under those licences, not under the reservation above, and each `scene.xml` says at
 its top what was changed. The meshes the robots are drawn with come from the component library's dataset like the
-other parts', reduced from MuJoCo Menagerie's, under the same licences. The RobotDSL Hexapod, Quadruped and Dog
-(`robotdsl_hexapod/`, `robotdsl_quadruped/`, `robotdsl_dog/`) are the RobotDSL Team's own designs, CC BY 4.0.
+other parts', reduced from MuJoCo Menagerie's, under the same licences. The RobotDSL Hexapod, Quadruped, Dog and
+Biped (`robotdsl_hexapod/`, `robotdsl_quadruped/`, `robotdsl_dog/`, `robotdsl_biped/`) are the RobotDSL Team's own
+designs, CC BY 4.0, and so is the Biped's walking controller (`robotdsl_biped/policy.onnx`), which the RobotDSL Team
+trained by MuJoCo Playground's joystick task on RobotDSL-Core's model of the robot.
 Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.
 
 **Parts submitted** through the Studio's form (an issue of this repository) go into the component library once a maintainer has built and approved them: a product under its maker's rights, a part of the submitter's own under the licence they chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, or as stated in the submission).

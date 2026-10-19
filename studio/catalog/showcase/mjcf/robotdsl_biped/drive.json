@@ -1,0 +1,200 @@
+{
+  "bodies": {
+    "body": "base_link",
+    "left": "left",
+    "right": "right"
+  },
+  "chassis": "Legged",
+  "driven": [],
+  "keyframe": "hold",
+  "kinematics": "policy",
+  "kingpins": [],
+  "links": {
+    "left": {
+      "ankle_pitch": "left/ankle_pitch",
+      "ankle_roll": "left/ankle_roll",
+      "hip_pitch": "left/hip_pitch",
+      "hip_roll": "left/hip_roll",
+      "hip_yaw": "left/hip_yaw",
+      "knee": "left/knee"
+    },
+    "right": {
+      "ankle_pitch": "right/ankle_pitch",
+      "ankle_roll": "right/ankle_roll",
+      "hip_pitch": "right/hip_pitch",
+      "hip_roll": "right/hip_roll",
+      "hip_yaw": "right/hip_yaw",
+      "knee": "right/knee"
+    }
+  },
+  "policy": {
+    "action_scale": 0.3,
+    "command": {
+      "ahead": [
+        -0.2,
+        0.3
+      ],
+      "aside": [
+        -0.1,
+        0.1
+      ],
+      "turn": [
+        -0.5,
+        0.5
+      ]
+    },
+    "file": "policy.onnx",
+    "hidden": [],
+    "imu": {
+      "gyro": "imu_gyro",
+      "site": "imu",
+      "velocimeter": "imu_velocimeter"
+    },
+    "joints": [
+      "left/hip_yaw",
+      "left/hip_roll",
+      "left/hip_pitch",
+      "left/knee",
+      "left/ankle_pitch",
+      "left/ankle_roll",
+      "right/hip_yaw",
+      "right/hip_roll",
+      "right/hip_pitch",
+      "right/knee",
+      "right/ankle_pitch",
+      "right/ankle_roll"
+    ],
+    "observation": [
+      "linear_velocity",
+      "angular_velocity",
+      "gravity",
+      "command",
+      "joint_angles",
+      "joint_velocities",
+      "last_action",
+      "phase"
+    ],
+    "period": 0.02,
+    "phase": {
+      "frequency": 1.75,
+      "offsets": [
+        0.0,
+        3.141592653589793
+      ],
+      "still_at": 3.141592653589793,
+      "still_below": 0.01
+    }
+  },
+  "robot": "biped",
+  "schema": "robotdsl.mjcf_drive",
+  "servos": [
+    {
+      "actuator": "left/hip_yaw_actuator",
+      "hold": 0.0,
+      "joint": "left/hip_yaw",
+      "range": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    {
+      "actuator": "left/hip_roll_actuator",
+      "hold": 0.0,
+      "joint": "left/hip_roll",
+      "range": [
+        -0.22,
+        1.87
+      ]
+    },
+    {
+      "actuator": "left/hip_pitch_actuator",
+      "hold": -0.3162,
+      "joint": "left/hip_pitch",
+      "range": [
+        -2.16,
+        2.16
+      ]
+    },
+    {
+      "actuator": "left/knee_actuator",
+      "hold": 0.6323,
+      "joint": "left/knee",
+      "range": [
+        0.02,
+        2.58
+      ]
+    },
+    {
+      "actuator": "left/ankle_pitch_actuator",
+      "hold": -0.3161,
+      "joint": "left/ankle_pitch",
+      "range": [
+        -1.33,
+        1.33
+      ]
+    },
+    {
+      "actuator": "left/ankle_roll_actuator",
+      "hold": 0.0,
+      "joint": "left/ankle_roll",
+      "range": [
+        -0.43,
+        1.67
+      ]
+    },
+    {
+      "actuator": "right/hip_yaw_actuator",
+      "hold": 0.0,
+      "joint": "right/hip_yaw",
+      "range": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    {
+      "actuator": "right/hip_roll_actuator",
+      "hold": 0.0,
+      "joint": "right/hip_roll",
+      "range": [
+        -0.22,
+        1.87
+      ]
+    },
+    {
+      "actuator": "right/hip_pitch_actuator",
+      "hold": -0.3162,
+      "joint": "right/hip_pitch",
+      "range": [
+        -2.16,
+        2.16
+      ]
+    },
+    {
+      "actuator": "right/knee_actuator",
+      "hold": 0.6323,
+      "joint": "right/knee",
+      "range": [
+        0.02,
+        2.58
+      ]
+    },
+    {
+      "actuator": "right/ankle_pitch_actuator",
+      "hold": -0.3161,
+      "joint": "right/ankle_pitch",
+      "range": [
+        -1.33,
+        1.33
+      ]
+    },
+    {
+      "actuator": "right/ankle_roll_actuator",
+      "hold": 0.0,
+      "joint": "right/ankle_roll",
+      "range": [
+        -0.43,
+        1.67
+      ]
+    }
+  ]
+}
