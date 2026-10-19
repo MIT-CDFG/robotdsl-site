@@ -20,7 +20,7 @@
       <inertial pos="0 0 0.021579535956" mass="0.593174658" quat="1.0 -1.5618422540444882e-17 5.8213720512613236e-18 1.3016691569191446e-17" diaginertia="0.0005921683660059768 0.0014552394237535228 0.0017148373089928774" />
       <geom type="mesh" mesh="robotdsl_dog_body_hull" group="1" contype="0" conaffinity="0" />
       <body name="front_left" pos="0.085 0.055 0">
-        <inertial pos="0 0.00951210522 -0.0267121354" mass="0.102165475" fullinertia="3.8124514e-05 3.33299645e-05 2.61506656e-05 -7.09449893e-21 2.71007608e-20 6.22140231e-06" />
+        <inertial pos="0 0.00951565143 -0.0267149662" mass="0.102152308" fullinertia="3.81077148e-05 3.33188536e-05 2.61354596e-05 -7.13864261e-21 2.70638137e-20 6.21344543e-06" />
         <geom type="mesh" mesh="robotdsl_dog_leg_left_hull" group="1" contype="0" conaffinity="0" />
         <body name="front_left/coxa" pos="0 0.01425 -0.04125">
           <joint name="front_left/coxa" type="hinge" axis="1.0 0 0" range="-0.48 1.87" damping="1.084" armature="0.045" frictionloss="0.03" />
@@ -32,15 +32,15 @@
             <geom type="box" size="0.0570000001 0.0240000001 0.0120000001" pos="0.045 0 0" group="1" contype="0" conaffinity="0" />
             <body name="front_left/tibia" pos="0.09 0 0">
               <joint name="front_left/tibia" type="hinge" axis="0 1.0 0" range="-2.84 -0.02" damping="1.084" armature="0.045" frictionloss="0.03" />
-              <inertial pos="0.030799270771 5e-12 -7e-12" mass="0.128797584" quat="0.7071067789043195 0.7071067834687755 3.0632868506219954e-10 -7.045980700409472e-11" diaginertia="2.040265750860332e-05 0.00017898510407580884 0.00017973959175387094" />
-              <geom type="box" size="0.0656250001 0.0170000001 0.0199500001" pos="0.054375 0 0" group="1" contype="0" conaffinity="0" />
+              <inertial pos="0.031354089756 4e-12 -7e-12" mass="0.135223233" quat="0.7071067791760947 0.7071067831970004 3.0450160484807194e-10 -7.014892103700546e-11" diaginertia="2.2141179223630508e-05 0.00018065418560826631 0.00018151066577614988" />
+              <geom type="box" size="0.065625000125 0.0170000001 0.0199500001" pos="0.054375000025 0 0" group="1" contype="0" conaffinity="0" />
               <geom name="front_left/foot" type="sphere" size="0.013" pos="0.12 0 0" group="1" contype="0" conaffinity="0" />
             </body>
           </body>
         </body>
       </body>
       <body name="rear_left" pos="-0.085 0.055 0">
-        <inertial pos="0 0.00951210522 -0.0267121354" mass="0.102165475" fullinertia="3.8124514e-05 3.33299645e-05 2.61506656e-05 -7.09449893e-21 2.71007608e-20 6.22140231e-06" />
+        <inertial pos="0 0.00951565143 -0.0267149662" mass="0.102152308" fullinertia="3.81077148e-05 3.33188536e-05 2.61354596e-05 -7.13864261e-21 2.70638137e-20 6.21344543e-06" />
         <geom type="mesh" mesh="robotdsl_dog_leg_left_hull" group="1" contype="0" conaffinity="0" />
         <body name="rear_left/coxa" pos="0 0.01425 -0.04125">
           <joint name="rear_left/coxa" type="hinge" axis="1.0 0 0" range="-0.48 1.87" damping="1.084" armature="0.045" frictionloss="0.03" />
@@ -52,15 +52,15 @@
             <geom type="box" size="0.0570000001 0.0240000001 0.0120000001" pos="0.045 0 0" group="1" contype="0" conaffinity="0" />
             <body name="rear_left/tibia" pos="0.09 0 0">
               <joint name="rear_left/tibia" type="hinge" axis="0 1.0 0" range="-2.84 -0.02" damping="1.084" armature="0.045" frictionloss="0.03" />
-              <inertial pos="0.030799270771 5e-12 -7e-12" mass="0.128797584" quat="0.7071067789043195 0.7071067834687755 3.0632868506219954e-10 -7.045980700409472e-11" diaginertia="2.040265750860332e-05 0.00017898510407580884 0.00017973959175387094" />
-              <geom type="box" size="0.0656250001 0.0170000001 0.0199500001" pos="0.054375 0 0" group="1" contype="0" conaffinity="0" />
+              <inertial pos="0.031354089756 4e-12 -7e-12" mass="0.135223233" quat="0.7071067791760947 0.7071067831970004 3.0450160484807194e-10 -7.014892103700546e-11" diaginertia="2.2141179223630508e-05 0.00018065418560826631 0.00018151066577614988" />
+              <geom type="box" size="0.065625000125 0.0170000001 0.0199500001" pos="0.054375000025 0 0" group="1" contype="0" conaffinity="0" />
               <geom name="rear_left/foot" type="sphere" size="0.013" pos="0.12 0 0" group="1" contype="0" conaffinity="0" />
             </body>
           </body>
         </body>
       </body>
       <body name="front_right" pos="0.085 -0.055 0">
-        <inertial pos="0 -0.00951210522 -0.0267121354" mass="0.102165475" fullinertia="3.8124514e-05 3.33299645e-05 2.61506656e-05 -7.25881427e-21 -2.7153006e-20 -6.22140231e-06" />
+        <inertial pos="0 -0.00951565143 -0.0267149662" mass="0.102152308" fullinertia="3.81077148e-05 3.33188536e-05 2.61354596e-05 -7.20651298e-21 -2.71708455e-20 -6.21344543e-06" />
         <geom type="mesh" mesh="robotdsl_dog_leg_right_hull" group="1" contype="0" conaffinity="0" />
         <body name="front_right/coxa" pos="0 -0.01425 -0.04125">
           <joint name="front_right/coxa" type="hinge" axis="-1.0 0 0" range="-0.48 1.87" damping="1.084" armature="0.045" frictionloss="0.03" />
@@ -72,15 +72,15 @@
             <geom type="box" size="0.0570000001 0.0240000001 0.0120000001" pos="0.045 0 0" group="1" contype="0" conaffinity="0" />
             <body name="front_right/tibia" pos="0.09 0 0">
               <joint name="front_right/tibia" type="hinge" axis="0 1.0 0" range="-2.84 -0.02" damping="1.084" armature="0.045" frictionloss="0.03" />
-              <inertial pos="0.030799270771 5e-12 -7e-12" mass="0.128797584" quat="0.7071067789043195 0.7071067834687755 3.0632868506219954e-10 -7.045980700409472e-11" diaginertia="2.040265750860332e-05 0.00017898510407580884 0.00017973959175387094" />
-              <geom type="box" size="0.0656250001 0.0170000001 0.0199500001" pos="0.054375 0 0" group="1" contype="0" conaffinity="0" />
+              <inertial pos="0.031354089756 4e-12 -7e-12" mass="0.135223233" quat="0.7071067791760947 0.7071067831970004 3.0450160484807194e-10 -7.014892103700546e-11" diaginertia="2.2141179223630508e-05 0.00018065418560826631 0.00018151066577614988" />
+              <geom type="box" size="0.065625000125 0.0170000001 0.0199500001" pos="0.054375000025 0 0" group="1" contype="0" conaffinity="0" />
               <geom name="front_right/foot" type="sphere" size="0.013" pos="0.12 0 0" group="1" contype="0" conaffinity="0" />
             </body>
           </body>
         </body>
       </body>
       <body name="rear_right" pos="-0.085 -0.055 0">
-        <inertial pos="0 -0.00951210522 -0.0267121354" mass="0.102165475" fullinertia="3.8124514e-05 3.33299645e-05 2.61506656e-05 -7.25881427e-21 -2.7153006e-20 -6.22140231e-06" />
+        <inertial pos="0 -0.00951565143 -0.0267149662" mass="0.102152308" fullinertia="3.81077148e-05 3.33188536e-05 2.61354596e-05 -7.20651298e-21 -2.71708455e-20 -6.21344543e-06" />
         <geom type="mesh" mesh="robotdsl_dog_leg_right_hull" group="1" contype="0" conaffinity="0" />
         <body name="rear_right/coxa" pos="0 -0.01425 -0.04125">
           <joint name="rear_right/coxa" type="hinge" axis="-1.0 0 0" range="-0.48 1.87" damping="1.084" armature="0.045" frictionloss="0.03" />
@@ -92,8 +92,8 @@
             <geom type="box" size="0.0570000001 0.0240000001 0.0120000001" pos="0.045 0 0" group="1" contype="0" conaffinity="0" />
             <body name="rear_right/tibia" pos="0.09 0 0">
               <joint name="rear_right/tibia" type="hinge" axis="0 1.0 0" range="-2.84 -0.02" damping="1.084" armature="0.045" frictionloss="0.03" />
-              <inertial pos="0.030799270771 5e-12 -7e-12" mass="0.128797584" quat="0.7071067789043195 0.7071067834687755 3.0632868506219954e-10 -7.045980700409472e-11" diaginertia="2.040265750860332e-05 0.00017898510407580884 0.00017973959175387094" />
-              <geom type="box" size="0.0656250001 0.0170000001 0.0199500001" pos="0.054375 0 0" group="1" contype="0" conaffinity="0" />
+              <inertial pos="0.031354089756 4e-12 -7e-12" mass="0.135223233" quat="0.7071067791760947 0.7071067831970004 3.0450160484807194e-10 -7.014892103700546e-11" diaginertia="2.2141179223630508e-05 0.00018065418560826631 0.00018151066577614988" />
+              <geom type="box" size="0.065625000125 0.0170000001 0.0199500001" pos="0.054375000025 0 0" group="1" contype="0" conaffinity="0" />
               <geom name="rear_right/foot" type="sphere" size="0.013" pos="0.12 0 0" group="1" contype="0" conaffinity="0" />
             </body>
           </body>

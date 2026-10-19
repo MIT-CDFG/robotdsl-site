@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="How to print the RobotDSL Biped, a robot of the RobotDSL Team's own design, and what to buy for it: every piece prints without supports.">
+<title>Print the RobotDSL Biped · RobotDSL</title>
+<link rel="icon" type="image/svg+xml" href="../../assets/icons/bot.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  main { padding-block: 40px 64px; display: grid; gap: 36px; }
+  section { display: grid; gap: 12px; max-width: 80ch; }
+  section.wide { max-width: none; }
+  .lede { color: var(--muted); max-width: 80ch; }
+  ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+  .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td.words { white-space: normal; }
+  th { color: var(--ink); font-weight: 600; background: var(--tint); }
+  tr:last-child td { border-bottom: 0; }
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="site-brand" href="../../"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
+    <nav class="nav-actions" aria-label="Docs and Studio">
+      <a class="nav-link" href="../../docs/">Docs</a>
+      <a class="nav-link" href="../../studio/">Studio</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<section>
+  <h1>Print the RobotDSL Biped</h1>
+  <p class="lede">The RobotDSL Biped is the RobotDSL Team's own design, drawn as CAD in code: a body and two legs, 1.895 kg in all. Every piece below prints without supports, as its file lies, on a printer's bed of 250 &times; 210 mm, 220 mm high. You can drive it in the <a href="../../studio/">Studio</a>, under Walking robots.</p>
+</section>
+<section>
+  <h2>Print</h2>
+  <ul>
+    <li>Each file holds its piece laid on the bed as it is printed: print it as it lies, without supports.</li>
+    <li>PLA, printed solid (100% infill), as the robot's mass is worked out: 469 g in all.</li>
+    <li>TPU for the sole pad: 56 g in all.</li>
+    <li>A 0.4 mm nozzle: the rims round the screw heads sunk from the bed, 1.2 mm at most, are laid as three of its lines, and holes along the bed, 12 mm across at most, as arches.</li>
+  </ul>
+</section>
+<section class="wide">
+  <h2>Pieces</h2>
+  <div class="table"><table>
+    <thead><tr><th>Piece</th><th>Of</th><th>How many</th><th>Material</th><th>Files</th><th>Laid flat (mm)</th><th>Grams each</th></tr></thead>
+    <tbody>
+<tr><td class="words">plate</td><td class="words">body</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/source/print/plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/source/print/plate.step" download>STEP</a></td><td>190 &times; 120 &times; 44</td><td>116.5</td></tr>
+<tr><td class="words">deck</td><td class="words">body</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/source/print/deck.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/source/print/deck.step" download>STEP</a></td><td>152 &times; 96 &times; 4</td><td>68.3</td></tr>
+<tr><td class="words">hip bracket</td><td class="words">left leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/hip_bracket.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/hip_bracket.step" download>STEP</a></td><td>54.5 &times; 34 &times; 33.5</td><td>16.8</td></tr>
+<tr><td class="words">hip U</td><td class="words">left leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/hip_U.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/hip_U.step" download>STEP</a></td><td>55 &times; 24 &times; 37.2</td><td>12.5</td></tr>
+<tr><td class="words">femur plate</td><td class="words">left leg</td><td>2</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/femur_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/femur_plate.step" download>STEP</a></td><td>124 &times; 24 &times; 3</td><td>10</td></tr>
+<tr><td class="words">shin plate</td><td class="words">left leg</td><td>2</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/shin_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/shin_plate.step" download>STEP</a></td><td>104 &times; 32 &times; 3.2</td><td>13</td></tr>
+<tr><td class="words">ankle U</td><td class="words">left leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/ankle_U.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/ankle_U.step" download>STEP</a></td><td>55 &times; 24 &times; 37.2</td><td>12.5</td></tr>
+<tr><td class="words">sole pad</td><td class="words">left leg</td><td>1</td><td>TPU</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/sole_pad.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/sole_pad.step" download>STEP</a></td><td>130 &times; 60 &times; 3</td><td>28.1</td></tr>
+<tr><td class="words">sole</td><td class="words">left leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/sole.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_left/source/print/sole.step" download>STEP</a></td><td>130 &times; 60 &times; 45.8</td><td>54.2</td></tr>
+<tr><td class="words">hip bracket</td><td class="words">right leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/hip_bracket.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/hip_bracket.step" download>STEP</a></td><td>54.5 &times; 34 &times; 33.5</td><td>16.8</td></tr>
+<tr><td class="words">hip U</td><td class="words">right leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/hip_U.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/hip_U.step" download>STEP</a></td><td>55 &times; 24 &times; 37.2</td><td>12.5</td></tr>
+<tr><td class="words">femur plate</td><td class="words">right leg</td><td>2</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/femur_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/femur_plate.step" download>STEP</a></td><td>124 &times; 24 &times; 3</td><td>10</td></tr>
+<tr><td class="words">shin plate</td><td class="words">right leg</td><td>2</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/shin_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/shin_plate.step" download>STEP</a></td><td>104 &times; 32 &times; 3.2</td><td>13</td></tr>
+<tr><td class="words">ankle U</td><td class="words">right leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/ankle_U.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/ankle_U.step" download>STEP</a></td><td>55 &times; 24 &times; 37.2</td><td>12.5</td></tr>
+<tr><td class="words">sole pad</td><td class="words">right leg</td><td>1</td><td>TPU</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/sole_pad.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/sole_pad.step" download>STEP</a></td><td>130 &times; 60 &times; 3</td><td>28.1</td></tr>
+<tr><td class="words">sole</td><td class="words">right leg</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/sole.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_leg_right/source/print/sole.step" download>STEP</a></td><td>130 &times; 60 &times; 45.8</td><td>54.2</td></tr>
+    </tbody>
+  </table></div>
+</section>
+<section>
+  <h2>Buy</h2>
+  <ul>
+    <li>12 &times; <a href="https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">ROBOTIS Dynamixel XM430-W350</a></li>
+    <li>10 &times; ROBOTIS HN12-I101 idler sets</li>
+    <li>Socket head cap screws (ISO 4762):<ul><li>8 &times; M2.5 x 18</li><li>4 &times; M3 x 12</li><li>8 &times; M2 x 6</li><li>8 &times; M2.5 x 8</li><li>80 &times; M2 x 5</li><li>16 &times; M2.5 x 5</li><li>32 &times; M2.5 x 6</li></ul></li>
+  </ul>
+  <p>Between the body's plates is room for an allowance of 300 g for what a biped of twelve servos carries between its plates: a computer, the servos&#x27; interface and power hub, a three-cell battery and the wiring; the design names no product of them.</p>
+</section>
+<section>
+  <h2>Servos</h2>
+  <p>Each servo&#x27;s horn is fitted as it comes: set each joint&#x27;s zero in its servo, the leg straight down from its hip and its foot flat.</p>
+</section>
+<section>
+  <h2>Licence</h2>
+  <p>The files are published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, crediting the RobotDSL Team.</p>
+</section>
+</main>
+</body>
+</html>

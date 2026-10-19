@@ -3673,7 +3673,7 @@
    ],
    "ground": -0.14988249765476774,
    "drove": "in MuJoCo it walked by its gait alone, with no training, 0.76 m in 5 s told 0.15 m/s and 1.20 rad in 4 s told 0.3 rad/s, without falling",
-   "summary": "7 parts (2 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and six of one leg of three ROBOTIS XM430-W350 servos, drawn as CAD in code and weighed from their solids, walking by a gait that needs no training; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
+   "summary": "7 parts (2 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and six of one leg of three ROBOTIS XM430-W350 servos, drawn as CAD in code and weighed from their solids, walking by a gait that needs no training; its pieces print without supports on a bed of 250 x 210 mm, as its parts' files say",
    "credits": [
     {
      "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts, the pieces to print among them, are published under CC BY 4.0",
@@ -3686,6 +3686,10 @@
     {
      "text": "How its servos turn: as MuJoCo Menagerie's model of the ROBOTIS OP3 has the same servos turn (stiffness, damping, armature and friction)",
      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotis_op3"
+    },
+    {
+     "text": "How to print it and what to buy: every piece prints without supports",
+     "url": "../print/robotdsl_hexapod/"
     }
    ],
    "mjcf": {
@@ -4124,7 +4128,7 @@
    ],
    "ground": -0.11000438538020456,
    "drove": "in MuJoCo it walked by its gait alone, with no training, 0.49 m in 5 s told 0.1 m/s and 1.01 rad in 4 s told 0.25 rad/s, without falling",
-   "summary": "5 parts (2 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and four of the hexapod's leg of three ROBOTIS XM430-W350 servos, drawn as CAD in code and weighed from their solids, trotting by a gait that needs no training; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
+   "summary": "5 parts (2 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and four of the hexapod's leg of three ROBOTIS XM430-W350 servos, drawn as CAD in code and weighed from their solids, trotting by a gait that needs no training; its pieces print without supports on a bed of 250 x 210 mm, as its parts' files say",
    "credits": [
     {
      "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts, the pieces to print among them, are published under CC BY 4.0",
@@ -4137,6 +4141,10 @@
     {
      "text": "How its servos turn: as MuJoCo Menagerie's model of the ROBOTIS OP3 has the same servos turn (stiffness, damping, armature and friction)",
      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotis_op3"
+    },
+    {
+     "text": "How to print it and what to buy: every piece prints without supports",
+     "url": "../print/robotdsl_quadruped/"
     }
    ],
    "mjcf": {
@@ -4575,7 +4583,7 @@
    ],
    "ground": -0.24000288177569085,
    "drove": "in MuJoCo it walked by its gait alone, with no training, 0.49 m in 5 s told 0.1 m/s and 0.99 rad in 4 s told 0.25 rad/s, without falling",
-   "summary": "5 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and four legs under it of three ROBOTIS XM430-W350 servos each, the legs on its right the mirror images of those on its left, drawn as CAD in code and weighed from their solids, trotting by a gait that needs no training; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
+   "summary": "5 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and four legs under it of three ROBOTIS XM430-W350 servos each, the legs on its right the mirror images of those on its left, drawn as CAD in code and weighed from their solids, trotting by a gait that needs no training; its pieces print without supports on a bed of 250 x 210 mm, as its parts' files say",
    "credits": [
     {
      "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts, the pieces to print among them, are published under CC BY 4.0",
@@ -4588,6 +4596,10 @@
     {
      "text": "How its servos turn: as MuJoCo Menagerie's model of the ROBOTIS OP3 has the same servos turn (stiffness, damping, armature and friction)",
      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotis_op3"
+    },
+    {
+     "text": "How to print it and what to buy: every piece prints without supports",
+     "url": "../print/robotdsl_dog/"
     }
    ],
    "mjcf": {
@@ -4972,7 +4984,7 @@
    ],
    "ground": -0.38500116317022426,
    "drove": "in MuJoCo it walked by the walking controller trained for it alone, 1.35 m in 5 s told 0.3 m/s and 1.89 rad in 4 s told 0.5 rad/s, without falling",
-   "summary": "3 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and two legs of six ROBOTIS XM430-W350 servos each, the right the mirror image of the left, drawn as CAD in code and weighed from their solids, walking by the walking controller the RobotDSL Team trained for the robot they make, by MuJoCo Playground's joystick task; its pieces print on a bed of 250 x 210 mm, as its parts' files say",
+   "summary": "3 parts (3 kinds) of the RobotDSL Team's own design from the RobotDSL parts library, a body and two legs of six ROBOTIS XM430-W350 servos each, the right the mirror image of the left, drawn as CAD in code and weighed from their solids, walking by the walking controller the RobotDSL Team trained for the robot they make, by MuJoCo Playground's joystick task; its pieces print without supports on a bed of 250 x 210 mm, as its parts' files say",
    "credits": [
     {
      "text": "Designed by the RobotDSL Team, drawn as CAD in code; the files of its parts, the pieces to print among them, are published under CC BY 4.0",
@@ -4993,6 +5005,10 @@
     {
      "text": "The walking controller: the RobotDSL Team's, trained to stand still when told nothing, CC BY 4.0",
      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+     "text": "How to print it and what to buy: every piece prints without supports",
+     "url": "../print/robotdsl_biped/"
     }
    ],
    "mjcf": {
