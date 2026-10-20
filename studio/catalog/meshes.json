@@ -5956,6 +5956,290 @@
     ]
    }
   },
+  "robotdsl_hexapod_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_body/assets/model.glb",
+   "bytes": 196364
+  },
+  "robotdsl_hexapod_leg": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
+   "bytes": 82296,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_hexapod_leg/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/coxa.glb",
+   "bytes": 150972,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.036
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_hexapod_leg/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/femur.glb",
+   "bytes": 144644,
+   "standing": {
+    "xyz": [
+     0.045,
+     0.0,
+     -0.05525
+    ],
+    "quat": [
+     0.0,
+     -0.271546937,
+     0.0,
+     0.962425198
+    ]
+   }
+  },
+  "robotdsl_hexapod_leg/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
+   "bytes": 154416,
+   "standing": {
+    "xyz": [
+     0.121727207,
+     0.0,
+     -0.008208149
+    ],
+    "quat": [
+     0.0,
+     0.68163876,
+     4e-09,
+     0.731688869
+    ]
+   }
+  },
+  "robotdsl_quadruped_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/assets/model.glb",
+   "bytes": 160628
+  },
+  "robotdsl_quadruped_leg": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
+   "bytes": 82296,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_quadruped_leg/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/coxa.glb",
+   "bytes": 150972,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     -0.036
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_quadruped_leg/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/femur.glb",
+   "bytes": 144644,
+   "standing": {
+    "xyz": [
+     0.045,
+     0.0,
+     -0.05525
+    ],
+    "quat": [
+     0.0,
+     -0.460137446,
+     0.0,
+     0.887847696
+    ]
+   }
+  },
+  "robotdsl_quadruped_leg/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
+   "bytes": 154416,
+   "standing": {
+    "xyz": [
+     0.096889236,
+     0.0,
+     0.018285755
+    ],
+    "quat": [
+     6e-09,
+     0.525837985,
+     4e-09,
+     0.850584748
+    ]
+   }
+  },
+  "robotdsl_dog_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_body/assets/model.glb",
+   "bytes": 141024
+  },
+  "robotdsl_dog_leg_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/model.glb",
+   "bytes": 92412,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_dog_leg_left/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/coxa.glb",
+   "bytes": 164640,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.01425,
+     -0.04125
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_dog_leg_left/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
+   "bytes": 144644,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.01425,
+     -0.080655578
+    ],
+    "quat": [
+     0.0,
+     0.970452272,
+     5e-09,
+     0.241293159
+    ]
+   }
+  },
+  "robotdsl_dog_leg_left/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
+   "bytes": 154412,
+   "standing": {
+    "xyz": [
+     -0.07951997,
+     0.01425,
+     -0.122805007
+    ],
+    "quat": [
+     0.0,
+     0.501990005,
+     0.0,
+     0.864873421
+    ]
+   }
+  },
+  "robotdsl_dog_leg_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_right/assets/model.glb",
+   "bytes": 92404,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_dog_leg_right/coxa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_right/assets/links/coxa.glb",
+   "bytes": 168852,
+   "standing": {
+    "xyz": [
+     0.0,
+     -0.01425,
+     -0.04125
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "robotdsl_dog_leg_right/femur": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
+   "bytes": 144644,
+   "standing": {
+    "xyz": [
+     0.0,
+     -0.01425,
+     -0.080655578
+    ],
+    "quat": [
+     0.0,
+     0.970452272,
+     5e-09,
+     0.241293159
+    ]
+   }
+  },
+  "robotdsl_dog_leg_right/tibia": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
+   "bytes": 154412,
+   "standing": {
+    "xyz": [
+     -0.07951997,
+     -0.01425,
+     -0.122805007
+    ],
+    "quat": [
+     0.0,
+     0.501990005,
+     0.0,
+     0.864873421
+    ]
+   }
+  },
   "robotdsl_biped_body": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/a28361bfed12119312c3d559d481a5f01cf7cb83/parts/robotdsl_biped_body/assets/model.glb",
    "bytes": 106428
@@ -6198,289 +6482,9 @@
     ]
    }
   },
-  "robotdsl_dog_body": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_body/assets/model.glb",
-   "bytes": 141024
-  },
-  "robotdsl_dog_leg_left": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/model.glb",
-   "bytes": 92412,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     0.0
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_dog_leg_left/coxa": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/coxa.glb",
-   "bytes": 164640,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.01425,
-     -0.04125
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_dog_leg_left/femur": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
-   "bytes": 144644,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.01425,
-     -0.080655578
-    ],
-    "quat": [
-     0.0,
-     0.970452272,
-     5e-09,
-     0.241293159
-    ]
-   }
-  },
-  "robotdsl_dog_leg_left/tibia": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
-   "bytes": 154412,
-   "standing": {
-    "xyz": [
-     -0.07951997,
-     0.01425,
-     -0.122805007
-    ],
-    "quat": [
-     0.0,
-     0.501990005,
-     0.0,
-     0.864873421
-    ]
-   }
-  },
-  "robotdsl_dog_leg_right": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_right/assets/model.glb",
-   "bytes": 92404,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     0.0
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_dog_leg_right/coxa": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_right/assets/links/coxa.glb",
-   "bytes": 168852,
-   "standing": {
-    "xyz": [
-     0.0,
-     -0.01425,
-     -0.04125
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_dog_leg_right/femur": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/1d11260cc0cab6782b91a3380896f7e7639cd430/parts/robotdsl_dog_leg_left/assets/links/femur.glb",
-   "bytes": 144644,
-   "standing": {
-    "xyz": [
-     0.0,
-     -0.01425,
-     -0.080655578
-    ],
-    "quat": [
-     0.0,
-     0.970452272,
-     5e-09,
-     0.241293159
-    ]
-   }
-  },
-  "robotdsl_dog_leg_right/tibia": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_dog_leg_left/assets/links/tibia.glb",
-   "bytes": 154412,
-   "standing": {
-    "xyz": [
-     -0.07951997,
-     -0.01425,
-     -0.122805007
-    ],
-    "quat": [
-     0.0,
-     0.501990005,
-     0.0,
-     0.864873421
-    ]
-   }
-  },
-  "robotdsl_quadruped_body": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/assets/model.glb",
-   "bytes": 160628
-  },
-  "robotdsl_quadruped_leg": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
-   "bytes": 82296,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     0.0
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_quadruped_leg/coxa": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/coxa.glb",
-   "bytes": 150972,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     -0.036
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_quadruped_leg/femur": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/femur.glb",
-   "bytes": 144644,
-   "standing": {
-    "xyz": [
-     0.045,
-     0.0,
-     -0.05525
-    ],
-    "quat": [
-     0.0,
-     -0.460137446,
-     0.0,
-     0.887847696
-    ]
-   }
-  },
-  "robotdsl_quadruped_leg/tibia": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
-   "bytes": 154416,
-   "standing": {
-    "xyz": [
-     0.096889236,
-     0.0,
-     0.018285755
-    ],
-    "quat": [
-     6e-09,
-     0.525837985,
-     4e-09,
-     0.850584748
-    ]
-   }
-  },
-  "robotdsl_hexapod_body": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_body/assets/model.glb",
-   "bytes": 196364
-  },
-  "robotdsl_hexapod_leg": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/model.glb",
-   "bytes": 82296,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     0.0
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_hexapod_leg/coxa": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/coxa.glb",
-   "bytes": 150972,
-   "standing": {
-    "xyz": [
-     0.0,
-     0.0,
-     -0.036
-    ],
-    "quat": [
-     0.0,
-     0.0,
-     0.0,
-     1.0
-    ]
-   }
-  },
-  "robotdsl_hexapod_leg/femur": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_hexapod_leg/assets/links/femur.glb",
-   "bytes": 144644,
-   "standing": {
-    "xyz": [
-     0.045,
-     0.0,
-     -0.05525
-    ],
-    "quat": [
-     0.0,
-     -0.271546937,
-     0.0,
-     0.962425198
-    ]
-   }
-  },
-  "robotdsl_hexapod_leg/tibia": {
-   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_hexapod_leg/assets/links/tibia.glb",
-   "bytes": 154416,
-   "standing": {
-    "xyz": [
-     0.121727207,
-     0.0,
-     -0.008208149
-    ],
-    "quat": [
-     0.0,
-     0.68163876,
-     4e-09,
-     0.731688869
-    ]
-   }
+  "robotdsl_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/assets/model.glb",
+   "bytes": 583012
   }
  }
 }

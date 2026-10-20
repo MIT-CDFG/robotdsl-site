@@ -32,6 +32,11 @@ designs, CC BY 4.0, and so is the Biped's walking controller (`robotdsl_biped/po
 trained by MuJoCo Playground's joystick task on RobotDSL-Core's model of the robot.
 Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.
 
+**Print pages** (`print/`): how to print the robots of the RobotDSL Team's own design, the RobotDSL Hexapod,
+Quadruped, Dog and Biped and the RobotDSL Arm, and what to buy for them. The pages are under the site content
+licence above; the STL and STEP files of the pieces they link, on the component library's dataset on Hugging Face,
+are the RobotDSL Team's own designs, CC BY 4.0, as are those parts' models in the Studio.
+
 **Parts submitted** through the Studio's form (an issue of this repository) go into the component library once a maintainer has built and approved them: a product under its maker's rights, a part of the submitter's own under the licence they chose (CC BY 4.0, CC BY-SA 4.0, CC0 1.0, MIT, or as stated in the submission).
 
 **Third-party interface assets** (`assets/vendor/`, `assets/icons/`) retain their

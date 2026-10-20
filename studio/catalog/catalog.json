@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1020,
+ "count": 1021,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12559,7 +12559,8 @@
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
    "description": "The RobotDSL Hexapod's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its 6 legs, walking by a gait.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_hexapod"
   },
   {
    "ref": "robotdsl_hexapod_leg",
@@ -12568,7 +12569,8 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A leg of the RobotDSL Hexapod, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_hexapod"
   },
   {
    "ref": "robotdsl_quadruped_body",
@@ -12577,7 +12579,8 @@
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
    "description": "The RobotDSL Quadruped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_quadruped"
   },
   {
    "ref": "robotdsl_quadruped_leg",
@@ -12586,7 +12589,8 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A leg of the RobotDSL Quadruped, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa turns about its hip, its femur and its tibia pitch, and it stands on a ball of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_quadruped"
   },
   {
    "ref": "robotdsl_dog_body",
@@ -12595,7 +12599,8 @@
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
    "description": "The RobotDSL Dog's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its four legs, walking by a gait.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_dog"
   },
   {
    "ref": "robotdsl_dog_leg_left",
@@ -12604,7 +12609,8 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A left leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_dog"
   },
   {
    "ref": "robotdsl_dog_leg_right",
@@ -12613,7 +12619,8 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A right leg of the RobotDSL Dog, of three ROBOTIS Dynamixel XM430-W350 servos: its coxa rolls it about the body's length, its femur and its tibia pitch, and it stands on a ball of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_dog"
   },
   {
    "ref": "robotdsl_biped_body",
@@ -12622,7 +12629,8 @@
    "subtype": "Legged",
    "supplier": "RobotDSL Team",
    "description": "The RobotDSL Biped's body: two printed plates on standoffs and the electronics between them, a hip under it for each of its two legs, walking by a walker trained for the robot they make.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_biped"
   },
   {
    "ref": "robotdsl_biped_leg_left",
@@ -12631,7 +12639,8 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A left leg of the RobotDSL Biped, of six ROBOTIS Dynamixel XM430-W350 servos: its hip turns about the vertical, rolls and pitches, its knee pitches, and its ankle pitches and rolls its foot, a flat sole, which stands on a pad of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_biped"
   },
   {
    "ref": "robotdsl_biped_leg_right",
@@ -12640,7 +12649,18 @@
    "subtype": "Leg",
    "supplier": "RobotDSL Team",
    "description": "A right leg of the RobotDSL Biped, of six ROBOTIS Dynamixel XM430-W350 servos: its hip turns about the vertical, rolls and pitches, its knee pitches, and its ankle pitches and rolls its foot, a flat sole, which stands on a pad of TPU.",
-   "sold": false
+   "sold": false,
+   "print": "robotdsl_biped"
+  },
+  {
+   "ref": "robotdsl_arm",
+   "name": "RobotDSL Arm",
+   "category": "attachment",
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Arm, of the RobotDSL Team's own design: a desk arm of five joints and a gripper on six Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 365 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
+   "sold": false,
+   "print": "robotdsl_arm"
   }
  ]
 }
