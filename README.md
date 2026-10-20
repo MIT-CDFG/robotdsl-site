@@ -2,9 +2,13 @@
 
 Community site of the RobotDSL project and the static preview of MobileCopilot Studio.
 
-- **MobileCopilot Studio:** https://mit-cdfg.github.io/robotdsl-site/studio/
-- **Project page:** https://mit-cdfg.github.io/robotdsl-site/
-- **Documentation:** https://mit-cdfg.github.io/robotdsl-site/docs/
+- **MobileCopilot Studio:** https://robotdsl.csail.mit.edu/studio/
+- **Project page:** https://robotdsl.csail.mit.edu/
+- **Documentation:** https://robotdsl.csail.mit.edu/docs/
+
+The site is served at https://robotdsl.csail.mit.edu/ from this repository's main, a minute at most after a push, and
+by GitHub Pages at https://mit-cdfg.github.io/robotdsl-site/. On both, the documentation is under `/robotdsl-site/docs/`,
+the path it is built for.
 
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
 - `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/robotdsl-site/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
