@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1021,
+ "count": 1024,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12661,6 +12661,36 @@
    "description": "The RobotDSL Arm, of the RobotDSL Team's own design: a desk arm of five joints and a gripper on six Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 365 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
    "sold": false,
    "print": "robotdsl_arm"
+  },
+  {
+   "ref": "robotdsl_arm_compact",
+   "name": "RobotDSL Compact Arm",
+   "category": "attachment",
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Compact Arm, of the RobotDSL Team's own design: a desk arm of four joints and a gripper on five Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 251 mm, holding 0.05 kg there. Held in one pose: straight up, at its joints' zero.",
+   "sold": false,
+   "print": "robotdsl_arm_compact"
+  },
+  {
+   "ref": "robotdsl_arm_long",
+   "name": "RobotDSL Long Arm",
+   "category": "attachment",
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Long Arm, of the RobotDSL Team's own design: a desk arm of five joints and a gripper on six Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 455 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
+   "sold": false,
+   "print": "robotdsl_arm_long"
+  },
+  {
+   "ref": "robotdsl_arm_six",
+   "name": "RobotDSL Six-Axis Arm",
+   "category": "attachment",
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Six-Axis Arm, of the RobotDSL Team's own design: a desk arm of six joints and a gripper on seven Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 365 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
+   "sold": false,
+   "print": "robotdsl_arm_six"
   }
  ]
 }

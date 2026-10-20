@@ -6485,6 +6485,18 @@
   "robotdsl_arm": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/assets/model.glb",
    "bytes": 583012
+  },
+  "robotdsl_arm_compact": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm_compact/assets/model.glb",
+   "bytes": 520512
+  },
+  "robotdsl_arm_long": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm_long/assets/model.glb",
+   "bytes": 583000
+  },
+  "robotdsl_arm_six": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm_six/assets/model.glb",
+   "bytes": 669204
   }
  }
 }
