@@ -6497,6 +6497,10 @@
   "robotdsl_arm_six": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm_six/assets/model.glb",
    "bytes": 669204
+  },
+  "robotdsl_arm_pick": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/e332e29dbf4709e48cb3982d1d58f2d6a0f1b3e2/parts/robotdsl_arm_pick/assets/model.glb",
+   "bytes": 520476
   }
  }
 }

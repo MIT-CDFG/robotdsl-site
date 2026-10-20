@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1024,
+ "count": 1025,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -12691,6 +12691,16 @@
    "description": "The RobotDSL Six-Axis Arm, of the RobotDSL Team's own design: a desk arm of six joints and a gripper on seven Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 365 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
    "sold": false,
    "print": "robotdsl_arm_six"
+  },
+  {
+   "ref": "robotdsl_arm_pick",
+   "name": "RobotDSL Pick Arm",
+   "category": "attachment",
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Pick Arm, of the RobotDSL Team's own design: a desk arm of four joints and a gripper on five Feetech STS3215 (12 V, ST-3215-C018) servos, on a base plate, every piece printed without supports. Stretched out level it reaches 325 mm, holding 0.1 kg there. Held in one pose: straight up, at its joints' zero.",
+   "sold": false,
+   "print": "robotdsl_arm_pick"
   }
  ]
 }
