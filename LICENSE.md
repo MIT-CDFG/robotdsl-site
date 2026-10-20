@@ -33,7 +33,7 @@ trained by MuJoCo Playground's joystick task on RobotDSL-Core's model of the rob
 Unitree and Booster Robotics are trademarks of their owners, who do not sponsor, authorize or endorse this site.
 
 **Print pages** (`print/`): how to print the robots of the RobotDSL Team's own design, the RobotDSL Hexapod,
-Quadruped, Dog and Biped and the RobotDSL Arm, Compact Arm, Long Arm, Six-Axis Arm and Pick Arm, and what to buy for them. The pages are under the site content
+Quadruped, Dog and Biped and the RobotDSL Arm, Compact Arm, Long Arm, Six-Axis Arm, Pick Arm and Drawing Arm, and what to buy for them. The pages are under the site content
 licence above; the STL and STEP files of the pieces they link, on the component library's dataset on Hugging Face,
 are the RobotDSL Team's own designs, CC BY 4.0, as are those parts' models in the Studio.
 
