@@ -6,7 +6,7 @@ body:
     id: where
     attributes:
       label: Page
-      placeholder: https://mit-cdfg.github.io/robotdsl-site/studio/
+      placeholder: https://robotdsl.csail.mit.edu/studio/
     validations:
       required: true
   - type: textarea

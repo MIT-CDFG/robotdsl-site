@@ -2,12 +2,12 @@
 
 Community site of the RobotDSL project and the static preview of MobileCopilot Studio.
 
-- **MobileCopilot Studio:** https://mit-cdfg.github.io/robotdsl-site/studio/
-- **Project page:** https://mit-cdfg.github.io/robotdsl-site/
-- **Documentation:** https://mit-cdfg.github.io/robotdsl-site/docs/
+- **MobileCopilot Studio:** https://robotdsl.csail.mit.edu/studio/
+- **Project page:** https://robotdsl.csail.mit.edu/
+- **Documentation:** https://robotdsl.csail.mit.edu/docs/
 
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
-- `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/robotdsl-site/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
+- `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
 - `guide/` — forwards the retired site guide's address to the documentation.
 - `studio/` — MobileCopilot Studio front end with the component library: each part with its price and a link to the maker's page where it is sold, drawn from the library's 3D models on Hugging Face (https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets), and the LEGO showcase, each robot assembled brick by brick. This static copy has no compiler behind it: Build and the copilot are off until the Studio is served with one.
 
@@ -20,16 +20,9 @@ The Studio preview is a production build with relative asset paths. This reposit
 This remains a static site; there is no build step or package installation.
 From this worktree, run `python3 -m http.server 8769 --bind 127.0.0.1` and open
 `http://127.0.0.1:8769/`. Use HTTP rather than opening `index.html` as a file,
-because the 3D viewer loads modules and model metadata. The documentation's
-pages load their files from `/robotdsl-site/docs/`, where GitHub Pages serves
-them; to preview it, serve this worktree under that prefix:
-
-```console
-mkdir -p /tmp/robotdsl-preview && ln -sfn "$PWD" /tmp/robotdsl-preview/robotdsl-site
-python3 -m http.server 8769 --bind 127.0.0.1 --directory /tmp/robotdsl-preview
-```
-
-and open `http://127.0.0.1:8769/robotdsl-site/`.
+because the 3D viewer loads modules and model metadata. The site is served at
+its domain's root, as here, so the documentation's pages find their files under
+`/docs/` on the preview too.
 
 The page loads `assets/base.css`, `site.css` and `site.js` with `?v=` set to the first 8
 characters of the file's SHA-256 (`sha256sum assets/site.js | cut -c1-8`). When you change one

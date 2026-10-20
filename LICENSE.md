@@ -2,7 +2,7 @@
 
 **Site content** (the text, figures, tables, demo clips and the paper video under `index.html` and `assets/`):
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-Credit "RobotDSL Team" and link to https://mit-cdfg.github.io/robotdsl-site/.
+Credit "RobotDSL Team" and link to https://robotdsl.csail.mit.edu/.
 
 **MobileCopilot Studio** (`studio/`, including the built front end and the catalog index):
 © RobotDSL Team. All rights reserved. It is published here so that it can be used through this site; the application and compiler sources are not public.
