@@ -6585,5 +6585,6 @@
       "sha256": "c2001c2fa441c1eaff2abf6b8571a84df3cd299cf15c0e51393a3b4753e3c092"
     }
   },
+  "arms": "https://api.robotdsl.csail.mit.edu/api/arms/",
   "service": "https://api.robotdsl.csail.mit.edu/api/core/"
 }
