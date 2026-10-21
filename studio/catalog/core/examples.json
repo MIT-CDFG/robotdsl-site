@@ -13141,6 +13141,201 @@
    "ground": -0.052
   },
   {
+   "id": "strafer_drawing_arm",
+   "robots": [],
+   "papers": [],
+   "files": {
+    "core": "// A goBILDA Strafer carrying the RobotDSL Drawing Arm, a four-joint arm of our own design on Feetech STS3215 servos,\n// printed: the arm on the middle of its deck, and a Unitree 4D LiDAR L2 at the front. The arm draws clamped to a\n// table (its print page says how); here the Strafer takes it where it is to draw.\nRobot strafer_drawing_arm {\n    intent \"goBILDA Strafer mecanum base carrying the RobotDSL Drawing Arm and a Unitree 4D LiDAR L2\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n\n    Attachment arm(ref = \"robotdsl_arm_draw\", glue = (0, 0, 0.024, 0, 0, 1))\n    Lidar3D lidar(ref = \"unitree_4d_lidar_l2\", glue = (0.168, 0, 0.024, 0, 0, 1))\n}\n",
+    "world": "World strafer_drawing_arm_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/strafer_drawing_arm, pose = (0, 0, 0.08, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task strafer_drawing_arm_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "robot.core",
+    "world": "world.world",
+    "task": "task.task"
+   },
+   "checked": true,
+   "state": "compiles",
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "gobilda_strafer_chassis_kit_104mm",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      -0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      -0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm",
+     "category": "attachment",
+     "part": "robotdsl_arm_draw",
+     "xyz": [
+      0.0,
+      0.0,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "unitree_4d_lidar_l2",
+     "xyz": [
+      0.168,
+      0.0,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.052
+  },
+  {
    "id": "strafer_lidar",
    "robots": [],
    "papers": [],

@@ -11,8 +11,26 @@
   },
   "examples": {
     "file": "examples.json",
-    "count": 63
+    "count": 64
   },
+  "presets": [
+    {
+      "example": "romi_lidar",
+      "title": "Two wheels and a lidar"
+    },
+    {
+      "example": "strafer_drawing_arm",
+      "title": "A drawing arm on wheels"
+    },
+    {
+      "example": "unitree_g1_modular",
+      "title": "A humanoid that walks"
+    },
+    {
+      "example": "lego_42099",
+      "title": "A LEGO off-roader"
+    }
+  ],
   "reference": {
     "file": "reference.json",
     "sha256": "c11728cc88b314e0135ccef145721540c771f9c5a22fba486942a56eeb879916",
