@@ -3,88 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="How to print the RobotDSL Quadruped, a robot of the RobotDSL Team's own design, and what to buy for it: every piece prints without supports.">
+<meta name="description" content="Print the RobotDSL Quadruped, a walking robot of the RobotDSL Team's own design: its 26 pieces as STL and STEP, how to print them and what to buy. Every piece prints without supports.">
 <title>Print the RobotDSL Quadruped · RobotDSL</title>
 <link rel="icon" type="image/svg+xml" href="../../assets/icons/bot.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../../assets/base.css">
-<link rel="stylesheet" href="../../assets/site.css">
-<style>
-  main { padding-block: 40px 64px; display: grid; gap: 36px; }
-  section { display: grid; gap: 12px; max-width: 80ch; }
-  section.wide { max-width: none; }
-  .lede { color: var(--muted); max-width: 80ch; }
-  ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
-  .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
-  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
-  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-  td.words { white-space: normal; }
-  th { color: var(--ink); font-weight: 600; background: var(--tint); }
-  tr:last-child td { border-bottom: 0; }
-  img.robot { width: 100%; max-width: 720px; height: auto; }
-  td.seen { padding: 4px 8px; }
-  td.seen img { display: block; width: 96px; height: 96px; }
-  .hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-</style>
+<link rel="stylesheet" href="../../assets/base.css?v=390eff28">
+<link rel="stylesheet" href="../../assets/site.css?v=857039dc">
+<link rel="stylesheet" href="../../assets/print.css?v=25134a56">
+<script src="../../assets/print.js?v=09333cc9" defer></script>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
     <a class="site-brand" href="../../"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
-    <nav class="nav-actions" aria-label="Docs and Studio">
+    <nav class="nav-actions" aria-label="Docs, Studio, Print and community">
       <a class="nav-link" href="../../docs/">Docs</a>
       <a class="nav-link" href="../../studio/">Studio</a>
+      <a class="nav-link" href="../../print/" aria-current="true">Print</a>
+      <a class="nav-link" href="../../#community">Community</a>
     </nav>
   </div>
 </header>
-<main class="wrap">
-<section>
-  <h1>Print the RobotDSL Quadruped</h1>
-  <p class="lede">The RobotDSL Quadruped is the RobotDSL Team's own design, drawn as CAD in code: a body and four legs, 2.026 kg in all. Every piece below prints without supports, as its file lies, on a printer's bed of 250 &times; 210 mm, 220 mm high. You can drive it in the <a href="../../studio/">Studio</a>, under Walking robots.</p>
-  <img class="robot" src="pictures/robotdsl_quadruped_body/robot.png" width="960" height="520" alt="The RobotDSL Quadruped">
+<main>
+<section class="wrap phero">
+  <div class="copy">
+    <p class="kicker">Walking robot &middot; RobotDSL Team design</p>
+    <h1>RobotDSL Quadruped</h1>
+    <p class="lede">A body and four legs drawn as CAD in code, on 12 ROBOTIS Dynamixel XM430-W350 servos, three to a leg.</p>
+    <dl class="facts"><div><dt>Mass</dt><dd>2.03 kg</dd></div><div><dt>Pieces</dt><dd>26</dd></div><div><dt>Servos</dt><dd>12</dd></div><div><dt>Bed</dt><dd>250 &times; 210 mm</dd></div></dl>
+    <div class="cta">
+      <a class="pbtn brand" href="#pieces" data-zip="robotdsl_quadruped.zip" data-date="2026-10-20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg><span class="label">Download all</span><span class="size">3.0 MB</span></a>
+      <a class="pbtn alt" href="../../studio/"><span class="ico ico-studio" aria-hidden="true"></span>Open in the Studio</a>
+    </div>
+    <p class="status" id="status" role="status"></p>
+  </div>
+  <figure class="shot" style="aspect-ratio:1.5000;--fw:100.00%;--fh:95.24%;--iw:117.22%;--ix:-8.61%;--iy:-0.00%"><span class="frame"><img src="pictures/robotdsl_quadruped_body/robot.png" width="960" height="520" alt="The RobotDSL Quadruped"></span></figure>
 </section>
-<section>
-  <h2>Print</h2>
-  <ul>
-    <li>Each file holds its piece laid on the bed as it is printed: print it as it lies, without supports.</li>
-    <li>PLA, printed solid (100% infill), as the robot's mass is worked out: 617 g in all.</li>
-    <li>TPU for the foot: 27 g in all.</li>
-    <li>A 0.4 mm nozzle: the rims round the screw heads sunk from the bed, 1.2 mm at most, are laid as three of its lines, and holes along the bed, 12 mm across at most, as arches.</li>
-  </ul>
-</section>
-<section class="wide">
-  <h2>Pieces</h2>
-  <div class="table"><table>
-    <thead><tr><th><span class="hidden">Picture</span></th><th>Piece</th><th>Of</th><th>How many</th><th>Material</th><th>Files</th><th>Laid flat (mm)</th><th>Grams each</th></tr></thead>
+<section class="wrap psection" id="pieces" aria-labelledby="print">
+  <div class="phead"><h2 id="print">Pieces to print</h2><p>26 pieces of 7 shapes</p></div>
+  <dl class="settings"><div><dt>Material</dt><dd>PLA, 100% infill<span>TPU for the foot</span></dd></div><div><dt>Nozzle</dt><dd>0.4 mm</dd></div><div><dt>Supports</dt><dd>None<span>Each piece as its file lies</span></dd></div><div><dt>Bed</dt><dd>250 &times; 210 mm<span>220 mm high</span></dd></div><div><dt>Filament</dt><dd>644 g<span>617 g PLA, 27 g TPU</span></dd></div></dl>
+  <table class="pieces">
+    <thead><tr><th class="pic"><span class="sr">Picture</span></th><th class="name">Piece</th><th class="num">Count</th><th>Material</th><th class="num">Laid flat</th><th class="num">Each</th><th class="files">Files</th></tr></thead>
     <tbody>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_body/plate.png" width="96" height="96" loading="lazy" alt="The plate, laid flat as it is printed"></td><td class="words">plate</td><td class="words">body</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/source/print/plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_body/source/print/plate.step" download>STEP</a></td><td>240 &times; 190 &times; 44</td><td>208.2</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_body/deck.png" width="96" height="96" loading="lazy" alt="The deck, laid flat as it is printed"></td><td class="words">deck</td><td class="words">body</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/source/print/deck.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_body/source/print/deck.step" download>STEP</a></td><td>192 &times; 152 &times; 4</td><td>127.2</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_leg/coxa_plate.png" width="96" height="96" loading="lazy" alt="The coxa plate, laid flat as it is printed"></td><td class="words">coxa plate</td><td class="words">leg</td><td>4</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/coxa_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/coxa_plate.step" download>STEP</a></td><td>68.2 &times; 32 &times; 5</td><td>12.6</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_leg/femur_plate.png" width="96" height="96" loading="lazy" alt="The femur plate, laid flat as it is printed"></td><td class="words">femur plate</td><td class="words">leg</td><td>8</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/femur_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/femur_plate.step" download>STEP</a></td><td>114 &times; 24 &times; 3</td><td>9.1</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_leg/foot.png" width="96" height="96" loading="lazy" alt="The foot, laid flat as it is printed"></td><td class="words">foot</td><td class="words">leg</td><td>4</td><td>TPU</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/foot.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/foot.step" download>STEP</a></td><td>24 &times; 24 &times; 19.2</td><td>6.8</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_leg/tibia_bracket.png" width="96" height="96" loading="lazy" alt="The tibia bracket, laid flat as it is printed"></td><td class="words">tibia bracket</td><td class="words">leg</td><td>4</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_bracket.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_bracket.step" download>STEP</a></td><td>34.9 &times; 32 &times; 41.2</td><td>14.7</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_quadruped_leg/tibia_beam.png" width="96" height="96" loading="lazy" alt="The tibia beam, laid flat as it is printed"></td><td class="words">tibia beam</td><td class="words">leg</td><td>4</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_beam.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_beam.step" download>STEP</a></td><td>34.9 &times; 32 &times; 90.8</td><td>24.8</td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_body/plate.png" width="72" height="72" loading="lazy" alt="The plate, laid flat as it is printed"></td><td class="name"><b>Plate</b><span class="of">Body</span><span class="meta"><span>Body &middot; PLA</span><span>240 &times; 190 &times; 44 mm &middot; 208.2 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">240 &times; 190 &times; 44 mm</td><td class="num">208.2 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/source/print/plate.stl" download="robotdsl_quadruped-plate.stl" data-file="robotdsl_quadruped-plate.stl" aria-label="STL of the plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_body/source/print/plate.step" download="robotdsl_quadruped-plate.step" data-file="robotdsl_quadruped-plate.step" aria-label="STEP of the plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_body/deck.png" width="72" height="72" loading="lazy" alt="The deck, laid flat as it is printed"></td><td class="name"><b>Deck</b><span class="of">Body</span><span class="meta"><span>Body &middot; PLA</span><span>192 &times; 152 &times; 4 mm &middot; 127.2 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">192 &times; 152 &times; 4 mm</td><td class="num">127.2 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_body/source/print/deck.stl" download="robotdsl_quadruped-deck.stl" data-file="robotdsl_quadruped-deck.stl" aria-label="STL of the deck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_body/source/print/deck.step" download="robotdsl_quadruped-deck.step" data-file="robotdsl_quadruped-deck.step" aria-label="STEP of the deck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_leg/coxa_plate.png" width="72" height="72" loading="lazy" alt="The coxa plate, laid flat as it is printed"></td><td class="name"><b>Coxa plate</b><span class="of">Leg</span><span class="meta"><span>Leg &middot; PLA</span><span>68.2 &times; 32 &times; 5 mm &middot; 12.6 g each</span></span></td><td class="num count">&times;4</td><td class="mat">PLA</td><td class="num">68.2 &times; 32 &times; 5 mm</td><td class="num">12.6 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/coxa_plate.stl" download="robotdsl_quadruped-coxa_plate.stl" data-file="robotdsl_quadruped-coxa_plate.stl" aria-label="STL of the coxa plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/coxa_plate.step" download="robotdsl_quadruped-coxa_plate.step" data-file="robotdsl_quadruped-coxa_plate.step" aria-label="STEP of the coxa plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_leg/femur_plate.png" width="72" height="72" loading="lazy" alt="The femur plate, laid flat as it is printed"></td><td class="name"><b>Femur plate</b><span class="of">Leg</span><span class="meta"><span>Leg &middot; PLA</span><span>114 &times; 24 &times; 3 mm &middot; 9.1 g each</span></span></td><td class="num count">&times;8</td><td class="mat">PLA</td><td class="num">114 &times; 24 &times; 3 mm</td><td class="num">9.1 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/femur_plate.stl" download="robotdsl_quadruped-femur_plate.stl" data-file="robotdsl_quadruped-femur_plate.stl" aria-label="STL of the femur plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/femur_plate.step" download="robotdsl_quadruped-femur_plate.step" data-file="robotdsl_quadruped-femur_plate.step" aria-label="STEP of the femur plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_leg/foot.png" width="72" height="72" loading="lazy" alt="The foot, laid flat as it is printed"></td><td class="name"><b>Foot</b><span class="of">Leg</span><span class="meta"><span>Leg &middot; TPU</span><span>24 &times; 24 &times; 19.2 mm &middot; 6.8 g each</span></span></td><td class="num count">&times;4</td><td class="mat">TPU</td><td class="num">24 &times; 24 &times; 19.2 mm</td><td class="num">6.8 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/008bee36d73f37be5c783c4fdfd1636c6a389f72/parts/robotdsl_quadruped_leg/source/print/foot.stl" download="robotdsl_quadruped-foot.stl" data-file="robotdsl_quadruped-foot.stl" aria-label="STL of the foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/foot.step" download="robotdsl_quadruped-foot.step" data-file="robotdsl_quadruped-foot.step" aria-label="STEP of the foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_leg/tibia_bracket.png" width="72" height="72" loading="lazy" alt="The tibia bracket, laid flat as it is printed"></td><td class="name"><b>Tibia bracket</b><span class="of">Leg</span><span class="meta"><span>Leg &middot; PLA</span><span>34.9 &times; 32 &times; 41.2 mm &middot; 14.7 g each</span></span></td><td class="num count">&times;4</td><td class="mat">PLA</td><td class="num">34.9 &times; 32 &times; 41.2 mm</td><td class="num">14.7 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_bracket.stl" download="robotdsl_quadruped-tibia_bracket.stl" data-file="robotdsl_quadruped-tibia_bracket.stl" aria-label="STL of the tibia bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_bracket.step" download="robotdsl_quadruped-tibia_bracket.step" data-file="robotdsl_quadruped-tibia_bracket.step" aria-label="STEP of the tibia bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_quadruped_leg/tibia_beam.png" width="72" height="72" loading="lazy" alt="The tibia beam, laid flat as it is printed"></td><td class="name"><b>Tibia beam</b><span class="of">Leg</span><span class="meta"><span>Leg &middot; PLA</span><span>34.9 &times; 32 &times; 90.8 mm &middot; 24.8 g each</span></span></td><td class="num count">&times;4</td><td class="mat">PLA</td><td class="num">34.9 &times; 32 &times; 90.8 mm</td><td class="num">24.8 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_beam.stl" download="robotdsl_quadruped-tibia_beam.stl" data-file="robotdsl_quadruped-tibia_beam.stl" aria-label="STL of the tibia beam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/fb885c1675fc9b7745645d4b87a2cc2c893664be/parts/robotdsl_quadruped_leg/source/print/tibia_beam.step" download="robotdsl_quadruped-tibia_beam.step" data-file="robotdsl_quadruped-tibia_beam.step" aria-label="STEP of the tibia beam"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
     </tbody>
-  </table></div>
+  </table>
 </section>
-<section>
-  <h2>Buy</h2>
-  <ul>
-    <li>12 &times; <a href="https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">ROBOTIS Dynamixel XM430-W350</a></li>
-    <li>8 &times; ROBOTIS HN12-I101 idler sets</li>
-    <li>Socket head cap screws (ISO 4762):<ul><li>16 &times; M2.5 x 18</li><li>4 &times; M3 x 12</li><li>16 &times; M2 x 6</li><li>16 &times; M2.5 x 5</li><li>64 &times; M2 x 5</li><li>32 &times; M2.5 x 6</li><li>16 &times; M3 x 6</li></ul></li>
-  </ul>
-  <p>Between the body's plates is room for an allowance of 300 g for what a quadruped of twelve servos carries between its plates: a computer, the servos&#x27; interface and power hub, a three-cell battery and the wiring; the design names no product of them.</p>
-</section>
-<section>
-  <h2>Servos</h2>
-  <p>Each servo&#x27;s horn is fitted as it comes: set each joint&#x27;s zero in its servo, the leg straight out level from its hip.</p>
-</section>
-<section>
-  <h2>Licence</h2>
-  <p>The files are published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, crediting the RobotDSL Team.</p>
+<section class="wrap psection" aria-labelledby="buy">
+  <div class="phead"><h2 id="buy">What to buy</h2></div>
+  <div class="buy">
+    <div class="box">
+      <h3>Parts</h3>
+      <ul class="items">
+        <li><span><a href="https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">ROBOTIS Dynamixel XM430-W350</a></span><span class="q">&times;12</span></li>
+        <li><span>ROBOTIS HN12-I101 idler set</span><span class="q">&times;8</span></li>
+      </ul>
+      <p class="note">Between the body's plates is room for an allowance of 300 g for what a quadruped of twelve servos carries between its plates: a computer, the servos&#x27; interface and power hub, a three-cell battery and the wiring; the design names no product of them.</p>
+    </div>
+    <div class="box">
+      <h3>Socket head cap screws <span>ISO 4762</span></h3>
+      <table class="screws">
+        <thead><tr><th>Thread</th><th class="num">Length</th><th class="num">Count</th></tr></thead>
+        <tbody>
+          <tr><td>M2</td><td class="num">5 mm</td><td class="num">64</td></tr>
+          <tr><td>M2</td><td class="num">6 mm</td><td class="num">16</td></tr>
+          <tr><td>M2.5</td><td class="num">5 mm</td><td class="num">16</td></tr>
+          <tr><td>M2.5</td><td class="num">6 mm</td><td class="num">32</td></tr>
+          <tr><td>M2.5</td><td class="num">18 mm</td><td class="num">16</td></tr>
+          <tr><td>M3</td><td class="num">6 mm</td><td class="num">16</td></tr>
+          <tr><td>M3</td><td class="num">12 mm</td><td class="num">4</td></tr>
+        </tbody>
+        <tfoot><tr><th colspan="2">In all</th><td class="num">164</td></tr></tfoot>
+      </table>
+    </div>
+  </div>
 </section>
 </main>
+<script type="text/plain" id="readme">
+RobotDSL Quadruped, of the RobotDSL Team's own design
+https://robotdsl.csail.mit.edu/print/robotdsl_quadruped/
+
+Each piece's STL and STEP file holds it laid on the bed as it is printed: print it as it lies, without supports.
+26 pieces to print:
+
+Piece          Of    Count  Material  Files
+plate          body  1      PLA       robotdsl_quadruped-plate.stl, .step
+deck           body  1      PLA       robotdsl_quadruped-deck.stl, .step
+coxa plate     leg   4      PLA       robotdsl_quadruped-coxa_plate.stl, .step
+femur plate    leg   8      PLA       robotdsl_quadruped-femur_plate.stl, .step
+foot           leg   4      TPU       robotdsl_quadruped-foot.stl, .step
+tibia bracket  leg   4      PLA       robotdsl_quadruped-tibia_bracket.stl, .step
+tibia beam     leg   4      PLA       robotdsl_quadruped-tibia_beam.stl, .step
+
+Published under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), crediting the RobotDSL Team.
+Made from the RobotDSL parts library at 3c6ba78, 20 October 2026.
+</script>
+<footer class="pfoot">
+  <div class="wrap">
+    <span>The files are published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, crediting the RobotDSL Team.</span>
+    <span>Made from the parts library at <code>3c6ba78</code>, 20 October 2026</span>
+  </div>
+</footer>
 </body>
 </html>

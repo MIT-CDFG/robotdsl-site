@@ -3,92 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="How to print the RobotDSL Arm, a robot arm of the RobotDSL Team's own design, and what to buy for it: every piece prints without supports.">
+<meta name="description" content="Print the RobotDSL Arm, a robot arm of the RobotDSL Team's own design: its 8 pieces as STL and STEP, how to print them and what to buy. Every piece prints without supports.">
 <title>Print the RobotDSL Arm · RobotDSL</title>
 <link rel="icon" type="image/svg+xml" href="../../assets/icons/bot.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../../assets/base.css">
-<link rel="stylesheet" href="../../assets/site.css">
-<style>
-  main { padding-block: 40px 64px; display: grid; gap: 36px; }
-  section { display: grid; gap: 12px; max-width: 80ch; }
-  section.wide { max-width: none; }
-  .lede { color: var(--muted); max-width: 80ch; }
-  ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
-  .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
-  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
-  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-  td.words { white-space: normal; }
-  th { color: var(--ink); font-weight: 600; background: var(--tint); }
-  tr:last-child td { border-bottom: 0; }
-  img.robot { width: 100%; max-width: 720px; height: auto; }
-  td.seen { padding: 4px 8px; }
-  td.seen img { display: block; width: 96px; height: 96px; }
-  .hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-</style>
+<link rel="stylesheet" href="../../assets/base.css?v=390eff28">
+<link rel="stylesheet" href="../../assets/site.css?v=857039dc">
+<link rel="stylesheet" href="../../assets/print.css?v=25134a56">
+<script src="../../assets/print.js?v=09333cc9" defer></script>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
     <a class="site-brand" href="../../"><span class="ico ico-bot" aria-hidden="true"></span>RobotDSL</a>
-    <nav class="nav-actions" aria-label="Docs and Studio">
+    <nav class="nav-actions" aria-label="Docs, Studio, Print and community">
       <a class="nav-link" href="../../docs/">Docs</a>
       <a class="nav-link" href="../../studio/">Studio</a>
+      <a class="nav-link" href="../../print/" aria-current="true">Print</a>
+      <a class="nav-link" href="../../#community">Community</a>
     </nav>
   </div>
 </header>
-<main class="wrap">
-<section>
-  <h1>Print the RobotDSL Arm</h1>
-  <p class="lede">The RobotDSL Arm is the RobotDSL Team's own design, drawn as CAD in code: a desk arm of five joints and a gripper on six Feetech STS3215 (12 V, ST-3215-C018) servos, 0.493 kg in all. Stretched out level it reaches 365 mm, holding 0.1 kg there. Every piece below prints without supports, as its file lies, on a printer's bed of 250 &times; 210 mm, 220 mm high. You can find it in the <a href="../../studio/">Studio</a>'s parts library, among the attachments.</p>
-  <img class="robot" src="pictures/robotdsl_arm/arm.png" width="960" height="520" alt="The RobotDSL Arm">
+<main>
+<section class="wrap phero">
+  <div class="copy">
+    <p class="kicker">Arm &middot; RobotDSL Team design</p>
+    <h1>RobotDSL Arm</h1>
+    <p class="lede">A desk arm of five joints and a gripper on six Feetech STS3215 servos: stretched out level, it reaches 365 mm and holds 0.1 kg there.</p>
+    <dl class="facts"><div><dt>Reach</dt><dd>365 mm</dd></div><div><dt>Pieces</dt><dd>8</dd></div><div><dt>Servos</dt><dd>6</dd></div><div><dt>Bed</dt><dd>250 &times; 210 mm</dd></div></dl>
+    <div class="cta">
+      <a class="pbtn brand" href="#pieces" data-zip="robotdsl_arm.zip" data-date="2026-10-20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg><span class="label">Download all</span><span class="size">2.4 MB</span></a>
+      <a class="pbtn alt" href="../../studio/"><span class="ico ico-studio" aria-hidden="true"></span>Open in the Studio</a>
+    </div>
+    <p class="status" id="status" role="status"></p>
+  </div>
+  <figure class="shot" style="aspect-ratio:1.5000;--fw:100.00%;--fh:79.59%;--iw:100.00%;--ix:-0.00%;--iy:-1.14%"><span class="frame"><img src="pictures/robotdsl_arm/arm.png" width="960" height="520" alt="The RobotDSL Arm"></span></figure>
 </section>
-<section>
-  <h2>Print</h2>
-  <ul>
-    <li>Each file holds its piece laid on the bed as it is printed: print it as it lies, without supports.</li>
-    <li>PLA, printed solid (100% infill), as the robot's mass is worked out: 132 g in all.</li>
-    <li>A 0.4 mm nozzle: the rims round the screw heads sunk from the bed, 1.2 mm at most, are laid as three of its lines, and holes along the bed, 12 mm across at most, as arches.</li>
-  </ul>
-</section>
-<section class="wide">
-  <h2>Pieces</h2>
-  <div class="table"><table>
-    <thead><tr><th><span class="hidden">Picture</span></th><th>Piece</th><th>How many</th><th>Material</th><th>Files</th><th>Laid flat (mm)</th><th>Grams each</th></tr></thead>
+<section class="wrap psection" id="pieces" aria-labelledby="print">
+  <div class="phead"><h2 id="print">Pieces to print</h2><p>8 pieces of 8 shapes</p></div>
+  <dl class="settings"><div><dt>Material</dt><dd>PLA, 100% infill</dd></div><div><dt>Nozzle</dt><dd>0.4 mm</dd></div><div><dt>Supports</dt><dd>None<span>Each piece as its file lies</span></dd></div><div><dt>Bed</dt><dd>250 &times; 210 mm<span>220 mm high</span></dd></div><div><dt>Filament</dt><dd>132 g</dd></div></dl>
+  <table class="pieces">
+    <thead><tr><th class="pic"><span class="sr">Picture</span></th><th class="name">Piece</th><th class="num">Count</th><th>Material</th><th class="num">Laid flat</th><th class="num">Each</th><th class="files">Files</th></tr></thead>
     <tbody>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/base_plate.png" width="96" height="96" loading="lazy" alt="The base plate, laid flat as it is printed"></td><td class="words">base plate</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/base_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/base_plate.step" download>STEP</a></td><td>110 &times; 90 &times; 13</td><td>63.4</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/shoulder_bracket.png" width="96" height="96" loading="lazy" alt="The shoulder bracket, laid flat as it is printed"></td><td class="words">shoulder bracket</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/shoulder_bracket.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/shoulder_bracket.step" download>STEP</a></td><td>54.4 &times; 28 &times; 32.9</td><td>9.2</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/shoulder_plate.png" width="96" height="96" loading="lazy" alt="The shoulder plate, laid flat as it is printed"></td><td class="words">shoulder plate</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/shoulder_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/shoulder_plate.step" download>STEP</a></td><td>134.7 &times; 27.8 &times; 4</td><td>15.1</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/elbow_plate.png" width="96" height="96" loading="lazy" alt="The elbow plate, laid flat as it is printed"></td><td class="words">elbow plate</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/elbow_plate.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/elbow_plate.step" download>STEP</a></td><td>124.7 &times; 27.8 &times; 4</td><td>13.8</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/wrist_bracket.png" width="96" height="96" loading="lazy" alt="The wrist bracket, laid flat as it is printed"></td><td class="words">wrist bracket</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/wrist_bracket.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/wrist_bracket.step" download>STEP</a></td><td>50.6 &times; 36.6 &times; 35.6</td><td>9.6</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/palm.png" width="96" height="96" loading="lazy" alt="The palm, laid flat as it is printed"></td><td class="words">palm</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/palm.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/palm.step" download>STEP</a></td><td>54.4 &times; 41.5 &times; 42.6</td><td>12</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/fixed_finger.png" width="96" height="96" loading="lazy" alt="The fixed finger, laid flat as it is printed"></td><td class="words">fixed finger</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/fixed_finger.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/fixed_finger.step" download>STEP</a></td><td>93.7 &times; 8 &times; 20</td><td>4.3</td></tr>
-<tr><td class="seen"><img src="pictures/robotdsl_arm/moving_finger.png" width="96" height="96" loading="lazy" alt="The moving finger, laid flat as it is printed"></td><td class="words">moving finger</td><td>1</td><td>PLA</td><td><a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/moving_finger.stl" download>STL</a> &middot; <a href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/moving_finger.step" download>STEP</a></td><td>68 &times; 26 &times; 4</td><td>4.4</td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/base_plate.png" width="72" height="72" loading="lazy" alt="The base plate, laid flat as it is printed"></td><td class="name"><b>Base plate</b><span class="meta"><span>PLA</span><span>110 &times; 90 &times; 13 mm &middot; 63.4 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">110 &times; 90 &times; 13 mm</td><td class="num">63.4 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/base_plate.stl" download="robotdsl_arm-base_plate.stl" data-file="robotdsl_arm-base_plate.stl" aria-label="STL of the base plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/base_plate.step" download="robotdsl_arm-base_plate.step" data-file="robotdsl_arm-base_plate.step" aria-label="STEP of the base plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/shoulder_bracket.png" width="72" height="72" loading="lazy" alt="The shoulder bracket, laid flat as it is printed"></td><td class="name"><b>Shoulder bracket</b><span class="meta"><span>PLA</span><span>54.4 &times; 28 &times; 32.9 mm &middot; 9.2 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">54.4 &times; 28 &times; 32.9 mm</td><td class="num">9.2 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/shoulder_bracket.stl" download="robotdsl_arm-shoulder_bracket.stl" data-file="robotdsl_arm-shoulder_bracket.stl" aria-label="STL of the shoulder bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/shoulder_bracket.step" download="robotdsl_arm-shoulder_bracket.step" data-file="robotdsl_arm-shoulder_bracket.step" aria-label="STEP of the shoulder bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/shoulder_plate.png" width="72" height="72" loading="lazy" alt="The shoulder plate, laid flat as it is printed"></td><td class="name"><b>Shoulder plate</b><span class="meta"><span>PLA</span><span>134.7 &times; 27.8 &times; 4 mm &middot; 15.1 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">134.7 &times; 27.8 &times; 4 mm</td><td class="num">15.1 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/shoulder_plate.stl" download="robotdsl_arm-shoulder_plate.stl" data-file="robotdsl_arm-shoulder_plate.stl" aria-label="STL of the shoulder plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/shoulder_plate.step" download="robotdsl_arm-shoulder_plate.step" data-file="robotdsl_arm-shoulder_plate.step" aria-label="STEP of the shoulder plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/elbow_plate.png" width="72" height="72" loading="lazy" alt="The elbow plate, laid flat as it is printed"></td><td class="name"><b>Elbow plate</b><span class="meta"><span>PLA</span><span>124.7 &times; 27.8 &times; 4 mm &middot; 13.8 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">124.7 &times; 27.8 &times; 4 mm</td><td class="num">13.8 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/elbow_plate.stl" download="robotdsl_arm-elbow_plate.stl" data-file="robotdsl_arm-elbow_plate.stl" aria-label="STL of the elbow plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/elbow_plate.step" download="robotdsl_arm-elbow_plate.step" data-file="robotdsl_arm-elbow_plate.step" aria-label="STEP of the elbow plate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/wrist_bracket.png" width="72" height="72" loading="lazy" alt="The wrist bracket, laid flat as it is printed"></td><td class="name"><b>Wrist bracket</b><span class="meta"><span>PLA</span><span>50.6 &times; 36.6 &times; 35.6 mm &middot; 9.6 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">50.6 &times; 36.6 &times; 35.6 mm</td><td class="num">9.6 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/wrist_bracket.stl" download="robotdsl_arm-wrist_bracket.stl" data-file="robotdsl_arm-wrist_bracket.stl" aria-label="STL of the wrist bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/wrist_bracket.step" download="robotdsl_arm-wrist_bracket.step" data-file="robotdsl_arm-wrist_bracket.step" aria-label="STEP of the wrist bracket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/palm.png" width="72" height="72" loading="lazy" alt="The palm, laid flat as it is printed"></td><td class="name"><b>Palm</b><span class="meta"><span>PLA</span><span>54.4 &times; 41.5 &times; 42.6 mm &middot; 12 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">54.4 &times; 41.5 &times; 42.6 mm</td><td class="num">12 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/palm.stl" download="robotdsl_arm-palm.stl" data-file="robotdsl_arm-palm.stl" aria-label="STL of the palm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/palm.step" download="robotdsl_arm-palm.step" data-file="robotdsl_arm-palm.step" aria-label="STEP of the palm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/fixed_finger.png" width="72" height="72" loading="lazy" alt="The fixed finger, laid flat as it is printed"></td><td class="name"><b>Fixed finger</b><span class="meta"><span>PLA</span><span>93.7 &times; 8 &times; 20 mm &middot; 4.3 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">93.7 &times; 8 &times; 20 mm</td><td class="num">4.3 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/fixed_finger.stl" download="robotdsl_arm-fixed_finger.stl" data-file="robotdsl_arm-fixed_finger.stl" aria-label="STL of the fixed finger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/fixed_finger.step" download="robotdsl_arm-fixed_finger.step" data-file="robotdsl_arm-fixed_finger.step" aria-label="STEP of the fixed finger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
+<tr><td class="pic"><img src="pictures/robotdsl_arm/moving_finger.png" width="72" height="72" loading="lazy" alt="The moving finger, laid flat as it is printed"></td><td class="name"><b>Moving finger</b><span class="meta"><span>PLA</span><span>68 &times; 26 &times; 4 mm &middot; 4.4 g each</span></span></td><td class="num count">&times;1</td><td class="mat">PLA</td><td class="num">68 &times; 26 &times; 4 mm</td><td class="num">4.4 g</td><td class="files"><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/300d3f2bdbaf6ff832ca31c5f5b3cd87f337f542/parts/robotdsl_arm/source/print/moving_finger.stl" download="robotdsl_arm-moving_finger.stl" data-file="robotdsl_arm-moving_finger.stl" aria-label="STL of the moving finger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STL</a><a class="pfile" href="https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/82da7dbe59676d9b7b4025ad40c87a846cd083a9/parts/robotdsl_arm/source/print/moving_finger.step" download="robotdsl_arm-moving_finger.step" data-file="robotdsl_arm-moving_finger.step" aria-label="STEP of the moving finger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>STEP</a></td></tr>
     </tbody>
-  </table></div>
+  </table>
 </section>
-<section>
-  <h2>Buy</h2>
-  <ul>
-    <li>6 &times; <a href="https://www.feetechrc.com/525603">Feetech STS3215 (12 V, ST-3215-C018)</a></li>
-    <li>2 &times; clamps that hold the base plate to the table</li>
-    <li>Socket head cap screws (ISO 4762):<ul><li>4 &times; M2 x 8</li><li>26 &times; M3 x 6</li><li>20 &times; M2 x 6</li></ul></li>
-  </ul>
-  <p>Stretched out level with 0.1 kg between its fingers, its centre of mass comes 124 mm beyond the outline its feet stand in, turned the way it comes nearest: clamp its base plate to the table, a clamp each side of the base&#x27;s servo, or it tips over. What drives its servos: a computer, an adapter for the servos&#x27; serial bus and a 12 V supply, which the arm does not carry; the design names no product of them.</p>
+<section class="wrap psection" aria-labelledby="buy">
+  <div class="phead"><h2 id="buy">What to buy</h2></div>
+  <div class="buy">
+    <div class="box">
+      <h3>Parts</h3>
+      <ul class="items">
+        <li><span><a href="https://www.feetechrc.com/525603">Feetech STS3215 (12 V, ST-3215-C018)</a></span><span class="q">&times;6</span></li>
+        <li><span>Clamps that hold the base plate to the table</span><span class="q">&times;2</span><span class="why">Stretched out level with 0.1 kg between its fingers, its centre of mass comes 124 mm beyond the outline its feet stand in, turned the way it comes nearest: clamp its base plate to the table, a clamp each side of the base&#x27;s servo, or it tips over.</span></li>
+      </ul>
+      <p class="note">What drives its servos: a computer, an adapter for the servos&#x27; serial bus and a 12 V supply, which the arm does not carry; the design names no product of them.</p>
+    </div>
+    <div class="box">
+      <h3>Socket head cap screws <span>ISO 4762</span></h3>
+      <table class="screws">
+        <thead><tr><th>Thread</th><th class="num">Length</th><th class="num">Count</th></tr></thead>
+        <tbody>
+          <tr><td>M2</td><td class="num">6 mm</td><td class="num">20</td></tr>
+          <tr><td>M2</td><td class="num">8 mm</td><td class="num">4</td></tr>
+          <tr><td>M3</td><td class="num">6 mm</td><td class="num">26</td></tr>
+        </tbody>
+        <tfoot><tr><th colspan="2">In all</th><td class="num">50</td></tr></tfoot>
+      </table>
+    </div>
+  </div>
 </section>
-<section>
-  <h2>Simulated</h2>
+<section class="wrap psection fine" aria-labelledby="simulated">
+  <h2 id="simulated">In simulation</h2>
   <p>In MuJoCo 3.15.0, each link weighing as its solids do and each servo turning as MuJoCo Menagerie&#x27;s model of the Feetech STS3215 (12 V, ST-3215-C018) has it turn (up to 2.94 N m): stretched out level with 0.1 kg between its fingers, its base clamped, its servos hold it within 0.0010 rad, the shoulder&#x27;s turning 1.02 N m; each joint turned through its range at 0.5 rad/s, the others at zero, follows within 0.012 rad; unclamped, stretched out level and turned the way it comes nearest to tipping, it tips over; its gripper, closed on a box of 0.1 kg, 10 x 12 x 16 mm, whose weight then pulls it out along the fingers, holds it within 0.01 mm.</p>
 </section>
-<section>
-  <h2>Servos</h2>
-  <p>Each servo&#x27;s horn is fitted as it comes: set each joint&#x27;s zero in its servo, the arm straight up and the moving finger upright beside the fixed one.</p>
-</section>
-<section>
-  <h2>Licence</h2>
-  <p>The files are published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, crediting the RobotDSL Team.</p>
-</section>
 </main>
+<script type="text/plain" id="readme">
+RobotDSL Arm, of the RobotDSL Team's own design
+https://robotdsl.csail.mit.edu/print/robotdsl_arm/
+
+Each piece's STL and STEP file holds it laid on the bed as it is printed: print it as it lies, without supports.
+8 pieces to print:
+
+Piece             Count  Material  Files
+base plate        1      PLA       robotdsl_arm-base_plate.stl, .step
+shoulder bracket  1      PLA       robotdsl_arm-shoulder_bracket.stl, .step
+shoulder plate    1      PLA       robotdsl_arm-shoulder_plate.stl, .step
+elbow plate       1      PLA       robotdsl_arm-elbow_plate.stl, .step
+wrist bracket     1      PLA       robotdsl_arm-wrist_bracket.stl, .step
+palm              1      PLA       robotdsl_arm-palm.stl, .step
+fixed finger      1      PLA       robotdsl_arm-fixed_finger.stl, .step
+moving finger     1      PLA       robotdsl_arm-moving_finger.stl, .step
+
+Published under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), crediting the RobotDSL Team.
+Made from the RobotDSL parts library at 3c6ba78, 20 October 2026.
+</script>
+<footer class="pfoot">
+  <div class="wrap">
+    <span>The files are published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, crediting the RobotDSL Team.</span>
+    <span>Made from the parts library at <code>3c6ba78</code>, 20 October 2026</span>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,173 @@
+/* The print pages: each robot of the RobotDSL Team's own design as a maker's page of it, and the list of them, in
+   the site's own look (assets/base.css and assets/site.css). Written into the site as assets/print.css by
+   robotdsl-studio's scripts/print_page.py, which writes the pages; change it there. */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.nav-link[aria-current] { color: var(--accent); }
+.nb { white-space: nowrap; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Pressables: they give on press, and change colour on hover only where there is a pointer to hover with. */
+.pbtn, .pfile, .pcard { -webkit-tap-highlight-color: transparent; }
+.pbtn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 20px; border: 0; border-radius: 20px; font: 600 14px/1 var(--sans); text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out); }
+.pbtn.brand { background: var(--vp-button-brand-bg); color: #fff; }
+.pbtn.alt { background: var(--vp-button-alt-bg); color: var(--ink); }
+.pbtn:active { transform: scale(.97); }
+.pbtn.brand:active { background: var(--vp-button-brand-active-bg); }
+.pbtn.alt:active { background: var(--vp-button-alt-active-bg); }
+.pbtn svg { width: 16px; height: 16px; flex: none; }
+.pbtn .ico { width: 16px; height: 16px; }
+.pbtn .size { font-weight: 500; opacity: .72; font-variant-numeric: tabular-nums; }
+.pbtn[aria-busy="true"] { cursor: progress; }
+.pfile { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px 0 8px; border-radius: 8px; background: var(--tint); color: var(--ink); font: 500 12px/1 var(--mono); letter-spacing: .02em; text-decoration: none; transition: background-color 160ms var(--ease-out), color 160ms var(--ease-out), transform 160ms var(--ease-out); }
+.pfile svg { width: 14px; height: 14px; color: var(--muted); transition: color 160ms var(--ease-out); }
+.pfile:active { transform: scale(.97); background: var(--accent-soft); color: var(--accent); }
+.pfile[aria-busy="true"] { cursor: progress; opacity: .6; }
+.pbtn:focus-visible, .pfile:focus-visible, .pcard:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  .pbtn.brand:hover { background: var(--vp-button-brand-hover-bg); }
+  .pbtn.alt:hover { background: var(--vp-button-alt-hover-bg); }
+  .pfile:hover { background: var(--accent-soft); color: var(--accent); }
+  .pfile:hover svg { color: var(--accent); }
+  .pcard:hover { border-color: var(--accent); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pbtn, .pfile, .pcard { transition-property: background-color, color, border-color; }
+  .pbtn:active, .pfile:active, .pcard:active { transform: none; }
+}
+
+/* The robot first: what it is and its facts beside its picture, the picture first on a phone. */
+.phero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: center; gap: 48px; padding-block: 40px 32px; }
+.phero .copy { display: grid; justify-items: start; gap: 16px; min-width: 0; }
+.kicker { font-size: 14px; font-weight: 600; color: var(--muted); }
+.phero h1 { font-size: clamp(2.25rem, 4.4vw, 3.25rem); line-height: 1.06; font-weight: 700; letter-spacing: -.035em; }
+.phero .lede { max-width: 48ch; font-size: 17px; line-height: 1.6; color: var(--muted); }
+.facts { display: flex; flex-wrap: wrap; gap: 14px 36px; margin: 6px 0 8px; }
+.facts div { display: flex; flex-direction: column-reverse; }
+.facts dt { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.facts dd { margin: 0; font-size: 22px; line-height: 1.3; font-weight: 600; letter-spacing: -.02em; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.status { font-size: 14px; color: var(--muted); }
+.status:empty { display: none; }
+/* A robot's picture fills its frame: the generator gives the frame the share of it that what the picture shows
+   takes (--fw, --fh), and the picture its size and place in that (--iw, --ix, --iy). */
+.shot { display: grid; place-items: center; margin: 0; border-radius: 16px; background: var(--tint); overflow: hidden; }
+.shot .frame { position: relative; display: block; width: var(--fw); height: var(--fh); overflow: hidden; }
+.shot img { position: absolute; left: var(--ix); top: var(--iy); display: block; width: var(--iw); max-width: none; height: auto; }
+
+/* Sections run on, as on the home page: no rules, no bands. */
+.psection { padding-block: 32px; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 24px; margin-bottom: 20px; }
+.phead h2 { font-size: clamp(1.5rem, 2.4vw, 1.75rem); line-height: 1.25; font-weight: 700; letter-spacing: -.03em; }
+.phead p { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* How to print: one row of facts. */
+.settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px 24px; margin: 0 0 8px; padding: 18px 24px; border-radius: 12px; background: var(--tint); }
+.settings dt { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.settings dd { margin: 2px 0 0; font-size: 15px; line-height: 1.45; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.settings dd span { display: block; font-size: 13px; font-weight: 400; color: var(--muted); }
+
+/* The pieces: a table on a desktop, a list on a phone. */
+.pieces { width: 100%; border-collapse: collapse; font-size: 14px; }
+.pieces th { padding: 14px 0 10px 32px; border-bottom: 1px solid var(--line); text-align: left; font-size: 13px; font-weight: 500; color: var(--muted); white-space: nowrap; }
+.pieces td { padding: 10px 0 10px 32px; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+.pieces td.name { width: 100%; padding-left: 16px; white-space: normal; }
+.pieces th.name { padding-left: 16px; }
+.pieces th:first-child, .pieces td:first-child { padding-left: 0; }
+.pieces th:last-child, .pieces td:last-child { padding-right: 0; }
+.pieces .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pieces .pic { width: 72px; }
+.pieces .pic img { display: block; width: 72px; height: 72px; border-radius: 10px; background: var(--tint); }
+.pieces .name b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); }
+.pieces .of, .pieces .alike, .pieces .meta { display: block; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.pieces .alike { display: flex; align-items: center; gap: 6px; }
+.pieces .alike svg { width: 14px; height: 14px; flex: none; }
+.pieces .alike.mirror { color: var(--accent); }
+.pieces .meta { display: none; font-variant-numeric: tabular-nums; }
+.pieces .meta span { display: block; }
+.pieces .count { color: var(--ink); font-weight: 600; }
+.pieces .files { text-align: right; white-space: nowrap; }
+.pieces .files .pfile + .pfile { margin-left: 6px; }
+
+/* What to buy: the parts and the screws side by side, ruled as the pieces are. */
+.buy { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; gap: 24px 56px; }
+.box h3 { padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 15px; font-weight: 600; letter-spacing: 0; }
+.box h3 span { font-weight: 500; color: var(--muted); }
+.items { margin: 0; padding: 0; list-style: none; }
+.items li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.5; }
+.items a { color: var(--ink); font-weight: 500; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
+.items .q { text-align: right; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.items .why { grid-column: 1 / -1; font-size: 13px; line-height: 1.55; color: var(--muted); }
+.box .note { margin-top: 14px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.screws { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.screws th, .screws td { padding: 7px 0; border-bottom: 1px solid var(--line); text-align: left; }
+.screws thead th { padding-top: 10px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.screws .num { text-align: right; }
+.screws tbody td { color: var(--ink); }
+.screws tbody td:first-child { font-weight: 500; }
+.screws tfoot th, .screws tfoot td { border-bottom: 0; padding-bottom: 0; font-weight: 600; color: var(--ink); }
+/* What an arm did in simulation: fine print, for whoever wants the figures. */
+.fine { display: grid; gap: 6px; padding-top: 16px; }
+.fine h2 { font-size: 13px; line-height: 1.5; font-weight: 600; letter-spacing: 0; color: var(--ink); }
+.fine p { max-width: 110ch; font-size: 13px; line-height: 1.65; color: var(--muted); }
+
+/* At the foot: the licence, and the library commit the page was made from. */
+.pfoot { margin-top: 40px; padding-block: 24px 44px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.pfoot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
+.pfoot a { color: inherit; text-underline-offset: 3px; }
+.pfoot code { padding: 0; background: none; color: var(--ink); font-size: 12px; }
+
+/* The list of robots: two groups of cards, each a robot's picture on the tint, its name and its facts. */
+.pintro { display: grid; justify-items: start; gap: 12px; padding-block: 48px 16px; }
+.pintro h1 { font-size: clamp(2.25rem, 4.4vw, 3.25rem); line-height: 1.06; font-weight: 700; letter-spacing: -.035em; }
+.pintro .lede { max-width: 62ch; font-size: 17px; line-height: 1.6; color: var(--muted); }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.cards.wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pcard { display: flex; flex-direction: column; height: 100%; border: 1px solid var(--tint); border-radius: 12px; background: var(--tint); color: var(--text); text-decoration: none; transition: border-color 250ms var(--ease-out), transform 160ms var(--ease-out); }
+.pcard:active { transform: scale(.97); }
+.pcard .shot { border-radius: 12px 12px 0 0; }
+.pcard .body { display: grid; gap: 2px; padding: 8px 24px 22px; }
+.pcard b { font-size: 17px; line-height: 1.4; font-weight: 600; color: var(--ink); }
+.pcard .line { font-size: 14px; line-height: 1.5; color: var(--muted); }
+.pcard .facts { margin: 10px 0 0; gap: 4px 24px; }
+.pcard .facts dd { font-size: 15px; letter-spacing: 0; }
+.pcard .facts dt { font-size: 12px; }
+
+@media (max-width: 959px) {
+  .phero { gap: 32px; }
+  .facts { gap: 12px 28px; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 759px) {
+  .phero { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 20px 32px; }
+  .phero .shot { order: -1; }
+  .buy { grid-template-columns: minmax(0, 1fr); }
+  .cards.wide { grid-template-columns: minmax(0, 1fr); }
+  .pieces thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .pieces, .pieces tbody { display: block; }
+  .pieces tr { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; grid-template-areas: "pic name count" "pic files files"; align-items: start; gap: 10px 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .pieces td, .pieces td.name { display: block; padding: 0; border: 0; }
+  .pieces .of { display: none; }
+  .pieces td.pic { grid-area: pic; width: auto; }
+  .pieces .pic img { width: 64px; height: 64px; }
+  .pieces td.name { grid-area: name; }
+  .pieces td.files { grid-area: files; text-align: left; }
+  .pieces td.num, .pieces td.mat { display: none; }
+  .pieces td.count { display: block; grid-area: count; font-size: 15px; line-height: 1.5; }
+  .pieces .meta { display: block; }
+  .pieces .pfile { height: 36px; padding: 0 12px 0 10px; }
+}
+@media (max-width: 599px) {
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .psection { padding-block: 24px; }
+  .phero .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 24px; width: 100%; }
+  .facts dd { font-size: 20px; }
+  .cta { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; gap: 10px; }
+  .pbtn { min-height: 44px; }
+  .settings { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 4px 20px; }
+  .settings div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .settings div:last-child { border-bottom: 0; }
+  .settings dt { line-height: 1.45; }
+  .settings dd { margin: 0; }
+}
