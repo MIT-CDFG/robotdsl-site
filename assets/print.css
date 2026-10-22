@@ -5,6 +5,11 @@
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 .nav-link[aria-current] { color: var(--accent); }
+/* The header's four links fit a phone, as on the home page: closer together below 400 px, and smaller below 375 px;
+   the logo without its name below 354 px. */
+@media (max-width: 399px) { .nav .nav-actions { gap: 10px; } }
+@media (max-width: 374px) { .nav .nav-actions { gap: 8px; } .nav .nav-link { font-size: 13px; } }
+@media (max-width: 353px) { .nav .site-brand { font-size: 0; } }
 .nb { white-space: nowrap; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 

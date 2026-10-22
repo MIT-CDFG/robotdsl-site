@@ -94,6 +94,11 @@
   .note { font-size: .9rem; color: var(--muted); }
   footer { padding-block: 30px 44px; color: var(--muted); font-size: .88rem; }
   footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+  /* The header's four links fit a phone: closer together below 400 px, and smaller below 375 px; the logo without
+     its name below 354 px. */
+  @media (max-width: 399px) { .nav .nav-actions { gap: 10px; } }
+  @media (max-width: 374px) { .nav .nav-actions { gap: 8px; } .nav .nav-link { font-size: 13px; } }
+  @media (max-width: 353px) { .nav .site-brand { font-size: 0; } }
 </style>
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
