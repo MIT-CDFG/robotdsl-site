@@ -1,0 +1,426 @@
+{
+  "id": "robotdsl_dog",
+  "name": "RobotDSL Dog",
+  "scene": [
+    {
+      "name": "body",
+      "category": "chassis",
+      "part": "robotdsl_dog_body",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "front_left",
+      "category": "leg",
+      "part": "robotdsl_dog_leg_left",
+      "xyz": [
+        0.085,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.01425,
+            -0.04125
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.0,
+            0.01425,
+            -0.080655577655
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.4873963267947933,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            -0.07951997002720143,
+            0.01425,
+            -0.1228050066769095
+          ],
+          "rpy": [
+            0.0,
+            1.051796326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_left",
+      "category": "leg",
+      "part": "robotdsl_dog_leg_left",
+      "xyz": [
+        -0.085,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.01425,
+            -0.04125
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.0,
+            0.01425,
+            -0.080655577655
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.4873963267947933,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            -0.07951997002720143,
+            0.01425,
+            -0.1228050066769095
+          ],
+          "rpy": [
+            0.0,
+            1.051796326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "front_right",
+      "category": "leg",
+      "part": "robotdsl_dog_leg_right",
+      "xyz": [
+        0.085,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            -0.01425,
+            -0.04125
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.0,
+            -0.01425,
+            -0.080655577655
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.4873963267947933,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            -0.07951997002720143,
+            -0.01425,
+            -0.1228050066769095
+          ],
+          "rpy": [
+            0.0,
+            1.051796326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_right",
+      "category": "leg",
+      "part": "robotdsl_dog_leg_right",
+      "xyz": [
+        -0.085,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            -0.01425,
+            -0.04125
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.0,
+            -0.01425,
+            -0.080655577655
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.4873963267947933,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            -0.07951997002720143,
+            -0.01425,
+            -0.1228050066769095
+          ],
+          "rpy": [
+            0.0,
+            1.051796326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_dog_body": "../../assets/print-models/robotdsl_dog_body/model.glb",
+    "robotdsl_dog_leg_left": "../../assets/print-models/robotdsl_dog_leg_left/model.glb",
+    "robotdsl_dog_leg_left/coxa": "../../assets/print-models/robotdsl_dog_leg_left/coxa.glb",
+    "robotdsl_dog_leg_left/femur": "../../assets/print-models/robotdsl_dog_leg_left/femur.glb",
+    "robotdsl_dog_leg_left/tibia": "../../assets/print-models/robotdsl_dog_leg_left/tibia.glb",
+    "robotdsl_dog_leg_right": "../../assets/print-models/robotdsl_dog_leg_right/model.glb",
+    "robotdsl_dog_leg_right/coxa": "../../assets/print-models/robotdsl_dog_leg_right/coxa.glb",
+    "robotdsl_dog_leg_right/femur": "../../assets/print-models/robotdsl_dog_leg_right/femur.glb",
+    "robotdsl_dog_leg_right/tibia": "../../assets/print-models/robotdsl_dog_leg_right/tibia.glb"
+  }
+}

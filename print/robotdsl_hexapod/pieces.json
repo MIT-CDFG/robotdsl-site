@@ -1,0 +1,90 @@
+{
+  "id": "robotdsl_hexapod",
+  "units": "mm",
+  "pieces": {
+    "robotdsl_hexapod_body/plate": {
+      "url": "../../assets/print-pieces/244a415de02db8d57b918734129934551102dcbb09170bed4a233ca381de76c6.stl",
+      "name": "plate",
+      "material": "PLA",
+      "size_mm": [
+        248.2,
+        200.0,
+        44.0
+      ],
+      "sha256": "244a415de02db8d57b918734129934551102dcbb09170bed4a233ca381de76c6",
+      "size_bytes": 841084
+    },
+    "robotdsl_hexapod_body/deck": {
+      "url": "../../assets/print-pieces/03bacd8de9264952b908eec1b8a2e4dddd716e8bb1c3ddc93f658740e5945c86.stl",
+      "name": "deck",
+      "material": "PLA",
+      "size_mm": [
+        198.6,
+        160.0,
+        4.0
+      ],
+      "sha256": "03bacd8de9264952b908eec1b8a2e4dddd716e8bb1c3ddc93f658740e5945c86",
+      "size_bytes": 128284
+    },
+    "robotdsl_hexapod_leg/coxa_plate": {
+      "url": "../../assets/print-pieces/dc80daebce54cde1000464c4acfca43ca4ead36c050fd20215c2f0b2f41a4352.stl",
+      "name": "coxa plate",
+      "material": "PLA",
+      "size_mm": [
+        68.2,
+        32.0,
+        5.0
+      ],
+      "sha256": "dc80daebce54cde1000464c4acfca43ca4ead36c050fd20215c2f0b2f41a4352",
+      "size_bytes": 456484
+    },
+    "robotdsl_hexapod_leg/femur_plate": {
+      "url": "../../assets/print-pieces/e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5.stl",
+      "name": "femur plate",
+      "material": "PLA",
+      "size_mm": [
+        114.0,
+        24.0,
+        3.0
+      ],
+      "sha256": "e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5",
+      "size_bytes": 279484
+    },
+    "robotdsl_hexapod_leg/foot": {
+      "url": "../../assets/print-pieces/837ed6efcd2ae13ed921a20613dd375ff5bcef0052d87992918298972dcc469a.stl",
+      "name": "foot",
+      "material": "TPU",
+      "size_mm": [
+        24.0,
+        24.0,
+        19.2
+      ],
+      "sha256": "837ed6efcd2ae13ed921a20613dd375ff5bcef0052d87992918298972dcc469a",
+      "size_bytes": 521884
+    },
+    "robotdsl_hexapod_leg/tibia_bracket": {
+      "url": "../../assets/print-pieces/7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80.stl",
+      "name": "tibia bracket",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        41.2
+      ],
+      "sha256": "7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80",
+      "size_bytes": 306284
+    },
+    "robotdsl_hexapod_leg/tibia_beam": {
+      "url": "../../assets/print-pieces/b4eac0a203ab742bdaf1130cd6736dfee1b14ecbdf21718ab99fe977fef0578f.stl",
+      "name": "tibia beam",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        90.8
+      ],
+      "sha256": "b4eac0a203ab742bdaf1130cd6736dfee1b14ecbdf21718ab99fe977fef0578f",
+      "size_bytes": 103084
+    }
+  }
+}

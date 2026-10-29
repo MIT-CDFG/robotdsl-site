@@ -1,0 +1,33 @@
+{
+  "id": "robotdsl_arm_long",
+  "name": "RobotDSL Long Arm",
+  "scene": [
+    {
+      "name": "robotdsl_arm_long",
+      "part": "robotdsl_arm_long",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rpy": [
+        0,
+        0,
+        0
+      ],
+      "visual_xyz": [
+        0,
+        0,
+        0
+      ],
+      "visual_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_arm_long": "../../assets/print-models/robotdsl_arm_long/model.glb"
+  }
+}

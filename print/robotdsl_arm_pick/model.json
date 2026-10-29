@@ -1,0 +1,33 @@
+{
+  "id": "robotdsl_arm_pick",
+  "name": "RobotDSL Pick Arm",
+  "scene": [
+    {
+      "name": "robotdsl_arm_pick",
+      "part": "robotdsl_arm_pick",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rpy": [
+        0,
+        0,
+        0
+      ],
+      "visual_xyz": [
+        0,
+        0,
+        0
+      ],
+      "visual_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_arm_pick": "../../assets/print-models/robotdsl_arm_pick/model.glb"
+  }
+}

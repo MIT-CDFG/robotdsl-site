@@ -1,0 +1,198 @@
+{
+  "id": "robotdsl_biped",
+  "units": "mm",
+  "pieces": {
+    "robotdsl_biped_body/plate": {
+      "url": "../../assets/print-pieces/4bd36f49c6e3ccfede705d991eebe2addb4faa9c58653eba498f8a7c3dab1805.stl",
+      "name": "plate",
+      "material": "PLA",
+      "size_mm": [
+        190.0,
+        120.0,
+        44.0
+      ],
+      "sha256": "4bd36f49c6e3ccfede705d991eebe2addb4faa9c58653eba498f8a7c3dab1805",
+      "size_bytes": 431884
+    },
+    "robotdsl_biped_body/deck": {
+      "url": "../../assets/print-pieces/d232659af9965ed5d5a8cebf1ed59e887a61b8a6a6836b7355740d879011ee73.stl",
+      "name": "deck",
+      "material": "PLA",
+      "size_mm": [
+        152.0,
+        96.0,
+        4.0
+      ],
+      "sha256": "d232659af9965ed5d5a8cebf1ed59e887a61b8a6a6836b7355740d879011ee73",
+      "size_bytes": 128684
+    },
+    "robotdsl_biped_leg_left/hip_bracket": {
+      "url": "../../assets/print-pieces/837d3f8c44f9d5db09d9cbd6a47de5d56525ec6476d0ac82dd1364b85d55ed70.stl",
+      "name": "hip bracket",
+      "material": "PLA",
+      "size_mm": [
+        54.5,
+        34.0,
+        33.5
+      ],
+      "sha256": "837d3f8c44f9d5db09d9cbd6a47de5d56525ec6476d0ac82dd1364b85d55ed70",
+      "size_bytes": 330484
+    },
+    "robotdsl_biped_leg_left/hip_U": {
+      "url": "../../assets/print-pieces/8a7d0217376b781a480ebb3ae571c089f9e6d1f81ead07a91aa33c7f432f5eb5.stl",
+      "name": "hip U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "8a7d0217376b781a480ebb3ae571c089f9e6d1f81ead07a91aa33c7f432f5eb5",
+      "size_bytes": 483084
+    },
+    "robotdsl_biped_leg_left/femur_plate": {
+      "url": "../../assets/print-pieces/215e1a9b08a44d741d82b1368d472dfdb2a1e406ced4d1d0d5bfa8edb4fd553e.stl",
+      "name": "femur plate",
+      "material": "PLA",
+      "size_mm": [
+        124.0,
+        24.0,
+        3.0
+      ],
+      "sha256": "215e1a9b08a44d741d82b1368d472dfdb2a1e406ced4d1d0d5bfa8edb4fd553e",
+      "size_bytes": 279484
+    },
+    "robotdsl_biped_leg_left/shin_plate": {
+      "url": "../../assets/print-pieces/f830fe1cea58a561938be74b56fb02dbb76ff968b3e75d479e1d151a30d74f57.stl",
+      "name": "shin plate",
+      "material": "PLA",
+      "size_mm": [
+        104.0,
+        32.0,
+        3.2
+      ],
+      "sha256": "f830fe1cea58a561938be74b56fb02dbb76ff968b3e75d479e1d151a30d74f57",
+      "size_bytes": 203884
+    },
+    "robotdsl_biped_leg_left/ankle_U": {
+      "url": "../../assets/print-pieces/b7c4acc29dde3c30aafb445f41007fdcdb6244c77adb779257989484658813b7.stl",
+      "name": "ankle U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "b7c4acc29dde3c30aafb445f41007fdcdb6244c77adb779257989484658813b7",
+      "size_bytes": 483084
+    },
+    "robotdsl_biped_leg_left/sole_pad": {
+      "url": "../../assets/print-pieces/a002a9a35236805e7ca690ff173aecc534d302b65c1edc2e7936089f5d03cce7.stl",
+      "name": "sole pad",
+      "material": "TPU",
+      "size_mm": [
+        130.0,
+        60.0,
+        3.0
+      ],
+      "sha256": "a002a9a35236805e7ca690ff173aecc534d302b65c1edc2e7936089f5d03cce7",
+      "size_bytes": 26284
+    },
+    "robotdsl_biped_leg_left/sole": {
+      "url": "../../assets/print-pieces/c2861b9c8b9bb389b335c9caf93819324436f6a5bb6fe4b3e98740c41c67a302.stl",
+      "name": "sole",
+      "material": "PLA",
+      "size_mm": [
+        130.0,
+        60.0,
+        45.8
+      ],
+      "sha256": "c2861b9c8b9bb389b335c9caf93819324436f6a5bb6fe4b3e98740c41c67a302",
+      "size_bytes": 306684
+    },
+    "robotdsl_biped_leg_right/hip_bracket": {
+      "url": "../../assets/print-pieces/69ea381a98cfb9c4f5ab86067d37efc7e88aa525d05a3ea984dd7818134dac14.stl",
+      "name": "hip bracket",
+      "material": "PLA",
+      "size_mm": [
+        54.5,
+        34.0,
+        33.5
+      ],
+      "sha256": "69ea381a98cfb9c4f5ab86067d37efc7e88aa525d05a3ea984dd7818134dac14",
+      "size_bytes": 330484
+    },
+    "robotdsl_biped_leg_right/hip_U": {
+      "url": "../../assets/print-pieces/4cff4264150939043c2865bde4cb8b6dbf3e5bda8d12cd4c4050d8c2a9fb0056.stl",
+      "name": "hip U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "4cff4264150939043c2865bde4cb8b6dbf3e5bda8d12cd4c4050d8c2a9fb0056",
+      "size_bytes": 483084
+    },
+    "robotdsl_biped_leg_right/femur_plate": {
+      "url": "../../assets/print-pieces/215e1a9b08a44d741d82b1368d472dfdb2a1e406ced4d1d0d5bfa8edb4fd553e.stl",
+      "name": "femur plate",
+      "material": "PLA",
+      "size_mm": [
+        124.0,
+        24.0,
+        3.0
+      ],
+      "sha256": "215e1a9b08a44d741d82b1368d472dfdb2a1e406ced4d1d0d5bfa8edb4fd553e",
+      "size_bytes": 279484
+    },
+    "robotdsl_biped_leg_right/shin_plate": {
+      "url": "../../assets/print-pieces/f830fe1cea58a561938be74b56fb02dbb76ff968b3e75d479e1d151a30d74f57.stl",
+      "name": "shin plate",
+      "material": "PLA",
+      "size_mm": [
+        104.0,
+        32.0,
+        3.2
+      ],
+      "sha256": "f830fe1cea58a561938be74b56fb02dbb76ff968b3e75d479e1d151a30d74f57",
+      "size_bytes": 203884
+    },
+    "robotdsl_biped_leg_right/ankle_U": {
+      "url": "../../assets/print-pieces/a7fe395c3ae0649a0682d8b544fd3f21d0a8beb417358cfa01b2293015db68aa.stl",
+      "name": "ankle U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "a7fe395c3ae0649a0682d8b544fd3f21d0a8beb417358cfa01b2293015db68aa",
+      "size_bytes": 483084
+    },
+    "robotdsl_biped_leg_right/sole_pad": {
+      "url": "../../assets/print-pieces/52cd1cd3a239c165b74058da9d8c57f0f9ebe1e76efbe4ff53d0090206712e0f.stl",
+      "name": "sole pad",
+      "material": "TPU",
+      "size_mm": [
+        130.0,
+        60.0,
+        3.0
+      ],
+      "sha256": "52cd1cd3a239c165b74058da9d8c57f0f9ebe1e76efbe4ff53d0090206712e0f",
+      "size_bytes": 26284
+    },
+    "robotdsl_biped_leg_right/sole": {
+      "url": "../../assets/print-pieces/95eb5cc7f60ecc26ff2ac42c412e91a6587eb62ecc9409ae094ecde3601d7265.stl",
+      "name": "sole",
+      "material": "PLA",
+      "size_mm": [
+        130.0,
+        60.0,
+        45.8
+      ],
+      "sha256": "95eb5cc7f60ecc26ff2ac42c412e91a6587eb62ecc9409ae094ecde3601d7265",
+      "size_bytes": 306684
+    }
+  }
+}

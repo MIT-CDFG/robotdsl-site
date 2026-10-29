@@ -1,0 +1,378 @@
+{
+  "id": "robotdsl_biped",
+  "name": "RobotDSL Biped",
+  "scene": [
+    {
+      "name": "body",
+      "category": "chassis",
+      "part": "robotdsl_biped_body",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "left",
+      "category": "leg",
+      "part": "robotdsl_biped_leg_left",
+      "xyz": [
+        0.0,
+        0.07,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "hip_yaw",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "hip_roll",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.07924999999999999
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "hip_pitch",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.11865557765499998
+          ],
+          "rpy": [
+            0.0,
+            1.254596326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "knee",
+          "xyz": [
+            0.031095720354053953,
+            0.0,
+            -0.21369796912145286
+          ],
+          "rpy": [
+            3.141592653589793,
+            1.254696326794793,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ankle_pitch",
+          "xyz": [
+            9.504394589736342e-06,
+            0.0,
+            -0.30874346968471755
+          ],
+          "rpy": [
+            -0.0,
+            1.570796326794793,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ankle_roll",
+          "xyz": [
+            9.50439458565675e-06,
+            0.0,
+            -0.3481490473397175
+          ],
+          "rpy": [
+            -0.0,
+            1.570796326794793,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "right",
+      "category": "leg",
+      "part": "robotdsl_biped_leg_right",
+      "xyz": [
+        0.0,
+        -0.07,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "hip_yaw",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "hip_roll",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.07924999999999999
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "hip_pitch",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.11865557765499998
+          ],
+          "rpy": [
+            0.0,
+            1.254596326795,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "knee",
+          "xyz": [
+            0.031095720354053953,
+            0.0,
+            -0.21369796912145286
+          ],
+          "rpy": [
+            3.141592653589793,
+            1.254696326794793,
+            3.141592653589793
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ankle_pitch",
+          "xyz": [
+            9.504394589736342e-06,
+            0.0,
+            -0.30874346968471755
+          ],
+          "rpy": [
+            -0.0,
+            1.570796326794793,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ankle_roll",
+          "xyz": [
+            9.50439458565675e-06,
+            0.0,
+            -0.3481490473397175
+          ],
+          "rpy": [
+            -0.0,
+            1.570796326794793,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_biped_body": "../../assets/print-models/robotdsl_biped_body/model.glb",
+    "robotdsl_biped_leg_left": "../../assets/print-models/robotdsl_biped_leg_left/model.glb",
+    "robotdsl_biped_leg_left/hip_yaw": "../../assets/print-models/robotdsl_biped_leg_left/hip_yaw.glb",
+    "robotdsl_biped_leg_left/hip_roll": "../../assets/print-models/robotdsl_biped_leg_left/hip_roll.glb",
+    "robotdsl_biped_leg_left/hip_pitch": "../../assets/print-models/robotdsl_biped_leg_left/hip_pitch.glb",
+    "robotdsl_biped_leg_left/knee": "../../assets/print-models/robotdsl_biped_leg_left/knee.glb",
+    "robotdsl_biped_leg_left/ankle_pitch": "../../assets/print-models/robotdsl_biped_leg_left/ankle_pitch.glb",
+    "robotdsl_biped_leg_left/ankle_roll": "../../assets/print-models/robotdsl_biped_leg_left/ankle_roll.glb",
+    "robotdsl_biped_leg_right": "../../assets/print-models/robotdsl_biped_leg_right/model.glb",
+    "robotdsl_biped_leg_right/hip_yaw": "../../assets/print-models/robotdsl_biped_leg_right/hip_yaw.glb",
+    "robotdsl_biped_leg_right/hip_roll": "../../assets/print-models/robotdsl_biped_leg_right/hip_roll.glb",
+    "robotdsl_biped_leg_right/hip_pitch": "../../assets/print-models/robotdsl_biped_leg_right/hip_pitch.glb",
+    "robotdsl_biped_leg_right/knee": "../../assets/print-models/robotdsl_biped_leg_right/knee.glb",
+    "robotdsl_biped_leg_right/ankle_pitch": "../../assets/print-models/robotdsl_biped_leg_right/ankle_pitch.glb",
+    "robotdsl_biped_leg_right/ankle_roll": "../../assets/print-models/robotdsl_biped_leg_right/ankle_roll.glb"
+  }
+}

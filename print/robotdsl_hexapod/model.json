@@ -1,0 +1,614 @@
+{
+  "id": "robotdsl_hexapod",
+  "name": "RobotDSL Hexapod",
+  "scene": [
+    {
+      "name": "body",
+      "category": "chassis",
+      "part": "robotdsl_hexapod_body",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "front_left",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        0.09,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.7853981633974483
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "middle_left",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        1.5707963267948966
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_left",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        -0.09,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        2.356194490192345
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "front_right",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        0.09,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        -0.7853981633974483
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "middle_right",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        -1.5707963267948966
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_right",
+      "category": "leg",
+      "part": "robotdsl_hexapod_leg",
+      "xyz": [
+        -0.09,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        -2.356194490192345
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.55,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.12172720698535551,
+            0.0,
+            -0.008208149396240663
+          ],
+          "rpy": [
+            0.0,
+            1.4999999999999998,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_hexapod_body": "../../assets/print-models/robotdsl_hexapod_body/model.glb",
+    "robotdsl_hexapod_leg": "../../assets/print-models/robotdsl_hexapod_leg/model.glb",
+    "robotdsl_hexapod_leg/coxa": "../../assets/print-models/robotdsl_hexapod_leg/coxa.glb",
+    "robotdsl_hexapod_leg/femur": "../../assets/print-models/robotdsl_hexapod_leg/femur.glb",
+    "robotdsl_hexapod_leg/tibia": "../../assets/print-models/robotdsl_hexapod_leg/tibia.glb"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "robotdsl_arm_draw",
+  "name": "RobotDSL Drawing Arm",
+  "scene": [
+    {
+      "name": "robotdsl_arm_draw",
+      "part": "robotdsl_arm_draw",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rpy": [
+        0,
+        0,
+        0
+      ],
+      "visual_xyz": [
+        0,
+        0,
+        0
+      ],
+      "visual_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_arm_draw": "../../assets/print-models/robotdsl_arm_draw/model.glb"
+  }
+}

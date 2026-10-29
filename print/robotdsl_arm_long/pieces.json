@@ -1,0 +1,102 @@
+{
+  "id": "robotdsl_arm_long",
+  "units": "mm",
+  "pieces": {
+    "robotdsl_arm_long/base_plate": {
+      "url": "../../assets/print-pieces/b7a40d2355edd752fbf9ad56ffb53551ce81e5979fb8d15bb5349cc1166c6983.stl",
+      "name": "base plate",
+      "material": "PLA",
+      "size_mm": [
+        140.0,
+        110.0,
+        13.0
+      ],
+      "sha256": "b7a40d2355edd752fbf9ad56ffb53551ce81e5979fb8d15bb5349cc1166c6983",
+      "size_bytes": 229484
+    },
+    "robotdsl_arm_long/shoulder_bracket": {
+      "url": "../../assets/print-pieces/f72ac84286cb53dbe5bfac5f125b5be4403ec9001ec0934256619d16f8775763.stl",
+      "name": "shoulder bracket",
+      "material": "PLA",
+      "size_mm": [
+        54.4,
+        28.0,
+        32.9
+      ],
+      "sha256": "f72ac84286cb53dbe5bfac5f125b5be4403ec9001ec0934256619d16f8775763",
+      "size_bytes": 256484
+    },
+    "robotdsl_arm_long/shoulder_plate": {
+      "url": "../../assets/print-pieces/0f0867e2c1fbef5aa49fb4c2fc269b01630ee4b77d6f418b762552b5329c4ab1.stl",
+      "name": "shoulder plate",
+      "material": "PLA",
+      "size_mm": [
+        184.7,
+        27.8,
+        4.0
+      ],
+      "sha256": "0f0867e2c1fbef5aa49fb4c2fc269b01630ee4b77d6f418b762552b5329c4ab1",
+      "size_bytes": 268884
+    },
+    "robotdsl_arm_long/elbow_plate": {
+      "url": "../../assets/print-pieces/935a117af66057f79de1bb6b29d2fab72cb2c10d3ab1256088904eb94fbe132e.stl",
+      "name": "elbow plate",
+      "material": "PLA",
+      "size_mm": [
+        164.7,
+        27.8,
+        4.0
+      ],
+      "sha256": "935a117af66057f79de1bb6b29d2fab72cb2c10d3ab1256088904eb94fbe132e",
+      "size_bytes": 268884
+    },
+    "robotdsl_arm_long/wrist_bracket": {
+      "url": "../../assets/print-pieces/5e1e38250abdec59977d2d8f6d2ff5111c8b411225d1c1c8f6804442f99fa960.stl",
+      "name": "wrist bracket",
+      "material": "PLA",
+      "size_mm": [
+        50.6,
+        36.6,
+        35.6
+      ],
+      "sha256": "5e1e38250abdec59977d2d8f6d2ff5111c8b411225d1c1c8f6804442f99fa960",
+      "size_bytes": 269284
+    },
+    "robotdsl_arm_long/palm": {
+      "url": "../../assets/print-pieces/7ed9e5567e428726284f1e737fc9a456ee70327f947ae008cc2d950f545eb798.stl",
+      "name": "palm",
+      "material": "PLA",
+      "size_mm": [
+        54.4,
+        41.5,
+        42.6
+      ],
+      "sha256": "7ed9e5567e428726284f1e737fc9a456ee70327f947ae008cc2d950f545eb798",
+      "size_bytes": 307684
+    },
+    "robotdsl_arm_long/fixed_finger": {
+      "url": "../../assets/print-pieces/acab8951a03c6c890830797da53ab4dbadebe8aab5859cf78a6184e0a78e2e1b.stl",
+      "name": "fixed finger",
+      "material": "PLA",
+      "size_mm": [
+        93.7,
+        8.0,
+        20.0
+      ],
+      "sha256": "acab8951a03c6c890830797da53ab4dbadebe8aab5859cf78a6184e0a78e2e1b",
+      "size_bytes": 51884
+    },
+    "robotdsl_arm_long/moving_finger": {
+      "url": "../../assets/print-pieces/3fbd863b7fe0d97938919daa3bf5a53d322afcbf6fe65b9a3d66e6a0de26c8e3.stl",
+      "name": "moving finger",
+      "material": "PLA",
+      "size_mm": [
+        68.0,
+        26.0,
+        4.0
+      ],
+      "sha256": "3fbd863b7fe0d97938919daa3bf5a53d322afcbf6fe65b9a3d66e6a0de26c8e3",
+      "size_bytes": 149484
+    }
+  }
+}

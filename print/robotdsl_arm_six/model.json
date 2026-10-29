@@ -1,0 +1,33 @@
+{
+  "id": "robotdsl_arm_six",
+  "name": "RobotDSL Six-Axis Arm",
+  "scene": [
+    {
+      "name": "robotdsl_arm_six",
+      "part": "robotdsl_arm_six",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rpy": [
+        0,
+        0,
+        0
+      ],
+      "visual_xyz": [
+        0,
+        0,
+        0
+      ],
+      "visual_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_arm_six": "../../assets/print-models/robotdsl_arm_six/model.glb"
+  }
+}

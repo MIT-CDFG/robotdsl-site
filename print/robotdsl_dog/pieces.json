@@ -1,0 +1,174 @@
+{
+  "id": "robotdsl_dog",
+  "units": "mm",
+  "pieces": {
+    "robotdsl_dog_body/plate": {
+      "url": "../../assets/print-pieces/7619a9cc170f3ba94ec1c0904160cdd2b976e1a9c0b8f651f1dc392ed0e9e40b.stl",
+      "name": "plate",
+      "material": "PLA",
+      "size_mm": [
+        240.0,
+        140.0,
+        44.0
+      ],
+      "sha256": "7619a9cc170f3ba94ec1c0904160cdd2b976e1a9c0b8f651f1dc392ed0e9e40b",
+      "size_bytes": 635084
+    },
+    "robotdsl_dog_body/deck": {
+      "url": "../../assets/print-pieces/d30fc867619986442beb0b4f59aa2d674c4fb562db91721bec687ecfe8703641.stl",
+      "name": "deck",
+      "material": "PLA",
+      "size_mm": [
+        192.0,
+        112.0,
+        4.0
+      ],
+      "sha256": "d30fc867619986442beb0b4f59aa2d674c4fb562db91721bec687ecfe8703641",
+      "size_bytes": 128684
+    },
+    "robotdsl_dog_leg_left/hip_bracket": {
+      "url": "../../assets/print-pieces/45adeae7143ccf5b10b88c4beb3c4255f2a3a25abc8a07405c4a6aaea82a869a.stl",
+      "name": "hip bracket",
+      "material": "PLA",
+      "size_mm": [
+        52.5,
+        50.0,
+        30.0
+      ],
+      "sha256": "45adeae7143ccf5b10b88c4beb3c4255f2a3a25abc8a07405c4a6aaea82a869a",
+      "size_bytes": 204684
+    },
+    "robotdsl_dog_leg_left/coxa_U": {
+      "url": "../../assets/print-pieces/8a7d0217376b781a480ebb3ae571c089f9e6d1f81ead07a91aa33c7f432f5eb5.stl",
+      "name": "coxa U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "8a7d0217376b781a480ebb3ae571c089f9e6d1f81ead07a91aa33c7f432f5eb5",
+      "size_bytes": 483084
+    },
+    "robotdsl_dog_leg_left/femur_plate": {
+      "url": "../../assets/print-pieces/e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5.stl",
+      "name": "femur plate",
+      "material": "PLA",
+      "size_mm": [
+        114.0,
+        24.0,
+        3.0
+      ],
+      "sha256": "e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5",
+      "size_bytes": 279484
+    },
+    "robotdsl_dog_leg_left/foot": {
+      "url": "../../assets/print-pieces/8a49b69127351e0d640bed1e521fd2f1fb5b0060439538a2016dd435b924433d.stl",
+      "name": "foot",
+      "material": "TPU",
+      "size_mm": [
+        26.0,
+        26.0,
+        20.8
+      ],
+      "sha256": "8a49b69127351e0d640bed1e521fd2f1fb5b0060439538a2016dd435b924433d",
+      "size_bytes": 573484
+    },
+    "robotdsl_dog_leg_left/tibia_bracket": {
+      "url": "../../assets/print-pieces/7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80.stl",
+      "name": "tibia bracket",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        41.2
+      ],
+      "sha256": "7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80",
+      "size_bytes": 306284
+    },
+    "robotdsl_dog_leg_left/tibia_beam": {
+      "url": "../../assets/print-pieces/d7e842798c55fbe1293553c5ba11c4b8a31a332a7362c454b5fe948bea84f34c.stl",
+      "name": "tibia beam",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        80.8
+      ],
+      "sha256": "d7e842798c55fbe1293553c5ba11c4b8a31a332a7362c454b5fe948bea84f34c",
+      "size_bytes": 103084
+    },
+    "robotdsl_dog_leg_right/hip_bracket": {
+      "url": "../../assets/print-pieces/949276bf8358681bb2587c2e82ddc3bd569d34e4cbbc91b18382fef203030ccc.stl",
+      "name": "hip bracket",
+      "material": "PLA",
+      "size_mm": [
+        52.5,
+        50.0,
+        30.0
+      ],
+      "sha256": "949276bf8358681bb2587c2e82ddc3bd569d34e4cbbc91b18382fef203030ccc",
+      "size_bytes": 204684
+    },
+    "robotdsl_dog_leg_right/coxa_U": {
+      "url": "../../assets/print-pieces/4cff4264150939043c2865bde4cb8b6dbf3e5bda8d12cd4c4050d8c2a9fb0056.stl",
+      "name": "coxa U",
+      "material": "PLA",
+      "size_mm": [
+        55.0,
+        24.0,
+        37.2
+      ],
+      "sha256": "4cff4264150939043c2865bde4cb8b6dbf3e5bda8d12cd4c4050d8c2a9fb0056",
+      "size_bytes": 483084
+    },
+    "robotdsl_dog_leg_right/femur_plate": {
+      "url": "../../assets/print-pieces/e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5.stl",
+      "name": "femur plate",
+      "material": "PLA",
+      "size_mm": [
+        114.0,
+        24.0,
+        3.0
+      ],
+      "sha256": "e451bba6a9f76c09b1420dbb53224e02b6085dd3fb7ce7254e93c711ca8e5cd5",
+      "size_bytes": 279484
+    },
+    "robotdsl_dog_leg_right/foot": {
+      "url": "../../assets/print-pieces/8a49b69127351e0d640bed1e521fd2f1fb5b0060439538a2016dd435b924433d.stl",
+      "name": "foot",
+      "material": "TPU",
+      "size_mm": [
+        26.0,
+        26.0,
+        20.8
+      ],
+      "sha256": "8a49b69127351e0d640bed1e521fd2f1fb5b0060439538a2016dd435b924433d",
+      "size_bytes": 573484
+    },
+    "robotdsl_dog_leg_right/tibia_bracket": {
+      "url": "../../assets/print-pieces/7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80.stl",
+      "name": "tibia bracket",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        41.2
+      ],
+      "sha256": "7bc8e5a727869ab7608590cd39e1b3256a14b0269edc707a0dec2260c5822d80",
+      "size_bytes": 306284
+    },
+    "robotdsl_dog_leg_right/tibia_beam": {
+      "url": "../../assets/print-pieces/d7e842798c55fbe1293553c5ba11c4b8a31a332a7362c454b5fe948bea84f34c.stl",
+      "name": "tibia beam",
+      "material": "PLA",
+      "size_mm": [
+        34.9,
+        32.0,
+        80.8
+      ],
+      "sha256": "d7e842798c55fbe1293553c5ba11c4b8a31a332a7362c454b5fe948bea84f34c",
+      "size_bytes": 103084
+    }
+  }
+}

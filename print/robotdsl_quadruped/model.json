@@ -1,0 +1,422 @@
+{
+  "id": "robotdsl_quadruped",
+  "name": "RobotDSL Quadruped",
+  "scene": [
+    {
+      "name": "body",
+      "category": "chassis",
+      "part": "robotdsl_quadruped_body",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "front_left",
+      "category": "leg",
+      "part": "robotdsl_quadruped_leg",
+      "xyz": [
+        0.08,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        0.7853981633974483
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.9563,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.09688923559976376,
+            0.0,
+            0.018285754765095127
+          ],
+          "rpy": [
+            0.0,
+            1.1074,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_left",
+      "category": "leg",
+      "part": "robotdsl_quadruped_leg",
+      "xyz": [
+        -0.08,
+        0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        2.356194490192345
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.9563,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.09688923559976376,
+            0.0,
+            0.018285754765095127
+          ],
+          "rpy": [
+            0.0,
+            1.1074,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "front_right",
+      "category": "leg",
+      "part": "robotdsl_quadruped_leg",
+      "xyz": [
+        0.08,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        -0.7853981633974483
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.9563,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.09688923559976376,
+            0.0,
+            0.018285754765095127
+          ],
+          "rpy": [
+            0.0,
+            1.1074,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rear_right",
+      "category": "leg",
+      "part": "robotdsl_quadruped_leg",
+      "xyz": [
+        -0.08,
+        -0.055,
+        0.0
+      ],
+      "rpy": [
+        0.0,
+        -0.0,
+        -2.356194490192345
+      ],
+      "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "links": [
+        {
+          "name": "coxa",
+          "xyz": [
+            0.0,
+            0.0,
+            -0.036
+          ],
+          "rpy": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "femur",
+          "xyz": [
+            0.045,
+            0.0,
+            -0.055249999999999994
+          ],
+          "rpy": [
+            0.0,
+            -0.9563,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "tibia",
+          "xyz": [
+            0.09688923559976376,
+            0.0,
+            0.018285754765095127
+          ],
+          "rpy": [
+            0.0,
+            1.1074,
+            0.0
+          ],
+          "visual_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "meshes": {
+    "robotdsl_quadruped_body": "../../assets/print-models/robotdsl_quadruped_body/model.glb",
+    "robotdsl_quadruped_leg": "../../assets/print-models/robotdsl_quadruped_leg/model.glb",
+    "robotdsl_quadruped_leg/coxa": "../../assets/print-models/robotdsl_quadruped_leg/coxa.glb",
+    "robotdsl_quadruped_leg/femur": "../../assets/print-models/robotdsl_quadruped_leg/femur.glb",
+    "robotdsl_quadruped_leg/tibia": "../../assets/print-models/robotdsl_quadruped_leg/tibia.glb"
+  }
+}
