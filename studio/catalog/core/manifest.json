@@ -6,12 +6,12 @@
   },
   "lark": "1.3.1",
   "library": {
-    "parts": 1093,
+    "parts": 1104,
     "walkers": 2
   },
   "examples": {
     "file": "examples.json",
-    "count": 122
+    "count": 126
   },
   "presets": [
     {
@@ -152,16 +152,16 @@
         "bytes": 1840336
       },
       "gobilda_gripforce_mecanum_104mm_fl_rr": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
-        "bytes": 3159948
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
+        "bytes": 7529744
       },
       "gobilda_gripforce_mecanum_104mm_fr_rl": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_gripforce_mecanum_104mm_fr_rl/assets/model.glb",
-        "bytes": 3113296
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/gobilda_gripforce_mecanum_104mm_fr_rl/assets/model.glb",
+        "bytes": 7520312
       },
       "gobilda_strafer_chassis_kit_104mm": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/7a3a1c57deb1180fcb7cb36df878c970149f2c27/parts/gobilda_strafer_chassis_kit_104mm/assets/model.glb",
-        "bytes": 10773252
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/gobilda_strafer_chassis_kit_104mm/assets/model.glb",
+        "bytes": 34464716
       },
       "hiwonder_mentorpi_m1_chassis": {
         "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/4e20a458e56f102ed51d4062d7371a978fd43c49/parts/hiwonder_mentorpi_m1_chassis/assets/model.glb",
@@ -9544,6 +9544,50 @@
       "robotdsl_mount_strafer_omx_pair_bridge": {
         "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/684ccaaf7e1e6016740db7c05b47c3fa174f9dcd/parts/robotdsl_mount_strafer_omx_pair_bridge/assets/model.glb",
         "bytes": 322612
+      },
+      "pololu_d42v110f5_5v_regulator": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/27445abc85f188fd58852d20284267500d0f7ae4/parts/pololu_d42v110f5_5v_regulator/assets/model.glb",
+        "bytes": 822324
+      },
+      "gobilda_yellow_jacket_5203_2402_0019": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/gobilda_yellow_jacket_5203_2402_0019/assets/model.glb",
+        "bytes": 1512620
+      },
+      "gobilda_nimh_battery_12v_3000mah": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/d627c7d1d31affec4a49447a0c8382faf5639705/parts/gobilda_nimh_battery_12v_3000mah/assets/model.glb",
+        "bytes": 862192
+      },
+      "gobilda_nested_battery_mount_1209_0001_0001": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/8575f57dddb1a423e66555525713c4fa74576f7f/parts/gobilda_nested_battery_mount_1209_0001_0001/assets/model.glb",
+        "bytes": 2828912
+      },
+      "robotdsl_strafer_pi5_motoron_carrier": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/robotdsl_strafer_pi5_motoron_carrier/assets/model.glb",
+        "bytes": 527600
+      },
+      "robotdsl_mount_strafer_d42v110f5": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/robotdsl_mount_strafer_d42v110f5/assets/model.glb",
+        "bytes": 267440
+      },
+      "robotdsl_mount_strafer_u2d2_power_hub": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/robotdsl_mount_strafer_u2d2_power_hub/assets/model.glb",
+        "bytes": 562824
+      },
+      "robotis_u2d2_usb_c": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/robotis_u2d2_usb_c/assets/model.glb",
+        "bytes": 517192
+      },
+      "robotis_u2d2_power_hub": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/robotis_u2d2_power_hub/assets/model.glb",
+        "bytes": 537692
+      },
+      "litech_lrl1220_lifepo4_battery": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/c4f9bad3ab1e2399d16d3a090671a220fa3d4139/parts/litech_lrl1220_lifepo4_battery/assets/model.glb",
+        "bytes": 1996280
+      },
+      "robotdsl_strafer_lrl1220_battery_bridge": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets/resolve/8575f57dddb1a423e66555525713c4fa74576f7f/parts/robotdsl_strafer_lrl1220_battery_bridge/assets/model.glb",
+        "bytes": 363924
       }
     }
   },
