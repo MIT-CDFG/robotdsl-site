@@ -13,7 +13,7 @@ the path it is built for.
 - `index.html`, `assets/` — the project page (MobileDSL 1.0, MobileCopilot, results, real-robot runs, community).
 - `docs/` — the RobotDSL documentation (guide, reference, development notes), built with VitePress from the compiler repository's `docs/` for the published path `/robotdsl-site/docs/` and copied here. `docs/release-qa/` and `docs/asset-sources.md` are this site's own.
 - `guide/` — forwards the retired site guide's address to the documentation.
-- `studio/` — MobileCopilot Studio front end with the component library: each part with its price and a link to the maker's page where it is sold, drawn from the library's 3D models on Hugging Face (https://huggingface.co/datasets/Aki-Frank/robotdsl-library-assets), and the LEGO showcase, each robot assembled brick by brick. This static copy has no compiler behind it: Build and the copilot are off until the Studio is served with one.
+- `studio/` — MobileCopilot Studio front end with the component library: each part with its price and a link to the maker's page where it is sold, drawn from the library's 3D models on Hugging Face (https://huggingface.co/datasets/Aki-Frank/robotdsl-parts), and the LEGO showcase, each robot assembled brick by brick. This static copy has no compiler behind it: Build and the copilot are off until the Studio is served with one.
 
 Questions, designs and announcements: use Discussions. Problems with a generated design or the site: open an Issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for reports, part uploads and discussions, and [LICENSE.md](LICENSE.md) for what may be reused.
 
