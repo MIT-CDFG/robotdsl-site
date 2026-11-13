@@ -99812,12 +99812,12 @@
        "part_span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 393,
+         "byte_offset": 384,
          "line": 6,
          "column": 14
         },
         "end": {
-         "byte_offset": 430,
+         "byte_offset": 421,
          "line": 6,
          "column": 51
         }
@@ -99917,12 +99917,12 @@
        "part_span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 454,
+         "byte_offset": 445,
          "line": 8,
          "column": 9
         },
         "end": {
-         "byte_offset": 518,
+         "byte_offset": 509,
          "line": 8,
          "column": 73
         }
@@ -101552,12 +101552,12 @@
        "span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 393,
+         "byte_offset": 384,
          "line": 6,
          "column": 14
         },
         "end": {
-         "byte_offset": 430,
+         "byte_offset": 421,
          "line": 6,
          "column": 51
         }
@@ -101620,12 +101620,12 @@
        "span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 454,
+         "byte_offset": 445,
          "line": 8,
          "column": 9
         },
         "end": {
-         "byte_offset": 518,
+         "byte_offset": 509,
          "line": 8,
          "column": 73
         }
@@ -104984,6 +104984,899 @@
    "target_diagnostics": []
   },
   {
+   "id": "strafer_bioenno_tray",
+   "robots": [],
+   "papers": [],
+   "files": {
+    "core": "// A goBILDA Strafer as its kit builds it: the frame with its four motors, and the four mecanum wheels the kit brings.\nRobot strafer_bioenno_tray {\n    intent \"Nominal fit of a printed BLF-1215A battery tray on the Strafer rear-right rail; no drive power wiring or structural qualification\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    // The Strafer kit includes these four motors; retained 1:1 miter gears drive its wheel shafts.\n    Motor motor_front_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, 0.156, 0, 1, 0, 0))\n    Motor motor_front_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, -0.156, 0, 1, 0, 0))\n    Motor motor_rear_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, 0.156, 0, -1, 0, 0))\n    Motor motor_rear_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, -0.156, 0, -1, 0, 0))\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n    Mount battery_tray(ref = \"robotdsl_blf_1215a_printable_tray\", on = @core/chassis, at = \"battery_rear_right\", by = \"mounting_holes\")\n    Battery battery(ref = \"bioenno_blf_1215a_lifepo4_battery\", on = @core/battery_tray, at = \"battery\")\n}\n",
+    "world": "World strafer_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/strafer_bioenno_tray, pose = (0, 0, 0.08, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task strafer_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "robot.core",
+    "world": "world.world",
+    "task": "task.task"
+   },
+   "checked": true,
+   "state": "compiles",
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "gobilda_strafer_chassis_kit_104mm",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      -0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      -0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery_tray",
+     "category": "mount",
+     "part": "robotdsl_blf_1215a_printable_tray",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "bioenno_blf_1215a_lifepo4_battery",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.065
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.052,
+   "validation": [
+    {
+     "rule": "assembly.glue_on_connector",
+     "status": "pass",
+     "evidence": [
+      "8 of 8 glued components mated onto a connector (position within 1 mm, normals within 0.01)"
+     ]
+    },
+    {
+     "rule": "assembly.one_part_per_connector",
+     "status": "pass",
+     "evidence": [
+      "9 connectors in use"
+     ]
+    },
+    {
+     "rule": "assembly.connection_placed",
+     "status": "pass",
+     "evidence": [
+      "1 of 1 parts fastened through their holes placed",
+      "1 of 1 parts stored in a storage region placed"
+     ]
+    },
+    {
+     "rule": "assembly.holes_line_up",
+     "status": "pass",
+     "evidence": [
+      "battery_tray on chassis.battery_rear_right by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'battery_rear_right': clearance holes for a 4 mm screw; 'mounting_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.5 - 4)/2 = 0.25 mm"
+     ]
+    },
+    {
+     "rule": "assembly.one_fastener_per_hole",
+     "status": "pass",
+     "evidence": [
+      "1 connection through holes; 0 holes take the fasteners of two or more"
+     ]
+    },
+    {
+     "rule": "assembly.parts_held",
+     "status": "pass",
+     "evidence": [
+      "battery_tray: on chassis.battery_rear_right by mounting_holes, fastened through its 4 holes",
+      "battery: stored in battery of battery_tray, kept there by its end stops on -x and +x, its strap on +z and walls elsewhere"
+     ]
+    },
+    {
+     "rule": "assembly.wheel_mounts_filled",
+     "status": "pass",
+     "evidence": [
+      "4 motors drive 4 wheels on 4 drive mounts; 0 free wheels on 0 free wheel mounts"
+     ]
+    },
+    {
+     "rule": "assembly.wheel_type_matches_chassis",
+     "status": "pass",
+     "evidence": [
+      "allowed wheel types: Mecanum"
+     ]
+    },
+    {
+     "rule": "assembly.steering_declared",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.omni_wheels_span_the_plane",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.axles_horizontal",
+     "status": "pass",
+     "evidence": [
+      "wheel_front_left: axle (0, -1, 0)",
+      "wheel_front_right: axle (0, 1, 0)",
+      "wheel_rear_left: axle (0, -1, 0)",
+      "wheel_rear_right: axle (0, 1, 0)"
+     ]
+    },
+    {
+     "rule": "assembly.wheels_touch_one_plane",
+     "status": "pass",
+     "evidence": [
+      "contact heights -0.0520, -0.0520, -0.0520, -0.0520 m"
+     ]
+    },
+    {
+     "rule": "assembly.feet_touch_the_ground",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.legs_on_a_legged_chassis",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.one_walker",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.links_clear_the_ground",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "statics.mass_inside_the_wheel_contacts",
+     "status": "pass",
+     "evidence": [
+      "centre of mass (-0.025, -0.052) m",
+      "4 ground contacts",
+      "margin 0.143 m"
+     ]
+    },
+    {
+     "rule": "assembly.footprint_known",
+     "status": "pass",
+     "evidence": [
+      "x in [-0.220, 0.220] m, y in [-0.226, 0.226] m from chassis, motor_front_left, motor_front_right, motor_rear_left, motor_rear_right, wheel_front_left, wheel_front_right, wheel_rear_left, wheel_rear_right, battery_tray, battery"
+     ]
+    },
+    {
+     "rule": "assembly.parts_clear_each_other",
+     "status": "fail",
+     "advisory": true,
+     "evidence": [
+      "1 pair of the 7 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "rule": "assembly.wheels_clear_other_parts",
+     "status": "pass",
+     "evidence": [
+      "the 4 wheels clear of 7 other parts' declared shapes"
+     ]
+    },
+    {
+     "rule": "kinematics.spin_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.strafe_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.walk_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "task.starts_clear_of_obstacles",
+     "status": "pass",
+     "evidence": [
+      "53 shapes of 'strafer_bioenno_tray' where the world spawns it, against 1 obstacle"
+     ]
+    },
+    {
+     "rule": "task.goals_clear_of_obstacles",
+     "status": "pass",
+     "advisory": true,
+     "evidence": [
+      "'strafer_bioenno_tray' covers 0.180 m around its middle whichever way it faces; 1 place the task navigates to, against 1 obstacle"
+     ]
+    },
+    {
+     "rule": "task.speed_within_the_motors",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.gait_walks_the_feet",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.tracks_state_their_travel",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "sensing.range_clears_the_ground",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "power.loads_fed_from_a_battery",
+     "status": "unknown",
+     "evidence": [
+      "motor_front_left, motor_front_right, motor_rear_left, motor_rear_right name no supply"
+     ],
+     "undecided": [
+      {
+       "component": "motor_front_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 471,
+         "line": 8,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 574,
+         "line": 8,
+         "column": 108
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_front_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 579,
+         "line": 9,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 684,
+         "line": 9,
+         "column": 110
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_right has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 689,
+         "line": 10,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 793,
+         "line": 10,
+         "column": 109
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 798,
+         "line": 11,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 904,
+         "line": 11,
+         "column": 111
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_right has no `command`, and the program places no motor driver",
+       "reported": false
+      }
+     ]
+    },
+    {
+     "rule": "power.supply_voltage_accepted",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "power.rated_voltage_in_supply",
+     "status": "unknown",
+     "advisory": true,
+     "evidence": [
+      "motor_front_left, motor_front_right, motor_rear_left, motor_rear_right name no supply"
+     ],
+     "undecided": [
+      {
+       "component": "motor_front_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 471,
+         "line": 8,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 574,
+         "line": 8,
+         "column": 108
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_front_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 579,
+         "line": 9,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 684,
+         "line": 9,
+         "column": 110
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_right has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 689,
+         "line": 10,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 793,
+         "line": 10,
+         "column": 109
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 798,
+         "line": 11,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 904,
+         "line": 11,
+         "column": 111
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_right has no `command`, and the program places no motor driver",
+       "reported": false
+      }
+     ]
+    },
+    {
+     "rule": "power.driver_delivers_stall_current",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "power.source_delivers_continuous_current",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "power.source_delivers_stall_current",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "power.source_delivers_startup_current",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "command.driver_commands_its_motors",
+     "status": "unknown",
+     "evidence": [
+      "motor_front_left, motor_front_right, motor_rear_left, motor_rear_right name no driver"
+     ],
+     "undecided": [
+      {
+       "component": "motor_front_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 471,
+         "line": 8,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 574,
+         "line": 8,
+         "column": 108
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_front_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 579,
+         "line": 9,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 684,
+         "line": 9,
+         "column": 110
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_front_right has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 689,
+         "line": 10,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 793,
+         "line": 10,
+         "column": 109
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_left has no `command`, and the program places no motor driver",
+       "reported": false
+      },
+      {
+       "component": "motor_rear_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 798,
+         "line": 11,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 904,
+         "line": 11,
+         "column": 111
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [
+        "command"
+       ],
+       "message": "motor_rear_right has no `command`, and the program places no motor driver",
+       "reported": false
+      }
+     ]
+    },
+    {
+     "rule": "command.driver_has_a_channel_for_each_motor",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "command.motors_on_one_channel_turn_together",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "link.ports_match",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "link.addresses_differ_on_a_bus",
+     "status": "not_applicable",
+     "evidence": []
+    }
+   ],
+   "diagnostics": [
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'battery_tray' and 'chassis' overlap by 7 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 1477,
+        "line": 18,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 1608,
+        "line": 18,
+        "column": 136
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 296,
+         "line": 5,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 365,
+         "line": 5,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'battery_tray' at least 7 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 1 pair of the 7 fixed parts' declared shapes overlap"
+     ]
+    }
+   ],
+   "target_diagnostics": []
+  },
+  {
    "id": "strafer_drawing_arm",
    "robots": [],
    "papers": [],
@@ -106590,6 +107483,3894 @@
    "target_diagnostics": []
   },
   {
+   "id": "strafer_dual_arm_bioenno",
+   "robots": [],
+   "papers": [],
+   "files": {
+    "core": "// Complete declared power/control topology with a published-range alternative battery.\n// Its checks state the hardware limits: the regulator and the power hub state no current they deliver, so whether the battery delivers enough stays undecided.\nRobot strafer_dual_arm_bioenno {\n    intent \"Two-arm Strafer with source-backed retention, motor controllers, USB/TTL interface and battery-fed power paths; Bioenno BLF-1215A on a printed tray above the rear-right rail\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    // The Strafer kit includes these four motors; retained 1:1 miter gears drive its wheel shafts.\n    Motor motor_front_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, 0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M1\")\n    Motor motor_front_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, -0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M2\")\n    Motor motor_rear_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, 0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M1\")\n    Motor motor_rear_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, -0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M2\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n    Mount battery_holder(ref = \"robotdsl_blf_1215a_printable_tray\", on = @core/chassis, at = \"battery_rear_right\", by = \"mounting_holes\")\n    Battery battery(ref = \"bioenno_blf_1215a_lifepo4_battery\", on = @core/battery_holder, at = \"battery\")\n\n    Mount arm_mount_left(ref = \"robotdsl_mount_strafer_omx_pair_bridge\", on = @core/chassis, at = \"arm_strafer_omx_left\", by = \"under_holes\")\n    Attachment arm_left(ref = \"robotis_openmanipulator_x_rm_x52_tnm\", on = @core/arm_mount_left, at = \"arm_case_holes\", by = \"mounting_holes\", power = @core/power_hub, data = @core/u2d2, port = \"ttl\")\n    Mount arm_mount_right(ref = \"robotdsl_mount_strafer_omx_pair_bridge\", on = @core/chassis, at = \"arm_strafer_omx_right\", by = \"under_holes\")\n    Attachment arm_right(ref = \"robotis_openmanipulator_x_rm_x52_tnm\", on = @core/arm_mount_right, at = \"arm_case_holes_rearward\", by = \"mounting_holes\", power = @core/power_hub, data = @core/u2d2, port = \"ttl\")\n\n    Mount compute_mount(ref = \"robotdsl_strafer_pi5_motoron_carrier\", on = @core/chassis, at = \"compute_strafer_pi5\", by = \"under_holes\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", on = @core/compute_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/regulator)\n    MotorDriver drive_front(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_lower\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x10\")\n    MotorDriver drive_rear(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_upper\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x11\")\n\n    Mount regulator_mount(ref = \"robotdsl_mount_strafer_d42v110f5\", on = @core/chassis, at = \"regulator_front_left\", by = \"under_holes\")\n    Attachment regulator(ref = \"pololu_d42v110f5_5v_regulator\", on = @core/regulator_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/battery)\n    Mount hub_mount(ref = \"robotdsl_mount_strafer_u2d2_power_hub\", on = @core/chassis, at = \"power_hub_front_right\", by = \"under_holes\")\n    Attachment power_hub(ref = \"robotis_u2d2_power_hub\", on = @core/hub_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/battery)\n    Attachment u2d2(ref = \"robotis_u2d2_usb_c\", on = @core/power_hub, at = \"u2d2_capture\", by = \"rivet_lips\", power = @core/computer, output = \"usb_power\", data = @core/computer, port = \"usb2_0\")\n}\n",
+    "world": "World power_review {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/strafer_dual_arm_bioenno, pose = (0, 0, 0.052, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {}\n}\n",
+    "task": "Task inspect(timeout_s = 10) { Stop() }\n"
+   },
+   "names": {
+    "core": "robot.core",
+    "world": "world.world",
+    "task": "task.task"
+   },
+   "checked": true,
+   "state": "compiles",
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "gobilda_strafer_chassis_kit_104mm",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_front_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_left",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fr_rl",
+     "xyz": [
+      -0.168,
+      0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_rear_right",
+     "category": "wheel",
+     "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
+     "xyz": [
+      -0.168,
+      -0.207,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery_holder",
+     "category": "mount",
+     "part": "robotdsl_blf_1215a_printable_tray",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "bioenno_blf_1215a_lifepo4_battery",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.065
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm_mount_left",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_omx_pair_bridge",
+     "xyz": [
+      0.084,
+      0.064,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm_left",
+     "category": "attachment",
+     "part": "robotis_openmanipulator_x_rm_x52_tnm",
+     "xyz": [
+      0.084,
+      0.064,
+      0.034
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.012,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        0.012,
+        0.0,
+        0.0595
+       ],
+       "rpy": [
+        0.0,
+        -0.4,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.015740083959438034,
+        0.0,
+        0.18674184744777694
+       ],
+       "rpy": [
+        0.0,
+        -1.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.029192277595669492,
+        0.0,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_left_link",
+       "xyz": [
+        0.11089227759566947,
+        0.031,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_right_link",
+       "xyz": [
+        0.11089227759566947,
+        -0.031,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "arm_mount_right",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_omx_pair_bridge",
+     "xyz": [
+      0.084,
+      -0.064,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "arm_right",
+     "category": "attachment",
+     "part": "robotis_openmanipulator_x_rm_x52_tnm",
+     "xyz": [
+      0.084,
+      -0.064,
+      0.034
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.012,
+        0.0,
+        0.0
+       ],
+       "rpy": [
+        0.0,
+        -0.0,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        0.012,
+        0.0,
+        0.0595
+       ],
+       "rpy": [
+        0.0,
+        -0.4,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.015740083959438034,
+        0.0,
+        0.18674184744777694
+       ],
+       "rpy": [
+        0.0,
+        -1.2,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.029192277595669492,
+        0.0,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_left_link",
+       "xyz": [
+        0.11089227759566947,
+        0.031,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_right_link",
+       "xyz": [
+        0.11089227759566947,
+        -0.031,
+        0.30231469410771306
+       ],
+       "rpy": [
+        0.0,
+        -5.551115123125784e-17,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "compute_mount",
+     "category": "mount",
+     "part": "robotdsl_strafer_pi5_motoron_carrier",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.03501
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_front",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.047976000000000005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_rear",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.062556
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "regulator_mount",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_d42v110f5",
+     "xyz": [
+      0.096,
+      0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "regulator",
+     "category": "attachment",
+     "part": "pololu_d42v110f5_5v_regulator",
+     "xyz": [
+      0.096,
+      0.156,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "hub_mount",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_u2d2_power_hub",
+     "xyz": [
+      0.096,
+      -0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "power_hub",
+     "category": "attachment",
+     "part": "robotis_u2d2_power_hub",
+     "xyz": [
+      0.096,
+      -0.156,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "u2d2",
+     "category": "attachment",
+     "part": "robotis_u2d2_usb_c",
+     "xyz": [
+      0.10682042391896,
+      -0.156,
+      0.03865
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.052,
+   "validation": [
+    {
+     "rule": "assembly.glue_on_connector",
+     "status": "pass",
+     "evidence": [
+      "8 of 8 glued components mated onto a connector (position within 1 mm, normals within 0.01)"
+     ]
+    },
+    {
+     "rule": "assembly.one_part_per_connector",
+     "status": "pass",
+     "evidence": [
+      "10 connectors in use"
+     ]
+    },
+    {
+     "rule": "assembly.connection_placed",
+     "status": "pass",
+     "evidence": [
+      "13 of 13 parts fastened through their holes placed",
+      "2 of 2 parts stored in a storage region placed"
+     ]
+    },
+    {
+     "rule": "assembly.holes_line_up",
+     "status": "pass",
+     "evidence": [
+      "battery_holder on chassis.battery_rear_right by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'battery_rear_right': clearance holes for a 4 mm screw; 'mounting_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.5 - 4)/2 = 0.25 mm",
+      "arm_mount_left on chassis.arm_strafer_omx_left by under_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'arm_strafer_omx_left': clearance holes for a 4 mm screw; 'under_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.5 - 4)/2 = 0.25 mm",
+      "arm_left on arm_mount_left.arm_case_holes by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'arm_case_holes': clearance holes for a 2.5 mm screw; 'mounting_holes': clearance holes for a 2.5 mm screw; a 2.5 mm screw has play (2.7 - 2.5)/2 + (2.6 - 2.5)/2 = 0.15 mm",
+      "arm_mount_right on chassis.arm_strafer_omx_right by under_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'arm_strafer_omx_right': clearance holes for a 4 mm screw; 'under_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.5 - 4)/2 = 0.25 mm",
+      "arm_right on arm_mount_right.arm_case_holes_rearward by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'arm_case_holes_rearward': clearance holes for a 2.5 mm screw; 'mounting_holes': clearance holes for a 2.5 mm screw; a 2.5 mm screw has play (2.7 - 2.5)/2 + (2.6 - 2.5)/2 = 0.15 mm",
+      "compute_mount on chassis.compute_strafer_pi5 by under_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'compute_strafer_pi5': clearance holes for a 4 mm screw; 'under_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.6 - 4)/2 = 0.3 mm",
+      "computer on compute_mount.board_holes by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'board_holes': threads for a 2.5 mm screw; 'mounting_holes': clearance holes for a 2.5 mm screw; a 2.5 mm screw has play (2.7 - 2.5)/2 = 0.1 mm",
+      "drive_front on compute_mount.motoron_lower by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'motoron_lower': threads for a 2.5 mm screw; 'mounting_holes': clearance holes for a 2.5 mm screw; a 2.5 mm screw has play (2.75 - 2.5)/2 = 0.12 mm",
+      "drive_rear on compute_mount.motoron_upper by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'motoron_upper': threads for a 2.5 mm screw; 'mounting_holes': clearance holes for a 2.5 mm screw; a 2.5 mm screw has play (2.75 - 2.5)/2 = 0.12 mm",
+      "regulator_mount on chassis.regulator_front_left by under_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'regulator_front_left': clearance holes for a 4 mm screw; 'under_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.6 - 4)/2 = 0.3 mm",
+      "regulator on regulator_mount.board_holes by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'board_holes': threads for a 2 mm screw; 'mounting_holes': clearance holes for a 2 mm screw; a 2 mm screw has play (2.18 - 2)/2 = 0.09 mm",
+      "hub_mount on chassis.power_hub_front_right by under_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'power_hub_front_right': clearance holes for a 4 mm screw; 'under_holes': clearance holes for a 4 mm screw; a 4 mm screw has play (4 - 4)/2 + (4.6 - 4)/2 = 0.3 mm",
+      "power_hub on hub_mount.board_holes by mounting_holes at offset_m (0, 0), turn_rad 0: 4 of 4 holes joined; 'board_holes': threads for a 3 mm screw; 'mounting_holes': clearance holes for a 3 mm screw; a 3 mm screw has play (4 - 3)/2 = 0.5 mm"
+     ]
+    },
+    {
+     "rule": "assembly.one_fastener_per_hole",
+     "status": "pass",
+     "evidence": [
+      "13 connections through holes; 0 holes take the fasteners of two or more"
+     ]
+    },
+    {
+     "rule": "assembly.parts_held",
+     "status": "pass",
+     "evidence": [
+      "battery_holder: on chassis.battery_rear_right by mounting_holes, fastened through its 4 holes",
+      "battery: stored in battery of battery_holder, kept there by its end stops on -x and +x, its strap on +z and walls elsewhere",
+      "arm_mount_left: on chassis.arm_strafer_omx_left by under_holes, fastened through its 4 holes",
+      "arm_left: on arm_mount_left.arm_case_holes by mounting_holes, fastened through its 4 holes",
+      "arm_mount_right: on chassis.arm_strafer_omx_right by under_holes, fastened through its 4 holes",
+      "arm_right: on arm_mount_right.arm_case_holes_rearward by mounting_holes, fastened through its 4 holes",
+      "compute_mount: on chassis.compute_strafer_pi5 by under_holes, fastened through its 4 holes",
+      "computer: on compute_mount.board_holes by mounting_holes, fastened through its 4 holes",
+      "drive_front: on compute_mount.motoron_lower by mounting_holes, fastened through its 4 holes",
+      "drive_rear: on compute_mount.motoron_upper by mounting_holes, fastened through its 4 holes",
+      "regulator_mount: on chassis.regulator_front_left by under_holes, fastened through its 4 holes",
+      "regulator: on regulator_mount.board_holes by mounting_holes, fastened through its 4 holes",
+      "hub_mount: on chassis.power_hub_front_right by under_holes, fastened through its 4 holes",
+      "power_hub: on hub_mount.board_holes by mounting_holes, fastened through its 4 holes",
+      "u2d2: captured by feature 'rivet_lips' in u2d2_capture of power_hub, kept there by a wall on -z and its end stops elsewhere"
+     ]
+    },
+    {
+     "rule": "assembly.wheel_mounts_filled",
+     "status": "pass",
+     "evidence": [
+      "4 motors drive 4 wheels on 4 drive mounts; 0 free wheels on 0 free wheel mounts"
+     ]
+    },
+    {
+     "rule": "assembly.wheel_type_matches_chassis",
+     "status": "pass",
+     "evidence": [
+      "allowed wheel types: Mecanum"
+     ]
+    },
+    {
+     "rule": "assembly.steering_declared",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.omni_wheels_span_the_plane",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.axles_horizontal",
+     "status": "pass",
+     "evidence": [
+      "wheel_front_left: axle (0, -1, 0)",
+      "wheel_front_right: axle (0, 1, 0)",
+      "wheel_rear_left: axle (0, -1, 0)",
+      "wheel_rear_right: axle (0, 1, 0)"
+     ]
+    },
+    {
+     "rule": "assembly.wheels_touch_one_plane",
+     "status": "pass",
+     "evidence": [
+      "contact heights -0.0520, -0.0520, -0.0520, -0.0520 m"
+     ]
+    },
+    {
+     "rule": "assembly.feet_touch_the_ground",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.legs_on_a_legged_chassis",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.one_walker",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "assembly.links_clear_the_ground",
+     "status": "pass",
+     "evidence": [
+      "12 shapes of links, the lowest at z = 0.0530 m, the ground at -0.0520 m"
+     ]
+    },
+    {
+     "rule": "statics.mass_inside_the_wheel_contacts",
+     "status": "pass",
+     "evidence": [
+      "centre of mass (0.002, -0.037) m",
+      "4 ground contacts",
+      "margin 0.166 m"
+     ]
+    },
+    {
+     "rule": "assembly.footprint_known",
+     "status": "pass",
+     "evidence": [
+      "x in [-0.220, 0.260] m, y in [-0.226, 0.226] m from chassis, motor_front_left, motor_front_right, motor_rear_left, motor_rear_right, wheel_front_left, wheel_front_right, wheel_rear_left, wheel_rear_right, battery_holder, battery, arm_mount_left, arm_left, arm_mount_right, arm_right, compute_mount, computer, drive_front, drive_rear, regulator_mount, regulator, hub_mount, power_hub, u2d2"
+     ]
+    },
+    {
+     "rule": "assembly.parts_clear_each_other",
+     "status": "fail",
+     "advisory": true,
+     "evidence": [
+      "17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "rule": "assembly.wheels_clear_other_parts",
+     "status": "pass",
+     "evidence": [
+      "the 4 wheels clear of 20 other parts' declared shapes"
+     ]
+    },
+    {
+     "rule": "kinematics.spin_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.strafe_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.walk_supported",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "task.starts_clear_of_obstacles",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "task.goals_clear_of_obstacles",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "task.speed_within_the_motors",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.gait_walks_the_feet",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "kinematics.tracks_state_their_travel",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "sensing.range_clears_the_ground",
+     "status": "not_applicable",
+     "advisory": true,
+     "evidence": []
+    },
+    {
+     "rule": "power.loads_fed_from_a_battery",
+     "status": "pass",
+     "evidence": [
+      "'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right', 'arm_left', 'arm_right', 'computer', 'drive_front', 'drive_rear', 'regulator', 'power_hub', 'u2d2' draw their power from 'battery'"
+     ]
+    },
+    {
+     "rule": "power.supply_voltage_accepted",
+     "status": "pass",
+     "evidence": [
+      "'battery' delivers 10 V to 14.6 V; 'drive_front', 'drive_rear' accept 6.5 V to 24 V",
+      "'battery' delivers 10 V to 14.6 V; 'arm_left', 'arm_right' accept 10 V to 14.8 V",
+      "'regulator' delivers 4.85 V to 5.15 V from 'vout'; 'computer' accepts 4.75 V to 5.5 V",
+      "'battery' delivers 10 V to 14.6 V; 'regulator' accepts 5 V to 60 V",
+      "'battery' delivers 10 V to 14.6 V; 'power_hub' accepts 3.5 V to 24 V",
+      "'regulator' delivers 4.85 V to 5.15 V from 'vout'; 'u2d2' accepts 4.75 V to 5.25 V"
+     ]
+    },
+    {
+     "rule": "power.rated_voltage_in_supply",
+     "status": "pass",
+     "advisory": true,
+     "evidence": [
+      "'battery' delivers 10 V to 14.6 V; 'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right' are rated at 12 V"
+     ]
+    },
+    {
+     "rule": "power.driver_delivers_stall_current",
+     "status": "pass",
+     "advisory": true,
+     "evidence": [
+      "'motor_front_left', 'motor_front_right' each draw 9.2 A stalled at 12 V; 'drive_front' delivers 20 A a channel continuously",
+      "'motor_rear_left', 'motor_rear_right' each draw 9.2 A stalled at 12 V; 'drive_rear' delivers 20 A a channel continuously"
+     ]
+    },
+    {
+     "rule": "power.source_delivers_continuous_current",
+     "status": "unknown",
+     "evidence": [
+      "'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ],
+     "undecided": [
+      {
+       "component": "drive_front",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3267,
+         "line": 29,
+         "column": 211
+        },
+        "end": {
+         "byte_offset": 3280,
+         "line": 29,
+         "column": 224
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_front states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "drive_rear",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3550,
+         "line": 30,
+         "column": 210
+        },
+        "end": {
+         "byte_offset": 3563,
+         "line": 30,
+         "column": 223
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_rear states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 384,
+         "line": 6,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 421,
+         "line": 6,
+         "column": 51
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "computer",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3040,
+         "line": 28,
+         "column": 130
+        },
+        "end": {
+         "byte_offset": 3055,
+         "line": 28,
+         "column": 145
+        }
+       },
+       "part": "raspberry_pi_5_8gb",
+       "part_span": {
+        "source": "library/parts/raspberry_pi_5_8gb/component.yaml",
+        "start": {
+         "byte_offset": 2300,
+         "line": 9,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 2364,
+         "line": 12,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "u2d2",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4320,
+         "line": 36,
+         "column": 119
+        },
+        "end": {
+         "byte_offset": 4334,
+         "line": 36,
+         "column": 133
+        }
+       },
+       "part": "robotis_u2d2_usb_c",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_usb_c/component.yaml",
+        "start": {
+         "byte_offset": 516,
+         "line": 7,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 580,
+         "line": 7,
+         "column": 78
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_u2d2_usb_c of u2d2 states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 445,
+         "line": 8,
+         "column": 9
+        },
+        "end": {
+         "byte_offset": 509,
+         "line": 8,
+         "column": 73
+        }
+       },
+       "missing": [
+        "power_outputs.vout.efficiency"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_outputs.vout.efficiency`",
+       "reported": true
+      },
+      {
+       "component": "power_hub",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4187,
+         "line": 35,
+         "column": 131
+        },
+        "end": {
+         "byte_offset": 4200,
+         "line": 35,
+         "column": 144
+        }
+       },
+       "part": "robotis_u2d2_power_hub",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_power_hub/component.yaml",
+        "start": {
+         "byte_offset": 2341,
+         "line": 31,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 2380,
+         "line": 31,
+         "column": 53
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_u2d2_power_hub of power_hub states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "arm_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2366,
+         "line": 23,
+         "column": 152
+        },
+        "end": {
+         "byte_offset": 2381,
+         "line": 23,
+         "column": 167
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_left states no `power_input.continuous_current_a`",
+       "reported": true
+      },
+      {
+       "component": "arm_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2722,
+         "line": 25,
+         "column": 163
+        },
+        "end": {
+         "byte_offset": 2737,
+         "line": 25,
+         "column": 178
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_right states no `power_input.continuous_current_a`",
+       "reported": true
+      }
+     ]
+    },
+    {
+     "rule": "power.source_delivers_stall_current",
+     "status": "unknown",
+     "advisory": true,
+     "evidence": [
+      "'battery' delivers 60 A at its peak; when every motor behind it starts at once, 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw at least 36.8 A together",
+      "'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver, so what they feed is not judged"
+     ],
+     "undecided": [
+      {
+       "component": "drive_front",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3267,
+         "line": 29,
+         "column": 211
+        },
+        "end": {
+         "byte_offset": 3280,
+         "line": 29,
+         "column": 224
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_front states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "drive_rear",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3550,
+         "line": 30,
+         "column": 210
+        },
+        "end": {
+         "byte_offset": 3563,
+         "line": 30,
+         "column": 223
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_rear states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 384,
+         "line": 6,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 421,
+         "line": 6,
+         "column": 51
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "computer",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3040,
+         "line": 28,
+         "column": 130
+        },
+        "end": {
+         "byte_offset": 3055,
+         "line": 28,
+         "column": 145
+        }
+       },
+       "part": "raspberry_pi_5_8gb",
+       "part_span": {
+        "source": "library/parts/raspberry_pi_5_8gb/component.yaml",
+        "start": {
+         "byte_offset": 2300,
+         "line": 9,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 2364,
+         "line": 12,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "u2d2",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4320,
+         "line": 36,
+         "column": 119
+        },
+        "end": {
+         "byte_offset": 4334,
+         "line": 36,
+         "column": 133
+        }
+       },
+       "part": "robotis_u2d2_usb_c",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_usb_c/component.yaml",
+        "start": {
+         "byte_offset": 516,
+         "line": 7,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 580,
+         "line": 7,
+         "column": 78
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_u2d2_usb_c of u2d2 states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 445,
+         "line": 8,
+         "column": 9
+        },
+        "end": {
+         "byte_offset": 509,
+         "line": 8,
+         "column": 73
+        }
+       },
+       "missing": [
+        "power_outputs.vout.efficiency"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_outputs.vout.efficiency`",
+       "reported": false
+      },
+      {
+       "component": "power_hub",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4187,
+         "line": 35,
+         "column": 131
+        },
+        "end": {
+         "byte_offset": 4200,
+         "line": 35,
+         "column": 144
+        }
+       },
+       "part": "robotis_u2d2_power_hub",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_power_hub/component.yaml",
+        "start": {
+         "byte_offset": 2341,
+         "line": 31,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 2380,
+         "line": 31,
+         "column": 53
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_u2d2_power_hub of power_hub states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "arm_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2366,
+         "line": 23,
+         "column": 152
+        },
+        "end": {
+         "byte_offset": 2381,
+         "line": 23,
+         "column": 167
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_left states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "arm_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2722,
+         "line": 25,
+         "column": 163
+        },
+        "end": {
+         "byte_offset": 2737,
+         "line": 25,
+         "column": 178
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.continuous_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_right states no `power_input.continuous_current_a`",
+       "reported": false
+      },
+      {
+       "component": "battery",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 1970,
+         "line": 20,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2071,
+         "line": 20,
+         "column": 106
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [],
+       "message": "motor_front_left, motor_front_right, motor_rear_left, motor_rear_right may be fed up to 14.6 V, above the 12 V their stall currents are stated at",
+       "reported": true
+      }
+     ]
+    },
+    {
+     "rule": "power.source_delivers_startup_current",
+     "status": "unknown",
+     "advisory": true,
+     "evidence": [
+      "'battery' delivers 60 A at its peak; when all loads power on together, 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw at least 36.8 A together",
+      "'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver, so what they feed is not judged"
+     ],
+     "undecided": [
+      {
+       "component": "drive_front",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3267,
+         "line": 29,
+         "column": 211
+        },
+        "end": {
+         "byte_offset": 3280,
+         "line": 29,
+         "column": 224
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_front states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "drive_rear",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3550,
+         "line": 30,
+         "column": 210
+        },
+        "end": {
+         "byte_offset": 3563,
+         "line": 30,
+         "column": 223
+        }
+       },
+       "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+       "part_span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of drive_rear states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 384,
+         "line": 6,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 421,
+         "line": 6,
+         "column": 51
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "computer",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3040,
+         "line": 28,
+         "column": 130
+        },
+        "end": {
+         "byte_offset": 3055,
+         "line": 28,
+         "column": 145
+        }
+       },
+       "part": "raspberry_pi_5_8gb",
+       "part_span": {
+        "source": "library/parts/raspberry_pi_5_8gb/component.yaml",
+        "start": {
+         "byte_offset": 2300,
+         "line": 9,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 2364,
+         "line": 12,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part raspberry_pi_5_8gb of computer states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "u2d2",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4320,
+         "line": 36,
+         "column": 119
+        },
+        "end": {
+         "byte_offset": 4334,
+         "line": 36,
+         "column": 133
+        }
+       },
+       "part": "robotis_u2d2_usb_c",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_usb_c/component.yaml",
+        "start": {
+         "byte_offset": 516,
+         "line": 7,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 580,
+         "line": 7,
+         "column": 78
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part robotis_u2d2_usb_c of u2d2 states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "regulator",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3905,
+         "line": 33,
+         "column": 144
+        },
+        "end": {
+         "byte_offset": 3918,
+         "line": 33,
+         "column": 157
+        }
+       },
+       "part": "pololu_d42v110f5_5v_regulator",
+       "part_span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 445,
+         "line": 8,
+         "column": 9
+        },
+        "end": {
+         "byte_offset": 509,
+         "line": 8,
+         "column": 73
+        }
+       },
+       "missing": [
+        "power_outputs.vout.efficiency"
+       ],
+       "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_outputs.vout.efficiency`",
+       "reported": false
+      },
+      {
+       "component": "power_hub",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 4187,
+         "line": 35,
+         "column": 131
+        },
+        "end": {
+         "byte_offset": 4200,
+         "line": 35,
+         "column": 144
+        }
+       },
+       "part": "robotis_u2d2_power_hub",
+       "part_span": {
+        "source": "library/parts/robotis_u2d2_power_hub/component.yaml",
+        "start": {
+         "byte_offset": 2341,
+         "line": 31,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 2380,
+         "line": 31,
+         "column": 53
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part robotis_u2d2_power_hub of power_hub states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "arm_left",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2366,
+         "line": 23,
+         "column": 152
+        },
+        "end": {
+         "byte_offset": 2381,
+         "line": 23,
+         "column": 167
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_left states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "arm_right",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2722,
+         "line": 25,
+         "column": 163
+        },
+        "end": {
+         "byte_offset": 2737,
+         "line": 25,
+         "column": 178
+        }
+       },
+       "part": "robotis_openmanipulator_x_rm_x52_tnm",
+       "part_span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "missing": [
+        "power_input.startup_current_a"
+       ],
+       "message": "part robotis_openmanipulator_x_rm_x52_tnm of arm_right states no `power_input.startup_current_a`",
+       "reported": false
+      },
+      {
+       "component": "battery",
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 1970,
+         "line": 20,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2071,
+         "line": 20,
+         "column": 106
+        }
+       },
+       "part": null,
+       "part_span": null,
+       "missing": [],
+       "message": "motor_front_left, motor_front_right, motor_rear_left, motor_rear_right may be fed up to 14.6 V, above the 12 V their stall currents are stated at",
+       "reported": false
+      }
+     ]
+    },
+    {
+     "rule": "command.driver_commands_its_motors",
+     "status": "pass",
+     "evidence": [
+      "'drive_front' drives 'motor_front_left', 'motor_front_right' from its channels",
+      "'drive_rear' drives 'motor_rear_left', 'motor_rear_right' from its channels"
+     ]
+    },
+    {
+     "rule": "command.driver_has_a_channel_for_each_motor",
+     "status": "pass",
+     "advisory": true,
+     "evidence": [
+      "'drive_front' drives 'motor_front_left', 'motor_front_right' from its 2 motor channels: 'motor_front_left' on 'M1' and 'motor_front_right' on 'M2'",
+      "'drive_rear' drives 'motor_rear_left', 'motor_rear_right' from its 2 motor channels: 'motor_rear_left' on 'M1' and 'motor_rear_right' on 'M2'"
+     ]
+    },
+    {
+     "rule": "command.motors_on_one_channel_turn_together",
+     "status": "not_applicable",
+     "evidence": []
+    },
+    {
+     "rule": "link.ports_match",
+     "status": "pass",
+     "evidence": [
+      "'arm_left' is linked to 'u2d2', a port on the bus 'dynamixel_ttl' 'servo_bus' to a port on the bus 'dynamixel_ttl' 'ttl'",
+      "'arm_right' is linked to 'u2d2', a port on the bus 'dynamixel_ttl' 'servo_bus' to a port on the bus 'dynamixel_ttl' 'ttl'",
+      "'drive_front' is linked to 'computer', an I²C target port 'sda_scl' to an I²C controller port 'i2c1'",
+      "'drive_rear' is linked to 'computer', an I²C target port 'sda_scl' to an I²C controller port 'i2c1'",
+      "'u2d2' is linked to 'computer', a USB device port 'usb' to a USB host port 'usb2_0'"
+     ]
+    },
+    {
+     "rule": "link.addresses_differ_on_a_bus",
+     "status": "pass",
+     "evidence": [
+      "on port 'i2c1' of 'computer', 'drive_front' answers at 0x10, 'drive_rear' answers at 0x11"
+     ]
+    }
+   ],
+   "diagnostics": [
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'battery_holder' and 'chassis' overlap by 7 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 1832,
+        "line": 19,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 1965,
+        "line": 19,
+        "column": 138
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'battery_holder' at least 7 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_stall_current",
+     "level": "warning",
+     "message": "cannot decide: 'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right' may be fed up to 14.6 V, above the 12 V their stall currents are stated at; 'battery' delivers 60 A at its peak, of which its other loads draw a current not known when every motor behind it starts at once",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 1970,
+        "line": 20,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2071,
+        "line": 20,
+        "column": 106
+       }
+      },
+      "label": "up to 14.6 V, above 12 V"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 762,
+         "line": 9,
+         "column": 119
+        },
+        "end": {
+         "byte_offset": 779,
+         "line": 9,
+         "column": 136
+        }
+       },
+       "label": "stalls at 9.2 A at 12 V"
+      },
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 917,
+         "line": 10,
+         "column": 121
+        },
+        "end": {
+         "byte_offset": 934,
+         "line": 10,
+         "column": 138
+        }
+       },
+       "label": "stalls at 9.2 A at 12 V"
+      },
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 1071,
+         "line": 11,
+         "column": 120
+        },
+        "end": {
+         "byte_offset": 1087,
+         "line": 11,
+         "column": 136
+        }
+       },
+       "label": "stalls at 9.2 A at 12 V"
+      },
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 1226,
+         "line": 12,
+         "column": 122
+        },
+        "end": {
+         "byte_offset": 1242,
+         "line": 12,
+         "column": 138
+        }
+       },
+       "label": "stalls at 9.2 A at 12 V"
+      },
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      }
+     ],
+     "help": [
+      "feed 'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right' at most 12 V, or use motors whose parts state their stall current at the voltage they are fed"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 60 A at its peak; when every motor behind it starts at once, 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw at least 36.8 A together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'arm_mount_left' and 'chassis' overlap by 10 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2077,
+        "line": 22,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2214,
+        "line": 22,
+        "column": 142
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'arm_mount_left' at least 10 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shape of 'arm_left' and the declared shape of 'arm_mount_left' overlap by 14 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2219,
+        "line": 23,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2415,
+        "line": 23,
+        "column": 201
+       }
+      },
+      "label": "in 'arm_mount_left'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2077,
+         "line": 22,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2214,
+         "line": 22,
+         "column": 142
+        }
+       },
+       "label": "the shape of 'arm_mount_left'"
+      }
+     ],
+     "help": [
+      "move 'arm_left' at least 14 mm along (0, 0, 1) in the chassis frame, which takes those two shapes apart, or put a narrower part there",
+      "if the declared shape of 'arm_left' is a bound drawn around a void, declare the void as a `well` on its connector, or give the part a tighter shape",
+      "if the declared shape of 'arm_mount_left' is a bound drawn around a void, declare the void as a `well` on its connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part robotis_openmanipulator_x_rm_x52_tnm of 'arm_left' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2366,
+        "line": 23,
+        "column": 152
+       },
+       "end": {
+        "byte_offset": 2381,
+        "line": 23,
+        "column": 167
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part robotis_openmanipulator_x_rm_x52_tnm draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'arm_mount_right' and 'chassis' overlap by 10 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2420,
+        "line": 24,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2559,
+        "line": 24,
+        "column": 144
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'arm_mount_right' at least 10 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shape of 'arm_right' and the declared shape of 'arm_mount_right' overlap by 14 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2564,
+        "line": 25,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2771,
+        "line": 25,
+        "column": 212
+       }
+      },
+      "label": "in 'arm_mount_right'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2420,
+         "line": 24,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2559,
+         "line": 24,
+         "column": 144
+        }
+       },
+       "label": "the shape of 'arm_mount_right'"
+      }
+     ],
+     "help": [
+      "move 'arm_right' at least 14 mm along (0, 0, 1) in the chassis frame, which takes those two shapes apart, or put a narrower part there",
+      "if the declared shape of 'arm_right' is a bound drawn around a void, declare the void as a `well` on its connector, or give the part a tighter shape",
+      "if the declared shape of 'arm_mount_right' is a bound drawn around a void, declare the void as a `well` on its connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part robotis_openmanipulator_x_rm_x52_tnm of 'arm_right' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2722,
+        "line": 25,
+        "column": 163
+       },
+       "end": {
+        "byte_offset": 2737,
+        "line": 25,
+        "column": 178
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+        "start": {
+         "byte_offset": 3486,
+         "line": 130,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 3554,
+         "line": 133,
+         "column": 1
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part robotis_openmanipulator_x_rm_x52_tnm draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'compute_mount' and 'chassis' overlap by 8 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2777,
+        "line": 27,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 2910,
+        "line": 27,
+        "column": 138
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'compute_mount' at least 8 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'computer' and 'compute_mount' overlap by 33 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 2915,
+        "line": 28,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3056,
+        "line": 28,
+        "column": 146
+       }
+      },
+      "label": "in 'compute_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2777,
+         "line": 27,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2910,
+         "line": 27,
+         "column": 138
+        }
+       },
+       "label": "the shape of 'compute_mount'"
+      }
+     ],
+     "help": [
+      "move 'computer' at least 33 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3040,
+        "line": 28,
+        "column": 130
+       },
+       "end": {
+        "byte_offset": 3055,
+        "line": 28,
+        "column": 145
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/raspberry_pi_5_8gb/component.yaml",
+        "start": {
+         "byte_offset": 2300,
+         "line": 9,
+         "column": 3
+        },
+        "end": {
+         "byte_offset": 2364,
+         "line": 12,
+         "column": 1
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part raspberry_pi_5_8gb draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'drive_front' and 'compute_mount' overlap by 27 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3061,
+        "line": 29,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3340,
+        "line": 29,
+        "column": 284
+       }
+      },
+      "label": "in 'compute_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2777,
+         "line": 27,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2910,
+         "line": 27,
+         "column": 138
+        }
+       },
+       "label": "the shape of 'compute_mount'"
+      }
+     ],
+     "help": [
+      "move 'drive_front' at least 27 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'drive_front' and 'computer' overlap by 13 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3061,
+        "line": 29,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3340,
+        "line": 29,
+        "column": 284
+       }
+      },
+      "label": "in 'computer'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2915,
+         "line": 28,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 3056,
+         "line": 28,
+         "column": 146
+        }
+       },
+       "label": "the shape of 'computer'"
+      }
+     ],
+     "help": [
+      "move 'drive_front' at least 13 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_front' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3267,
+        "line": 29,
+        "column": 211
+       },
+       "end": {
+        "byte_offset": 3280,
+        "line": 29,
+        "column": 224
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'drive_rear' and 'compute_mount' overlap by 13 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3345,
+        "line": 30,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3623,
+        "line": 30,
+        "column": 283
+       }
+      },
+      "label": "in 'compute_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 2777,
+         "line": 27,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 2910,
+         "line": 27,
+         "column": 138
+        }
+       },
+       "label": "the shape of 'compute_mount'"
+      }
+     ],
+     "help": [
+      "move 'drive_rear' at least 13 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'drive_rear' and 'drive_front' overlap by 5 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3345,
+        "line": 30,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3623,
+        "line": 30,
+        "column": 283
+       }
+      },
+      "label": "in 'drive_front'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3061,
+         "line": 29,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 3340,
+         "line": 29,
+         "column": 284
+        }
+       },
+       "label": "the shape of 'drive_front'"
+      }
+     ],
+     "help": [
+      "move 'drive_rear' at least 5 mm along (0, -0.023, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_rear' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3550,
+        "line": 30,
+        "column": 210
+       },
+       "end": {
+        "byte_offset": 3563,
+        "line": 30,
+        "column": 223
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered/component.yaml",
+        "start": {
+         "byte_offset": 0,
+         "line": 1,
+         "column": 1
+        },
+        "end": {
+         "byte_offset": 7122,
+         "line": 298,
+         "column": 1
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'regulator_mount' and 'chassis' overlap by 7 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3629,
+        "line": 32,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3761,
+        "line": 32,
+        "column": 137
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'regulator_mount' at least 7 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'regulator' and 'regulator_mount' overlap by 5 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3766,
+        "line": 33,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 3919,
+        "line": 33,
+        "column": 158
+       }
+      },
+      "label": "in 'regulator_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3629,
+         "line": 32,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 3761,
+         "line": 32,
+         "column": 137
+        }
+       },
+       "label": "the shape of 'regulator_mount'"
+      }
+     ],
+     "help": [
+      "move 'regulator' at least 5 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3905,
+        "line": 33,
+        "column": 144
+       },
+       "end": {
+        "byte_offset": 3918,
+        "line": 33,
+        "column": 157
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 384,
+         "line": 6,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 421,
+         "line": 6,
+         "column": 51
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part pololu_d42v110f5_5v_regulator draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_outputs.vout.efficiency: 'regulator' takes a current not known from 'battery'; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3905,
+        "line": 33,
+        "column": 144
+       },
+       "end": {
+        "byte_offset": 3918,
+        "line": 33,
+        "column": 157
+       }
+      },
+      "label": "no efficiency stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
+        "start": {
+         "byte_offset": 445,
+         "line": 8,
+         "column": 9
+        },
+        "end": {
+         "byte_offset": 509,
+         "line": 8,
+         "column": 73
+        }
+       },
+       "label": "states no efficiency"
+      }
+     ],
+     "help": [
+      "state `efficiency` in `power_outputs.vout` of part pololu_d42v110f5_5v_regulator from its maker's datasheet, the least where it gives a range"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'hub_mount' and 'chassis' overlap by 8 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3924,
+        "line": 34,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 4056,
+        "line": 34,
+        "column": 137
+       }
+      },
+      "label": "in 'chassis'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 473,
+         "line": 6,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 542,
+         "line": 6,
+         "column": 74
+        }
+       },
+       "label": "the shape of 'chassis'"
+      }
+     ],
+     "help": [
+      "move 'hub_mount' at least 8 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'hub_mount' and 'motor_front_right' overlap by 3 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 3924,
+        "line": 34,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 4056,
+        "line": 34,
+        "column": 137
+       }
+      },
+      "label": "in 'motor_front_right'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 801,
+         "line": 10,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 951,
+         "line": 10,
+         "column": 155
+        }
+       },
+       "label": "the shape of 'motor_front_right'"
+      }
+     ],
+     "help": [
+      "move 'hub_mount' at least 3 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'power_hub' and 'hub_mount' overlap by 8 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 4061,
+        "line": 35,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 4201,
+        "line": 35,
+        "column": 145
+       }
+      },
+      "label": "in 'hub_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3924,
+         "line": 34,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 4056,
+         "line": 34,
+         "column": 137
+        }
+       },
+       "label": "the shape of 'hub_mount'"
+      }
+     ],
+     "help": [
+      "move 'power_hub' at least 8 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part robotis_u2d2_power_hub of 'power_hub' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 4187,
+        "line": 35,
+        "column": 131
+       },
+       "end": {
+        "byte_offset": 4200,
+        "line": 35,
+        "column": 144
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/robotis_u2d2_power_hub/component.yaml",
+        "start": {
+         "byte_offset": 2341,
+         "line": 31,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 2380,
+         "line": 31,
+         "column": 53
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part robotis_u2d2_power_hub draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    },
+    {
+     "code": "validation.assembly.parts_clear_each_other",
+     "level": "warning",
+     "message": "the declared shapes of 'u2d2' and 'hub_mount' overlap by 4 mm",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 4206,
+        "line": 36,
+        "column": 5
+       },
+       "end": {
+        "byte_offset": 4397,
+        "line": 36,
+        "column": 196
+       }
+      },
+      "label": "in 'hub_mount'"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "/work/robot.core",
+        "start": {
+         "byte_offset": 3924,
+         "line": 34,
+         "column": 5
+        },
+        "end": {
+         "byte_offset": 4056,
+         "line": 34,
+         "column": 137
+        }
+       },
+       "label": "the shape of 'hub_mount'"
+      }
+     ],
+     "help": [
+      "move 'u2d2' at least 4 mm along (0, 0, 1) in the chassis frame, or put a narrower part there",
+      "if a shape is a bound drawn around a void, declare the void as a `well` on the connector, or give the part a tighter shape"
+     ],
+     "notes": [
+      "evidence: 17 pairs of the 20 fixed parts' declared shapes overlap"
+     ]
+    },
+    {
+     "code": "validation.power.source_delivers_continuous_current",
+     "level": "warning",
+     "message": "cannot decide: part robotis_u2d2_usb_c of 'u2d2' states no power_input.continuous_current_a; 'battery' delivers 30 A continuously, of which its other loads draw a current not known",
+     "phase": "validation",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "non_blocking",
+      "effective": "non_blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "/work/robot.core",
+       "start": {
+        "byte_offset": 4320,
+        "line": 36,
+        "column": 119
+       },
+       "end": {
+        "byte_offset": 4334,
+        "line": 36,
+        "column": 133
+       }
+      },
+      "label": "no current stated"
+     },
+     "related": [
+      {
+       "span": {
+        "source": "library/parts/bioenno_blf_1215a_lifepo4_battery/component.yaml",
+        "start": {
+         "byte_offset": 589,
+         "line": 7,
+         "column": 10
+        },
+        "end": {
+         "byte_offset": 715,
+         "line": 7,
+         "column": 136
+        }
+       },
+       "label": "what the battery states"
+      },
+      {
+       "span": {
+        "source": "library/parts/robotis_u2d2_usb_c/component.yaml",
+        "start": {
+         "byte_offset": 516,
+         "line": 7,
+         "column": 14
+        },
+        "end": {
+         "byte_offset": 580,
+         "line": 7,
+         "column": 78
+        }
+       },
+       "label": "states no continuous_current_a"
+      }
+     ],
+     "help": [
+      "state the current part robotis_u2d2_usb_c draws itself, `power_input: {continuous_current_a: ...}`, from its maker's datasheet"
+     ],
+     "notes": [
+      "evidence: 'battery' delivers 30 A continuously; 'drive_front', 'drive_rear', 'regulator', 'power_hub' draw a current not known together",
+      "evidence: 'computer' from 'usb_power', 'regulator' from 'vout', 'power_hub' from 'out' state no current they deliver continuously, so what they feed is not judged"
+     ]
+    }
+   ],
+   "target_diagnostics": [
+    {
+     "target": "mjcf",
+     "code": "target.incomplete_dynamics",
+     "level": "error",
+     "message": "this target cannot realize dynamics of 'arm_left': the part states static kinematics but no complete per-body inertia and actuation",
+     "phase": "target_binding",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "blocking",
+      "effective": "blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+       "start": {
+        "byte_offset": 0,
+        "line": 1,
+        "column": 1
+       },
+       "end": {
+        "byte_offset": 7892,
+        "line": 405,
+        "column": 1
+       }
+      },
+      "label": "incomplete dynamics"
+     },
+     "help": [
+      "keep the static model, or supply source-backed link inertias and actuator tuning"
+     ]
+    },
+    {
+     "target": "mjcf",
+     "code": "target.incomplete_dynamics",
+     "level": "error",
+     "message": "this target cannot realize dynamics of 'arm_right': the part states static kinematics but no complete per-body inertia and actuation",
+     "phase": "target_binding",
+     "failure_domain": "application",
+     "disposition": {
+      "base": "blocking",
+      "effective": "blocking"
+     },
+     "primary": {
+      "span": {
+       "source": "library/parts/robotis_openmanipulator_x_rm_x52_tnm/component.yaml",
+       "start": {
+        "byte_offset": 0,
+        "line": 1,
+        "column": 1
+       },
+       "end": {
+        "byte_offset": 7892,
+        "line": 405,
+        "column": 1
+       }
+      },
+      "label": "incomplete dynamics"
+     },
+     "help": [
+      "keep the static model, or supply source-backed link inertias and actuator tuning"
+     ]
+    }
+   ]
+  },
+  {
    "id": "strafer_dual_arm_power",
    "robots": [],
    "papers": [],
@@ -107833,12 +112614,12 @@
        "part_span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 393,
+         "byte_offset": 384,
          "line": 6,
          "column": 14
         },
         "end": {
-         "byte_offset": 430,
+         "byte_offset": 421,
          "line": 6,
          "column": 51
         }
@@ -107938,12 +112719,12 @@
        "part_span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 454,
+         "byte_offset": 445,
          "line": 8,
          "column": 9
         },
         "end": {
-         "byte_offset": 518,
+         "byte_offset": 509,
          "line": 8,
          "column": 73
         }
@@ -109782,12 +114563,12 @@
        "span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 393,
+         "byte_offset": 384,
          "line": 6,
          "column": 14
         },
         "end": {
-         "byte_offset": 430,
+         "byte_offset": 421,
          "line": 6,
          "column": 51
         }
@@ -109850,12 +114631,12 @@
        "span": {
         "source": "library/parts/pololu_d42v110f5_5v_regulator/component.yaml",
         "start": {
-         "byte_offset": 454,
+         "byte_offset": 445,
          "line": 8,
          "column": 9
         },
         "end": {
-         "byte_offset": 518,
+         "byte_offset": 509,
          "line": 8,
          "column": 73
         }
