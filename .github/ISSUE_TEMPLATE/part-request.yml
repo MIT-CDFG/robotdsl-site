@@ -1,0 +1,56 @@
+name: Request a part
+description: A part the library lacks and a robot needs, such as a bracket between two parts, a battery or a regulator.
+title: 'Part request: '
+labels:
+- part request
+body:
+- type: markdown
+  attributes:
+    value: |
+      Ask here for a part the library does not have and your robot needs: a bracket between two parts, a battery, a regulator.
+      Whoever adds the part answers here, and it appears in the Studio once it is in the library. To offer a product or a part of your own instead, use one of the **Submit a …** forms.
+      **Never paste an API key.** Keys starting with `sk-`, `sk-ant-` or `AIza` should not appear anywhere in the issue.
+- type: input
+  id: kind
+  attributes:
+    label: What kind of part
+    placeholder: Mount, bracket or adapter
+  validations:
+    required: true
+- type: textarea
+  id: need
+  attributes:
+    label: What it must do
+    description: What it holds, powers or connects on the robot, where, and what it must leave clear.
+  validations:
+    required: true
+- type: textarea
+  id: between
+  attributes:
+    label: The parts it goes between
+    description: The part it goes on and the part it is for, by their names in the library, with their ids if you have them.
+- type: input
+  id: product
+  attributes:
+    label: A product that would do
+    description: Its maker and name, and its page, if such a product exists. Leave empty when the part has to be designed.
+- type: textarea
+  id: known
+  attributes:
+    label: What is known
+    description: Hole patterns and spacings, sizes, masses, voltages and currents, each with the part it is of.
+- type: textarea
+  id: unknown
+  attributes:
+    label: What is still to find out
+- type: textarea
+  id: asked
+  attributes:
+    label: What you asked the Copilot for
+    description: Your own words, if the request came out of a conversation.
+- type: textarea
+  id: program
+  attributes:
+    label: The robot's program
+    description: robot.core, so that the part can be tried on the robot.
+    render: text
