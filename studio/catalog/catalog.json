@@ -250974,6 +250974,36 @@
      "advisory": true
     },
     {
+     "rule": "task.speed_within_the_motors",
+     "status": "unknown",
+     "evidence": [
+      "how fast the driven wheels and tracks move over the ground is not known"
+     ],
+     "advisory": true,
+     "undecided": [
+      {
+       "component": "wheel_front_left",
+       "missing": [],
+       "message": "no motor is declared for wheel_front_left"
+      },
+      {
+       "component": "wheel_front_right",
+       "missing": [],
+       "message": "no motor is declared for wheel_front_right"
+      },
+      {
+       "component": "wheel_rear_left",
+       "missing": [],
+       "message": "no motor is declared for wheel_rear_left"
+      },
+      {
+       "component": "wheel_rear_right",
+       "missing": [],
+       "message": "no motor is declared for wheel_rear_right"
+      }
+     ]
+    },
+    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
