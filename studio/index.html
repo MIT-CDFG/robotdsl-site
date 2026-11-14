@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MobileCopilot Studio</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d9b45a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 8V4H8'/%3E%3Crect width='16' height='12' x='4' y='8' rx='2'/%3E%3Cpath d='M2 14h2'/%3E%3Cpath d='M20 14h2'/%3E%3Cpath d='M15 13v2'/%3E%3Cpath d='M9 13v2'/%3E%3C/svg%3E" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/main-CX7xaXd6.js"></script>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="text-scale" content="scale" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'sha256-7FuaxwxkPG7OPlg/9Cqo3q0x7yHe3jwChO36dR3VWa8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://huggingface.co https://*.hf.co https://api.robotdsl.csail.mit.edu; font-src 'self' data:; connect-src 'self' blob: https://api.openai.com https://api.anthropic.com https://generativelanguage.googleapis.com https://auth.openai.com https://huggingface.co https://*.hf.co https://api.robotdsl.csail.mit.edu; worker-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types studio-worker default" />
+    <script>
+      // The theme before the first paint: the device's, unless a light or a dark one was chosen in this browser. The
+      // choice is the content of <meta name="color-scheme"> ("light dark" is the device's), which the style sheet makes
+      // the page's colour scheme; data-theme says the theme shown, for what draws in it. The app keeps both once it runs.
+      (function () {
+        var theme = null;
+        try { theme = JSON.parse(localStorage.getItem("settings") || "{}").theme; } catch (error) { /* no storage: the device's */ }
+        if (theme !== "light" && theme !== "dark") theme = null;
+        document.querySelector('meta[name="color-scheme"]').content = theme || "light dark";
+        document.documentElement.setAttribute("data-theme", theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/main-D3mxk3TA.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/__vite-browser-external-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="./assets/studio-CKxO5Jee.js">
-    <link rel="stylesheet" crossorigin href="./assets/studio-Bs31D1zL.css">
+    <link rel="modulepreload" crossorigin href="./assets/studio-CTbDFvKJ.js">
+    <link rel="stylesheet" crossorigin href="./assets/studio-CU0r6v8p.css">
   </head>
   <body>
     <div id="root"></div>
