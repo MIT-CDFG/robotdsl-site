@@ -1,6 +1,6 @@
 {
  "version": "robotdsl-studio-catalog-v1",
- "count": 1360,
+ "count": 1362,
  "components": [
   {
    "ref": "pololu_romi_chassis",
@@ -317434,6 +317434,216 @@
    "price": 15.49,
    "currency": "USD",
    "pack": 1
+  },
+  {
+   "ref": "robotdsl_gripper",
+   "name": "RobotDSL Gripper",
+   "category": "attachment",
+   "types": [
+    "Attachment"
+   ],
+   "collision": {
+    "type": "box",
+    "size": [
+     0.0415000003,
+     0.04460000025,
+     0.0977000003
+    ],
+    "origin_xyz": [
+     -0.00675,
+     0.000400000025,
+     0.04885
+    ]
+   },
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Gripper, of the RobotDSL Team's own design: a gripper on one Feetech STS3215 (12 V, ST-3215-C018) servo, its palm screwed onto the horn of a servo of the same kind turning about its length (an arm's wrist roll), its moving finger closing on a fixed one, fingers 55 mm long, every piece printed without supports. In simulation it holds 0.1 kg between its fingers' tips pulled every way, and things of that mass up to 40 mm across. Held in one pose: its moving finger upright beside the fixed one, at its joint's zero.",
+   "sold": false,
+   "fabrication": {
+    "description": "Print the palm and the two fingers in PLA, and fit them to one Feetech STS3215 (12 V, ST-3215-C018) with screws; the palm screws onto the horn of the servo it goes on.",
+    "files": [
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/palm.stl",
+      "label": "Palm",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 54.4 x 41.5 x 42.6 mm, 12.0 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/palm.step",
+      "label": "Palm, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/fixed_finger.stl",
+      "label": "Fixed finger",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 93.7 x 8 x 20 mm, 4.3 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/fixed_finger.step",
+      "label": "Fixed finger, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/moving_finger.stl",
+      "label": "Moving finger",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 68 x 26 x 4 mm, 4.4 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper/moving_finger.step",
+      "label": "Moving finger, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     }
+    ],
+    "buy": [
+     {
+      "item": "Feetech STS3215 (12 V, ST-3215-C018)",
+      "quantity": 1,
+      "url": "https://www.feetechrc.com/525603",
+      "note": "Its horn comes on it; its zero is set with the moving finger upright beside the fixed one"
+     },
+     {
+      "item": "M3 x 6 socket head cap screw (ISO 4762)",
+      "quantity": 10
+     },
+     {
+      "item": "M2 x 6 socket head cap screw (ISO 4762)",
+      "quantity": 4
+     }
+    ],
+    "steps": [
+     "Print each piece in PLA, solid, laid as its file lies; none wants supports.",
+     "Set the Feetech STS3215 (12 V, ST-3215-C018)'s zero, its horn fitted as it comes.",
+     "Screw the servo to the palm's wall by the rails of its back with four M2 screws, which thread themselves into the rails' pilot holes.",
+     "Screw the fixed finger's foot to the palm's floor with two M3 screws, which thread themselves into the floor.",
+     "Screw the moving finger to the servo's horn with four M3 screws, upright beside the fixed finger.",
+     "Screw the palm onto the horn of the servo it goes on with four M3 screws into that horn's tapped holes."
+    ],
+    "limits": [
+     "The grip is worked out and simulated at a friction of 0.4 on a box 10 x 12 x 16 mm; real things and their surfaces differ.",
+     "The printed pieces' strength under load was not checked.",
+     "The servo's supply, bus adapter and controller are not part of it, and its current was not checked."
+    ],
+    "licence": "CC-BY-4.0, crediting the RobotDSL Team"
+   }
+  },
+  {
+   "ref": "robotdsl_gripper_wide",
+   "name": "RobotDSL Wide Gripper",
+   "category": "attachment",
+   "types": [
+    "Attachment"
+   ],
+   "collision": {
+    "type": "box",
+    "size": [
+     0.0415000003,
+     0.04460000025,
+     0.1327000003
+    ],
+    "origin_xyz": [
+     -0.00675,
+     0.000400000025,
+     0.06635
+    ]
+   },
+   "subtype": "Attachment",
+   "supplier": "RobotDSL Team",
+   "description": "The RobotDSL Wide Gripper, of the RobotDSL Team's own design: a gripper on one Feetech STS3215 (12 V, ST-3215-C018) servo, its palm screwed onto the horn of a servo of the same kind turning about its length (an arm's wrist roll), its moving finger closing on a fixed one, fingers 90 mm long, every piece printed without supports. In simulation it holds 0.1 kg between its fingers' tips pulled every way, and things of that mass up to 60 mm across. Held in one pose: its moving finger upright beside the fixed one, at its joint's zero.",
+   "sold": false,
+   "fabrication": {
+    "description": "Print the palm and the two fingers in PLA, and fit them to one Feetech STS3215 (12 V, ST-3215-C018) with screws; the palm screws onto the horn of the servo it goes on.",
+    "files": [
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/palm.stl",
+      "label": "Palm",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 54.4 x 41.5 x 42.6 mm, 12.0 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/palm.step",
+      "label": "Palm, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/fixed_finger.stl",
+      "label": "Fixed finger",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 128.7 x 8 x 20 mm, 5.7 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/fixed_finger.step",
+      "label": "Fixed finger, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/moving_finger.stl",
+      "label": "Moving finger",
+      "role": "print",
+      "format": "STL",
+      "quantity": 1,
+      "note": "PLA, solid, laid as the file lies, no supports; 103 x 26 x 4 mm, 6.1 g"
+     },
+     {
+      "url": "catalog/fabrication/robotdsl_gripper_wide/moving_finger.step",
+      "label": "Moving finger, editable CAD",
+      "role": "drawing",
+      "format": "STEP",
+      "note": "The same piece as the print file, in millimetres"
+     }
+    ],
+    "buy": [
+     {
+      "item": "Feetech STS3215 (12 V, ST-3215-C018)",
+      "quantity": 1,
+      "url": "https://www.feetechrc.com/525603",
+      "note": "Its horn comes on it; its zero is set with the moving finger upright beside the fixed one"
+     },
+     {
+      "item": "M3 x 6 socket head cap screw (ISO 4762)",
+      "quantity": 10
+     },
+     {
+      "item": "M2 x 6 socket head cap screw (ISO 4762)",
+      "quantity": 4
+     }
+    ],
+    "steps": [
+     "Print each piece in PLA, solid, laid as its file lies; none wants supports.",
+     "Set the Feetech STS3215 (12 V, ST-3215-C018)'s zero, its horn fitted as it comes.",
+     "Screw the servo to the palm's wall by the rails of its back with four M2 screws, which thread themselves into the rails' pilot holes.",
+     "Screw the fixed finger's foot to the palm's floor with two M3 screws, which thread themselves into the floor.",
+     "Screw the moving finger to the servo's horn with four M3 screws, upright beside the fixed finger.",
+     "Screw the palm onto the horn of the servo it goes on with four M3 screws into that horn's tapped holes."
+    ],
+    "limits": [
+     "The grip is worked out and simulated at a friction of 0.4 on a box 10 x 12 x 16 mm; real things and their surfaces differ.",
+     "The printed pieces' strength under load was not checked.",
+     "The servo's supply, bus adapter and controller are not part of it, and its current was not checked."
+    ],
+    "licence": "CC-BY-4.0, crediting the RobotDSL Team"
+   }
   }
  ],
  "installations": [

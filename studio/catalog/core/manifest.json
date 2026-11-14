@@ -6,7 +6,7 @@
   },
   "lark": "1.3.1",
   "library": {
-    "parts": 1360,
+    "parts": 1362,
     "walkers": 2
   },
   "examples": {
@@ -10612,6 +10612,74 @@
       "gensace_gea8002s45js_lipo_battery": {
         "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/gensace_gea8002s45js_lipo_battery/assets/model.glb",
         "bytes": 1090288
+      },
+      "robotdsl_gripper": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/06a19b1c7832fe53266b14ee2f0b366e57700fbd/parts/robotdsl_gripper/assets/articulation/base.glb",
+        "bytes": 117440,
+        "standing": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "robotdsl_gripper/gripper": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/06a19b1c7832fe53266b14ee2f0b366e57700fbd/parts/robotdsl_gripper/assets/articulation/gripper.glb",
+        "bytes": 44576,
+        "standing": {
+          "xyz": [
+            0.0,
+            0.0187,
+            0.0427
+          ],
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "robotdsl_gripper_wide": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/06a19b1c7832fe53266b14ee2f0b366e57700fbd/parts/robotdsl_gripper_wide/assets/articulation/base.glb",
+        "bytes": 117440,
+        "standing": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "robotdsl_gripper_wide/gripper": {
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/06a19b1c7832fe53266b14ee2f0b366e57700fbd/parts/robotdsl_gripper_wide/assets/articulation/gripper.glb",
+        "bytes": 44576,
+        "standing": {
+          "xyz": [
+            0.0,
+            0.0187,
+            0.0427
+          ],
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
       }
     }
   },
