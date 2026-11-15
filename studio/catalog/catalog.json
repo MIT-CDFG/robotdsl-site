@@ -322052,14 +322052,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -322370,14 +322362,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -322825,14 +322809,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -323309,14 +323285,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -323792,14 +323760,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -324225,14 +324185,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -324678,14 +324630,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -325180,14 +325124,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -325727,14 +325663,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -326272,14 +326200,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -326819,14 +326739,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -327365,14 +327277,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -327910,14 +327814,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 6 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -328512,7 +328408,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -329110,7 +329007,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -329708,7 +329606,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "5 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -330306,7 +330205,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "5 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -330748,14 +330648,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -331222,14 +331114,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -331717,14 +331601,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -332314,14 +332190,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -332933,14 +332801,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -333551,14 +333411,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -333963,14 +333815,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -334437,14 +334281,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -334933,14 +334769,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -335325,14 +335153,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -335696,14 +335516,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -336430,14 +336242,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -337994,14 +337798,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -338489,14 +338285,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -339086,14 +338874,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -339706,14 +339486,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -340324,14 +340096,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -340840,14 +340604,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -341334,14 +341090,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -341931,14 +341679,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -342551,14 +342291,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -343169,14 +342901,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -343581,14 +343305,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -344055,14 +343771,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -344551,14 +344259,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -345046,14 +344746,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -345540,14 +345232,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -346137,14 +345821,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -346756,14 +346432,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -347374,14 +347042,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -347890,14 +347550,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -348386,14 +348038,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -348880,14 +348524,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -349376,14 +349012,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -349871,14 +349499,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -350365,14 +349985,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "1 pair of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -350959,14 +350571,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -351649,14 +351253,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -352441,14 +352037,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -353255,14 +352843,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -354067,14 +353647,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -354982,14 +354554,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -355928,14 +355492,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -356872,14 +356428,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -357818,14 +357366,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -358559,14 +358099,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -359248,14 +358780,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -360040,14 +359564,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -360863,14 +360379,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -361684,14 +361192,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -362507,14 +362007,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -363321,14 +362813,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -364134,14 +363618,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -364845,14 +364321,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -365534,14 +365002,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -366226,14 +365686,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -366915,14 +366367,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -367606,14 +367050,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -368295,14 +367731,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -368986,14 +368414,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -369675,14 +369095,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -370366,14 +369778,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -371055,14 +370459,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -371746,14 +371142,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -372435,14 +371823,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -373227,14 +372607,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -374041,14 +373413,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -374853,14 +374217,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -375667,14 +375023,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -376479,14 +375827,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -377293,14 +376633,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "5 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -378004,14 +377336,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -378693,14 +378017,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -379587,14 +378903,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -380524,14 +379832,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -381459,14 +380759,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -382396,14 +381688,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 13 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -383230,14 +382514,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -384051,14 +383327,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -384874,14 +384142,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -385594,14 +384854,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -386293,14 +385545,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -386839,14 +386083,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -387413,7 +386649,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -388022,7 +387259,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
+      "2 pairs of the 7 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -388579,14 +387817,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -389069,14 +388299,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -389455,14 +388677,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -390213,14 +389427,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -390984,14 +390190,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -391626,14 +390824,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 8 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -392298,14 +391488,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 8 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -392983,14 +392165,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "7 pairs of the 8 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -393984,14 +393158,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -395073,14 +394239,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -396161,14 +395319,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 11 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -396867,14 +396017,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -397558,14 +396700,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -398694,7 +397828,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -399726,7 +398861,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -400783,7 +399919,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -401840,7 +400977,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -402822,7 +401960,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -403829,7 +402968,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -404791,7 +403931,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -405963,7 +405104,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "22 pairs of the 18 fixed parts' declared shapes overlap"
+      "11 pairs of the 18 fixed parts' declared shapes overlap",
+      "11 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -406912,7 +406054,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 12 fixed parts' declared shapes overlap"
+      "1 pair of the 12 fixed parts' declared shapes overlap",
+      "6 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -407974,7 +407117,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 12 fixed parts' declared shapes overlap"
+      "1 pair of the 12 fixed parts' declared shapes overlap",
+      "6 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -409021,7 +408165,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 12 fixed parts' declared shapes overlap"
+      "1 pair of the 12 fixed parts' declared shapes overlap",
+      "6 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -410357,7 +409502,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -411586,7 +410732,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -412840,7 +411987,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -414094,7 +413242,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -415273,7 +414422,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -416477,7 +415627,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -417636,7 +416787,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -419195,7 +418347,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -420754,7 +419907,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "24 pairs of the 20 fixed parts' declared shapes overlap"
+      "11 pairs of the 20 fixed parts' declared shapes overlap",
+      "13 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -421368,14 +420522,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -422059,14 +421205,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -423068,7 +422206,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 10 fixed parts' declared shapes overlap"
+      "1 pair of the 10 fixed parts' declared shapes overlap",
+      "2 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -424070,7 +423209,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 10 fixed parts' declared shapes overlap"
+      "1 pair of the 10 fixed parts' declared shapes overlap",
+      "2 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -425326,7 +424466,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 11 fixed parts' declared shapes overlap"
+      "3 pairs of the 11 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -426583,7 +425724,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 11 fixed parts' declared shapes overlap"
+      "3 pairs of the 11 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -427843,7 +426985,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "7 pairs of the 11 fixed parts' declared shapes overlap"
+      "3 pairs of the 11 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -428453,14 +427596,6 @@
      ]
     },
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
      "evidence": [
@@ -428978,7 +428113,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 4 fixed parts' declared shapes overlap"
+      "2 pairs of the 4 fixed parts' declared shapes overlap",
+      "1 pair fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -429451,7 +428587,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "2 pairs of the 5 fixed parts' declared shapes overlap"
+      "1 pair of the 5 fixed parts' declared shapes overlap",
+      "1 pair fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -429894,7 +429031,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 3 fixed parts' declared shapes overlap"
+      "2 pairs of the 3 fixed parts' declared shapes overlap",
+      "1 pair fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -430276,7 +429414,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 3 fixed parts' declared shapes overlap"
+      "2 pairs of the 3 fixed parts' declared shapes overlap",
+      "1 pair fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -430642,14 +429781,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -431060,7 +430191,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "2 pairs of the 4 fixed parts' declared shapes overlap"
+      "1 pair of the 4 fixed parts' declared shapes overlap",
+      "1 pair fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -431898,7 +431030,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "3 pairs of the 5 fixed parts' declared shapes overlap"
+      "1 pair of the 5 fixed parts' declared shapes overlap",
+      "2 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -432360,7 +431493,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 5 fixed parts' declared shapes overlap"
+      "2 pairs of the 5 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -432811,7 +431945,8 @@
      "rule": "assembly.parts_clear_each_other",
      "status": "fail",
      "evidence": [
-      "6 pairs of the 5 fixed parts' declared shapes overlap"
+      "2 pairs of the 5 fixed parts' declared shapes overlap",
+      "4 pairs fastened to each other through holes: the two declared shapes meet at the joint, and are not judged against each other"
      ],
      "advisory": true
     },
@@ -433208,14 +432343,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "2 pairs of the 3 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -433634,14 +432761,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -434091,14 +433210,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "4 pairs of the 5 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -434658,14 +433769,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 8 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
@@ -435899,14 +435002,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -437048,14 +436143,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -438196,14 +437283,6 @@
    },
    "findings": [
     {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "6 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
-    {
      "rule": "power.loads_fed_from_a_battery",
      "status": "unknown",
      "evidence": [
@@ -438680,14 +437759,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -439245,14 +438316,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 7 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -439909,14 +438972,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
@@ -440616,14 +439671,6 @@
     ]
    },
    "findings": [
-    {
-     "rule": "assembly.parts_clear_each_other",
-     "status": "fail",
-     "evidence": [
-      "3 pairs of the 9 fixed parts' declared shapes overlap"
-     ],
-     "advisory": true
-    },
     {
      "rule": "sensing.range_clears_the_ground",
      "status": "fail",
