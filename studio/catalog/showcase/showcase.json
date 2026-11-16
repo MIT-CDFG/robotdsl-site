@@ -5942,7 +5942,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder ClawPi as its Ultimate Kit builds it: the body on four mecanum wheels, with the kit's camera on its\n// pan-tilt at the front, its LiDAR on the raised deck and its claw at the front. A Raspberry Pi rides on the\n// deck; the kit is sold without one.\nRobot clawpi {\n    intent \"Hiwonder ClawPi mecanum base with its camera, its LiDAR and its claw\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_clawpi_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_clawpi_mecanum_wheel_fl_rr\", glue = (0.0628, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_clawpi_mecanum_wheel_fr_rl\", glue = (0.0628, -0.0698, -0.0191, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_clawpi_mecanum_wheel_fr_rl\", glue = (-0.0714, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_clawpi_mecanum_wheel_fl_rr\", glue = (-0.0714, -0.0698, -0.0191, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_clawpi_lidar\", glue = (-0.0324, 0, 0.0858, 0, 0, 1))\n    Camera camera(ref = \"hiwonder_clawpi_camera\", glue = (0.0319, 0, 0.0331, 0, 0, 1))\n    Attachment claw(ref = \"hiwonder_clawpi_claw\", glue = (0.0824, 0, -0.0101, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder ClawPi as its Ultimate Kit builds it: the body on four mecanum wheels, with the kit's camera on its\n// pan-tilt at the front, its LiDAR on the raised deck and its claw at the front. The selected kit and this example omit the Raspberry Pi and its\n// camera, voice and LCD USB supply paths.\nRobot clawpi {\n    intent \"Hiwonder ClawPi mecanum base with its camera, its LiDAR and its claw\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_clawpi_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_clawpi_mecanum_wheel_fl_rr\", glue = (0.0628, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_clawpi_mecanum_wheel_fr_rl\", glue = (0.0628, -0.0698, -0.0191, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_clawpi_mecanum_wheel_fr_rl\", glue = (-0.0714, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_clawpi_mecanum_wheel_fl_rr\", glue = (-0.0714, -0.0698, -0.0191, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_clawpi_lidar\", on = @core/chassis, at = \"lidar_holes\", by = \"mounting_holes\")\n    Camera camera(ref = \"hiwonder_clawpi_camera\", glue = (0.0319, 0, 0.0331, 0, 0, 1))\n    Attachment claw(ref = \"hiwonder_clawpi_claw\", on = @core/chassis, at = \"claw_holes\", by = \"mounting_holes\", power = @core/chassis, output = \"claw_servos\")\n}\n",
     "world": "World clawpi_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/clawpi, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task clawpi_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -6154,7 +6154,7 @@
     }
    ],
    "ground": -0.0515,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.35 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -6187,6 +6187,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range; part hiwonder_clawpi_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'claw_servos'; part hiwonder_clawpi_claw of 'claw' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -6203,7 +6209,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder ClawPi in grey as its Ultimate Kit builds it: the body on four mecanum wheels, with the kit's camera\n// on its pan-tilt at the front, its LiDAR on the raised deck and its claw at the front. A Raspberry Pi rides on\n// the deck; the kit is sold without one.\nRobot clawpi_grey {\n    intent \"Hiwonder ClawPi in grey, a mecanum base with its camera, its LiDAR and its claw\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_clawpi_grey_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fl_rr\", glue = (0.0628, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fr_rl\", glue = (0.0628, -0.0698, -0.0191, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fr_rl\", glue = (-0.0714, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fl_rr\", glue = (-0.0714, -0.0698, -0.0191, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_clawpi_grey_lidar\", glue = (-0.0324, 0, 0.0858, 0, 0, 1))\n    Camera camera(ref = \"hiwonder_clawpi_grey_camera\", glue = (0.0319, 0, 0.0331, 0, 0, 1))\n    Attachment claw(ref = \"hiwonder_clawpi_grey_claw\", glue = (0.0824, 0, -0.0101, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder ClawPi in grey as its Ultimate Kit builds it: the body on four mecanum wheels, with the kit's camera\n// on its pan-tilt at the front, its LiDAR on the raised deck and its claw at the front. A Raspberry Pi rides on\n// the deck; the kit is sold without one.\nRobot clawpi_grey {\n    intent \"Hiwonder ClawPi in grey, a mecanum base with its camera, its LiDAR and its claw\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_clawpi_grey_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fl_rr\", glue = (0.0628, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fr_rl\", glue = (0.0628, -0.0698, -0.0191, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fr_rl\", glue = (-0.0714, 0.0698, -0.0191, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_clawpi_grey_mecanum_wheel_fl_rr\", glue = (-0.0714, -0.0698, -0.0191, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_clawpi_grey_lidar\", on = @core/chassis, at = \"lidar_holes\", by = \"mounting_holes\")\n    Camera camera(ref = \"hiwonder_clawpi_grey_camera\", glue = (0.0319, 0, 0.0331, 0, 0, 1))\n    Attachment claw(ref = \"hiwonder_clawpi_grey_claw\", on = @core/chassis, at = \"claw_holes\", by = \"mounting_holes\", power = @core/chassis, output = \"claw_servos\")\n}\n",
     "world": "World clawpi_grey_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/clawpi_grey, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task clawpi_grey_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -6415,7 +6421,7 @@
     }
    ],
    "ground": -0.0515,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.34 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.35 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -6448,6 +6454,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range; part hiwonder_clawpi_grey_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'claw_servos'; part hiwonder_clawpi_grey_claw of 'claw' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -6464,7 +6476,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder JetAcker as its Standard Kit builds it: the body on four 100 mm wheels, the front pair steered and\n// the rear pair driven, with the kit's LiDAR in the bay under the upper deck and its depth camera on the pan\n// servo. The kit is sold without a computer.\nRobot jetacker {\n    intent \"Hiwonder JetAcker Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_jetacker_chassis\")\n\n    // The kit's motors, each on its seat at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, 0.069117841, 0.050334688, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, -0.070142354, 0.050334688, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, 0.1108, 0.05, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, -0.1108, 0.05, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, 0.1096, 0.0503, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, -0.1096, 0.0503, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetacker_lidar\", glue = (0.1041, 0.0007, 0.0862, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetacker_depth_camera\", glue = (0.0313, 0.0007, 0.1616, 0, 0, 1))\n}\n",
+    "core": "// A Hiwonder JetAcker as its Standard Kit builds it: the body on four 100 mm wheels, the front pair steered and\n// the rear pair driven, with the kit's LiDAR in the bay under the upper deck and its depth camera on the pan\n// servo. The kit is sold without a computer.\nRobot jetacker {\n    intent \"Hiwonder JetAcker Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_jetacker_chassis\")\n\n    // The kit's motors, each on its seat at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, 0.069117841, 0.050334688, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.105996342, -0.070142354, 0.050334688, 0, -1, 0), command = @core/chassis)\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, 0.1108, 0.05, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1073, -0.1108, 0.05, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, 0.1096, 0.0503, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.106, -0.1096, 0.0503, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetacker_lidar\", glue = (0.1041, 0.0007, 0.0862, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetacker_depth_camera\", glue = (0.0313, 0.0007, 0.1616, 0, 0, 1))\n}\n",
     "world": "World jetacker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetacker, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task jetacker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -6730,6 +6742,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_jetacker_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_jetacker_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -6746,7 +6764,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder JetAuto as its Standard Kit builds it: the body on four mecanum wheels, with the kit's LiDAR in the\n// bay under the upper deck and its depth camera on the pan servo. The 7-inch screen at the rear is bought beside\n// the kit; the kit is sold without a computer.\nRobot jetauto {\n    intent \"Hiwonder JetAuto mecanum base with its LiDAR and depth camera, and a 7-inch screen\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_jetauto_chassis\")\n\n    // The kit's motors, each on its seat at a wheel.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097397, 0.070825313, 0.04508, 0, 1, 0))\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097397, -0.070825313, 0.04508, 0, -1, 0))\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097397, 0.070089635, 0.04508, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097397, -0.070825313, 0.04508, 0, -1, 0))\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (0.0974, 0.1074, 0.0451, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (0.0974, -0.1074, 0.0451, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (-0.0974, 0.1074, 0.0451, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (-0.0974, -0.1074, 0.0451, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetauto_lidar\", glue = (0.0959, 0, 0.0808, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetauto_depth_camera\", glue = (0.0289, 0, 0.1562, 0, 0, 1))\n    Attachment screen(ref = \"hiwonder_touch_screen_7inch\", glue = (-0.1345, 0, 0.0808, 0, 0, 1))\n}\n",
+    "core": "// A Hiwonder JetAuto as its Standard Kit builds it: the body on four mecanum wheels, with the kit's LiDAR in the\n// bay under the upper deck and its depth camera on the pan servo. The 7-inch screen at the rear is bought beside\n// the kit; the kit is sold without a computer.\nRobot jetauto {\n    intent \"Hiwonder JetAuto mecanum base with its LiDAR and depth camera, and a 7-inch screen\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_jetauto_chassis\")\n\n    // The kit's motors, each on its seat at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097397, 0.070825313, 0.04508, 0, 1, 0), command = @core/chassis)\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097397, -0.070825313, 0.04508, 0, -1, 0), command = @core/chassis)\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097397, 0.070089635, 0.04508, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097397, -0.070825313, 0.04508, 0, -1, 0), command = @core/chassis)\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (0.0974, 0.1074, 0.0451, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (0.0974, -0.1074, 0.0451, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (-0.0974, 0.1074, 0.0451, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (-0.0974, -0.1074, 0.0451, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetauto_lidar\", glue = (0.0959, 0, 0.0808, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetauto_depth_camera\", glue = (0.0289, 0, 0.1562, 0, 0, 1))\n    Attachment screen(ref = \"hiwonder_touch_screen_7inch\", glue = (-0.1345, 0, 0.0808, 0, 0, 1))\n}\n",
     "world": "World jetauto_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetauto, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task jetauto_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -7058,7 +7076,7 @@
     }
    ],
    "ground": -0.003799999999999998,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.34 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
    "summary": "12 parts (7 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -7095,6 +7113,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_jetauto_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_jetauto_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -8587,7 +8611,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder MentorPi A1 as its kit builds it: the body on its four wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on top and its depth camera on the front step. A Raspberry Pi 5\n// rides on the deck; the kit is sold without one.\nRobot mentorpi_a1 {\n    intent \"Hiwonder MentorPi A1 Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_mentorpi_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, 0.0664, -0.0288, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, -0.0664, -0.0288, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, 0.0668, -0.0278, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, -0.0668, -0.0278, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_mentorpi_a1_lidar\", glue = (-0.0096, -0.0001, 0.0575, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_mentorpi_a1_depth_camera\", glue = (0.0448, 0, 0.0253, 0, 0, 1))\n}\n",
+    "core": "// A Hiwonder MentorPi A1 as its kit builds it: the body on its four wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on top and its depth camera on the front step. A Raspberry Pi 5\n// rides on the deck; the kit is sold without one.\nRobot mentorpi_a1 {\n    intent \"Hiwonder MentorPi A1 Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_mentorpi_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, 0.0664, -0.0288, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_mentorpi_a1_front_wheel\", glue = (0.0668, -0.0664, -0.0288, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, 0.0668, -0.0278, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_mentorpi_a1_rear_wheel\", glue = (-0.0703, -0.0668, -0.0278, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_mentorpi_a1_lidar\", glue = (-0.0096, -0.0001, 0.0575, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_mentorpi_a1_depth_camera\", on = @core/chassis, at = \"kit_camera_threads\", by = \"kit_bracket_holes\")\n}\n",
     "world": "World mentorpi_a1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/mentorpi_a1, pose = (0, 0, 0.07, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task mentorpi_a1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -8752,9 +8776,9 @@
      "category": "sensor",
      "part": "hiwonder_mentorpi_a1_depth_camera",
      "xyz": [
-      0.064,
-      -0.0001,
-      0.0511
+      0.06401548,
+      -0.00013463,
+      0.05115372
      ],
      "rpy": [
       0.0,
@@ -8774,7 +8798,7 @@
     }
    ],
    "ground": -0.0612,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.28 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
    "summary": "7 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -8803,6 +8827,9 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range; part hiwonder_mentorpi_a1_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -8819,7 +8846,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder MentorPi M1 as its kit builds it: the body on four mecanum wheels, with the kit's LiDAR on top\n// and its depth camera on the front bracket. A Raspberry Pi 5 rides on the deck; the kit is sold without one.\nRobot mentorpi_m1 {\n    intent \"Hiwonder MentorPi M1 mecanum base with its LiDAR and depth camera\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_mentorpi_m1_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fl_rr\", glue = (0.0671, 0.0705, -0.0184, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fr_rl\", glue = (0.0671, -0.0705, -0.0184, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fr_rl\", glue = (-0.0676, 0.0705, -0.0184, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fl_rr\", glue = (-0.0676, -0.0705, -0.0184, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_mentorpi_m1_lidar\", glue = (-0.0122, -0.0001, 0.0575, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_mentorpi_m1_depth_camera\", glue = (0.0422, 0, 0.0254, 0, 0, 1))\n}\n",
+    "core": "// A Hiwonder MentorPi M1 as its kit builds it: the body on four mecanum wheels, with the kit's LiDAR on top\n// and its depth camera on the front bracket. The selected kit and this example omit the Raspberry Pi 5 and its USB camera supply.\nRobot mentorpi_m1 {\n    intent \"Hiwonder MentorPi M1 mecanum base with its LiDAR and depth camera\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_mentorpi_m1_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fl_rr\", glue = (0.0671, 0.0705, -0.0184, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fr_rl\", glue = (0.0671, -0.0705, -0.0184, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fr_rl\", glue = (-0.0676, 0.0705, -0.0184, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mentorpi_m1_mecanum_wheel_fl_rr\", glue = (-0.0676, -0.0705, -0.0184, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_mentorpi_m1_lidar\", glue = (-0.0122, -0.0001, 0.0575, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_mentorpi_m1_depth_camera\", on = @core/chassis, at = \"kit_camera_threads\", by = \"kit_bracket_holes\")\n}\n",
     "world": "World mentorpi_m1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/mentorpi_m1, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task mentorpi_m1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -8984,9 +9011,9 @@
      "category": "sensor",
      "part": "hiwonder_mentorpi_m1_depth_camera",
      "xyz": [
-      0.061399999999999996,
-      -0.0001,
-      0.051199999999999996
+      0.06137566,
+      -0.00013463,
+      0.05115372
      ],
      "rpy": [
       0.0,
@@ -9006,7 +9033,7 @@
     }
    ],
    "ground": -0.0508,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.34 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "7 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -9035,6 +9062,9 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range; part hiwonder_mentorpi_m1_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -9051,7 +9081,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for Ackermann steering: the body with the kit's steering module\n// in place of its front motors, on the kit's four rubber tyres, the front pair steered and the rear pair driven,\n// with the kit's LiDAR on the top deck and its depth camera under the deck's front. The kit is sold without a\n// computer.\nRobot rosorin_acker {\n    intent \"Hiwonder ROSOrin Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_rosorin_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, 0.0619618, 0.0154721, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, -0.0618128, 0.0154721, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, -0.086, 0.0155, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, -0.086, 0.0155, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0099, 0.0001, 0.1097, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0464, 0.0001, 0.0921, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for Ackermann steering: the body with the kit's steering module\n// in place of its front motors, on the kit's four rubber tyres, the front pair steered and the rear pair driven,\n// with the kit's LiDAR on the top deck and its depth camera under the deck's front. The kit is sold without a\n// computer.\nRobot rosorin_acker {\n    intent \"Hiwonder ROSOrin Ackermann base with its LiDAR and depth camera\"\n\n    Ackermann chassis(ref = \"hiwonder_rosorin_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, 0.0619618, 0.0154721, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.0808847, -0.0618128, 0.0154721, 0, -1, 0), command = @core/chassis)\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0907, -0.086, 0.0155, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, 0.086, 0.0155, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0808, -0.086, 0.0155, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0099, 0.0001, 0.1097, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0464, 0.0001, 0.0921, 1, 0, 0))\n}\n",
     "world": "World rosorin_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosorin_acker, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosorin_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -9288,7 +9318,7 @@
     }
    ],
    "ground": -0.0245,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
    "summary": "9 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -9317,6 +9347,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_rosorin_acker_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_rosorin_acker_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -9333,7 +9369,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for four-wheel differential drive: the body on the kit's four\n// rubber tyres, all driven, with the kit's LiDAR on the top deck and its depth camera under the deck's front. The\n// kit is sold without a computer.\nRobot rosorin_diff {\n    intent \"Hiwonder ROSOrin four-wheel differential base with its LiDAR and depth camera\"\n\n    Diff_drive chassis(ref = \"hiwonder_rosorin_diff_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, 0.0619651, 0.0170888, 0, 1, 0))\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, -0.0618171, 0.0170888, 0, -1, 0))\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, 0.0619618, 0.0167005, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, -0.0618128, 0.0167005, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, 0.086, 0.0171, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, -0.086, 0.0171, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, 0.086, 0.0167, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, -0.086, 0.0167, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0115, 0.0001, 0.1095, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0478, 0.0001, 0.0914, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder ROSOrin as its Advanced Kit builds it for four-wheel differential drive: the body on the kit's four\n// rubber tyres, all driven, with the kit's LiDAR on the top deck and its depth camera under the deck's front. The\n// kit is sold without a computer.\nRobot rosorin_diff {\n    intent \"Hiwonder ROSOrin four-wheel differential base with its LiDAR and depth camera\"\n\n    Diff_drive chassis(ref = \"hiwonder_rosorin_diff_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, 0.0619651, 0.0170888, 0, 1, 0), command = @core/chassis)\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, -0.0618171, 0.0170888, 0, -1, 0), command = @core/chassis)\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, 0.0619618, 0.0167005, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, -0.0618128, 0.0167005, 0, -1, 0), command = @core/chassis)\n\n    Standard wheel_front_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, 0.086, 0.0171, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (0.0908, -0.086, 0.0171, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, 0.086, 0.0167, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rosorin_rubber_wheel\", glue = (-0.0806, -0.086, 0.0167, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_advanced_lidar\", glue = (0.0115, 0.0001, 0.1095, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_advanced_depth_camera\", glue = (0.0478, 0.0001, 0.0914, 1, 0, 0))\n}\n",
     "world": "World rosorin_diff_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosorin_diff, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosorin_diff_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -9620,7 +9656,7 @@
     }
    ],
    "ground": -0.0233,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.36 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "11 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -9649,6 +9685,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_rosorin_diff_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_rosorin_diff_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -9665,7 +9707,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder ROSOrin as its Standard Kit builds it: the body on four 80 mm mecanum wheels, with the kit's LiDAR\n// on the top deck and its depth camera on the plate under the deck's front. The kit is sold without a computer.\nRobot rosorin {\n    intent \"Hiwonder ROSOrin mecanum base with its LiDAR and depth camera\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_rosorin_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, 0.0619651, 0.0170888, 0, 1, 0))\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, -0.0618171, 0.0170888, 0, -1, 0))\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, 0.0619618, 0.0167005, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, -0.0618128, 0.0167005, 0, -1, 0))\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_80mm_fl_rr\", glue = (0.091, 0.0871, 0.0171, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_80mm_fr_rl\", glue = (0.091, -0.0871, 0.0171, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_80mm_fr_rl\", glue = (-0.0806, 0.0871, 0.0167, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_80mm_fl_rr\", glue = (-0.0806, -0.0871, 0.0167, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_lidar\", glue = (0.0115, 0.0001, 0.1095, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_depth_camera\", glue = (0.0478, 0.0001, 0.0914, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder ROSOrin as its Standard Kit builds it: the body on four 80 mm mecanum wheels, with the kit's LiDAR\n// on the top deck and its depth camera on the plate under the deck's front. The kit is sold without a computer.\nRobot rosorin {\n    intent \"Hiwonder ROSOrin mecanum base with its LiDAR and depth camera\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_rosorin_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, 0.0619651, 0.0170888, 0, 1, 0), command = @core/chassis)\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.0908915, -0.0618171, 0.0170888, 0, -1, 0), command = @core/chassis)\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, 0.0619618, 0.0167005, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.08064, -0.0618128, 0.0167005, 0, -1, 0), command = @core/chassis)\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_80mm_fl_rr\", glue = (0.091, 0.0871, 0.0171, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_80mm_fr_rl\", glue = (0.091, -0.0871, 0.0171, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_80mm_fr_rl\", glue = (-0.0806, 0.0871, 0.0167, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_80mm_fl_rr\", glue = (-0.0806, -0.0871, 0.0167, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_rosorin_lidar\", glue = (0.0115, 0.0001, 0.1095, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_rosorin_depth_camera\", glue = (0.0478, 0.0001, 0.0914, 1, 0, 0))\n}\n",
     "world": "World rosorin_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosorin, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosorin_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -9952,7 +9994,7 @@
     }
    ],
    "ground": -0.0233,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.35 m from the point), past a box beside its way without touching it",
    "summary": "11 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -9985,6 +10027,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_rosorin_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_rosorin_chassis of 'chassis' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -10721,7 +10769,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Pololu 3pi+ 2040 Robot as it is sold, assembled, with the four AAA cells it is sold without: the round body on its\n// two 32 mm wheels with the ball moulded under its rear, its control board and removable display on top and its two motors along the axle. The\n// cells feed the board, and the board's two channels drive the motors.\nRobot pololu_3pi_plus {\n    intent \"Pololu 3pi+ 2040 Robot, a small round differential-drive robot\"\n\n    Diff_two_caster chassis(ref = \"pololu_3pi_plus_2040_robot\")\n\n    Battery cells(ref = \"pololu_3pi_plus_four_nimh_aaa_cells\", glue = (0, 0, -0.0085, 0, 0, 1))\n    MotorDriver board(ref = \"pololu_3pi_plus_2040_control_board\", glue = (0, 0, 0.005, 0, 0, 1), power = @core/cells)\n\n    Attachment display(ref = \"pololu_3pi_plus_oled_display\", glue = (-0.00852, 0, 0.0134, 0, 0, 1))\n\n    Motor motor_left(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, 0.038, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, -0.038, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_32x7mm_white\", glue = (0, 0.0427, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_32x7mm_white\", glue = (0, -0.0427, 0, 0, -1, 0))\n}\n",
+    "core": "// A Pololu 3pi+ 2040 Robot as it is sold, assembled, with the four AAA cells it is sold without: the round body on its\n// two 32 mm wheels with the ball moulded under its rear, its control board and removable display on top and its two motors along the axle. The\n// cells feed the board, and the board's two channels drive the motors.\nRobot pololu_3pi_plus {\n    intent \"Pololu 3pi+ 2040 Robot, a small round differential-drive robot\"\n\n    Diff_two_caster chassis(ref = \"pololu_3pi_plus_2040_robot\")\n\n    Battery cells(ref = \"pololu_3pi_plus_four_nimh_aaa_cells\", on = @core/chassis, at = \"battery_compartments\", by = \"retained_cells\")\n    MotorDriver board(ref = \"pololu_3pi_plus_2040_control_board\", on = @core/chassis, at = \"control_board_holes\", by = \"chassis_holes\", power = @core/cells)\n\n    // Fit the guide's optional pair of #2-56 screws into the supplied 1/4-inch standoffs.\n    Attachment display(ref = \"pololu_3pi_plus_oled_display\", on = @core/board, at = \"oled_standoffs\", by = \"rear_3pi_holes\", power = @core/board, output = \"3V3\")\n\n    Motor motor_left(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, 0.038, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, -0.038, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_32x7mm_white\", glue = (0, 0.0427, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_32x7mm_white\", glue = (0, -0.0427, 0, 0, -1, 0))\n}\n",
     "world": "World pololu_3pi_plus_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/pololu_3pi_plus, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task pololu_3pi_plus_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -10811,9 +10859,9 @@
      "category": "attachment",
      "part": "pololu_3pi_plus_oled_display",
      "xyz": [
-      -0.00852,
+      -0.00854816,
       0.0,
-      0.0134
+      0.012920000000000001
      ],
      "rpy": [
       0.0,
@@ -10971,13 +11019,22 @@
      "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 4.8 V and states no range, so whether 'board' (2.7 V to 8.5 V) accepts it full and run down is not settled"
     },
     {
+     "text": "RobotDSL-Core warns: the declared shapes of 'cells' and 'chassis' overlap by 15 mm"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'board' delivers a nominal 3.3 V from '3V3' and states no range, so whether 'display' (3.1 V to 5.5 V) accepts it is not settled"
+    },
+    {
      "text": "RobotDSL-Core warns: 'board' feeds its motors 8 V; 'motor_left', 'motor_right' are rated at 6 V; driven fully, the motors run above the voltage their ratings hold at"
     },
     {
-     "text": "RobotDSL-Core warns: the declared shapes of 'motor_left' and 'cells' overlap by 6 mm"
+     "text": "RobotDSL-Core warns: the declared shapes of 'display' and 'chassis' overlap by 7 mm"
     },
     {
-     "text": "RobotDSL-Core warns: the declared shapes of 'motor_right' and 'cells' overlap by 6 mm"
+     "text": "RobotDSL-Core warns: the declared shapes of 'motor_left' and 'chassis' overlap by 18 mm"
+    },
+    {
+     "text": "RobotDSL-Core warns: the declared shapes of 'motor_right' and 'chassis' overlap by 18 mm"
     }
    ],
    "mjcf": {
@@ -10994,7 +11051,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Pololu 3pi+ 32U4 OLED Robot as it is sold, assembled, with the four AAA cells it is sold without: the round body on\n// its two 32 mm wheels with the ball moulded under its rear, its control board and removable display on top and its two motors along the axle.\n// The cells feed the board, and the board's two channels drive the motors.\nRobot pololu_3pi_plus_32u4_oled {\n    intent \"Pololu 3pi+ 32U4 OLED Robot, a small round differential-drive robot\"\n\n    Diff_two_caster chassis(ref = \"pololu_3pi_plus_32u4_oled_robot_standard\")\n\n    Battery cells(ref = \"pololu_3pi_plus_four_nimh_aaa_cells\", glue = (0, 0, -0.0085, 0, 0, 1))\n    MotorDriver board(ref = \"pololu_3pi_plus_32u4_oled_control_board\", glue = (0, 0, 0.005, 0, 0, 1), power = @core/cells)\n\n    Attachment display(ref = \"pololu_3pi_plus_oled_display\", glue = (-0.00852, 0, 0.0134, 0, 0, 1))\n\n    Motor motor_left(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, 0.038, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, -0.038, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_32x7mm_white\", glue = (0, 0.0427, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_32x7mm_white\", glue = (0, -0.0427, 0, 0, -1, 0))\n}\n",
+    "core": "// A Pololu 3pi+ 32U4 OLED Robot as it is sold, assembled, with the four AAA cells it is sold without: the round body on\n// its two 32 mm wheels with the ball moulded under its rear, its control board and removable display on top and its two motors along the axle.\n// The cells feed the board, and the board's two channels drive the motors.\nRobot pololu_3pi_plus_32u4_oled {\n    intent \"Pololu 3pi+ 32U4 OLED Robot, a small round differential-drive robot\"\n\n    Diff_two_caster chassis(ref = \"pololu_3pi_plus_32u4_oled_robot_standard\")\n\n    Battery cells(ref = \"pololu_3pi_plus_four_nimh_aaa_cells\", on = @core/chassis, at = \"battery_compartments\", by = \"retained_cells\")\n    MotorDriver board(ref = \"pololu_3pi_plus_32u4_oled_control_board\", on = @core/chassis, at = \"control_board_holes\", by = \"chassis_holes\", power = @core/cells)\n\n    // Fit the guide's optional pair of #2-56 screws into the supplied 1/4-inch standoffs.\n    Attachment display(ref = \"pololu_3pi_plus_oled_display\", on = @core/board, at = \"oled_standoffs\", by = \"rear_3pi_holes\", power = @core/board, output = \"5V\")\n\n    Motor motor_left(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, 0.038, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_micro_metal_gearmotor_30_mp_6v_extended\", glue = (0, -0.038, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_32x7mm_white\", glue = (0, 0.0427, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_32x7mm_white\", glue = (0, -0.0427, 0, 0, -1, 0))\n}\n",
     "world": "World pololu_3pi_plus_32u4_oled_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/pololu_3pi_plus_32u4_oled, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task pololu_3pi_plus_32u4_oled_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -11084,9 +11141,9 @@
      "category": "attachment",
      "part": "pololu_3pi_plus_oled_display",
      "xyz": [
-      -0.00852,
+      -0.00854816,
       0.0,
-      0.0134
+      0.012920000000000001
      ],
      "rpy": [
       0.0,
@@ -11244,13 +11301,22 @@
      "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 4.8 V and states no range, so whether 'board' (2.7 V to 6.5 V) accepts it full and run down is not settled"
     },
     {
+     "text": "RobotDSL-Core warns: the declared shapes of 'cells' and 'chassis' overlap by 15 mm"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'board' delivers a nominal 5 V from '5V' and states no range, so whether 'display' (3.1 V to 5.5 V) accepts it is not settled"
+    },
+    {
      "text": "RobotDSL-Core warns: 'board' feeds its motors 8 V; 'motor_left', 'motor_right' are rated at 6 V; driven fully, the motors run above the voltage their ratings hold at"
     },
     {
-     "text": "RobotDSL-Core warns: the declared shapes of 'motor_left' and 'cells' overlap by 6 mm"
+     "text": "RobotDSL-Core warns: the declared shapes of 'display' and 'chassis' overlap by 7 mm"
     },
     {
-     "text": "RobotDSL-Core warns: the declared shapes of 'motor_right' and 'cells' overlap by 6 mm"
+     "text": "RobotDSL-Core warns: the declared shapes of 'motor_left' and 'chassis' overlap by 18 mm"
+    },
+    {
+     "text": "RobotDSL-Core warns: the declared shapes of 'motor_right' and 'chassis' overlap by 18 mm"
     }
    ],
    "mjcf": {
@@ -12807,7 +12873,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom ESP32 MicroROS car as its Standard version builds it: the body on four rubber wheels, all driven, with\n// the kit's LiDAR on the top cover. Its computer is a virtual machine on a PC, which the car talks to over Wi-Fi.\nRobot microros_esp32 {\n    intent \"Yahboom ESP32 MicroROS four-wheel base with its LiDAR\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_esp32_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.000733939411, -0.001997468167, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_esp32_lidar\", glue = (0, 0, 0.0459, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom ESP32 MicroROS car as its Standard version builds it: the body on four rubber wheels, all driven, with\n// the kit's LiDAR on the top cover. Its computer is a virtual machine on a PC, which the car talks to over Wi-Fi.\nRobot microros_esp32 {\n    intent \"Yahboom ESP32 MicroROS four-wheel base with its LiDAR\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_esp32_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.000733939411, -0.001997468167, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_esp32_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_esp32_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_esp32_lidar\", data = @core/chassis, port = \"lidar_uart\", glue = (0, 0, 0.0459, 0, 0, 1))\n}\n",
     "world": "World microros_esp32_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_esp32, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task microros_esp32_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -12994,7 +13060,7 @@
     }
    ],
    "ground": -0.0453,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
    "summary": "7 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
    "credits": [
     {
@@ -13035,7 +13101,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom MicroROS V2 as its Standard kit builds it: the body on its two rubber wheels and the ball caster under\n// its rear, with the kit's LiDAR on the top deck and its WiFi camera at the front of the upper plate.\nRobot microros_v2 {\n    intent \"Yahboom MicroROS V2 two-wheel differential base with its LiDAR and camera\"\n\n    Diff_two_caster chassis(ref = \"yahboom_microros_v2_chassis\")\n\n    Standard wheel_left(ref = \"yahboom_microros_v2_wheel\", glue = (0, 0.0857, 0.011, 0, 1, 0))\n    Standard wheel_right(ref = \"yahboom_microros_v2_wheel\", glue = (0, -0.0857, 0.011, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_v2_lidar\", glue = (-0.086, 0, 0.1067, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_v2_camera\", glue = (-0.0055, 0, 0.047, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom MicroROS V2 as its Standard kit builds it: the body on its two rubber wheels and the ball caster under\n// its rear, with the kit's LiDAR on the top deck and its WiFi camera at the front of the upper plate.\nRobot microros_v2 {\n    intent \"Yahboom MicroROS V2 two-wheel differential base with its LiDAR and camera\"\n\n    Diff_two_caster chassis(ref = \"yahboom_microros_v2_chassis\")\n\n    Standard wheel_left(ref = \"yahboom_microros_v2_wheel\", glue = (0, 0.0857, 0.011, 0, 1, 0))\n    Standard wheel_right(ref = \"yahboom_microros_v2_wheel\", glue = (0, -0.0857, 0.011, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_v2_lidar\", data = @core/chassis, port = \"lidar_uart\", glue = (-0.086, 0, 0.1067, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_v2_camera\", glue = (-0.0055, 0, 0.047, 0, 0, 1))\n}\n",
     "world": "World microros_v2_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_v2, pose = (0, 0, 0.033, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task microros_v2_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -13172,7 +13238,7 @@
     }
    ],
    "ground": -0.022500000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.35 m from the point), past a box beside its way without touching it",
    "summary": "5 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -13213,7 +13279,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom MicroROS-Pi5 as its kit builds it: the body on four rubber wheels, all driven, with the kit's LiDAR on\n// the top cover and its camera on the gimbal at the front. The kit is sold without a computer; a Raspberry Pi 5,\n// bought beside it, lies inside under the kit's cooler.\nRobot microros_pi5 {\n    intent \"Yahboom MicroROS-Pi5 four-wheel base with its LiDAR, its camera and a Raspberry Pi 5\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_pi5_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.00073393941, -0.00199746817, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_pi5_lidar\", glue = (0, 0, 0.0459, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_pi5_camera\", glue = (0.066, -0.001, 0, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.022, -0.003, 0.0055, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom MicroROS-Pi5 as its kit builds it: the body on four rubber wheels, all driven, with the kit's LiDAR on\n// the top cover and its camera on the gimbal at the front. The kit is sold without a computer; a Raspberry Pi 5,\n// bought beside it, lies inside under the kit's cooler.\nRobot microros_pi5 {\n    intent \"Yahboom MicroROS-Pi5 four-wheel base with its LiDAR, its camera and a Raspberry Pi 5\"\n\n    Diff_drive chassis(ref = \"yahboom_microros_pi5_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.00073393941, -0.00199746817, -0.0295, 0, 0, 1))\n\n    Standard wheel_front_left(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_microros_pi5_wheel\", glue = (0.0475, -0.0658, -0.0213, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, 0.0658, -0.0213, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_microros_pi5_wheel\", glue = (-0.0475, -0.0658, -0.0213, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_microros_pi5_lidar\", data = @core/chassis, port = \"lidar_uart\", glue = (0, 0, 0.0459, 0, 0, 1))\n    Camera camera(ref = \"yahboom_microros_pi5_camera\", data = @core/computer, port = \"usb2_0\", glue = (0.066, -0.001, 0, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", on = @core/chassis, at = \"computer_studs\", by = \"mounting_holes\")\n}\n",
     "world": "World microros_pi5_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/microros_pi5, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task microros_pi5_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -13430,7 +13496,7 @@
      "xyz": [
       -0.022,
       -0.003,
-      0.0055
+      0.00531
      ],
      "rpy": [
       0.0,
@@ -13450,7 +13516,7 @@
     }
    ],
    "ground": -0.0453,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
    "summary": "9 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
    "credits": [
     {
@@ -13615,7 +13681,7 @@
     }
    ],
    "ground": -0.0325,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.24 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.23 m from the point), past a box beside its way without touching it",
    "summary": "4 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -13652,7 +13718,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom Raspbot V2 as its Standard kit builds it: the body on four mecanum wheels, with the kit's ultrasonic\n// module looking out of the front box and its camera on the gimbal above it. The kit is sold with or without a\n// computer; this one is without, and a Raspberry Pi 5, bought beside it, lies under the cover.\nRobot raspbot_v2 {\n    intent \"Yahboom Raspbot V2 mecanum base with its ultrasonic module, its camera and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_raspbot_v2_chassis\")\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.000002170386, -0.000003986155, -0.029002965816, 0, 0, 1))\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_raspbot_v2_mecanum_wheel_fl_rr\", glue = (0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_raspbot_v2_mecanum_wheel_fr_rl\", glue = (0.0586, -0.0663, -0.0148, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_raspbot_v2_mecanum_wheel_fr_rl\", glue = (-0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_raspbot_v2_mecanum_wheel_fl_rr\", glue = (-0.0586, -0.0663, -0.0148, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"yahboom_raspbot_v2_ultrasonic\", glue = (0.0779, 0, 0.016, 1, 0, 0))\n    Camera camera(ref = \"yahboom_raspbot_v2_camera\", glue = (0.06, 0, 0.03, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.014, 0, 0.0262, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom Raspbot V2 as its Standard kit builds it: the body on four mecanum wheels, with the kit's ultrasonic\n// module looking out of the front box and its camera on the gimbal above it. The kit is sold with or without a\n// computer; this one is without, and a Raspberry Pi 5, bought beside it, lies under the cover.\nRobot raspbot_v2 {\n    intent \"Yahboom Raspbot V2 mecanum base with its ultrasonic module, its camera and a Raspberry Pi 5\"\n\n    // The installed YB-MPF01 board takes the supplied pack at its T connector.\n    Mecanum_four_wheel chassis(ref = \"yahboom_raspbot_v2_chassis\", power = @core/battery)\n\n    Battery battery(ref = \"yahboom_7_4v_2000mah_battery\", glue = (-0.000002170386, -0.000003986155, -0.029002965816, 0, 0, 1))\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_raspbot_v2_mecanum_wheel_fl_rr\", glue = (0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_raspbot_v2_mecanum_wheel_fr_rl\", glue = (0.0586, -0.0663, -0.0148, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_raspbot_v2_mecanum_wheel_fr_rl\", glue = (-0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_raspbot_v2_mecanum_wheel_fl_rr\", glue = (-0.0586, -0.0663, -0.0148, 0, -1, 0))\n\n    // The kit's four-wire ultrasonic cable uses the board's documented 5 V header.\n    // This connection does not establish the module's accepted voltage range.\n    Ultrasonic sonar(ref = \"yahboom_raspbot_v2_ultrasonic\", power = @core/chassis, output = \"sonar_power\", glue = (0.0779, 0, 0.016, 1, 0, 0))\n    // The kit camera sends video over USB to the Pi; its separate gimbal servo wiring remains unresolved.\n    // Yahboom Raspbot-V2, 16.Raspberry Pi basic settings/9. Use USB Camera.pdf.\n    Camera camera(ref = \"yahboom_raspbot_v2_camera\", glue = (0.06, 0, 0.03, 0, 0, 1), data = @core/computer, port = \"usb2_0\")\n    // Original M2.5 spacer stack; Raspbot V2 manual, page 14, steps 4 and 6.\n    // Power-only Type-C cable from the board: 5.1 V / 5 A, with the Pi 5 protocol.\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", power = @core/chassis, output = \"pi_power\", on = @core/chassis, at = \"computer_studs\", by = \"mounting_holes\")\n}\n",
     "world": "World raspbot_v2_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/raspbot_v2, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task raspbot_v2_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -13869,7 +13935,7 @@
      "xyz": [
       -0.014,
       0.0,
-      0.0262
+      0.026010000000000002
      ],
      "rpy": [
       0.0,
@@ -13889,7 +13955,7 @@
     }
    ],
    "ground": -0.0451,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.25 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.26 m from the point), past a box beside its way without touching it",
    "summary": "9 parts (7 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
    "credits": [
     {
@@ -13926,6 +13992,18 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range, so whether 'computer' (4.75 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'battery' delivers 5.6 V to 8.4 V, including the 8.4 V 'chassis' is sold for; part yahboom_raspbot_v2_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5 V from 'sonar_power' and states no range; part yahboom_raspbot_v2_ultrasonic of 'sonar' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', and feeds nothing else"
     },
     {
      "text": "MIT",
@@ -14178,7 +14256,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom Roboduino V2 as its kit builds it: the body on four mecanum wheels, with the kit's ultrasonic module\n// looking out of the front box and its Wi-Fi camera on the servo above it.\nRobot roboduino_v2 {\n    intent \"Yahboom Roboduino V2 mecanum base with its ultrasonic module and camera\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_roboduino_v2_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_roboduino_v2_mecanum_wheel_fl_rr\", glue = (0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_roboduino_v2_mecanum_wheel_fr_rl\", glue = (0.0586, -0.0663, -0.0148, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_roboduino_v2_mecanum_wheel_fr_rl\", glue = (-0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_roboduino_v2_mecanum_wheel_fl_rr\", glue = (-0.0586, -0.0663, -0.0148, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"yahboom_roboduino_v2_ultrasonic\", glue = (0.0779, 0, 0.016, 1, 0, 0))\n    Camera camera(ref = \"yahboom_roboduino_v2_camera\", glue = (0.06, 0, 0.03, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom Roboduino V2 as its kit builds it: the body on four mecanum wheels, with the kit's ultrasonic module\n// looking out of the front box and its Wi-Fi camera on the servo above it.\nRobot roboduino_v2 {\n    intent \"Yahboom Roboduino V2 mecanum base with its ultrasonic module and camera\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_roboduino_v2_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_roboduino_v2_mecanum_wheel_fl_rr\", glue = (0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_roboduino_v2_mecanum_wheel_fr_rl\", glue = (0.0586, -0.0663, -0.0148, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_roboduino_v2_mecanum_wheel_fr_rl\", glue = (-0.0586, 0.0663, -0.0148, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_roboduino_v2_mecanum_wheel_fl_rr\", glue = (-0.0586, -0.0663, -0.0148, 0, -1, 0))\n\n    Ultrasonic sonar(ref = \"yahboom_roboduino_v2_ultrasonic\", on = @core/chassis, at = \"sonar_holder_holes\", by = \"holder_threads\")\n    Camera camera(ref = \"yahboom_roboduino_v2_camera\", glue = (0.06, 0, 0.03, 0, 0, 1))\n}\n",
     "world": "World roboduino_v2_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/roboduino_v2, pose = (0, 0, 0.055, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task roboduino_v2_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -14410,7 +14488,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom ROSMASTER A1 as its Ultimate kit builds it: the body on four rubber wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on the roof and its depth camera on the nose. The kit is sold without a\n// computer; a Raspberry Pi 5, bought beside it, lies under the roof on the kit's USB hub board.\nRobot rosmaster_a1 {\n    intent \"Yahboom ROSMASTER A1 Ackermann base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Ackermann chassis(ref = \"yahboom_rosmaster_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, 0.08735, 0.0146, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, -0.08735, 0.0146, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, 0.08735, 0.0145, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, -0.08735, 0.0145, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_a1_lidar\", glue = (0.00606, 0, 0.122, 0, 0, 1))\n    RGBD camera(ref = \"yahboom_rosmaster_a1_depth_camera\", glue = (0.0915, 0, 0.0825, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.031, -0.016, 0.0787, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom ROSMASTER A1 as its Ultimate kit builds it: the body on four rubber wheels, the front pair steered and the\n// rear pair driven, with the kit's LiDAR on the roof and its depth camera on the nose. The kit is sold without a\n// computer; a Raspberry Pi 5, bought beside it, lies under the roof on the kit's USB hub board.\nRobot rosmaster_a1 {\n    intent \"Yahboom ROSMASTER A1 Ackermann base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Ackermann chassis(ref = \"yahboom_rosmaster_a1_chassis\")\n\n    Standard wheel_front_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, 0.08735, 0.0146, 0, 1, 0))\n    Standard wheel_front_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (0.097, -0.08735, 0.0146, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, 0.08735, 0.0145, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"yahboom_rosmaster_a1_wheel\", glue = (-0.097, -0.08735, 0.0145, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_a1_lidar\", glue = (0.00606, 0, 0.122, 0, 0, 1))\n    // The native pack feeds its V3.0 controller; Type-C 5.1 V / 5 A powers the Pi.\n    // The depth camera uses one USB cable for data and power from that Pi.\n    RGBD camera(ref = \"yahboom_rosmaster_a1_depth_camera\", glue = (0.0915, 0, 0.0825, 0, 0, 1), power = @core/computer, output = \"usb_power\", data = @core/computer, port = \"usb2_0\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.031, -0.016, 0.0787, 0, 0, 1), power = @core/chassis, output = \"pi_power\")\n}\n",
     "world": "World rosmaster_a1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosmaster_a1, pose = (0, 0, 0.03, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosmaster_a1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -14622,7 +14700,7 @@
     }
    ],
    "ground": -0.019000000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -14653,6 +14731,21 @@
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
     },
     {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range, so whether 'computer' (4.75 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage; part yahboom_rosmaster_a1_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part yahboom_rosmaster_a1_depth_camera of 'camera' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range; part yahboom_rosmaster_a1_depth_camera of 'camera' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', and feeds nothing else"
+    },
+    {
      "text": "MIT",
      "url": "https://opensource.org/license/mit"
     }
@@ -14671,7 +14764,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom ROSMASTER M1 as its Superior kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// roof and its depth camera on the nose. The kit is sold without a computer; a Raspberry Pi 5, bought beside it, lies\n// under the roof on the kit's USB hub board.\nRobot rosmaster_m1 {\n    intent \"Yahboom ROSMASTER M1 mecanum base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rosmaster_m1_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fl_rr\", glue = (0.093, 0.0966, -0.1075, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fr_rl\", glue = (0.093, -0.0966, -0.1075, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fr_rl\", glue = (-0.093, 0.0966, -0.1075, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fl_rr\", glue = (-0.093, -0.0966, -0.1075, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_m1_lidar\", glue = (0.0101, 0, 0, 0, 0, 1))\n    RGBD camera(ref = \"yahboom_rosmaster_m1_depth_camera\", glue = (0.0955, 0, -0.0395, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.027, -0.016, -0.0433, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom ROSMASTER M1 as its Superior kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// roof and its depth camera on the nose. The kit is sold without a computer; a Raspberry Pi 5, bought beside it, lies\n// under the roof on the kit's USB hub board.\nRobot rosmaster_m1 {\n    intent \"Yahboom ROSMASTER M1 mecanum base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rosmaster_m1_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fl_rr\", glue = (0.093, 0.0966, -0.1075, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fr_rl\", glue = (0.093, -0.0966, -0.1075, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fr_rl\", glue = (-0.093, 0.0966, -0.1075, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rosmaster_m1_mecanum_wheel_fl_rr\", glue = (-0.093, -0.0966, -0.1075, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_m1_lidar\", glue = (0.0101, 0, 0, 0, 0, 1))\n    // The native pack feeds its V3.0 controller; Type-C 5.1 V / 5 A powers the Pi.\n    // The depth camera uses one USB cable for data and power from that Pi.\n    RGBD camera(ref = \"yahboom_rosmaster_m1_depth_camera\", glue = (0.0955, 0, -0.0395, 0, 0, 1), power = @core/computer, output = \"usb_power\", data = @core/computer, port = \"usb2_0\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.027, -0.016, -0.0433, 0, 0, 1), power = @core/chassis, output = \"pi_power\")\n}\n",
     "world": "World rosmaster_m1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosmaster_m1, pose = (0, 0, 0.158, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosmaster_m1_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -14918,6 +15011,21 @@
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
     },
     {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range, so whether 'computer' (4.75 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage; part yahboom_rosmaster_m1_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part yahboom_rosmaster_m1_depth_camera of 'camera' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range; part yahboom_rosmaster_m1_depth_camera of 'camera' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', and feeds nothing else"
+    },
+    {
      "text": "MIT",
      "url": "https://opensource.org/license/mit"
     }
@@ -14936,7 +15044,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom ROSMASTER M3 as its Standard kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// roof and its depth camera on the nose. The kit is sold without a computer; a Raspberry Pi 5, bought beside it, lies\n// under the roof on the kit's USB hub board.\nRobot rosmaster_m3 {\n    intent \"Yahboom ROSMASTER M3 mecanum base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rosmaster_m3_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fl_rr\", glue = (0.0795, 0.08715, -0.0996, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fr_rl\", glue = (0.0795, -0.08715, -0.0996, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fr_rl\", glue = (-0.0795, 0.08715, -0.0996, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fl_rr\", glue = (-0.0795, -0.08715, -0.0996, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rosmaster_m3_lidar\", glue = (0.0351, 0, 0, 0, 0, 1))\n    RGBD camera(ref = \"yahboom_rosmaster_m3_depth_camera\", glue = (0.0855, 0, -0.0448, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.017, -0.016, -0.0414, 0, 0, 1))\n}\n",
+    "core": "// A Yahboom ROSMASTER M3 as its Standard kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// roof and its depth camera on the nose. The kit is sold without a computer; a Raspberry Pi 5, bought beside it, lies\n// under the roof on the kit's USB hub board.\nRobot rosmaster_m3 {\n    intent \"Yahboom ROSMASTER M3 mecanum base with its LiDAR, its depth camera and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rosmaster_m3_chassis\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fl_rr\", glue = (0.0795, 0.08715, -0.0996, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fr_rl\", glue = (0.0795, -0.08715, -0.0996, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fr_rl\", glue = (-0.0795, 0.08715, -0.0996, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rosmaster_m3_mecanum_wheel_fl_rr\", glue = (-0.0795, -0.08715, -0.0996, 0, -1, 0))\n\n    // The kit tutorial connects this LiDAR to the controller's left UART4 socket.\n    // Its physical supply is declared, while that header's voltage/current remain unknown.\n    Lidar lidar(ref = \"yahboom_rosmaster_m3_lidar\", glue = (0.0351, 0, 0, 0, 0, 1), data = @core/chassis, port = \"lidar_uart4\", power = @core/chassis, output = \"lidar_power\")\n    // The included pack feeds the native control board; its Type-C 5.1 V / 5 A output powers the Pi.\n    // The depth camera uses one USB cable for data and power from that Pi.\n    RGBD camera(ref = \"yahboom_rosmaster_m3_depth_camera\", glue = (0.0855, 0, -0.0448, 0, 0, 1), power = @core/computer, output = \"usb_power\", data = @core/computer, port = \"usb2_0\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.017, -0.016, -0.0414, 0, 0, 1), power = @core/chassis, output = \"pi_power\")\n}\n",
     "world": "World rosmaster_m3_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rosmaster_m3, pose = (0, 0, 0.15, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rosmaster_m3_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -15148,7 +15256,7 @@
     }
    ],
    "ground": -0.1396,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -15181,6 +15289,24 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range, so whether 'computer' (4.75 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 12 V and states no range; part yahboom_rosmaster_m3_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'lidar_power', so whether 'lidar' (4.8 V to 5.2 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part yahboom_rosmaster_m3_depth_camera of 'camera' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' delivers a nominal 5.1 V from 'pi_power' and states no range; part yahboom_rosmaster_m3_depth_camera of 'camera' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_input.continuous_current_a; 'chassis' delivers 5 A continuously from 'pi_power', and feeds nothing else"
     },
     {
      "text": "MIT",
@@ -15388,7 +15514,7 @@
     }
    ],
    "ground": -0.022400000000000003,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "7 parts (4 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -15616,7 +15742,7 @@
     }
    ],
    "ground": -0.07189999999999999,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.26 m from the point), past a box beside its way without touching it",
    "summary": "7 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {

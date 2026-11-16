@@ -18,7 +18,7 @@
         <geom type="box" size="0.1146 0.0765 0.06185" pos="0.0019 0 0.0079" group="1" conaffinity="0" />
         <body name="wheel_front_left" pos="0.08 0.0845 -0.0389">
           <joint name="wheel_front_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
-          <inertial pos="1.941e-06 -0.000642 -5.84e-07" mass="0.0395" fullinertia="1.451e-05 2.411e-05 1.452e-05 -6.407e-11 -5.018e-10 -1.447e-09" />
+          <inertial pos="1.934e-06 -0.0006413 -1.063e-07" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 3.971e-11 -5.915e-10 -1.639e-09" />
           <body name="wheel_front_left/roller_0" pos="0 0 -0.02639125">
             <joint name="wheel_front_left/roller_0" type="hinge" axis="-0.707106781 0.707106781 0" />
             <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
@@ -130,7 +130,7 @@
         </body>
         <body name="wheel_front_right" pos="0.08 -0.0845 -0.0389" quat="1.79489651e-09 0 0 1">
           <joint name="wheel_front_right_joint" type="hinge" axis="0 -1 0" armature="0.0001" />
-          <inertial pos="-6.145e-07 -0.0005924 2.3e-06" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 -1.469e-09 -2.097e-10 -1.735e-10" />
+          <inertial pos="-2.283e-07 -0.0005912 2.192e-06" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 -1.581e-09 -4.805e-10 -8.448e-11" />
           <body name="wheel_front_right/roller_0" pos="0 0 -0.02639125">
             <joint name="wheel_front_right/roller_0" type="hinge" axis="-0.707106781 -0.707106781 0" />
             <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
@@ -242,7 +242,7 @@
         </body>
         <body name="wheel_rear_left" pos="-0.08 0.0845 -0.0395">
           <joint name="wheel_rear_left_joint" type="hinge" axis="0 1 0" armature="0.0001" />
-          <inertial pos="-6.145e-07 -0.0005924 2.3e-06" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 -1.469e-09 -2.097e-10 -1.735e-10" />
+          <inertial pos="-2.283e-07 -0.0005912 2.192e-06" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 -1.581e-09 -4.805e-10 -8.448e-11" />
           <body name="wheel_rear_left/roller_0" pos="0 0 -0.02639125">
             <joint name="wheel_rear_left/roller_0" type="hinge" axis="0.707106781 0.707106781 0" />
             <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />
@@ -354,7 +354,7 @@
         </body>
         <body name="wheel_rear_right" pos="-0.08 -0.0845 -0.0395" quat="1.79489651e-09 0 0 1">
           <joint name="wheel_rear_right_joint" type="hinge" axis="0 -1 0" armature="0.0001" />
-          <inertial pos="1.941e-06 -0.000642 -5.84e-07" mass="0.0395" fullinertia="1.451e-05 2.411e-05 1.452e-05 -6.407e-11 -5.018e-10 -1.447e-09" />
+          <inertial pos="1.934e-06 -0.0006413 -1.063e-07" mass="0.0395" fullinertia="1.452e-05 2.411e-05 1.452e-05 3.971e-11 -5.915e-10 -1.639e-09" />
           <body name="wheel_rear_right/roller_0" pos="0 0 -0.02639125">
             <joint name="wheel_rear_right/roller_0" type="hinge" axis="0.707106781 -0.707106781 0" />
             <inertial pos="0 0 0" mass="0.001" diaginertia="1e-06 1e-06 1e-06" />

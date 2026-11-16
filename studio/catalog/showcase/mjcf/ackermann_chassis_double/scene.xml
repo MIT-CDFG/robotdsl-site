@@ -14,7 +14,7 @@
     <body name="base_footprint" pos="0 0 0.05" quat="1 0 0 0">
       <freejoint />
       <body name="base_link" pos="0 0 0.0235">
-        <inertial pos="-0.00637 -0.0001531 0.0482" mass="0.524" fullinertia="0.00151 0.00438 0.004711 4.134e-05 -0.0002019 8.79e-07" />
+        <inertial pos="-0.005754 1.095e-05 0.04803" mass="0.524" fullinertia="0.001508 0.004346 0.004672 3.784e-05 -0.0001941 9.389e-07" />
         <geom type="box" size="0.135 0.06025 0.0516" pos="0.0005 0 0.0445" group="1" conaffinity="0" />
         <body name="motor_left" pos="-0.08607209 0.06030475 0.01400358" quat="0.707085845 -0.00544113209 -0.00544113211 0.707085847">
           <inertial pos="-0.02904 -4.66e-05 0.006748" mass="0.152" fullinertia="2.384e-05 4.582e-05 4.543e-05 -2.095e-07 1.287e-06 4.339e-09" />

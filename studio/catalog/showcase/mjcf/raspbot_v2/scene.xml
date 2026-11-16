@@ -476,9 +476,53 @@
           <inertial pos="-0.03379 -0.0001819 -0.0137" mass="0.0688" fullinertia="5.439e-05 6.143e-05 4.532e-05 1.301e-21 0 -7.204e-22" />
           <geom type="box" size="0.0338 0.0289 0.0247" pos="-0.0338 0 0.0008" group="1" conaffinity="0" />
         </body>
-        <body name="computer" pos="-0.014 0 0.0262" quat="1.79489651e-09 0 0 1">
+        <body name="computer" pos="-0.014 0 0.02601" quat="1.79489651e-09 0 0 1">
           <inertial pos="0.02409 -0.001094 0.00468" mass="0.02566" fullinertia="7.656e-06 1.705e-05 2.356e-05 1.513e-06 -1.682e-06 1.948e-07" />
-          <geom type="box" size="0.04425 0.0288 0.0095" pos="0.0113 -0.0008 0.0082" group="1" conaffinity="0" />
+          <geom type="box" size="0.0425 0.028 0.00266299999" pos="0.01 0 0.00137300002" group="1" conaffinity="0" />
+          <geom type="box" size="0.0442500001 0.019237675 0.00270325005" pos="0.0113 -0.0103926751 0.00309874995" group="1" conaffinity="0" />
+          <geom type="box" size="0.0019 0.003 0.002153" pos="0.0347 0.024 0.003649" group="1" conaffinity="0" />
+          <geom type="box" size="0.0108 0.0259823404 0.00920250005" pos="0.04475 0.000267340328 0.00869850005" group="1" conaffinity="0" />
+          <geom type="box" size="0.00159 0.00159 0.00525" pos="0.029 -0.0185 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.02159 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01905 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01651 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01397 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01143 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00889 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00635 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00381 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00127 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00127 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00381 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00635 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00889 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01143 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01397 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01651 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01905 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.02159 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.02413 0.02323 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.02413 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.02159 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01905 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01651 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01397 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.01143 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00889 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00635 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00381 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.00127 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00127 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00381 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00635 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.00889 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01143 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01397 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01651 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.01905 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.02159 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="-0.02413 0.02577 0.004846" group="1" conaffinity="0" />
+          <geom type="box" size="0.00032 0.00032 0.00525" pos="0.02413 0.02323 0.004846" group="1" conaffinity="0" />
         </body>
       </body>
     </body>
