@@ -11259,6 +11259,1098 @@
    }
   },
   {
+   "id": "romi",
+   "group": "makers",
+   "robots": [
+    "Pololu Romi"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Pololu Romi that drives: its kit (the chassis, its two motors in their clips, the pair of 70 mm wheels and the ball\n// caster), the Motor Driver and Power Distribution Board on its deck and six AA cells in its battery compartment. The\n// cells feed the board, and the board's two channels drive the motors.\nRobot romi {\n    intent \"Pololu Romi two-wheel differential base with a rear ball caster\"\n\n    Diff_two_caster chassis(ref = \"pololu_romi_chassis_kit\")\n\n    Battery cells(ref = \"pololu_romi_six_nimh_aa_cells\", on = @core/chassis, at = \"aa_compartment\", by = \"retained_cells\")\n    MotorDriver board(ref = \"pololu_romi_motor_driver_power_board\", on = @core/chassis, at = \"power_board_screws\", by = \"mounting_holes\", power = @core/cells)\n\n    Motor motor_left(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, 0.06269, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, -0.06269, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_70x8mm\", glue = (0, 0.0704, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_70x8mm\", glue = (0, -0.0704, 0, 0, -1, 0))\n\n    Caster caster(ref = \"pololu_romi_ball_caster\", glue = (-0.06396984067436, -0.00000973866262, -0.02223, 0, 0, -1))\n}\n",
+    "world": "World romi_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/romi, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task romi_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "romi.core",
+    "world": "romi_room.world",
+    "task": "romi_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "pololu_romi_chassis_kit",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "cells",
+     "category": "battery",
+     "part": "pololu_romi_six_nimh_aa_cells",
+     "xyz": [
+      0.0,
+      0.0,
+      -0.0175
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "board",
+     "category": "motor_driver",
+     "part": "pololu_romi_motor_driver_power_board",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      -0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      -0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "caster",
+     "category": "wheel",
+     "part": "pololu_romi_ball_caster",
+     "xyz": [
+      -0.06396984067436,
+      -9.73866262e-06,
+      -0.02223
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.035,
+   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.19 m from the point), past a box beside its way without touching it",
+   "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
+   "credits": [
+    {
+     "text": "Sold by Pololu: Romi Chassis Kit - Black",
+     "url": "https://www.pololu.com/product/3500"
+    },
+    {
+     "text": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, Extended Motor Shaft (PCX): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2311/magnetic-encoder-pair-kit-with-connector-for-mini-plastic-gearmotor.zip"
+    },
+    {
+     "text": "Romi Chassis Ball Caster Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Romi Chassis Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Motor Driver and Power Distribution Board for Romi Chassis (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1222/motor-driver-and-power-distribution-board-for-romi-chassis.step"
+    },
+    {
+     "text": "Rechargeable NiMH AA Battery: 1.2 V, 2200 mAh, six cells for the Romi chassis (Pololu): drawn by the RobotDSL Team after the maker's picture and stated size",
+     "url": "https://a.pololu-files.com/picture/0J3191.1200.jpg"
+    },
+    {
+     "text": "Pololu Wheel 70×8mm Pair - White (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1293/pololu-wheel-70%C3%978mm.zip"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 7.2 V and states no range, so whether 'board' (2.5 V to 10.8 V) accepts it full and run down is not settled"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/romi/scene.xml",
+    "drive": "mjcf/romi/drive.json"
+   }
+  },
+  {
+   "id": "romi_lidar",
+   "group": "makers",
+   "robots": [
+    "Pololu Romi with a Unitree 4D LiDAR L2"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// The motor circuit uses the Romi battery compartment and screwed driver board.\n// The rear carrier retains the Pi and three underside boards. See WIRING.md for\n// soldered power, GPIO/PWM motor commands and unknown manufacturer limits.\nRobot romi_lidar {\n    intent \"Pololu Romi differential base carrying a Unitree 4D LiDAR L2 and a MinIMU-9 inertial unit\"\n\n    Diff_two_caster chassis(ref = \"pololu_romi_chassis_kit\")\n\n    Battery cells(ref = \"pololu_romi_six_nimh_aa_cells\", on = @core/chassis, at = \"aa_compartment\", by = \"retained_cells\")\n    MotorDriver board(ref = \"pololu_romi_motor_driver_power_board\", on = @core/chassis, at = \"power_board_screws\", by = \"mounting_holes\", power = @core/cells)\n\n    Motor motor_left(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, 0.06269, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, -0.06269, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_70x8mm\", glue = (0, 0.0704, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_70x8mm\", glue = (0, -0.0704, 0, 0, -1, 0))\n\n    Caster caster(ref = \"pololu_romi_ball_caster\", glue = (-0.06396984067436, -0.00000973866262, -0.02223, 0, 0, -1))\n\n    // The second caster is purchased separately; it supports the front lidar installation.\n    Caster caster_front(ref = \"pololu_romi_ball_caster\", glue = (0.04422, 0, -0.02223, 0, 0, -1))\n\n    Mount lidar_mount(ref = \"robotdsl_romi_l2_front_tower\", on = @core/chassis, at = \"v3_front_docking_sensor\", by = \"under_holes\")\n    Lidar3D lidar(ref = \"unitree_4d_lidar_l2\", on = @core/lidar_mount, at = \"lidar_holes\", by = \"mounting_holes\", power = @core/lidar_regulator, output = \"vout\", data = @core/computer, port = \"ethernet\")\n    IMU imu(ref = \"pololu_minimu_9_v6\", on = @core/electronics, at = \"imu_hole\", by = \"mounting_holes\", power = @core/computer, output = \"gpio_3v3\", data = @core/computer, port = \"i2c1\")\n\n    Mount electronics(ref = \"robotdsl_romi_lidar_electronics_carrier\", on = @core/chassis, at = \"compute_romi_pi5\", by = \"under_holes\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", on = @core/electronics, at = \"board_holes\", by = \"mounting_holes\", power = @core/pi_regulator, output = \"vout\")\n    Attachment pi_regulator(ref = \"pololu_d42v110f5_5v_regulator\", on = @core/electronics, at = \"d42_holes\", by = \"mounting_holes\", power = @core/cells)\n    Attachment lidar_regulator(ref = \"pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12\", on = @core/electronics, at = \"s13_holes\", by = \"mounting_holes\", power = @core/cells)\n}\n",
+    "world": "World romi_lidar_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/romi_lidar, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task romi_lidar_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "romi_lidar.core",
+    "world": "romi_lidar_room.world",
+    "task": "romi_lidar_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "pololu_romi_chassis_kit",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "cells",
+     "category": "battery",
+     "part": "pololu_romi_six_nimh_aa_cells",
+     "xyz": [
+      0.0,
+      0.0,
+      -0.0175
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "board",
+     "category": "motor_driver",
+     "part": "pololu_romi_motor_driver_power_board",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      -0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      -0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "caster",
+     "category": "wheel",
+     "part": "pololu_romi_ball_caster",
+     "xyz": [
+      -0.06396984067436,
+      -9.73866262e-06,
+      -0.02223
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "caster_front",
+     "category": "wheel",
+     "part": "pololu_romi_ball_caster",
+     "xyz": [
+      0.04422,
+      0.0,
+      -0.02223
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar_mount",
+     "category": "mount",
+     "part": "robotdsl_romi_l2_front_tower",
+     "xyz": [
+      0.06675,
+      -4.499999999999999e-06,
+      -0.010005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar",
+     "category": "sensor",
+     "part": "unitree_4d_lidar_l2",
+     "xyz": [
+      0.042,
+      -4.499999999999999e-06,
+      0.034995
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "imu",
+     "category": "sensor",
+     "part": "pololu_minimu_9_v6",
+     "xyz": [
+      -0.068,
+      -0.010004999999999993,
+      0.023195
+     ],
+     "rpy": [
+      3.141592653589793,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "electronics",
+     "category": "mount",
+     "part": "robotdsl_romi_lidar_electronics_carrier",
+     "xyz": [
+      -0.045,
+      -4.999999999996327e-06,
+      -0.010005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.045,
+      -4.999999999996327e-06,
+      0.041005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "pi_regulator",
+     "category": "attachment",
+     "part": "pololu_d42v110f5_5v_regulator",
+     "xyz": [
+      -0.032,
+      0.005995000000000002,
+      0.023195
+     ],
+     "rpy": [
+      3.141592653589793,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar_regulator",
+     "category": "attachment",
+     "part": "pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12",
+     "xyz": [
+      -0.068,
+      0.009995000000000007,
+      0.023195
+     ],
+     "rpy": [
+      3.141592653589793,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.035,
+   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.25 m from the point), past a box beside its way without touching it",
+   "summary": "16 parts (13 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 3 kinds drawn by the RobotDSL Team",
+   "credits": [
+    {
+     "text": "Sold by Pololu: Romi Chassis Kit - Black",
+     "url": "https://www.pololu.com/product/3500"
+    },
+    {
+     "text": "12V, 2.5A Step-Up/Step-Down Voltage Regulator S13V25F12 (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1960/step-up-step-down-voltage-regulator-s13v25fx.step"
+    },
+    {
+     "text": "5V, 11A Step-Down Voltage Regulator D42V110F5 (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2219/d42v110fx-step-down-voltage-regulator.step"
+    },
+    {
+     "text": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, Extended Motor Shaft (PCX): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2311/magnetic-encoder-pair-kit-with-connector-for-mini-plastic-gearmotor.zip"
+    },
+    {
+     "text": "MinIMU-9 v6 Gyro, Accelerometer, and Compass (LSM6DSO and LIS3MDL Carrier) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1978/minimu-9-v6-gyro-accelerometer-and-compass.step"
+    },
+    {
+     "text": "Romi Chassis Ball Caster Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Romi Chassis Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Motor Driver and Power Distribution Board for Romi Chassis (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1222/motor-driver-and-power-distribution-board-for-romi-chassis.step"
+    },
+    {
+     "text": "Rechargeable NiMH AA Battery: 1.2 V, 2200 mAh, six cells for the Romi chassis (Pololu): drawn by the RobotDSL Team after the maker's picture and stated size",
+     "url": "https://a.pololu-files.com/picture/0J3191.1200.jpg"
+    },
+    {
+     "text": "Pololu Wheel 70×8mm Pair - White (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1293/pololu-wheel-70%C3%978mm.zip"
+    },
+    {
+     "text": "Raspberry Pi 5 (8GB) (Raspberry Pi): the model Raspberry Pi publishes, MIT",
+     "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
+    },
+    {
+     "text": "Romi braced front LiDAR tower (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Romi L2 retained electronics carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Unitree 4D LiDAR L2 (Unitree Robotics): the model Unitree Robotics publishes",
+     "url": "https://oss-global-cdn.unitree.com/static/L2%203D%20Model.STEP"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 7.2 V and states no range, so whether 'board' (2.5 V to 10.8 V) accepts it full and run down is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 7.2 V and states no range, so whether 'lidar_regulator' (2.8 V to 22 V) accepts it full and run down is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 7.2 V and states no range, so whether 'pi_regulator' (5 V to 60 V) accepts it full and run down is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'lidar_regulator' delivers 11.52 V to 12.48 V from 'vout', including the 12 V 'lidar' is sold for; part unitree_4d_lidar_l2 of 'lidar' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'computer' delivers a nominal 3.3 V from 'gpio_3v3' and states no range, so whether 'imu' (2.5 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "MIT",
+     "url": "https://opensource.org/license/mit"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/romi_lidar/scene.xml",
+    "drive": "mjcf/romi_lidar/drive.json"
+   }
+  },
+  {
+   "id": "romi_bumpers",
+   "group": "makers",
+   "robots": [
+    "Pololu Romi with bumper switches"
+   ],
+   "state": "drives",
+   "papers": [],
+   "files": {
+    "core": "// A Pololu Romi with its bumper switches: the Romi that drives (its kit, the Motor Driver and Power Distribution Board\n// and six AA cells), and a board of three snap-action switches screwed onto each half of the front deck. The cells behind\n// the axles are what keeps it on its caster with the switches out in front.\nRobot romi_bumpers {\n    intent \"Pololu Romi two-wheel differential base with bumper switches across its front\"\n\n    Diff_two_caster chassis(ref = \"pololu_romi_chassis_kit\")\n\n    Battery cells(ref = \"pololu_romi_six_nimh_aa_cells\", on = @core/chassis, at = \"aa_compartment\", by = \"retained_cells\")\n    MotorDriver board(ref = \"pololu_romi_motor_driver_power_board\", on = @core/chassis, at = \"power_board_screws\", by = \"mounting_holes\", power = @core/cells)\n\n    Motor motor_left(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, 0.06269, 0, 0, 1, 0), command = @core/board)\n    Motor motor_right(ref = \"pololu_mini_plastic_gearmotor_120_hp_offset_extended\", glue = (0, -0.06269, 0, 0, -1, 0), command = @core/board)\n\n    Standard wheel_left(ref = \"pololu_wheel_70x8mm\", glue = (0, 0.0704, 0, 0, 1, 0))\n    Standard wheel_right(ref = \"pololu_wheel_70x8mm\", glue = (0, -0.0704, 0, 0, -1, 0))\n\n    Caster caster(ref = \"pololu_romi_ball_caster\", glue = (-0.06396984067436, -0.00000973866262, -0.02223, 0, 0, -1))\n\n    Bumper bumper_left(ref = \"pololu_romi_bumper_switches_left\", on = @core/chassis, at = \"bumper_left_screws\", by = \"mounting_holes\")\n    Bumper bumper_right(ref = \"pololu_romi_bumper_switches_right\", on = @core/chassis, at = \"bumper_right_screws\", by = \"mounting_holes\")\n}\n",
+    "world": "World romi_bumpers_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/romi_bumpers, pose = (0, 0, 0.05, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (1.2, 0.3, 0.25, 0, 0, 0, 1), size = (0.3, 0.3, 0.5),\n        ),\n    }\n    Goal goal(pose = (1.5, 0, 0, 0, 0, 0, 1))\n}\n",
+    "task": "Task romi_bumpers_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
+   },
+   "names": {
+    "core": "romi_bumpers.core",
+    "world": "romi_bumpers_room.world",
+    "task": "romi_bumpers_drive.task"
+   },
+   "scene": [
+    {
+     "name": "chassis",
+     "category": "chassis",
+     "part": "pololu_romi_chassis_kit",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "cells",
+     "category": "battery",
+     "part": "pololu_romi_six_nimh_aa_cells",
+     "xyz": [
+      0.0,
+      0.0,
+      -0.0175
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "board",
+     "category": "motor_driver",
+     "part": "pololu_romi_motor_driver_power_board",
+     "xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_left",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_right",
+     "category": "motor",
+     "part": "pololu_mini_plastic_gearmotor_120_hp_offset_extended",
+     "xyz": [
+      0.0,
+      -0.06269,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      -1.5707963267948966
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_left",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "wheel_right",
+     "category": "wheel",
+     "part": "pololu_wheel_70x8mm",
+     "xyz": [
+      0.0,
+      -0.0704,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "caster",
+     "category": "wheel",
+     "part": "pololu_romi_ball_caster",
+     "xyz": [
+      -0.06396984067436,
+      -9.73866262e-06,
+      -0.02223
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "bumper_left",
+     "category": "sensor",
+     "part": "pololu_romi_bumper_switches_left",
+     "xyz": [
+      0.045,
+      0.045,
+      -0.01
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "bumper_right",
+     "category": "sensor",
+     "part": "pololu_romi_bumper_switches_right",
+     "xyz": [
+      0.045,
+      -0.045,
+      -0.01
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "ground": -0.035,
+   "drove": "in Gazebo it reached its goal 1.5 m ahead (0.19 m from the point), past a box beside its way without touching it",
+   "summary": "10 parts (8 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 1 kind drawn by the RobotDSL Team",
+   "credits": [
+    {
+     "text": "Sold by Pololu: Romi Chassis Kit - Black",
+     "url": "https://www.pololu.com/product/3500"
+    },
+    {
+     "text": "120:1 Mini Plastic Gearmotor HP, Offset 3mm D-Shaft Output, Extended Motor Shaft (PCX): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2311/magnetic-encoder-pair-kit-with-connector-for-mini-plastic-gearmotor.zip"
+    },
+    {
+     "text": "Romi Chassis Ball Caster Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Left Bumper Switch Assembly for Romi/TI-RSLK MAX (Through-Hole Pins Soldered) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1672/romi-ti-rslk-max-bumper-switch-assembly.step"
+    },
+    {
+     "text": "Right Bumper Switch Assembly for Romi/TI-RSLK MAX (Through-Hole Pins Soldered) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1672/romi-ti-rslk-max-bumper-switch-assembly.step"
+    },
+    {
+     "text": "Romi Chassis Kit - Black (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1298/romi-chassis-kit.step"
+    },
+    {
+     "text": "Motor Driver and Power Distribution Board for Romi Chassis (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1222/motor-driver-and-power-distribution-board-for-romi-chassis.step"
+    },
+    {
+     "text": "Rechargeable NiMH AA Battery: 1.2 V, 2200 mAh, six cells for the Romi chassis (Pololu): drawn by the RobotDSL Team after the maker's picture and stated size",
+     "url": "https://a.pololu-files.com/picture/0J3191.1200.jpg"
+    },
+    {
+     "text": "Pololu Wheel 70×8mm Pair - White (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1293/pololu-wheel-70%C3%978mm.zip"
+    },
+    {
+     "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'cells' is sold as 7.2 V and states no range, so whether 'board' (2.5 V to 10.8 V) accepts it full and run down is not settled"
+    }
+   ],
+   "mjcf": {
+    "scene": "mjcf/romi_bumpers/scene.xml",
+    "drive": "mjcf/romi_bumpers/drive.json"
+   }
+  },
+  {
    "id": "alloy_chassis_4wd",
    "group": "makers",
    "robots": [
