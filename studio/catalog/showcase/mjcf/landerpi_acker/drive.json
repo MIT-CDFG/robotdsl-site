@@ -50,6 +50,19 @@
       "y": 0.0704
     }
   ],
+  "links": {
+    "arm": {
+      "gripper_base_link": "arm/gripper_base_link",
+      "gripper_left_link": "arm/gripper_left_link",
+      "gripper_right_link": "arm/gripper_right_link",
+      "left_jaw_link": "arm/left_jaw_link",
+      "link2": "arm/link2",
+      "link3": "arm/link3",
+      "link4": "arm/link4",
+      "link5": "arm/link5",
+      "right_jaw_link": "arm/right_jaw_link"
+    }
+  },
   "min_turning_radius": 0.14808904276224544,
   "robot": "landerpi_acker",
   "schema": "robotdsl.mjcf_drive"

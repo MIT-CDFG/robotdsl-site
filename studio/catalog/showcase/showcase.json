@@ -7135,7 +7135,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder JetRover as its Standard Kit builds it on the Ackermann chassis: the body on four 100 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR under the upper deck and its six-axis arm on\n// the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's software starts it\n// in for mapping, where the camera looks straight ahead. The kit is sold without a computer.\nRobot jetrover_acker {\n    intent \"Hiwonder JetRover Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_jetrover_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, 0.070748952, -0.065486764, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, -0.070901681, -0.065486764, 0, -1, 0))\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, 0.1107, -0.0658, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, -0.1107, -0.0658, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, 0.1107, -0.0655, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, -0.1107, -0.0655, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetrover_acker_lidar\", glue = (0.09, 0, 0.002, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_jetrover_acker_arm\", glue = (0.0251, 0, 0.0774, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetrover_acker_depth_camera\", glue = (0.0756, 0, 0.2984, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder JetRover as its Standard Kit builds it on the Ackermann chassis: the body on four 100 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR under the upper deck and its six-axis arm on\n// the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's software starts it\n// in for mapping, where the camera looks straight ahead. The kit is sold without a computer.\nRobot jetrover_acker {\n    intent \"Hiwonder JetRover Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_jetrover_acker_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, 0.070748952, -0.065486764, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.106579884, -0.070901681, -0.065486764, 0, -1, 0), command = @core/chassis)\n\n    Standard wheel_front_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, 0.1107, -0.0658, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (0.1068, -0.1107, -0.0658, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, 0.1107, -0.0655, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_rubber_wheel_100mm\", glue = (-0.1066, -0.1107, -0.0655, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetrover_acker_lidar\", glue = (0.09, 0, 0.002, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_jetrover_acker_arm\", glue = (0.0251, 0, 0.0774, 0, 0, 1), power = @core/chassis, output = \"servo_bus\")\n    RGBD camera(ref = \"hiwonder_jetrover_acker_depth_camera\", on = @core/arm, at = \"camera_bracket_holes\", by = \"rear_camera_threads\")\n}\n",
     "world": "World jetrover_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetrover_acker, pose = (0, 0, 0.12, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task jetrover_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -7368,6 +7368,238 @@
       0.0,
       0.0,
       0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0338648012164686
+       ],
+       "rpy": [
+        0.0,
+        -1.0297442586766545,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        -0.11093154602268776,
+        0.0,
+        0.10051919862934505
+       ],
+       "rpy": [
+        0.0,
+        1.012290966156711,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.0011562729872471866,
+        0.0,
+        0.16911440234667027
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.053318762887463615,
+        0.0,
+        0.17006526763483035
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_link",
+       "xyz": [
+        0.08568392103817796,
+        -0.013992,
+        0.17794791809512914
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_link",
+       "xyz": [
+        0.08568159672802791,
+        0.013977,
+        0.17796648035744617
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_in_link",
+       "xyz": [
+        0.10464372624465638,
+        0.0049403,
+        0.17812453922181742
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_out_link",
+       "xyz": [
+        0.1336418745595595,
+        0.0049403,
+        0.17842640266740262
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_in_link",
+       "xyz": [
+        0.10464372624465638,
+        -0.004943,
+        0.17812453922181742
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_out_link",
+       "xyz": [
+        0.1336418745595595,
+        -0.004943,
+        0.17842640266740262
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
      ]
     },
     {
@@ -7375,14 +7607,14 @@
      "category": "sensor",
      "part": "hiwonder_jetrover_acker_depth_camera",
      "xyz": [
-      0.0881,
-      0.0,
-      0.2984
+      0.08806249396817435,
+      -0.00043750981632358695,
+      0.2983647576709836
      ],
      "rpy": [
-      0.0,
-      -0.0,
-      0.0
+      -3.643274837890031e-11,
+      -0.017496326752681302,
+      -3.6731622024360692e-06
      ],
      "visual_xyz": [
       0.0,
@@ -7397,7 +7629,7 @@
     }
    ],
    "ground": -0.1158,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.30 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "10 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -7430,6 +7662,15 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_jetrover_acker_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_jetrover_acker_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'servo_bus'; part hiwonder_jetrover_acker_arm of 'arm' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -7446,7 +7687,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder JetRover as its Standard Kit builds it on the mecanum chassis: the body on four mecanum wheels,\n// with the kit's LiDAR under the upper deck and its six-axis arm on the turntable, holding the depth camera at\n// its wrist. The arm is in the pose the maker's software starts it in for mapping, where the camera looks\n// straight ahead. The kit is sold without a computer.\nRobot jetrover {\n    intent \"Hiwonder JetRover mecanum base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_jetrover_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097415569, 0.070505, -0.067844107, 0, 1, 0))\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097415569, -0.070495, -0.067844107, 0, -1, 0))\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097513077, 0.070825305, -0.067844107, 0, 1, 0))\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097513077, -0.070825313, -0.067844107, 0, -1, 0))\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (0.0975, 0.1095, -0.0678, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (0.0975, -0.1095, -0.0678, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (-0.0975, 0.1095, -0.0678, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (-0.0975, -0.1095, -0.0678, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetrover_lidar\", glue = (0.09, 0, 0.002, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_jetrover_arm\", glue = (0.0251, 0, 0.0774, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_jetrover_depth_camera\", glue = (0.0756, 0, 0.2984, 1, 0, 0))\n}\n",
+    "core": "// A Hiwonder JetRover as its Standard Kit builds it on the mecanum chassis: the body on four mecanum wheels,\n// with the kit's LiDAR under the upper deck and its six-axis arm on the turntable, holding the depth camera at\n// its wrist. The arm is in the pose the maker's software starts it in for mapping, where the camera looks\n// straight ahead. The kit is sold without a computer.\n// The camera uses the factory M3 x 6 screws and the measured rear-hole pair; its pose follows the bracket face.\nRobot jetrover {\n    intent \"Hiwonder JetRover mecanum base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_jetrover_chassis\")\n\n    // The kit's motors, each on its bracket at a wheel.\n    // Installed battery -> factory controller -> independent drive circuits.\n    Motor motor_front_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097415569, 0.070505, -0.067844107, 0, 1, 0), command = @core/chassis)\n    Motor motor_front_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (0.097415569, -0.070495, -0.067844107, 0, -1, 0), command = @core/chassis)\n    Motor motor_rear_left(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097513077, 0.070825305, -0.067844107, 0, 1, 0), command = @core/chassis)\n    Motor motor_rear_right(ref = \"hiwonder_520_gearmotor_90_12v\", glue = (-0.097513077, -0.070825313, -0.067844107, 0, -1, 0), command = @core/chassis)\n\n    Mecanum wheel_front_left(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (0.0975, 0.1095, -0.0678, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (0.0975, -0.1095, -0.0678, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_mecanum_wheel_97mm_fr_rl\", glue = (-0.0975, 0.1095, -0.0678, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_mecanum_wheel_97mm_fl_rr\", glue = (-0.0975, -0.1095, -0.0678, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_jetrover_lidar\", glue = (0.09, 0, 0.002, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_jetrover_arm\", glue = (0.0251, 0, 0.0774, 0, 0, 1), power = @core/chassis, output = \"servo_bus\")\n    RGBD camera(ref = \"hiwonder_jetrover_depth_camera\", on = @core/arm, at = \"camera_bracket_holes\", by = \"rear_camera_threads\")\n}\n",
     "world": "World jetrover_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/jetrover, pose = (0, 0, 0.12, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task jetrover_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -7729,6 +7970,238 @@
       0.0,
       0.0,
       0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.0,
+        0.0,
+        0.0338648012164686
+       ],
+       "rpy": [
+        0.0,
+        -1.0297442586766545,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        -0.11093154602268776,
+        0.0,
+        0.10051919862934505
+       ],
+       "rpy": [
+        0.0,
+        1.012290966156711,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.0011562729872471866,
+        0.0,
+        0.16911440234667027
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.053318762887463615,
+        0.0,
+        0.17006526763483035
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_link",
+       "xyz": [
+        0.08568392103817796,
+        -0.013992,
+        0.17794791809512914
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_link",
+       "xyz": [
+        0.08568159672802791,
+        0.013977,
+        0.17796648035744617
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_in_link",
+       "xyz": [
+        0.10464372624465638,
+        0.0049403,
+        0.17812453922181742
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "l_out_link",
+       "xyz": [
+        0.1336418745595595,
+        0.0049403,
+        0.17842640266740262
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_in_link",
+       "xyz": [
+        0.10464372624465638,
+        -0.004943,
+        0.17812453922181742
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "r_out_link",
+       "xyz": [
+        0.1336418745595595,
+        -0.004943,
+        0.17842640266740262
+       ],
+       "rpy": [
+        0.0,
+        1.553343034274953,
+        0.0
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
      ]
     },
     {
@@ -7736,14 +8209,14 @@
      "category": "sensor",
      "part": "hiwonder_jetrover_depth_camera",
      "xyz": [
-      0.0881,
-      0.0,
-      0.2984
+      0.08806249396817435,
+      -0.00043750981632358695,
+      0.2983647576709836
      ],
      "rpy": [
-      0.0,
-      -0.0,
-      0.0
+      -3.643274837890031e-11,
+      -0.017496326752681302,
+      -3.6731622024360692e-06
      ],
      "visual_xyz": [
       0.0,
@@ -7758,7 +8231,7 @@
     }
    ],
    "ground": -0.1167,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
    "summary": "12 parts (7 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -7795,6 +8268,15 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part hiwonder_jetrover_chassis of 'chassis' states no current one motor channel delivers, so whether it can start its motors is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 11.1 V and states no range; part hiwonder_jetrover_chassis of 'chassis' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'servo_bus'; part hiwonder_jetrover_arm of 'arm' states no range it accepts"
     }
    ],
    "mjcf": {
@@ -7811,7 +8293,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder LanderPi as its Standard Kit builds it on the Ackermann chassis: the body on four 65 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR at the front of the middle deck and its\n// six-axis arm on the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's LiDAR\n// app puts it in to drive, where the camera looks ahead and down. A Raspberry Pi 5 rides on the deck; the kit is\n// sold without one.\nRobot landerpi_acker {\n    intent \"Hiwonder LanderPi Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_landerpi_acker_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, -0.0704, -0.0211, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, -0.0704, -0.0211, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_landerpi_acker_lidar\", glue = (0.073, 0, 0.018, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_landerpi_acker_arm\", glue = (0.0446, 0, 0.0691, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_landerpi_acker_depth_camera\", glue = (0.0889, 0, 0.2051, 0.7658, 0, -0.6431))\n}\n",
+    "core": "// A Hiwonder LanderPi as its Standard Kit builds it on the Ackermann chassis: the body on four 65 mm wheels, the\n// front pair steered and the rear pair driven, with the kit's LiDAR at the front of the middle deck and its\n// six-axis arm on the turntable, holding the depth camera at its wrist. The arm is in the pose the maker's LiDAR\n// app puts it in to drive, where the camera looks ahead and down. The kit is sold without a Raspberry Pi 5;\n// this example does not include that board.\nRobot landerpi_acker {\n    intent \"Hiwonder LanderPi Ackermann base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Ackermann chassis(ref = \"hiwonder_landerpi_acker_chassis\")\n\n    Standard wheel_front_left(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_front_right(ref = \"hiwonder_landerpi_acker_front_wheel\", glue = (0.0668, -0.0704, -0.0211, 0, -1, 0))\n    Standard wheel_rear_left(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, 0.0704, -0.0211, 0, 1, 0))\n    Standard wheel_rear_right(ref = \"hiwonder_landerpi_acker_rear_wheel\", glue = (-0.0677, -0.0704, -0.0211, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_landerpi_acker_lidar\", glue = (0.073, 0, 0.018, 0, 0, 1))\n    // The native controller supplies the documented three-pin arm bus; its voltage/current are unpublished.\n    Attachment arm(ref = \"hiwonder_landerpi_acker_arm\", glue = (0.0446, 0, 0.0691, 0, 0, 1), power = @core/chassis, output = \"arm_bus\", data = @core/chassis, port = \"arm_uart\")\n    RGBD camera(ref = \"hiwonder_landerpi_acker_depth_camera\", on = @core/arm, at = \"kit_camera_plate\", by = \"kit_rear_threads\")\n}\n",
     "world": "World landerpi_acker_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/landerpi_acker, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task landerpi_acker_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -7994,6 +8476,215 @@
       0.0,
       0.0,
       0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.0,
+        -0.0182247260841935,
+        0.0314158515121316
+       ],
+       "rpy": [
+        0.005936441757634687,
+        -0.9374457503633536,
+        -0.0025917742623193076
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        -0.06025317105268077,
+        -0.017872700405207647,
+        0.07458935472414219
+       ],
+       "rpy": [
+        -0.007774018525054463,
+        0.6125590348706488,
+        -0.016387878685854458
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.01761626520766911,
+        -0.017351357877174515,
+        0.1352418769759003
+       ],
+       "rpy": [
+        -3.1089055643480688,
+        0.8720834034215512,
+        -3.1174115492922687
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.020608065275071967,
+        0.0008743679660163754,
+        0.10298808013679166
+       ],
+       "rpy": [
+        -3.1280174398440357,
+        0.872382845219349,
+        -3.1309745357953105
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_base_link",
+       "xyz": [
+        0.05375110730284564,
+        0.0006389257125933971,
+        0.07517610014277243
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_left_link",
+       "xyz": [
+        0.05604557828504867,
+        0.014120649862175958,
+        0.07312917456228935
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_right_link",
+       "xyz": [
+        0.05605154701470974,
+        -0.012875460672324692,
+        0.07336482290366265
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_jaw_link",
+       "xyz": [
+        0.0602247897441549,
+        0.0380145694373451,
+        0.06028097563018196
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_jaw_link",
+       "xyz": [
+        0.060241371968657746,
+        -0.0369855714667713,
+        0.060935649894618846
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
      ]
     },
     {
@@ -8001,14 +8692,14 @@
      "category": "sensor",
      "part": "hiwonder_landerpi_acker_depth_camera",
      "xyz": [
-      0.10482842297671541,
-      0.0,
-      0.19172370225081525
+      0.10489258616763543,
+      -2.1374727372238723e-05,
+      0.19192316674510657
      ],
      "rpy": [
-      0.0,
-      0.6985281252787313,
-      0.0
+      -0.011480523960366324,
+      0.7069296937063615,
+      -0.0072375863210936385
      ],
      "visual_xyz": [
       0.0,
@@ -8023,7 +8714,7 @@
     }
    ],
    "ground": -0.0535,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.33 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -8056,6 +8747,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range, so whether 'chassis' (5 V to 12.6 V) accepts it full and run down is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'arm_bus', so whether 'arm' (6 V to 8.4 V) accepts it is not settled"
     }
    ],
    "mjcf": {
@@ -8072,7 +8769,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Hiwonder LanderPi as its Standard Kit builds it on the mecanum chassis: the body on four mecanum wheels,\n// with the kit's LiDAR at the front of the middle deck and its six-axis arm on the turntable, holding the depth\n// camera at its wrist. The arm is in the pose the maker's LiDAR app puts it in to drive, where the camera looks\n// ahead and down. A Raspberry Pi 5 rides on the deck; the kit is sold without one.\nRobot landerpi {\n    intent \"Hiwonder LanderPi mecanum base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_landerpi_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_landerpi_mecanum_wheel_fl_rr\", glue = (0.0668, 0.0716, -0.0211, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_landerpi_mecanum_wheel_fr_rl\", glue = (0.0668, -0.0716, -0.0211, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_landerpi_mecanum_wheel_fr_rl\", glue = (-0.0677, 0.0716, -0.0211, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_landerpi_mecanum_wheel_fl_rr\", glue = (-0.0677, -0.0716, -0.0211, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_landerpi_lidar\", glue = (0.073, 0, 0.018, 0, 0, 1))\n    Attachment arm(ref = \"hiwonder_landerpi_arm\", glue = (0.0446, 0, 0.0691, 0, 0, 1))\n    RGBD camera(ref = \"hiwonder_landerpi_depth_camera\", glue = (0.0889, 0, 0.2051, 0.7658, 0, -0.6431))\n}\n",
+    "core": "// A Hiwonder LanderPi as its Standard Kit builds it on the mecanum chassis: the body on four mecanum wheels,\n// with the kit's LiDAR at the front of the middle deck and its six-axis arm on the turntable, holding the depth\n// camera at its wrist. The arm is in the pose the maker's LiDAR app puts it in to drive, where the camera looks\n// ahead and down. The kit is sold without a Raspberry Pi 5; this example does not include that board.\nRobot landerpi {\n    intent \"Hiwonder LanderPi mecanum base with its LiDAR, its arm and the depth camera on the arm\"\n\n    Mecanum_four_wheel chassis(ref = \"hiwonder_landerpi_chassis\")\n\n    Mecanum wheel_front_left(ref = \"hiwonder_landerpi_mecanum_wheel_fl_rr\", glue = (0.0668, 0.0716, -0.0211, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"hiwonder_landerpi_mecanum_wheel_fr_rl\", glue = (0.0668, -0.0716, -0.0211, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"hiwonder_landerpi_mecanum_wheel_fr_rl\", glue = (-0.0677, 0.0716, -0.0211, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"hiwonder_landerpi_mecanum_wheel_fl_rr\", glue = (-0.0677, -0.0716, -0.0211, 0, -1, 0))\n\n    Lidar lidar(ref = \"hiwonder_landerpi_lidar\", glue = (0.073, 0, 0.018, 0, 0, 1))\n    // The native controller supplies the documented three-pin arm bus; its voltage/current are unpublished.\n    Attachment arm(ref = \"hiwonder_landerpi_arm\", glue = (0.0446, 0, 0.0691, 0, 0, 1), power = @core/chassis, output = \"arm_bus\", data = @core/chassis, port = \"arm_uart\")\n    RGBD camera(ref = \"hiwonder_landerpi_depth_camera\", on = @core/arm, at = \"kit_camera_plate\", by = \"kit_rear_threads\")\n}\n",
     "world": "World landerpi_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/landerpi, pose = (0, 0, 0.06, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task landerpi_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -8255,6 +8952,215 @@
       0.0,
       0.0,
       0.0
+     ],
+     "links": [
+      {
+       "name": "link2",
+       "xyz": [
+        0.0,
+        -0.0182247260841935,
+        0.0314158515121316
+       ],
+       "rpy": [
+        0.005936441757634687,
+        -0.9374457503633536,
+        -0.0025917742623193076
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link3",
+       "xyz": [
+        -0.06025317105268077,
+        -0.017872700405207647,
+        0.07458935472414219
+       ],
+       "rpy": [
+        -0.007774018525054463,
+        0.6125590348706488,
+        -0.016387878685854458
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link4",
+       "xyz": [
+        -0.01761626520766911,
+        -0.017351357877174515,
+        0.1352418769759003
+       ],
+       "rpy": [
+        -3.1089055643480688,
+        0.8720834034215512,
+        -3.1174115492922687
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "link5",
+       "xyz": [
+        0.020608065275071967,
+        0.0008743679660163754,
+        0.10298808013679166
+       ],
+       "rpy": [
+        -3.1280174398440357,
+        0.872382845219349,
+        -3.1309745357953105
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_base_link",
+       "xyz": [
+        0.05375110730284564,
+        0.0006389257125933971,
+        0.07517610014277243
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_left_link",
+       "xyz": [
+        0.05604557828504867,
+        0.014120649862175958,
+        0.07312917456228935
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "gripper_right_link",
+       "xyz": [
+        0.05605154701470974,
+        -0.012875460672324692,
+        0.07336482290366265
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "left_jaw_link",
+       "xyz": [
+        0.0602247897441549,
+        0.0380145694373451,
+        0.06028097563018196
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      {
+       "name": "right_jaw_link",
+       "xyz": [
+        0.060241371968657746,
+        -0.0369855714667713,
+        0.060935649894618846
+       ],
+       "rpy": [
+        -3.128019331366176,
+        0.8722658462679111,
+        -3.1309770057074706
+       ],
+       "visual_xyz": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "visual_rpy": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
      ]
     },
     {
@@ -8262,14 +9168,14 @@
      "category": "sensor",
      "part": "hiwonder_landerpi_depth_camera",
      "xyz": [
-      0.10482842297671541,
-      0.0,
-      0.19172370225081525
+      0.10489258616763543,
+      -2.1374727372238723e-05,
+      0.19192316674510657
      ],
      "rpy": [
-      0.0,
-      0.6985281252787313,
-      0.0
+      -0.011480523960366324,
+      0.7069296937063615,
+      -0.0072375863210936385
      ],
      "visual_xyz": [
       0.0,
@@ -8284,7 +9190,7 @@
     }
    ],
    "ground": -0.0535,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.32 m from the point), past a box beside its way without touching it",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
    "summary": "8 parts (6 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
@@ -8317,6 +9223,12 @@
     },
     {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' is sold as 7.4 V and states no range, so whether 'chassis' (5 V to 12.6 V) accepts it full and run down is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'chassis' states no voltage from 'arm_bus', so whether 'arm' (6 V to 8.4 V) accepts it is not settled"
     }
    ],
    "mjcf": {

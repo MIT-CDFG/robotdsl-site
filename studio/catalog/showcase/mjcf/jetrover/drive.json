@@ -62,6 +62,20 @@
   ],
   "kinematics": "holonomic",
   "kingpins": [],
+  "links": {
+    "arm": {
+      "l_in_link": "arm/l_in_link",
+      "l_link": "arm/l_link",
+      "l_out_link": "arm/l_out_link",
+      "link2": "arm/link2",
+      "link3": "arm/link3",
+      "link4": "arm/link4",
+      "link5": "arm/link5",
+      "r_in_link": "arm/r_in_link",
+      "r_link": "arm/r_link",
+      "r_out_link": "arm/r_out_link"
+    }
+  },
   "robot": "jetrover",
   "schema": "robotdsl.mjcf_drive"
 }
