@@ -1,5 +1,5 @@
 name: Site or Studio problem
-description: Something on the project page or in the Studio preview does not work or looks wrong.
+description: Something on the project page, in the Studio or in the documentation does not work or looks wrong.
 labels: ["bug"]
 body:
   - type: input
@@ -13,7 +13,7 @@ body:
     id: steps
     attributes:
       label: Steps and result
-      description: What you did, what you expected and what happened. Build, Copilot, exports, uploads and reports need the hosted service, so "compiler offline" in the preview is expected.
+      description: What you did, what you expected and what happened. A screenshot helps.
     validations:
       required: true
   - type: input
