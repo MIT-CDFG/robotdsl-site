@@ -1,0 +1,43 @@
+name: Propose a part's figures
+description: A figure of a part in the library that its maker does not publish, or one the library states wrongly, with where you have it from.
+title: 'Part figures: '
+labels:
+- part figures
+body:
+- type: markdown
+  attributes:
+    value: |
+      Propose here a figure of a part the library has: a voltage range, a current or a mass that its maker does not publish and you have from a datasheet or a measurement of your own, or one the library states wrongly.
+      Whoever keeps the library checks it against your source and answers here. Once it is in the library, every robot with the part is checked with it.
+      The Studio fills this form in from a part's **Specifications**, where the figure already works for your own robots. To offer a part the library does not have, use one of the **Submit a …** forms.
+      **Never paste an API key.** Keys starting with `sk-`, `sk-ant-` or `AIza` should not appear anywhere in the issue.
+- type: input
+  id: part
+  attributes:
+    label: The part
+    description: Its id in the library, as its sheet in the Studio shows it after `ref=`.
+    placeholder: gobilda_nimh_battery_12v_3000mah
+  validations:
+    required: true
+- type: textarea
+  id: figures
+  attributes:
+    label: The figures
+    description: 'One a line: the field as Specifications names it, your figure in its unit, and what the library states now.'
+    placeholder: |
+      battery.voltage_min_v: 10 V (the library: not stated)
+      battery.voltage_max_v: 14.5 V (the library: not stated)
+    render: text
+  validations:
+    required: true
+- type: textarea
+  id: source
+  attributes:
+    label: Where the figures are from
+    description: The address of the datasheet or the page that states them, or how you measured them, with what and on how many parts.
+  validations:
+    required: true
+- type: textarea
+  id: note
+  attributes:
+    label: Anything to add
