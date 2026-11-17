@@ -1,7 +1,7 @@
 {
   "generator": "tools/studio.py",
   "core": {
-    "commit": "634500cc81f7a19d922da4d6a3e51b6663ebeea9",
+    "commit": "882d27a15f764c13773289d79623109e9b8d56bf",
     "dirty": false
   },
   "lark": "1.3.1",
@@ -33,7 +33,7 @@
   ],
   "reference": {
     "file": "reference.json",
-    "sha256": "2474f9339715d29329f5ba07372e947a78d93c0ba33292bd747cfb93805bcf2b",
+    "sha256": "6e075048423d94d3b4771cc19d68e939854a2818e4a306a95101e3bc6b042547",
     "pages": [
       "robot",
       "world",

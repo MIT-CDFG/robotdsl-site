@@ -584,7 +584,7 @@
           <inertial pos="-1.257e-06 -4.717e-05 -1.049e-07" mass="0.01417" fullinertia="5.906e-06 1.169e-05 5.907e-06 -5.919e-11 1.914e-11 -3.236e-11" />
           <geom type="sphere" size="0.035" group="1" conaffinity="0" friction="1 0.005 0.0001" priority="1" />
         </body>
-        <body name="caster" pos="-0.0639698407 -9.73866262e-06 -0.02223" quat="1.79489651e-09 0 0 1">
+        <body name="caster" pos="-0.0639698407 -9.73866262e-06 -0.02173" quat="1.79489651e-09 0 0 1">
           <inertial pos="3.012e-05 -4.926e-06 0.00108" mass="0.0135" fullinertia="1.082e-06 1.082e-06 1.294e-06 -5.28e-11 1.673e-11 1.492e-11" />
           <geom type="mesh" mesh="compound/pololu_romi_ball_caster/0_hull" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
           <geom type="mesh" mesh="compound/pololu_romi_ball_caster/1_hull" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
@@ -624,7 +624,7 @@
           <geom type="mesh" mesh="compound/pololu_romi_ball_caster/35_hull" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
           <geom type="sphere" size="0.0127" pos="3.00796628e-05 -4.86933131e-06 -7.49741382e-05" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
         </body>
-        <body name="caster_front" pos="0.04422 0 -0.02223">
+        <body name="caster_front" pos="0.04422 0 -0.02173">
           <inertial pos="3.012e-05 -4.926e-06 0.00108" mass="0.0135" fullinertia="1.082e-06 1.082e-06 1.294e-06 -5.28e-11 1.673e-11 1.492e-11" />
           <geom type="mesh" mesh="compound/pololu_romi_ball_caster/0_hull" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
           <geom type="mesh" mesh="compound/pololu_romi_ball_caster/1_hull" group="1" conaffinity="0" friction="0.01 0.005 0.0001" priority="1" />
