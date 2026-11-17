@@ -515938,13 +515938,6 @@
        "message": "part husarion_rosbot_xl_mecanum_chassis of chassis states no `power_input.continuous_current_a`"
       },
       {
-       "component": "device1_sensor",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part luxonis_oak_d_pro of device1_sensor states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "chassis",
        "missing": [
         "power_outputs.rear_usb_1_power.efficiency"
@@ -532094,13 +532087,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -532138,13 +532124,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -532949,13 +532928,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -532993,13 +532965,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -533931,13 +533896,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -533989,13 +533947,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -534971,13 +534922,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -535029,13 +534973,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -536011,13 +535948,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -536069,13 +535999,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -537154,13 +537077,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -537219,13 +537135,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -538318,13 +538227,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -538383,13 +538285,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -539482,13 +539377,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -539547,13 +539435,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -540646,13 +540527,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -540711,13 +540585,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -541580,13 +541447,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -541624,13 +541484,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -542435,13 +542288,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -542479,13 +542325,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -543409,13 +543248,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -543467,13 +543299,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -544441,13 +544266,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -544499,13 +544317,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -545473,13 +545284,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -545531,13 +545335,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -546489,13 +546286,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -546533,13 +546323,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -547455,13 +547238,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -547499,13 +547275,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -548420,13 +548189,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -548464,13 +548226,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -549282,13 +549037,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -549340,13 +549088,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -550195,13 +549936,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -550253,13 +549987,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -551073,13 +550800,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -551117,13 +550837,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -551899,13 +551612,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -551943,13 +551649,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -552725,13 +552424,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -552769,13 +552461,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -553551,13 +553236,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -553595,13 +553273,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -554397,13 +554068,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -554448,13 +554112,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -555257,13 +554914,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -555308,13 +554958,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -556117,13 +555760,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -556168,13 +555804,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -556977,13 +556606,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -557028,13 +556650,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -557837,20 +557452,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "device1_sensor",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part luxonis_oak_d_pro of device1_sensor states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -557888,20 +557489,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "device1_sensor",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part luxonis_oak_d_pro of device1_sensor states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -558697,20 +558284,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "device1_sensor",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part luxonis_oak_d_pro of device1_sensor states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -558748,20 +558321,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "device1_sensor",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part luxonis_oak_d_pro of device1_sensor states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -559684,13 +559243,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -559749,13 +559301,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -560729,13 +560274,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -560794,13 +560332,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -561774,13 +561305,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -561839,13 +561363,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -562811,13 +562328,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -562855,13 +562365,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -563776,13 +563279,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -563820,13 +563316,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -564741,13 +564230,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -564785,13 +564267,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -565603,13 +565078,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -565647,13 +565115,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -566458,13 +565919,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -566502,13 +565956,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -567543,13 +566990,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -567601,13 +567041,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -568693,13 +568126,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -568751,13 +568177,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -569843,13 +569262,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -569901,13 +569313,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -570993,13 +570398,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -571051,13 +570449,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -572016,13 +571407,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -572081,13 +571465,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -573053,13 +572430,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -573118,13 +572488,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -574090,13 +573453,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device2_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -574155,13 +573511,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device2_sensor",
@@ -575016,13 +574365,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -575074,13 +574416,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -575921,13 +575256,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "device1_sensor",
        "missing": [
         "power_input.continuous_current_a"
@@ -575979,13 +575307,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "device1_sensor",
@@ -578225,13 +577546,6 @@
        "message": "part husarion_rosbot_xl_mecanum_chassis of chassis states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "chassis",
        "missing": [
         "power_outputs.user_5v.efficiency"
@@ -578817,13 +578131,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part husarion_rosbot_xl_mecanum_chassis of chassis states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "chassis",
@@ -584655,13 +583962,6 @@
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -584727,13 +584027,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -586040,13 +585333,6 @@
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -586112,13 +585398,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -587425,13 +586704,6 @@
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -587497,13 +586769,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -588350,13 +587615,6 @@
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -588401,13 +587659,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -589210,13 +588461,6 @@
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "regulator",
        "missing": [
         "power_outputs.vout.efficiency"
@@ -589261,13 +588505,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part maxbotix_mb1010_lv_maxsonar_ez1 of front_sensor states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "regulator",
@@ -590348,13 +589585,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -590413,13 +589643,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -591498,13 +590721,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -591563,13 +590779,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -592673,13 +591882,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -592738,13 +591940,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -593848,13 +593043,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -593913,13 +593101,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -594948,13 +594129,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -595013,13 +594187,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -596073,13 +595240,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -596138,13 +595298,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -597153,13 +596306,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -597218,13 +596364,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -598443,13 +597582,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -598508,13 +597640,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -599807,13 +598932,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "servo_adapter",
        "missing": [
         "power_input.continuous_current_a"
@@ -599886,13 +599004,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "servo_adapter",
@@ -601224,13 +600335,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "servo_adapter",
        "missing": [
         "power_input.continuous_current_a"
@@ -601303,13 +600407,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "servo_adapter",
@@ -602626,13 +601723,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "servo_adapter",
        "missing": [
         "power_input.continuous_current_a"
@@ -602705,13 +601795,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "servo_adapter",
@@ -604020,13 +603103,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -604092,13 +603168,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -605381,13 +604450,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -605453,13 +604515,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -606767,13 +605822,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -606839,13 +605887,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -608153,13 +607194,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -608225,13 +607259,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -609464,13 +608491,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -609536,13 +608556,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -610800,13 +609813,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -610872,13 +609878,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -612091,13 +611090,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -612163,13 +611155,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -613782,13 +612767,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -613854,13 +612832,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
@@ -615473,13 +614444,6 @@
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
       },
       {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
-      },
-      {
        "component": "u2d2",
        "missing": [
         "power_input.continuous_current_a"
@@ -615545,13 +614509,6 @@
         "power_input.continuous_current_a"
        ],
        "message": "part pololu_d42v110f5_5v_regulator of regulator states no `power_input.continuous_current_a`"
-      },
-      {
-       "component": "computer",
-       "missing": [
-        "power_input.continuous_current_a"
-       ],
-       "message": "part raspberry_pi_5_8gb of computer states no `power_input.continuous_current_a`"
       },
       {
        "component": "u2d2",
