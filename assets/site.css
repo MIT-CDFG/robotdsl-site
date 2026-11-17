@@ -153,9 +153,10 @@
 .demos > * { min-width: 0; }
 @media (max-width: 640px) { .demos { grid-template-columns: minmax(0, 1fr); } }
 /* The paper is here for its citation, so the section stays small. */
-#paper { padding-block: 48px; }
-#paper .stack { gap: 14px; justify-items: center; }
-#paper .eyebrow { color: var(--accent); }
+#cite { padding-block: 48px; }
+#cite .stack { gap: 14px; justify-items: center; }
+#cite .eyebrow { color: var(--accent); }
 .citation { display: grid; gap: 12px; justify-items: center; width: 100%; max-width: 760px; }
 .citation .markdown-body { width: 100%; min-width: 0; }
 .citation .markdown-body pre { margin: 0; font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }
+@media (max-width: 600px) { .citation .markdown-body pre { white-space: pre-wrap; overflow-wrap: anywhere; } }   /* on a phone the entry wraps, as the program does, instead of running off the box */
