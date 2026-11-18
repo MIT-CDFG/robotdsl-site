@@ -161208,7 +161208,7 @@
    "robots": [],
    "papers": [],
    "files": {
-    "core": "// The Unitree Go1, which walks by the joystick policy MuJoCo Playground trained for it.\nRobot go1 {\n    intent \"Unitree Go1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_go1\")\n}\n",
+    "core": "// The Unitree Go1, which walks by the policy trained for it by MuJoCo Playground's joystick task.\nRobot go1 {\n    intent \"Unitree Go1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_go1\")\n}\n",
     "world": "World go1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/go1, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task go1_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },

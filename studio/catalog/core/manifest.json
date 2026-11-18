@@ -12246,8 +12246,8 @@
   "policies": {
     "unitree_go1": {
       "file": "policies/unitree_go1.onnx",
-      "bytes": 772916,
-      "sha256": "386cde6a1eac679e2f2a313ade2b395d9f26905b151ee3b019c2c4163d49b6f2"
+      "bytes": 770935,
+      "sha256": "96f5c63a426e8fc6ff1607ba4ad1717a22d8d28a096acc53d15ab15bcaf30899"
     },
     "unitree_g1": {
       "file": "policies/unitree_g1.onnx",

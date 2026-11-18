@@ -11,7 +11,7 @@
      "shown": true
     },
     {
-     "text": "The Unitree and Booster models are MuJoCo Menagerie's and the Go1's and the T1's trained walking controllers MuJoCo Playground's, both by Google DeepMind; the G1's and the RobotDSL Biped's walking controllers are the RobotDSL Team's, trained by Playground's joystick task, CC BY 4.0. The RobotDSL Hexapod, Quadruped, Dog and Biped are the RobotDSL Team's own designs, CC BY 4.0."
+     "text": "The Unitree and Booster models are MuJoCo Menagerie's and the T1's trained walking controller MuJoCo Playground's, both by Google DeepMind; the Go1's, the G1's and the RobotDSL Biped's walking controllers are the RobotDSL Team's, trained by Playground's joystick task, CC BY 4.0. The RobotDSL Hexapod, Quadruped, Dog and Biped are the RobotDSL Team's own designs, CC BY 4.0."
     }
    ]
   },
@@ -72,7 +72,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// The Unitree Go1, which walks by the joystick policy MuJoCo Playground trained for it.\nRobot go1 {\n    intent \"Unitree Go1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_go1\")\n}\n",
+    "core": "// The Unitree Go1, which walks by the policy trained for it by MuJoCo Playground's joystick task.\nRobot go1 {\n    intent \"Unitree Go1 that walks by its walking controller\"\n\n    Legged body(ref = \"unitree_go1\")\n}\n",
     "world": "World go1_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/go1, pose = (0, 0, 0, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.8, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task go1_walk(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -387,8 +387,8 @@
     }
    ],
    "ground": -0.2944695935726062,
-   "drove": "in MuJoCo it walked by its walking controller alone, 2.46 m in 5 s told 0.5 m/s and 3.41 rad in 4 s told 1 rad/s, without falling",
-   "summary": "1 part from the RobotDSL parts library with its 12 links, drawn from MuJoCo Menagerie's model, and the walking controller MuJoCo Playground trained for it",
+   "drove": "in MuJoCo it walked by its walking controller alone, 2.48 m in 5 s told 0.5 m/s and 4.01 rad in 4 s told 1 rad/s, without falling",
+   "summary": "1 part from the RobotDSL parts library with its 12 links, drawn from MuJoCo Menagerie's model, and the walking controller the RobotDSL Team trained for it by MuJoCo Playground's joystick task",
    "credits": [
     {
      "text": "Made by Unitree Robotics: Unitree Go1",
@@ -399,8 +399,12 @@
      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_go1"
     },
     {
-     "text": "The walking controller and the model it was trained on: MuJoCo Playground's joystick policy, Apache-2.0",
+     "text": "The model the walking controller was trained on, and the task it was trained by: MuJoCo Playground's feet-only model of the Go1 and its joystick task, Apache-2.0",
      "url": "https://github.com/google-deepmind/mujoco_playground"
+    },
+    {
+     "text": "The walking controller: the RobotDSL Team's, trained to follow a slow command and to stand still when told nothing, CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
      "text": "Changed: the model's meshes reduced for the web; the robot written by RobotDSL-Core's mjcf target as the model the policy was trained on, as the top of its scene.xml says"
@@ -410,7 +414,7 @@
      "url": "catalog/showcase/mjcf/unitree_go1/LICENSE-menagerie.txt"
     },
     {
-     "text": "MuJoCo Playground's licence of its model and walking controller, Apache-2.0",
+     "text": "MuJoCo Playground's licence of its model and its joystick task, Apache-2.0",
      "url": "catalog/showcase/mjcf/unitree_go1/LICENSE-playground.txt"
     }
    ],

@@ -280501,7 +280501,7 @@
    },
    "subtype": "Legged",
    "supplier": "Unitree Robotics",
-   "description": "Unitree Go1, a quadruped of twelve joints, three on each leg, as MuJoCo Playground's feet-only model has it, with the joystick policy Playground trained on that model as its walking controller.",
+   "description": "Unitree Go1, a quadruped of twelve joints, three on each leg, as MuJoCo Playground's feet-only model has it, with a policy trained by Playground's joystick task on that model, following a slow command too, as its walking controller.",
    "source_url": "https://www.unitree.com/go1"
   },
   {
