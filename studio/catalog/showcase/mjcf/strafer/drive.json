@@ -1,6 +1,18 @@
 {
   "bodies": {
+    "battery": "battery",
+    "battery_holder": "battery_holder",
     "chassis": "base_link",
+    "compute_mount": "compute_mount",
+    "computer": "computer",
+    "drive_front": "drive_front",
+    "drive_rear": "drive_rear",
+    "motor_front_left": "motor_front_left",
+    "motor_front_right": "motor_front_right",
+    "motor_rear_left": "motor_rear_left",
+    "motor_rear_right": "motor_rear_right",
+    "regulator": "regulator",
+    "regulator_mount": "regulator_mount",
     "wheel_front_left": "wheel_front_left",
     "wheel_front_right": "wheel_front_right",
     "wheel_rear_left": "wheel_rear_left",
@@ -16,7 +28,7 @@
         -7.211538461538462
       ],
       "joint": "wheel_front_left_joint",
-      "max_speed": null,
+      "max_speed": 32.6725636,
       "radius": 0.052
     },
     {
@@ -27,7 +39,7 @@
         7.211538461538462
       ],
       "joint": "wheel_front_right_joint",
-      "max_speed": null,
+      "max_speed": 32.6725636,
       "radius": 0.052
     },
     {
@@ -38,7 +50,7 @@
         -7.211538461538462
       ],
       "joint": "wheel_rear_left_joint",
-      "max_speed": null,
+      "max_speed": 32.6725636,
       "radius": 0.052
     },
     {
@@ -49,7 +61,7 @@
         7.211538461538462
       ],
       "joint": "wheel_rear_right_joint",
-      "max_speed": null,
+      "max_speed": 32.6725636,
       "radius": 0.052
     }
   ],

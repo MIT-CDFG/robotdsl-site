@@ -152,16 +152,16 @@
         "bytes": 3057176
       },
       "gobilda_gripforce_mecanum_104mm_fl_rr": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
-        "bytes": 7529744
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/f825e334a627bc644379a5a7dade91a8f818f9e0/parts/gobilda_gripforce_mecanum_104mm_fl_rr/assets/model.glb",
+        "bytes": 3786116
       },
       "gobilda_gripforce_mecanum_104mm_fr_rl": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/gobilda_gripforce_mecanum_104mm_fr_rl/assets/model.glb",
-        "bytes": 7520312
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/f825e334a627bc644379a5a7dade91a8f818f9e0/parts/gobilda_gripforce_mecanum_104mm_fr_rl/assets/model.glb",
+        "bytes": 3820292
       },
       "gobilda_strafer_chassis_kit_104mm": {
-        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/gobilda_strafer_chassis_kit_104mm/assets/model.glb",
-        "bytes": 34464716
+        "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/f825e334a627bc644379a5a7dade91a8f818f9e0/parts/gobilda_strafer_chassis_kit_104mm/assets/model.glb",
+        "bytes": 10939972
       },
       "hiwonder_mentorpi_m1_chassis": {
         "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/hiwonder_mentorpi_m1_chassis/assets/model.glb",

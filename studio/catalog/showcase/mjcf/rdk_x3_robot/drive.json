@@ -13,46 +13,46 @@
     {
       "actuator": "wheel_front_left_joint_actuator",
       "coupling": [
-        30.959752321981423,
-        -30.959752321981423,
-        -4.226006191950464
+        30.905213709552804,
+        -30.905213709552804,
+        -4.223413789906358
       ],
       "joint": "wheel_front_left_joint",
       "max_speed": null,
-      "radius": 0.0323
+      "radius": 0.032357
     },
     {
       "actuator": "wheel_front_right_joint_actuator",
       "coupling": [
-        30.959752321981423,
-        30.959752321981423,
-        4.226006191950464
+        30.905213709552804,
+        30.905213709552804,
+        4.223413789906358
       ],
       "joint": "wheel_front_right_joint",
       "max_speed": null,
-      "radius": 0.0323
+      "radius": 0.032357
     },
     {
       "actuator": "wheel_rear_left_joint_actuator",
       "coupling": [
-        30.959752321981423,
-        30.959752321981423,
-        -4.226006191950464
+        30.905213709552804,
+        30.905213709552804,
+        -4.223413789906358
       ],
       "joint": "wheel_rear_left_joint",
       "max_speed": null,
-      "radius": 0.0323
+      "radius": 0.032357
     },
     {
       "actuator": "wheel_rear_right_joint_actuator",
       "coupling": [
-        30.959752321981423,
-        -30.959752321981423,
-        4.226006191950464
+        30.905213709552804,
+        -30.905213709552804,
+        4.223413789906358
       ],
       "joint": "wheel_rear_right_joint",
       "max_speed": null,
-      "radius": 0.0323
+      "radius": 0.032357
     }
   ],
   "kinematics": "holonomic",

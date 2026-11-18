@@ -21,7 +21,7 @@
    "about": "Robots and kits their makers sell, some with parts of other makers added, each assembled from the parts library's parts, drawn from their makers' published models where the makers publish them, with the world and task it drove in. Open one to see its parts and what they cost, or drive it with the keys.",
    "notices": [
     {
-     "text": "goBILDA, Hiwonder, Husarion, Luxonis, PCX, Pololu, Raspberry Pi, Unitree Robotics and Yahboom are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
+     "text": "Gens ace, goBILDA, Hiwonder, Husarion, Luxonis, PCX, Pololu, Raspberry Pi, Unitree Robotics and Yahboom are trademarks of their owners, who do not sponsor, authorize or endorse this site.",
      "shown": true
     }
    ]
@@ -5026,7 +5026,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A goBILDA Strafer as its kit builds it: the frame with its four motors, and the four mecanum wheels the kit brings.\nRobot strafer {\n    intent \"goBILDA Strafer mecanum base as its kit builds it\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n}\n",
+    "core": "// A goBILDA Strafer as its kit builds it: the frame with its four motors, and the four mecanum wheels the kit brings.\nRobot strafer {\n    intent \"goBILDA Strafer mecanum base with retained Pi/Motoron drive and a Gens ace traction battery\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    // The Strafer kit includes these four motors; retained 1:1 miter gears drive its wheel shafts.\n    Motor motor_front_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, 0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M1\")\n    Motor motor_front_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, -0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M2\")\n    Motor motor_rear_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, 0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M1\")\n    Motor motor_rear_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, -0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M2\")\n\n    // A mecanum wheel has a hand: the same one goes front-left and rear-right, the other front-right and rear-left.\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n\n    Mount compute_mount(ref = \"robotdsl_strafer_pi5_motoron_carrier\", on = @core/chassis, at = \"compute_strafer_pi5\", by = \"under_holes\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", on = @core/compute_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/regulator)\n    MotorDriver drive_front(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_lower\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x10\")\n    MotorDriver drive_rear(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_upper\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x11\")\n\n    Mount regulator_mount(ref = \"robotdsl_mount_strafer_d42v110f5\", on = @core/chassis, at = \"regulator_front_left\", by = \"under_holes\")\n    Attachment regulator(ref = \"pololu_d42v110f5_5v_regulator\", on = @core/regulator_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/battery)\n    Mount battery_holder(ref = \"robotdsl_strafer_gensace_2200_tray\", on = @core/chassis, at = \"battery_rear_right\", by = \"mounting_holes\")\n    Battery battery(ref = \"gensace_gea223s25t3gt_lipo_battery\", on = @core/battery_holder, at = \"battery\")\n}\n",
     "world": "World strafer_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/strafer, pose = (0, 0, 0.08, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task strafer_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -5062,6 +5062,106 @@
      ]
     },
     {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
      "name": "wheel_front_left",
      "category": "wheel",
      "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
@@ -5160,15 +5260,219 @@
       0.0,
       0.0
      ]
+    },
+    {
+     "name": "compute_mount",
+     "category": "mount",
+     "part": "robotdsl_strafer_pi5_motoron_carrier",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.03501
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_front",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.047976000000000005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_rear",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.062556
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "regulator_mount",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_d42v110f5",
+     "xyz": [
+      0.096,
+      0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "regulator",
+     "category": "attachment",
+     "part": "pololu_d42v110f5_5v_regulator",
+     "xyz": [
+      0.096,
+      0.156,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery_holder",
+     "category": "mount",
+     "part": "robotdsl_strafer_gensace_2200_tray",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "gensace_gea223s25t3gt_lipo_battery",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.065
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
     }
    ],
    "ground": -0.052,
    "drove": "in Gazebo it reached its goal 2.5 m ahead (0.25 m from the point), past a box beside its way without touching it",
-   "summary": "5 parts (3 kinds) from the RobotDSL parts library, drawn from their makers' published models",
+   "summary": "17 parts (11 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 4 kinds drawn by the RobotDSL Team",
    "credits": [
     {
      "text": "Sold by goBILDA: Strafer® Chassis Kit (104mm GripForce™ Mecanum Wheels)",
      "url": "https://www.gobilda.com/strafer-chassis-kit-104mm-gripforce-mecanum-wheels/"
+    },
+    {
+     "text": "Gens ace 2200mAh 3S 25C 11.1V Lipo Battery | XT60+EC3+Deans | Air Classic (Gens ace): drawn by the RobotDSL Team after the maker's photograph and stated size",
+     "url": "https://cdn11.bigcommerce.com/s-99ohneivnb/images/stencil/1280x1280/products/3199/12653/-1__83356.1737357170.jpg?c=1"
     },
     {
      "text": "GripForce Mecanum Wheel, 104 mm, front-left and rear-right (goBILDA): the model goBILDA publishes",
@@ -5183,7 +5487,55 @@
      "url": "https://www.gobilda.com/content/step_files/3209-0001-0007.zip"
     },
     {
+     "text": "5203 Series Yellow Jacket Planetary Gear Motor (19.2:1 Ratio, 24mm Length 8mm REX® Shaft, 312 RPM, 3.3 - 5V Encoder) (goBILDA): the model goBILDA publishes",
+     "url": "https://www.gobilda.com/content/step_files/5203-2402-0019.zip"
+    },
+    {
+     "text": "5V, 11A Step-Down Voltage Regulator D42V110F5 (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2219/d42v110fx-step-down-voltage-regulator.step"
+    },
+    {
+     "text": "Motoron M2H18v20 Dual High-Power Motor Controller for Raspberry Pi (Connectors Soldered) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1896/motoron-m2h-dual-hpmc-raspberry-pi-models.zip"
+    },
+    {
+     "text": "Raspberry Pi 5 (8GB) (Raspberry Pi): the model Raspberry Pi publishes, MIT",
+     "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
+    },
+    {
+     "text": "Strafer D42V110F5 carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Strafer tray for the Gens ace 2200 mAh 3S battery (RobotDSL authored fixture): designed by the RobotDSL Team, MIT (authored geometry and code only; vendor CAD retains source terms)"
+    },
+    {
+     "text": "Strafer Pi 5 and dual Motoron open carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_front' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_rear' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_outputs.vout.efficiency: 'regulator' takes a current not known from 'battery'; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right' may be fed up to 12.6 V, above the 12 V their stall currents are stated at; 'battery' delivers 110 A at its peak, of which its other loads draw a current not known when every motor behind it starts at once"
+    },
+    {
+     "text": "MIT",
+     "url": "https://opensource.org/license/mit"
+    },
+    {
+     "text": "MIT (authored geometry and code only; vendor CAD retains source terms)",
+     "url": "https://opensource.org/license/mit"
     }
    ],
    "mjcf": {
@@ -5200,7 +5552,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Strafer that sees and thinks: a Unitree L2 lidar on the middle channel, an OAK-D Lite depth camera on the\n// front one, an inertial unit beside it, and a Raspberry Pi 5 on the rear of the left rail.\nRobot strafer_lidar {\n    intent \"goBILDA Strafer mecanum base carrying a Unitree 4D LiDAR L2, a Luxonis OAK-D Lite, a MinIMU-9 and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n\n    Lidar3D lidar(ref = \"unitree_4d_lidar_l2\", glue = (0, 0, 0.024, 0, 0, 1))\n    RGBD camera(ref = \"luxonis_oak_d_lite\", glue = (0.168, 0, 0.024, 0, 0, 1))\n    IMU imu(ref = \"pololu_minimu_9_v6\", glue = (0.084, 0.156, 0.024, 0, 0, 1))\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", glue = (-0.168, 0.156, 0.024, 0, 0, 1))\n}\n",
+    "core": "// A Strafer that sees and thinks: a Unitree L2 lidar on the middle channel, an OAK-D Lite depth camera on the\n// front one, an inertial unit beside it, and a Raspberry Pi 5 on the rear of the left rail.\nRobot strafer_lidar {\n    intent \"goBILDA Strafer mecanum base carrying a Unitree 4D LiDAR L2, a Luxonis OAK-D Lite, a MinIMU-9 and a Raspberry Pi 5\"\n\n    Mecanum_four_wheel chassis(ref = \"gobilda_strafer_chassis_kit_104mm\")\n\n    // The Strafer kit includes these four motors; retained 1:1 miter gears drive its wheel shafts.\n    Motor motor_front_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, 0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M1\")\n    Motor motor_front_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (0.140, -0.156, 0, 1, 0, 0), command = @core/drive_front, channel = \"M2\")\n    Motor motor_rear_left(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, 0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M1\")\n    Motor motor_rear_right(ref = \"gobilda_yellow_jacket_5203_2402_0019\", glue = (-0.140, -0.156, 0, -1, 0, 0), command = @core/drive_rear, channel = \"M2\")\n\n    Mecanum wheel_front_left(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (0.168, -0.207, 0, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"gobilda_gripforce_mecanum_104mm_fr_rl\", glue = (-0.168, 0.207, 0, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"gobilda_gripforce_mecanum_104mm_fl_rr\", glue = (-0.168, -0.207, 0, 0, -1, 0))\n\n    Mount lidar_imu_portal(ref = \"robotdsl_strafer_l2_imu_rear_portal\", on = @core/chassis, at = \"lidar_middle_channel\", by = \"under_holes\")\n    Lidar3D lidar(ref = \"unitree_4d_lidar_l2\", on = @core/lidar_imu_portal, at = \"lidar_holes\", by = \"mounting_holes\", data = @core/computer, port = \"ethernet\", power = @core/lidar_regulator, output = \"vout\")\n    Mount camera_yoke(ref = \"robotdsl_strafer_oak_front_yoke_lite_pro\", on = @core/chassis, at = \"front_right_l2\", by = \"under_holes\")\n    RGBD camera(ref = \"luxonis_oak_d_lite\", on = @core/camera_yoke, at = \"sensor_holes\", by = \"rear_75mm_holes\", power = @core/computer, output = \"usb_power\", data = @core/computer, port = \"usb3_0\")\n    // Carrier I2C logic follows VIN, so use the Pi 3.3 V rail with the Pi I2C bus.\n    IMU imu(ref = \"pololu_minimu_9_v6\", on = @core/lidar_imu_portal, at = \"imu_hole\", by = \"mounting_holes\", power = @core/computer, output = \"gpio_3v3\", data = @core/computer, port = \"i2c1\")\n\n    Mount compute_mount(ref = \"robotdsl_strafer_pi5_motoron_carrier\", on = @core/chassis, at = \"compute_strafer_pi5\", by = \"under_holes\")\n    Attachment computer(ref = \"raspberry_pi_5_8gb\", on = @core/compute_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/regulator)\n    MotorDriver drive_front(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_lower\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x10\")\n    MotorDriver drive_rear(ref = \"pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered\", on = @core/compute_mount, at = \"motoron_upper\", by = \"mounting_holes\", power = @core/battery, command = @core/computer, port = \"i2c1\", address = \"0x11\")\n\n    Mount regulator_mount(ref = \"robotdsl_mount_strafer_d42v110f5\", on = @core/chassis, at = \"regulator_front_left\", by = \"under_holes\")\n    Attachment regulator(ref = \"pololu_d42v110f5_5v_regulator\", on = @core/regulator_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/battery)\n    // Dedicated buck/boost rail: the 3S pack crosses 12 V during discharge.\n    // L2 accepted voltage limits and temperature-dependent current remain unknown.\n    Mount lidar_regulator_mount(ref = \"robotdsl_strafer_s13v25f12_carrier\", on = @core/chassis, at = \"power_hub_front_right\", by = \"under_holes\")\n    Attachment lidar_regulator(ref = \"pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12\", on = @core/lidar_regulator_mount, at = \"board_holes\", by = \"mounting_holes\", power = @core/battery)\n    Mount battery_holder(ref = \"robotdsl_strafer_gensace_2200_tray\", on = @core/chassis, at = \"battery_rear_right\", by = \"mounting_holes\")\n    Battery battery(ref = \"gensace_gea223s25t3gt_lipo_battery\", on = @core/battery_holder, at = \"battery\")\n}\n",
     "world": "World strafer_lidar_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/strafer_lidar, pose = (0, 0, 0.08, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task strafer_lidar_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -5236,6 +5588,106 @@
      ]
     },
     {
+     "name": "motor_front_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_front_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_left",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "motor_rear_right",
+     "category": "motor",
+     "part": "gobilda_yellow_jacket_5203_2402_0019",
+     "xyz": [
+      -0.14,
+      -0.156,
+      0.0
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
      "name": "wheel_front_left",
      "category": "wheel",
      "part": "gobilda_gripforce_mecanum_104mm_fl_rr",
@@ -5336,13 +5788,63 @@
      ]
     },
     {
+     "name": "lidar_imu_portal",
+     "category": "mount",
+     "part": "robotdsl_strafer_l2_imu_rear_portal",
+     "xyz": [
+      0.0,
+      -0.004,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
      "name": "lidar",
      "category": "sensor",
      "part": "unitree_4d_lidar_l2",
      "xyz": [
+      -0.024,
+      -0.004,
+      0.0945
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
       0.0,
       0.0,
-      0.024
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "camera_yoke",
+     "category": "mount",
+     "part": "robotdsl_strafer_oak_front_yoke_lite_pro",
+     "xyz": [
+      0.192,
+      -0.088,
+      0.0
      ],
      "rpy": [
       0.0,
@@ -5365,9 +5867,9 @@
      "category": "sensor",
      "part": "luxonis_oak_d_lite",
      "xyz": [
-      0.18115,
-      -0.03,
-      0.043
+      0.23845,
+      -0.088,
+      0.070539
      ],
      "rpy": [
       0.0,
@@ -5390,7 +5892,132 @@
      "category": "sensor",
      "part": "pololu_minimu_9_v6",
      "xyz": [
-      0.084,
+      0.05,
+      0.013000000000000001,
+      0.0985
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "compute_mount",
+     "category": "mount",
+     "part": "robotdsl_strafer_pi5_motoron_carrier",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "computer",
+     "category": "attachment",
+     "part": "raspberry_pi_5_8gb",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.03501
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_front",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.047976000000000005
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "drive_rear",
+     "category": "motor_driver",
+     "part": "pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered",
+     "xyz": [
+      -0.085,
+      0.096,
+      0.062556
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      3.141592653589793
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "regulator_mount",
+     "category": "mount",
+     "part": "robotdsl_mount_strafer_d42v110f5",
+     "xyz": [
+      0.096,
       0.156,
       0.024
      ],
@@ -5411,13 +6038,113 @@
      ]
     },
     {
-     "name": "computer",
+     "name": "regulator",
      "category": "attachment",
-     "part": "raspberry_pi_5_8gb",
+     "part": "pololu_d42v110f5_5v_regulator",
      "xyz": [
-      -0.168,
+      0.096,
       0.156,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar_regulator_mount",
+     "category": "mount",
+     "part": "robotdsl_strafer_s13v25f12_carrier",
+     "xyz": [
+      0.096,
+      -0.156,
       0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "lidar_regulator",
+     "category": "attachment",
+     "part": "pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12",
+     "xyz": [
+      0.096,
+      -0.156,
+      0.037
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery_holder",
+     "category": "mount",
+     "part": "robotdsl_strafer_gensace_2200_tray",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.024
+     ],
+     "rpy": [
+      0.0,
+      -0.0,
+      0.0
+     ],
+     "visual_xyz": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "visual_rpy": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "battery",
+     "category": "battery",
+     "part": "gensace_gea223s25t3gt_lipo_battery",
+     "xyz": [
+      -0.096,
+      -0.156,
+      0.065
      ],
      "rpy": [
       0.0,
@@ -5437,12 +6164,16 @@
     }
    ],
    "ground": -0.052,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.36 m from the point), past a box beside its way without touching it",
-   "summary": "9 parts (7 kinds) from the RobotDSL parts library, drawn from their makers' published models",
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.31 m from the point), past a box beside its way without touching it",
+   "summary": "24 parts (18 kinds) from the RobotDSL parts library, drawn from their makers' published models but for 7 kinds drawn by the RobotDSL Team",
    "credits": [
     {
      "text": "Sold by goBILDA: Strafer® Chassis Kit (104mm GripForce™ Mecanum Wheels)",
      "url": "https://www.gobilda.com/strafer-chassis-kit-104mm-gripforce-mecanum-wheels/"
+    },
+    {
+     "text": "Gens ace 2200mAh 3S 25C 11.1V Lipo Battery | XT60+EC3+Deans | Air Classic (Gens ace): drawn by the RobotDSL Team after the maker's photograph and stated size",
+     "url": "https://cdn11.bigcommerce.com/s-99ohneivnb/images/stencil/1280x1280/products/3199/12653/-1__83356.1737357170.jpg?c=1"
     },
     {
      "text": "GripForce Mecanum Wheel, 104 mm, front-left and rear-right (goBILDA): the model goBILDA publishes",
@@ -5457,16 +6188,50 @@
      "url": "https://www.gobilda.com/content/step_files/3209-0001-0007.zip"
     },
     {
+     "text": "5203 Series Yellow Jacket Planetary Gear Motor (19.2:1 Ratio, 24mm Length 8mm REX® Shaft, 312 RPM, 3.3 - 5V Encoder) (goBILDA): the model goBILDA publishes",
+     "url": "https://www.gobilda.com/content/step_files/5203-2402-0019.zip"
+    },
+    {
      "text": "OAK-D Lite | USB Stereo Depth AI Camera for Robotics (Luxonis): the model Luxonis publishes",
      "url": "https://checkout.luxonis.com/cdn/shop/3d/models/o/5a9b3e46ff4a1fd8/oak-d-lite.glb"
+    },
+    {
+     "text": "12V, 2.5A Step-Up/Step-Down Voltage Regulator S13V25F12 (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1960/step-up-step-down-voltage-regulator-s13v25fx.step"
+    },
+    {
+     "text": "5V, 11A Step-Down Voltage Regulator D42V110F5 (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J2219/d42v110fx-step-down-voltage-regulator.step"
     },
     {
      "text": "MinIMU-9 v6 Gyro, Accelerometer, and Compass (LSM6DSO and LIS3MDL Carrier) (Pololu): the model Pololu publishes",
      "url": "https://www.pololu.com/file/0J1978/minimu-9-v6-gyro-accelerometer-and-compass.step"
     },
     {
+     "text": "Motoron M2H18v20 Dual High-Power Motor Controller for Raspberry Pi (Connectors Soldered) (Pololu): the model Pololu publishes",
+     "url": "https://www.pololu.com/file/0J1896/motoron-m2h-dual-hpmc-raspberry-pi-models.zip"
+    },
+    {
      "text": "Raspberry Pi 5 (8GB) (Raspberry Pi): the model Raspberry Pi publishes, MIT",
      "url": "https://datasheets.raspberrypi.com/rpi5/RaspberryPi5-step.zip"
+    },
+    {
+     "text": "Strafer D42V110F5 carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Strafer tray for the Gens ace 2200 mAh 3S battery (RobotDSL authored fixture): designed by the RobotDSL Team, MIT (authored geometry and code only; vendor CAD retains source terms)"
+    },
+    {
+     "text": "Strafer L2 and MinIMU rear portal (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Strafer front-right OAK Lite/Pro rear-pad yoke with camera hardware (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Strafer Pi 5 and dual Motoron open carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
+    },
+    {
+     "text": "Strafer S13V25F12 carrier (RobotDSL authored fixture): designed by the RobotDSL Team, MIT"
     },
     {
      "text": "Unitree 4D LiDAR L2 (Unitree Robotics): the model Unitree Robotics publishes",
@@ -5476,7 +6241,53 @@
      "text": "Changed: each part is drawn from the parts library's mesh of its model, reduced for the web, where RobotDSL-Core places it"
     },
     {
+     "text": "RobotDSL-Core warns: cannot decide: part unitree_4d_lidar_l2 of 'lidar' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'lidar_regulator' delivers 11.52 V to 12.48 V from 'vout', including the 12 V 'lidar' is sold for; part unitree_4d_lidar_l2 of 'lidar' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part luxonis_oak_d_lite of 'camera' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'regulator' delivers 4.85 V to 5.15 V from 'vout', including the 5 V 'camera' is sold for; part luxonis_oak_d_lite of 'camera' states no range it accepts"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_minimu_9_v6 of 'imu' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'computer' delivers a nominal 3.3 V from 'gpio_3v3' and states no range, so whether 'imu' (2.5 V to 5.5 V) accepts it is not settled"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part raspberry_pi_5_8gb of 'computer' states no power_outputs.gpio_3v3.efficiency: 'computer' takes a current not known from 'battery'; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_front' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_motoron_m2h18v20_dual_high_power_motor_controller_for_raspberry_pi_connectors_soldered of 'drive_rear' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_d42v110f5_5v_regulator of 'regulator' states no power_outputs.vout.efficiency: 'regulator' takes a current not known from 'battery'; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12 of 'lidar_regulator' states no power_input.continuous_current_a; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: part pololu_12v_2_5a_step_up_step_down_voltage_regulator_s13v25f12 of 'lidar_regulator' states no power_outputs.vout.efficiency: 'lidar_regulator' takes a current not known from 'battery'; 'battery' delivers 55 A continuously, of which its other loads draw a current not known"
+    },
+    {
+     "text": "RobotDSL-Core warns: cannot decide: 'motor_front_left', 'motor_front_right', 'motor_rear_left', 'motor_rear_right' may be fed up to 12.6 V, above the 12 V their stall currents are stated at; 'battery' delivers 110 A at its peak, of which its other loads draw a current not known when every motor behind it starts at once"
+    },
+    {
      "text": "MIT",
+     "url": "https://opensource.org/license/mit"
+    },
+    {
+     "text": "MIT (authored geometry and code only; vendor CAD retains source terms)",
      "url": "https://opensource.org/license/mit"
     }
    ],
@@ -14936,7 +15747,7 @@
    "state": "drives",
    "papers": [],
    "files": {
-    "core": "// A Yahboom RDK X3 Robot as its Standard kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// top deck and its camera between the two lugs at the front, tilted down as the maker draws it. The body holds the\n// RDK X3 computer the kit is sold with.\nRobot rdk_x3_robot {\n    intent \"Yahboom RDK X3 Robot mecanum base with its LiDAR and camera\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rdk_x3_robot_chassis\")\n\n    Mecanum wheel_front_left(ref = \"yahboom_rdk_x3_robot_mecanum_wheel_fl_rr\", glue = (0.06, 0.0765, -0.033, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rdk_x3_robot_mecanum_wheel_fr_rl\", glue = (0.06, -0.0765, -0.033, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rdk_x3_robot_mecanum_wheel_fr_rl\", glue = (-0.06, 0.0765, -0.033, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rdk_x3_robot_mecanum_wheel_fl_rr\", glue = (-0.06, -0.0765, -0.033, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rdk_x3_robot_lidar\", glue = (-0.002, 0.0004, 0.0876, 0, 0, 1))\n    Camera camera(ref = \"yahboom_rdk_x3_robot_camera\", glue = (0.106, 0, 0.0299, 0.3271, 0, 0.945))\n}\n",
+    "core": "// A Yahboom RDK X3 Robot as its Standard kit builds it: the body on four mecanum wheels, with the kit's LiDAR on the\n// top deck and its camera between the two lugs at the front, tilted down as the maker draws it. The body holds the\n// RDK X3 computer the kit is sold with.\nRobot rdk_x3_robot {\n    intent \"Yahboom RDK X3 Robot mecanum base with its LiDAR and camera\"\n\n    Mecanum_four_wheel chassis(ref = \"yahboom_rdk_x3_robot_chassis\")\n\n    Mecanum wheel_front_left(ref = \"yahboom_rdk_x3_robot_drive_front_left\", glue = (0.06, 0.07641, -0.03295, 0, 1, 0))\n    Mecanum wheel_front_right(ref = \"yahboom_rdk_x3_robot_drive_front_right\", glue = (0.06, -0.076547, -0.03295, 0, -1, 0))\n    Mecanum wheel_rear_left(ref = \"yahboom_rdk_x3_robot_drive_rear_left\", glue = (-0.06, 0.076767, -0.03295, 0, 1, 0))\n    Mecanum wheel_rear_right(ref = \"yahboom_rdk_x3_robot_drive_rear_right\", glue = (-0.06, -0.07638, -0.03295, 0, -1, 0))\n\n    Lidar lidar(ref = \"yahboom_rdk_x3_robot_lidar\", glue = (-0.002, 0.0004, 0.0876, 0, 0, 1))\n    // The included RDK X3 reads the supplied IMX219 camera through its CSI/MIPI connector.\n    Camera camera(ref = \"yahboom_rdk_x3_robot_camera\", glue = (0.106, 0, 0.0299, 0.3271, 0, 0.945), data = @core/chassis, port = \"csi_camera\")\n}\n",
     "world": "World rdk_x3_robot_room {\n    physics(gravity = (0, 0, -9.81))\n    spawn(robot = @core/rdk_x3_robot, pose = (0, 0, 0.075, 0, 0, 0, 1))\n    Scenario room(ref = \"empty\", ground_plane = true) {\n        Obstacle box(\n            type = \"box\", pos = (2.0, 0.6, 0.25, 0, 0, 0, 1), size = (0.4, 0.4, 0.5),\n        ),\n    }\n    Goal goal(pose = (2.5, 0, 0, 0, 0, 0, 1))\n}\n",
     "task": "Task rdk_x3_robot_drive(timeout_s = 60) {\n    Sequence {\n        Navigate(goal = @world/goal),\n        Stop()\n    }\n}\n"
    },
@@ -14974,11 +15785,11 @@
     {
      "name": "wheel_front_left",
      "category": "wheel",
-     "part": "yahboom_rdk_x3_robot_mecanum_wheel_fl_rr",
+     "part": "yahboom_rdk_x3_robot_drive_front_left",
      "xyz": [
       0.06,
-      0.0765,
-      -0.033
+      0.07641,
+      -0.03295
      ],
      "rpy": [
       0.0,
@@ -14999,11 +15810,11 @@
     {
      "name": "wheel_front_right",
      "category": "wheel",
-     "part": "yahboom_rdk_x3_robot_mecanum_wheel_fr_rl",
+     "part": "yahboom_rdk_x3_robot_drive_front_right",
      "xyz": [
       0.06,
-      -0.0765,
-      -0.033
+      -0.076547,
+      -0.03295
      ],
      "rpy": [
       0.0,
@@ -15024,11 +15835,11 @@
     {
      "name": "wheel_rear_left",
      "category": "wheel",
-     "part": "yahboom_rdk_x3_robot_mecanum_wheel_fr_rl",
+     "part": "yahboom_rdk_x3_robot_drive_rear_left",
      "xyz": [
       -0.06,
-      0.0765,
-      -0.033
+      0.076767,
+      -0.03295
      ],
      "rpy": [
       0.0,
@@ -15049,11 +15860,11 @@
     {
      "name": "wheel_rear_right",
      "category": "wheel",
-     "part": "yahboom_rdk_x3_robot_mecanum_wheel_fl_rr",
+     "part": "yahboom_rdk_x3_robot_drive_rear_right",
      "xyz": [
       -0.06,
-      -0.0765,
-      -0.033
+      -0.07638,
+      -0.03295
      ],
      "rpy": [
       0.0,
@@ -15122,9 +15933,9 @@
      ]
     }
    ],
-   "ground": -0.0653,
-   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.28 m from the point), past a box beside its way without touching it",
-   "summary": "7 parts (5 kinds) from the RobotDSL parts library, drawn from their makers' published models",
+   "ground": -0.065307,
+   "drove": "in Gazebo it reached its goal 2.5 m ahead (0.29 m from the point), past a box beside its way without touching it",
+   "summary": "7 parts (7 kinds) from the RobotDSL parts library, drawn from their makers' published models",
    "credits": [
     {
      "text": "Sold by Yahboom: RDK X3 Robot Car Standard Kit with the RDK X3 4GB board",
@@ -15139,15 +15950,23 @@
      "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
     },
     {
+     "text": "RDK X3 front-left wheel drive subassembly (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
+    },
+    {
+     "text": "RDK X3 front-right wheel drive subassembly (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
+    },
+    {
+     "text": "RDK X3 rear-left wheel drive subassembly (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
+    },
+    {
+     "text": "RDK X3 rear-right wheel drive subassembly (Yahboom): the model Yahboom publishes",
+     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
+    },
+    {
      "text": "RDK X3 Robot LiDAR (Yahboom): the model Yahboom publishes",
-     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
-    },
-    {
-     "text": "RDK X3 Robot mecanum wheel, front-left and rear-right (Yahboom): the model Yahboom publishes",
-     "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
-    },
-    {
-     "text": "RDK X3 Robot mecanum wheel, front-right and rear-left (Yahboom): the model Yahboom publishes",
      "url": "https://drive.google.com/file/d/1U2vqGFShuHAC1wg7Me-98hseGHtBwHDW"
     },
     {
