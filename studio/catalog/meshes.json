@@ -12190,6 +12190,2609 @@
   "robotdsl_romi_lidar_electronics_carrier": {
    "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d9580221f734fac16b7dae489ac8adc632a7d513/parts/robotdsl_romi_lidar_electronics_carrier/assets/model.glb",
    "bytes": 910224
+  },
+  "rev_servo_hub_11_1855": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_servo_hub_11_1855/assets/model.glb",
+   "bytes": 7326460
+  },
+  "rev_xt30_distribution_block_31_1293": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_xt30_distribution_block_31_1293/assets/model.glb",
+   "bytes": 9424744
+  },
+  "rev_switch_bracket_31_1387": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_switch_bracket_31_1387/assets/model.glb",
+   "bytes": 78520
+  },
+  "rev_rocker_switch_31_1387": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_rocker_switch_31_1387/assets/model.glb",
+   "bytes": 15996
+  },
+  "yahboom_microros_battery_retaining_plate": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/yahboom_microros_battery_retaining_plate/assets/model.glb",
+   "bytes": 65460
+  },
+  "yahboom_roboduino_v2_battery_cover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/yahboom_roboduino_v2_battery_cover/assets/model.glb",
+   "bytes": 65412
+  },
+  "rev_xt30_pcb_input_31_1293": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_xt30_pcb_input_31_1293/assets/model.glb",
+   "bytes": 426788
+  },
+  "rev_xt30_pcb_output_31_1293": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/rev_xt30_pcb_output_31_1293/assets/model.glb",
+   "bytes": 135036
+  },
+  "yahboom_microros_pi5_control_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/d41e594ed2a9472a141a7c248b70118c26151916/parts/yahboom_microros_pi5_control_board/assets/model.glb",
+   "bytes": 18140112
+  },
+  "yahboom_roboduino_v2_expansion_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3571d5e95e47590315295f28092843c5c1822dbc/parts/yahboom_roboduino_v2_expansion_board/assets/model.glb",
+   "bytes": 11845472
+  },
+  "yahboom_roboduino_v2_uno_adapter": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3571d5e95e47590315295f28092843c5c1822dbc/parts/yahboom_roboduino_v2_uno_adapter/assets/model.glb",
+   "bytes": 211816
+  },
+  "maxon_re16_118715": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/maxon_re16_118715/assets/model.glb",
+   "bytes": 554732
+  },
+  "maxon_re40_148867": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/maxon_re40_148867/assets/model.glb",
+   "bytes": 2120780
+  },
+  "maxon_gp42c_203119": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/maxon_gp42c_203119/assets/model.glb",
+   "bytes": 878788
+  },
+  "maxon_ec45_flat_251601": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/maxon_ec45_flat_251601/assets/model.glb",
+   "bytes": 692876
+  },
+  "rev_neo_vortex_21_1652": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/rev_neo_vortex_21_1652/assets/model.glb",
+   "bytes": 11369848
+  },
+  "rev_spark_flex_11_2159": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/rev_spark_flex_11_2159/assets/model.glb",
+   "bytes": 9246792
+  },
+  "rev_vortex_8mm_shaft_21_2807": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ccdf20c0a67470f1562fa9b4a9e118050c56d5ba/parts/rev_vortex_8mm_shaft_21_2807/assets/model.glb",
+   "bytes": 1000092
+  },
+  "maxon_ec45_flat_651610": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/maxon_ec45_flat_651610/assets/model.glb",
+   "bytes": 2774520
+  },
+  "maxon_ec_max22_283856": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/maxon_ec_max22_283856/assets/model.glb",
+   "bytes": 2893464
+  },
+  "rev_maxplanetary_3to1_21_2101": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_maxplanetary_3to1_21_2101/assets/model.glb",
+   "bytes": 11277452
+  },
+  "rev_maxplanetary_4to1_21_2102": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_maxplanetary_4to1_21_2102/assets/model.glb",
+   "bytes": 11065384
+  },
+  "rev_maxplanetary_hex_output_21_2104": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/rev_maxplanetary_hex_output_21_2104/assets/model.glb",
+   "bytes": 4669324
+  },
+  "rev_maxplanetary_universal_input_21_2106": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_maxplanetary_universal_input_21_2106/assets/model.glb",
+   "bytes": 331628
+  },
+  "rev_soft_intake_wheel_21_2029": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_soft_intake_wheel_21_2029/assets/model.glb",
+   "bytes": 1899404
+  },
+  "rev_rounded_hex_bearing_21_1916": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_rounded_hex_bearing_21_1916/assets/model.glb",
+   "bytes": 126836
+  },
+  "rev_rounded_hex_shaft_21_1135": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_rounded_hex_shaft_21_1135/assets/model.glb",
+   "bytes": 17120
+  },
+  "rev_rt25_pulley_21_2205": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_rt25_pulley_21_2205/assets/model.glb",
+   "bytes": 295916
+  },
+  "gobilda_4bar_odometry_pod_3110_0001_0002": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_4bar_odometry_pod_3110_0001_0002/assets/model.glb",
+   "bytes": 17904232
+  },
+  "gobilda_pinpoint_v2_3110_0002_0002": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_pinpoint_v2_3110_0002_0002/assets/model.glb",
+   "bytes": 11995580
+  },
+  "mk_battery_es17_12": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/e8bccaae149e818491bb51318f3fdd6f6adf1f67/parts/mk_battery_es17_12/assets/model.glb",
+   "bytes": 230808
+  },
+  "rev_vortex_maxplanetary_shaft_21_2127": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_vortex_maxplanetary_shaft_21_2127/assets/model.glb",
+   "bytes": 530232
+  },
+  "rev_vortex_input_plate_21_2128": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_vortex_input_plate_21_2128/assets/model.glb",
+   "bytes": 310996
+  },
+  "rev_vortex_draw_screw_21_2805": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_vortex_draw_screw_21_2805/assets/model.glb",
+   "bytes": 323332
+  },
+  "rev_socket_screw_29_2911": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_socket_screw_29_2911/assets/model.glb",
+   "bytes": 62296
+  },
+  "rev_hex_spacer_21_2004": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_hex_spacer_21_2004/assets/model.glb",
+   "bytes": 30988
+  },
+  "rev_maxspline_collar_21_2581": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_maxspline_collar_21_2581/assets/model.glb",
+   "bytes": 740368
+  },
+  "rev_hex_spacer_21_2005": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_hex_spacer_21_2005/assets/model.glb",
+   "bytes": 34444
+  },
+  "rev_hex_spacer_21_2003": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_hex_spacer_21_2003/assets/model.glb",
+   "bytes": 27536
+  },
+  "rev_pdh_11_1850": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/rev_pdh_11_1850/assets/model.glb",
+   "bytes": 24983436
+  },
+  "dji_robomaster_m3508_p19": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/dji_robomaster_m3508_p19/assets/model.glb",
+   "bytes": 10848864
+  },
+  "dji_robomaster_c620": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/dji_robomaster_c620/assets/model.glb",
+   "bytes": 5906040
+  },
+  "anderson_sb50_contact_5900": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/anderson_sb50_contact_5900/assets/model.glb",
+   "bytes": 30212
+  },
+  "rev_rt25_belt_48t_21_4048": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_rt25_belt_48t_21_4048/assets/model.glb",
+   "bytes": 443492
+  },
+  "rev_rt25_belt_64t_21_4064": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_rt25_belt_64t_21_4064/assets/model.glb",
+   "bytes": 590952
+  },
+  "rev_hex_shaft_collar_21_1912": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3ec93c35080b68563ee6aa8d2d94858aa00090d9/parts/rev_hex_shaft_collar_21_1912/assets/model.glb",
+   "bytes": 10724820
+  },
+  "rev_maxplanetary_keyed_coupler_21_2108": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/rev_maxplanetary_keyed_coupler_21_2108/assets/model.glb",
+   "bytes": 113972
+  },
+  "rev_rounded_hex_shaft_21_2813": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/rev_rounded_hex_shaft_21_2813/assets/model.glb",
+   "bytes": 18084
+  },
+  "gobilda_socket_screw_2800_0004_0006": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_socket_screw_2800_0004_0006/assets/model.glb",
+   "bytes": 344144
+  },
+  "gobilda_socket_screw_2800_0004_0020": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_socket_screw_2800_0004_0020/assets/model.glb",
+   "bytes": 982752
+  },
+  "gobilda_nylock_nut_2812_0004_0007": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_nylock_nut_2812_0004_0007/assets/model.glb",
+   "bytes": 838640
+  },
+  "gobilda_jst_ph_harness_3804_0707_0600": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/c405b7f9c26c8824e27ef660aedd8f802b1904dc/parts/gobilda_jst_ph_harness_3804_0707_0600/assets/model.glb",
+   "bytes": 209068
+  },
+  "gobilda_4bar_odometry_pod_3110_0001_0002_104mm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/07875e9c36509393ee75b487fd02c3ba470cc289/parts/gobilda_4bar_odometry_pod_3110_0001_0002_104mm/assets/model.glb",
+   "bytes": 19459928
+  },
+  "optifuse_153120_breaker": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/07875e9c36509393ee75b487fd02c3ba470cc289/parts/optifuse_153120_breaker/assets/model.glb",
+   "bytes": 618464
+  },
+  "anderson_sb50_red_992g1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/07875e9c36509393ee75b487fd02c3ba470cc289/parts/anderson_sb50_red_992g1/assets/model.glb",
+   "bytes": 110072
+  },
+  "robotdsl_rev_single_roller_intake": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/07875e9c36509393ee75b487fd02c3ba470cc289/parts/robotdsl_rev_single_roller_intake/assets/model.glb",
+   "bytes": 28626644
+  },
+  "robotdsl_frc_battery_lead_sb50_m5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/07875e9c36509393ee75b487fd02c3ba470cc289/parts/robotdsl_frc_battery_lead_sb50_m5/assets/model.glb",
+   "bytes": 453236
+  },
+  "robotdsl_strafer_pinpoint_wiring": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/fb1e66083cacaa2e99300906ee21ed8fee506ff5/parts/robotdsl_strafer_pinpoint_wiring/assets/model.glb",
+   "bytes": 1675080
+  },
+  "gobilda_pinpoint_v2_3110_0002_0002_strafer": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/fb1e66083cacaa2e99300906ee21ed8fee506ff5/parts/gobilda_pinpoint_v2_3110_0002_0002_strafer/assets/model.glb",
+   "bytes": 15841812
+  },
+  "dfrobot_fit0003_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_fit0003_wheel/assets/model.glb",
+   "bytes": 2052940
+  },
+  "nexusrobot_nw203c_omni_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_nw203c_omni_wheel/assets/model.glb",
+   "bytes": 4850224
+  },
+  "elephantrobotics_phone_holder": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_phone_holder/assets/model.glb",
+   "bytes": 385652
+  },
+  "elephantrobotics_pen_holder_2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_pen_holder_2/assets/model.glb",
+   "bytes": 203164
+  },
+  "elephantrobotics_adaptive_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_adaptive_gripper/assets/model.glb",
+   "bytes": 1216676
+  },
+  "elephantrobotics_parallel_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_parallel_gripper/assets/model.glb",
+   "bytes": 725172
+  },
+  "elephantrobotics_flexible_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_flexible_gripper/assets/model.glb",
+   "bytes": 483264
+  },
+  "elephantrobotics_pge8_electric_gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_pge8_electric_gripper/assets/model.glb",
+   "bytes": 1603548
+  },
+  "elephantrobotics_myarm_300_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myarm_300_pi/assets/model.glb",
+   "bytes": 5481464
+  },
+  "elephantrobotics_mycobot_320_pi_2022": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mycobot_320_pi_2022/assets/model.glb",
+   "bytes": 11733336
+  },
+  "elephantrobotics_mycobot_320_m5_2022": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mycobot_320_m5_2022/assets/model.glb",
+   "bytes": 11218244
+  },
+  "elephantrobotics_mycobot_280_m5_original": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mycobot_280_m5_original/assets/model.glb",
+   "bytes": 10016784
+  },
+  "m5stack_atom_mate_mount": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_atom_mate_mount/assets/model.glb",
+   "bytes": 296668
+  },
+  "m5stack_atom_mate_pin_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_atom_mate_pin_frame/assets/model.glb",
+   "bytes": 168404
+  },
+  "m5stack_roverc_pro_servo_bracket": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_servo_bracket/assets/model.glb",
+   "bytes": 304544
+  },
+  "m5stack_roverc_pro_claw_front_shell": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_claw_front_shell/assets/model.glb",
+   "bytes": 174472
+  },
+  "m5stack_roverc_pro_claw_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_claw_left/assets/model.glb",
+   "bytes": 261988
+  },
+  "elephantrobotics_mycobot_280_pi_original": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mycobot_280_pi_original/assets/model.glb",
+   "bytes": 10652148
+  },
+  "m5stack_roverc_pro_claw_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_claw_right/assets/model.glb",
+   "bytes": 260200
+  },
+  "m5stack_roverc_pro_claw_mount_a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_claw_mount_a/assets/model.glb",
+   "bytes": 223144
+  },
+  "m5stack_roverc_pro_shell": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_shell/assets/model.glb",
+   "bytes": 402824
+  },
+  "elephantrobotics_myagv_2023_touchscreen": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_touchscreen/assets/model.glb",
+   "bytes": 403120
+  },
+  "m5stack_stackchan_base": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_base/assets/model.glb",
+   "bytes": 473840
+  },
+  "m5stack_stackchan_base_cover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_base_cover/assets/model.glb",
+   "bytes": 165064
+  },
+  "m5stack_stackchan_main_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_main_body/assets/model.glb",
+   "bytes": 487356
+  },
+  "m5stack_stackchan_bearing_fixture": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_bearing_fixture/assets/model.glb",
+   "bytes": 37044
+  },
+  "m5stack_stackchan_servo_arm": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_servo_arm/assets/model.glb",
+   "bytes": 116196
+  },
+  "m5stack_stackchan_servo_body": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_servo_body/assets/model.glb",
+   "bytes": 202684
+  },
+  "m5stack_stackchan_servo_cover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_servo_cover/assets/model.glb",
+   "bytes": 42036
+  },
+  "m5stack_stackchan_servo_side_cover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_servo_side_cover/assets/model.glb",
+   "bytes": 39588
+  },
+  "m5stack_stackchan_light_guide_a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_light_guide_a/assets/model.glb",
+   "bytes": 19616
+  },
+  "m5stack_stackchan_light_guide_b": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_stackchan_light_guide_b/assets/model.glb",
+   "bytes": 23360
+  },
+  "m5stack_atom_mate_hat_face": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_atom_mate_hat_face/assets/model.glb",
+   "bytes": 272148
+  },
+  "m5stack_atom_mate_hat_bottom": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_atom_mate_hat_bottom/assets/model.glb",
+   "bytes": 102056
+  },
+  "m5stack_roverc_pro_l_link": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_roverc_pro_l_link/assets/model.glb",
+   "bytes": 46360
+  },
+  "elephantrobotics_mecharm_270_m5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mecharm_270_m5/assets/articulation/base.glb",
+   "bytes": 887208,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link1.glb",
+   "bytes": 1401088,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link2.glb",
+   "bytes": 2153824,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.138
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link3.glb",
+   "bytes": 1123148,
+   "standing": {
+    "xyz": [
+     0.0,
+     3.67e-07,
+     0.238
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link4": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link4.glb",
+   "bytes": 941864,
+   "standing": {
+    "xyz": [
+     0.108,
+     -0.000999614,
+     0.243000004
+    ],
+    "quat": [
+     -0.500001837,
+     0.499998163,
+     -0.5,
+     0.5
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link5.glb",
+   "bytes": 545852,
+   "standing": {
+    "xyz": [
+     0.107999996,
+     3.86e-07,
+     0.243
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_m5/link6": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_m5/assets/articulation/link6.glb",
+   "bytes": 402472,
+   "standing": {
+    "xyz": [
+     0.167999996,
+     3.86e-07,
+     0.243
+    ],
+    "quat": [
+     -0.500001837,
+     0.499998163,
+     -0.5,
+     0.5
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mecharm_270_pi/assets/articulation/base.glb",
+   "bytes": 1775668,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link1.glb",
+   "bytes": 1401088,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link2.glb",
+   "bytes": 2153824,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.138
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link3.glb",
+   "bytes": 1123148,
+   "standing": {
+    "xyz": [
+     0.0,
+     3.67e-07,
+     0.238
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link4": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link4.glb",
+   "bytes": 941864,
+   "standing": {
+    "xyz": [
+     0.108,
+     -0.000999614,
+     0.243000004
+    ],
+    "quat": [
+     -0.500001837,
+     0.499998163,
+     -0.5,
+     0.5
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link5.glb",
+   "bytes": 545852,
+   "standing": {
+    "xyz": [
+     0.107999996,
+     3.86e-07,
+     0.243
+    ],
+    "quat": [
+     -0.70710808,
+     0.0,
+     0.0,
+     0.707105483
+    ]
+   }
+  },
+  "elephantrobotics_mecharm_270_pi/link6": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_mecharm_270_pi/assets/articulation/link6.glb",
+   "bytes": 402472,
+   "standing": {
+    "xyz": [
+     0.167999996,
+     3.86e-07,
+     0.243
+    ],
+    "quat": [
+     -0.500001837,
+     0.499998163,
+     -0.5,
+     0.5
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myarm_c650/assets/articulation/base.glb",
+   "bytes": 13728420,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quat": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/link1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/link1.glb",
+   "bytes": 2225788,
+   "standing": {
+    "xyz": [
+     0.0,
+     0.0,
+     0.07
+    ],
+    "quat": [
+     1.0,
+     0.0,
+     0.0,
+     1.327e-06
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/link2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/link2.glb",
+   "bytes": 3786556,
+   "standing": {
+    "xyz": [
+     0.0,
+     2.12e-07,
+     0.15
+    ],
+    "quat": [
+     -0.707106421,
+     0.0,
+     0.0,
+     0.707107142
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/link3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/link3.glb",
+   "bytes": 9201396,
+   "standing": {
+    "xyz": [
+     0.0565,
+     -9e-08,
+     0.446
+    ],
+    "quat": [
+     -0.707106421,
+     0.0,
+     0.0,
+     0.707107142
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/link4": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/link4.glb",
+   "bytes": 4834508,
+   "standing": {
+    "xyz": [
+     0.1375,
+     0.00399991,
+     0.446000004
+    ],
+    "quat": [
+     -0.500000663,
+     -0.499999337,
+     0.499998827,
+     0.500001173
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/link5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/link5.glb",
+   "bytes": 8921564,
+   "standing": {
+    "xyz": [
+     0.3875,
+     0.003998992,
+     0.445700004
+    ],
+    "quat": [
+     -0.49999949,
+     0.499998163,
+     0.50000051,
+     0.500001837
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/gripper": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/gripper.glb",
+   "bytes": 4617760,
+   "standing": {
+    "xyz": [
+     0.4425,
+     0.003998992,
+     0.44570015
+    ],
+    "quat": [
+     -0.707107719,
+     -2.958e-06,
+     0.707105843,
+     3.61e-07
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/gripper_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/gripper_left.glb",
+   "bytes": 219724,
+   "standing": {
+    "xyz": [
+     0.50849992,
+     0.003999094,
+     0.475700325
+    ],
+    "quat": [
+     -0.000282019,
+     0.707952509,
+     -0.706259928,
+     0.000283669
+    ]
+   }
+  },
+  "elephantrobotics_myarm_c650/gripper_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/3a738db5536ddea6f77c1df8d3d2fbcaa478e522/parts/elephantrobotics_myarm_c650/assets/articulation/gripper_right.glb",
+   "bytes": 228420,
+   "standing": {
+    "xyz": [
+     0.50849992,
+     0.003999094,
+     0.475700325
+    ],
+    "quat": [
+     -0.000282019,
+     0.707952509,
+     -0.706259928,
+     0.000283669
+    ]
+   }
+  },
+  "pimoroni_pga2350": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pga2350/assets/model.glb",
+   "bytes": 2905800
+  },
+  "elephantrobotics_mypalletizer_260_m5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mypalletizer_260_m5/assets/model.glb",
+   "bytes": 8636184
+  },
+  "pololu_maestro_6_channel_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_maestro_6_channel_assembled/assets/model.glb",
+   "bytes": 1141872
+  },
+  "pololu_maestro_12_channel_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_maestro_12_channel_assembled/assets/model.glb",
+   "bytes": 1708644
+  },
+  "pololu_maestro_18_channel_assembled": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_maestro_18_channel_assembled/assets/model.glb",
+   "bytes": 2028116
+  },
+  "m5stack_llm630_compute_kit": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_llm630_compute_kit/assets/model.glb",
+   "bytes": 30818776
+  },
+  "ydlidar_t_mini_plus": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_t_mini_plus/assets/model.glb",
+   "bytes": 318396
+  },
+  "ydlidar_tg30": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_tg30/assets/model.glb",
+   "bytes": 76660
+  },
+  "pololu_mp6603_stepper_motor_driver_carrier_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_mp6603_stepper_motor_driver_carrier_soldered/assets/model.glb",
+   "bytes": 737444
+  },
+  "pololu_mp6602_stepper_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_mp6602_stepper_motor_driver_carrier/assets/model.glb",
+   "bytes": 458792
+  },
+  "pololu_drv8825_stepper_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_drv8825_stepper_motor_driver_carrier/assets/model.glb",
+   "bytes": 784476
+  },
+  "pololu_drv8834_stepper_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_drv8834_stepper_motor_driver_carrier/assets/model.glb",
+   "bytes": 640480
+  },
+  "pololu_a4988_stepper_motor_driver_carrier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_a4988_stepper_motor_driver_carrier/assets/model.glb",
+   "bytes": 665160
+  },
+  "pololu_tic_t825_stepper_motor_controller_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_tic_t825_stepper_motor_controller_soldered/assets/model.glb",
+   "bytes": 2078264
+  },
+  "pololu_tic_t500_stepper_motor_controller_soldered": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_tic_t500_stepper_motor_controller_soldered/assets/model.glb",
+   "bytes": 2019344
+  },
+  "pimoroni_nvme_base_pim699": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_nvme_base_pim699/assets/model.glb",
+   "bytes": 3371296
+  },
+  "pimoroni_nvme_base_duo_pim704": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_nvme_base_duo_pim704/assets/model.glb",
+   "bytes": 694748
+  },
+  "pimoroni_pi4_heatsink_com1203": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pi4_heatsink_com1203/assets/model.glb",
+   "bytes": 65248
+  },
+  "pololu_a_star_32u4_robot_controller_lv_raspberry_pi_bridge": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_a_star_32u4_robot_controller_lv_raspberry_pi_bridge/assets/model.glb",
+   "bytes": 5348572
+  },
+  "pololu_micro_metal_gearmotor_bracket_black": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_micro_metal_gearmotor_bracket_black/assets/model.glb",
+   "bytes": 144004
+  },
+  "dfrobot_dfr0954_i2s_amplifier": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_dfr0954_i2s_amplifier/assets/model.glb",
+   "bytes": 4445680
+  },
+  "dfrobot_sen0515_ens160_air_quality_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_sen0515_ens160_air_quality_board/assets/model.glb",
+   "bytes": 7203312
+  },
+  "pololu_micro_metal_gearmotor_magnetic_encoder_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_micro_metal_gearmotor_magnetic_encoder_board/assets/model.glb",
+   "bytes": 357052
+  },
+  "cytron_mdd3a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/cytron_mdd3a/assets/model.glb",
+   "bytes": 1536884
+  },
+  "m5stack_a124_proto_unit_case": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a124_proto_unit_case/assets/model.glb",
+   "bytes": 169176
+  },
+  "cytron_md13s": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/cytron_md13s/assets/model.glb",
+   "bytes": 762120
+  },
+  "m5stack_core2_middle_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_core2_middle_frame/assets/model.glb",
+   "bytes": 842408
+  },
+  "m5stack_core2_v11_middle_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_core2_v11_middle_frame/assets/model.glb",
+   "bytes": 842416
+  },
+  "dfrobot_dfr0971_gp8403_dac": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_dfr0971_gp8403_dac/assets/model.glb",
+   "bytes": 8252936
+  },
+  "m5stack_cores3_lite_middle_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_cores3_lite_middle_frame/assets/model.glb",
+   "bytes": 842420
+  },
+  "m5stack_basic_v27_middle_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_basic_v27_middle_frame/assets/model.glb",
+   "bytes": 520212
+  },
+  "m5stack_m123_extport_middle_frame": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_m123_extport_middle_frame/assets/model.glb",
+   "bytes": 258860
+  },
+  "m5stack_a050_screw_m3x12": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a050_screw_m3x12/assets/model.glb",
+   "bytes": 634028
+  },
+  "m5stack_a050_screw_m3x18": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a050_screw_m3x18/assets/model.glb",
+   "bytes": 875948
+  },
+  "m5stack_a050_screw_m3x25": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a050_screw_m3x25/assets/model.glb",
+   "bytes": 1178348
+  },
+  "m5stack_a050_screw_m3x32": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a050_screw_m3x32/assets/model.glb",
+   "bytes": 1480748
+  },
+  "m5stack_a050_hex_key": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a050_hex_key/assets/model.glb",
+   "bytes": 6108
+  },
+  "feetech_fs90": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_fs90/assets/model.glb",
+   "bytes": 791052
+  },
+  "feetech_fs90_fb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_fs90_fb/assets/model.glb",
+   "bytes": 814684
+  },
+  "feetech_fs90r_v2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_fs90r_v2/assets/model.glb",
+   "bytes": 872908
+  },
+  "feetech_ft90r": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_ft90r/assets/model.glb",
+   "bytes": 824228
+  },
+  "feetech_fs90mr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_fs90mr/assets/model.glb",
+   "bytes": 856696
+  },
+  "feetech_fs90mg": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_fs90mg/assets/model.glb",
+   "bytes": 845248
+  },
+  "feetech_scs0009": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_scs0009/assets/model.glb",
+   "bytes": 861944
+  },
+  "pololu_micro_metal_gearmotor_magnetic_encoder_disc": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pololu_micro_metal_gearmotor_magnetic_encoder_disc/assets/model.glb",
+   "bytes": 17824
+  },
+  "dfrobot_dfr0924_pico_terminal_board": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_dfr0924_pico_terminal_board/assets/model.glb",
+   "bytes": 38173080
+  },
+  "arduino_a000079_motor_shield_rev3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/arduino_a000079_motor_shield_rev3/assets/model.glb",
+   "bytes": 1517372
+  },
+  "sparkfun_easydriver_rob_12779": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sparkfun_easydriver_rob_12779/assets/model.glb",
+   "bytes": 991272
+  },
+  "pimoroni_pibow_coupe_4_red_pim464": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pibow_coupe_4_red_pim464/assets/model.glb",
+   "bytes": 1913996
+  },
+  "sparkfun_tb6612fng_motor_driver_rob_14450": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sparkfun_tb6612fng_motor_driver_rob_14450/assets/model.glb",
+   "bytes": 519348
+  },
+  "pimoroni_pibow_coupe_5_royale_pim679": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pibow_coupe_5_royale_pim679/assets/model.glb",
+   "bytes": 2417720
+  },
+  "sparkfun_tb6612fng_motor_driver_rob_14451": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sparkfun_tb6612fng_motor_driver_rob_14451/assets/model.glb",
+   "bytes": 485416
+  },
+  "sparkfun_tmc6300_motor_driver_rob_21867": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sparkfun_tmc6300_motor_driver_rob_21867/assets/model.glb",
+   "bytes": 406656
+  },
+  "cytron_imd16": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/cytron_imd16/assets/model.glb",
+   "bytes": 371720
+  },
+  "ydlidar_x4_pro": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_x4_pro/assets/model.glb",
+   "bytes": 395324
+  },
+  "luxonis_oak_4_d_ff": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/luxonis_oak_4_d/assets/model.glb",
+   "bytes": 8083324
+  },
+  "luxonis_oak_4_d_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/luxonis_oak_4_d/assets/model.glb",
+   "bytes": 8083324
+  },
+  "adafruit_1411_pwm_servo_shield": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_1411_pwm_servo_shield/assets/model.glb",
+   "bytes": 8540076
+  },
+  "luxonis_oak_4_d_pro_ff": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/luxonis_oak_4_d_pro/assets/model.glb",
+   "bytes": 8052920
+  },
+  "luxonis_oak_4_d_pro_w": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/a9ecb651d20e770e104f71e83a998255cd7b0829/parts/luxonis_oak_4_d_pro/assets/model.glb",
+   "bytes": 8052920
+  },
+  "adafruit_1438_motor_shield_v2_3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_1438_motor_shield_v2_3/assets/model.glb",
+   "bytes": 8086184
+  },
+  "adafruit_2305_drv2605l_stemma_qt": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2305_drv2605l_stemma_qt/assets/model.glb",
+   "bytes": 621160
+  },
+  "adafruit_2327_pwm_servo_hat": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2327_pwm_servo_hat/assets/model.glb",
+   "bytes": 7350356
+  },
+  "adafruit_3190_drv8871_breakout": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3190_drv8871_breakout/assets/model.glb",
+   "bytes": 975912
+  },
+  "m5stack_m132_din_bottom_shell": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_m132_din_bottom_shell/assets/model.glb",
+   "bytes": 1337932
+  },
+  "m5stack_a014_d_m5go_bottom3_shell": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_a014_d_m5go_bottom3_shell/assets/model.glb",
+   "bytes": 184088
+  },
+  "m5stack_u031_b_rfid2_case": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/m5stack_u031_b_rfid2_case/assets/model.glb",
+   "bytes": 664120
+  },
+  "dfrobot_dfr0768_dfplayer_pro": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_dfr0768_dfplayer_pro/assets/model.glb",
+   "bytes": 10664820
+  },
+  "dfrobot_dfr0282_beetle_atmega32u4": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_dfr0282_beetle_atmega32u4/assets/model.glb",
+   "bytes": 8581476
+  },
+  "dfrobot_sen0598_underwater_ultrasonic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_sen0598_underwater_ultrasonic/assets/model.glb",
+   "bytes": 8290424
+  },
+  "ydlidar_x2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_x2/assets/model.glb",
+   "bytes": 364628
+  },
+  "feetech_ft1117m": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_ft1117m/assets/model.glb",
+   "bytes": 856876
+  },
+  "feetech_sts3215_7_4v": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/feetech_sts3215_7_4v/assets/model.glb",
+   "bytes": 1449668
+  },
+  "arduino_motor_control_v1_1b_bare_pcb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/arduino_motor_control_v1_1b_bare_pcb/assets/model.glb",
+   "bytes": 1415740
+  },
+  "ydlidar_tea": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_tea/assets/model.glb",
+   "bytes": 203800
+  },
+  "waveshare_ugv_suspension_a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_ugv_suspension_a/assets/model.glb",
+   "bytes": 15782572
+  },
+  "waveshare_ugv_suspension_b": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_ugv_suspension_b/assets/model.glb",
+   "bytes": 3834044
+  },
+  "waveshare_pico_motor_driver": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_pico_motor_driver/assets/model.glb",
+   "bytes": 788748
+  },
+  "pimoroni_pibow_zero_w_pim258": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pibow_zero_w_pim258/assets/model.glb",
+   "bytes": 1510952
+  },
+  "pimoroni_pibow_zero_2_w_pim595": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pimoroni_pibow_zero_2_w_pim595/assets/model.glb",
+   "bytes": 1513844
+  },
+  "ydlidar_tsa": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_tsa/assets/model.glb",
+   "bytes": 159012
+  },
+  "ydlidar_tg15": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_tg30/assets/model.glb",
+   "bytes": 76660
+  },
+  "elephantrobotics_mycobot_280_rdk_x5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mycobot_280_rdk_x5/assets/model.glb",
+   "bytes": 6247016
+  },
+  "elephantrobotics_mygripper_f100": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mygripper_f100/assets/model.glb",
+   "bytes": 8624240
+  },
+  "elephantrobotics_ultraarm_p340": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_ultraarm_p340/assets/model.glb",
+   "bytes": 8218480
+  },
+  "elephantrobotics_mercury_a1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_mercury_a1/assets/model.glb",
+   "bytes": 10272436
+  },
+  "elephantrobotics_myarm_m750": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myarm_m750/assets/model.glb",
+   "bytes": 8445284
+  },
+  "ydlidar_x4": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_x4/assets/model.glb",
+   "bytes": 433280
+  },
+  "ydlidar_gs5": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_gs5/assets/model.glb",
+   "bytes": 252544
+  },
+  "ydlidar_sdm15": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/ydlidar_sdm15/assets/model.glb",
+   "bytes": 97064
+  },
+  "adafruit_2939_frame_with_deck": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2939_frame_with_deck/assets/model.glb",
+   "bytes": 432660
+  },
+  "adafruit_2939_fm90_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2939_fm90_left/assets/model.glb",
+   "bytes": 636044
+  },
+  "adafruit_2939_fm90_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2939_fm90_right/assets/model.glb",
+   "bytes": 636064
+  },
+  "adafruit_2939_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2939_wheel/assets/model.glb",
+   "bytes": 361792
+  },
+  "adafruit_2939_swivel_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_2939_swivel_caster/assets/model.glb",
+   "bytes": 621612
+  },
+  "robotis_turtlebot3_burger_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotis_turtlebot3_burger_chassis/assets/model.glb",
+   "bytes": 4085620
+  },
+  "robotis_turtlebot3_waffle_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotis_turtlebot3_waffle_chassis/assets/model.glb",
+   "bytes": 6910112
+  },
+  "robotis_tb3_wheel_isw01_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotis_tb3_wheel_isw01_right/assets/model.glb",
+   "bytes": 741232
+  },
+  "clearpath_husky_a200_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a200_left_wheel/assets/model.glb",
+   "bytes": 2247008
+  },
+  "clearpath_husky_a200_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a200_right_wheel/assets/model.glb",
+   "bytes": 2247012
+  },
+  "clearpath_husky_a200_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a200_chassis/assets/model.glb",
+   "bytes": 1578544
+  },
+  "nasa_jpl_mars_exploration_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nasa_jpl_mars_exploration_rover_chassis/assets/model.glb",
+   "bytes": 11910212
+  },
+  "nasa_jpl_curiosity_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nasa_jpl_curiosity_rover_chassis/assets/model.glb",
+   "bytes": 11860144
+  },
+  "nasa_jpl_perseverance_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nasa_jpl_perseverance_rover_chassis/assets/model.glb",
+   "bytes": 11688012
+  },
+  "farm_ng_amiga_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/farm_ng_amiga_chassis/assets/model.glb",
+   "bytes": 3522256
+  },
+  "farm_ng_amiga_hub_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/farm_ng_amiga_hub_wheel/assets/model.glb",
+   "bytes": 1226544
+  },
+  "willow_garage_pr2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/willow_garage_pr2_chassis/assets/model.glb",
+   "bytes": 1369112
+  },
+  "vstone_megarover_3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_megarover_3/assets/model.glb",
+   "bytes": 134228
+  },
+  "vstone_megarover_s40a_lb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_megarover_s40a_lb/assets/model.glb",
+   "bytes": 324256
+  },
+  "vstone_megarover_f120a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_megarover_f120a/assets/model.glb",
+   "bytes": 204464
+  },
+  "vstone_mecanumrover_3": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_mecanumrover_3/assets/model.glb",
+   "bytes": 596344
+  },
+  "vstone_mecanumrover_g40a_lb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_mecanumrover_g40a_lb/assets/model.glb",
+   "bytes": 699600
+  },
+  "vstone_mecanumrover_g120a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_mecanumrover_g120a/assets/model.glb",
+   "bytes": 594140
+  },
+  "vstone_4wds_x40a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_4wds_x40a/assets/model.glb",
+   "bytes": 346996
+  },
+  "vstone_4wds_x120a": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_4wds_x120a/assets/model.glb",
+   "bytes": 390584
+  },
+  "vstone_4wds_x120a_lb": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_4wds_x120a_lb/assets/model.glb",
+   "bytes": 465928
+  },
+  "vstone_lightrover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/vstone_lightrover/assets/model.glb",
+   "bytes": 2691708
+  },
+  "rt_raspberry_pi_mouse": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_mouse/assets/model.glb",
+   "bytes": 4986208
+  },
+  "rt_jetson_nano_mouse": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_jetson_nano_mouse/assets/model.glb",
+   "bytes": 2354972
+  },
+  "rt_raspberry_pi_cat": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_cat/assets/model.glb",
+   "bytes": 9885228
+  },
+  "clearpath_husky_a300_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a300_left_wheel/assets/model.glb",
+   "bytes": 8033816
+  },
+  "open_rdc_orne_large": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/open_rdc_orne_large/assets/model.glb",
+   "bytes": 6353472
+  },
+  "clearpath_husky_a300_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a300_right_wheel/assets/model.glb",
+   "bytes": 8033820
+  },
+  "clearpath_husky_a300_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_husky_a300_chassis/assets/model.glb",
+   "bytes": 14856528
+  },
+  "clearpath_jackal_j100_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_jackal_j100_left_wheel/assets/model.glb",
+   "bytes": 225972
+  },
+  "clearpath_jackal_j100_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_jackal_j100_right_wheel/assets/model.glb",
+   "bytes": 225976
+  },
+  "clearpath_jackal_j100_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_jackal_j100_chassis/assets/model.glb",
+   "bytes": 100140
+  },
+  "clearpath_ridgeback_r100": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_ridgeback_r100/assets/model.glb",
+   "bytes": 315840
+  },
+  "clearpath_dingo_d_dd100": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_d_dd100/assets/model.glb",
+   "bytes": 474192
+  },
+  "clearpath_dingo_o_do100": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_o_do100/assets/model.glb",
+   "bytes": 511240
+  },
+  "robotnik_rbsummit_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_wheel_front_left/assets/model.glb",
+   "bytes": 368768
+  },
+  "robotnik_rbsummit_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_wheel_front_right/assets/model.glb",
+   "bytes": 368464
+  },
+  "robotnik_rbsummit_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_wheel_rear_left/assets/model.glb",
+   "bytes": 368764
+  },
+  "robotnik_rbsummit_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_wheel_rear_right/assets/model.glb",
+   "bytes": 368460
+  },
+  "robotnik_rbsummit_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_chassis/assets/model.glb",
+   "bytes": 546992
+  },
+  "robotnik_rbkairos_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_front_left/assets/model.glb",
+   "bytes": 435768
+  },
+  "robotnik_rbkairos_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_front_right/assets/model.glb",
+   "bytes": 405892
+  },
+  "robotnik_rbkairos_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_rear_left/assets/model.glb",
+   "bytes": 405884
+  },
+  "robotnik_rbkairos_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_rear_right/assets/model.glb",
+   "bytes": 435768
+  },
+  "saga_robotics_thorvald_ii_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/saga_robotics_thorvald_ii_chassis/assets/model.glb",
+   "bytes": 6428756
+  },
+  "robotnik_rbkairos_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_chassis/assets/model.glb",
+   "bytes": 10299268
+  },
+  "robotnik_rbrobout_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbrobout_wheel_front_left/assets/model.glb",
+   "bytes": 16076412
+  },
+  "robotnik_rbrobout_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbrobout_wheel_front_right/assets/model.glb",
+   "bytes": 16076412
+  },
+  "robotnik_rbrobout_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbrobout_wheel_rear_left/assets/model.glb",
+   "bytes": 16076408
+  },
+  "elegoo_smart_car_v4_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elegoo_smart_car_v4_chassis/assets/model.glb",
+   "bytes": 1112312
+  },
+  "elegoo_smart_car_v4_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elegoo_smart_car_v4_wheel/assets/model.glb",
+   "bytes": 70468
+  },
+  "robotnik_rbrobout_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbrobout_wheel_rear_right/assets/model.glb",
+   "bytes": 16076412
+  },
+  "nasa_jpl_open_source_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nasa_jpl_open_source_rover_chassis/assets/model.glb",
+   "bytes": 13889408
+  },
+  "dfrobot_maqueen_43mm_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_maqueen_43mm_wheel/assets/model.glb",
+   "bytes": 115896
+  },
+  "robotnik_rbrobout_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbrobout_chassis/assets/model.glb",
+   "bytes": 79740
+  },
+  "dfrobot_maqueen_pom_support_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_maqueen_pom_support_wheel/assets/model.glb",
+   "bytes": 12612
+  },
+  "nasa_jpl_open_source_rover_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nasa_jpl_open_source_rover_wheel/assets/model.glb",
+   "bytes": 948120
+  },
+  "dfrobot_rob0003_pirate_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0003_pirate_chassis/assets/model.glb",
+   "bytes": 2155056
+  },
+  "robotnik_rbsummit_steel_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_front_left/assets/model.glb",
+   "bytes": 435768
+  },
+  "robotnik_rbsummit_steel_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_front_right/assets/model.glb",
+   "bytes": 405892
+  },
+  "robotnik_rbsummit_steel_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_rear_left/assets/model.glb",
+   "bytes": 405884
+  },
+  "robotnik_rbsummit_steel_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbkairos_wheel_rear_right/assets/model.glb",
+   "bytes": 435768
+  },
+  "pudu_cc1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pudu_cc1_chassis/assets/model.glb",
+   "bytes": 400380
+  },
+  "robotnik_rbsummit_steel_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbsummit_steel_chassis/assets/model.glb",
+   "bytes": 365392
+  },
+  "robotnik_rbtheron_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbtheron_wheel_left/assets/model.glb",
+   "bytes": 9536
+  },
+  "robotnik_rbtheron_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbtheron_wheel_right/assets/model.glb",
+   "bytes": 9540
+  },
+  "tamiya_70108_tracked_vehicle_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70108_tracked_vehicle_chassis/assets/model.glb",
+   "bytes": 1044108
+  },
+  "waveshare_wave_rover_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_wave_rover_wheel/assets/model.glb",
+   "bytes": 1263268
+  },
+  "robotnik_rbtheron_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbtheron_chassis/assets/model.glb",
+   "bytes": 4289580
+  },
+  "robotnik_rb1_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rb1_wheel_left/assets/model.glb",
+   "bytes": 9536
+  },
+  "robotnik_rb1_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rb1_wheel_right/assets/model.glb",
+   "bytes": 9540
+  },
+  "robotnik_rbfiqus_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbfiqus_chassis/assets/model.glb",
+   "bytes": 2586224
+  },
+  "robotnik_rb1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rb1_chassis/assets/model.glb",
+   "bytes": 44672
+  },
+  "waveshare_wave_rover": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_wave_rover/assets/model.glb",
+   "bytes": 10210352
+  },
+  "robotnik_rbvogui_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbvogui_chassis/assets/model.glb",
+   "bytes": 657304
+  },
+  "robotnik_rbcar_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbcar_wheel_front_left/assets/model.glb",
+   "bytes": 17607664
+  },
+  "robotnik_rbcar_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbcar_wheel_front_right/assets/model.glb",
+   "bytes": 17607684
+  },
+  "robotnik_rbvogui_xl_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbvogui_xl_chassis/assets/model.glb",
+   "bytes": 2399584
+  },
+  "robotnik_agvs_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_agvs_chassis/assets/model.glb",
+   "bytes": 211584
+  },
+  "robotnik_rbcar_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbcar_wheel_rear_left/assets/model.glb",
+   "bytes": 17607664
+  },
+  "robotnik_rbcar_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbcar_wheel_rear_right/assets/model.glb",
+   "bytes": 17607684
+  },
+  "robotnik_rbvogui_6w_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbvogui_6w_chassis/assets/model.glb",
+   "bytes": 818596
+  },
+  "dfrobot_rob0102_cherokey_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0102_cherokey_chassis/assets/model.glb",
+   "bytes": 10344672
+  },
+  "dfrobot_rob0148_maqueen_lite_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0148_maqueen_lite_chassis/assets/model.glb",
+   "bytes": 871364
+  },
+  "sawppy_curio_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sawppy_curio_rover_chassis/assets/model.glb",
+   "bytes": 5811096
+  },
+  "dfrobot_mbt0046_maqueen_lite_v5_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_mbt0046_maqueen_lite_v5_chassis/assets/model.glb",
+   "bytes": 863080
+  },
+  "sawppy_curio_rover_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/sawppy_curio_rover_wheel/assets/model.glb",
+   "bytes": 1232972
+  },
+  "robotnik_rbcar_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotnik_rbcar_chassis/assets/model.glb",
+   "bytes": 18381984
+  },
+  "pal_robotics_tiago_base_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_base_wheel_left/assets/model.glb",
+   "bytes": 289248
+  },
+  "pal_robotics_tiago_base_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_base_wheel_right/assets/model.glb",
+   "bytes": 289248
+  },
+  "pal_robotics_tiago_base_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_base_chassis/assets/model.glb",
+   "bytes": 1444328
+  },
+  "pal_robotics_tiago_omni_base_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_omni_base_wheel_left/assets/model.glb",
+   "bytes": 346876
+  },
+  "fraunhofer_care_o_bot_4_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fraunhofer_care_o_bot_4_chassis/assets/model.glb",
+   "bytes": 5280972
+  },
+  "pal_robotics_tiago_omni_base_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_omni_base_wheel_right/assets/model.glb",
+   "bytes": 347088
+  },
+  "fraunhofer_rob_at_work_short_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fraunhofer_rob_at_work_short_chassis/assets/model.glb",
+   "bytes": 564764
+  },
+  "esa_prl_exomy_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/esa_prl_exomy_chassis/assets/model.glb",
+   "bytes": 41024284
+  },
+  "pal_robotics_tiago_omni_base_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_tiago_omni_base_chassis/assets/model.glb",
+   "bytes": 988432
+  },
+  "fraunhofer_rob_at_work_long_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fraunhofer_rob_at_work_long_chassis/assets/model.glb",
+   "bytes": 564044
+  },
+  "esa_prl_exomy_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/esa_prl_exomy_wheel/assets/model.glb",
+   "bytes": 150276
+  },
+  "pal_robotics_pmb3_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_pmb3_wheel_left/assets/model.glb",
+   "bytes": 616656
+  },
+  "fraunhofer_rob_at_work_mini_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fraunhofer_rob_at_work_mini_chassis/assets/model.glb",
+   "bytes": 424060
+  },
+  "pal_robotics_pmb3_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_pmb3_wheel_right/assets/model.glb",
+   "bytes": 616656
+  },
+  "pal_robotics_pmb3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pal_robotics_pmb3_chassis/assets/model.glb",
+   "bytes": 4822844
+  },
+  "omron_ld250_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/omron_ld250_chassis/assets/model.glb",
+   "bytes": 865332
+  },
+  "omron_md650_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/omron_md650_chassis/assets/model.glb",
+   "bytes": 604136
+  },
+  "omron_hd1500_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/omron_hd1500_chassis/assets/model.glb",
+   "bytes": 2286080
+  },
+  "omron_ol450s2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/omron_ol450s2_chassis/assets/model.glb",
+   "bytes": 84452
+  },
+  "gobilda_beeline_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gobilda_beeline_chassis/assets/model.glb",
+   "bytes": 5046760
+  },
+  "rev_mecanum_drivetrain_v2": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rev_mecanum_drivetrain_v2/assets/model.glb",
+   "bytes": 4943688
+  },
+  "waveshare_ugv_beast_pi4b_acce": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_ugv_beast_pi4b_acce/assets/model.glb",
+   "bytes": 60650752
+  },
+  "clearpath_warthog_w200": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_warthog_w200/assets/model.glb",
+   "bytes": 543784
+  },
+  "hebi_tready_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hebi_tready_chassis/assets/model.glb",
+   "bytes": 4765100
+  },
+  "dfrobot_rob0005_turtle_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0005_turtle_caster/assets/model.glb",
+   "bytes": 137860
+  },
+  "dfrobot_rob0025_baron_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0025_baron_chassis/assets/model.glb",
+   "bytes": 1290168
+  },
+  "dfrobot_rob0005_turtle_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0005_turtle_chassis/assets/model.glb",
+   "bytes": 1085496
+  },
+  "waveshare_ugv_rover_pi4b_acce": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_ugv_rover_pi4b_acce/assets/model.glb",
+   "bytes": 49410284
+  },
+  "agilex_scout_mini_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_scout_mini_wheel/assets/model.glb",
+   "bytes": 1507776
+  },
+  "neobotix_mp400_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp400_wheel_left/assets/model.glb",
+   "bytes": 42344
+  },
+  "neobotix_mp400_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp400_wheel_right/assets/model.glb",
+   "bytes": 42344
+  },
+  "neobotix_mp400_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp400_chassis/assets/model.glb",
+   "bytes": 524564
+  },
+  "neobotix_mp500_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp500_wheel_left/assets/model.glb",
+   "bytes": 80828
+  },
+  "neobotix_mp500_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp500_wheel_right/assets/model.glb",
+   "bytes": 80832
+  },
+  "turtlebot4_standard_upper_assembly": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/turtlebot4_standard_upper_assembly/assets/model.glb",
+   "bytes": 9148752
+  },
+  "kuka_youbot_mobile_platform_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/kuka_youbot_mobile_platform_chassis/assets/model.glb",
+   "bytes": 332980
+  },
+  "neobotix_mp500_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mp500_chassis/assets/model.glb",
+   "bytes": 326692
+  },
+  "agilex_scout_mini_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_scout_mini_chassis/assets/model.glb",
+   "bytes": 7608096
+  },
+  "turtlebot4_lite_camera_assembly": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/turtlebot4_lite_camera_assembly/assets/model.glb",
+   "bytes": 1972828
+  },
+  "neobotix_mpo500_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo500_wheel_front_left/assets/model.glb",
+   "bytes": 2579428
+  },
+  "agilex_hunter_se_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_se_front_left_wheel/assets/model.glb",
+   "bytes": 369056
+  },
+  "turtlebot4_lite_rplidar_package": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/turtlebot4_lite_rplidar_package/assets/model.glb",
+   "bytes": 136968
+  },
+  "rt_raspberry_pi_cat_left_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_cat_left_drive_wheel/assets/model.glb",
+   "bytes": 3871328
+  },
+  "neobotix_mpo500_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo500_wheel_front_right/assets/model.glb",
+   "bytes": 2579428
+  },
+  "agilex_hunter_se_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_se_front_right_wheel/assets/model.glb",
+   "bytes": 369224
+  },
+  "rt_raspberry_pi_cat_right_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_cat_right_drive_wheel/assets/model.glb",
+   "bytes": 3871332
+  },
+  "agilex_hunter_se_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_se_rear_left_wheel/assets/model.glb",
+   "bytes": 330740
+  },
+  "neobotix_mpo500_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo500_wheel_front_right/assets/model.glb",
+   "bytes": 2579428
+  },
+  "rt_raspberry_pi_cat_swivel_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_cat_swivel_caster/assets/model.glb",
+   "bytes": 1226728
+  },
+  "agilex_hunter_se_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_se_rear_right_wheel/assets/model.glb",
+   "bytes": 330908
+  },
+  "neobotix_mpo500_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo500_wheel_front_left/assets/model.glb",
+   "bytes": 2579428
+  },
+  "agilex_hunter_se_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_se_chassis/assets/model.glb",
+   "bytes": 1872052
+  },
+  "agilex_hunter_2_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_2_front_left_wheel/assets/model.glb",
+   "bytes": 659156
+  },
+  "agilex_hunter_2_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_2_front_right_wheel/assets/model.glb",
+   "bytes": 357964
+  },
+  "adafruit_3216_round_rover_legacy": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3216_round_rover_legacy/assets/model.glb",
+   "bytes": 513824
+  },
+  "adafruit_3216_round_rover_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3216_round_rover_wheel/assets/model.glb",
+   "bytes": 88052
+  },
+  "agilex_hunter_2_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_2_rear_left_wheel/assets/model.glb",
+   "bytes": 530316
+  },
+  "adafruit_3216_round_rover_ball_caster_legacy": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3216_round_rover_ball_caster_legacy/assets/model.glb",
+   "bytes": 114220
+  },
+  "agilex_hunter_2_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_2_rear_right_wheel/assets/model.glb",
+   "bytes": 663244
+  },
+  "neobotix_mpo500_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo500_chassis/assets/model.glb",
+   "bytes": 2947768
+  },
+  "neobotix_mpo700_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_mpo700_chassis/assets/model.glb",
+   "bytes": 653652
+  },
+  "neobotix_rox_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_rox_wheel_left/assets/model.glb",
+   "bytes": 75412
+  },
+  "neobotix_rox_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_rox_wheel_right/assets/model.glb",
+   "bytes": 75408
+  },
+  "lego_31313_track3r_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_31313_track3r_chassis/assets/model.glb",
+   "bytes": 15696000
+  },
+  "neobotix_rox_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_rox_chassis/assets/model.glb",
+   "bytes": 1460348
+  },
+  "agilex_hunter_2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_hunter_2_chassis/assets/model.glb",
+   "bytes": 3926452
+  },
+  "agilex_tracer_2_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_tracer_2_front_left_wheel/assets/model.glb",
+   "bytes": 3329816
+  },
+  "agilex_tracer_2_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_tracer_2_front_right_wheel/assets/model.glb",
+   "bytes": 3329900
+  },
+  "neobotics_neoracer_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotics_neoracer_chassis/assets/model.glb",
+   "bytes": 32618988
+  },
+  "nexusrobot_10003_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10003_chassis/assets/model.glb",
+   "bytes": 120892
+  },
+  "nexusrobot_10004_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10004_chassis/assets/model.glb",
+   "bytes": 164440
+  },
+  "neobotics_neoracer_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotics_neoracer_wheel_front_left/assets/model.glb",
+   "bytes": 1749600
+  },
+  "nexusrobot_10006_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10006_chassis/assets/model.glb",
+   "bytes": 318888
+  },
+  "neobotics_neoracer_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotics_neoracer_wheel_front_right/assets/model.glb",
+   "bytes": 1865332
+  },
+  "nexusrobot_10008_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10008_chassis/assets/model.glb",
+   "bytes": 110808
+  },
+  "nexusrobot_10011_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10011_chassis/assets/model.glb",
+   "bytes": 148304
+  },
+  "neobotics_neoracer_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotics_neoracer_wheel_rear_left/assets/model.glb",
+   "bytes": 1538828
+  },
+  "neobotics_neoracer_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotics_neoracer_wheel_rear_right/assets/model.glb",
+   "bytes": 1667724
+  },
+  "nexusrobot_10013_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10013_chassis/assets/model.glb",
+   "bytes": 279000
+  },
+  "agilex_tracer_2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_tracer_2_chassis/assets/model.glb",
+   "bytes": 1554516
+  },
+  "nexusrobot_10014_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10014_chassis/assets/model.glb",
+   "bytes": 176400
+  },
+  "agilex_ranger_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_front_left_wheel/assets/model.glb",
+   "bytes": 646764
+  },
+  "nexusrobot_10019_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10019_chassis/assets/model.glb",
+   "bytes": 282752
+  },
+  "nexusrobot_10020_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10020_chassis/assets/model.glb",
+   "bytes": 116440
+  },
+  "agilex_ranger_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_front_right_wheel/assets/model.glb",
+   "bytes": 646848
+  },
+  "nexusrobot_10021_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_10021_chassis/assets/model.glb",
+   "bytes": 110832
+  },
+  "agilex_ranger_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_rear_left_wheel/assets/model.glb",
+   "bytes": 646768
+  },
+  "nexusrobot_chassis_omni48_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_omni48_wheel/assets/model.glb",
+   "bytes": 69720
+  },
+  "nexusrobot_chassis_omni58_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_omni58_wheel/assets/model.glb",
+   "bytes": 69732
+  },
+  "agilex_ranger_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_rear_right_wheel/assets/model.glb",
+   "bytes": 646852
+  },
+  "nexusrobot_chassis_omni100_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_omni100_wheel/assets/model.glb",
+   "bytes": 77312
+  },
+  "nexusrobot_chassis_standard135_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_standard135_wheel/assets/model.glb",
+   "bytes": 31076
+  },
+  "nexusrobot_chassis_mecanum60_l_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_mecanum60_l_wheel/assets/model.glb",
+   "bytes": 1823348
+  },
+  "nexusrobot_chassis_mecanum60_r_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_mecanum60_r_wheel/assets/model.glb",
+   "bytes": 1823348
+  },
+  "nexusrobot_chassis_mecanum100_l_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_mecanum100_l_wheel/assets/model.glb",
+   "bytes": 1248400
+  },
+  "nexusrobot_chassis_mecanum100_r_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nexusrobot_chassis_mecanum100_r_wheel/assets/model.glb",
+   "bytes": 1249360
+  },
+  "clearpath_dingo_o_do100_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_o_do100_front_left_wheel/assets/model.glb",
+   "bytes": 8680524
+  },
+  "clearpath_dingo_o_do100_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_o_do100_front_right_wheel/assets/model.glb",
+   "bytes": 8680652
+  },
+  "clearpath_dingo_o_do100_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_o_do100_rear_left_wheel/assets/model.glb",
+   "bytes": 8680396
+  },
+  "clearpath_dingo_o_do100_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_dingo_o_do100_rear_right_wheel/assets/model.glb",
+   "bytes": 8680524
+  },
+  "dfrobot_fit0085_miniq_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_fit0085_miniq_wheel/assets/model.glb",
+   "bytes": 86112
+  },
+  "dfrobot_rob0049_miniq_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0049_miniq_caster/assets/model.glb",
+   "bytes": 64896
+  },
+  "dfrobot_rob0049_miniq_2wd_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/dfrobot_rob0049_miniq_2wd_chassis/assets/model.glb",
+   "bytes": 561496
+  },
+  "lego_51515_blast_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_51515_blast_chassis/assets/model.glb",
+   "bytes": 48762824
+  },
+  "hello_robot_stretch_re1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hello_robot_stretch_re1_chassis/assets/model.glb",
+   "bytes": 8020740
+  },
+  "rev_channel_drivetrain": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rev_channel_drivetrain/assets/model.glb",
+   "bytes": 4832704
+  },
+  "clearpath_boxer_v24": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_boxer_v24/assets/model.glb",
+   "bytes": 43643144
+  },
+  "gobilda_recon_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gobilda_recon_chassis/assets/model.glb",
+   "bytes": 5580864
+  },
+  "gobilda_hammerhead_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gobilda_hammerhead_chassis/assets/model.glb",
+   "bytes": 7397468
+  },
+  "gobilda_outlaw_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gobilda_outlaw_chassis/assets/model.glb",
+   "bytes": 4338612
+  },
+  "hello_robot_stretch_re2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hello_robot_stretch_re2_chassis/assets/model.glb",
+   "bytes": 8937964
+  },
+  "agilex_ranger_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_chassis/assets/model.glb",
+   "bytes": 19626692
+  },
+  "airlab_polimi_agrosensebot_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/airlab_polimi_agrosensebot_chassis/assets/model.glb",
+   "bytes": 220104
+  },
+  "airlab_polimi_agrosensebot_track": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/airlab_polimi_agrosensebot_track/assets/model.glb",
+   "bytes": 109140
+  },
+  "agilex_ranger_air_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_air_front_left_wheel/assets/model.glb",
+   "bytes": 45504
+  },
+  "agilex_ranger_air_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_air_front_right_wheel/assets/model.glb",
+   "bytes": 45664
+  },
+  "agilex_ranger_air_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_air_rear_left_wheel/assets/model.glb",
+   "bytes": 45504
+  },
+  "agilex_ranger_air_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_air_rear_right_wheel/assets/model.glb",
+   "bytes": 45668
+  },
+  "yujin_kobuki_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yujin_kobuki_chassis/assets/model.glb",
+   "bytes": 390176
+  },
+  "yujin_kobuki_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yujin_kobuki_drive_wheel/assets/model.glb",
+   "bytes": 166360
+  },
+  "agilex_ranger_air_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_air_chassis/assets/model.glb",
+   "bytes": 8391252
+  },
+  "lego_42070_all_terrain_tow_truck_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_42070_all_terrain_tow_truck_chassis/assets/model.glb",
+   "bytes": 86251232
+  },
+  "lego_42114_volvo_hauler_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_42114_volvo_hauler_chassis/assets/model.glb",
+   "bytes": 104681700
+  },
+  "lego_42131_cat_d11_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_42131_cat_d11_chassis/assets/model.glb",
+   "bytes": 135495576
+  },
+  "waveshare_jetbot_ai_ball_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_jetbot_ai_ball_caster/assets/model.glb",
+   "bytes": 63648
+  },
+  "mobsya_thymio_ii_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobsya_thymio_ii_chassis/assets/model.glb",
+   "bytes": 2584616
+  },
+  "mobsya_thymio_ii_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobsya_thymio_ii_wheel_left/assets/model.glb",
+   "bytes": 560620
+  },
+  "clearpath_moose": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_moose/assets/model.glb",
+   "bytes": 8766236
+  },
+  "waveshare_jetbot_ai_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_jetbot_ai_wheel/assets/model.glb",
+   "bytes": 466544
+  },
+  "mobsya_thymio_ii_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobsya_thymio_ii_wheel_right/assets/model.glb",
+   "bytes": 560620
+  },
+  "quanser_qcar_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_chassis/assets/model.glb",
+   "bytes": 4552200
+  },
+  "waveshare_jetbot_ai_acce": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/waveshare_jetbot_ai_acce/assets/model.glb",
+   "bytes": 8753028
+  },
+  "quanser_qcar_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_left/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_right/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_left/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_right/assets/model.glb",
+   "bytes": 89144
+  },
+  "clearpath_warthog_w200_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_warthog_w200_left_wheel/assets/model.glb",
+   "bytes": 1066660
+  },
+  "clearpath_warthog_w200_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_warthog_w200_right_wheel/assets/model.glb",
+   "bytes": 1066660
+  },
+  "quanser_qcar2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar2_chassis/assets/model.glb",
+   "bytes": 6608656
+  },
+  "quanser_qcar2_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_left/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar2_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_right/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar2_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_left/assets/model.glb",
+   "bytes": 89144
+  },
+  "quanser_qcar2_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qcar_wheel_front_right/assets/model.glb",
+   "bytes": 89144
+  },
+  "neobotix_rox_long_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/neobotix_rox_long_chassis/assets/model.glb",
+   "bytes": 221472
+  },
+  "tamiya_70112_buggy_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70112_buggy_chassis/assets/model.glb",
+   "bytes": 1066472
+  },
+  "lego_42055_bucket_wheel_excavator_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_42055_bucket_wheel_excavator_chassis/assets/model.glb",
+   "bytes": 175818844
+  },
+  "mobilerobots_pioneer_3dx_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3dx_left_wheel/assets/model.glb",
+   "bytes": 1571712
+  },
+  "tamiya_70113_sprung_4wd_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70113_sprung_4wd_chassis/assets/model.glb",
+   "bytes": 580880
+  },
+  "fictionlab_leo_rover_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fictionlab_leo_rover_chassis/assets/model.glb",
+   "bytes": 9280400
+  },
+  "mobilerobots_pioneer_3dx_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3dx_right_wheel/assets/model.glb",
+   "bytes": 1583400
+  },
+  "mobilerobots_pioneer_3dx_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3dx_chassis/assets/model.glb",
+   "bytes": 413128
+  },
+  "fictionlab_leo_rover_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fictionlab_leo_rover_wheel_left/assets/model.glb",
+   "bytes": 1637208
+  },
+  "mobilerobots_pioneer_3at_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3at_left_wheel/assets/model.glb",
+   "bytes": 1392888
+  },
+  "fictionlab_leo_rover_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/fictionlab_leo_rover_wheel_right/assets/model.glb",
+   "bytes": 873792
+  },
+  "mobilerobots_pioneer_3at_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3at_right_wheel/assets/model.glb",
+   "bytes": 1392904
+  },
+  "tamiya_70227_cam_program_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70227_cam_program_chassis/assets/model.glb",
+   "bytes": 1061628
+  },
+  "mobilerobots_pioneer_3at_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_3at_chassis/assets/model.glb",
+   "bytes": 63708
+  },
+  "irobot_create3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/irobot_create3_chassis/assets/model.glb",
+   "bytes": 13258864
+  },
+  "mobilerobots_pioneer_lx_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_lx_left_wheel/assets/model.glb",
+   "bytes": 388584
+  },
+  "mobilerobots_pioneer_lx_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_lx_right_wheel/assets/model.glb",
+   "bytes": 391184
+  },
+  "elephantrobotics_myagv_pro_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_pro_chassis/assets/model.glb",
+   "bytes": 2891836
+  },
+  "elephantrobotics_myagv_pro_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_pro_wheel_front_left/assets/model.glb",
+   "bytes": 1215432
+  },
+  "irobot_create3_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/irobot_create3_drive_wheel/assets/model.glb",
+   "bytes": 39536
+  },
+  "elephantrobotics_myagv_pro_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_pro_wheel_front_right/assets/model.glb",
+   "bytes": 1176144
+  },
+  "lego_42100_liebherr_r9800_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/lego_42100_liebherr_r9800_chassis/assets/model.glb",
+   "bytes": 177284592
+  },
+  "tamiya_70243_triple_crawler_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70243_triple_crawler_chassis/assets/model.glb",
+   "bytes": 919732
+  },
+  "irobot_create3_front_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/irobot_create3_front_caster/assets/model.glb",
+   "bytes": 108292
+  },
+  "elephantrobotics_myagv_pro_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_pro_wheel_rear_left/assets/model.glb",
+   "bytes": 1174180
+  },
+  "elephantrobotics_myagv_pro_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_pro_wheel_rear_right/assets/model.glb",
+   "bytes": 1212220
+  },
+  "mobilerobots_pioneer_lx_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mobilerobots_pioneer_lx_chassis/assets/model.glb",
+   "bytes": 8886792
+  },
+  "tamiya_70247_four_crawler_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70247_four_crawler_chassis/assets/model.glb",
+   "bytes": 1139984
+  },
+  "quanser_qbot_platform_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qbot_platform_chassis/assets/model.glb",
+   "bytes": 14393460
+  },
+  "quanser_qbot_platform_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qbot_platform_wheel_left/assets/model.glb",
+   "bytes": 802484
+  },
+  "quanser_qbot_platform_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/quanser_qbot_platform_wheel_left/assets/model.glb",
+   "bytes": 802484
+  },
+  "clearpath_heron": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/clearpath_heron/assets/model.glb",
+   "bytes": 2464336
+  },
+  "agilex_ranger_mini_3_front_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_mini_3_front_left_wheel/assets/model.glb",
+   "bytes": 272028
+  },
+  "agilex_ranger_mini_3_front_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_mini_3_front_right_wheel/assets/model.glb",
+   "bytes": 272268
+  },
+  "agilex_ranger_mini_3_rear_left_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_mini_3_rear_left_wheel/assets/model.glb",
+   "bytes": 272032
+  },
+  "agilex_ranger_mini_3_rear_right_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_mini_3_rear_right_wheel/assets/model.glb",
+   "bytes": 272276
+  },
+  "osoyoo_mars_explorer_acrylic": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_mars_explorer_acrylic/assets/model.glb",
+   "bytes": 371600
+  },
+  "agilex_ranger_mini_3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_ranger_mini_3_chassis/assets/model.glb",
+   "bytes": 8466968
+  },
+  "osoyoo_mars_80mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_mars_80mm_fl_rr/assets/model.glb",
+   "bytes": 92816
+  },
+  "osoyoo_mars_80mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_mars_80mm_fr_rl/assets/model.glb",
+   "bytes": 92816
+  },
+  "osoyoo_mecanum_metal_v11": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_mecanum_metal_v11/assets/model.glb",
+   "bytes": 825532
+  },
+  "osoyoo_metal_80mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_metal_80mm_fl_rr/assets/model.glb",
+   "bytes": 101312
+  },
+  "osoyoo_metal_80mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_metal_80mm_fr_rl/assets/model.glb",
+   "bytes": 101312
+  },
+  "osoyoo_2021006600_mecanum": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_2021006600_mecanum/assets/model.glb",
+   "bytes": 450636
+  },
+  "osoyoo_v2_blue_60mm_fl_rr": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_v2_blue_60mm_fl_rr/assets/model.glb",
+   "bytes": 118292
+  },
+  "osoyoo_v2_blue_60mm_fr_rl": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/osoyoo_v2_blue_60mm_fr_rl/assets/model.glb",
+   "bytes": 118292
+  },
+  "agilex_bunker_mini_2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_bunker_mini_2_chassis/assets/model.glb",
+   "bytes": 4362400
+  },
+  "agilex_bunker_pro_2_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/agilex_bunker_pro_2_chassis/assets/model.glb",
+   "bytes": 1124352
+  },
+  "hello_robot_stretch_2_left_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hello_robot_stretch_2_left_drive_wheel/assets/model.glb",
+   "bytes": 919572
+  },
+  "hello_robot_stretch_2_right_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hello_robot_stretch_2_right_drive_wheel/assets/model.glb",
+   "bytes": 919576
+  },
+  "hello_robot_stretch_2_roller_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hello_robot_stretch_2_roller_caster/assets/model.glb",
+   "bytes": 1158236
+  },
+  "hiwonder_landerpi_tracked_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_landerpi_tracked_chassis/assets/model.glb",
+   "bytes": 1820392
+  },
+  "hiwonder_landerpi_tracked_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_landerpi_tracked_track_left/assets/model.glb",
+   "bytes": 1556372
+  },
+  "hiwonder_landerpi_tracked_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_landerpi_tracked_track_right/assets/model.glb",
+   "bytes": 1556372
+  },
+  "hiwonder_jetrover_tracked_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_jetrover_tracked_chassis/assets/model.glb",
+   "bytes": 456444
+  },
+  "hiwonder_jetrover_tracked_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_jetrover_tracked_track_left/assets/model.glb",
+   "bytes": 1003356
+  },
+  "hiwonder_jetrover_tracked_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/hiwonder_jetrover_tracked_track_right/assets/model.glb",
+   "bytes": 1002504
+  },
+  "yahboom_stm32_self_balancing_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_stm32_self_balancing_chassis/assets/model.glb",
+   "bytes": 6652808
+  },
+  "tamiya_70170_remote_tracked_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70170_remote_tracked_chassis/assets/model.glb",
+   "bytes": 1512992
+  },
+  "elegoo_conqueror_tank_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elegoo_conqueror_tank_chassis/assets/model.glb",
+   "bytes": 3312308
+  },
+  "pudu_t300_standard_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/pudu_t300_standard_chassis/assets/model.glb",
+   "bytes": 592248
+  },
+  "andino_reference_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/andino_reference_drive_wheel/assets/model.glb",
+   "bytes": 1010232
+  },
+  "andino_reference_caster_rear": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/andino_reference_caster_rear/assets/model.glb",
+   "bytes": 430944
+  },
+  "andino_reference_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/andino_reference_chassis/assets/model.glb",
+   "bytes": 626752
+  },
+  "yahboom_lastbit_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_lastbit_chassis/assets/model.glb",
+   "bytes": 9087092
+  },
+  "parallax_boe_bot_chassis_revc": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_boe_bot_chassis_revc/assets/model.glb",
+   "bytes": 311656
+  },
+  "tamiya_70233_twist_crawler_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70233_twist_crawler_chassis/assets/model.glb",
+   "bytes": 967188
+  },
+  "yahboom_rider_pi_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_rider_pi_chassis/assets/model.glb",
+   "bytes": 10118748
+  },
+  "robotont_gen2_1_omni_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotont_gen2_1_omni_wheel/assets/model.glb",
+   "bytes": 3596340
+  },
+  "rt_raspberry_pi_cat_v1": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/rt_raspberry_pi_cat_v1/assets/model.glb",
+   "bytes": 9090256
+  },
+  "yahboom_transbot_se_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_transbot_se_chassis/assets/model.glb",
+   "bytes": 7566028
+  },
+  "robotont_gen2_1_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotont_gen2_1_chassis/assets/model.glb",
+   "bytes": 2330176
+  },
+  "yahboom_transbot_se_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_transbot_se_track_left/assets/model.glb",
+   "bytes": 3644592
+  },
+  "robotont_gen3_omni_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotont_gen3_omni_wheel/assets/model.glb",
+   "bytes": 3596336
+  },
+  "yahboom_transbot_se_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/yahboom_transbot_se_track_right/assets/model.glb",
+   "bytes": 3659812
+  },
+  "makeblock_starter_2wd": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_2wd/assets/model.glb",
+   "bytes": 881920
+  },
+  "makeblock_starter_2wd_drive_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_2wd_drive_wheel/assets/model.glb",
+   "bytes": 252480
+  },
+  "robotont_gen3_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/robotont_gen3_chassis/assets/model.glb",
+   "bytes": 3421892
+  },
+  "makeblock_starter_2wd_swivel_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_2wd_swivel_caster/assets/model.glb",
+   "bytes": 24740
+  },
+  "makeblock_starter_small_track": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_small_track/assets/model.glb",
+   "bytes": 958868
+  },
+  "makeblock_starter_small_track_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_small_track_track_left/assets/model.glb",
+   "bytes": 659296
+  },
+  "makeblock_starter_small_track_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_starter_small_track_track_left/assets/model.glb",
+   "bytes": 659296
+  },
+  "makeblock_advanced_triangular_track": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_triangular_track/assets/model.glb",
+   "bytes": 1461964
+  },
+  "makeblock_advanced_triangular_track_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_triangular_track_track_left/assets/model.glb",
+   "bytes": 816184
+  },
+  "makeblock_advanced_triangular_track_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_triangular_track_track_left/assets/model.glb",
+   "bytes": 816184
+  },
+  "makeblock_advanced_big_track": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_big_track/assets/model.glb",
+   "bytes": 1510924
+  },
+  "makeblock_advanced_big_track_track_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_big_track_track_left/assets/model.glb",
+   "bytes": 854992
+  },
+  "makeblock_advanced_big_track_track_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/makeblock_advanced_big_track_track_left/assets/model.glb",
+   "bytes": 854992
+  },
+  "tamiya_70211_arm_crawler_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/tamiya_70211_arm_crawler_chassis/assets/model.glb",
+   "bytes": 940684
+  },
+  "elephantrobotics_myagv_2023_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_chassis/assets/model.glb",
+   "bytes": 3263116
+  },
+  "elephantrobotics_myagv_2023_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_wheel_front_left/assets/model.glb",
+   "bytes": 119448
+  },
+  "elephantrobotics_myagv_2023_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_wheel_front_right/assets/model.glb",
+   "bytes": 119448
+  },
+  "slamtec_apollo_bgy_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/slamtec_apollo_bgy_chassis/assets/model.glb",
+   "bytes": 9178964
+  },
+  "elephantrobotics_myagv_2023_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_wheel_rear_left/assets/model.glb",
+   "bytes": 119448
+  },
+  "elephantrobotics_myagv_2023_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_2023_wheel_rear_right/assets/model.glb",
+   "bytes": 119448
+  },
+  "elephantrobotics_myagv_original_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_original_chassis/assets/model.glb",
+   "bytes": 4987424
+  },
+  "elephantrobotics_myagv_original_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_original_wheel_front_left/assets/model.glb",
+   "bytes": 111984
+  },
+  "elephantrobotics_myagv_original_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_original_wheel_front_right/assets/model.glb",
+   "bytes": 111960
+  },
+  "elephantrobotics_myagv_original_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_original_wheel_rear_left/assets/model.glb",
+   "bytes": 111988
+  },
+  "elephantrobotics_myagv_original_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_original_wheel_rear_right/assets/model.glb",
+   "bytes": 111960
+  },
+  "elephantrobotics_myagv_plus_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_plus_chassis/assets/model.glb",
+   "bytes": 1780024
+  },
+  "elephantrobotics_myagv_plus_wheel_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_plus_wheel_front_left/assets/model.glb",
+   "bytes": 1384128
+  },
+  "elephantrobotics_myagv_plus_wheel_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_plus_wheel_front_right/assets/model.glb",
+   "bytes": 1385360
+  },
+  "freenove_fnk0043_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/freenove_fnk0043_chassis/assets/model.glb",
+   "bytes": 534912
+  },
+  "freenove_fnk0043_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/freenove_fnk0043_wheel/assets/model.glb",
+   "bytes": 555892
+  },
+  "elephantrobotics_myagv_plus_wheel_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_plus_wheel_rear_left/assets/model.glb",
+   "bytes": 1384068
+  },
+  "elephantrobotics_myagv_plus_wheel_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/elephantrobotics_myagv_plus_wheel_rear_right/assets/model.glb",
+   "bytes": 1383572
+  },
+  "mir_500_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_500_chassis/assets/model.glb",
+   "bytes": 9490992
+  },
+  "mir_500_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_500_wheel_left/assets/model.glb",
+   "bytes": 285712
+  },
+  "mir_500_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_500_wheel_right/assets/model.glb",
+   "bytes": 280992
+  },
+  "nvidia_jetbot_65mm_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nvidia_jetbot_65mm_chassis/assets/model.glb",
+   "bytes": 756952
+  },
+  "nvidia_jetbot_65mm_ball_caster": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/nvidia_jetbot_65mm_ball_caster/assets/model.glb",
+   "bytes": 709604
+  },
+  "kelo_robile_kprc_0021": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/kelo_robile_kprc_0021/assets/model.glb",
+   "bytes": 3140200
+  },
+  "kelo_robile_kprc_0041": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/kelo_robile_kprc_0041/assets/model.glb",
+   "bytes": 2809092
+  },
+  "parallax_boe_bot_tail_ball": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_boe_bot_tail_ball/assets/model.glb",
+   "bytes": 433132
+  },
+  "parallax_boe_bot_cotter_pin": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_boe_bot_cotter_pin/assets/model.glb",
+   "bytes": 31324
+  },
+  "parallax_28115_servo_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_28115_servo_wheel/assets/model.glb",
+   "bytes": 316856
+  },
+  "mir_250_caster_front_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_caster_front_left/assets/model.glb",
+   "bytes": 408724
+  },
+  "mir_250_caster_front_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_caster_front_right/assets/model.glb",
+   "bytes": 408736
+  },
+  "mir_250_caster_rear_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_caster_rear_left/assets/model.glb",
+   "bytes": 408712
+  },
+  "mir_250_caster_rear_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_caster_rear_right/assets/model.glb",
+   "bytes": 408728
+  },
+  "mir_250_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_chassis/assets/model.glb",
+   "bytes": 73323920
+  },
+  "mir_250_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_wheel_left/assets/model.glb",
+   "bytes": 1009092
+  },
+  "mir_250_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/mir_250_wheel_right/assets/model.glb",
+   "bytes": 1008996
+  },
+  "gctronic_epuck_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gctronic_epuck_chassis/assets/model.glb",
+   "bytes": 2179452
+  },
+  "gctronic_epuck_wheel_left": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gctronic_epuck_wheel_left/assets/model.glb",
+   "bytes": 342920
+  },
+  "gctronic_epuck_wheel_right": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/gctronic_epuck_wheel_right/assets/model.glb",
+   "bytes": 342920
+  },
+  "parallax_arlo_robot_base": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_arlo_robot_base/assets/model.glb",
+   "bytes": 226796
+  },
+  "parallax_arlo_double_battery_shelf": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/parallax_arlo_double_battery_shelf/assets/model.glb",
+   "bytes": 297688
+  },
+  "adafruit_3777_tt_gearmotor": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3777_tt_gearmotor/assets/model.glb",
+   "bytes": 110408
+  },
+  "adafruit_3763_thin_tt_wheel": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/adafruit_3763_thin_tt_wheel/assets/model.glb",
+   "bytes": 589376
+  },
+  "slamtec_athena2_lfp_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/slamtec_athena2_lfp_chassis/assets/model.glb",
+   "bytes": 16061996
+  },
+  "slamtec_hermes_chassis": {
+   "file": "https://huggingface.co/datasets/Aki-Frank/robotdsl-parts/resolve/ab02332d5480f59633286cffe0afb8401ac1b8ca/parts/slamtec_hermes_chassis/assets/model.glb",
+   "bytes": 24779540
   }
  }
 }
