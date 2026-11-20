@@ -83,7 +83,9 @@ The project page's content is under CC BY 4.0. The Studio is published to be use
 @misc{robotdsl_mobilecopilot,
   title        = {MobileCopilot: A Domain-Specific Language Framework
                   for Agentic Mobile Robot Design},
-  author       = {{RobotDSL Team}},
+  author       = {Akihisa Watanabe and Fang Jiawei and Zhiyang Dou and
+                  Yuxin Ray Song and Zizhao Tong and Yunsheng Tian and
+                  Minghao Guo and Benjamin Jones and Wojciech Matusik},
   howpublished = {\url{https://robotdsl.csail.mit.edu/}}
 }
 ```
