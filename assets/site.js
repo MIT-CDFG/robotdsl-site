@@ -9,6 +9,8 @@
   // The manuscript's Table I, paired within each agent/model configuration.
   const agents = [['Codex', 'gpt-5.6-sol'], ['Codex', 'gpt-6-astra'], ['Claude Code', 'claude-opus-4-8']];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Text drawn on a chart follows the size the reader set for text, as the page's own text does.
+  const labelSize = Math.round(12 * parseFloat(colors.fontSize) / 16);
   // One MobileDSL and one ROS/Gazebo-files bar per agent, each labelled with its
   // value, so the charts need no axis; the page's legend names the colours.
   function pairChart(id, mobiledsl, rosFiles, max, format) {
@@ -28,7 +30,7 @@
           ctx.save();
           ctx.textBaseline = 'middle';
           chart.data.datasets.forEach((dataset, index) => {
-            ctx.font = `${index === 0 ? 600 : 500} 12px Inter, system-ui, sans-serif`;
+            ctx.font = `${index === 0 ? 600 : 500} ${labelSize}px Inter, system-ui, sans-serif`;
             ctx.fillStyle = index === 0 ? accent : text;
             chart.getDatasetMeta(index).data.forEach((bar, row) => ctx.fillText(format(dataset.data[row]), bar.x + 6, bar.y));
           });
@@ -43,7 +45,7 @@
         plugins: {legend: {display: false}, tooltip: {enabled: false}},
         scales: {
           x: {display: false, beginAtZero: true, max},
-          y: {border: {display: false}, grid: {display: false}, ticks: {color: text, font: {family: 'Inter, sans-serif', size: 12}}}
+          y: {border: {display: false}, grid: {display: false}, ticks: {color: text, font: {family: 'Inter, sans-serif', size: labelSize}}}
         }
       }
     });
@@ -54,25 +56,34 @@
   const labelFont = document.fonts ? document.fonts.load('12px Inter').catch(() => {}) : Promise.resolve();
   // The bars grow as the charts come into view; the text summary stands in only if they cannot be drawn.
   const figure = document.querySelector('.results-figure'), fallback = get('results-fallback');
-  if (typeof Chart === 'function') fallback.hidden = true;
-  const inView = new Promise(resolve => {
+  fallback.hidden = true;
+  const seen = options => new Promise(resolve => {
     if (!('IntersectionObserver' in window)) return resolve();
-    const io = new IntersectionObserver(entries => { if (entries.some(e => e.isIntersecting)) { io.disconnect(); resolve(); } }, {threshold: 0.3});
+    const io = new IntersectionObserver(entries => { if (entries.some(e => e.isIntersecting)) { io.disconnect(); resolve(); } }, options);
     io.observe(figure);
   });
-  Promise.all([labelFont, inView]).then(() => {
+  // Chart.js (assets/vendor/chartjs) is fetched as the reader nears the charts, not with the page.
+  const library = seen({rootMargin: '600px'}).then(() => new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = 'assets/vendor/chartjs/chart.umd.js';
+    script.onload = resolve;
+    script.onerror = () => reject(new Error('Chart.js did not load'));
+    document.head.appendChild(script);
+  }));
+  Promise.all([library, labelFont, seen({threshold: 0.3})]).then(() => {
     try {
       pairChart('success-chart', [74, 82, 64], [24, 40, 22], 100, v => `${v}%`);
       // Generation time, recorded in seconds per attempt, shown in minutes.
       const minutes = seconds => seconds.map(s => s / 60);
       pairChart('time-chart', minutes([285, 151, 268]), minutes([731, 250, 569]), 731 / 60, v => `${v.toFixed(1)} min`);
       pairChart('cost-chart', [0.550, 0.871, 1.485], [1.406, 1.291, 2.959], 2.959, v => `$${v.toFixed(2)}`);
-    } catch (error) {
-      figure.hidden = true;
-      fallback.hidden = false;
-      console.warn('Charts unavailable; displaying the benchmark summary.', error);
-    }
-  });
+    } catch (error) { summary(error); }
+  }).catch(summary);
+  function summary(error) {
+    figure.hidden = true;
+    fallback.hidden = false;
+    console.warn('Charts unavailable; displaying the benchmark summary.', error);
+  }
   // The robot clips play muted while in view, as a looping preview, and pause out of view.
   if (!reduced && 'IntersectionObserver' in window) {
     const clips = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()), {threshold: 0.4});

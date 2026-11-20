@@ -30,21 +30,21 @@
 }
 [id] { scroll-margin-top: 88px; }
 .nav { position: sticky; top: 0; z-index: 20; background: rgb(255 255 255 / .96); border-bottom: 1px solid var(--line); }
-.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 64px; }
-.site-brand { display: flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.nav .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; min-height: 64px; }   /* the links go under the brand where text is set too large for one row */
+.site-brand { display: flex; align-items: center; gap: 10px; font-size: 1.3125rem; font-weight: 600; color: var(--ink); text-decoration: none; }
 .site-brand .ico { width: 28px; height: 28px; color: var(--accent); }
-.nav-actions { display: flex; align-items: center; gap: 28px; }
-.nav-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-size: 14px; font-weight: 500; text-decoration: none; }
+.nav-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px; }
+.nav-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-size: 0.875rem; font-weight: 500; text-decoration: none; }
 .nav-link:hover { color: var(--accent); }
 .hero { padding-block: 48px; }
 .hero-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 36px; }
 .hero-copy { display: grid; justify-items: start; gap: 16px; min-width: 0; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; }
-.hero-badges .badge { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; font-size: 14px; }
+.hero-badges .badge { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; font-size: 0.875rem; }
 .hero-badges .badge-launch { color: var(--accent); font-weight: 500; }
 .hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.14; font-weight: 700; letter-spacing: -.035em; }
 .hero h1 span { color: var(--accent); }
-.hero .lede { max-width: 62ch; font-size: 17px; line-height: 1.7; color: var(--muted); text-align: left; }
+.hero .lede { max-width: 62ch; font-size: 1.0625rem; line-height: 1.7; color: var(--muted); text-align: left; }
 .hero .lede b { color: var(--ink); font-weight: 600; }
 .hero .cta { margin-top: 4px; }
 .btn.VPButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
@@ -60,12 +60,12 @@
 .VPFeature .icon .ico { width: 24px; height: 24px; color: var(--accent); }
 .VPFeature .title { letter-spacing: 0; }
 .VPFeature .details { font-weight: 400; }
-@media (max-width: 959px) {
+@media (max-width: 59.9375em) {
   .hero { padding-block: 32px 40px; }
   .hero-layout { gap: 28px; }
   .feature-grid { margin-top: 28px; }
 }
-@media (max-width: 759px) {
+@media (max-width: 47.4375em) {
   .hero-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .hero-copy { justify-items: center; text-align: center; }
   .hero .cta { justify-content: center; }
@@ -77,14 +77,22 @@
   .feature-grid .details { padding-top: 0; }
   section.block { padding-block: 48px; }
 }
-@media (max-width: 420px) {
+@media (max-width: 26.25em) {
   .wrap { padding-inline: 20px; }
   .nav .wrap { gap: 12px; padding-inline: 16px; }
-  .site-brand { gap: 6px; font-size: 18px; }
+  .site-brand { gap: 6px; font-size: 1.125rem; }
   .site-brand .ico { width: 24px; height: 24px; }
   .nav-actions { gap: 16px; }
   .hero .cta { gap: 8px; }
   .hero .VPButton.medium { padding-inline: 16px; }
+  .hero .cta .ico { display: none; }   /* the three buttons keep one row on a phone */
+}
+/* The narrowest phones: the brand and the three links still fit one row. */
+@media (max-width: 22em) {
+  .nav .wrap { gap: 8px; padding-inline: 12px; }
+  .site-brand { font-size: 1rem; }
+  .nav-actions { gap: 12px; }
+  .nav-link { font-size: 0.8125rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .VPButton, .VPFeature, .VPFeature .icon, .hero-badges .badge { transition: none; }
@@ -96,10 +104,12 @@
 .ico-studio { --icon: url(icons/app-window.svg); }
 .ico-docs { --icon: url(icons/book-open.svg); }
 .ico-video { --icon: url(icons/video.svg); }
-.ico-cite { --icon: url(icons/file-text.svg); }
+.ico-paper { --icon: url(icons/scroll-text.svg); }
 .ico-community { --icon: url(icons/users.svg); }
 .ico-results { --icon: url(icons/chart-column.svg); }
 .ico-x { --icon: url(icons/x.svg); }
+.ico-pause { --icon: url(icons/pause.svg); }
+.ico-play { --icon: url(icons/play.svg); }
 .ico-rocket { --icon: url(icons/rocket.svg); }
 .ico-arrow { --icon: url(icons/arrow-right.svg); }
 .ico-program { --icon: url(icons/file-code-2.svg); }
@@ -115,12 +125,17 @@
 /* MobileDSL: Magic UI's Terminal (magicui.design, MIT) in plain CSS, a rounded window whose bar holds three dots,
    given the hero video card's shadow. */
 .terminal { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); }
-.terminal .bar { display: flex; gap: 8px; padding: 16px; border-bottom: 1px solid var(--line); }
+.terminal .bar { display: flex; align-items: center; gap: 8px; padding: 16px; border-bottom: 1px solid var(--line); }
+/* The pause button stands at the bar's end without making the bar taller. */
+.terminal .bar .pause { display: flex; margin: -10px -8px -10px auto; padding: 6px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); cursor: pointer; }
+.terminal .bar .pause:hover { background: var(--tint); color: var(--ink); }
+.terminal .bar .pause:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.terminal .bar .pause .ico { width: 16px; height: 16px; }
 .terminal .bar i { width: 8px; height: 8px; border-radius: 50%; background: #ef4444; }
 .terminal .bar i:nth-child(2) { background: #eab308; }
 .terminal .bar i:nth-child(3) { background: #22c55e; }
-.terminal pre.code { flex: 1; padding: 18px 20px; font-size: 13px; line-height: 1.85; overflow-x: auto; }
-@media (max-width: 600px) { .terminal pre.code { font-size: 11px; padding: 14px; } }
+.terminal pre.code { flex: 1; padding: 18px 20px; font-size: 0.8125rem; line-height: 1.85; overflow-x: auto; }
+@media (max-width: 37.5em) { .terminal pre.code { font-size: 0.6875rem; padding: 14px; } }
 /* The robot stands on Magic UI's Dot Pattern (magicui.design, MIT), which fades out from the centre. */
 .fig3d .stage::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle, rgb(163 163 163 / .8) 1px, transparent 1px); background-size: 16px 16px; -webkit-mask-image: radial-gradient(closest-side, #000 35%, transparent); mask-image: radial-gradient(closest-side, #000 35%, transparent); pointer-events: none; }
 .fig3d canvas { position: relative; }
@@ -129,10 +144,9 @@
 .coredsl .caret { display: inline-block; width: 0; height: 1.15em; margin-right: -2px; border-left: 2px solid var(--accent); vertical-align: text-bottom; animation: caret-blink 1s steps(1) infinite; }
 @keyframes caret-blink { 50% { border-left-color: transparent; } }
 @media (prefers-reduced-motion: reduce) { .coredsl .caret { animation: none; } }
-/* Community: the hero's feature cards, four across. */
-.feature-grid.community-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 0; }
-@media (min-width: 760px) and (max-width: 959px) { .feature-grid.community-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 759px) { .feature-grid.community-grid { grid-template-columns: minmax(0, 1fr); } }
+/* Community: the hero's feature cards, three across as in the hero. */
+.feature-grid.community-grid { margin-top: 0; }
+@media (max-width: 47.4375em) { .feature-grid.community-grid { grid-template-columns: minmax(0, 1fr); } }
 /* Benchmark: both results side by side under one legend; the bars carry their values. */
 .results-figure { display: grid; gap: 14px; }
 .legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 0; padding: 0; list-style: none; font-size: .9rem; color: var(--text); }
@@ -144,14 +158,15 @@
 .chart-card { padding: 20px 20px 12px; border-radius: 12px; background: var(--tint); }
 .chart-pair > * { min-width: 0; }
 .chart-title { margin: 0 0 4px; font-size: .95rem; font-weight: 600; color: var(--ink); }
-.chart-container { position: relative; height: 220px; }
+.chart-container { position: relative; height: 13.75rem; }
+.chart-container canvas { max-width: 100%; }   /* an undrawn canvas is 300 px wide, wider than a narrow phone's card */
 .results-figure figcaption { margin-top: 0; }
-@media (max-width: 900px) { .chart-pair { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 56.25em) { .chart-pair { grid-template-columns: minmax(0, 1fr); } }
 /* Physical robots: the three runs side by side at a modest size. */
 .demos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .demos figcaption { text-align: center; }
 .demos > * { min-width: 0; }
-@media (max-width: 640px) { .demos { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 40em) { .demos { grid-template-columns: minmax(0, 1fr); } }
 /* The paper is here for its citation, so the section stays small. */
 #cite { padding-block: 48px; }
 #cite .stack { gap: 14px; justify-items: center; }
@@ -159,4 +174,4 @@
 .citation { display: grid; gap: 12px; justify-items: center; width: 100%; max-width: 760px; }
 .citation .markdown-body { width: 100%; min-width: 0; }
 .citation .markdown-body pre { margin: 0; font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }
-@media (max-width: 600px) { .citation .markdown-body pre { white-space: pre-wrap; overflow-wrap: anywhere; } }   /* on a phone the entry wraps, as the program does, instead of running off the box */
+@media (max-width: 37.5em) { .citation .markdown-body pre { white-space: pre-wrap; overflow-wrap: anywhere; } }   /* on a phone the entry wraps, as the program does, instead of running off the box */

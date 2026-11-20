@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Text follows the size the reader set for their system, where the browser offers it; the sheets size text in rem. -->
+<meta name="text-scale" content="scale">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="RobotDSL: domain-specific languages and an LLM copilot for designing robots. MobileDSL is the first language; MobileCopilot Studio lets you design a mobile robot with your own API key.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RobotDSL">
@@ -16,20 +19,21 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="assets/icons/bot.svg">
 <style>img,video{max-width:100%}[hidden]{display:none!important}</style>
-<title>RobotDSL</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>RobotDSL: domain-specific languages that compile into working robots</title>
+<!-- Every file the page loads is the site's own (assets/vendor, assets/fonts): nothing is fetched from another host.
+     The text face is fetched with the page, before the sheets ask for it. -->
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Published style: GitHub's Markdown CSS for the code listing. -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/theme.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/player/styles/default/layouts/video.css">
-<!-- The import map precedes every module script, as browsers without dynamic import maps require. The video player
-     loads async so a slow CDN does not hold back the modules after it, which run in document order otherwise. -->
-<script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.js", "three/addons/": "./assets/vendor/three/examples/jsm/"}}</script>
-<script type="module" async src="https://cdn.jsdelivr.net/npm/vidstack@1.15.6/cdn/with-layouts/vidstack.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/vendor/github-markdown-css/github-markdown-light.min.css">
+<!-- The import map precedes every module script, as browsers without dynamic import maps require. Its last two lines
+     bring the two libraries the video player asks jsDelivr for (its captions reader and its icons) from the site's
+     own copies, so the player's files stay as published. -->
+<script type="importmap">{"imports": {"three": "./assets/vendor/three/build/three.module.min.js", "three/addons/": "./assets/vendor/three/examples/jsm/",
+  "https://cdn.jsdelivr.net/npm/media-captions@1.0.4/dist/prod.js/+esm": "./assets/vendor/media-captions/dist/prod.js",
+  "https://cdn.jsdelivr.net/npm/media-icons@1.1.5/dist/cdn.js/+esm": "./assets/vendor/media-icons/dist/cdn.js"}}</script>
 <!-- The page's own files carry ?v= (the first 8 characters of their SHA-256), so a browser that
      cached an older copy fetches the new one together with the new page. -->
-<link rel="stylesheet" href="assets/base.css?v=390eff28">
+<link rel="stylesheet" href="assets/base.css?v=74145e04">
 <style>
   /* stats */
   /* sections */
@@ -56,15 +60,15 @@
   .fig3d.failed canvas, .fig3d.failed .bar, .fig3d.failed .loading { display: none; }
   .fig3d.failed .stage { aspect-ratio: auto; border: 0; }
   .fig3d.failed .fallback { display: block; }
-  @media (max-width: 820px) { .two { grid-template-columns: 1fr; } }
+  @media (max-width: 51.25em) { .two { grid-template-columns: 1fr; } }
   /* modules */
   /* MobileDSL: the program's terminal on the left, the robot it assembles on the right, the two the same height.
      The longest line needs about 80 columns, which the wider left column gives it. */
   .lang { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 32px; align-items: stretch; }
-  @media (max-width: 900px) { .lang { grid-template-columns: minmax(0, 1fr); gap: 24px; } .lang .fig3d { width: 100%; max-width: 560px; } }
-  .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 12px; line-height: 1.7; }
+  @media (max-width: 56.25em) { .lang { grid-template-columns: minmax(0, 1fr); gap: 24px; } .lang .fig3d { width: 100%; max-width: 560px; } }
+  .code { margin: 0; color: var(--code-ink); white-space: pre; font-family: var(--mono); font-size: 0.75rem; line-height: 1.7; }
   .code .ln { display: block; }
-  .listing pre.code { font-family: var(--mono); font-size: 12px; line-height: 1.6; }   /* GitHub's code block; sized so every line of the listing fits */
+  .listing pre.code { font-family: var(--mono); font-size: 0.75rem; line-height: 1.6; }   /* GitHub's code block; sized so every line of the listing fits */
   /* Video: Magic UI's Hero Video Dialog (magicui.design, MIT) in plain CSS: a thumbnail card with a frosted play button opens the video
      over the page. The player in the dialog is Vidstack's default video layout; chapters (assets/video_chapters.vtt) mark its seek bar and menu. */
   .hvd { position: relative; display: block; width: 100%; cursor: pointer; border: 0; background: transparent; padding: 0; border-radius: 6px; }
@@ -77,30 +81,52 @@
   .hvd .disc { display: flex; width: 80px; height: 80px; align-items: center; justify-content: center; border-radius: 50%; background: linear-gradient(to bottom, color-mix(in srgb, var(--accent) 30%, transparent), var(--accent)); box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1); transition: all .2s ease-out; }
   .hvd:hover .disc, .hvd:focus-visible .disc { transform: scale(1.2); }
   .hvd .disc svg { width: 32px; height: 32px; fill: #fff; stroke: #fff; stroke-width: 2; stroke-linejoin: round; filter: drop-shadow(0 4px 3px rgb(0 0 0 / .07)) drop-shadow(0 2px 2px rgb(0 0 0 / .06)); }
-  .hvd-modal { border: 0; padding: 0; background: transparent; width: min(896px, calc(100vw - 32px)); max-width: none; overflow: visible; }
-  .hvd-modal::backdrop { background: rgb(0 0 0 / .5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-  .hvd-modal .inner { position: relative; }
-  .hvd-modal[open] .inner { animation: hvd-in .35s cubic-bezier(.2, .9, .3, 1.15); }   /* the component's "from-center" spring */
-  @keyframes hvd-in { from { transform: scale(.5); opacity: 0; } to { transform: none; opacity: 1; } }
-  .hvd-modal .close { position: absolute; top: -64px; right: 0; display: flex; padding: 8px; border: 0; border-radius: 50%; background: rgb(23 23 23 / .5); color: #fff; box-shadow: 0 0 0 1px rgb(255 255 255 / .2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); cursor: pointer; }
+  /* The dialog holds its close button in its own padding, above the video; in a window too low for that (a phone held
+     sideways) the button stands beside the video. The video is as wide as the window allows and never taller than it. */
+  .hvd-modal { border: 0; padding: 3.25rem 0; background: transparent; max-width: none; max-height: none; overflow: hidden;
+    width: min(56rem, calc(100vw - 2rem), calc((100dvh - 8.5rem) * 16 / 9)); }
+  @media (max-height: 32.5em) { .hvd-modal { padding: 0 3.25rem; width: min(62.5rem, calc(100vw - 1rem), calc((100dvh - 2rem) * 16 / 9 + 6.5rem)); } }
+  /* A scroll over the open dialog or its backdrop does not move the page under it. */
+  .hvd-modal:modal { overscroll-behavior: contain; }
+  .hvd-modal::backdrop { overflow: hidden; overscroll-behavior: contain; background-color: rgb(0 0 0 / 0); backdrop-filter: blur(0); -webkit-backdrop-filter: blur(0);
+    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter, display, overlay; transition-duration: .25s; transition-behavior: allow-discrete; }
+  .hvd-modal[open]::backdrop { background-color: rgb(0 0 0 / .5); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  @starting-style { .hvd-modal[open]::backdrop { background-color: rgb(0 0 0 / 0); backdrop-filter: blur(0); -webkit-backdrop-filter: blur(0); } }
+  /* It fades in and out; where motion is welcome it also grows from the centre with the component's spring, and shrinks away. */
+  .hvd-modal { opacity: 0; transition-property: opacity, transform, display, overlay; transition-duration: .25s; transition-timing-function: ease-out; transition-behavior: allow-discrete; }
+  .hvd-modal[open] { opacity: 1; }
+  @starting-style { .hvd-modal[open] { opacity: 0; } }
+  @media (prefers-reduced-motion: no-preference) {
+    .hvd-modal { transform: scale(.9); }
+    .hvd-modal[open] { transform: none; transition-duration: .35s; transition-timing-function: cubic-bezier(.2, .9, .3, 1.15); }
+    @starting-style { .hvd-modal[open] { transform: scale(.5); } }
+  }
+  .hvd-modal .close { position: absolute; top: .5rem; right: 0; display: flex; padding: 8px; border: 0; border-radius: 50%; background: rgb(23 23 23 / .5); color: #fff; box-shadow: 0 0 0 1px rgb(255 255 255 / .2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); cursor: pointer; }
+  .hvd-modal .close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  @media (max-height: 32.5em) { .hvd-modal .close { top: 0; right: .5rem; } }
   .hvd-modal .close .ico { width: 20px; height: 20px; }
-  .hvd-modal .frame { overflow: hidden; border-radius: 16px; border: 2px solid #fff; }
+  .hvd-modal .frame { overflow: hidden; border-radius: 16px; border: 2px solid #fff; aspect-ratio: 16 / 9; background: #fff url(assets/video_poster_960.webp) center / cover; }   /* the still, until the player has come */
+  .hvd-modal .frame video { display: block; width: 100%; height: 100%; }
   .hvd-modal media-player { display: block; aspect-ratio: 16 / 9; --video-bg: #fff; --video-brand: var(--accent); --video-font-family: var(--sans); --video-border: none; --video-border-radius: 0; }
-  @media (prefers-reduced-motion: reduce) { .hvd img, .hvd .center, .hvd .disc { transition: none; } .hvd-modal[open] .inner { animation: none; } }
-  @media (max-width: 600px) { .code { font-size: 11px; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
+  @media (prefers-reduced-motion: reduce) { .hvd img, .hvd .center, .hvd .disc { transition: none; } }
+  @media (max-width: 37.5em) { .code { font-size: 0.6875rem; white-space: pre-wrap; } .code .ln { padding-left: 4ch; text-indent: -4ch; } }   /* wrapped parts hang under the line */
   .code .k { color: var(--code-key); font-weight: 500; } .code .s { color: var(--code-str); } .code .c { color: var(--code-c); }
   /* demos */
   .demo video { width: 100%; height: auto; aspect-ratio: 1448 / 720; max-width: 100%; border-radius: 12px; background: #000; display: block; box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); }
   .note { font-size: .9rem; color: var(--muted); }
   footer { padding-block: 30px 44px; color: var(--muted); font-size: .88rem; }
-  footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+  .foot-links a { display: inline-flex; align-items: center; min-height: 24px; color: var(--muted); text-decoration: none; }
+  .foot-links a:hover { color: var(--accent); }
+  .foot-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 </style>
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=07af0cab">
-<script src="assets/vendor/chartjs/chart.umd.js" defer></script>
-<script src="assets/site.js?v=1f5c7350" defer></script>
+<link rel="stylesheet" href="assets/site.css?v=7a6af184">
+<script src="assets/site.js?v=21aa0006" defer></script>
+<script type="speculationrules">{"prefetch": [{"urls": ["studio/", "docs/"], "eagerness": "moderate"}]}</script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
 </head>
 <body>
@@ -119,31 +145,29 @@
   <div class="wrap hero-layout">
     <div class="hero-copy">
       <div class="hero-badges">
-        <a class="badge" href="docs/reference/">MobileDSL 1.0</a>
-        <a class="badge badge-launch" href="docs/"><span class="ico ico-rocket" aria-hidden="true"></span>Version 1<span class="ico ico-arrow" aria-hidden="true"></span></a>
+        <a class="badge badge-launch" href="docs/"><span class="ico ico-rocket" aria-hidden="true"></span>MobileDSL 1.0<span class="ico ico-arrow" aria-hidden="true"></span></a>
       </div>
       <h1><span>Domain-specific languages</span> that compile into working robots</h1>
       <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
         <a class="btn VPButton medium brand" href="studio/"><span class="ico ico-studio" aria-hidden="true"></span>Open Studio</a>
+        <a class="btn VPButton medium alt" href="assets/mobilecopilot_paper.pdf"><span class="ico ico-paper" aria-hidden="true"></span>Paper</a>
         <a class="btn VPButton medium alt" href="docs/"><span class="ico ico-docs" aria-hidden="true"></span>Docs</a>
-        <a class="btn VPButton medium alt" href="#community"><span class="ico ico-community" aria-hidden="true"></span>Community</a>
-        <a class="btn VPButton medium alt" href="#cite"><span class="ico ico-cite" aria-hidden="true"></span>Cite</a>
       </div>
     </div>
     <div class="hero-demo" id="video">
       <button type="button" class="hvd" aria-haspopup="dialog" aria-label="Play the video: MobileDSL and MobileCopilot in three minutes">
-        <img src="assets/video_poster.png" width="1920" height="1080" alt="">
+        <img src="assets/video_poster_960.webp" srcset="assets/video_poster_960.webp 960w, assets/video_poster_1920.webp 1920w" sizes="(max-width: 47.4375em) min(35rem, calc(100vw - 2.5rem)), 44vw" width="1920" height="1080" alt="" fetchpriority="high">
         <span class="center"><span class="ring"><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span></span></span>   <!-- Lucide play (ISC), filled as in the component -->
       </button>
-      <dialog class="hvd-modal" id="video-dialog" aria-labelledby="video-title">
+      <dialog class="hvd-modal" id="video-dialog" aria-labelledby="video-title" closedby="any">
         <span id="video-title" hidden>MobileDSL and MobileCopilot in three minutes</span>
         <div class="inner">
           <button type="button" class="close" aria-label="Close the video"><span class="ico ico-x" aria-hidden="true"></span></button>
           <div class="frame">
             <media-player title="MobileDSL and MobileCopilot in three minutes" src="assets/mobilecopilot_video.mp4" playsinline load="play" duration="179.52">
               <media-provider>
-                <media-poster class="vds-poster" src="assets/video_poster.png" alt=""></media-poster>
+                <media-poster class="vds-poster" src="assets/video_poster_1920.webp" alt=""></media-poster>
                 <track src="assets/video_chapters.vtt" kind="chapters" label="Chapters" default>
               </media-provider>
               <media-video-layout></media-video-layout>
@@ -151,7 +175,7 @@
           </div>
         </div>
       </dialog>
-      <noscript><video controls playsinline preload="none" poster="assets/video_poster.png" src="assets/mobilecopilot_video.mp4"></video></noscript>
+      <noscript><video controls playsinline preload="none" poster="assets/video_poster_1920.webp" src="assets/mobilecopilot_video.mp4"></video></noscript>
     </div>
   </div>
   <div class="wrap feature-grid">
@@ -171,12 +195,12 @@
   <div class="wrap stack">
     <div class="head center"><h2>MobileDSL and its compiler as <span>agentic tools</span></h2></div>
     <div class="lang">
-      <div class="terminal"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><pre class="code coredsl" id="coredsl" role="group" aria-label="CoreDSL for the robot of the paper's Fig. 1: a mecanum chassis, four mecanum wheels, a lidar and an arm"><span class="ln"><span class="k">Robot</span> nav_bot {</span><span class="ln">    <span class="k">intent</span> <span class="s">"A mecanum robot with a lidar and an arm"</span></span><span class="ln" data-part="base_link">    <span class="k">Mecanum_four_wheel</span> chassis(ref = <span class="s">"silver"</span>)</span><span class="ln" data-part="wheel_lf">    <span class="k">Mecanum</span> wheel_lf(ref = <span class="s">"red"</span>, glue = (0.0976, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_lb">    <span class="k">Mecanum</span> wheel_lb(ref = <span class="s">"red"</span>, glue = (-0.1124, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_rf">    <span class="k">Mecanum</span> wheel_rf(ref = <span class="s">"red"</span>, glue = (0.0976, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="wheel_rb">    <span class="k">Mecanum</span> wheel_rb(ref = <span class="s">"red"</span>, glue = (-0.1124, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="front_scan">    <span class="k">Lidar</span> front_scan(ref = <span class="s">"lidar"</span>, glue = (0.11, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln" data-part="top_arm">    <span class="k">Attachment</span> top_arm(ref = <span class="s">"arm"</span>, glue = (-0.0073, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln">}</span></pre></div>
+      <div class="terminal"><div class="bar"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><button type="button" class="pause" id="typing-pause" aria-label="Pause the animation" hidden><span class="ico ico-pause" aria-hidden="true"></span></button></div><pre class="code coredsl" id="coredsl" role="group" aria-label="CoreDSL for the robot of the paper's Fig. 1: a mecanum chassis, four mecanum wheels, a lidar and an arm"><span class="ln"><span class="k">Robot</span> nav_bot {</span><span class="ln">    <span class="k">intent</span> <span class="s">"A mecanum robot with a lidar and an arm"</span></span><span class="ln" data-part="base_link">    <span class="k">Mecanum_four_wheel</span> chassis(ref = <span class="s">"silver"</span>)</span><span class="ln" data-part="wheel_lf">    <span class="k">Mecanum</span> wheel_lf(ref = <span class="s">"red"</span>, glue = (0.0976, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_lb">    <span class="k">Mecanum</span> wheel_lb(ref = <span class="s">"red"</span>, glue = (-0.1124, 0.095, -0.0443, 0, 1, 0))</span><span class="ln" data-part="wheel_rf">    <span class="k">Mecanum</span> wheel_rf(ref = <span class="s">"red"</span>, glue = (0.0976, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="wheel_rb">    <span class="k">Mecanum</span> wheel_rb(ref = <span class="s">"red"</span>, glue = (-0.1124, -0.095, -0.0443, 0, -1, 0))</span><span class="ln" data-part="front_scan">    <span class="k">Lidar</span> front_scan(ref = <span class="s">"lidar"</span>, glue = (0.11, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln" data-part="top_arm">    <span class="k">Attachment</span> top_arm(ref = <span class="s">"arm"</span>, glue = (-0.0073, -0.0001, -0.0043, 0, 0, -1))</span><span class="ln">}</span></pre></div>
       <figure class="fig3d" id="fig1">
         <div class="stage">
           <canvas role="img" aria-label="3D model of the robot the program describes, assembled part by part as the program is written: a white mecanum chassis with four red mecanum wheels, a red arm and a lidar"></canvas>
           <p class="loading">Loading the 3D model…</p>
-          <img class="fallback" src="assets/fig_coredsl.webp" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
+          <img class="fallback" src="assets/fig_coredsl.webp" loading="lazy" width="2400" height="1350" alt="Paper Fig. 1: a red mecanum robot with an arm and a lidar, beside its wheels, chassis, arm and lidar with their mating connectors">
         </div>
         <div class="bar"><span class="hint">Drag to rotate · scroll to zoom</span></div>
       </figure>
@@ -215,9 +239,9 @@
     <div class="head center"><h2>Deploying the compiled system in <span>the real world</span></h2>
       <p>Navigating around corridor obstacles, with onboard RGB and depth on the right.</p></div>
     <div class="demos">
-      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video><figcaption>Course A · 10 s at 2× speed</figcaption></figure>
-      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video><figcaption>Course B, run 1 · 14 s at 2× speed</figcaption></figure>
-      <figure class="demo"><video controls muted loop playsinline preload="none" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video><figcaption>Course B, run 2 · 14 s at 2× speed</figcaption></figure>
+      <figure class="demo"><video controls muted loop playsinline preload="none" loading="lazy" poster="assets/demo_1_poster.jpg" width="1448" height="720"><source src="assets/demo_1.mp4" type="video/mp4"></video><figcaption>Course A · 10 s at 2× speed</figcaption></figure>
+      <figure class="demo"><video controls muted loop playsinline preload="none" loading="lazy" poster="assets/demo_2_poster.jpg" width="1448" height="720"><source src="assets/demo_2.mp4" type="video/mp4"></video><figcaption>Course B, run 1 · 14 s at 2× speed</figcaption></figure>
+      <figure class="demo"><video controls muted loop playsinline preload="none" loading="lazy" poster="assets/demo_3_poster.jpg" width="1448" height="720"><source src="assets/demo_3.mp4" type="video/mp4"></video><figcaption>Course B, run 2 · 14 s at 2× speed</figcaption></figure>
     </div>
   </div>
 </section>
@@ -227,7 +251,6 @@
     <div class="head center"><h2>Contributing</h2></div>
     <div class="feature-grid community-grid">
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/discussions"><article class="box"><div class="icon"><span class="ico ico-community" aria-hidden="true"></span></div><h3 class="title">Discussions</h3><p class="details">Ask questions, share robot designs and follow announcements.</p></article></a>
-      <a class="VPFeature link" href="studio/"><article class="box"><div class="icon"><span class="ico ico-studio" aria-hidden="true"></span></div><h3 class="title">Studio</h3><p class="details">Build a robot from real parts, check it and run it in simulation, in the browser.</p></article></a>
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md#add-to-the-parts-library"><article class="box"><div class="icon"><span class="ico ico-part" aria-hidden="true"></span></div><h3 class="title">Contribute a part</h3><p class="details">Offer a product or a part of your own; after review it joins the shared library, credited to you.</p></article></a>
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/issues/new/choose"><article class="box"><div class="icon"><span class="ico ico-bug" aria-hidden="true"></span></div><h3 class="title">Report an issue</h3><p class="details">Tell us when a generated design looks wrong or the site misbehaves.</p></article></a>
     </div>
@@ -253,20 +276,52 @@
 <footer>
   <div class="wrap">
     <span>RobotDSL Team</span>
-    <span>MobileDSL 1.0 · MobileCopilot</span>
+    <nav class="foot-links" aria-label="Elsewhere"><a href="docs/">Docs</a><a href="studio/">Studio</a><a href="assets/mobilecopilot_paper.pdf">Paper</a><a href="https://github.com/MIT-CDFG/robotdsl-site">GitHub</a></nav>
   </div>
 </footer>
 
 <script>
   // Video: the thumbnail opens the player in a dialog and starts it; closing the dialog (button, backdrop or Esc) pauses it.
+  // The player (Vidstack, assets/vendor/vidstack) is fetched when the video is first wanted: as the pointer or the
+  // focus reaches the thumbnail, at the latest on the press. Where it cannot be had, the browser's own player plays.
   (function () {
-    var dialog = document.getElementById('video-dialog'), player = dialog.querySelector('media-player');
-    document.querySelector('#video .hvd').addEventListener('click', function () {
+    var dialog = document.getElementById('video-dialog'), player = dialog.querySelector('media-player'), opener = document.querySelector('#video .hvd'), wanted = null;
+    function plain() {
+      var video = document.createElement('video');
+      video.controls = true; video.playsInline = true; video.poster = 'assets/video_poster_1920.webp'; video.src = player.getAttribute('src');
+      player.replaceWith(video); player = video;
+    }
+    function want() {
+      if (wanted) return wanted;
+      wanted = new Promise(function (resolve) {
+        var first = document.head.querySelector('link[rel="stylesheet"], style');
+        ['player/styles/default/theme.css', 'player/styles/default/layouts/video.css'].forEach(function (path) {
+          var sheet = document.createElement('link'); sheet.rel = 'stylesheet'; sheet.href = 'assets/vendor/vidstack/' + path;
+          document.head.insertBefore(sheet, first);   // before the page's sheets, whose rules for the player stand
+        });
+        var script = document.createElement('script'); script.type = 'module'; script.src = 'assets/vendor/vidstack/cdn/with-layouts/vidstack.js';
+        script.onerror = function () { plain(); resolve(); };
+        document.head.appendChild(script);
+        customElements.whenDefined('media-player').then(resolve);
+      });
+      return wanted;
+    }
+    opener.addEventListener('pointerenter', want, { once: true });
+    opener.addEventListener('focus', want, { once: true });
+    opener.addEventListener('click', function () {
       dialog.showModal();
-      if (player.play) player.play().catch(function () {});
+      want().then(function () { if (dialog.open && player.play) Promise.resolve(player.play()).catch(function () {}); });
     });
     dialog.querySelector('.close').addEventListener('click', function () { dialog.close(); });
-    dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+    // closedby="any" closes the dialog on a press outside it; where the browser does not know the attribute, this does.
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      dialog.addEventListener('click', function (event) {
+        if (event.target !== dialog) return;
+        var box = dialog.getBoundingClientRect();
+        if (box.top <= event.clientY && event.clientY <= box.bottom && box.left <= event.clientX && event.clientX <= box.right) return;
+        dialog.close();
+      });
+    }
     dialog.addEventListener('close', function () { if (player.pause) player.pause(); });
   })();
 </script>
@@ -276,11 +331,6 @@
   // assets/models/fig1_robot.glb holds one mesh per component of the compiled program (component-library meshes at
   // the compiler's poses); fig1_robot.json gives the direction each component comes off its connector, which the
   // assembly plays in reverse. An illustration of the workflow: the compiler itself reads the whole program at once.
-  import * as THREE from 'three';
-  import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-  import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
   const fig = document.getElementById('fig1');
   const stage = fig.querySelector('.stage');
@@ -289,7 +339,11 @@
   const fail = () => fig.classList.add('failed');
   const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   let visible = false;
-  const whenVisible = () => new Promise(resolve => { const check = () => visible ? resolve() : setTimeout(check, 200); check(); });
+  // The listing types itself over and over, so it can be paused: the button in the terminal's bar holds the typing and
+  // the robot's turning, and starts them again.
+  const pause = document.getElementById('typing-pause');
+  let paused = false, held = false, turning = null;
+  const whenVisible = () => new Promise(resolve => { const check = () => visible && !paused ? resolve() : setTimeout(check, 200); check(); });
 
   // The listing is the program: each line's highlighted runs, and the mesh it adds (data-part).
   const rows = [...document.querySelectorAll('#coredsl .ln')];
@@ -314,6 +368,11 @@
   }
 
   async function init() {
+    // Three.js (assets/vendor/three) is fetched here, as the reader nears the robot, not with the page.
+    const [THREE, { GLTFLoader }, { OrbitControls }, { RoomEnvironment }, { MeshoptDecoder }] = await Promise.all([
+      import('three'), import('three/addons/loaders/GLTFLoader.js'), import('three/addons/controls/OrbitControls.js'),
+      import('three/addons/environments/RoomEnvironment.js'), import('three/addons/libs/meshopt_decoder.module.js'),
+    ]);
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -340,7 +399,8 @@
     const controls = new OrbitControls(camera, canvas);
     Object.assign(controls, { enableDamping: true, enablePan: false, minDistance: 0.45, maxDistance: 1.8, maxPolarAngle: 1.5, autoRotate: !still, autoRotateSpeed: 0.6 });
     controls.target.copy(target);
-    controls.addEventListener('start', () => { controls.autoRotate = false; });
+    controls.addEventListener('start', () => { held = true; controls.autoRotate = false; });
+    turning = on => { controls.autoRotate = on && !held && !still; };
 
     const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
     const [gltf, meta] = await Promise.all([
@@ -396,7 +456,16 @@
       renderer.render(scene, camera);
     });
     fig.querySelector('.loading').remove();
-    if (!still) type(assemble, scatter);
+    if (!still) {
+      pause.hidden = false;
+      pause.addEventListener('click', () => {
+        paused = !paused;
+        pause.setAttribute('aria-label', paused ? 'Play the animation' : 'Pause the animation');
+        pause.firstElementChild.className = paused ? 'ico ico-play' : 'ico ico-pause';
+        turning(!paused);
+      });
+      type(assemble, scatter);
+    }
   }
 
   // Types the program at a steady rate, whatever the frame rate, adding each part as its line is finished;

@@ -22,8 +22,14 @@
     --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   }
+  /* The page's two faces, from the site itself (assets/fonts, Fontsource's files of Inter and Geist Mono; SIL OFL). */
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url(fonts/inter-latin-wght-normal.woff2) format("woff2-variations"); }
+  @font-face { font-family: "Geist Mono"; font-style: normal; font-weight: 100 900; font-display: swap; src: url(fonts/geist-mono-latin-wght-normal.woff2) format("woff2-variations"); }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  /* Until a face has come, the system's face stands in at the same x-height (Inter's is 0.546 of its size, Geist Mono's
+     0.53), so lines break where they will and nothing moves when the face arrives. */
+  body { margin: 0; background: var(--ground); color: var(--text); font-family: var(--sans); font-size-adjust: 0.546; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  pre, code, .code { font-size-adjust: 0.53; }
   a { color: var(--accent); }
   h1, h2, h3 { margin: 0; color: var(--ink); text-wrap: balance; font-family: var(--serif); font-weight: 600; letter-spacing: -.025em; }
   h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); line-height: 1.12; }
