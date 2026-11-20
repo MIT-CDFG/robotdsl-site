@@ -84,15 +84,49 @@
     fallback.hidden = false;
     console.warn('Charts unavailable; displaying the benchmark summary.', error);
   }
+  // The three runs: one at a time, large, with a button for each, the shown one pressed. A clip set aside is hidden,
+  // so it leaves the view and the observer below pauses it; the one shown plays as it comes into view.
+  const demos = document.querySelector('.demos');
+  const runs = [...demos.querySelectorAll('figure.demo')];
+  const picks = document.createElement('div');
+  picks.className = 'demo-picks';
+  picks.setAttribute('role', 'group');
+  picks.setAttribute('aria-label', 'Runs');
+  const buttons = runs.map((run, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'btn VPButton medium';
+    button.textContent = run.querySelector('figcaption').textContent.split(' · ')[0];
+    button.addEventListener('click', () => show(index));
+    picks.appendChild(button);
+    return button;
+  });
+  function show(shown) {
+    runs.forEach((run, index) => {
+      run.hidden = index !== shown;
+      buttons[index].setAttribute('aria-pressed', String(index === shown));
+      buttons[index].classList.toggle('brand', index === shown);
+      buttons[index].classList.toggle('alt', index !== shown);
+    });
+  }
+  demos.classList.add('switching');
+  demos.after(picks);
+  show(0);
   // The robot clips play muted while in view, as a looping preview, and pause out of view.
   if (!reduced && 'IntersectionObserver' in window) {
     const clips = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause()), {threshold: 0.4});
     document.querySelectorAll('.demos video').forEach(video => clips.observe(video));
   }
+  // The copy button shows a tick for two seconds after a copy; a second press starts the two seconds again.
+  const copyIcon = get('copy-citation').querySelector('.ico');
+  let copied = 0;
   get('copy-citation').addEventListener('click', async () => {
+    clearTimeout(copied);
     try {
       await navigator.clipboard.writeText(get('bibtex').textContent.trim());
+      copyIcon.className = 'ico ico-check';
       get('copy-status').textContent = 'BibTeX copied.';
+      copied = setTimeout(() => { copyIcon.className = 'ico ico-copy'; get('copy-status').textContent = ''; }, 2000);
     } catch {
       const range = document.createRange();
       range.selectNodeContents(get('bibtex'));

@@ -86,6 +86,8 @@
   .hero .cta { gap: 8px; }
   .hero .VPButton.medium { padding-inline: 16px; }
   .hero .cta .ico { display: none; }   /* the three buttons keep one row on a phone */
+  .demo-picks { gap: 6px; }
+  .demo-picks .VPButton.medium { padding-inline: 12px; font-size: .8125rem; }   /* the three runs' buttons keep one row */
 }
 /* The narrowest phones: the brand and the three links still fit one row. */
 @media (max-width: 22em) {
@@ -115,6 +117,7 @@
 .ico-program { --icon: url(icons/file-code-2.svg); }
 .ico-compile { --icon: url(icons/file-check-2.svg); }
 .ico-copy { --icon: url(icons/copy.svg); }
+.ico-check { --icon: url(icons/check.svg); }
 .ico-part { --icon: url(icons/package-plus.svg); }
 .ico-bug { --icon: url(icons/bug.svg); }
 /* Section headings sit centred, as on lucide.dev; a phrase in the hero title's accent carries each one's point. */
@@ -139,8 +142,9 @@
 /* The robot stands on Magic UI's Dot Pattern (magicui.design, MIT), which fades out from the centre. */
 .fig3d .stage::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle, rgb(163 163 163 / .8) 1px, transparent 1px); background-size: 16px 16px; -webkit-mask-image: radial-gradient(closest-side, #000 35%, transparent); mask-image: radial-gradient(closest-side, #000 35%, transparent); pointer-events: none; }
 .fig3d canvas { position: relative; }
-/* MobileDSL: the listing types itself; untyped text keeps its place, so the block never changes size. */
-.coredsl .todo { visibility: hidden; }
+/* MobileDSL: the listing types itself over the whole program, which stands faint where it is not typed yet, so the
+   window is never empty and the block never changes size. */
+.coredsl .todo { color: #c5cad3; }
 .coredsl .caret { display: inline-block; width: 0; height: 1.15em; margin-right: -2px; border-left: 2px solid var(--accent); vertical-align: text-bottom; animation: caret-blink 1s steps(1) infinite; }
 @keyframes caret-blink { 50% { border-left-color: transparent; } }
 @media (prefers-reduced-motion: reduce) { .coredsl .caret { animation: none; } }
@@ -167,11 +171,20 @@
 .demos figcaption { text-align: center; }
 .demos > * { min-width: 0; }
 @media (max-width: 40em) { .demos { grid-template-columns: minmax(0, 1fr); } }
-/* The paper is here for its citation, so the section stays small. */
-#cite { padding-block: 48px; }
-#cite .stack { gap: 14px; justify-items: center; }
-#cite .eyebrow { color: var(--accent); }
-.citation { display: grid; gap: 12px; justify-items: center; width: 100%; max-width: 760px; }
+.demos.switching { grid-template-columns: minmax(0, 1fr); width: 100%; max-width: 54rem; margin-inline: auto; }
+.demos.switching figcaption { display: none; }   /* the buttons name the runs; each clip says its speed */
+.demo-picks { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: -10px; }
+/* The citation closes the Contributing section, small; its block carries its copy button, as GitHub's code blocks do. */
+.citation { display: grid; gap: 12px; justify-items: center; width: 100%; max-width: 760px; margin: 24px auto 0; }
+.citation .eyebrow { color: var(--accent); }
+.citation .bib { position: relative; width: 100%; }
+.citation .markdown-body pre { padding-right: 3.5rem; }
+.citation .copy { position: absolute; top: 8px; right: 8px; display: flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--muted); cursor: pointer; }
+.citation .copy:hover { background: var(--tint); color: var(--ink); }
+.citation .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.citation .copy .ico { width: 16px; height: 16px; }
+.citation .copy .ico-check { color: var(--ok); }
+#copy-status:empty { display: none; }
 .citation .markdown-body { width: 100%; min-width: 0; }
 .citation .markdown-body pre { margin: 0; font-family: var(--mono); font-size: .85rem; line-height: 1.65; overflow-x: auto; }
 @media (max-width: 37.5em) { .citation .markdown-body pre { white-space: pre-wrap; overflow-wrap: anywhere; } }   /* on a phone the entry wraps, as the program does, instead of running off the box */

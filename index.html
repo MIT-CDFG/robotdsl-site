@@ -124,8 +124,8 @@
 <link rel="stylesheet" href="assets/vendor/vitepress/VPButton.css">
 <link rel="stylesheet" href="assets/vendor/vitepress/VPFeature.css">
 <link rel="stylesheet" href="assets/vendor/lucide/badge.css">
-<link rel="stylesheet" href="assets/site.css?v=7a6af184">
-<script src="assets/site.js?v=21aa0006" defer></script>
+<link rel="stylesheet" href="assets/site.css?v=b06a8cd3">
+<script src="assets/site.js?v=1622818a" defer></script>
 <script type="speculationrules">{"prefetch": [{"urls": ["studio/", "docs/"], "eagerness": "moderate"}]}</script>
 <noscript><style>#video .hvd, #copy-citation, .results-figure { display: none; } .fig3d .fallback { display: block; } .fig3d canvas, .fig3d .loading, .fig3d .bar { display: none; }</style></noscript>
 </head>
@@ -176,17 +176,6 @@
         </div>
       </dialog>
       <noscript><video controls playsinline preload="none" poster="assets/video_poster_1920.webp" src="assets/mobilecopilot_video.mp4"></video></noscript>
-    </div>
-  </div>
-  <div class="wrap feature-grid">
-    <div class="VPFeature">
-      <article class="box"><div class="icon"><span class="ico ico-program" aria-hidden="true"></span></div><h2 class="title">One shared program</h2><p class="details">Robot, world, behavior and checks stay connected by name.</p></article>
-    </div>
-    <div class="VPFeature">
-      <article class="box"><div class="icon"><span class="ico ico-compile" aria-hidden="true"></span></div><h2 class="title">Compiler checks</h2><p class="details">Check assembly and references before generating ROS and Gazebo files.</p></article>
-    </div>
-    <div class="VPFeature">
-      <article class="box"><div class="icon"><span class="ico ico-bot" aria-hidden="true"></span></div><h2 class="title">Agent-assisted design</h2><p class="details">MobileCopilot finds parts, writes the program and uses compiler feedback.</p></article>
     </div>
   </div>
 </section>
@@ -254,20 +243,17 @@
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/blob/main/CONTRIBUTING.md#add-to-the-parts-library"><article class="box"><div class="icon"><span class="ico ico-part" aria-hidden="true"></span></div><h3 class="title">Contribute a part</h3><p class="details">Offer a product or a part of your own; after review it joins the shared library, credited to you.</p></article></a>
       <a class="VPFeature link" href="https://github.com/MIT-CDFG/robotdsl-site/issues/new/choose"><article class="box"><div class="icon"><span class="ico ico-bug" aria-hidden="true"></span></div><h3 class="title">Report an issue</h3><p class="details">Tell us when a generated design looks wrong or the site misbehaves.</p></article></a>
     </div>
-  </div>
-</section>
-
-<section class="block" id="cite">
-  <div class="wrap stack">
-    <h2 class="eyebrow">Citation</h2>
-    <div class="citation">
-      <div class="markdown-body"><pre id="bibtex" tabindex="0">@misc{robotdsl_mobilecopilot,
+    <div class="citation" id="cite">
+      <h2 class="eyebrow">Citation</h2>
+      <div class="bib">
+        <div class="markdown-body"><pre id="bibtex" tabindex="0">@misc{robotdsl_mobilecopilot,
   title        = {MobileCopilot: A Domain-Specific Language Framework
                   for Agentic Mobile Robot Design},
   author       = {{RobotDSL Team}},
   howpublished = {\url{https://robotdsl.csail.mit.edu/}}
 }</pre></div>
-      <button class="btn VPButton medium alt" id="copy-citation" type="button"><span class="ico ico-copy" aria-hidden="true"></span>Copy BibTeX</button>
+        <button class="copy" id="copy-citation" type="button" aria-label="Copy the BibTeX"><span class="ico ico-copy" aria-hidden="true"></span></button>
+      </div>
       <p id="copy-status" class="note" role="status"></p>
     </div>
   </div>
