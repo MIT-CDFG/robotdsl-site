@@ -50,8 +50,8 @@
 .btn.VPButton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
 .btn:focus-visible, .VPFeature:focus-visible, .nav-link:focus-visible, .site-brand:focus-visible, .badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .hero-demo { min-width: 0; }
-/* Trim the still's outer whitespace; retain the existing Magic UI video shadow. */
-.hero-demo .hvd img { aspect-ratio: 3 / 2; object-fit: cover; border: 0; border-radius: 12px; }
+/* The card shows the film's whole frame (16:9); retain the existing Magic UI video shadow. */
+.hero-demo .hvd img { border: 0; border-radius: 12px; }
 .hero-demo .hvd .ring { width: 88px; height: 88px; }
 .hero-demo .hvd .disc { width: 60px; height: 60px; background: var(--accent); box-shadow: none; }
 .hero-demo .hvd .disc svg { width: 26px; height: 26px; filter: none; }
